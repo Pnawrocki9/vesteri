@@ -1,0 +1,33 @@
+{
+  "name": "vesteri",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "generate:geo": "node scripts/generate-geo.mjs",
+    "prebuild": "npm run generate:geo",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "15.5.22",
+    "next-intl": "^4.13.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "d3-geo": "^3.1.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.22",
+    "tailwindcss": "^4",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5",
+    "world-atlas": "^2.0.2"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "landing": {
+    "title": "VESTERI — Property investment abroad",
+    "lead": "A clear path to property investment abroad.",
+    "points": [
+      "Partners you can count on",
+      "AI that knows every detail and stays objective",
+      "Independent law firms and due diligence",
+      "Direct contact with developers in one place, without leaving home"
+    ],
+    "closing": "Vesteri brings a new dimension to international real estate. We combine smart technology with genuine human connection, making it easier to discover and buy property abroad, wherever you are.",
+    "countries": {
+      "cyp": "Cyprus",
+      "esp": "Spain",
+      "prt": "Portugal",
+      "ita": "Italy"
+    },
+    "activeTag": "First active market",
+    "soon": "Coming soon",
+    "ctaInvestor": "For Investors",
+    "ctaDeveloper": "For Developers"
+  },
+  "developers": {
+    "title": "VESTERI — For developers",
+    "nav": {
+      "how": "How it works",
+      "tech": "Technology",
+      "cta": "For developers"
+    },
+    "hero": {
+      "kicker": "Foreign capital · Mediterranean markets",
+      "title": "Demand from across Europe in one place. Qualified by technology. Delivered to your team.",
+      "sub": "Vesteri builds demand for property abroad, qualifies it on our own webinar platform, and hands you an investor who arrives ready, with a full profile of what they want.",
+      "cta": "Become a partner",
+      "cta2": "See the process"
+    },
+    "stats": [
+      {
+        "v": "Many markets in one place",
+        "l": "We run the show as moderator. You are the expert and the seller."
+      },
+      {
+        "v": "An intent profile",
+        "l": "Not a list of email addresses. A full record of what each participant asked about and cared about."
+      },
+      {
+        "v": "Weeks, not quarters",
+        "l": "Entering a new market takes weeks because we build no local sales structures."
+      }
+    ],
+    "sources": {
+      "kicker": "Where our investors come from",
+      "title": "Capital from across Europe",
+      "active": "Active",
+      "soon": "Coming soon",
+      "countries": {
+        "pl": "Poland",
+        "de": "Germany",
+        "cz": "Czechia",
+        "hu": "Hungary",
+        "lt": "Lithuania",
+        "ro": "Romania"
+      }
+    },
+    "process": {
+      "kicker": "Process",
+      "title": "From a local campaign to a warm investor on your desk",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Local marketing",
+          "d": "We promote your projects."
+        },
+        {
+          "n": "02",
+          "t": "Complete investor information",
+          "d": "We prepare the full scope of information an investor needs to make an informed decision, in their language, and make it available as a chat where everyone gets every answer."
+        },
+        {
+          "n": "03",
+          "t": "Scoring and routing",
+          "d": "We segment by what people actually do, not what they say."
+        },
+        {
+          "n": "04",
+          "t": "Developer webinar",
+          "d": "Our moderator hosts and translates. You present and answer live."
+        },
+        {
+          "n": "05",
+          "t": "Lead handover",
+          "d": "You receive an investor with a full intent profile and take the process from there, on your own or with our help."
+        },
+        {
+          "n": "06",
+          "t": "Investor support",
+          "d": "We share contacts to verified law firms in the target market. That kind of backing earns investor trust."
+        },
+        {
+          "n": "07",
+          "t": "Retention",
+          "d": "Investors come back to future webinars for their next purchase, and they bring their friends."
+        },
+        {
+          "n": "→",
+          "t": "The result",
+          "d": "You get demand, data, and direct contact with your clients. What you avoid is another salesperson standing between you and the buyer, juggling a portfolio of listings without deep knowledge of any of them."
+        }
+      ]
+    },
+    "tech": {
+      "kicker": "Technology",
+      "title": "The webinar as a source of data, not an address list",
+      "sub": "At the heart of Vesteri sits our own webinar and AI platform, built around three things nobody else offers. Every campaign teaches the system a little more about what leads to a purchase.",
+      "cards": [
+        {
+          "t": "AI assistant",
+          "d": "It answers investor questions on the spot, in their language. It knows every project in the portfolio in depth, works during the webinar, and keeps working long after. You never explain the same thing for the twentieth time, and you never worry that an agent forgot a detail or simply did not know it."
+        },
+        {
+          "t": "The webinar as data",
+          "d": "The platform records which project holds a participant's attention, what they ask, what they skip, and when they leave. A single meeting produces a profile of real interest."
+        },
+        {
+          "t": "Scoring and handover",
+          "d": "The system rates how ready each participant is to buy and passes on only those who clear the qualification bar, together with a full record of their questions and interests."
+        }
+      ]
+    },
+    "cta": {
+      "title": "We deliver demand, data, and direct contact with your clients. Sales stay on your side, and we stand ready to help whenever you need us. You are not alone.",
+      "sub": "Are you a developer in Cyprus, Spain, or Greece? Let's talk about access to Polish capital.",
+      "btn": "Book a call"
+    },
+    "footer": {
+      "title": "From local demand to sales across the Mediterranean",
+      "addrLabel": "Head office",
+      "addr": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contactLabel": "Contact",
+      "legalLabel": "Legal",
+      "copyright": "© 2026 Vesteri."
+    }
+  },
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "cookies": "Cookies",
+    "gdpr": "GDPR",
+    "placeholder": "The content of this page is being prepared."
+  },
+  "langSwitch": {
+    "label": "Switch language"
+  }
+}

@@ -1,0 +1,26 @@
+/* VESTERI design tokens — v1.0 (2026-08) */
+:root {
+  /* Color */
+  --vesteri-navy: #10263F;        /* primary — Granat */
+  --vesteri-navy-deep: #0A1A2E;
+  --vesteri-gold: #C9A15A;        /* flat gold — UI, small sizes, fallback */
+  --vesteri-gold-light: #E7CD97;  /* gradient stop 0 */
+  --vesteri-gold-mid: #C39A5E;    /* gradient stop 45% */
+  --vesteri-gold-dark: #8C6437;   /* gradient stop 100% */
+  --vesteri-cream: #F2EAD9;       /* background — Krem */
+  --vesteri-cream-deep: #E9DEC6;
+  --vesteri-ink: #16202C;         /* body text on light */
+  --vesteri-white: #FFFFFF;
+  /* Metallic gold — primary treatment for the mark at large sizes */
+  --vesteri-gold-gradient: linear-gradient(160deg, #E7CD97 0%, #C39A5E 45%, #8C6437 100%);
+  /* Type */
+  --vesteri-font-display: 'Montserrat', 'Century Gothic', Futura, sans-serif; /* 600/700, caps, letter-spacing .18em for wordmark/headings */
+  --vesteri-font-body: 'Montserrat', system-ui, sans-serif;                    /* 400/500 */
+  --vesteri-tracking-display: 0.18em;
+  --vesteri-tracking-label: 0.14em;
+  /* Radii & spacing */
+  --vesteri-radius: 6px;
+  --vesteri-radius-lg: 14px;
+}
+/* Usage: navy = authority/base; gold = accent only (never body text on cream); cream = default light background.
+   Logo clearspace: height of the wordmark 'V' on all sides. Min mark size: 24px. Below 48px use flat gold. */

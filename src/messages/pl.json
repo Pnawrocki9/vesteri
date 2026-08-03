@@ -1,0 +1,154 @@
+{
+  "landing": {
+    "title": "VESTERI — Inwestycje w nieruchomości zagraniczne",
+    "lead": "Uporządkowana ścieżka inwestycji w nieruchomości za granicą.",
+    "points": [
+      "Pewni partnerzy",
+      "Technologia AI, która wie wszystko i jest zawsze obiektywna",
+      "Niezależne biura prawne i due diligence",
+      "Bezpośredni kontakt z deweloperami w jednym miejscu, bez wychodzenia z domu"
+    ],
+    "closing": "Vesteri to nowy wymiar rynku nieruchomości zagranicznych. Łączymy nowoczesną technologię i prawdziwe ludzkie interakcje, niezależnie od dystansu.",
+    "countries": {
+      "cyp": "Cypr",
+      "esp": "Hiszpania",
+      "prt": "Portugalia",
+      "ita": "Włochy"
+    },
+    "activeTag": "Pierwszy aktywny rynek",
+    "soon": "Coming soon",
+    "ctaInvestor": "Dla Inwestora",
+    "ctaDeveloper": "Dla Dewelopera"
+  },
+  "developers": {
+    "title": "VESTERI — Dla deweloperów",
+    "nav": {
+      "how": "Jak działamy",
+      "tech": "Technologia",
+      "cta": "Dla deweloperów"
+    },
+    "hero": {
+      "kicker": "Zagraniczny kapitał · Rynki śródziemnomorskie",
+      "title": "Popyt z wielu krajów europejskich w jednym miejscu. Zakwalifikowany technologicznie. Przekazany deweloperowi.",
+      "sub": "Vesteri buduje popyt na nieruchomości zagraniczne, kwalifikuje go na własnej platformie webinarowej i przekazuje deweloperowi gotowego, opisanego inwestora.",
+      "cta": "Zostań partnerem",
+      "cta2": "Zobacz proces"
+    },
+    "stats": [
+      {
+        "v": "Wiele rynków w jednym miejscu",
+        "l": "My prowadzimy show jako moderator — ty jesteś ekspertem i sprzedawcą."
+      },
+      {
+        "v": "Profil intencji",
+        "l": "Nie lista e-maili — pełen zapis pytań i zainteresowań uczestnika"
+      },
+      {
+        "v": "Tygodnie, nie kwartały",
+        "l": "Wejście na nowy rynek bez lokalnych struktur sprzedażowych"
+      }
+    ],
+    "sources": {
+      "kicker": "Skąd pochodzą inwestorzy",
+      "title": "Kapitał z całej Europy",
+      "active": "Aktywny",
+      "soon": "Coming soon",
+      "countries": {
+        "pl": "Polska",
+        "de": "Niemcy",
+        "cz": "Czechy",
+        "hu": "Węgry",
+        "lt": "Litwa",
+        "ro": "Rumunia"
+      }
+    },
+    "process": {
+      "kicker": "Proces",
+      "title": "Od lokalnej kampanii do przekazania inwestora",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Lokalny marketing",
+          "d": "My promujemy twoje projekty."
+        },
+        {
+          "n": "02",
+          "t": "Komplet informacji dla inwestorów",
+          "d": "Przygotowujemy za ciebie cały zakres informacji, jakie inwestor musi posiadać, aby podjąć świadomą decyzję — w jego języku. Udostępniamy je w formie czatu, na którym każdy uzyska wszystkie odpowiedzi."
+        },
+        {
+          "n": "03",
+          "t": "Scoring i routing",
+          "d": "Segmentacja według ujawnionych preferencji, nie deklaracji."
+        },
+        {
+          "n": "04",
+          "t": "Webinar deweloperski",
+          "d": "Nasz moderator prowadzi i tłumaczy, deweloper prezentuje i odpowiada na żywo."
+        },
+        {
+          "n": "05",
+          "t": "Przekazanie leada",
+          "d": "Deweloper otrzymuje inwestora z pełnym profilem intencji i prowadzi proces dalej samodzielnie lub z naszą pomocą."
+        },
+        {
+          "n": "06",
+          "t": "Wsparcie inwestora",
+          "d": "Kontakty do zweryfikowanych biur prawnych na rynku docelowym — to buduje zaufanie inwestorów."
+        },
+        {
+          "n": "07",
+          "t": "Retencja",
+          "d": "Inwestor wraca na kolejne webinary szukając kolejnych inwestycji, lub polecając kolejne webinary znajomym."
+        },
+        {
+          "n": "→",
+          "t": "Efekt",
+          "d": "Deweloper dostaje popyt, dane i kontakt bezpośredni z klientami — nie kolejnego sprzedawcę, który jest buforem z wieloma ofertami w portfolio i brakiem dogłębnej wiedzy o każdej z nich."
+        }
+      ]
+    },
+    "tech": {
+      "kicker": "Technologia",
+      "title": "Webinar jako źródło danych, nie lista adresów",
+      "sub": "Sercem Vesteri jest własna platforma webinarowa i AI z trzema unikatowymi elementami. Każda kolejna kampania uczy system, co naprawdę prowadzi do zakupu.",
+      "cards": [
+        {
+          "t": "Asystent AI",
+          "d": "Odpowiada na pytania inwestorów natychmiast, w ich języku. Zna każdy projekt w portfelu dogłębnie i pracuje w trakcie webinaru oraz długo po nim. Deweloper nie tłumaczy tego samego dwudziesty raz i nie boi się, że agent nieruchomości zapomni o czymś powiedzieć lub zabraknie mu informacji."
+        },
+        {
+          "t": "Webinar jako źródło danych",
+          "d": "Platforma rejestruje, przy którym projekcie uczestnik zostaje, o co pyta, co pomija i kiedy się rozłącza. Z jednego spotkania powstaje profil zainteresowania."
+        },
+        {
+          "t": "Scoring i przekazanie",
+          "d": "System ocenia gotowość zakupową i przekazuje deweloperowi wyłącznie tych, którzy przeszli próg kwalifikacji — z pełnym zapisem pytań i zainteresowań."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dostarczamy popyt, dane i bezpośredni kontakt z klientami. Sprzedaż zostaje po Twojej stronie, ale my jesteśmy w ciągłej gotowości do pomocy. Nie jesteś sam.",
+      "sub": "Jesteś deweloperem na Cyprze, w Hiszpanii lub Grecji? Porozmawiajmy o dostępie do polskiego kapitału.",
+      "btn": "Umów rozmowę"
+    },
+    "footer": {
+      "title": "Od lokalnego popytu do sprzedaży na rynkach śródziemnomorskich",
+      "addrLabel": "Siedziba",
+      "addr": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contactLabel": "Kontakt",
+      "legalLabel": "Informacje prawne",
+      "copyright": "© 2026 Vesteri."
+    }
+  },
+  "legal": {
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "cookies": "Cookies",
+    "gdpr": "RODO",
+    "placeholder": "Treść tej strony jest w przygotowaniu."
+  },
+  "langSwitch": {
+    "label": "Przełącz język"
+  }
+}
