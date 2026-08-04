@@ -70,6 +70,15 @@ export default async function DevelopersPage({ params }: Props) {
             {t('nav.listings')}
           </a>
           <LanguageSwitch />
+          {/* Scrolls to the closing CTA rather than opening mail directly: a
+              mailto does nothing at all without a registered mail handler,
+              while the CTA section always offers the address to copy. */}
+          <a
+            href="#cta"
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
+          >
+            {t('cta.btn')}
+          </a>
           <MobileNav
             links={[
               { label: tAbout('title'), href: getPathname({ locale: activeLocale, href: '/about' }) },
@@ -80,15 +89,6 @@ export default async function DevelopersPage({ params }: Props) {
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}
           />
-          {/* Scrolls to the closing CTA rather than opening mail directly: a
-              mailto does nothing at all without a registered mail handler,
-              while the CTA section always offers the address to copy. */}
-          <a
-            href="#cta"
-            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
-          >
-            {t('cta.btn')}
-          </a>
         </div>
       </nav>
 

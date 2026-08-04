@@ -57,6 +57,12 @@ export default async function AboutPage({ params }: Props) {
             {t('nav.listings')}
           </a>
           <LanguageSwitch />
+          <a
+            href={ctaHref}
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
+          >
+            {t('nav.cta')}
+          </a>
           <MobileNav
             links={[
               { label: t('nav.developers'), href: developersHref },
@@ -65,12 +71,6 @@ export default async function AboutPage({ params }: Props) {
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}
           />
-          <a
-            href={ctaHref}
-            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
-          >
-            {t('nav.cta')}
-          </a>
         </div>
       </nav>
 
