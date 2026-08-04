@@ -10,6 +10,10 @@ export const routing = defineRouting({
       pl: '/dla-deweloperow',
       en: '/for-developers',
     },
+    '/about': {
+      pl: '/o-nas',
+      en: '/about-us',
+    },
     '/privacy': {
       pl: '/polityka-prywatnosci',
       en: '/privacy-policy',

@@ -172,6 +172,54 @@
       "madeBy": "Made for VESTERI by Estalara (<link>www.estalara.com</link>)"
     }
   },
+  "about": {
+    "title": "O nas",
+    "meta": {
+      "title": "VESTERI — O nas",
+      "description": "Vesteri to marka polsko-amerykańskiego startupu Time2Show, Inc. Od kilku lat budujemy technologię dla rynku nieruchomości."
+    },
+    "nav": {
+      "developers": "Dla deweloperów",
+      "listings": "Listings Portal",
+      "cta": "Umów rozmowę"
+    },
+    "who": {
+      "heading": "Kim jesteśmy",
+      "paragraphs": [
+        "Vesteri to marka polsko-amerykańskiego startupu Time2Show, Inc. Od kilku lat budujemy technologię dla rynku nieruchomości. Najpierw powstały narzędzia do prezentacji online i webinarów, z których korzystają agencje i agenci. Potem doszła sztuczna inteligencja, dzięki której zarówno inwestorzy, jak i biura nieruchomości oszczędzają czas i dostają rzetelne informacje. Ta część naszej pracy rozwija się pod marką Estalara.",
+        "Zespół zbudowaliśmy z ludzi, którzy robili to wcześniej. Są wśród nas inżynierowie z wieloletnim stażem w tworzeniu technologii, handlowcy po sprzedaży międzynarodowej i licencjonowani agenci nieruchomości. Ci ostatni pilnują, żebyśmy nie oderwali się od rzeczywistości i rozumieli, czego naprawdę potrzebują uczestnicy tego rynku."
+      ]
+    },
+    "team": {
+      "heading": "Zespół",
+      "members": [
+        {
+          "name": "Piotr Nawrocki",
+          "role": "CEO",
+          "bio": "Dwadzieścia lat sprzedaży międzynarodowej dla globalnych korporacji. Entuzjasta AI i nowych technologii. Uważa, że biznes, który ma przetrwać lata, opiera się na uczciwych relacjach z ludźmi, a nie na samej ofercie. Kupują nie firmy, tylko ludzie."
+        },
+        {
+          "name": "Rafał Palak",
+          "role": "CTO",
+          "bio": "Doktor nauk i wykładowca informatyki stosowanej na Politechnice Wrocławskiej. Lata pracy badawczej i praktyka w budowaniu zaawansowanych systemów analitycznych, baz danych i modeli AI. Odpowiada za to, żeby nasze rozwiązania działały dokładnie tak, jak obiecujemy."
+        },
+        {
+          "name": "Krzysztof Świętek",
+          "role": "COO",
+          "bio": "Dwadzieścia lat organizowania koncertów, imprez i dużych wydarzeń, czyli szkoła planowania, w której nie ma miejsca na improwizację w dniu premiery. Świetny organizator. Od dwóch lat pracuje na rynku nieruchomości, niedawno zdobył licencję agenta. Krzysztof jest naszym drogowskazem. Kiedy dyskusja o produkcie odjeżdża za daleko od praktyki, sprowadza nas z powrotem na ziemię."
+        }
+      ]
+    },
+    "why": {
+      "heading": "Dlaczego budujemy Vesteri",
+      "paragraphs": [
+        "Rynek nieruchomości ma kilka problemów, które trudno przeoczyć, kiedy przygląda się mu z bliska. Systemy, na których pracuje branża, są w większości przestarzałe. Największe portale ogłoszeniowe zdobyły pozycję na tyle mocną, że mogą dyktować warunki. Nowych pomysłów pojawia się niewiele, bo nikomu specjalnie na nich nie zależy.",
+        "Najbardziej boli to, co dzieje się przy transakcjach międzynarodowych. Komunikacja się rwie, procesy ciągną się dłużej, niż powinny, a informacje bywają niepełne albo wygodnie przemilczane. Kupujący z innego kraju podejmuje jedną z większych decyzji finansowych w życiu, opierając się na kilku zdjęciach i zapewnieniu, że wszystko jest w porządku.",
+        "Właśnie w rynku transgranicznym widzimy najwięcej do zrobienia. Vesteri powstaje po to, żeby zakup nieruchomości za granicą wyglądał normalnie. Żeby dało się sprawdzić, z kim się rozmawia, zobaczyć nieruchomość bez lotu na drugi koniec Europy i dostać informacje, na których można polegać."
+      ],
+      "closing": "Wierzymy w to, co budujemy. Przekonanie bierze się z czegoś prostego: sami chcielibyśmy kupować w ten sposób."
+    }
+  },
   "legal": {
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",

@@ -46,6 +46,7 @@ export default async function LandingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('landing');
+  const tAbout = await getTranslations('about');
   const pillars = t.raw('pillars') as Pillar[];
   const minis = [
     { key: 'esp', name: t('countries.esp') },
@@ -114,6 +115,14 @@ export default async function LandingPage({ params }: Props) {
               className="rounded-btn border border-ink px-[42px] py-[18px] text-[13.5px] font-bold tracking-[0.1em] text-ink uppercase transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"
             >
               {t('ctaDeveloper')}
+            </Link>
+            {/* Tertiary route — a plain link, so the two buttons keep their
+                hierarchy. */}
+            <Link
+              href="/about"
+              className="text-[13.5px] font-bold tracking-[0.1em] text-muted uppercase transition-colors hover:text-accent-deep max-[640px]:w-full max-[640px]:py-2 max-[640px]:text-center"
+            >
+              {tAbout('title')}
             </Link>
           </div>
         </section>

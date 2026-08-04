@@ -172,6 +172,54 @@
       "madeBy": "Made for VESTERI by Estalara (<link>www.estalara.com</link>)"
     }
   },
+  "about": {
+    "title": "About us",
+    "meta": {
+      "title": "VESTERI — About us",
+      "description": "Vesteri is a brand of Time2Show, Inc., a Polish-American startup. For the past few years we have been building technology for the property industry."
+    },
+    "nav": {
+      "developers": "For developers",
+      "listings": "Listings Portal",
+      "cta": "Book a call"
+    },
+    "who": {
+      "heading": "Who we are",
+      "paragraphs": [
+        "Vesteri is a brand of Time2Show, Inc., a Polish-American startup. For the past few years we have been building technology for the property industry. It started with tools for online presentations and webinars, used by agencies and individual agents. Then came AI, which helps investors and brokerages save time and get information they can rely on. That side of our work runs under the Estalara name.",
+        "We built the team from people who have done this before. Engineers with years behind them in software, salespeople who have sold across borders, and licensed real estate agents. The agents keep the rest of us honest about how this market actually works and what the people in it need."
+      ]
+    },
+    "team": {
+      "heading": "The team",
+      "members": [
+        {
+          "name": "Piotr Nawrocki",
+          "role": "CEO",
+          "bio": "Twenty years in international sales for global corporations. An enthusiast of AI and new technology. He believes that business built to last rests on honest relationships rather than on the offer itself. People buy from people, not from companies."
+        },
+        {
+          "name": "Rafał Palak",
+          "role": "CTO",
+          "bio": "PhD and lecturer in applied computer science at Wrocław University of Science and Technology. Years of research work and hands-on experience building analytical systems, databases and AI models. He is the reason our products do exactly what we say they do."
+        },
+        {
+          "name": "Krzysztof Świętek",
+          "role": "COO",
+          "bio": "Twenty years of organising concerts and large events, a school of planning with no room for improvisation on opening night. A superb organiser. He has worked in real estate for the past two years and recently earned his agent licence. Krzysztof is our compass. When a product discussion drifts too far from practice, he brings us back down to earth."
+        }
+      ]
+    },
+    "why": {
+      "heading": "Why we are building Vesteri",
+      "paragraphs": [
+        "Real estate has problems that are hard to miss once you look closely. Most of the systems the industry runs on are old. The largest listing portals hold a position strong enough to set the terms. Few new ideas come through, because nobody has much reason to push them.",
+        "Cross-border deals are where it hurts most. Communication breaks down, processes drag on longer than they should, and information arrives incomplete or quietly left out. Someone buying from another country makes one of the biggest financial decisions of their life based on a handful of photos and an assurance that everything is fine.",
+        "Cross-border is where we see the most room to improve. Vesteri exists to make buying property abroad feel ordinary. You can check who you are talking to, view a property without flying across Europe, and get information you can rely on."
+      ],
+      "closing": "We believe in what we are building. The conviction comes from something simple: this is how we would want to buy."
+    }
+  },
   "legal": {
     "privacy": "Privacy policy",
     "terms": "Terms of service",
