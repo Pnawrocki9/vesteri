@@ -67,7 +67,11 @@ export default async function DevelopersPage({ params }: Props) {
       </nav>
 
       {/* 2.2 Hero */}
-      <section className="grid grid-cols-1 items-center gap-[60px] bg-ink px-6 pt-[72px] pb-20 md:px-14 lg:grid-cols-[1.2fr_0.8fr] lg:pt-[110px] lg:pb-[120px]">
+      {/* overflow-x-clip: at the peak of the entrance the mark reaches past
+          the viewport and would flash a horizontal scrollbar. `clip` stops
+          that without turning the section into a scroll container, and
+          leaves vertical overflow alone. */}
+      <section className="grid grid-cols-1 items-center gap-[60px] overflow-x-clip bg-ink px-6 pt-[72px] pb-20 md:px-14 lg:grid-cols-[1.2fr_0.8fr] lg:pt-[110px] lg:pb-[120px]">
         <div className="flex max-w-[640px] flex-col gap-7">
           <span className="text-[13px] font-semibold tracking-[0.2em] text-accent-light uppercase">
             {t('hero.kicker')}
@@ -91,13 +95,16 @@ export default async function DevelopersPage({ params }: Props) {
             </a>
           </div>
         </div>
-        <div className="w-full max-w-[360px] [perspective:900px] justify-self-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo/vesteri-mark-teal-gradient.svg"
-            alt=""
-            className="animate-spin-y block w-full [filter:drop-shadow(var(--drop-shadow-mark))]"
-          />
+        {/* perspective holder → entrance wrapper → spinning mark */}
+        <div className="w-full max-w-[432px] [perspective:1100px] justify-self-center">
+          <div className="animate-approach">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo/vesteri-mark-teal-gradient.svg"
+              alt=""
+              className="animate-spin-y block w-full [filter:drop-shadow(var(--drop-shadow-mark))]"
+            />
+          </div>
         </div>
       </section>
 

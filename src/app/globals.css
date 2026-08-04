@@ -96,8 +96,37 @@
   transform-style: preserve-3d;
 }
 
+/* Hero mark entrance: the mark flies out of the depth towards the viewer,
+   overshoots its resting position, settles back and stops. It rides on a
+   wrapper around the image — sharing one element with the rotation would
+   make the two transforms overwrite each other and jolt the spin at the
+   handover. `both` holds the first frame before the animation starts, so
+   the mark cannot flash at its final position first. */
+@keyframes vesteri-approach {
+  0% {
+    transform: translateZ(-460px) scale(0.82);
+    opacity: 0;
+  }
+  38% {
+    transform: translateZ(300px) scale(1.16);
+    opacity: 1;
+  }
+  70% {
+    transform: translateZ(-40px) scale(0.98);
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+  }
+}
+
+@utility animate-approach {
+  animation: vesteri-approach 2.2s cubic-bezier(0.22, 0.9, 0.28, 1) both;
+  transform-style: preserve-3d;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-spin-y {
+  .animate-spin-y,
+  .animate-approach {
     animation: none;
   }
 }
