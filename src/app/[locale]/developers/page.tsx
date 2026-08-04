@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import CopyEmail from '@/components/CopyEmail';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { countryFlags } from '@/generated/flags';
-import { Link } from '@/i18n/navigation';
+import { getPathname, Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
 import { BOOK_CALL_HREF, CONTACT_EMAIL, INVESTOR_PLATFORM_URL } from '@/lib/site';
 
@@ -27,6 +28,8 @@ export default async function DevelopersPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations('developers');
   const tAbout = await getTranslations('about');
+  const tNav = await getTranslations('nav');
+  const activeLocale = locale as 'pl' | 'en';
   const stats = t.raw('stats') as { v: string; l: string }[];
   const steps = t.raw('process.steps') as { n: string; t: string; d: string }[];
   const techCards = t.raw('tech.cards') as { t: string; d: string }[];
@@ -41,7 +44,7 @@ export default async function DevelopersPage({ params }: Props) {
         </Link>
         {/* gap tightens at md: with three links the 32px spacing overflows
             the viewport right at the breakpoint. */}
-        <div className="flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
           <Link
             href="/about"
             className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
@@ -67,12 +70,22 @@ export default async function DevelopersPage({ params }: Props) {
             {t('nav.listings')}
           </a>
           <LanguageSwitch />
+          <MobileNav
+            links={[
+              { label: tAbout('title'), href: getPathname({ locale: activeLocale, href: '/about' }) },
+              { label: t('nav.how'), href: '#jak' },
+              { label: t('nav.tech'), href: '#tech' },
+              { label: t('nav.listings'), href: INVESTOR_PLATFORM_URL },
+            ]}
+            openLabel={tNav('openMenu')}
+            closeLabel={tNav('closeMenu')}
+          />
           {/* Scrolls to the closing CTA rather than opening mail directly: a
               mailto does nothing at all without a registered mail handler,
               while the CTA section always offers the address to copy. */}
           <a
             href="#cta"
-            className="rounded-btn bg-ink px-4 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
           >
             {t('cta.btn')}
           </a>

@@ -227,6 +227,10 @@
     "gdpr": "GDPR",
     "placeholder": "The content of this page is being prepared."
   },
+  "nav": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
   "langSwitch": {
     "label": "Switch language"
   }

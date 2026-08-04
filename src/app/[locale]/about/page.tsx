@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
@@ -24,13 +25,15 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('about');
+  const tNav = await getTranslations('nav');
   const whoParagraphs = t.raw('who.paragraphs') as string[];
   const members = t.raw('team.members') as Member[];
   const whyParagraphs = t.raw('why.paragraphs') as string[];
 
   // The closing CTA lives on the For Developers page, so the nav button
   // points at that section rather than opening mail from here.
-  const ctaHref = `${getPathname({ locale: locale as 'pl' | 'en', href: '/developers' })}#cta`;
+  const developersHref = getPathname({ locale: locale as 'pl' | 'en', href: '/developers' });
+  const ctaHref = `${developersHref}#cta`;
 
   return (
     <div className="bg-paper-alt text-ink">
@@ -40,23 +43,31 @@ export default async function AboutPage({ params }: Props) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo/vesteri-logo-horizontal.svg" alt="VESTERI" className="block h-8 sm:h-11" />
         </Link>
-        <div className="flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
           <Link
             href="/developers"
-            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep md:inline"
+            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
           >
             {t('nav.developers')}
           </Link>
           <a
             href={INVESTOR_PLATFORM_URL}
-            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep md:inline"
+            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
           >
             {t('nav.listings')}
           </a>
           <LanguageSwitch />
+          <MobileNav
+            links={[
+              { label: t('nav.developers'), href: developersHref },
+              { label: t('nav.listings'), href: INVESTOR_PLATFORM_URL },
+            ]}
+            openLabel={tNav('openMenu')}
+            closeLabel={tNav('closeMenu')}
+          />
           <a
             href={ctaHref}
-            className="rounded-btn bg-ink px-4 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
           >
             {t('nav.cta')}
           </a>

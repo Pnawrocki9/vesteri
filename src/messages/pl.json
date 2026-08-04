@@ -227,6 +227,10 @@
     "gdpr": "RODO",
     "placeholder": "Treść tej strony jest w przygotowaniu."
   },
+  "nav": {
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
   "langSwitch": {
     "label": "Przełącz język"
   }
