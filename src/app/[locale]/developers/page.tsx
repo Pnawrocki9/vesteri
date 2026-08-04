@@ -295,7 +295,20 @@ export default async function DevelopersPage({ params }: Props) {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end pt-6">
+        <div className="flex flex-wrap items-center justify-between gap-2 pt-6">
+          <span className="text-[12px] text-muted-dark-2">
+            {t.rich('footer.madeBy', {
+              link: (chunks) => (
+                <a
+                  href="https://www.estalara.com"
+                  rel="noreferrer"
+                  className="hover:text-paper-alt"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </span>
           <span className="text-[12px] whitespace-nowrap text-muted-dark-2">
             {t('footer.copyright')}
           </span>
