@@ -234,6 +234,14 @@ export default async function DevelopersPage({ params }: Props) {
           >
             {t('cta.btn')}
           </a>
+          {/* Fallback for visitors whose browser has no mail handler: the
+              address stays readable and copyable even if mailto does nothing. */}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-[13px] text-muted-dark transition-colors hover:text-accent-light"
+          >
+            {CONTACT_EMAIL}
+          </a>
         </div>
       </section>
 
