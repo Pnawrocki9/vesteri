@@ -221,7 +221,7 @@ export default async function DevelopersPage({ params }: Props) {
         id="cta"
         className="scroll-mt-[90px] border-t border-line bg-paper-alt bg-[url(/pattern/vesteri-pattern-cream.svg)] bg-[length:180px] px-6 py-16 md:px-14 md:py-[100px]"
       >
-        <div className="mx-auto flex max-w-[660px] flex-col items-center gap-[22px] rounded-panel bg-ink p-8 text-center sm:p-16">
+        <div className="mx-auto flex max-w-[860px] flex-col items-center gap-[22px] rounded-panel bg-ink p-8 text-center sm:p-16">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo/vesteri-mark-teal-gradient.svg" alt="" className="h-[72px]" />
           <h2 className="text-[24px] font-bold text-balance text-paper-alt md:text-h2">
