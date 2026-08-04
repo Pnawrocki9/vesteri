@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import CopyEmail from '@/components/CopyEmail';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import { countryFlags } from '@/generated/flags';
 import { Link } from '@/i18n/navigation';
@@ -235,13 +236,21 @@ export default async function DevelopersPage({ params }: Props) {
             {t('cta.btn')}
           </a>
           {/* Fallback for visitors whose browser has no mail handler: the
-              address stays readable and copyable even if mailto does nothing. */}
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            className="text-[13px] text-muted-dark transition-colors hover:text-accent-light"
-          >
-            {CONTACT_EMAIL}
-          </a>
+              address stays readable, linked and copyable even if mailto
+              silently does nothing. */}
+          <span className="flex flex-wrap items-center justify-center gap-2">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-[13px] text-muted-dark transition-colors hover:text-accent-light"
+            >
+              {CONTACT_EMAIL}
+            </a>
+            <CopyEmail
+              value={CONTACT_EMAIL}
+              copyLabel={t('cta.copy')}
+              copiedLabel={t('cta.copied')}
+            />
+          </span>
         </div>
       </section>
 

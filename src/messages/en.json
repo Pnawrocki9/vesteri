@@ -158,7 +158,9 @@
     "cta": {
       "title": "We deliver demand, data, and direct contact with your clients, with no middlemen. Sales stay on your side, and we stand ready to help whenever you need us. You are not alone.",
       "sub": "Are you a developer in Cyprus, Spain, Greece or Portugal — or somewhere else? Let's talk about access to international capital!",
-      "btn": "Book a call"
+      "btn": "Book a call",
+      "copy": "Copy",
+      "copied": "Copied"
     },
     "footer": {
       "title": "From local demand to sales across the Mediterranean",
