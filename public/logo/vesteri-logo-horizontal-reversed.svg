@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260"><defs><linearGradient id="g5" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#3FA593"></stop><stop offset="0.45" stop-color="#1F8375"></stop><stop offset="1" stop-color="#125A50"></stop></linearGradient></defs>
+<g transform="translate(30,10) scale(0.55)"><g fill="url(#g5)"><path d="M 322 78 C 356 58 392 54 416 62 C 388 170 340 320 272 456 C 258 430 252 398 256 358 C 266 260 290 150 322 78 Z"></path>
+<path d="M 252 448 C 238 344 220 240 186 150 C 178 128 180 96 200 62 C 232 140 252 240 260 330 C 263 376 260 416 252 448 Z"></path>
+<path d="M 240 430 C 210 356 176 280 122 214 C 108 194 104 162 128 128 C 168 190 210 280 232 360 C 238 386 241 410 240 430 Z"></path>
+<path d="M 218 396 C 186 340 142 288 78 250 C 62 240 56 216 76 196 C 128 240 178 300 206 356 C 212 370 216 384 218 396 Z"></path></g></g>
+<text x="290" y="165" font-family="Montserrat, &#39;Century Gothic&#39;, Futura, sans-serif" font-weight="700" font-size="88" letter-spacing="18" fill="#F5F3EE">VESTERI</text></svg>
