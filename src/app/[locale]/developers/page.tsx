@@ -10,6 +10,7 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE_DISPLAY,
   CONTACT_PHONE_TEL,
+  INVESTOR_PLATFORM_URL,
 } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -43,7 +44,9 @@ export default async function DevelopersPage({ params }: Props) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo/vesteri-logo-horizontal.svg" alt="VESTERI" className="block h-11" />
         </Link>
-        <div className="flex items-center gap-4 md:gap-8">
+        {/* gap tightens at md: with three links the 32px spacing overflows
+            the viewport right at the breakpoint. */}
+        <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
           <a
             href="#jak"
             className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep md:inline"
@@ -55,6 +58,12 @@ export default async function DevelopersPage({ params }: Props) {
             className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep md:inline"
           >
             {t('nav.tech')}
+          </a>
+          <a
+            href={INVESTOR_PLATFORM_URL}
+            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep md:inline"
+          >
+            {t('nav.listings')}
           </a>
           <LanguageSwitch />
           {/* Scrolls to the closing CTA rather than opening mail directly: a
