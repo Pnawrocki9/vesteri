@@ -75,15 +75,17 @@ export default async function AboutPage({ params }: Props) {
       </nav>
 
       {/* Hero */}
-      <section className="grid grid-cols-1 items-center gap-10 bg-ink px-6 pt-[72px] pb-20 md:px-14 lg:grid-cols-[1.2fr_0.8fr] lg:pt-[110px] lg:pb-[120px]">
-        <h1 className="text-[44px] leading-[1.05] font-bold text-balance text-paper-alt sm:text-[64px] xl:text-[76px]">
+      {/* Title and mark read as one centred lockup rather than sitting at
+          opposite edges. */}
+      <section className="flex flex-col items-center justify-center gap-8 bg-ink px-6 pt-[72px] pb-20 md:px-14 lg:flex-row lg:gap-12 lg:pt-[110px] lg:pb-[120px]">
+        <h1 className="text-center text-[44px] leading-[1.05] font-bold text-balance text-paper-alt sm:text-[64px] xl:text-[76px]">
           {t('title')}
         </h1>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/logo/vesteri-mark-teal-gradient.svg"
           alt=""
-          className="block w-full max-w-[190px] justify-self-center [filter:drop-shadow(var(--drop-shadow-mark))] lg:max-w-[260px] lg:justify-self-end"
+          className="block w-full max-w-[190px] shrink-0 [filter:drop-shadow(var(--drop-shadow-mark))] lg:max-w-[230px]"
         />
       </section>
 
