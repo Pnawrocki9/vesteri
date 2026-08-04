@@ -1,24 +1,52 @@
 {
   "landing": {
-    "title": "VESTERI — Inwestycje w nieruchomości zagraniczne",
-    "lead": "Uporządkowana ścieżka inwestycji w nieruchomości za granicą.",
-    "points": [
-      "Pewni partnerzy",
-      "Technologia AI, która wie wszystko i jest zawsze obiektywna",
-      "Niezależne biura prawne i due diligence",
-      "Bezpośredni kontakt z deweloperami w jednym miejscu, bez wychodzenia z domu"
+    "meta": {
+      "title": "VESTERI — Nieruchomości za granicą bez chaosu | Cypr, Hiszpania, Włochy",
+      "description": "Vesteri porządkuje inwestowanie w nieruchomości zagraniczne: zweryfikowani deweloperzy, technologia AI, niezależne biura prawne i bezpośredni kontakt — bez wychodzenia z domu.",
+      "ogTitle": "VESTERI — Nieruchomości za granicą bez chaosu",
+      "ogDescription": "Zweryfikowani deweloperzy, obiektywna technologia AI i niezależne due diligence. Uporządkowana ścieżka inwestycji na rynkach śródziemnomorskich."
+    },
+    "kicker": "Rynki śródziemnomorskie · Zweryfikowani deweloperzy",
+    "h1": "Nieruchomość za granicą.<br></br>Bez <em>chaosu</em>.",
+    "lede": "Vesteri porządkuje to, co dotąd wymagało zaufania na słowo: rynek, dewelopera, prawnika i cały proces zakupu. Ty podejmujesz decyzję — my pilnujemy, żebyś podejmował ją świadomie.",
+    "pillars": [
+      {
+        "n": "01",
+        "t": "Pewni partnerzy",
+        "d": "Deweloperzy sprawdzeni, zanim cokolwiek zobaczysz."
+      },
+      {
+        "n": "02",
+        "t": "Technologia AI",
+        "d": "Wie wszystko o każdym projekcie i jest zawsze obiektywna."
+      },
+      {
+        "n": "03",
+        "t": "Niezależne prawo",
+        "d": "Biura prawne i due diligence bez konfliktu interesów."
+      },
+      {
+        "n": "04",
+        "t": "Kontakt bezpośredni",
+        "d": "Deweloperzy w jednym miejscu, bez wychodzenia z domu."
+      }
     ],
-    "closing": "Vesteri to nowy wymiar rynku nieruchomości zagranicznych. Łączymy nowoczesną technologię i prawdziwe ludzkie interakcje, niezależnie od dystansu.",
+    "ctaInvestor": "Dla Inwestora",
+    "ctaDeveloper": "Dla Dewelopera",
+    "marketsLabel": "Rynki",
+    "activeTag": "Pierwszy aktywny rynek",
+    "coordinates": "35.1264° N · 33.4299° E",
+    "reliefAlt": "Mapa reliefowa Cypru",
     "countries": {
       "cyp": "Cypr",
       "esp": "Hiszpania",
-      "prt": "Portugalia",
-      "ita": "Włochy"
+      "ita": "Włochy",
+      "prt": "Portugalia"
     },
-    "activeTag": "Pierwszy aktywny rynek",
     "soon": "Coming soon",
-    "ctaInvestor": "Dla Inwestora",
-    "ctaDeveloper": "Dla Dewelopera"
+    "closing": "Vesteri to nowy wymiar rynku nieruchomości zagranicznych. Łączymy nowoczesną technologię i prawdziwe ludzkie interakcje, niezależnie od dystansu.",
+    "footerCopyright": "© 2026 Vesteri",
+    "footerMarkets": "Cypr · Hiszpania · Włochy · Portugalia"
   },
   "developers": {
     "title": "VESTERI — Dla deweloperów",

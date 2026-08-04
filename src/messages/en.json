@@ -1,24 +1,52 @@
 {
   "landing": {
-    "title": "VESTERI — Property investment abroad",
-    "lead": "A clear path to property investment abroad.",
-    "points": [
-      "Partners you can count on",
-      "AI that knows every detail and stays objective",
-      "Independent law firms and due diligence",
-      "Direct contact with developers in one place, without leaving home"
+    "meta": {
+      "title": "VESTERI — Property abroad without the chaos | Cyprus, Spain, Italy",
+      "description": "Vesteri brings order to investing in property abroad: vetted developers, AI technology, independent law firms and direct contact — without leaving home.",
+      "ogTitle": "VESTERI — Property abroad without the chaos",
+      "ogDescription": "Vetted developers, objective AI technology and independent due diligence. A clear path to investing in Mediterranean markets."
+    },
+    "kicker": "Mediterranean markets · Verified developers",
+    "h1": "Property abroad.<br></br>Without the <em>chaos</em>.",
+    "lede": "Vesteri brings order to what used to run on blind trust: the market, the developer, the lawyer, and the whole buying process. You make the decision. We make sure it is an informed one.",
+    "pillars": [
+      {
+        "n": "01",
+        "t": "Partners you can count on",
+        "d": "Developers vetted before you see a single listing."
+      },
+      {
+        "n": "02",
+        "t": "AI technology",
+        "d": "Knows every project in depth and stays objective."
+      },
+      {
+        "n": "03",
+        "t": "Independent legal",
+        "d": "Law firms and due diligence with no conflict of interest."
+      },
+      {
+        "n": "04",
+        "t": "Direct contact",
+        "d": "Developers in one place, without leaving home."
+      }
     ],
-    "closing": "Vesteri brings a new dimension to international real estate. We combine smart technology with genuine human connection, making it easier to discover and buy property abroad, wherever you are.",
+    "ctaInvestor": "For Investors",
+    "ctaDeveloper": "For Developers",
+    "marketsLabel": "Markets",
+    "activeTag": "First active market",
+    "coordinates": "35.1264° N · 33.4299° E",
+    "reliefAlt": "Relief map of Cyprus",
     "countries": {
       "cyp": "Cyprus",
       "esp": "Spain",
-      "prt": "Portugal",
-      "ita": "Italy"
+      "ita": "Italy",
+      "prt": "Portugal"
     },
-    "activeTag": "First active market",
     "soon": "Coming soon",
-    "ctaInvestor": "For Investors",
-    "ctaDeveloper": "For Developers"
+    "closing": "Vesteri brings a new dimension to international real estate. We combine smart technology with genuine human connection, making it easier to discover and buy property abroad, wherever you are.",
+    "footerCopyright": "© 2026 Vesteri",
+    "footerMarkets": "Cyprus · Spain · Italy · Portugal"
   },
   "developers": {
     "title": "VESTERI — For developers",

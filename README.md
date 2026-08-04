@@ -99,10 +99,11 @@ przy 110m Cypr traci kształt).
 
 Skrypt `scripts/generate-geo.mjs`:
 
-- generuje sylwetki czterech rynków na landing (Cypr aktywny z gradientem
-  akcentu; Hiszpania, Portugalia i Włochy wyszarzone), z wymaganym filtrem
-  terytoriów zamorskich (Azory, Madera i Wyspy Kanaryjskie zniekształcałyby
-  skalę map),
+- generuje kontury trzech rynków „coming soon" na landingu (Hiszpania,
+  Włochy, Portugalia — 200×74), z wymaganym filtrem terytoriów zamorskich
+  (Azory, Madera i Wyspy Kanaryjskie zniekształcałyby skalę map). Aktywny
+  rynek, Cypr, pokazywany jest jako dostarczony render reliefowy
+  (`public/img/cyprus-relief.jpg`), nie jako generowana sylwetka,
 - generuje flagi w kształcie konturów sześciu krajów pochodzenia inwestorów
   (pasy flagi narodowej przycięte sylwetką kraju + połysk + cień),
 - zapisuje wynik do `src/generated/maps.ts` i `src/generated/flags.ts`
@@ -115,6 +116,18 @@ npm run generate:geo
 ```
 
 Dzięki temu przeglądarka nie pobiera geodanych ani d3 w czasie działania strony.
+
+## Typografia
+
+Montserrat ładowany jest w `src/app/[locale]/layout.tsx` dla całej strony.
+Landing wejściowy dokłada **Cormorant Garamond** (nagłówek H1, numery filarów,
+zdanie zamykające) — font ładowany jest lokalnie w `src/app/[locale]/page.tsx`
+i przypięty do korzenia landingu, więc strona dla deweloperów pozostaje przy
+samym Montserracie.
+
+Style specyficzne dla landingu (animowane tło cyklu słonecznego, kołysanie
+reliefu, krój serif) żyją w `src/app/[locale]/landing.css` — wszystkie klasy
+mają prefiks `lp-`, a arkusz ładuje się wyłącznie na ścieżce `/`.
 
 ## Tokeny designu
 

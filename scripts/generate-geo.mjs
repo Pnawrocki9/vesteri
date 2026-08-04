@@ -61,42 +61,33 @@ const banner =
   '// Regenerate with: npm run generate:geo\n';
 
 // ---------------------------------------------------------------------------
-// Entry-landing map silhouettes
+// Entry-landing market thumbnails ("coming soon" row)
+//
+// Cyprus is not here — the active market is shown as the supplied relief
+// render (public/img/cyprus-relief.jpg), not as a generated silhouette.
 // ---------------------------------------------------------------------------
 
 const MAPS = [
-  { key: 'cyp', id: '196', active: true },
   { key: 'esp', id: '724' },
-  { key: 'prt', id: '620' },
   { key: 'ita', id: '380' },
+  { key: 'prt', id: '620' },
 ];
 
-function mapSvg({ key, id, active }) {
-  const W = 260;
-  const H = 150;
+function mapSvg({ id }) {
+  const W = 200;
+  const H = 74;
   const geom = mainlandGeometry(featureById(id));
   const proj = geoMercator().fitExtent(
     [
-      [10, 10],
-      [W - 10, H - 10],
+      [8, 8],
+      [W - 8, H - 8],
     ],
     geom,
   );
   const d = geoPath(proj)(geom);
-  const gradId = `map-grad-${key}`;
-  const defs = active
-    ? `<defs><linearGradient id="${gradId}" x1="0" y1="0" x2="0.35" y2="1">` +
-      `<stop offset="0" stop-color="#3FA593"/>` +
-      `<stop offset="0.45" stop-color="#1F8375"/>` +
-      `<stop offset="1" stop-color="#125A50"/>` +
-      `</linearGradient></defs>`
-    : '';
-  const fill = active ? `url(#${gradId})` : '#E4E2DC';
-  const stroke = active ? '#125A50' : '#CFCDC6';
   return (
     `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">` +
-    defs +
-    `<path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="1" stroke-linejoin="round"/>` +
+    `<path d="${d}" fill="#E4E2DC" stroke="#CFCDC6" stroke-width="1" stroke-linejoin="round"/>` +
     `</svg>`
   );
 }
@@ -187,7 +178,7 @@ mkdirSync(outDir, { recursive: true });
 
 writeFileSync(
   join(outDir, 'maps.ts'),
-  `${banner}\nexport const countryMaps: Record<'cyp' | 'esp' | 'prt' | 'ita', string> = ${JSON.stringify(maps, null, 2)};\n`,
+  `${banner}\nexport const countryMaps: Record<'esp' | 'ita' | 'prt', string> = ${JSON.stringify(maps, null, 2)};\n`,
 );
 writeFileSync(
   join(outDir, 'flags.ts'),

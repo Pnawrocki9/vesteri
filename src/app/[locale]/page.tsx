@@ -1,125 +1,183 @@
 import type { Metadata } from 'next';
+import { Cormorant_Garamond } from 'next/font/google';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import { countryMaps } from '@/generated/maps';
 import { Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
 import { INVESTOR_PLATFORM_URL } from '@/lib/site';
+import './landing.css';
+
+// Display face for the entry landing only. Loaded here rather than in the
+// shared layout so the For Developers page keeps Montserrat alone.
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-cormorant',
+  display: 'swap',
+});
 
 type Props = { params: Promise<{ locale: string }> };
+
+const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB' } as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'landing' });
+  const current = OG_LOCALE[locale as keyof typeof OG_LOCALE];
   return {
-    title: t('title'),
+    title: t('meta.title'),
+    description: t('meta.description'),
     alternates: localeAlternates('/', locale),
+    openGraph: {
+      title: t('meta.ogTitle'),
+      description: t('meta.ogDescription'),
+      type: 'website',
+      locale: current,
+      alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== current),
+    },
   };
 }
 
-function MapCard({
-  country,
-  name,
-  active,
-  tag,
-}: {
-  country: keyof typeof countryMaps;
-  name: string;
-  active?: boolean;
-  tag: string;
-}) {
-  return (
-    <div className="flex w-full flex-col items-center gap-2.5 max-[900px]:w-[180px]">
-      <div
-        aria-hidden="true"
-        className="w-full [&_svg]:h-[150px] [&_svg]:w-full [&_svg]:overflow-visible"
-        dangerouslySetInnerHTML={{ __html: countryMaps[country] }}
-      />
-      <span
-        className={`text-[13px] font-bold tracking-[0.22em] uppercase ${
-          active ? 'text-ink' : 'text-muted-soft'
-        }`}
-      >
-        {name}
-      </span>
-      {active ? (
-        <span className="bg-accent-gradient rounded-full px-[13px] py-[5px] text-[10px] font-bold tracking-[0.14em] text-ink uppercase">
-          {tag}
-        </span>
-      ) : (
-        <span className="rounded-full border border-line px-3 py-1 text-[10px] font-semibold tracking-[0.14em] text-muted-soft uppercase">
-          {tag}
-        </span>
-      )}
-    </div>
-  );
-}
+type Pillar = { n: string; t: string; d: string };
 
 export default async function LandingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('landing');
-  const points = t.raw('points') as string[];
-
-  const colClass =
-    'flex w-full max-w-[280px] flex-col gap-9 max-[900px]:max-w-none max-[900px]:flex-row max-[900px]:justify-center';
+  const pillars = t.raw('pillars') as Pillar[];
+  const minis = [
+    { key: 'esp', name: t('countries.esp') },
+    { key: 'ita', name: t('countries.ita') },
+    { key: 'prt', name: t('countries.prt') },
+  ] as const;
 
   return (
-    <div className="flex min-h-screen flex-col bg-paper text-ink">
-      <LanguageSwitch variant="fixed" />
+    <div
+      className={`lp-root ${cormorant.variable} relative flex min-h-screen flex-col overflow-x-hidden bg-paper text-ink`}
+    >
+      <div className="lp-sky" aria-hidden="true" />
+      <div className="lp-sun" aria-hidden="true" />
 
-      <main className="mx-auto grid w-full max-w-[1280px] flex-1 grid-cols-[1fr_auto_1fr] items-center justify-items-center gap-6 px-12 pt-14 pb-8 max-[900px]:grid-cols-1 max-[900px]:gap-10 max-[900px]:px-6">
-        <div className={colClass}>
-          <MapCard country="esp" name={t('countries.esp')} tag={t('soon')} />
-          <MapCard country="prt" name={t('countries.prt')} tag={t('soon')} />
-        </div>
+      <header className="relative z-1 flex items-center justify-between border-b border-line px-14 py-[26px] max-[1080px]:px-7 max-[640px]:px-5">
+        <span className="flex items-center gap-[14px]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo/vesteri-mark-teal-gradient.svg" alt="" className="block h-[34px]" />
+          <span className="text-[17px] font-bold tracking-[0.34em] text-ink max-[640px]:text-[14px] max-[640px]:tracking-[0.24em]">
+            VESTERI
+          </span>
+        </span>
+        <LanguageSwitch />
+      </header>
 
-        <div className="flex flex-col items-center gap-[18px] text-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-mark-teal-gradient.svg" alt="" className="h-[190px]" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-wordmark.svg" alt="VESTERI" className="h-11" />
-          <div className="mt-1.5 max-w-[420px] text-left text-[14.5px] leading-[1.7] text-muted">
-            <p className="mb-[22px] text-center text-[17px] leading-[1.5] font-semibold text-ink">
-              {t('lead')}
-            </p>
-            <ul className="mb-[26px] flex flex-col gap-[11px]">
-              {points.map((point) => (
-                <li key={point} className="flex items-start gap-[11px]">
-                  <span
-                    aria-hidden="true"
-                    className="bg-dot-gradient mt-2 h-[5px] w-[5px] flex-none rounded-full"
-                  />
-                  {point}
-                </li>
-              ))}
-            </ul>
-            <p className="border-t border-accent pt-[22px] text-center text-[16.5px] leading-[1.6] font-medium text-ink italic">
-              {t('closing')}
-            </p>
+      <main className="relative z-1 mx-auto grid w-full max-w-[1360px] flex-1 grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] items-stretch gap-[72px] px-14 max-[1080px]:grid-cols-1 max-[1080px]:gap-0 max-[1080px]:px-7 max-[640px]:px-5">
+        {/* Left column — the promise */}
+        <section className="flex flex-col justify-center pt-[72px] pb-16 max-[640px]:pt-12 max-[640px]:pb-10">
+          <p className="mb-[26px] text-[12px] font-bold tracking-[0.26em] text-accent-deep uppercase">
+            {t('kicker')}
+          </p>
+          <h1 className="lp-serif mb-[26px] max-w-[560px] text-[64px] leading-[1.06] font-semibold text-balance text-ink max-[1080px]:text-[46px] max-[640px]:text-[34px]">
+            {t.rich('h1', {
+              br: () => <br />,
+              em: (chunks) => <em className="text-accent italic">{chunks}</em>,
+            })}
+          </h1>
+          <p className="mb-11 max-w-[520px] text-[16.5px] leading-[1.75] text-muted">
+            {t('lede')}
+          </p>
+
+          <div className="mb-12 grid max-w-[640px] grid-cols-2 border-t border-l border-line max-[640px]:grid-cols-1">
+            {pillars.map((pillar) => (
+              <div
+                key={pillar.n}
+                className="flex flex-col gap-2 border-r border-b border-line px-[22px] py-5"
+              >
+                <i className="lp-serif text-[22px] leading-none font-semibold text-accent-light not-italic">
+                  {pillar.n}
+                </i>
+                <b className="text-[13.5px] font-bold tracking-[0.02em] text-ink">{pillar.t}</b>
+                <span className="text-[12.5px] leading-[1.6] text-muted">{pillar.d}</span>
+              </div>
+            ))}
           </div>
-        </div>
 
-        <div className={colClass}>
-          <MapCard country="cyp" name={t('countries.cyp')} tag={t('activeTag')} active />
-          <MapCard country="ita" name={t('countries.ita')} tag={t('soon')} />
-        </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href={INVESTOR_PLATFORM_URL}
+              className="bg-accent-gradient rounded-btn px-[42px] py-[19px] text-[13.5px] font-bold tracking-[0.1em] text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"
+            >
+              {t('ctaInvestor')}
+            </a>
+            <Link
+              href="/developers"
+              className="rounded-btn border border-ink px-[42px] py-[18px] text-[13.5px] font-bold tracking-[0.1em] text-ink uppercase transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"
+            >
+              {t('ctaDeveloper')}
+            </Link>
+          </div>
+        </section>
+
+        {/* Right column — the cartographic proof */}
+        <aside
+          aria-label={t('marketsLabel')}
+          className="flex flex-col justify-center gap-[30px] border-l border-line py-14 pl-16 max-[1080px]:border-l-0 max-[1080px]:border-t max-[1080px]:pt-10 max-[1080px]:pb-14 max-[1080px]:pl-0"
+        >
+          <div className="relative border border-line bg-paper-alt/80 p-9 pb-7 backdrop-blur-[2px] max-[640px]:p-6 max-[640px]:pb-5">
+            <span className="bg-accent-gradient absolute -top-[11px] left-8 rounded-full px-[14px] py-[5px] text-[10px] font-bold tracking-[0.16em] text-paper uppercase max-[640px]:left-5">
+              {t('activeTag')}
+            </span>
+            <div className="mb-2 flex items-baseline justify-between gap-3">
+              <b className="text-[12px] font-bold tracking-[0.24em] text-ink uppercase">
+                {t('countries.cyp')}
+              </b>
+              <span className="text-[10.5px] tracking-[0.12em] text-muted-soft">
+                {t('coordinates')}
+              </span>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/img/cyprus-relief.jpg"
+              alt={t('reliefAlt')}
+              className="lp-relief block h-[300px] w-full object-contain mix-blend-multiply max-[640px]:h-[200px]"
+            />
+          </div>
+
+          <div className="grid grid-cols-3 gap-[18px] max-[640px]:grid-cols-2">
+            {minis.map((mini) => (
+              <div
+                key={mini.key}
+                className="flex flex-col items-center gap-2 border border-line bg-paper/80 px-[14px] pt-4 pb-3"
+              >
+                <div
+                  aria-hidden="true"
+                  className="w-full [&_svg]:block [&_svg]:h-[74px] [&_svg]:w-full"
+                  dangerouslySetInnerHTML={{ __html: countryMaps[mini.key] }}
+                />
+                <b className="text-[10.5px] font-bold tracking-[0.18em] text-muted-soft uppercase">
+                  {mini.name}
+                </b>
+                <span className="rounded-full border border-line px-[9px] py-[3px] text-[9px] font-semibold tracking-[0.12em] text-muted-soft uppercase">
+                  {t('soon')}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <p className="lp-serif border-l-2 border-accent pl-[18px] text-[19px] leading-[1.55] text-ink italic">
+            {t('closing')}
+          </p>
+        </aside>
       </main>
 
-      <nav className="flex flex-wrap justify-center gap-6 px-12 pt-2 pb-[72px]">
-        <a
-          href={INVESTOR_PLATFORM_URL}
-          className="bg-accent-gradient rounded-cta px-14 py-[22px] text-[15px] font-bold tracking-[0.12em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
-        >
-          {t('ctaInvestor')}
-        </a>
-        <Link
-          href="/developers"
-          className="rounded-cta bg-ink px-14 py-[22px] text-[15px] font-bold tracking-[0.12em] text-paper-alt uppercase shadow-cta-dark transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
-        >
-          {t('ctaDeveloper')}
-        </Link>
-      </nav>
+      <footer className="relative z-1 flex items-center justify-between gap-4 border-t border-line px-14 py-[18px] max-[1080px]:px-7 max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-2 max-[640px]:px-5">
+        <span className="text-[11px] tracking-[0.08em] text-muted-soft">
+          {t('footerCopyright')}
+        </span>
+        <span className="text-[11px] tracking-[0.08em] text-muted-soft">
+          {t('footerMarkets')}
+        </span>
+      </footer>
     </div>
   );
 }

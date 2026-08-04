@@ -1,0 +1,128 @@
+/*
+ * Entry-landing local styles.
+ *
+ * Deliberately NOT in globals.css: the sun-cycle background, the relief sway
+ * and the serif face belong to the entry landing only. Every class is
+ * prefixed `lp-` so nothing can collide with the For Developers page.
+ */
+
+/* The sun disc is positioned with custom properties; they only interpolate
+   when registered with a type, otherwise the sun stays put. */
+@property --lp-sx {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 20%;
+}
+@property --lp-sy {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 70%;
+}
+
+/* Body face. The shared `font-sans` utility currently resolves to nothing
+   (the --font-sans theme token does not reach :root), so every page falls
+   back to the system stack. Binding Montserrat directly here fixes it for
+   the landing without touching the shared theme — and therefore without
+   changing how the For Developers page renders. */
+.lp-root {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Display face (Cormorant Garamond) — the variable is provided by next/font
+   on the landing wrapper, so this resolves only inside the landing. */
+.lp-serif {
+  font-family: var(--font-cormorant), serif;
+}
+
+/* Two fixed background layers, 90s cycle: sunrise bottom-left, zenith top
+   centre, sunset bottom-right. */
+.lp-sky,
+.lp-sun {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lp-sky {
+  animation: lp-skyshift 90s linear infinite;
+}
+
+.lp-sun {
+  background: radial-gradient(
+    420px 420px at var(--lp-sx) var(--lp-sy),
+    rgba(231, 205, 151, 0.5),
+    rgba(231, 205, 151, 0.18) 45%,
+    transparent 70%
+  );
+  animation: lp-sunarc 90s linear infinite;
+}
+
+@keyframes lp-sunarc {
+  0% {
+    --lp-sx: -8%;
+    --lp-sy: 88%;
+  }
+  25% {
+    --lp-sx: 28%;
+    --lp-sy: 34%;
+  }
+  50% {
+    --lp-sx: 50%;
+    --lp-sy: 16%;
+  }
+  75% {
+    --lp-sx: 72%;
+    --lp-sy: 34%;
+  }
+  100% {
+    --lp-sx: 108%;
+    --lp-sy: 88%;
+  }
+}
+
+/* The shadow falls opposite the sun: warm glow rotates, cool shade trails it,
+   and at zenith the directional shade disappears. */
+@keyframes lp-skyshift {
+  0% {
+    background: linear-gradient(
+      100deg,
+      rgba(231, 205, 151, 0.14),
+      transparent 40%,
+      rgba(16, 22, 20, 0.07) 85%
+    );
+  }
+  50% {
+    background: linear-gradient(180deg, rgba(231, 205, 151, 0.08), transparent 55%);
+  }
+  100% {
+    background: linear-gradient(
+      260deg,
+      rgba(231, 205, 151, 0.14),
+      transparent 40%,
+      rgba(16, 22, 20, 0.07) 85%
+    );
+  }
+}
+
+/* The relief reads as a 3D object through a slow tilt in CSS perspective. */
+.lp-relief {
+  animation: lp-reliefsway 9s ease-in-out infinite alternate;
+}
+
+@keyframes lp-reliefsway {
+  from {
+    transform: perspective(900px) rotateY(-4deg) translateY(0);
+  }
+  to {
+    transform: perspective(900px) rotateY(4deg) translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-sky,
+  .lp-sun,
+  .lp-relief {
+    animation: none;
+  }
+}
