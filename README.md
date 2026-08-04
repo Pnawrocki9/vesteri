@@ -39,6 +39,17 @@ npm run preview    # build OpenNext + lokalny podgląd workera
 npm run deploy     # build OpenNext + wdrożenie na Cloudflare
 ```
 
+Wdrożenie jest zautomatyzowane: workflow `.github/workflows/deploy.yml` uruchamia
+`npm run deploy` po każdym pushu do gałęzi `claude/vesteri-website-kxnbng`
+(oraz ręcznie z zakładki Actions). Wymaga dwóch sekretów w ustawieniach
+repozytorium — **Settings → Secrets and variables → Actions**:
+
+- `CLOUDFLARE_API_TOKEN` — token z szablonu „Edit Cloudflare Workers",
+- `CLOUDFLARE_ACCOUNT_ID` — identyfikator konta Cloudflare.
+
+Bez tych sekretów workflow zakończy się błędem na kroku wdrożenia — sam push
+do GitHuba nie aktualizuje produkcji.
+
 ## Struktura katalogów
 
 ```
