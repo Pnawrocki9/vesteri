@@ -57,11 +57,13 @@ export default async function DevelopersPage({ params }: Props) {
             {t('nav.tech')}
           </a>
           <LanguageSwitch />
+          {/* Same action as the closing CTA: opens a mail to the contact
+              address with the subject prefilled. */}
           <a
-            href="#cta"
+            href={BOOK_CALL_HREF}
             className="rounded-btn bg-ink px-6 py-3 text-[13px] font-bold tracking-[0.1em] text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink"
           >
-            {t('nav.cta')}
+            {t('cta.btn')}
           </a>
         </div>
       </nav>
