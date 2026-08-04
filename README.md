@@ -28,6 +28,17 @@ Konfiguracja (opcjonalna) — skopiuj `.env.example` do `.env.local`:
 - `NEXT_PUBLIC_SITE_URL` — kanoniczna domena do tagów `hreflang`
   (domyślnie `https://vesteri.com`).
 
+## Wdrożenie — Cloudflare Workers
+
+Strona działa na Cloudflare Workers przez [OpenNext](https://opennext.js.org/cloudflare).
+Konfiguracja: `wrangler.jsonc` (nazwa workera, domeny `vesteri.com` i `www.vesteri.com`)
+oraz `open-next.config.ts`.
+
+```bash
+npm run preview    # build OpenNext + lokalny podgląd workera
+npm run deploy     # build OpenNext + wdrożenie na Cloudflare
+```
+
 ## Struktura katalogów
 
 ```
