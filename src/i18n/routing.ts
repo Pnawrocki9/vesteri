@@ -14,6 +14,10 @@ export const routing = defineRouting({
       pl: '/o-nas',
       en: '/about-us',
     },
+    '/platform': {
+      pl: '/platforma',
+      en: '/platform',
+    },
     '/privacy': {
       pl: '/polityka-prywatnosci',
       en: '/privacy-policy',

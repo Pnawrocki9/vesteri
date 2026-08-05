@@ -227,6 +227,16 @@
     "gdpr": "GDPR",
     "placeholder": "The content of this page is being prepared."
   },
+  "platform": {
+    "meta": {
+      "title": "VESTERI — Webinar & AI Platform",
+      "description": "A smarter way to discover, explore and invest in overseas property. Stay tuned."
+    },
+    "kicker": "Coming soon",
+    "headline": "The Vesteri Webinar & AI Platform",
+    "sub": "A smarter way to discover, explore and invest in overseas property. Stay tuned.",
+    "back": "Back to vesteri.com"
+  },
   "nav": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu"

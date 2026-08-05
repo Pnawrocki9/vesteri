@@ -5,7 +5,6 @@ import LanguageSwitch from '@/components/LanguageSwitch';
 import { countryMaps } from '@/generated/maps';
 import { Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
-import { INVESTOR_PLATFORM_URL } from '@/lib/site';
 import './landing.css';
 
 // Display face for the entry landing only. Loaded here rather than in the
@@ -104,12 +103,12 @@ export default async function LandingPage({ params }: Props) {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <a
-              href={INVESTOR_PLATFORM_URL}
+            <Link
+              href="/platform"
               className="bg-accent-gradient rounded-btn px-[42px] py-[19px] text-[13.5px] font-bold tracking-[0.1em] text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"
             >
               {t('ctaInvestor')}
-            </a>
+            </Link>
             <Link
               href="/developers"
               className="rounded-btn border border-ink px-[42px] py-[18px] text-[13.5px] font-bold tracking-[0.1em] text-ink uppercase transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"

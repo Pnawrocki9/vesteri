@@ -5,7 +5,6 @@ import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
-import { INVESTOR_PLATFORM_URL } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -34,6 +33,7 @@ export default async function AboutPage({ params }: Props) {
   // points at that section rather than opening mail from here.
   const developersHref = getPathname({ locale: locale as 'pl' | 'en', href: '/developers' });
   const ctaHref = `${developersHref}#cta`;
+  const platformHref = getPathname({ locale: locale as 'pl' | 'en', href: '/platform' });
 
   return (
     <div className="bg-paper-alt text-ink">
@@ -50,12 +50,12 @@ export default async function AboutPage({ params }: Props) {
           >
             {t('nav.developers')}
           </Link>
-          <a
-            href={INVESTOR_PLATFORM_URL}
+          <Link
+            href="/platform"
             className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
           >
             {t('nav.listings')}
-          </a>
+          </Link>
           <LanguageSwitch />
           <a
             href={ctaHref}
@@ -66,7 +66,7 @@ export default async function AboutPage({ params }: Props) {
           <MobileNav
             links={[
               { label: t('nav.developers'), href: developersHref },
-              { label: t('nav.listings'), href: INVESTOR_PLATFORM_URL },
+              { label: t('nav.listings'), href: platformHref },
             ]}
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}

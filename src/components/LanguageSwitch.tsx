@@ -9,8 +9,11 @@ import { usePathname, useRouter } from '@/i18n/navigation';
 // in a cookie so future visits keep it.
 export default function LanguageSwitch({
   variant = 'inline',
+  tone = 'light',
 }: {
   variant?: 'fixed' | 'inline';
+  // `dark` inverts the outline for placement on the ink ground.
+  tone?: 'light' | 'dark';
 }) {
   const t = useTranslations('langSwitch');
   const locale = useLocale();
@@ -31,9 +34,11 @@ export default function LanguageSwitch({
           { locale: other },
         )
       }
-      className={`${
-        variant === 'fixed' ? 'fixed top-6 right-7 z-20 ' : ''
-      }cursor-pointer rounded-btn border border-ink px-3.5 py-2 text-[12px] font-bold tracking-[0.1em] text-ink uppercase transition-[background-color,color] hover:bg-ink hover:text-paper-alt`}
+      className={`${variant === 'fixed' ? 'fixed top-6 right-7 z-20 ' : ''}${
+        tone === 'dark'
+          ? 'border-surface-dark text-paper-alt hover:bg-paper-alt hover:text-ink'
+          : 'border-ink text-ink hover:bg-ink hover:text-paper-alt'
+      } cursor-pointer rounded-btn border px-3.5 py-2 text-[12px] font-bold tracking-[0.1em] uppercase transition-[background-color,color]`}
     >
       {other}
     </button>

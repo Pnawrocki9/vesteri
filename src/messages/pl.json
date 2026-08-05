@@ -227,6 +227,16 @@
     "gdpr": "RODO",
     "placeholder": "Treść tej strony jest w przygotowaniu."
   },
+  "platform": {
+    "meta": {
+      "title": "VESTERI — Platforma webinarowa i AI",
+      "description": "Lepszy sposób, by odkrywać, poznawać i inwestować w nieruchomości za granicą. Bądź na bieżąco."
+    },
+    "kicker": "Już wkrótce",
+    "headline": "Platforma webinarowa i AI Vesteri",
+    "sub": "Lepszy sposób, by odkrywać, poznawać i inwestować w nieruchomości za granicą. Bądź na bieżąco.",
+    "back": "Powrót na vesteri.com"
+  },
   "nav": {
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu"

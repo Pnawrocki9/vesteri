@@ -7,7 +7,7 @@ import SiteFooter from '@/components/SiteFooter';
 import { countryFlags } from '@/generated/flags';
 import { getPathname, Link } from '@/i18n/navigation';
 import { localeAlternates } from '@/lib/metadata';
-import { BOOK_CALL_HREF, CONTACT_EMAIL, INVESTOR_PLATFORM_URL } from '@/lib/site';
+import { BOOK_CALL_HREF, CONTACT_EMAIL } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -63,12 +63,12 @@ export default async function DevelopersPage({ params }: Props) {
           >
             {t('nav.tech')}
           </a>
-          <a
-            href={INVESTOR_PLATFORM_URL}
+          <Link
+            href="/platform"
             className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
           >
             {t('nav.listings')}
-          </a>
+          </Link>
           <LanguageSwitch />
           {/* Scrolls to the closing CTA rather than opening mail directly: a
               mailto does nothing at all without a registered mail handler,
@@ -84,7 +84,7 @@ export default async function DevelopersPage({ params }: Props) {
               { label: tAbout('title'), href: getPathname({ locale: activeLocale, href: '/about' }) },
               { label: t('nav.how'), href: '#jak' },
               { label: t('nav.tech'), href: '#tech' },
-              { label: t('nav.listings'), href: INVESTOR_PLATFORM_URL },
+              { label: t('nav.listings'), href: getPathname({ locale: activeLocale, href: '/platform' }) },
             ]}
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}
