@@ -129,6 +129,21 @@ Style specyficzne dla landingu (animowane tło cyklu słonecznego, kołysanie
 reliefu, krój serif) żyją w `src/app/[locale]/landing.css` — wszystkie klasy
 mają prefiks `lp-`, a arkusz ładuje się wyłącznie na ścieżce `/`.
 
+## Dokumenty prawne
+
+Źródłem prawdy są pliki Markdown w `src/content/legal/<język>/<dokument>.md` —
+sześć dokumentów w dwóch językach (`privacy`, `terms`, `cookies`, `gdpr`, `ai`,
+`disclaimers`). W tym formacie są redagowane i opiniowane prawnie.
+
+Skrypt `scripts/generate-legal.mjs` wkleja je do `src/generated/legal.ts`, dzięki
+czemu strony importują gotowe łańcuchy znaków zamiast czytać dysk — środowisko
+Cloudflare Workers nie ma systemu plików. Skrypt przerywa build, jeśli któremuś
+dokumentowi brakuje tłumaczenia.
+
+Aby zmienić treść: popraw plik `.md` i uruchom build (albo `npm run generate:legal`).
+Renderowaniem zajmuje się `src/components/LegalPage.tsx` — mapa elementów wiąże
+Markdown ze skalą typograficzną strony, bez wtyczki `prose`.
+
 ## Tokeny designu
 
 Kolory, skala typografii, promienie i cienie z handoffu są zdefiniowane jako

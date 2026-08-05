@@ -9,13 +9,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal' });
   return {
-    title: `VESTERI — ${t('privacy')}`,
-    alternates: localeAlternates('/privacy', locale),
+    title: `VESTERI — ${t('ai')}`,
+    alternates: localeAlternates('/ai', locale),
   };
 }
 
 export default async function Page({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <LegalPage page="privacy" locale={locale as 'pl' | 'en'} />;
+  return <LegalPage page="ai" locale={locale as 'pl' | 'en'} />;
 }

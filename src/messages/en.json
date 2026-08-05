@@ -225,7 +225,9 @@
     "terms": "Terms of service",
     "cookies": "Cookies",
     "gdpr": "GDPR",
-    "placeholder": "The content of this page is being prepared."
+    "ai": "AI notice",
+    "disclaimers": "Disclaimers",
+    "sectionLabel": "Legal"
   },
   "platform": {
     "meta": {

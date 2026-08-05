@@ -225,7 +225,9 @@
     "terms": "Regulamin",
     "cookies": "Cookies",
     "gdpr": "RODO",
-    "placeholder": "Treść tej strony jest w przygotowaniu."
+    "ai": "Informacja o AI",
+    "disclaimers": "Zastrzeżenia",
+    "sectionLabel": "Informacje prawne"
   },
   "platform": {
     "meta": {

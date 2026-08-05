@@ -55,7 +55,7 @@ export default async function SiteFooter() {
             {t('footer.legalLabel')}
           </span>
           <div className="flex flex-col gap-2.5">
-            {(['privacy', 'terms', 'cookies', 'gdpr'] as const).map((page) => (
+            {(['privacy', 'terms', 'cookies', 'gdpr', 'ai', 'disclaimers'] as const).map((page) => (
               <Link
                 key={page}
                 href={`/${page}`}

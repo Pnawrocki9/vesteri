@@ -31,6 +31,14 @@ export const routing = defineRouting({
       pl: '/rodo',
       en: '/gdpr',
     },
+    '/ai': {
+      pl: '/informacja-o-ai',
+      en: '/ai-notice',
+    },
+    '/disclaimers': {
+      pl: '/zastrzezenia',
+      en: '/disclaimers',
+    },
   },
 });
 

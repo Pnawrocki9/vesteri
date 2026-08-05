@@ -5,18 +5,21 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "generate:geo": "node scripts/generate-geo.mjs",
-    "prebuild": "npm run generate:geo",
+    "prebuild": "npm run generate:geo && npm run generate:legal",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "generate:legal": "node scripts/generate-legal.mjs"
   },
   "dependencies": {
     "next": "15.5.22",
     "next-intl": "^4.13.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
