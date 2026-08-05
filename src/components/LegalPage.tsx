@@ -50,6 +50,11 @@ const components: Components = {
       {children}
     </a>
   ),
+  code: ({ children }: MdProps) => (
+    <code className="rounded-[3px] bg-paper px-1.5 py-0.5 font-mono text-[13px] text-ink">
+      {children}
+    </code>
+  ),
   hr: () => <hr className="my-10 border-line" />,
   blockquote: ({ children }: MdProps) => (
     <blockquote className="my-6 border-l-2 border-accent pl-5 text-[15px] text-muted">
