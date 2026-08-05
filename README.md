@@ -129,6 +129,23 @@ Style specyficzne dla landingu (animowane tło cyklu słonecznego, kołysanie
 reliefu, krój serif) żyją w `src/app/[locale]/landing.css` — wszystkie klasy
 mają prefiks `lp-`, a arkusz ładuje się wyłącznie na ścieżce `/`.
 
+## Analityka
+
+Strona korzysta z **Cloudflare Web Analytics** — analityki bez cookies, która
+nie zapisuje niczego na urządzeniu odwiedzającego, więc nie wymaga banera zgody.
+
+Beacon ładuje się tylko wtedy, gdy ustawiona jest zmienna
+`NEXT_PUBLIC_CF_BEACON_TOKEN` (panel Cloudflare → Analytics & Logs →
+Web Analytics → Add a site → token z fragmentu `data-cf-beacon`). Bez niej
+skrypt nie jest renderowany, więc buildy lokalne i podglądowe nie zaśmiecają
+statystyk produkcyjnych.
+
+W CI token dodaje się jako zmienna repozytorium (Settings → Secrets and
+variables → Actions → Variables) i przekazuje do kroku builda. Alternatywnie
+Cloudflare potrafi wstrzykiwać beacon automatycznie dla domen za swoim proxy —
+wtedy zmienna jest zbędna, ale wstrzyknięcie obejmuje całą domenę, także
+przyszłą platformę.
+
 ## Dokumenty prawne
 
 Źródłem prawdy są pliki Markdown w `src/content/legal/<język>/<dokument>.md` —

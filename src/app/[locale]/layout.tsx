@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import { SITE_URL } from '@/lib/site';
+import { CF_BEACON_TOKEN, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
 const montserrat = Montserrat({
@@ -42,6 +43,13 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${montserrat.variable} font-sans antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        {CF_BEACON_TOKEN && (
+          <Script
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            strategy="afterInteractive"
+            data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+          />
+        )}
       </body>
     </html>
   );

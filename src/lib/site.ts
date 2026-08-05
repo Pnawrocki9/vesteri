@@ -17,3 +17,9 @@ export const BOOK_CALL_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURICompon
 )}`;
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://vesteri.com';
+
+// Cloudflare Web Analytics beacon. Cookieless and storing nothing on the
+// visitor's device, so it needs no consent banner — see the cookies policy.
+// Unset means the beacon is simply not rendered, which keeps local and
+// preview builds out of the production stats.
+export const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN ?? '';
