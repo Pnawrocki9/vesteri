@@ -5,7 +5,7 @@ import Script from 'next/script';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import { CF_BEACON_TOKEN, SITE_URL } from '@/lib/site';
+import { CF_BEACON_TOKEN, HUBSPOT_PORTAL_ID, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
 const montserrat = Montserrat({
@@ -48,6 +48,13 @@ export default async function LocaleLayout({
             src="https://static.cloudflareinsights.com/beacon.min.js"
             strategy="afterInteractive"
             data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+          />
+        )}
+        {HUBSPOT_PORTAL_ID && (
+          <Script
+            id="hs-script-loader"
+            src={`https://js-eu1.hs-scripts.com/${HUBSPOT_PORTAL_ID}.js`}
+            strategy="afterInteractive"
           />
         )}
       </body>

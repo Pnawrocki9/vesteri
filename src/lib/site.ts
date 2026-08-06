@@ -23,3 +23,12 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://vesteri.com
 // Unset means the beacon is simply not rendered, which keeps local and
 // preview builds out of the production stats.
 export const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN ?? '';
+
+// HubSpot tracking code (EU data centre). Unlike the Cloudflare beacon this
+// DOES set tracking cookies (__hstc, hubspotutk, __hssc, __hssrc), so it
+// belongs behind a consent mechanism — either HubSpot's own cookie banner,
+// enabled in Settings → Privacy & Consent, or a CMP.
+// Override the portal id per environment to keep dev traffic out of HubSpot;
+// an empty value skips the script entirely.
+export const HUBSPOT_PORTAL_ID =
+  process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID ?? '147800534';
