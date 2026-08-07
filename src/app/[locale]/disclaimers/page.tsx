@@ -10,6 +10,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'legal' });
   return {
     title: `VESTERI — ${t('disclaimers')}`,
+    description: t('meta.disclaimers'),
     alternates: localeAlternates('/disclaimers', locale),
   };
 }

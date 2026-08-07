@@ -16,7 +16,12 @@ export const BOOK_CALL_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURICompon
   BOOK_CALL_SUBJECT,
 )}`;
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://vesteri.com';
+// Canonical host. Both vesteri.com and www.vesteri.com are bound as Cloudflare
+// custom domains (see wrangler.jsonc), so exactly one of them has to win in
+// canonical tags, hreflang and the sitemap — otherwise every page exists twice.
+// The www host is the live property, so it is the canonical one; the apex is
+// redirected to it with a 301 at the Cloudflare edge.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vesteri.com';
 
 // Cloudflare Web Analytics beacon. Cookieless and storing nothing on the
 // visitor's device, so it needs no consent banner — see the cookies policy.

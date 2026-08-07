@@ -50,6 +50,9 @@
   },
   "developers": {
     "title": "VESTERI — For developers",
+    "meta": {
+      "description": "Vesteri builds demand for property abroad, qualifies it on our own webinar platform and hands your team an investor who arrives ready."
+    },
     "nav": {
       "how": "How it works",
       "tech": "Technology",
@@ -228,7 +231,15 @@
     "gdpr": "GDPR",
     "ai": "AI notice",
     "disclaimers": "Disclaimers",
-    "sectionLabel": "Legal"
+    "sectionLabel": "Legal",
+    "meta": {
+      "privacy": "How Vesteri processes personal data: who the controller is, for what purposes and on what legal basis, who we share it with and how long we keep it.",
+      "terms": "Terms of electronic services for the Vesteri website and platform: the provider, the scope of services, webinar participation rules and complaints.",
+      "cookies": "Which cookies the Vesteri website and webinar platform use, who sets them, who receives the data, and how to manage your consent.",
+      "gdpr": "Your GDPR rights at Vesteri — access, rectification, erasure, restriction, portability and objection — and how to submit a request.",
+      "ai": "Where artificial intelligence operates within Vesteri: the AI assistant, readiness scoring, translations and human oversight. Art. 50 AI Act disclosures.",
+      "disclaimers": "Disclaimers for the Vesteri website and services: the nature of the services, developer vetting, the risks of investing abroad and liability limits."
+    }
   },
   "platform": {
     "meta": {
