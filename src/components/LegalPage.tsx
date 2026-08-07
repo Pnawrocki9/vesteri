@@ -5,8 +5,10 @@ import { getTranslations } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
+import JsonLd from '@/components/JsonLd';
 import { legalDocuments, type LegalSlug } from '@/generated/legal';
 import { getPathname, Link } from '@/i18n/navigation';
+import { breadcrumbJsonLd } from '@/lib/jsonld';
 
 type MdProps = { children?: ReactNode };
 
@@ -101,6 +103,9 @@ export default async function LegalPage({
 
   return (
     <div className="bg-paper-alt text-ink">
+      <JsonLd
+        nodes={[breadcrumbJsonLd({ href: `/${page}` as '/privacy', locale, name: t(page) })]}
+      />
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
         <Link href="/" className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
