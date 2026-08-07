@@ -58,7 +58,13 @@ export default async function DevelopersPage({ params }: Props) {
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
         <Link href="/" className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-logo-horizontal.svg" alt="VESTERI" className="block h-8 sm:h-11" />
+          <img
+            src="/logo/vesteri-logo-horizontal.svg"
+            width={900}
+            height={260}
+            alt="VESTERI"
+            className="block h-8 w-auto sm:h-11"
+          />
         </Link>
         {/* gap tightens at md: with three links the 32px spacing overflows
             the viewport right at the breakpoint. */}
@@ -146,6 +152,8 @@ export default async function DevelopersPage({ params }: Props) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo/vesteri-mark-teal-gradient.svg"
+              width={400}
+              height={430}
               alt=""
               className="animate-spin-y block w-full [filter:drop-shadow(var(--drop-shadow-mark))]"
             />
@@ -259,8 +267,11 @@ export default async function DevelopersPage({ params }: Props) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo/vesteri-mark-teal-flat.svg"
+                width={400}
+                height={430}
+                loading="lazy"
                 alt=""
-                className="h-[34px] self-start"
+                className="h-[34px] w-auto self-start"
               />
               <strong className="text-[18px] font-bold text-paper-alt">{card.t}</strong>
               <p className="text-[14px] leading-[1.7] text-muted-dark">{card.d}</p>
@@ -276,7 +287,14 @@ export default async function DevelopersPage({ params }: Props) {
       >
         <div className="mx-auto flex max-w-[860px] flex-col items-center gap-[22px] rounded-panel bg-ink p-8 text-center sm:p-16">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-mark-teal-gradient.svg" alt="" className="h-[72px]" />
+          <img
+            src="/logo/vesteri-mark-teal-gradient.svg"
+            width={400}
+            height={430}
+            loading="lazy"
+            alt=""
+            className="h-[72px] w-auto"
+          />
           <h2 className="text-[24px] font-bold text-balance text-paper-alt md:text-h2">
             {t('cta.title')}
           </h2>

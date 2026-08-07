@@ -109,7 +109,13 @@ export default async function LegalPage({
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
         <Link href="/" className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-logo-horizontal.svg" alt="VESTERI" className="block h-8 sm:h-11" />
+          <img
+            src="/logo/vesteri-logo-horizontal.svg"
+            width={900}
+            height={260}
+            alt="VESTERI"
+            className="block h-8 w-auto sm:h-11"
+          />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
           <Link

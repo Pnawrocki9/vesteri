@@ -20,8 +20,11 @@ export default async function SiteFooter() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo/vesteri-logo-horizontal-reversed.svg"
+              width={900}
+              height={260}
+              loading="lazy"
               alt="VESTERI"
-              className="block h-[38px]"
+              className="block h-[38px] w-auto"
             />
           </Link>
           <div className="flex flex-col gap-1.5">

@@ -36,8 +36,10 @@ export default async function PlatformPage({ params }: Props) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo/vesteri-logo-horizontal-reversed.svg"
+            width={900}
+            height={260}
             alt="VESTERI"
-            className="block h-8 sm:h-11"
+            className="block h-8 w-auto sm:h-11"
           />
         </Link>
         <LanguageSwitch tone="dark" />
@@ -47,6 +49,8 @@ export default async function PlatformPage({ params }: Props) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/logo/vesteri-mark-teal-gradient.svg"
+          width={400}
+          height={430}
           alt=""
           className="block w-full max-w-[130px] [filter:drop-shadow(var(--drop-shadow-mark))] sm:max-w-[160px]"
         />
