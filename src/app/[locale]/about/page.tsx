@@ -85,6 +85,7 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </nav>
 
+      <main>
       {/* Hero */}
       {/* Title and mark read as one centred lockup rather than sitting at
           opposite edges. */}
@@ -103,9 +104,9 @@ export default async function AboutPage({ params }: Props) {
       {/* Who we are */}
       <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
         <div className="mx-auto max-w-[760px]">
-          <span className="text-[13px] font-semibold tracking-[0.2em] text-accent-deep uppercase">
+          <h2 className="inline text-[13px] font-semibold tracking-[0.2em] text-accent-deep uppercase">
             {t('who.heading')}
-          </span>
+          </h2>
           <div className="mt-7 flex flex-col gap-6">
             {whoParagraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 32)} className="text-[16.5px] leading-[1.8] text-muted">
@@ -119,9 +120,9 @@ export default async function AboutPage({ params }: Props) {
       {/* Team */}
       <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
         <div className="mx-auto max-w-[1180px]">
-          <span className="text-[13px] font-semibold tracking-[0.2em] text-accent-deep uppercase">
+          <h2 className="inline text-[13px] font-semibold tracking-[0.2em] text-accent-deep uppercase">
             {t('team.heading')}
-          </span>
+          </h2>
           <div className="mt-9 grid grid-cols-1 gap-[18px] md:grid-cols-2 xl:grid-cols-3">
             {members.map((member) => (
               <article
@@ -129,7 +130,7 @@ export default async function AboutPage({ params }: Props) {
                 className="flex flex-col gap-3 rounded-card border border-line bg-white p-8"
               >
                 <span className="bg-accent-gradient h-[3px] w-10 rounded-full" aria-hidden="true" />
-                <h2 className="mt-2 text-[20px] font-bold text-ink">{member.name}</h2>
+                <h3 className="mt-2 text-[20px] font-bold text-ink">{member.name}</h3>
                 <span className="text-[12px] font-bold tracking-[0.16em] text-accent uppercase">
                   {member.role}
                 </span>
@@ -143,9 +144,9 @@ export default async function AboutPage({ params }: Props) {
       {/* Why we are building Vesteri */}
       <section className="bg-ink bg-[url(/pattern/vesteri-pattern-navy.svg)] bg-[length:180px] px-6 py-16 md:px-14 md:py-[100px]">
         <div className="mx-auto max-w-[760px]">
-          <span className="text-[13px] font-semibold tracking-[0.2em] text-accent-light uppercase">
+          <h2 className="inline text-[13px] font-semibold tracking-[0.2em] text-accent-light uppercase">
             {t('why.heading')}
-          </span>
+          </h2>
           <div className="mt-7 flex flex-col gap-6">
             {whyParagraphs.map((paragraph) => (
               <p
@@ -161,6 +162,8 @@ export default async function AboutPage({ params }: Props) {
           </p>
         </div>
       </section>
+
+      </main>
 
       <SiteFooter />
     </div>
