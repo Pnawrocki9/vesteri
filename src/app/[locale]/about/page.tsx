@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import JsonLd from '@/components/JsonLd';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
+import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -43,6 +45,9 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div className="bg-paper-alt text-ink">
+      <JsonLd
+        nodes={[breadcrumbJsonLd({ href: '/about', locale: locale as 'pl' | 'en', name: t('title') })]}
+      />
       {/* Nav — same treatment as the For Developers page */}
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
         <Link href="/" className="shrink-0">

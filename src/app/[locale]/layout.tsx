@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import JsonLd from '@/components/JsonLd';
 import { routing } from '@/i18n/routing';
+import { organizationJsonLd, webSiteJsonLd } from '@/lib/jsonld';
 import { CF_BEACON_TOKEN, HUBSPOT_PORTAL_ID, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
@@ -54,6 +56,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${montserrat.variable} font-sans antialiased`}>
+        {/* Site-level structured data — identical on every page, so it lives
+            here rather than being repeated by each one. */}
+        <JsonLd nodes={[organizationJsonLd(), webSiteJsonLd()]} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         {CF_BEACON_TOKEN && (
           <Script
