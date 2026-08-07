@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { routing, type AppPathname } from '@/i18n/routing';
+import { neutralUrl } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
 
 type Locale = (typeof routing.locales)[number];
@@ -32,7 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: {
           ...Object.fromEntries(routing.locales.map((l) => [l, absolute(href, l)])),
-          'x-default': absolute(href, routing.defaultLocale),
+          // Same language-neutral target the pages and the Link header use.
+          'x-default': neutralUrl(href),
         },
       },
     })),
