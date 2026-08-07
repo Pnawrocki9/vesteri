@@ -61,7 +61,13 @@ export default async function LandingPage({ params }: Props) {
       <header className="relative z-1 flex items-center justify-between border-b border-line px-14 py-[26px] max-[1080px]:px-7 max-[640px]:px-5">
         <span className="flex items-center gap-[14px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/vesteri-mark-teal-gradient.svg" alt="" className="block h-[34px]" />
+          <img
+            src="/logo/vesteri-mark-teal-gradient.svg"
+            width={400}
+            height={430}
+            alt=""
+            className="block h-[34px] w-auto"
+          />
           <span className="text-[17px] font-bold tracking-[0.34em] text-ink max-[640px]:text-[14px] max-[640px]:tracking-[0.24em]">
             VESTERI
           </span>
