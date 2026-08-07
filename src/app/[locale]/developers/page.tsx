@@ -6,7 +6,7 @@ import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { countryFlags } from '@/generated/flags';
 import { getPathname, Link } from '@/i18n/navigation';
-import { localeAlternates } from '@/lib/metadata';
+import { localeAlternates, socialMetadata } from '@/lib/metadata';
 import { BOOK_CALL_HREF, CONTACT_EMAIL } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -18,6 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('title'),
     description: t('meta.description'),
     alternates: localeAlternates('/developers', locale),
+    ...socialMetadata({
+      href: '/developers',
+      locale,
+      title: t('title'),
+      description: t('meta.description'),
+    }),
   };
 }
 

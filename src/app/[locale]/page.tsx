@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import { countryMaps } from '@/generated/maps';
 import { Link } from '@/i18n/navigation';
-import { localeAlternates } from '@/lib/metadata';
+import { localeAlternates, socialMetadata } from '@/lib/metadata';
 import './landing.css';
 
 // Display face for the entry landing only. Loaded here rather than in the
@@ -19,23 +19,21 @@ const cormorant = Cormorant_Garamond({
 
 type Props = { params: Promise<{ locale: string }> };
 
-const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB' } as const;
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'landing' });
-  const current = OG_LOCALE[locale as keyof typeof OG_LOCALE];
   return {
     title: t('meta.title'),
     description: t('meta.description'),
     alternates: localeAlternates('/', locale),
-    openGraph: {
+    // The landing keeps its own shorter social copy — the page title carries
+    // the market list, which reads as clutter in a share card.
+    ...socialMetadata({
+      href: '/',
+      locale,
       title: t('meta.ogTitle'),
       description: t('meta.ogDescription'),
-      type: 'website',
-      locale: current,
-      alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== current),
-    },
+    }),
   };
 }
 
