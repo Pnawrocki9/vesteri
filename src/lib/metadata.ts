@@ -1,9 +1,34 @@
 import type { Metadata } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { routing, type AppPathname } from '@/i18n/routing';
+import { SITE_URL } from '@/lib/site';
+
+// The language-neutral URL for a page: its default-locale path without the
+// locale prefix (`/o-nas`, `/regulamin`, and `/` for the home page). Those
+// paths are not dead ends — middleware answers them by negotiating from
+// Accept-Language, so /o-nas leads an English visitor to /en/about-us.
+//
+// This is what x-default is for, and it is already what next-intl advertises
+// in the `Link:` response header. Pointing x-default at the Polish version
+// instead, as this did, told the two transports different things.
+export function neutralPathname(href: AppPathname) {
+  const prefixed = getPathname({ locale: routing.defaultLocale, href });
+  return prefixed.replace(new RegExp(`^/${routing.defaultLocale}`), '') || '/';
+}
+
+// Absolute, and matching how Next writes it. Next resolves every alternate
+// through `new URL()`, which renders the site root as "https://www.vesteri.com"
+// with no trailing slash — there is no way to make it emit one. So the root
+// case drops the slash here too, and the sitemap spells the URL exactly as the
+// pages do. (next-intl's own `Link:` header still writes the root as "/", the
+// same URL in the other spelling; that header is not ours to format.)
+export function neutralUrl(href: AppPathname) {
+  const path = neutralPathname(href);
+  return path === '/' ? SITE_URL : `${SITE_URL}${path}`;
+}
 
 // hreflang alternates for a page: one entry per locale plus x-default
-// pointing at the Polish (default-locale) version.
+// pointing at the language-neutral URL.
 export function localeAlternates(
   href: AppPathname,
   locale: string,
@@ -15,7 +40,7 @@ export function localeAlternates(
     canonical: getPathname({ locale: locale as 'pl' | 'en', href }),
     languages: {
       ...languages,
-      'x-default': languages[routing.defaultLocale],
+      'x-default': neutralUrl(href),
     },
   };
 }
