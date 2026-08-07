@@ -94,7 +94,7 @@ export default async function LandingPage({ params }: Props) {
                 <i className="lp-serif text-[22px] leading-none font-semibold text-accent-light not-italic">
                   {pillar.n}
                 </i>
-                <b className="text-[13.5px] font-bold tracking-[0.02em] text-ink">{pillar.t}</b>
+                <h2 className="text-[13.5px] font-bold tracking-[0.02em] text-ink">{pillar.t}</h2>
                 <span className="text-[12.5px] leading-[1.6] text-muted">{pillar.d}</span>
               </div>
             ))}

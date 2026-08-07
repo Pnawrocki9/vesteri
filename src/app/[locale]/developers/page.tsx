@@ -110,6 +110,7 @@ export default async function DevelopersPage({ params }: Props) {
         </div>
       </nav>
 
+      <main>
       {/* 2.2 Hero */}
       {/* overflow-x-clip: at the peak of the entrance the mark reaches past
           the viewport and would flash a horizontal scrollbar. `clip` stops
@@ -306,6 +307,8 @@ export default async function DevelopersPage({ params }: Props) {
       </section>
 
       {/* 2.8 Footer */}
+      </main>
+
       <SiteFooter />
     </div>
   );

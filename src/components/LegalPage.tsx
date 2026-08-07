@@ -146,7 +146,7 @@ export default async function LegalPage({
         </div>
       </nav>
 
-      <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 gap-12 px-6 py-14 md:px-14 md:py-20 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
+      <main className="mx-auto grid w-full max-w-[1180px] grid-cols-1 gap-12 px-6 py-14 md:px-14 md:py-20 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
         {/* Index of the other documents — these are read side by side. */}
         <aside className="lg:sticky lg:top-[110px] lg:self-start">
           <span className="text-[11px] font-bold tracking-[0.16em] text-accent-deep uppercase">
@@ -174,7 +174,7 @@ export default async function LegalPage({
             {document}
           </Markdown>
         </article>
-      </div>
+      </main>
 
       <SiteFooter />
     </div>
