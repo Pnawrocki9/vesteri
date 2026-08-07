@@ -50,6 +50,9 @@
   },
   "developers": {
     "title": "VESTERI — Dla deweloperów",
+    "meta": {
+      "description": "Vesteri buduje popyt na nieruchomości zagraniczne, kwalifikuje go na własnej platformie webinarowej i przekazuje deweloperowi gotowego inwestora."
+    },
     "nav": {
       "how": "Jak działamy",
       "tech": "Technologia",
@@ -228,7 +231,15 @@
     "gdpr": "RODO",
     "ai": "Informacja o AI",
     "disclaimers": "Zastrzeżenia",
-    "sectionLabel": "Informacje prawne"
+    "sectionLabel": "Informacje prawne",
+    "meta": {
+      "privacy": "Jak Vesteri przetwarza dane osobowe: kto jest administratorem, w jakich celach i na jakiej podstawie, komu je udostępniamy i jak długo je przechowujemy.",
+      "terms": "Regulamin świadczenia usług drogą elektroniczną serwisu i platformy Vesteri: usługodawca, zakres usług, zasady udziału w webinarach i reklamacje.",
+      "cookies": "Jakie pliki cookies działają w serwisie i na platformie webinarowej Vesteri, kto je stosuje, kim są odbiorcy danych i jak zarządzać zgodą.",
+      "gdpr": "Twoje prawa wynikające z RODO w Vesteri — dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie i sprzeciw — oraz jak złożyć wniosek.",
+      "ai": "Gdzie w Vesteri działa sztuczna inteligencja: asystent AI, scoring gotowości zakupowej, tłumaczenia i nadzór człowieka. Ujawnienia wg art. 50 AI Act.",
+      "disclaimers": "Zastrzeżenia dotyczące serwisu i usług Vesteri: charakter usług, weryfikacja deweloperów, ryzyko inwestycji zagranicznych i granice odpowiedzialności."
+    }
   },
   "platform": {
     "meta": {

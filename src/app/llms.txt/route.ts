@@ -35,11 +35,19 @@ function entries(locale: Locale): { pages: Entry[]; legal: Entry[] } {
   return {
     pages: [
       { href: '/', title: m.landing.meta.title, description: m.landing.meta.description },
-      { href: '/developers', title: m.developers.title },
+      {
+        href: '/developers',
+        title: m.developers.title,
+        description: m.developers.meta.description,
+      },
       { href: '/about', title: m.about.meta.title, description: m.about.meta.description },
       { href: '/platform', title: m.platform.meta.title, description: m.platform.meta.description },
     ],
-    legal: LEGAL.map((slug) => ({ href: `/${slug}` as AppPathname, title: m.legal[slug] })),
+    legal: LEGAL.map((slug) => ({
+      href: `/${slug}` as AppPathname,
+      title: m.legal[slug],
+      description: m.legal.meta[slug],
+    })),
   };
 }
 
