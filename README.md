@@ -25,14 +25,19 @@ Konfiguracja (opcjonalna) — skopiuj `.env.example` do `.env.local`:
 
 - `NEXT_PUBLIC_INVESTOR_PLATFORM_URL` — adres platformy inwestorskiej
   (domyślnie `https://app.vesteri.com`),
-- `NEXT_PUBLIC_SITE_URL` — kanoniczna domena do tagów `hreflang`
-  (domyślnie `https://vesteri.com`).
+- `NEXT_PUBLIC_SITE_URL` — kanoniczna domena do tagów `canonical` i `hreflang`
+  (domyślnie `https://www.vesteri.com`).
 
 ## Wdrożenie — Cloudflare Workers
 
 Strona działa na Cloudflare Workers przez [OpenNext](https://opennext.js.org/cloudflare).
 Konfiguracja: `wrangler.jsonc` (nazwa workera, domeny `vesteri.com` i `www.vesteri.com`)
 oraz `open-next.config.ts`.
+
+Obie domeny są podpięte do workera, ale **kanoniczna jest `www.vesteri.com`** —
+apex `vesteri.com` musi być przekierowany na nią kodem 301 regułą w panelu
+Cloudflare (Rules → Redirect Rules). Bez tej reguły oba hosty zwracają 200
+i cała strona istnieje w indeksie podwójnie.
 
 ```bash
 npm run preview    # build OpenNext + lokalny podgląd workera
