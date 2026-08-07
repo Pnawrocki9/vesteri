@@ -15,10 +15,22 @@ const montserrat = Montserrat({
   display: 'swap',
 });
 
+// Defaults for anything that does not set its own — the not-found page, most
+// obviously. Pages build their full card through socialMetadata() instead,
+// because Next.js replaces `openGraph` rather than merging it.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
     icon: [{ url: '/logo/vesteri-mark-teal-gradient.svg', type: 'image/svg+xml' }],
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'VESTERI',
+    images: [{ url: '/og/vesteri-og.png', width: 1200, height: 630, alt: 'VESTERI' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og/vesteri-og.png'],
   },
 };
 

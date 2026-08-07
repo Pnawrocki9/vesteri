@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import { Link } from '@/i18n/navigation';
-import { localeAlternates } from '@/lib/metadata';
+import { localeAlternates, socialMetadata } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -13,6 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('meta.title'),
     description: t('meta.description'),
     alternates: localeAlternates('/platform', locale),
+    ...socialMetadata({
+      href: '/platform',
+      locale,
+      title: t('meta.title'),
+      description: t('meta.description'),
+    }),
     // Nothing to index until the platform ships.
     robots: { index: false, follow: true },
   };

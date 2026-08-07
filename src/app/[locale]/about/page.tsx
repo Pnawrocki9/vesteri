@@ -4,7 +4,7 @@ import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
-import { localeAlternates } from '@/lib/metadata';
+import { localeAlternates, socialMetadata } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -15,6 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('meta.title'),
     description: t('meta.description'),
     alternates: localeAlternates('/about', locale),
+    ...socialMetadata({
+      href: '/about',
+      locale,
+      title: t('meta.title'),
+      description: t('meta.description'),
+    }),
   };
 }
 

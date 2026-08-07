@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LegalPage from '@/components/LegalPage';
-import { localeAlternates } from '@/lib/metadata';
+import { localeAlternates, socialMetadata } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -12,6 +12,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `VESTERI — ${t('ai')}`,
     description: t('meta.ai'),
     alternates: localeAlternates('/ai', locale),
+    ...socialMetadata({
+      href: '/ai',
+      locale,
+      title: `VESTERI — ${t('ai')}`,
+      description: t('meta.ai'),
+    }),
   };
 }
 
