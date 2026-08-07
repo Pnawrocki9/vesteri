@@ -141,10 +141,17 @@ export default async function LandingPage({ params }: Props) {
                 {t('coordinates')}
               </span>
             </div>
+            {/* The landing's LCP element, so it declares its intrinsic size
+                (CSS still sizes it) and asks for priority. The file is a
+                1200px-wide re-encode of the 4500px original, which shipped
+                822 KB to fill a box Lighthouse measured at 408x302. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/img/cyprus-relief.jpg"
+              src="/img/cyprus-relief-1200.jpg"
               alt={t('reliefAlt')}
+              width={1200}
+              height={675}
+              fetchPriority="high"
               className="lp-relief block h-[300px] w-full object-contain mix-blend-multiply max-[640px]:h-[200px]"
             />
           </div>
