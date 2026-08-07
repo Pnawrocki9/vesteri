@@ -9,7 +9,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal' });
   return {
-    title: `VESTERI — ${t('cookies')}`,
+    // A separate key from the `cookies` label: the short label is what the
+    // footers and the document sidebar show, and both locales spell it the
+    // same way, which left the two pages sharing one title.
+    title: `VESTERI — ${t('cookiesTitle')}`,
     description: t('meta.cookies'),
     alternates: localeAlternates('/cookies', locale),
     ...socialMetadata({
