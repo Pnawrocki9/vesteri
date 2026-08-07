@@ -1,0 +1,13 @@
+# Security headers for files served straight from the assets binding.
+#
+# next.config.ts sets these for everything the Worker renders, but static files
+# under public/ never reach it — Cloudflare answers them from the assets
+# binding first. Verified against workerd: without this file the logos and the
+# relief image come back with no security headers at all.
+#
+# Keep the two lists in step. Strict-Transport-Security is absent here for the
+# same reason it is absent there: Cloudflare terminates TLS and owns HSTS.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
