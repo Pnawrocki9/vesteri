@@ -1,0 +1,44 @@
+name: CI
+
+# Checks every pull request without deploying anything. deploy.yml only reacts
+# to pushes on the production branch, so without this a broken change is only
+# caught after it has been merged.
+on:
+  pull_request:
+  workflow_dispatch:
+
+# A new push to the same pull request supersedes the run in progress.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      # Also type-checks: `next build` runs tsc as part of the build.
+      # prebuild regenerates the maps, flags and legal documents first.
+      - run: npm run build
+
+      # src/generated is produced by the prebuild scripts and committed, so the
+      # two can drift — someone edits a generated file by hand, or changes a
+      # legal .md without rebuilding. The build above has just regenerated
+      # everything; if that produced a diff, the committed copies were stale.
+      - name: Generated files match their sources
+        run: |
+          if ! git diff --quiet -- src/generated; then
+            echo "::error::src/generated is out of date. Run 'npm run build' (or generate:geo / generate:legal) and commit the result."
+            git diff --stat -- src/generated
+            exit 1
+          fi
