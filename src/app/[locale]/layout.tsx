@@ -22,9 +22,16 @@ const montserrat = Montserrat({
 // because Next.js replaces `openGraph` rather than merging it.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // SVG first for browsers that take it, .ico for those that do not, and the
+  // 180px PNG for the iOS home screen — iOS ignores SVG icons entirely.
   icons: {
-    icon: [{ url: '/logo/vesteri-mark-teal-gradient.svg', type: 'image/svg+xml' }],
+    icon: [
+      { url: '/logo/vesteri-mark-teal-gradient.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
   },
+  manifest: '/manifest.webmanifest',
   openGraph: {
     type: 'website',
     siteName: 'VESTERI',

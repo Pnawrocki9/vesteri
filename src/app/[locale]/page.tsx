@@ -39,11 +39,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 type Pillar = { n: string; t: string; d: string };
 
+// Same order as the shared SiteFooter, so the two footers agree.
+const LEGAL_PAGES = ['privacy', 'terms', 'cookies', 'gdpr', 'ai', 'disclaimers'] as const;
+
 export default async function LandingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('landing');
   const tAbout = await getTranslations('about');
+  const tLegal = await getTranslations('legal');
   const pillars = t.raw('pillars') as Pillar[];
   const minis = [
     { key: 'esp', name: t('countries.esp') },
@@ -189,13 +193,28 @@ export default async function LandingPage({ params }: Props) {
         </aside>
       </main>
 
-      <footer className="relative z-1 flex items-center justify-between gap-4 border-t border-line px-14 py-[18px] max-[1080px]:px-7 max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-2 max-[640px]:px-5">
-        <span className="text-[11px] tracking-[0.08em] text-muted-soft">
-          {t('footerCopyright')}
-        </span>
-        <span className="text-[11px] tracking-[0.08em] text-muted-soft">
-          {t('footerMarkets')}
-        </span>
+      {/* The legal documents are reachable from every other template's footer,
+          but this is the entry page and it had no route to them at all. */}
+      <footer className="relative z-1 flex flex-col gap-3 border-t border-line px-14 py-[18px] max-[1080px]:px-7 max-[640px]:px-5">
+        <nav className="flex flex-wrap gap-x-5 gap-y-1.5">
+          {LEGAL_PAGES.map((slug) => (
+            <Link
+              key={slug}
+              href={`/${slug}`}
+              className="text-[11px] tracking-[0.08em] text-muted-soft transition-colors hover:text-accent-deep"
+            >
+              {tLegal(slug)}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex items-center justify-between gap-4 max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-2">
+          <span className="text-[11px] tracking-[0.08em] text-muted-soft">
+            {t('footerCopyright')}
+          </span>
+          <span className="text-[11px] tracking-[0.08em] text-muted-soft">
+            {t('footerMarkets')}
+          </span>
+        </div>
       </footer>
     </div>
   );
