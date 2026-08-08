@@ -258,5 +258,12 @@
   },
   "langSwitch": {
     "label": "Przełącz język"
+  },
+  "notFound": {
+    "kicker": "Błąd 404",
+    "title": "Nie znaleźliśmy tej strony",
+    "sub": "Adres może być nieaktualny albo zawierać literówkę. Poniżej znajdziesz drogę powrotną.",
+    "home": "Strona główna",
+    "developers": "Dla deweloperów"
   }
 }
