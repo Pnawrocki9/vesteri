@@ -258,5 +258,12 @@
   },
   "langSwitch": {
     "label": "Switch language"
+  },
+  "notFound": {
+    "kicker": "Error 404",
+    "title": "We could not find that page",
+    "sub": "The address may be out of date or contain a typo. Here is the way back.",
+    "home": "Home",
+    "developers": "For developers"
   }
 }

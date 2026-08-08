@@ -22,6 +22,10 @@ const montserrat = Montserrat({
 // because Next.js replaces `openGraph` rather than merging it.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // Pages all set their own title; this default exists for not-found.tsx,
+  // which Next does not allow a metadata export of. Without it the 404 tab
+  // shows the raw URL.
+  title: { default: 'VESTERI', template: '%s' },
   // SVG first for browsers that take it, .ico for those that do not, and the
   // 180px PNG for the iOS home screen — iOS ignores SVG icons entirely.
   icons: {
