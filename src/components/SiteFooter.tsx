@@ -1,4 +1,5 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
+import { articlesByLocale, type ArticleLocale } from '@/generated/articles';
 import { Link } from '@/i18n/navigation';
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from '@/lib/site';
 
@@ -8,6 +9,11 @@ import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from '@/lib/s
 export default async function SiteFooter() {
   const t = await getTranslations('developers');
   const tLegal = await getTranslations('legal');
+  const tArticles = await getTranslations('articles');
+  // Shown only where the section exists in this language: the listing 404s in
+  // a locale with nothing written for it.
+  const locale = (await getLocale()) as ArticleLocale;
+  const hasArticles = Object.keys(articlesByLocale[locale] ?? {}).length > 0;
 
   return (
     <footer className="bg-ink-deep px-6 pt-[72px] pb-9 md:px-14">
@@ -54,6 +60,14 @@ export default async function SiteFooter() {
           </div>
         </div>
         <div className="flex flex-col gap-3.5 md:text-right">
+          {hasArticles && (
+            <Link
+              href="/articles"
+              className="mb-2 self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
+            >
+              {tArticles('heading')}
+            </Link>
+          )}
           <span className="text-[11px] font-bold tracking-[0.16em] text-accent-light uppercase">
             {t('footer.legalLabel')}
           </span>
