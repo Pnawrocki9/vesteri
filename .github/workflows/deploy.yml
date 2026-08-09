@@ -4,6 +4,8 @@ name: Deploy to Cloudflare Workers
 # main development branch. Requires two repository secrets:
 #   CLOUDFLARE_API_TOKEN   — token with the "Edit Cloudflare Workers" template
 #   CLOUDFLARE_ACCOUNT_ID  — the account the worker lives in
+# and reads one optional repository variable:
+#   NEXT_PUBLIC_CF_BEACON_TOKEN — Cloudflare Web Analytics site token
 on:
   push:
     branches:
@@ -36,3 +38,10 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # A NEXT_PUBLIC_* value is inlined into the client bundle at build
+          # time, not read at runtime, so it has to be present for this step —
+          # setting it on the worker afterwards would do nothing. It is a
+          # variable rather than a secret because the token ships in the page
+          # source anyway; masking it in the logs would only hide it from us.
+          # Unset, the beacon is not rendered and the deploy still succeeds.
+          NEXT_PUBLIC_CF_BEACON_TOKEN: ${{ vars.NEXT_PUBLIC_CF_BEACON_TOKEN }}
