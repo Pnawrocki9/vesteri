@@ -4,7 +4,6 @@ description: Dokumenty rejestrowe, opinie, trzy referencje od wcześniejszych ku
 slug: jak-weryfikujemy-deweloperow
 published: 2026-08-08
 author: piotr
-draft: true
 ---
 
 Kupując mieszkanie w swoim mieście, sprawdzasz dewelopera niemal odruchowo.

@@ -4,7 +4,6 @@ description: Company records, reviews, three references from previous buyers, an
 slug: how-we-vet-developers
 published: 2026-08-08
 author: piotr
-draft: true
 ---
 
 Buying a flat in your own city, you check the developer almost by reflex. You
