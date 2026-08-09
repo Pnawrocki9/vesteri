@@ -265,5 +265,18 @@
     "sub": "Adres może być nieaktualny albo zawierać literówkę. Poniżej znajdziesz drogę powrotną.",
     "home": "Strona główna",
     "developers": "Dla deweloperów"
+  },
+  "articles": {
+    "meta": {
+      "title": "VESTERI — Poradnik",
+      "description": "Praktyczne przewodniki o inwestowaniu w nieruchomości za granicą: proces zakupu, weryfikacja dewelopera, formalności i ryzyka."
+    },
+    "heading": "Poradnik",
+    "lede": "Co trzeba wiedzieć, zanim kupisz nieruchomość za granicą.",
+    "published": "Opublikowano",
+    "updated": "Aktualizacja",
+    "author": "Autor",
+    "backToList": "Wróć do poradnika",
+    "otherLanguage": "Ten tekst nie ma wersji polskiej. Zobacz pozostałe artykuły."
   }
 }

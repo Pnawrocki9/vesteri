@@ -265,5 +265,18 @@
     "sub": "The address may be out of date or contain a typo. Here is the way back.",
     "home": "Home",
     "developers": "For developers"
+  },
+  "articles": {
+    "meta": {
+      "title": "VESTERI — Guides",
+      "description": "Practical guides to investing in property abroad: the buying process, vetting a developer, paperwork and risks."
+    },
+    "heading": "Guides",
+    "lede": "What to know before you buy property abroad.",
+    "published": "Published",
+    "updated": "Updated",
+    "author": "Author",
+    "backToList": "Back to the guides",
+    "otherLanguage": "This piece has no English version. See the other guides."
   }
 }

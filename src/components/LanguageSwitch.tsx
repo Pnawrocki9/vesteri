@@ -10,10 +10,16 @@ import { usePathname, useRouter } from '@/i18n/navigation';
 export default function LanguageSwitch({
   variant = 'inline',
   tone = 'light',
+  targetHref,
 }: {
   variant?: 'fixed' | 'inline';
   // `dark` inverts the outline for placement on the ink ground.
   tone?: 'light' | 'dark';
+  // Where to land in the other language, when it is not simply this page in
+  // that language. Articles need it for two reasons: their slugs are
+  // translated, so reusing the current one would 404, and a piece written for
+  // one market may have no version in the other language at all.
+  targetHref?: { pathname: string; params?: Record<string, string> };
 }) {
   const t = useTranslations('langSwitch');
   const locale = useLocale();
@@ -28,9 +34,8 @@ export default function LanguageSwitch({
       aria-label={t('label')}
       onClick={() =>
         router.replace(
-          // Pass through dynamic params (none today, but future-proof).
           // @ts-expect-error -- pathname/params pair is valid at runtime
-          { pathname, params },
+          targetHref ?? { pathname, params },
           { locale: other },
         )
       }

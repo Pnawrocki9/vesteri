@@ -18,6 +18,16 @@ export const routing = defineRouting({
       pl: '/platforma',
       en: '/platform',
     },
+    '/articles': {
+      pl: '/poradnik',
+      en: '/guides',
+    },
+    // The slug is localized per article, so the Polish and English versions of
+    // one piece live at addresses in their own language rather than sharing one.
+    '/articles/[slug]': {
+      pl: '/poradnik/[slug]',
+      en: '/guides/[slug]',
+    },
     '/privacy': {
       pl: '/polityka-prywatnosci',
       en: '/privacy-policy',
@@ -43,3 +53,8 @@ export const routing = defineRouting({
 });
 
 export type AppPathname = keyof typeof routing.pathnames;
+
+// Routes with no dynamic segment. Helpers that build a URL from a pathname
+// alone — canonicals, hreflang, breadcrumbs, the sitemap — can only work with
+// these; anything carrying a [slug] needs the slug supplied with it.
+export type StaticPathname = Exclude<AppPathname, `${string}[${string}]${string}`>;

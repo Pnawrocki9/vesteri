@@ -1,5 +1,6 @@
 import { getPathname } from '@/i18n/navigation';
-import { routing, type AppPathname } from '@/i18n/routing';
+import { articleIndex, articlesByLocale } from '@/generated/articles';
+import { routing, type StaticPathname } from '@/i18n/routing';
 import en from '@/messages/en.json';
 import pl from '@/messages/pl.json';
 import { CONTACT_EMAIL, SITE_URL } from '@/lib/site';
@@ -21,10 +22,10 @@ const MESSAGES: Record<Locale, Messages> = { en, pl: pl as Messages };
 
 const LEGAL = ['privacy', 'terms', 'cookies', 'gdpr', 'ai', 'disclaimers'] as const;
 
-const absolute = (href: AppPathname, locale: Locale) =>
+const absolute = (href: StaticPathname, locale: Locale) =>
   `${SITE_URL}${getPathname({ locale, href })}`;
 
-type Entry = { href: AppPathname; title: string; description?: string };
+type Entry = { href: StaticPathname; title: string; description?: string };
 
 // Titles and descriptions come straight from the message catalogue — the same
 // strings the pages put in <title> and <meta name="description">. Where a page
@@ -44,11 +45,26 @@ function entries(locale: Locale): { pages: Entry[]; legal: Entry[] } {
       { href: '/platform', title: m.platform.meta.title, description: m.platform.meta.description },
     ],
     legal: LEGAL.map((slug) => ({
-      href: `/${slug}` as AppPathname,
+      href: `/${slug}` as StaticPathname,
       title: m.legal[slug],
       description: m.legal.meta[slug],
     })),
   };
+}
+
+// Articles are addressed by a translated slug, so they cannot go through the
+// static-pathname helper above.
+function articleEntries(locale: Locale) {
+  return articleIndex
+    .map(({ id }) => articlesByLocale[locale][id])
+    .filter((article) => article !== undefined)
+    .map(
+      (article) =>
+        `- [${article.title}](${SITE_URL}${getPathname({
+          locale,
+          href: { pathname: '/articles/[slug]', params: { slug: article.slug } },
+        })}): ${article.description}`,
+    );
 }
 
 const line = (entry: Entry, locale: Locale) =>
@@ -74,8 +90,14 @@ function body() {
     `/pl/ and an /en/ path. The canonical host is ${SITE_URL}.`,
     '',
     section('English pages', english.pages, 'en'),
+    ...(articleEntries('en').length
+      ? [['## English guides', '', ...articleEntries('en'), ''].join('\n')]
+      : []),
     section('English legal documents', english.legal, 'en'),
     section('Polish pages', polish.pages, 'pl'),
+    ...(articleEntries('pl').length
+      ? [['## Polish guides (Poradnik)', '', ...articleEntries('pl'), ''].join('\n')]
+      : []),
     section('Polish legal documents', polish.legal, 'pl'),
     '## Notes',
     '',
