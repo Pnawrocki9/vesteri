@@ -146,10 +146,19 @@ skrypt nie jest renderowany, więc buildy lokalne i podglądowe nie zaśmiecają
 statystyk produkcyjnych.
 
 W CI token dodaje się jako zmienna repozytorium (Settings → Secrets and
-variables → Actions → Variables) i przekazuje do kroku builda. Alternatywnie
-Cloudflare potrafi wstrzykiwać beacon automatycznie dla domen za swoim proxy —
-wtedy zmienna jest zbędna, ale wstrzyknięcie obejmuje całą domenę, także
-przyszłą platformę.
+variables → Actions → **Variables**, nie Secrets — token i tak jest widoczny
+w źródle strony) o nazwie `NEXT_PUBLIC_CF_BEACON_TOKEN`. `deploy.yml` przekazuje
+ją do kroku `npm run deploy`; sama zmienna w panelu GitHuba nie wystarczy, bo
+Actions nie udostępnia zmiennych krokom automatycznie.
+
+Wartość `NEXT_PUBLIC_*` jest wklejana do bundle'a **w czasie builda**, nie
+czytana w runtime. Dlatego po dodaniu zmiennej trzeba uruchomić deploy od nowa
+(Actions → Deploy to Cloudflare Workers → Run workflow); ustawienie jej na
+gotowym workerze nic nie zmieni.
+
+Alternatywnie Cloudflare potrafi wstrzykiwać beacon automatycznie dla domen za
+swoim proxy — wtedy zmienna jest zbędna, ale wstrzyknięcie obejmuje całą domenę,
+także przyszłą platformę.
 
 ## Dokumenty prawne
 
