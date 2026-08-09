@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "generate:geo": "node scripts/generate-geo.mjs",
-    "prebuild": "npm run generate:geo && npm run generate:legal",
+    "generate:articles": "node scripts/generate-articles.mjs",
+    "prebuild": "npm run generate:geo && npm run generate:legal && npm run generate:articles",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getPathname } from '@/i18n/navigation';
-import { routing, type AppPathname } from '@/i18n/routing';
+import { routing, type StaticPathname } from '@/i18n/routing';
+import type { ArticleLocale } from '@/generated/articles';
 import { SITE_URL } from '@/lib/site';
 
 // The language-neutral URL for a page: its default-locale path without the
@@ -11,7 +12,7 @@ import { SITE_URL } from '@/lib/site';
 // This is what x-default is for, and it is already what next-intl advertises
 // in the `Link:` response header. Pointing x-default at the Polish version
 // instead, as this did, told the two transports different things.
-export function neutralPathname(href: AppPathname) {
+export function neutralPathname(href: StaticPathname) {
   const prefixed = getPathname({ locale: routing.defaultLocale, href });
   return prefixed.replace(new RegExp(`^/${routing.defaultLocale}`), '') || '/';
 }
@@ -22,7 +23,7 @@ export function neutralPathname(href: AppPathname) {
 // case drops the slash here too, and the sitemap spells the URL exactly as the
 // pages do. (next-intl's own `Link:` header still writes the root as "/", the
 // same URL in the other spelling; that header is not ours to format.)
-export function neutralUrl(href: AppPathname) {
+export function neutralUrl(href: StaticPathname) {
   const path = neutralPathname(href);
   return path === '/' ? SITE_URL : `${SITE_URL}${path}`;
 }
@@ -30,7 +31,7 @@ export function neutralUrl(href: AppPathname) {
 // hreflang alternates for a page: one entry per locale plus x-default
 // pointing at the language-neutral URL.
 export function localeAlternates(
-  href: AppPathname,
+  href: StaticPathname,
   locale: string,
 ): Metadata['alternates'] {
   const languages = Object.fromEntries(
@@ -42,6 +43,33 @@ export function localeAlternates(
       ...languages,
       'x-default': neutralUrl(href),
     },
+  };
+}
+
+// hreflang for an article, which — unlike every other page — may not exist in
+// both languages. Pieces written for the Polish market ship in both; pieces for
+// other markets ship in English only.
+//
+// Two things follow. Only the locales an article actually has are advertised,
+// because claiming a version that answers 404 is an hreflang reciprocity error.
+// And x-default cannot use the site's usual neutral URL: that trick relies on
+// middleware negotiating an unprefixed path, which cannot work when the slug
+// itself is translated — /poradnik/podatki-na-cyprze has no meaning to an
+// English visitor. So x-default points at the default locale's version when
+// there is one, and at the article itself when there is not.
+export function articleAlternates({
+  locale,
+  available,
+}: {
+  locale: ArticleLocale;
+  /** Locale → the article's absolute URL in that locale. */
+  available: Partial<Record<ArticleLocale, string>>;
+}): Metadata['alternates'] {
+  const languages = Object.fromEntries(Object.entries(available)) as Record<string, string>;
+  const fallback = available[routing.defaultLocale] ?? available[locale]!;
+  return {
+    canonical: available[locale]!,
+    languages: { ...languages, 'x-default': fallback },
   };
 }
 
@@ -69,7 +97,7 @@ export function socialMetadata({
   title,
   description,
 }: {
-  href: AppPathname;
+  href: StaticPathname;
   locale: string;
   title: string;
   description?: string;

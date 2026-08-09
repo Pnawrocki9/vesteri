@@ -1,5 +1,5 @@
 import { getPathname } from '@/i18n/navigation';
-import { routing, type AppPathname } from '@/i18n/routing';
+import { routing, type StaticPathname } from '@/i18n/routing';
 import { CONTACT_EMAIL, CONTACT_PHONE_TEL, SITE_URL } from '@/lib/site';
 
 // Structured data for the site.
@@ -65,11 +65,11 @@ export function breadcrumbJsonLd({
   locale,
   name,
 }: {
-  href: AppPathname;
+  href: StaticPathname;
   locale: Locale;
   name: string;
 }) {
-  const absolute = (target: AppPathname) => `${SITE_URL}${getPathname({ locale, href: target })}`;
+  const absolute = (target: StaticPathname) => `${SITE_URL}${getPathname({ locale, href: target })}`;
   return {
     '@type': 'BreadcrumbList',
     itemListElement: [
