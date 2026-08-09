@@ -4,7 +4,6 @@ description: Na jednej wyspie działają dwa porządki prawne. Od tego, po któr
 slug: cypr-polnocny-a-republika-cypru
 published: 2026-08-08
 author: piotr
-draft: true
 ---
 
 Kiedy w ogłoszeniu widzisz „nieruchomość na Cyprze", ta jedna nazwa może
@@ -97,10 +96,6 @@ Cztery rzeczy do zweryfikowania, zanim cokolwiek podpiszesz:
    jest Twoim prawnikiem.
 
 ## Gdzie w tym jesteśmy
-
-<!-- DO POTWIERDZENIA PRZEZ PIOTRA przed publikacją — napisałem to ostrożnie,
-     ale nie mam podstaw, żeby samodzielnie stwierdzić zakres Waszej
-     działalności. Popraw albo potwierdź. -->
 
 Vesteri działa na rynku Republiki Cypryjskiej. Każdy deweloper przechodzi
 weryfikację przed dopuszczeniem do platformy, a stroną prawną transakcji

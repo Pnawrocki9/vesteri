@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond } from 'next/font/google';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import { articlesByLocale, type ArticleLocale } from '@/generated/articles';
 import { countryMaps } from '@/generated/maps';
 import { Link } from '@/i18n/navigation';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
@@ -48,6 +49,8 @@ export default async function LandingPage({ params }: Props) {
   const t = await getTranslations('landing');
   const tAbout = await getTranslations('about');
   const tLegal = await getTranslations('legal');
+  const tArticles = await getTranslations('articles');
+  const hasArticles = Object.keys(articlesByLocale[locale as ArticleLocale] ?? {}).length > 0;
   const pillars = t.raw('pillars') as Pillar[];
   const minis = [
     { key: 'esp', name: t('countries.esp') },
@@ -197,6 +200,14 @@ export default async function LandingPage({ params }: Props) {
           but this is the entry page and it had no route to them at all. */}
       <footer className="relative z-1 flex flex-col gap-3 border-t border-line px-14 py-[18px] max-[1080px]:px-7 max-[640px]:px-5">
         <nav className="flex flex-wrap gap-x-5 gap-y-1.5">
+          {hasArticles && (
+            <Link
+              href="/articles"
+              className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
+            >
+              {tArticles('heading')}
+            </Link>
+          )}
           {LEGAL_PAGES.map((slug) => (
             <Link
               key={slug}

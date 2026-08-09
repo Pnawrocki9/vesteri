@@ -58,19 +58,34 @@ function articleEntries(): MetadataRoute.Sitemap {
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = routing.locales.flatMap((locale) =>
     INDEXABLE
-      // The index has nothing to show until the first article ships, and an
-      // empty listing is not worth indexing.
-      .filter((href) => href !== '/articles' || articleIndex.length > 0)
-      .map((href) => ({
-        url: absolute(href, locale),
-        alternates: {
-          languages: {
-            ...Object.fromEntries(routing.locales.map((l) => [l, absolute(href, l)])),
-            // Same language-neutral target the pages and the Link header use.
-            'x-default': neutralUrl(href),
+      // The listing 404s in a locale with nothing written for it, so it is
+      // advertised per locale — not whenever any article exists anywhere.
+      // Polish-market pieces ship in both languages, others in English only,
+      // so one locale can have a listing while the other does not.
+      .filter(
+        (href) =>
+          href !== '/articles' || Object.keys(articlesByLocale[locale]).length > 0,
+      )
+      .map((href) => {
+        // Same rule applied to the alternates: a listing that 404s in the
+        // other language must not be advertised as its counterpart.
+        const locales =
+          href === '/articles'
+            ? routing.locales.filter((l) => Object.keys(articlesByLocale[l]).length > 0)
+            : routing.locales;
+        return {
+          url: absolute(href, locale),
+          alternates: {
+            languages: {
+              ...Object.fromEntries(locales.map((l) => [l, absolute(href, l)])),
+              // Same language-neutral target the pages and the Link header use.
+              'x-default': locales.includes(routing.defaultLocale)
+                ? neutralUrl(href)
+                : absolute(href, locales[0]),
+            },
           },
-        },
-      })),
+        };
+      }),
   );
   return [...pages, ...articleEntries()];
 }

@@ -5,10 +5,12 @@ import JsonLd from '@/components/JsonLd';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
-import { articleIndex, articlesByLocale } from '@/generated/articles';
+import { articleIndex, articlesByLocale, type ArticleLocale } from '@/generated/articles';
 import { getPathname, Link } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
-import { localeAlternates, socialMetadata } from '@/lib/metadata';
+import { articleAlternates, socialMetadata } from '@/lib/metadata';
+import { SITE_URL } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -18,7 +20,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: localeAlternates('/articles', locale),
+    // Only the languages that actually have a listing. The Polish one exists
+    // as soon as a Polish-market piece ships; the English one may not, and
+    // pointing at it would advertise a 404.
+    alternates: articleAlternates({
+      locale: locale as ArticleLocale,
+      available: Object.fromEntries(
+        routing.locales
+          .filter((l) => Object.keys(articlesByLocale[l]).length > 0)
+          .map((l) => [l, `${SITE_URL}${getPathname({ locale: l, href: '/articles' })}`]),
+      ),
+    }),
     ...socialMetadata({
       href: '/articles',
       locale,
