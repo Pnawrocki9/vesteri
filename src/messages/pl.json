@@ -34,19 +34,27 @@
     "ctaInvestor": "Dla Inwestora",
     "ctaDeveloper": "Dla Dewelopera",
     "marketsLabel": "Rynki",
-    "activeTag": "Pierwszy aktywny rynek",
-    "coordinates": "35.1264° N · 33.4299° E",
-    "reliefAlt": "Mapa reliefowa Cypru",
+    "activeTag": "Rynki aktywne",
+    "activeShort": "Aktywny",
+    "coords": {
+      "cyp": "35.1264° N · 33.4299° E",
+      "tha": "13.7563° N · 100.5018° E"
+    },
+    "reliefAlt": {
+      "cyp": "Mapa reliefowa Cypru",
+      "tha": "Mapa reliefowa Tajlandii"
+    },
     "countries": {
       "cyp": "Cypr",
       "esp": "Hiszpania",
       "ita": "Włochy",
-      "prt": "Portugalia"
+      "prt": "Portugalia",
+      "tha": "Tajlandia"
     },
     "soon": "Coming soon",
     "closing": "Vesteri to nowy wymiar rynku nieruchomości zagranicznych. Łączymy nowoczesną technologię i prawdziwe ludzkie interakcje, niezależnie od dystansu.",
     "footerCopyright": "© 2026 Vesteri",
-    "footerMarkets": "Cypr · Hiszpania · Włochy · Portugalia"
+    "footerMarkets": "Cypr · Tajlandia · Hiszpania · Włochy · Portugalia"
   },
   "developers": {
     "title": "VESTERI — Dla deweloperów",

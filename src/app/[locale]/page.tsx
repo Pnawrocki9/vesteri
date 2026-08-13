@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond } from 'next/font/google';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import MarketSlider, { type ActiveMarket, type SoonMarket } from '@/components/MarketSlider';
 import { articlesByLocale, type ArticleLocale } from '@/generated/articles';
 import { countryMaps } from '@/generated/maps';
 import { Link } from '@/i18n/navigation';
@@ -52,11 +53,37 @@ export default async function LandingPage({ params }: Props) {
   const tArticles = await getTranslations('articles');
   const hasArticles = Object.keys(articlesByLocale[locale as ArticleLocale] ?? {}).length > 0;
   const pillars = t.raw('pillars') as Pillar[];
-  const minis = [
-    { key: 'esp', name: t('countries.esp') },
-    { key: 'ita', name: t('countries.ita') },
-    { key: 'prt', name: t('countries.prt') },
-  ] as const;
+  // Live markets carry a relief render; planned ones the generated silhouette.
+  // The first entry is the one the panel opens on and the landing's LCP image.
+  // Relief renders are licensed stock (Thailand: Alamy 2R5W9WH, Studio Maras,
+  // standard licence), re-encoded down to what the panel actually displays.
+  const activeMarkets: ActiveMarket[] = [
+    {
+      key: 'cyp',
+      name: t('countries.cyp'),
+      coords: t('coords.cyp'),
+      alt: t('reliefAlt.cyp'),
+      slide: '/img/cyprus-relief-1200.jpg',
+      thumb: '/img/cyprus-relief-thumb.jpg',
+      width: 1200,
+      height: 675,
+    },
+    {
+      key: 'tha',
+      name: t('countries.tha'),
+      coords: t('coords.tha'),
+      alt: t('reliefAlt.tha'),
+      slide: '/img/thailand-relief-900.jpg',
+      thumb: '/img/thailand-relief-thumb.jpg',
+      width: 532,
+      height: 900,
+    },
+  ];
+  const soonMarkets: SoonMarket[] = (['esp', 'ita', 'prt'] as const).map((key) => ({
+    key,
+    name: t(`countries.${key}`),
+    svg: countryMaps[key],
+  }));
 
   return (
     <div
@@ -142,53 +169,13 @@ export default async function LandingPage({ params }: Props) {
           aria-label={t('marketsLabel')}
           className="flex flex-col justify-center gap-[30px] border-l border-line py-14 pl-16 max-[1080px]:border-l-0 max-[1080px]:border-t max-[1080px]:pt-10 max-[1080px]:pb-14 max-[1080px]:pl-0"
         >
-          <div className="relative border border-line bg-paper-alt/80 p-9 pb-7 backdrop-blur-[2px] max-[640px]:p-6 max-[640px]:pb-5">
-            <span className="bg-accent-gradient absolute -top-[11px] left-8 rounded-full px-[14px] py-[5px] text-[10px] font-bold tracking-[0.16em] text-paper uppercase max-[640px]:left-5">
-              {t('activeTag')}
-            </span>
-            <div className="mb-2 flex items-baseline justify-between gap-3">
-              <b className="text-[12px] font-bold tracking-[0.24em] text-ink uppercase">
-                {t('countries.cyp')}
-              </b>
-              <span className="text-[10.5px] tracking-[0.12em] text-muted-soft">
-                {t('coordinates')}
-              </span>
-            </div>
-            {/* The landing's LCP element, so it declares its intrinsic size
-                (CSS still sizes it) and asks for priority. The file is a
-                1200px-wide re-encode of the 4500px original, which shipped
-                822 KB to fill a box Lighthouse measured at 408x302. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/img/cyprus-relief-1200.jpg"
-              alt={t('reliefAlt')}
-              width={1200}
-              height={675}
-              fetchPriority="high"
-              className="lp-relief block h-[300px] w-full object-contain mix-blend-multiply max-[640px]:h-[200px]"
-            />
-          </div>
-
-          <div className="grid grid-cols-3 gap-[18px] max-[640px]:grid-cols-2">
-            {minis.map((mini) => (
-              <div
-                key={mini.key}
-                className="flex flex-col items-center gap-2 border border-line bg-paper/80 px-[14px] pt-4 pb-3"
-              >
-                <div
-                  aria-hidden="true"
-                  className="w-full [&_svg]:block [&_svg]:h-[74px] [&_svg]:w-full"
-                  dangerouslySetInnerHTML={{ __html: countryMaps[mini.key] }}
-                />
-                <b className="text-[10.5px] font-bold tracking-[0.18em] text-muted-soft uppercase">
-                  {mini.name}
-                </b>
-                <span className="rounded-full border border-line px-[9px] py-[3px] text-[9px] font-semibold tracking-[0.12em] text-muted-soft uppercase">
-                  {t('soon')}
-                </span>
-              </div>
-            ))}
-          </div>
+          <MarketSlider
+            active={activeMarkets}
+            soon={soonMarkets}
+            activeTag={t('activeTag')}
+            activeShort={t('activeShort')}
+            soonLabel={t('soon')}
+          />
 
           <p className="lp-serif border-l-2 border-accent pl-[18px] text-[19px] leading-[1.55] text-ink italic">
             {t('closing')}
