@@ -1,6 +1,6 @@
 # POLITYKA PRYWATNOŚCI
 
-**Serwis i platforma Vesteri** · Wersja 1.0 · Data wejścia w życie: 5 sierpnia 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.1 · Data wejścia w życie: 13 sierpnia 2026 r.
 
 ## 1. Kto jest administratorem Twoich danych
 
@@ -11,7 +11,7 @@ Kontakt w sprawach danych osobowych: **privacy@vesteri.com** lub listownie na ad
 
 ## 2. Jak działa Vesteri — przejrzysty opis przetwarzania
 
-Vesteri pomaga inwestorom z Polski (docelowo także z innych krajów UE) świadomie inwestować w nieruchomości na rynkach śródziemnomorskich (obecnie: Cypr). Twoje dane przetwarzamy na kolejnych etapach:
+Vesteri pomaga inwestorom z Polski (docelowo także z innych krajów UE) świadomie inwestować w nieruchomości na wybranych rynkach zagranicznych (obecnie: Cypr, Tajlandia). Twoje dane przetwarzamy na kolejnych etapach:
 
 1. **Marketing lokalny** — docierają do Ciebie nasze reklamy projektów deweloperskich (targetowane geograficznie i językowo).
 2. **Informacje i czat AI** — udostępniamy komplet informacji o projektach w Twoim języku; pytania możesz zadawać asystentowi AI.

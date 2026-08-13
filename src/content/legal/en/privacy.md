@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Vesteri website and platform** · Version 1.0 · Effective date: 5 August 2026
+**Vesteri website and platform** · Version 1.1 · Effective date: 13 August 2026
 
 ## 1. Who is the controller of your data
 
@@ -11,7 +11,7 @@ Contact for personal data matters: **privacy@vesteri.com** or by post to the add
 
 ## 2. How Vesteri works — a transparent description of processing
 
-Vesteri helps investors from Poland (and, over time, other EU countries) invest knowingly in property on Mediterranean markets (currently: Cyprus). We process your data at the following stages:
+Vesteri helps investors from Poland (and, over time, other EU countries) invest knowingly in property on selected markets abroad (currently: Cyprus, Thailand). We process your data at the following stages:
 
 1. **Local marketing** — you see our advertisements for developer projects (targeted by geography and language).
 2. **Information and AI chat** — we provide complete project information in your language; you can ask questions to an AI assistant.

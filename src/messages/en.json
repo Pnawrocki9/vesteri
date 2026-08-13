@@ -1,12 +1,12 @@
 {
   "landing": {
     "meta": {
-      "title": "VESTERI — Property abroad without the chaos | Cyprus, Spain, Italy",
+      "title": "VESTERI — Property abroad without the chaos | Cyprus, Thailand and more",
       "description": "Vesteri brings order to investing in property abroad: vetted developers, AI technology, independent law firms and direct contact — without leaving home.",
       "ogTitle": "VESTERI — Property abroad without the chaos",
-      "ogDescription": "Vetted developers, objective AI technology and independent due diligence. A clear path to investing in Mediterranean markets."
+      "ogDescription": "Vetted developers, objective AI technology and independent due diligence. A clear path to investing in selected markets abroad."
     },
-    "kicker": "Mediterranean markets · Verified developers",
+    "kicker": "Carefully selected markets · Verified developers",
     "h1": "Property abroad.<br></br>Without the <em>chaos</em>.",
     "lede": "Vesteri brings order to what used to run on blind trust: the market, the developer, the lawyer, and the whole buying process. You make the decision. We make sure it is an informed one.",
     "pillars": [
@@ -67,7 +67,7 @@
       "listings": "Listings Portal"
     },
     "hero": {
-      "kicker": "Foreign capital · Mediterranean markets",
+      "kicker": "Foreign capital · Selected markets",
       "title": "Demand from across Europe in one place. Qualified by technology. Delivered to your team.",
       "sub": "Vesteri builds demand for property abroad, qualifies it on our own webinar platform, and hands you an investor who arrives ready, with a full profile of what they want.",
       "cta": "Become a partner",

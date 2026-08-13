@@ -1,12 +1,12 @@
 {
   "landing": {
     "meta": {
-      "title": "VESTERI — Nieruchomości za granicą bez chaosu | Cypr, Hiszpania, Włochy",
+      "title": "VESTERI — Nieruchomości za granicą bez chaosu | Cypr, Tajlandia i kolejne rynki",
       "description": "Vesteri porządkuje inwestowanie w nieruchomości za granicą: zweryfikowani deweloperzy, AI, niezależne biura prawne i kontakt bez wychodzenia z domu.",
       "ogTitle": "VESTERI — Nieruchomości za granicą bez chaosu",
-      "ogDescription": "Zweryfikowani deweloperzy, obiektywna technologia AI i niezależne due diligence. Uporządkowana ścieżka inwestycji na rynkach śródziemnomorskich."
+      "ogDescription": "Zweryfikowani deweloperzy, obiektywna technologia AI i niezależne due diligence. Uporządkowana ścieżka inwestycji na wybranych rynkach zagranicznych."
     },
-    "kicker": "Rynki śródziemnomorskie · Zweryfikowani deweloperzy",
+    "kicker": "Starannie wybrane rynki · Zweryfikowani deweloperzy",
     "h1": "Nieruchomość za granicą.<br></br>Bez <em>chaosu</em>.",
     "lede": "Vesteri porządkuje to, co dotąd wymagało zaufania na słowo: rynek, dewelopera, prawnika i cały proces zakupu. Ty podejmujesz decyzję — my pilnujemy, żebyś podejmował ją świadomie.",
     "pillars": [
@@ -67,7 +67,7 @@
       "listings": "Listings Portal"
     },
     "hero": {
-      "kicker": "Zagraniczny kapitał · Rynki śródziemnomorskie",
+      "kicker": "Zagraniczny kapitał · Wybrane rynki",
       "title": "Kupujący z całej Europy. Precyzyjnie kwalifikowani przez technologię. Gotowi do rozmowy z Twoim zespołem.",
       "sub": "Vesteri buduje popyt na nieruchomości zagraniczne, kwalifikuje go na własnej platformie webinarowej i przekazuje deweloperowi gotowego, opisanego inwestora.",
       "cta": "Zostań partnerem",
