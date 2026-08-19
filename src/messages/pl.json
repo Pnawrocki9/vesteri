@@ -260,6 +260,73 @@
     "sub": "Lepszy sposób, by odkrywać, poznawać i inwestować w nieruchomości za granicą. Bądź na bieżąco.",
     "back": "Powrót na vesteri.com"
   },
+  "partners": {
+    "meta": {
+      "title": "Zostań partnerem | Vesteri",
+      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: zweryfikowane inwestycje, pokazy na żywo i podział prowizji nawet 50/50."
+    },
+    "navCta": "Zostań partnerem",
+    "hero": {
+      "title": "Twoi klienci. Nasze nieruchomości. Jeden uścisk dłoni.",
+      "sub": "Znasz ludzi z kapitałem, którzy pytają o nieruchomości za granicą. My znamy deweloperów, rynki i sposób, żeby je pokazać — na żywo. Podzielmy się tym, co z tego wyniknie.",
+      "cta": "Zostań partnerem"
+    },
+    "invitation": {
+      "heading": "Te pieniądze do tej pory przechodziły Ci koło nosa",
+      "body": [
+        "Za każdym razem, gdy klient wspomina o Hiszpanii, Cyprze albo Dubaju, a Ty zmieniasz temat — z pokoju wychodzi prowizja. Nie dlatego, że zrobiłeś coś źle. Dlatego, że nie miałeś nic do zaoferowania."
+      ],
+      "accent": "Teraz masz."
+    },
+    "inventory": {
+      "heading": "Nasza oferta. Twoi klienci.",
+      "body": [
+        "Zweryfikowane inwestycje na rynkach zagranicznych, od deweloperów, z którymi pracujemy bezpośrednio. Ty przyprowadzasz człowieka — my dajemy nieruchomość, odpowiedzi na pytania i niezależną kancelarię prawną, żeby nikt nie musiał o północy szukać prawnika w obcym kraju.",
+        "Nie potrzebujesz ofert. Nie potrzebujesz licencji za granicą. Potrzebujesz dokładnie tego, co już masz: kogoś, kto Ci ufa."
+      ]
+    },
+    "technology": {
+      "heading": "Nasza technologia. Twój show.",
+      "body": [
+        "Twoi klienci oglądają nieruchomości na żywo, nie wstając z kanapy — transmisja prosto z inwestycji, pytania zadawane na bieżąco, odpowiedzi w ich języku.",
+        "Poprowadź webinar sam i bądź tym, który przyniósł im świat. Albo oddaj nam mikrofon — poprowadzimy go pod Twoim szyldem. Tak czy inaczej, publiczność jest Twoja."
+      ]
+    },
+    "split": {
+      "heading": "Dzielimy się prowizją. Nawet 50/50.",
+      "body": [
+        "Deweloper płaci nam. My dzielimy się z Tobą — a im większą część drogi przechodzisz z klientem, tym większa Twoja połowa. Możesz zrobić jedno wprowadzenie albo przejść z klientem całą trasę. Jedno i drugie się opłaca. Jedno bardziej.",
+        "Twój klient płaci cenę katalogową dewelopera. Ani euro więcej."
+      ]
+    },
+    "who": {
+      "heading": "Brzmi jak Ty?",
+      "items": [
+        {
+          "t": "Agenci i agencje nieruchomości",
+          "d": "których klienci pytają o rynki spoza Twojej oferty."
+        },
+        {
+          "t": "Doradcy finansowi",
+          "d": "których klienci mają kapitał i pytają: co dalej?"
+        },
+        {
+          "t": "Branże pokrewne",
+          "d": "sprzedaż i czarter jachtów, turystyka luksusowa, usługi concierge, kluby prywatne. Jeśli Twoi klienci kupują jacht, kupią też apartament z widokiem na marinę."
+        }
+      ],
+      "closing": "Jeśli zamożni ludzie ufają Ci w czymkolwiek, zaufają Ci też przy tym pytaniu. My dbamy o to, żebyś znał odpowiedź."
+    },
+    "cta": {
+      "title": "Następne pytanie o zagranicę padnie niedługo. Bądź na nie gotowy.",
+      "sub": "Trzydzieści minut, żeby sprawdzić, czy do siebie pasujemy. Bez wyłączności, bez opłat, bez targetów.",
+      "btn": "Napisz do nas: partners@vesteri.com"
+    },
+    "mailto": {
+      "subject": "Zapytanie partnerskie — Vesteri",
+      "body": "Dzień dobry,\r\n\r\nChcę porozmawiać o partnerstwie z Vesteri.\r\n\r\nImię i nazwisko:\r\nFirma:\r\nCzym się zajmuję:\r\n"
+    }
+  },
   "nav": {
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu"

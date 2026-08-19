@@ -5,6 +5,8 @@ export const INVESTOR_PLATFORM_URL =
   process.env.NEXT_PUBLIC_INVESTOR_PLATFORM_URL ?? 'https://app.vesteri.com';
 
 export const CONTACT_EMAIL = 'contact@vesteri.com';
+// Partner enquiries land in their own inbox, separate from general contact.
+export const PARTNERS_EMAIL = 'partners@vesteri.com';
 export const CONTACT_PHONE_DISPLAY = '+48 667 953 016';
 export const CONTACT_PHONE_TEL = '+48667953016';
 

@@ -42,6 +42,11 @@ function entries(locale: Locale): { pages: Entry[]; legal: Entry[] } {
         description: m.developers.meta.description,
       },
       { href: '/about', title: m.about.meta.title, description: m.about.meta.description },
+      {
+        href: '/partners',
+        title: m.partners.meta.title,
+        description: m.partners.meta.description,
+      },
       { href: '/platform', title: m.platform.meta.title, description: m.platform.meta.description },
     ],
     legal: LEGAL.map((slug) => ({

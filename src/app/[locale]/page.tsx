@@ -51,6 +51,7 @@ export default async function LandingPage({ params }: Props) {
   const tAbout = await getTranslations('about');
   const tLegal = await getTranslations('legal');
   const tArticles = await getTranslations('articles');
+  const tPartners = await getTranslations('partners');
   const hasArticles = Object.keys(articlesByLocale[locale as ArticleLocale] ?? {}).length > 0;
   const pillars = t.raw('pillars') as Pillar[];
   // Live markets carry a relief render; planned ones the generated silhouette.
@@ -102,11 +103,21 @@ export default async function LandingPage({ params }: Props) {
             alt=""
             className="block h-[34px] w-auto"
           />
-          <span className="text-[17px] font-bold tracking-[0.34em] text-ink max-[640px]:text-[14px] max-[640px]:tracking-[0.24em]">
+          <span className="text-[17px] font-bold tracking-[0.34em] text-ink max-[640px]:text-[14px] max-[640px]:tracking-[0.24em] max-[430px]:hidden">
             VESTERI
           </span>
         </span>
-        <LanguageSwitch />
+        <span className="flex items-center gap-2 sm:gap-4">
+          {/* Partner offer sits beside the language switch on every top bar,
+              in the landing's own primary-button colours. */}
+          <Link
+            href="/partners"
+            className="bg-accent-gradient rounded-btn px-3 py-2 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-4 sm:text-[12px]"
+          >
+            {tPartners('navCta')}
+          </Link>
+          <LanguageSwitch />
+        </span>
       </header>
 
       <main className="relative z-1 mx-auto grid w-full max-w-[1360px] flex-1 grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] items-stretch gap-[72px] px-14 max-[1080px]:grid-cols-1 max-[1080px]:gap-0 max-[1080px]:px-7 max-[640px]:px-5">
@@ -187,6 +198,12 @@ export default async function LandingPage({ params }: Props) {
           but this is the entry page and it had no route to them at all. */}
       <footer className="relative z-1 flex flex-col gap-3 border-t border-line px-14 py-[18px] max-[1080px]:px-7 max-[640px]:px-5">
         <nav className="flex flex-wrap gap-x-5 gap-y-1.5">
+          <Link
+            href="/partners"
+            className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
+          >
+            {tPartners('navCta')}
+          </Link>
           {hasArticles && (
             <Link
               href="/articles"

@@ -260,6 +260,73 @@
     "sub": "A smarter way to discover, explore and invest in overseas property. Stay tuned.",
     "back": "Back to vesteri.com"
   },
+  "partners": {
+    "meta": {
+      "title": "Become a Partner | Vesteri",
+      "description": "Your clients ask about property abroad. Partner with Vesteri: verified international developments, live property tours, and a commission split of up to 50/50."
+    },
+    "navCta": "Become a partner",
+    "hero": {
+      "title": "Your clients. Our properties. One handshake.",
+      "sub": "You know people with capital and questions about property abroad. We know the developers, the markets and how to show them — live. Let’s split what happens next.",
+      "cta": "Become a partner"
+    },
+    "invitation": {
+      "heading": "You’ve been turning this money away",
+      "body": [
+        "Every time a client mentions Spain, Cyprus or Dubai and you change the subject — that’s a commission leaving the room. Not because you did anything wrong. Because you had nothing to offer."
+      ],
+      "accent": "Now you do."
+    },
+    "inventory": {
+      "heading": "Our inventory. Your clients.",
+      "body": [
+        "Verified developments across international markets, with developers we work with directly. You bring the person; we bring the property, the answers and an independent law firm so nobody’s searching a foreign bar directory at midnight.",
+        "You don’t need listings. You don’t need licences abroad. You need exactly what you already have: someone who trusts you."
+      ]
+    },
+    "technology": {
+      "heading": "Our technology. Your show.",
+      "body": [
+        "Your clients tour properties live from their sofa — real-time video from the site, questions answered on the spot, in their own language.",
+        "Host the webinar yourself and be the person who brought them the world. Or hand us the microphone and we’ll run it under your banner. Your audience either way."
+      ]
+    },
+    "split": {
+      "heading": "We split the commission. Up to 50/50.",
+      "body": [
+        "The developer pays us. We share it with you — and the more of the journey you own, the bigger your half. Make one introduction or walk the whole road with your client. Both pay. One pays better.",
+        "Your client pays the developer’s list price either way. Not a euro more."
+      ]
+    },
+    "who": {
+      "heading": "Sound like you?",
+      "items": [
+        {
+          "t": "Real estate agents & agencies",
+          "d": "with buyers asking about markets you don’t cover."
+        },
+        {
+          "t": "Financial advisors",
+          "d": "whose clients hold capital and ask where next."
+        },
+        {
+          "t": "The adjacent world",
+          "d": "yacht sales and charter, luxury travel, concierge services, private clubs. If your clients can buy a boat, they can buy the marina view behind it."
+        }
+      ],
+      "closing": "If wealthy people trust you with anything, they’ll trust you with this question. We make sure you have the answer."
+    },
+    "cta": {
+      "title": "The next enquiry is coming. Be ready for it.",
+      "sub": "Thirty minutes to see if we fit. No exclusivity, no fees, no volume targets.",
+      "btn": "Write to us: partners@vesteri.com"
+    },
+    "mailto": {
+      "subject": "Partner enquiry — Vesteri",
+      "body": "Hi Piotr,\r\n\r\nI’d like to talk about partnering with Vesteri.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
+    }
+  },
   "nav": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu"

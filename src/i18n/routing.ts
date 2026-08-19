@@ -18,6 +18,10 @@ export const routing = defineRouting({
       pl: '/platforma',
       en: '/platform',
     },
+    '/partners': {
+      pl: '/zostan-partnerem',
+      en: '/become-a-partner',
+    },
     '/articles': {
       pl: '/poradnik',
       en: '/guides',
