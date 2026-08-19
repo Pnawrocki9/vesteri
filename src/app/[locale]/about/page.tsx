@@ -33,7 +33,6 @@ export default async function AboutPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations('about');
   const tNav = await getTranslations('nav');
-  const tPartners = await getTranslations('partners');
   const whoParagraphs = t.raw('who.paragraphs') as string[];
   const members = t.raw('team.members') as Member[];
   const whyParagraphs = t.raw('why.paragraphs') as string[];
@@ -58,7 +57,7 @@ export default async function AboutPage({ params }: Props) {
             width={900}
             height={260}
             alt="VESTERI"
-            className="block h-7 w-auto sm:h-11"
+            className="block h-8 w-auto sm:h-11"
           />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
@@ -74,20 +73,10 @@ export default async function AboutPage({ params }: Props) {
           >
             {t('nav.listings')}
           </Link>
-          {/* Partner offer gets the primary-gradient treatment so it stands
-              out from the ink nav CTA, and stays visible on phones. */}
-          <Link
-            href="/partners"
-            className="bg-accent-gradient rounded-btn px-2.5 py-3 text-[10px] font-bold tracking-[0.1em] whitespace-nowrap text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-6 sm:text-[13px]"
-          >
-            {tPartners('navCta')}
-          </Link>
           <LanguageSwitch />
-          {/* Below sm the partner button takes the visible slot; the call CTA
-              stays reachable on the For Developers page it points at. */}
           <a
             href={ctaHref}
-            className="hidden rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:block sm:px-6 sm:text-[13px]"
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
           >
             {t('nav.cta')}
           </a>

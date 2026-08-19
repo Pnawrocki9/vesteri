@@ -38,7 +38,6 @@ export default async function DevelopersPage({ params }: Props) {
   const t = await getTranslations('developers');
   const tAbout = await getTranslations('about');
   const tNav = await getTranslations('nav');
-  const tPartners = await getTranslations('partners');
   const activeLocale = locale as 'pl' | 'en';
   const stats = t.raw('stats') as { v: string; l: string }[];
   const steps = t.raw('process.steps') as { n: string; t: string; d: string }[];
@@ -64,7 +63,7 @@ export default async function DevelopersPage({ params }: Props) {
             width={900}
             height={260}
             alt="VESTERI"
-            className="block h-7 w-auto sm:h-11"
+            className="block h-8 w-auto sm:h-11"
           />
         </Link>
         {/* gap tightens at md: with three links the 32px spacing overflows
@@ -94,23 +93,13 @@ export default async function DevelopersPage({ params }: Props) {
           >
             {t('nav.listings')}
           </Link>
-          {/* Partner offer gets the primary-gradient treatment so it stands
-              out from the ink nav CTA, and stays visible on phones. */}
-          <Link
-            href="/partners"
-            className="bg-accent-gradient rounded-btn px-2.5 py-3 text-[10px] font-bold tracking-[0.1em] whitespace-nowrap text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-6 sm:text-[13px]"
-          >
-            {tPartners('navCta')}
-          </Link>
           <LanguageSwitch />
           {/* Scrolls to the closing CTA rather than opening mail directly: a
               mailto does nothing at all without a registered mail handler,
               while the CTA section always offers the address to copy. */}
-          {/* Below sm the partner button takes the visible slot; this one
-              stays reachable through the hero and closing CTAs. */}
           <a
             href="#cta"
-            className="hidden rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:block sm:px-6 sm:text-[13px]"
+            className="rounded-btn bg-ink px-3 py-3 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
           >
             {t('cta.btn')}
           </a>
