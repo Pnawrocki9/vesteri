@@ -9,18 +9,18 @@ author: piotr
 Kupując mieszkanie w swoim mieście, sprawdzasz dewelopera niemal odruchowo.
 Znasz nazwę, ktoś znajomy u niego kupował, w razie problemu wiesz, do którego
 sądu iść. Przy zakupie za granicą wszystkie te odruchy przestają działać
-naraz — a rośnie kwota.
+naraz, a kwota akurat rośnie.
 
 Poniżej opisujemy dokładnie, co sprawdzamy, zanim deweloper trafi na naszą
-platformę. Nie dlatego, że to tajemnica warta ujawnienia, tylko dlatego, że
-**listę kontrolną możesz zastosować sam** — również wobec nas.
+platformę. Żadna z tych rzeczy nie jest tajemnicą, a **listę kontrolną możesz zastosować
+sam**, również wobec nas.
 
 ## Dokumenty rejestrowe spółki
 
 Zaczynamy od najbardziej podstawowej rzeczy: czy podmiot, który sprzedaje,
 istnieje i jest tym, za kogo się podaje.
 
-Sprawdzamy dokumenty rejestrowe spółki — kto ją reprezentuje, od kiedy działa,
+Sprawdzamy dokumenty rejestrowe spółki: kto ją reprezentuje, od kiedy działa,
 jaka jest jej struktura. To brzmi banalnie, ale w transakcji transgranicznej
 banalne rzeczy są tymi, których nikt nie sprawdza, bo każdy zakłada, że zrobił
 to ktoś inny.
@@ -31,7 +31,7 @@ Szukamy wszelkich dostępnych opinii o deweloperze: w sieci, w branży, wśród
 lokalnych podmiotów.
 
 Trzeba jednak powiedzieć wprost, ile takie opinie są warte. Opinie w internecie
-bywają kupowane, a ich brak nie znaczy nic dobrego ani złego — nowa spółka po
+bywają kupowane, a ich brak nie znaczy nic dobrego ani złego, bo nowa spółka po
 prostu nie ma historii. Traktujemy je jako sygnał, nigdy jako dowód. Powtarzający
 się, konkretny zarzut waży więcej niż setka ogólnych pochwał.
 
@@ -42,8 +42,8 @@ niego wcześniej**.
 
 To wymóg, który wygląda skromnie, a w praktyce odsiewa najwięcej. Deweloper,
 który sprzedał kilkadziesiąt mieszkań, znajdzie trzy takie osoby w kwadrans.
-Deweloper, który tego kontaktu nie chce udostępnić, właśnie udzielił odpowiedzi
-— i to najbardziej wiarygodnej z możliwych.
+Deweloper, który tego kontaktu nie chce udostępnić, właśnie udzielił
+odpowiedzi, i to najbardziej wiarygodnej z możliwych.
 
 Rozmowa z kimś, kto przeszedł cały proces do końca, mówi rzeczy, których nie ma
 w żadnym prospekcie: czy terminy zostały dotrzymane, co się działo, gdy pojawił
@@ -56,14 +56,14 @@ inwestycjach, odpowiada na pytania uczestników, a **całość jest nagrywana i
 publikowana**.
 
 To najmocniejszy element całej listy i jednocześnie ten, którego nie da się
-obejść. Nie dlatego, że pytamy szczególnie ostro — pytania zadają uczestnicy,
+obejść. I wcale nie chodzi o to, że pytamy szczególnie ostro. Pytania zadają uczestnicy,
 często konkretniejsze niż nasze. Chodzi o to, co dzieje się z odpowiedziami.
 
 Deweloper, który mija się z prawdą w prywatnej rozmowie, ryzykuje słowo przeciw
 słowu. Ten sam deweloper, który mija się z prawdą na nagraniu dostępnym
 publicznie dla wszystkich przyszłych klientów, zostawia trwały dowód przeciwko
 sobie. Dla podmiotu, który zamierza działać uczciwie, to żaden koszt. Dla
-podmiotu, który nie zamierza — to ryzyko, którego zwykle nie warto podejmować.
+podmiotu, który uczciwie działać nie zamierza, to ryzyko zwykle zbyt duże.
 
 Dlatego samo przystąpienie do formuły nagrywanego, publicznego webinaru jest
 sygnałem. Deweloperzy, którzy odmawiają, oszczędzają nam pracy.
@@ -82,19 +82,19 @@ inaczej, nie mówi Ci prawdy o rynku, na którym działa.
 
 ## Co możesz sprawdzić sam
 
-Niezależnie od tego, przez kogo kupujesz — także przez nas:
+Niezależnie od tego, przez kogo kupujesz (także przez nas):
 
 1. **Poproś o dokumenty rejestrowe** i sprawdź, czy podmiot na umowie jest tym
    samym, który występuje w materiałach marketingowych.
-2. **Poproś o trzy referencje** i zadzwoń do nich. Nie o opinię — o przebieg:
+2. **Poproś o trzy referencje** i zadzwoń do nich. Nie o opinię, tylko o przebieg:
    terminy, problemy, kontakt po odbiorze.
 3. **Poproś o nagranie albo zapis rozmowy**, w której padają konkretne
    deklaracje. Jeśli deklaracja jest prawdziwa, nikt nie ma powodu odmówić.
 4. **Zatrudnij własnego prawnika.** Prawnik opłacany przez sprzedającego
    reprezentuje sprzedającego, choćby był wobec Ciebie życzliwy.
 
-Ostatni punkt jest najważniejszy i jednocześnie najczęściej pomijany — bo
-kosztuje, a wydaje się zbędny dokładnie do momentu, w którym przestaje.
+Ostatni punkt jest najważniejszy i zarazem najczęściej pomijany, bo kosztuje,
+a wydaje się zbędny dokładnie do momentu, w którym przestaje.
 
 ---
 

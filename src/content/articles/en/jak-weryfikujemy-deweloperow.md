@@ -9,18 +9,18 @@ author: piotr
 Buying a flat in your own city, you check the developer almost by reflex. You
 know the name, someone you know bought from them, and if something goes wrong
 you know which court to go to. Buy abroad and all of those reflexes stop
-working at once — while the sum involved goes up.
+working at once, while the sum involved goes up.
 
-Below is exactly what we check before a developer reaches our platform. Not
-because it is a secret worth revealing, but because **you can apply the same
-checklist yourself** — including to us.
+Below is exactly what we check before a developer reaches our platform. None of it
+is a secret, and **you can apply the same checklist yourself**, including to
+us.
 
 ## Company records
 
 We start with the most basic question: does the selling entity exist, and is it
 who it says it is.
 
-We check the company's registration documents — who represents it, how long it
+We check the company's registration documents: who represents it, how long it
 has been trading, how it is structured. That sounds obvious, but in a
 cross-border transaction the obvious things are the ones nobody checks, because
 everyone assumes somebody else already did.
@@ -31,8 +31,8 @@ We look for whatever is publicly said about a developer: online, in the trade,
 among local firms.
 
 It is worth being straight about what that is worth. Online reviews can be
-bought, and their absence means neither good nor bad — a new company simply has
-no history. We treat them as a signal, never as proof. One specific complaint
+bought, and their absence means neither good nor bad, since a new company
+simply has no history. We treat them as a signal, never as proof. One specific complaint
 that recurs weighs more than a hundred general compliments.
 
 ## Three references from previous buyers
@@ -43,7 +43,7 @@ bought from them before**.
 It is a modest-looking requirement that filters more than anything else on this
 list. A developer who has sold dozens of units will find three such people in a
 quarter of an hour. A developer who will not share that contact has already
-answered the question — and in the most credible way available.
+answered the question, and in the most credible way available.
 
 A conversation with someone who went through the whole process tells you things
 no brochure contains: whether deadlines held, what happened when a problem came
@@ -56,8 +56,8 @@ projects, answers questions from participants, and **the whole thing is
 recorded and published**.
 
 This is the strongest item on the list and the one that cannot be worked
-around. Not because we ask especially hard questions — the participants ask
-them, often sharper than ours. It is what happens to the answers.
+around. The reason is not that we ask especially hard questions. The participants ask
+them, often sharper than ours. The reason is what happens to the answers.
 
 A developer who shades the truth in a private conversation risks one person's
 word against another's. The same developer shading the truth on a recording
@@ -82,18 +82,18 @@ otherwise is not telling you the truth about the market they work in.
 
 ## What you can check yourself
 
-Whoever you buy through — including us:
+Whoever you buy through (including us):
 
 1. **Ask for the company records** and check that the entity on the contract is
    the one in the marketing material.
-2. **Ask for three references** and call them. Not for an opinion — for the
+2. **Ask for three references** and call them. Not for an opinion, but for the
    sequence of events: deadlines, problems, contact after handover.
 3. **Ask for a recording or transcript** of any conversation where specific
    commitments were made. If a claim is true, nobody has reason to refuse.
 4. **Hire your own lawyer.** A lawyer paid by the seller represents the seller,
    however friendly they are towards you.
 
-The last point matters most and is skipped most often — because it costs money
+The last point matters most and is skipped most often, because it costs money
 and seems unnecessary right up to the moment it stops seeming that way.
 
 ---
