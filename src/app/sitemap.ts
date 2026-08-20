@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { articleIndex, articlesByLocale } from '@/generated/articles';
+import { COMPARISONS } from '@/content/compare';
 import { routing, type StaticPathname } from '@/i18n/routing';
 import { neutralUrl } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
@@ -55,6 +56,27 @@ function articleEntries(): MetadataRoute.Sitemap {
   });
 }
 
+// Comparison pages exist in both locales by construction, so their alternates
+// need none of the per-locale filtering articles do.
+function compareEntries(): MetadataRoute.Sitemap {
+  return COMPARISONS.flatMap((comparison) => {
+    const urls = Object.fromEntries(
+      routing.locales.map((locale) => [
+        locale,
+        `${SITE_URL}${getPathname({
+          locale,
+          href: { pathname: '/compare/[slug]', params: { slug: comparison.locales[locale].slug } },
+        })}`,
+      ]),
+    ) as Record<Locale, string>;
+    const languages = { ...urls, 'x-default': urls[routing.defaultLocale] };
+    return routing.locales.map((locale) => ({
+      url: urls[locale],
+      alternates: { languages },
+    }));
+  });
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = routing.locales.flatMap((locale) =>
     INDEXABLE
@@ -87,5 +109,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         };
       }),
   );
-  return [...pages, ...articleEntries()];
+  return [...pages, ...compareEntries(), ...articleEntries()];
 }

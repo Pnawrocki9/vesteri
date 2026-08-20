@@ -327,6 +327,20 @@
       "body": "Dzień dobry,\r\n\r\nChcę porozmawiać o partnerstwie z Vesteri.\r\n\r\nImię i nazwisko:\r\nFirma:\r\nCzym się zajmuję:\r\n"
     }
   },
+  "compare": {
+    "meta": {
+      "title": "VESTERI — Porównania: jak sprzedawać zagranicznym inwestorom",
+      "description": "Uczciwe zestawienia dróg sprzedaży zagranicznym inwestorom: leady z portali, własne biuro za granicą, sieci pośredników — kontra webinar Vesteri."
+    },
+    "heading": "Porównania",
+    "title": "Jak to wypada obok Vesteri",
+    "lede": "Uczciwe zestawienia dróg, którymi deweloperzy docierają dziś do zagranicznych inwestorów — łącznie z sytuacjami, w których alternatywa naprawdę wystarcza.",
+    "pickKicker": "Wybierz porównanie",
+    "pickTitle": "Trzy drogi, którymi sprzedaje się dziś za granicę",
+    "readMore": "Zobacz porównanie",
+    "backToList": "Wszystkie porównania",
+    "ctaBtn": "Umów rozmowę"
+  },
   "nav": {
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu"

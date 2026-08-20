@@ -52,6 +52,7 @@ export default async function LandingPage({ params }: Props) {
   const tLegal = await getTranslations('legal');
   const tArticles = await getTranslations('articles');
   const tPartners = await getTranslations('partners');
+  const tCompare = await getTranslations('compare');
   const hasArticles = Object.keys(articlesByLocale[locale as ArticleLocale] ?? {}).length > 0;
   const pillars = t.raw('pillars') as Pillar[];
   // Live markets carry a relief render; planned ones the generated silhouette.
@@ -203,6 +204,12 @@ export default async function LandingPage({ params }: Props) {
             className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
           >
             {tPartners('navCta')}
+          </Link>
+          <Link
+            href="/compare"
+            className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
+          >
+            {tCompare('heading')}
           </Link>
           {hasArticles && (
             <Link

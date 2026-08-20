@@ -327,6 +327,20 @@
       "body": "Hi Piotr,\r\n\r\nI’d like to talk about partnering with Vesteri.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
     }
   },
+  "compare": {
+    "meta": {
+      "title": "VESTERI — Compare: ways to sell to foreign investors",
+      "description": "Honest, side-by-side comparisons of how developers reach foreign investors: portal leads, an own office abroad, broker networks — vs the Vesteri webinar."
+    },
+    "heading": "Comparisons",
+    "title": "How it stacks up next to Vesteri",
+    "lede": "Honest, side-by-side comparisons of the ways developers reach foreign investors today — including where each alternative is genuinely enough.",
+    "pickKicker": "Pick your comparison",
+    "pickTitle": "Three ways developers sell abroad today",
+    "readMore": "See the comparison",
+    "backToList": "All comparisons",
+    "ctaBtn": "Book a call"
+  },
   "nav": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu"

@@ -10,6 +10,7 @@ export default async function SiteFooter() {
   const t = await getTranslations('developers');
   const tLegal = await getTranslations('legal');
   const tArticles = await getTranslations('articles');
+  const tCompare = await getTranslations('compare');
   // Shown only where the section exists in this language: the listing 404s in
   // a locale with nothing written for it.
   const locale = (await getLocale()) as ArticleLocale;
@@ -60,6 +61,12 @@ export default async function SiteFooter() {
           </div>
         </div>
         <div className="flex flex-col gap-3.5 md:text-right">
+          <Link
+            href="/compare"
+            className="self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
+          >
+            {tCompare('heading')}
+          </Link>
           {hasArticles && (
             <Link
               href="/articles"

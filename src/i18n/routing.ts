@@ -22,6 +22,16 @@ export const routing = defineRouting({
       pl: '/zostan-partnerem',
       en: '/become-a-partner',
     },
+    '/compare': {
+      pl: '/porownania',
+      en: '/compare',
+    },
+    // The slug is localized per comparison, so the Polish and English versions
+    // of one piece live at addresses in their own language.
+    '/compare/[slug]': {
+      pl: '/porownania/[slug]',
+      en: '/compare/[slug]',
+    },
     '/articles': {
       pl: '/poradnik',
       en: '/guides',

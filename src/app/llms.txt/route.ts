@@ -1,5 +1,6 @@
 import { getPathname } from '@/i18n/navigation';
 import { articleIndex, articlesByLocale } from '@/generated/articles';
+import { COMPARISONS } from '@/content/compare';
 import { routing, type StaticPathname } from '@/i18n/routing';
 import en from '@/messages/en.json';
 import pl from '@/messages/pl.json';
@@ -47,6 +48,7 @@ function entries(locale: Locale): { pages: Entry[]; legal: Entry[] } {
         title: m.partners.meta.title,
         description: m.partners.meta.description,
       },
+      { href: '/compare', title: m.compare.meta.title, description: m.compare.meta.description },
       { href: '/platform', title: m.platform.meta.title, description: m.platform.meta.description },
     ],
     legal: LEGAL.map((slug) => ({
@@ -55,6 +57,17 @@ function entries(locale: Locale): { pages: Entry[]; legal: Entry[] } {
       description: m.legal.meta[slug],
     })),
   };
+}
+
+// Comparison pages are addressed by a translated slug, like articles.
+function compareEntries(locale: Locale) {
+  return COMPARISONS.map((comparison) => {
+    const copy = comparison.locales[locale];
+    return `- [${copy.metaTitle}](${SITE_URL}${getPathname({
+      locale,
+      href: { pathname: '/compare/[slug]', params: { slug: copy.slug } },
+    })}): ${copy.metaDescription}`;
+  });
 }
 
 // Articles are addressed by a translated slug, so they cannot go through the
@@ -95,11 +108,13 @@ function body() {
     `/pl/ and an /en/ path. The canonical host is ${SITE_URL}.`,
     '',
     section('English pages', english.pages, 'en'),
+    ['## English comparisons', '', ...compareEntries('en'), ''].join('\n'),
     ...(articleEntries('en').length
       ? [['## English guides', '', ...articleEntries('en'), ''].join('\n')]
       : []),
     section('English legal documents', english.legal, 'en'),
     section('Polish pages', polish.pages, 'pl'),
+    ['## Polish comparisons (Porównania)', '', ...compareEntries('pl'), ''].join('\n'),
     ...(articleEntries('pl').length
       ? [['## Polish guides (Poradnik)', '', ...articleEntries('pl'), ''].join('\n')]
       : []),
