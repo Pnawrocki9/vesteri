@@ -367,5 +367,132 @@
     "author": "Autor",
     "backToList": "Zurück zum Ratgeber",
     "otherLanguage": "Diesen Text gibt es nicht auf Deutsch. Sehen Sie sich die übrigen Artikel an."
+  },
+  "affiliate": {
+    "navTitle": "Partnerprogramm",
+    "meta": {
+      "title": "Partnerprogramm — VESTERI",
+      "description": "Empfehlen Sie Vesteri einem Investor und erhalten Sie eine Provision, wenn er kauft. Der Investor bekommt für Ihren Code einen Rabatt.",
+      "termsTitle": "Bedingungen des Partnerprogramms — VESTERI",
+      "privacyTitle": "Datenschutzhinweis zum Partnerprogramm — VESTERI",
+      "registerTitle": "Ihren Partnercode erhalten — VESTERI",
+      "loginTitle": "Partner-Login — VESTERI",
+      "dashboardTitle": "Partner-Dashboard — VESTERI"
+    },
+    "landing": {
+      "headline": "Verdienen Sie {commission} für jeden vermittelten Investor.",
+      "sub": "Kein Verkauf, kein Papierkram. Sie teilen einen Code; den Rest übernimmt unser Team.",
+      "stepsHeading": "So funktioniert es",
+      "steps": [
+        {
+          "t": "Code erhalten",
+          "d": "Registrieren Sie sich in einer Minute und erhalten Sie einen kurzen persönlichen Code, z. B. ANNA-XQ48."
+        },
+        {
+          "t": "Code teilen",
+          "d": "Geben Sie den Code einem Investor weiter oder posten Sie ihn in Ihren sozialen Medien."
+        },
+        {
+          "t": "Sie kaufen, Sie verdienen",
+          "d": "Kauft die Person über Vesteri und nennt Ihren Code, erhält sie {discount} Rabatt und Sie verdienen {commission}."
+        }
+      ],
+      "faqHeading": "Häufige Fragen",
+      "faq": [
+        {
+          "q": "Wer kann teilnehmen?",
+          "a": "Jede Person ab 18 Jahren. Lizenz oder Firma sind nicht nötig; beachten Sie aber Abschnitt 2 der Bedingungen für Ihr Land."
+        },
+        {
+          "q": "Wie wird der Code verwendet?",
+          "a": "Es muss nirgends etwas eingegeben werden — der Investor nennt unserem Team den Code einfach vor dem Kauf."
+        },
+        {
+          "q": "Wann werde ich bezahlt?",
+          "a": "Nach Abschluss der Transaktion. Wir melden uns bei Ihnen, um die Auszahlung zu vereinbaren."
+        },
+        {
+          "q": "Kann ich mich selbst empfehlen?",
+          "a": "Nein — Selbstempfehlungen werden nicht vergütet. Siehe Programmbedingungen."
+        }
+      ],
+      "ctaGet": "Meinen Code erhalten",
+      "ctaLogin": "Anmelden",
+      "closed": "Das Programm ist derzeit geschlossen. Bestehende Partner können sich anmelden.",
+      "termsLink": "Programmbedingungen",
+      "privacyLink": "Datenschutzhinweis"
+    },
+    "register": {
+      "title": "Ihren Partnercode erhalten",
+      "sub": "Ein kurzes Formular. Ihr Code erscheint direkt nach der Registrierung.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "password": "Passwort",
+      "passwordHint": "Mindestens 10 Zeichen.",
+      "consentHeading": "Einwilligungen",
+      "submit": "Meinen Code erstellen",
+      "haveAccount": "Sie haben schon einen Code?",
+      "loginLink": "Anmelden",
+      "errors": {
+        "missing": "Bitte Name und Telefonnummer ausfüllen.",
+        "email": "Diese E-Mail-Adresse scheint ungültig zu sein.",
+        "email-taken": "Diese E-Mail ist bereits registriert. Bitte melden Sie sich an.",
+        "password": "Das Passwort braucht mindestens 10 Zeichen.",
+        "consent": "Die ersten beiden Kästchen sind für die Teilnahme erforderlich.",
+        "closed": "Das Programm ist derzeit für neue Registrierungen geschlossen.",
+        "throttled": "Zu viele Versuche über diese Verbindung. Bitte in {wait} Sekunden erneut versuchen."
+      }
+    },
+    "login": {
+      "title": "Partner-Login",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "forgot": "Passwort vergessen? Schreiben Sie an {email}.",
+      "noAccount": "Noch keinen Code?",
+      "registerLink": "Dem Programm beitreten",
+      "errors": {
+        "credentials": "Falsche E-Mail oder falsches Passwort.",
+        "throttled": "Zu viele Versuche. Bitte in {wait} Sekunden erneut versuchen."
+      }
+    },
+    "dashboard": {
+      "welcome": "Willkommen im Programm! Das ist Ihr Code — teilen Sie ihn noch heute.",
+      "codeHeading": "Ihr Code",
+      "codeInactive": "Ihr Konto ist gesperrt — der Code ist derzeit inaktiv. Schreiben Sie an {email}.",
+      "copy": "Code kopieren",
+      "copied": "Kopiert",
+      "shareHeading": "Teilen",
+      "shareText": "Sie kaufen eine Immobilie über Vesteri? Nennen Sie meinen Code {code} und erhalten Sie {discount} Rabatt. www.vesteri.com",
+      "salesHeading": "Verkäufe mit Ihrem Code",
+      "pendingHeading": "Auszustehender Betrag",
+      "earnedLine": "Insgesamt bisher verdient: {amount}",
+      "table": {
+        "date": "Verkaufsdatum",
+        "property": "Immobilie",
+        "commission": "Provision",
+        "status": "Status",
+        "pending": "Ausstehend",
+        "paid": "Ausgezahlt"
+      },
+      "empty": "Noch keine Verkäufe erfasst. Teilen Sie Ihren Code — jeder Investor, der ihn nennt, bringt Ihnen {commission}.",
+      "note": "Verkäufe werden vom Vesteri-Team nach Abschluss der Transaktion erfasst. Fehlt Ihrer Meinung nach ein Verkauf, schreiben Sie an {email}.",
+      "accountHeading": "Ihr Konto",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "passwordHeading": "Passwort ändern",
+      "currentPassword": "Aktuelles Passwort",
+      "newPassword": "Neues Passwort",
+      "passwordSubmit": "Passwort ändern",
+      "passwordSaved": "Passwort geändert.",
+      "passwordErrors": {
+        "current-password": "Das aktuelle Passwort ist falsch.",
+        "password": "Das neue Passwort braucht mindestens 10 Zeichen."
+      },
+      "logout": "Abmelden"
+    }
   }
 }

@@ -1,5 +1,11 @@
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
+
+// Makes getCloudflareContext() work under `next dev`: the D1 binding and the
+// secrets from .dev.vars are served by a local miniflare instead of the real
+// worker. No-op for `next build` output.
+initOpenNextCloudflareForDev();
 
 const withNextIntl = createNextIntlPlugin();
 

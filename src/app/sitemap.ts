@@ -16,7 +16,14 @@ type Locale = (typeof routing.locales)[number];
 // The negotiating root `/` is absent for a different reason: it answers 307
 // towards a locale, and a sitemap should only contain URLs that answer 200.
 // Both locale versions of the home page are listed below in its place.
-const EXCLUDED: readonly StaticPathname[] = ['/platform'];
+const EXCLUDED: readonly StaticPathname[] = [
+  '/platform',
+  // Auth-gated or noindexed affiliate pages; the landing, terms and privacy
+  // notice stay listed.
+  '/affiliate/register',
+  '/affiliate/login',
+  '/affiliate/dashboard',
+];
 
 // Dynamic routes are dropped here and added below from the article index: a
 // pathname template like /articles/[slug] is not a URL.

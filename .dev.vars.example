@@ -1,0 +1,8 @@
+# Lokalne sekrety modułu /affiliate — skopiuj do .dev.vars (plik jest w
+# .gitignore). Produkcyjnie te same trzy wartości ustawia się przez
+#   npx wrangler secret put <NAZWA>
+# Hash hasła generuje scripts/hash-password.mjs (node scripts/hash-password.mjs).
+
+AFFILIATE_ADMIN_EMAIL=admin@example.com
+AFFILIATE_ADMIN_PASSWORD_HASH=pbkdf2$100000$...wygeneruj-skryptem...
+AFFILIATE_SESSION_SECRET=dowolny-dlugi-losowy-ciag-min-32-znaki

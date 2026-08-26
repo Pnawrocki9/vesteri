@@ -11,6 +11,7 @@ export default async function SiteFooter() {
   const tLegal = await getTranslations('legal');
   const tArticles = await getTranslations('articles');
   const tCompare = await getTranslations('compare');
+  const tAffiliate = await getTranslations('affiliate');
   // Shown only where the section exists in this language: the listing 404s in
   // a locale with nothing written for it.
   const locale = (await getLocale()) as ArticleLocale;
@@ -70,11 +71,17 @@ export default async function SiteFooter() {
           {hasArticles && (
             <Link
               href="/articles"
-              className="mb-2 self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
+              className="self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
             >
               {tArticles('heading')}
             </Link>
           )}
+          <Link
+            href="/affiliate"
+            className="mb-2 self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
+          >
+            {tAffiliate('navTitle')}
+          </Link>
           <span className="text-[11px] font-bold tracking-[0.16em] text-accent-light uppercase">
             {t('footer.legalLabel')}
           </span>
