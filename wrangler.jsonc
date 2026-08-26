@@ -7,6 +7,19 @@
   "compatibility_flags": ["nodejs_compat"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
   "observability": { "enabled": true },
+  // Affiliate program database. Create it once with
+  //   npx wrangler d1 create vesteri-affiliate
+  // and paste the returned database_id below. Migrations live in /migrations
+  // and are applied with `npx wrangler d1 migrations apply vesteri-affiliate
+  // --remote` (or --local for development).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vesteri-affiliate",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
   "routes": [
     { "pattern": "www.vesteri.com", "custom_domain": true },
     { "pattern": "vesteri.com", "custom_domain": true }
