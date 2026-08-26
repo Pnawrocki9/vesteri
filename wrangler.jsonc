@@ -16,7 +16,7 @@
     {
       "binding": "DB",
       "database_name": "vesteri-affiliate",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "1ba4faf2-c52e-4663-811a-8fd3a2cbc301",
       "migrations_dir": "migrations"
     }
   ],
