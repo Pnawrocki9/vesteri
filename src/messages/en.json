@@ -367,5 +367,132 @@
     "author": "Author",
     "backToList": "Back to the guides",
     "otherLanguage": "This piece has no English version. See the other guides."
+  },
+  "affiliate": {
+    "navTitle": "Affiliate Program",
+    "meta": {
+      "title": "Affiliate Program — VESTERI",
+      "description": "Introduce an investor to Vesteri and earn a commission when they buy. The investor gets a discount for quoting your code.",
+      "termsTitle": "Affiliate Program Terms — VESTERI",
+      "privacyTitle": "Affiliate Privacy Notice — VESTERI",
+      "registerTitle": "Get your affiliate code — VESTERI",
+      "loginTitle": "Affiliate login — VESTERI",
+      "dashboardTitle": "Affiliate dashboard — VESTERI"
+    },
+    "landing": {
+      "headline": "Earn {commission} for every investor you introduce.",
+      "sub": "No sales work, no paperwork. You share a code; our team does the rest.",
+      "stepsHeading": "How it works",
+      "steps": [
+        {
+          "t": "Get your code",
+          "d": "Register in a minute and receive a short personal code, e.g. ANNA-XQ48."
+        },
+        {
+          "t": "Share it",
+          "d": "Pass the code to an investor you know, or post it on your social media."
+        },
+        {
+          "t": "They buy, you earn",
+          "d": "When they buy through Vesteri and quote your code, they get {discount} off and you earn {commission}."
+        }
+      ],
+      "faqHeading": "Common questions",
+      "faq": [
+        {
+          "q": "Who can join?",
+          "a": "Anyone aged 18 or over. No licence or company is required, but check section 2 of the Terms for your country."
+        },
+        {
+          "q": "How is the code used?",
+          "a": "There is nothing to type in anywhere — the investor simply tells our team the code before the purchase."
+        },
+        {
+          "q": "When do I get paid?",
+          "a": "After the transaction completes. We contact you to arrange the payment."
+        },
+        {
+          "q": "Can I refer myself?",
+          "a": "No — self-referrals are not paid. See the Program Terms."
+        }
+      ],
+      "ctaGet": "Get my code",
+      "ctaLogin": "Log in",
+      "closed": "The program is currently closed. Existing partners can log in.",
+      "termsLink": "Program Terms",
+      "privacyLink": "Privacy Notice"
+    },
+    "register": {
+      "title": "Get your affiliate code",
+      "sub": "One short form. Your code appears right after you register.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "password": "Password",
+      "passwordHint": "At least 10 characters.",
+      "consentHeading": "Consents",
+      "submit": "Create my code",
+      "haveAccount": "Already have a code?",
+      "loginLink": "Log in",
+      "errors": {
+        "missing": "Please fill in your name and phone number.",
+        "email": "This email address does not look valid.",
+        "email-taken": "This email is already registered. Log in instead.",
+        "password": "The password needs at least 10 characters.",
+        "consent": "The first two checkboxes are required to join.",
+        "closed": "The program is currently closed to new registrations.",
+        "throttled": "Too many attempts from this connection. Try again in {wait} seconds."
+      }
+    },
+    "login": {
+      "title": "Affiliate login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Log in",
+      "forgot": "Forgot your password? Contact {email}.",
+      "noAccount": "No code yet?",
+      "registerLink": "Join the program",
+      "errors": {
+        "credentials": "Wrong email or password.",
+        "throttled": "Too many attempts. Try again in {wait} seconds."
+      }
+    },
+    "dashboard": {
+      "welcome": "Welcome to the program! This is your code — share it today.",
+      "codeHeading": "Your code",
+      "codeInactive": "Your account is suspended — this code is currently inactive. Contact {email}.",
+      "copy": "Copy code",
+      "copied": "Copied",
+      "shareHeading": "Share it",
+      "shareText": "Buying property through Vesteri? Quote my code {code} to get {discount} off. www.vesteri.com",
+      "salesHeading": "Sales with your code",
+      "pendingHeading": "Amount to be paid out",
+      "earnedLine": "Total earned to date: {amount}",
+      "table": {
+        "date": "Sale date",
+        "property": "Property",
+        "commission": "Commission",
+        "status": "Status",
+        "pending": "Pending",
+        "paid": "Paid"
+      },
+      "empty": "No sales recorded yet. Share your code — every investor who quotes it earns you {commission}.",
+      "note": "Sales are recorded by the Vesteri team after a transaction completes. If you believe a sale is missing, contact {email}.",
+      "accountHeading": "Your account",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "passwordHeading": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "passwordSubmit": "Change password",
+      "passwordSaved": "Password changed.",
+      "passwordErrors": {
+        "current-password": "The current password is wrong.",
+        "password": "The new password needs at least 10 characters."
+      },
+      "logout": "Log out"
+    }
   }
 }

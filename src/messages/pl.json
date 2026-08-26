@@ -367,5 +367,132 @@
     "author": "Autor",
     "backToList": "Wróć do poradnika",
     "otherLanguage": "Ten tekst nie ma wersji polskiej. Zobacz pozostałe artykuły."
+  },
+  "affiliate": {
+    "navTitle": "Program partnerski",
+    "meta": {
+      "title": "Program partnerski — VESTERI",
+      "description": "Poleć Vesteri inwestorowi i otrzymaj prowizję, gdy kupi nieruchomość. Inwestor dostaje rabat za podanie Twojego kodu.",
+      "termsTitle": "Regulamin programu partnerskiego — VESTERI",
+      "privacyTitle": "Nota prywatności programu partnerskiego — VESTERI",
+      "registerTitle": "Odbierz swój kod partnerski — VESTERI",
+      "loginTitle": "Logowanie partnera — VESTERI",
+      "dashboardTitle": "Panel partnera — VESTERI"
+    },
+    "landing": {
+      "headline": "Zarób {commission} za każdego poleconego inwestora.",
+      "sub": "Bez sprzedaży i bez papierologii. Ty przekazujesz kod; resztą zajmuje się nasz zespół.",
+      "stepsHeading": "Jak to działa",
+      "steps": [
+        {
+          "t": "Odbierz kod",
+          "d": "Zarejestruj się w minutę i otrzymaj krótki osobisty kod, np. ANNA-XQ48."
+        },
+        {
+          "t": "Podziel się nim",
+          "d": "Przekaż kod znajomemu inwestorowi albo opublikuj go w swoich mediach społecznościowych."
+        },
+        {
+          "t": "Oni kupują, Ty zarabiasz",
+          "d": "Gdy kupią przez Vesteri i podadzą Twój kod, dostaną {discount} rabatu, a Ty zarobisz {commission}."
+        }
+      ],
+      "faqHeading": "Częste pytania",
+      "faq": [
+        {
+          "q": "Kto może dołączyć?",
+          "a": "Każda osoba, która ukończyła 18 lat. Nie potrzebujesz licencji ani firmy, ale sprawdź punkt 2 Regulaminu dla swojego kraju."
+        },
+        {
+          "q": "Jak używa się kodu?",
+          "a": "Niczego nie trzeba nigdzie wpisywać — inwestor po prostu podaje kod naszemu zespołowi przed zakupem."
+        },
+        {
+          "q": "Kiedy dostanę wypłatę?",
+          "a": "Po sfinalizowaniu transakcji. Skontaktujemy się z Tobą, aby ustalić wypłatę."
+        },
+        {
+          "q": "Czy mogę polecić samego siebie?",
+          "a": "Nie — samopolecenia nie są wypłacane. Zobacz Regulamin programu."
+        }
+      ],
+      "ctaGet": "Odbierz mój kod",
+      "ctaLogin": "Zaloguj się",
+      "closed": "Program jest obecnie zamknięty. Obecni partnerzy mogą się logować.",
+      "termsLink": "Regulamin programu",
+      "privacyLink": "Nota prywatności"
+    },
+    "register": {
+      "title": "Odbierz swój kod partnerski",
+      "sub": "Jeden krótki formularz. Kod zobaczysz od razu po rejestracji.",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "password": "Hasło",
+      "passwordHint": "Co najmniej 10 znaków.",
+      "consentHeading": "Zgody",
+      "submit": "Utwórz mój kod",
+      "haveAccount": "Masz już kod?",
+      "loginLink": "Zaloguj się",
+      "errors": {
+        "missing": "Uzupełnij imię, nazwisko i numer telefonu.",
+        "email": "Ten adres e-mail wygląda na nieprawidłowy.",
+        "email-taken": "Ten e-mail jest już zarejestrowany. Zaloguj się.",
+        "password": "Hasło musi mieć co najmniej 10 znaków.",
+        "consent": "Dwie pierwsze zgody są wymagane, aby dołączyć.",
+        "closed": "Program jest obecnie zamknięty dla nowych rejestracji.",
+        "throttled": "Zbyt wiele prób z tego połączenia. Spróbuj ponownie za {wait} s."
+      }
+    },
+    "login": {
+      "title": "Logowanie partnera",
+      "email": "E-mail",
+      "password": "Hasło",
+      "submit": "Zaloguj się",
+      "forgot": "Nie pamiętasz hasła? Napisz na {email}.",
+      "noAccount": "Nie masz jeszcze kodu?",
+      "registerLink": "Dołącz do programu",
+      "errors": {
+        "credentials": "Błędny e-mail lub hasło.",
+        "throttled": "Zbyt wiele prób. Spróbuj ponownie za {wait} s."
+      }
+    },
+    "dashboard": {
+      "welcome": "Witamy w programie! To Twój kod — podziel się nim już dziś.",
+      "codeHeading": "Twój kod",
+      "codeInactive": "Twoje konto jest zawieszone — kod jest obecnie nieaktywny. Napisz na {email}.",
+      "copy": "Kopiuj kod",
+      "copied": "Skopiowano",
+      "shareHeading": "Podziel się",
+      "shareText": "Kupujesz nieruchomość przez Vesteri? Podaj mój kod {code}, a dostaniesz {discount} rabatu. www.vesteri.com",
+      "salesHeading": "Sprzedaże z Twoim kodem",
+      "pendingHeading": "Kwota do wypłaty",
+      "earnedLine": "Łącznie zarobione do dziś: {amount}",
+      "table": {
+        "date": "Data sprzedaży",
+        "property": "Nieruchomość",
+        "commission": "Prowizja",
+        "status": "Status",
+        "pending": "Oczekuje",
+        "paid": "Wypłacona"
+      },
+      "empty": "Brak zapisanych sprzedaży. Podziel się kodem — każdy inwestor, który go poda, to {commission} dla Ciebie.",
+      "note": "Sprzedaże zapisuje zespół Vesteri po sfinalizowaniu transakcji. Jeśli uważasz, że brakuje sprzedaży, napisz na {email}.",
+      "accountHeading": "Twoje konto",
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "passwordHeading": "Zmiana hasła",
+      "currentPassword": "Obecne hasło",
+      "newPassword": "Nowe hasło",
+      "passwordSubmit": "Zmień hasło",
+      "passwordSaved": "Hasło zmienione.",
+      "passwordErrors": {
+        "current-password": "Obecne hasło jest błędne.",
+        "password": "Nowe hasło musi mieć co najmniej 10 znaków."
+      },
+      "logout": "Wyloguj się"
+    }
   }
 }

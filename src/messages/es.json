@@ -367,5 +367,132 @@
     "author": "Autor",
     "backToList": "Volver a las guías",
     "otherLanguage": "Este texto no tiene versión en español. Mira el resto de artículos."
+  },
+  "affiliate": {
+    "navTitle": "Programa de afiliados",
+    "meta": {
+      "title": "Programa de afiliados — VESTERI",
+      "description": "Presenta un inversor a Vesteri y gana una comisión cuando compre. El inversor recibe un descuento por indicar tu código.",
+      "termsTitle": "Términos del programa de afiliados — VESTERI",
+      "privacyTitle": "Aviso de privacidad del programa de afiliados — VESTERI",
+      "registerTitle": "Consigue tu código de afiliado — VESTERI",
+      "loginTitle": "Acceso de afiliados — VESTERI",
+      "dashboardTitle": "Panel de afiliado — VESTERI"
+    },
+    "landing": {
+      "headline": "Gana {commission} por cada inversor que presentes.",
+      "sub": "Sin labor comercial ni papeleo. Tú compartes un código; nuestro equipo hace el resto.",
+      "stepsHeading": "Cómo funciona",
+      "steps": [
+        {
+          "t": "Consigue tu código",
+          "d": "Regístrate en un minuto y recibe un código personal corto, p. ej. ANNA-XQ48."
+        },
+        {
+          "t": "Compártelo",
+          "d": "Pásaselo a un inversor que conozcas o publícalo en tus redes sociales."
+        },
+        {
+          "t": "Ellos compran, tú ganas",
+          "d": "Cuando compren a través de Vesteri e indiquen tu código, obtienen {discount} de descuento y tú ganas {commission}."
+        }
+      ],
+      "faqHeading": "Preguntas frecuentes",
+      "faq": [
+        {
+          "q": "¿Quién puede unirse?",
+          "a": "Cualquier persona mayor de 18 años. No hace falta licencia ni empresa, pero revisa la sección 2 de los Términos para tu país."
+        },
+        {
+          "q": "¿Cómo se usa el código?",
+          "a": "No hay que introducirlo en ningún sitio: el inversor simplemente se lo dice a nuestro equipo antes de la compra."
+        },
+        {
+          "q": "¿Cuándo cobro?",
+          "a": "Cuando la transacción se complete. Te contactamos para organizar el pago."
+        },
+        {
+          "q": "¿Puedo referirme a mí mismo?",
+          "a": "No: las autorreferencias no se pagan. Consulta los Términos del programa."
+        }
+      ],
+      "ctaGet": "Conseguir mi código",
+      "ctaLogin": "Iniciar sesión",
+      "closed": "El programa está cerrado por ahora. Los socios existentes pueden iniciar sesión.",
+      "termsLink": "Términos del programa",
+      "privacyLink": "Aviso de privacidad"
+    },
+    "register": {
+      "title": "Consigue tu código de afiliado",
+      "sub": "Un formulario breve. Verás tu código justo después de registrarte.",
+      "firstName": "Nombre",
+      "lastName": "Apellidos",
+      "email": "Email",
+      "phone": "Teléfono",
+      "password": "Contraseña",
+      "passwordHint": "Mínimo 10 caracteres.",
+      "consentHeading": "Consentimientos",
+      "submit": "Crear mi código",
+      "haveAccount": "¿Ya tienes un código?",
+      "loginLink": "Inicia sesión",
+      "errors": {
+        "missing": "Completa tu nombre y número de teléfono.",
+        "email": "Esta dirección de email no parece válida.",
+        "email-taken": "Este email ya está registrado. Inicia sesión.",
+        "password": "La contraseña necesita al menos 10 caracteres.",
+        "consent": "Las dos primeras casillas son obligatorias para unirte.",
+        "closed": "El programa está cerrado a nuevos registros por ahora.",
+        "throttled": "Demasiados intentos desde esta conexión. Inténtalo de nuevo en {wait} segundos."
+      }
+    },
+    "login": {
+      "title": "Acceso de afiliados",
+      "email": "Email",
+      "password": "Contraseña",
+      "submit": "Iniciar sesión",
+      "forgot": "¿Has olvidado tu contraseña? Escribe a {email}.",
+      "noAccount": "¿Aún no tienes código?",
+      "registerLink": "Únete al programa",
+      "errors": {
+        "credentials": "Email o contraseña incorrectos.",
+        "throttled": "Demasiados intentos. Inténtalo de nuevo en {wait} segundos."
+      }
+    },
+    "dashboard": {
+      "welcome": "¡Bienvenido al programa! Este es tu código: compártelo hoy mismo.",
+      "codeHeading": "Tu código",
+      "codeInactive": "Tu cuenta está suspendida y el código está inactivo. Escribe a {email}.",
+      "copy": "Copiar código",
+      "copied": "Copiado",
+      "shareHeading": "Compártelo",
+      "shareText": "¿Compras una propiedad a través de Vesteri? Indica mi código {code} y obtén {discount} de descuento. www.vesteri.com",
+      "salesHeading": "Ventas con tu código",
+      "pendingHeading": "Importe pendiente de pago",
+      "earnedLine": "Total ganado hasta hoy: {amount}",
+      "table": {
+        "date": "Fecha de venta",
+        "property": "Propiedad",
+        "commission": "Comisión",
+        "status": "Estado",
+        "pending": "Pendiente",
+        "paid": "Pagada"
+      },
+      "empty": "Aún no hay ventas registradas. Comparte tu código: cada inversor que lo indique te reporta {commission}.",
+      "note": "Las ventas las registra el equipo de Vesteri cuando la transacción se completa. Si crees que falta una venta, escribe a {email}.",
+      "accountHeading": "Tu cuenta",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "passwordHeading": "Cambiar contraseña",
+      "currentPassword": "Contraseña actual",
+      "newPassword": "Nueva contraseña",
+      "passwordSubmit": "Cambiar contraseña",
+      "passwordSaved": "Contraseña cambiada.",
+      "passwordErrors": {
+        "current-password": "La contraseña actual es incorrecta.",
+        "password": "La nueva contraseña necesita al menos 10 caracteres."
+      },
+      "logout": "Cerrar sesión"
+    }
   }
 }

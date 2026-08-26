@@ -1,5 +1,6 @@
 import { writeAudit } from './audit';
-import { normalizeCode } from './code';
+import { generateUniqueCode, normalizeCode } from './code';
+import { hashPassword } from './crypto';
 import type { D1Database } from './env';
 
 export interface AffiliateRow {
@@ -58,6 +59,90 @@ export async function listAffiliates(db: D1Database, search?: string): Promise<A
 
 export async function getAffiliate(db: D1Database, id: string): Promise<AffiliateRow | null> {
   return db.prepare('SELECT * FROM affiliates WHERE id = ?').bind(id).first<AffiliateRow>();
+}
+
+export async function findAffiliateByEmail(
+  db: D1Database,
+  email: string,
+): Promise<AffiliateRow | null> {
+  return db
+    .prepare('SELECT * FROM affiliates WHERE email = ?')
+    .bind(email.trim().toLowerCase())
+    .first<AffiliateRow>();
+}
+
+/**
+ * Registration write path. Hashes the password, generates the unique code and
+ * stamps the consent record. Throws 'email-taken' when the address exists —
+ * the unique index is the authoritative guard against races.
+ */
+export async function createAffiliate(
+  db: D1Database,
+  input: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    password: string;
+    termsVersion: string;
+    marketingConsent: boolean;
+  },
+): Promise<AffiliateRow> {
+  const email = input.email.trim().toLowerCase();
+  if (await findAffiliateByEmail(db, email)) throw new Error('email-taken');
+
+  const id = crypto.randomUUID();
+  const code = await generateUniqueCode(db, input.firstName);
+  const passwordHash = await hashPassword(input.password);
+  const now = new Date().toISOString();
+  try {
+    await db
+      .prepare(
+        `INSERT INTO affiliates
+           (id, first_name, last_name, email, phone, password_hash, code,
+            terms_accepted_at, terms_version, privacy_acknowledged_at,
+            marketing_consent, marketing_consent_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      )
+      .bind(
+        id,
+        input.firstName,
+        input.lastName,
+        email,
+        input.phone,
+        passwordHash,
+        code,
+        now,
+        input.termsVersion,
+        now,
+        input.marketingConsent ? 1 : 0,
+        input.marketingConsent ? now : null,
+      )
+      .run();
+  } catch (error) {
+    if (String(error).includes('UNIQUE')) throw new Error('email-taken');
+    throw error;
+  }
+  await writeAudit(db, {
+    actor: `affiliate:${id}`,
+    action: 'affiliate.registered',
+    targetId: id,
+    after: { code, terms_version: input.termsVersion, marketing_consent: input.marketingConsent },
+  });
+  const created = await getAffiliate(db, id);
+  if (!created) throw new Error('affiliate insert failed');
+  return created;
+}
+
+export async function updateAffiliatePassword(
+  db: D1Database,
+  id: string,
+  newPassword: string,
+): Promise<void> {
+  await db
+    .prepare("UPDATE affiliates SET password_hash = ?, updated_at = datetime('now') WHERE id = ?")
+    .bind(await hashPassword(newPassword), id)
+    .run();
 }
 
 export async function setAffiliateStatus(

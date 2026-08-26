@@ -83,6 +83,14 @@ export const routing = defineRouting({
       es: '/aviso-de-ia',
       de: '/ki-hinweis',
     },
+    // Affiliate module: one slug across locales, like /cookies — the codes on
+    // these pages travel between languages, so the addresses should too.
+    '/affiliate': '/affiliate',
+    '/affiliate/register': '/affiliate/register',
+    '/affiliate/login': '/affiliate/login',
+    '/affiliate/dashboard': '/affiliate/dashboard',
+    '/affiliate/terms': '/affiliate/terms',
+    '/affiliate/privacy': '/affiliate/privacy',
     '/disclaimers': {
       pl: '/zastrzezenia',
       en: '/disclaimers',

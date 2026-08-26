@@ -4,6 +4,8 @@ import { getSecret } from './env';
 import {
   ADMIN_COOKIE,
   ADMIN_SESSION_HOURS,
+  AFFILIATE_COOKIE,
+  AFFILIATE_SESSION_DAYS,
   createSessionToken,
   type SessionPayload,
   verifySessionToken,
@@ -47,6 +49,41 @@ export async function startAdminSession(email: string): Promise<void> {
 
 export async function endAdminSession(): Promise<void> {
   (await cookies()).delete(ADMIN_COOKIE);
+}
+
+export async function getAffiliateSession(): Promise<SessionPayload | null> {
+  const token = (await cookies()).get(AFFILIATE_COOKIE)?.value;
+  const session = await verifySessionToken(token, await getSecret('AFFILIATE_SESSION_SECRET'));
+  return session?.role === 'affiliate' ? session : null;
+}
+
+/** Redirects to the affiliate login when there is no valid affiliate session. */
+export async function requireAffiliate(locale: string): Promise<SessionPayload> {
+  const session = await getAffiliateSession();
+  if (!session) redirect(`/${locale}/affiliate/login`);
+  return session;
+}
+
+export async function startAffiliateSession(affiliateId: string): Promise<void> {
+  const token = await createSessionToken(
+    {
+      role: 'affiliate',
+      sub: affiliateId,
+      exp: Math.floor(Date.now() / 1000) + AFFILIATE_SESSION_DAYS * 86400,
+    },
+    await getSecret('AFFILIATE_SESSION_SECRET'),
+  );
+  (await cookies()).set(AFFILIATE_COOKIE, token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    path: '/',
+    maxAge: AFFILIATE_SESSION_DAYS * 86400,
+  });
+}
+
+export async function endAffiliateSession(): Promise<void> {
+  (await cookies()).delete(AFFILIATE_COOKIE);
 }
 
 /** Best-effort client IP for throttle keys — Cloudflare sets the first header. */
