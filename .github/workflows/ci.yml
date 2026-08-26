@@ -27,6 +27,9 @@ jobs:
 
       - run: npm run lint
 
+      # Unit and D1-integration tests (vitest; D1 via in-memory miniflare).
+      - run: npm test
+
       # Also type-checks: `next build` runs tsc as part of the build.
       # prebuild regenerates the maps, flags and legal documents first.
       - run: npm run build
