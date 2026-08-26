@@ -263,40 +263,40 @@
   "partners": {
     "meta": {
       "title": "Hazte partner | Vesteri",
-      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones internacionales verificadas, visitas en directo y una comisión compartida de hasta el 50/50."
+      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones verificadas, visitas en directo y hasta la mitad de cada comisión."
     },
     "navCta": "Hazte partner",
     "hero": {
-      "title": "Tus clientes. Nuestras propiedades. Un apretón de manos.",
-      "sub": "Conoces a gente con capital que pregunta por propiedad en el extranjero. Nosotros conocemos a los promotores, los mercados y la manera de enseñarlos: en directo. Repartamos lo que salga de ahí.",
+      "title": "Tus clientes, nuestras propiedades y un apretón de manos.",
+      "sub": "Conoces a gente con capital que pregunta por comprar fuera. Nosotros conocemos a los promotores y los mercados, y enseñamos las propiedades en directo. Repartamos lo que salga de ahí.",
       "cta": "Hazte partner"
     },
     "invitation": {
-      "heading": "Ese dinero se te ha estado escapando",
+      "heading": "Ese dinero lleva años pasando de largo",
       "body": [
-        "Cada vez que un cliente menciona España, Chipre o Dubái y tú cambias de tema, una comisión sale de la habitación. No porque hicieras nada mal. Porque no tenías nada que ofrecer."
+        "Cada vez que un cliente menciona España, Chipre o Dubái, cambias de tema y ves salir una comisión por la puerta. Tampoco es culpa tuya: hasta ahora no tenías nada que ofrecerle."
       ],
-      "accent": "Ahora lo tienes."
+      "accent": "Ahora sí."
     },
     "inventory": {
-      "heading": "Nuestra oferta. Tus clientes.",
+      "heading": "Tú traes al cliente, del resto nos ocupamos nosotros",
       "body": [
-        "Promociones verificadas en mercados internacionales, de promotores con los que trabajamos directamente. Tú traes a la persona; nosotros ponemos la propiedad, las respuestas y un despacho jurídico independiente, para que nadie tenga que buscar abogado a medianoche en un país extranjero.",
-        "No necesitas cartera de inmuebles. No necesitas licencias en el extranjero. Necesitas exactamente lo que ya tienes: alguien que confía en ti."
+        "Trabajamos con promociones verificadas en mercados donde tratamos directamente con el promotor. Tu cliente recibe la propiedad, respuesta a cada pregunta y el contacto de un despacho jurídico independiente, para que nadie acabe buscando abogado a medianoche en un país extranjero.",
+        "No te hace falta cartera propia ni licencia en el extranjero. Con lo que ya tienes basta: un cliente que confía en ti."
       ]
     },
     "technology": {
-      "heading": "Nuestra tecnología. Tu show.",
+      "heading": "Visitas en directo bajo tu marca",
       "body": [
-        "Tus clientes visitan propiedades en directo desde el sofá: vídeo en tiempo real desde la promoción, preguntas respondidas al momento y en su idioma.",
-        "Presenta tú el webinar y sé quien les trajo el mundo. O pásanos el micrófono y lo conducimos bajo tu marca. El público es tuyo en cualquier caso."
+        "Tus clientes visitan las propiedades en directo desde el sofá. El vídeo llega en tiempo real desde la promoción, y las preguntas se responden al momento y en su idioma.",
+        "Puedes presentar el webinar tú mismo y ser quien les abre la puerta al mundo. Si lo prefieres, nos pasas el micrófono y lo conducimos bajo tu marca. El público sigue siendo tuyo en cualquier caso."
       ]
     },
     "split": {
-      "heading": "Compartimos la comisión. Hasta el 50/50.",
+      "heading": "Compartimos la comisión, hasta la mitad",
       "body": [
-        "El promotor nos paga a nosotros. Nosotros lo compartimos contigo, y cuanto más tramo del camino recorres con tu cliente, mayor es tu mitad. Haz una sola presentación o acompaña a tu cliente hasta el final. Ambas cosas pagan. Una paga mejor.",
-        "Tu cliente paga el precio de tarifa del promotor. Ni un euro más."
+        "El promotor nos paga a nosotros y nosotros compartimos contigo. Cuanto más camino recorres con tu cliente, mayor es tu parte: una simple presentación ya paga, y acompañarlo hasta el final es lo que mejor paga.",
+        "Tu cliente paga el precio de tarifa del promotor, y ni un euro más."
       ]
     },
     "who": {
@@ -304,26 +304,26 @@
       "items": [
         {
           "t": "Agentes y agencias inmobiliarias",
-          "d": "con compradores que preguntan por mercados fuera de tu oferta."
+          "d": "con compradores que preguntan por mercados fuera de tu cartera."
         },
         {
           "t": "Asesores financieros",
-          "d": "cuyos clientes tienen capital y preguntan: ¿y ahora qué?"
+          "d": "cuyos clientes tienen capital parado y preguntan qué hacer con él."
         },
         {
-          "t": "El mundo adyacente",
-          "d": "venta y chárter de yates, viajes de lujo, servicios de conserjería, clubes privados. Si tus clientes pueden comprarse un barco, pueden comprarse el apartamento con vistas al puerto."
+          "t": "Sectores vecinos",
+          "d": "venta y chárter de yates, viajes de lujo, conserjería, clubes privados. Si tus clientes pueden permitirse el barco, pueden permitirse el piso con vistas al puerto."
         }
       ],
-      "closing": "Si la gente con patrimonio confía en ti para cualquier cosa, confiará en ti para esta pregunta. Nosotros nos ocupamos de que tengas la respuesta."
+      "closing": "Los clientes con patrimonio que ya confían en ti acabarán trayéndote esta pregunta. Nosotros nos ocupamos de que tengas la respuesta."
     },
     "cta": {
-      "title": "La próxima consulta está en camino. Tenla preparada.",
-      "sub": "Treinta minutos para ver si encajamos. Sin exclusividad, sin cuotas, sin objetivos de volumen.",
+      "title": "La próxima consulta llegará antes de lo que piensas. Esta vez, ten la respuesta.",
+      "sub": "Media hora para ver si encajamos. Sin exclusividad, sin cuotas, sin objetivos de volumen.",
       "btn": "Escríbenos: partners@vesteri.com"
     },
     "mailto": {
-      "subject": "Consulta de partner — Vesteri",
+      "subject": "Consulta de partner - Vesteri",
       "body": "Hola Piotr:\r\n\r\nMe gustaría hablar sobre una colaboración con Vesteri.\r\n\r\nNombre y apellidos:\r\nEmpresa:\r\nA qué me dedico:\r\n"
     }
   },

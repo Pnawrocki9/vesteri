@@ -263,67 +263,67 @@
   "partners": {
     "meta": {
       "title": "Zostań partnerem | Vesteri",
-      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: zweryfikowane inwestycje, pokazy na żywo i podział prowizji nawet 50/50."
+      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: sprawdzone inwestycje, pokazy na żywo i prowizja dzielona nawet po połowie."
     },
     "navCta": "Zostań partnerem",
     "hero": {
-      "title": "Twoi klienci. Nasze nieruchomości. Jeden uścisk dłoni.",
-      "sub": "Znasz ludzi z kapitałem, którzy pytają o nieruchomości za granicą. My znamy deweloperów, rynki i sposób, żeby je pokazać — na żywo. Podzielmy się tym, co z tego wyniknie.",
+      "title": "Twoi klienci, nasze nieruchomości i jeden uścisk dłoni.",
+      "sub": "Znasz ludzi z kapitałem, którzy pytają o zakup za granicą. My znamy deweloperów i rynki, a nieruchomości pokazujemy na żywo. Podzielmy się tym, co z tego wyniknie.",
       "cta": "Zostań partnerem"
     },
     "invitation": {
-      "heading": "Te pieniądze do tej pory przechodziły Ci koło nosa",
+      "heading": "Te pieniądze od lat przechodzą Ci koło nosa",
       "body": [
-        "Za każdym razem, gdy klient wspomina o Hiszpanii, Cyprze albo Dubaju, a Ty zmieniasz temat — z pokoju wychodzi prowizja. Nie dlatego, że zrobiłeś coś źle. Dlatego, że nie miałeś nic do zaoferowania."
+        "Za każdym razem, gdy klient wspomina o Hiszpanii, Cyprze albo Dubaju, zmieniasz temat i patrzysz, jak prowizja wychodzi z pokoju. Trudno się dziwić, skoro do tej pory nie miałeś mu nic do zaoferowania."
       ],
       "accent": "Teraz masz."
     },
     "inventory": {
-      "heading": "Nasza oferta. Twoi klienci.",
+      "heading": "Ty przyprowadzasz klienta, resztę bierzemy na siebie",
       "body": [
-        "Zweryfikowane inwestycje na rynkach zagranicznych, od deweloperów, z którymi pracujemy bezpośrednio. Ty przyprowadzasz człowieka — my dajemy nieruchomość, odpowiedzi na pytania i niezależną kancelarię prawną, żeby nikt nie musiał o północy szukać prawnika w obcym kraju.",
-        "Nie potrzebujesz ofert. Nie potrzebujesz licencji za granicą. Potrzebujesz dokładnie tego, co już masz: kogoś, kto Ci ufa."
+        "Pracujemy ze sprawdzonymi inwestycjami na rynkach, gdzie rozmawiamy z deweloperem bezpośrednio. Twój klient dostaje nieruchomość, odpowiedzi na każde pytanie i kontakt do niezależnej kancelarii, więc nikt nie musi o północy szukać prawnika w obcym kraju.",
+        "Nie musisz mieć własnych ofert ani licencji za granicą. Wystarczy to, co już masz: klient, który Ci ufa."
       ]
     },
     "technology": {
-      "heading": "Nasza technologia. Twój show.",
+      "heading": "Pokazy na żywo pod Twoim szyldem",
       "body": [
-        "Twoi klienci oglądają nieruchomości na żywo, nie wstając z kanapy — transmisja prosto z inwestycji, pytania zadawane na bieżąco, odpowiedzi w ich języku.",
-        "Poprowadź webinar sam i bądź tym, który przyniósł im świat. Albo oddaj nam mikrofon — poprowadzimy go pod Twoim szyldem. Tak czy inaczej, publiczność jest Twoja."
+        "Twoi klienci oglądają nieruchomości na żywo, nie wstając z kanapy. Transmisja idzie prosto z inwestycji, pytania można zadawać na bieżąco, a odpowiedzi padają w ich języku.",
+        "Webinar możesz poprowadzić sam, jako ten, który otworzył klientom drzwi na świat. Jeśli wolisz, przejmiemy mikrofon i poprowadzimy go pod Twoim szyldem. Publiczność w obu przypadkach zostaje Twoja."
       ]
     },
     "split": {
-      "heading": "Dzielimy się prowizją. Nawet 50/50.",
+      "heading": "Prowizją dzielimy się nawet po połowie",
       "body": [
-        "Deweloper płaci nam. My dzielimy się z Tobą — a im większą część drogi przechodzisz z klientem, tym większa Twoja połowa. Możesz zrobić jedno wprowadzenie albo przejść z klientem całą trasę. Jedno i drugie się opłaca. Jedno bardziej.",
-        "Twój klient płaci cenę katalogową dewelopera. Ani euro więcej."
+        "Deweloper płaci nam, my dzielimy się z Tobą. Im większą część drogi przechodzisz z klientem, tym więcej z tej prowizji trafia do Ciebie: samo wprowadzenie już się opłaca, a poprowadzenie klienta do końca opłaca się najbardziej.",
+        "Twój klient płaci przy tym cenę katalogową dewelopera, ani euro więcej."
       ]
     },
     "who": {
-      "heading": "Brzmi jak Ty?",
+      "heading": "Brzmi znajomo?",
       "items": [
         {
           "t": "Agenci i agencje nieruchomości",
-          "d": "których klienci pytają o rynki spoza Twojej oferty."
+          "d": "z klientami, którzy pytają o rynki spoza Twojej oferty."
         },
         {
           "t": "Doradcy finansowi",
-          "d": "których klienci mają kapitał i pytają: co dalej?"
+          "d": "których klienci mają wolny kapitał i pytają, co z nim dalej zrobić."
         },
         {
           "t": "Branże pokrewne",
-          "d": "sprzedaż i czarter jachtów, turystyka luksusowa, usługi concierge, kluby prywatne. Jeśli Twoi klienci kupują jacht, kupią też apartament z widokiem na marinę."
+          "d": "sprzedaż i czarter jachtów, turystyka luksusowa, usługi concierge, kluby prywatne. Jeśli Twoich klientów stać na jacht, stać ich też na apartament z widokiem na marinę."
         }
       ],
-      "closing": "Jeśli zamożni ludzie ufają Ci w czymkolwiek, zaufają Ci też przy tym pytaniu. My dbamy o to, żebyś znał odpowiedź."
+      "closing": "Zamożni klienci, którzy raz Ci zaufali, przyjdą też z tym pytaniem. Zadbamy o to, żebyś znał odpowiedź."
     },
     "cta": {
-      "title": "Następne pytanie o zagranicę padnie niedługo. Bądź na nie gotowy.",
-      "sub": "Trzydzieści minut, żeby sprawdzić, czy do siebie pasujemy. Bez wyłączności, bez opłat, bez targetów.",
+      "title": "Następne pytanie o zagranicę padnie szybciej, niż myślisz. Tym razem bądź gotowy.",
+      "sub": "Pół godziny, żeby sprawdzić, czy do siebie pasujemy. Bez wyłączności, bez opłat, bez targetów.",
       "btn": "Napisz do nas: partners@vesteri.com"
     },
     "mailto": {
-      "subject": "Zapytanie partnerskie — Vesteri",
+      "subject": "Zapytanie partnerskie - Vesteri",
       "body": "Dzień dobry,\r\n\r\nChcę porozmawiać o partnerstwie z Vesteri.\r\n\r\nImię i nazwisko:\r\nFirma:\r\nCzym się zajmuję:\r\n"
     }
   },

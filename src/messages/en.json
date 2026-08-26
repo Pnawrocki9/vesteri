@@ -263,44 +263,44 @@
   "partners": {
     "meta": {
       "title": "Become a Partner | Vesteri",
-      "description": "Your clients ask about property abroad. Partner with Vesteri: verified international developments, live property tours, and a commission split of up to 50/50."
+      "description": "Your clients ask about property abroad. Partner with Vesteri for verified developments, live property tours and up to half of every commission."
     },
     "navCta": "Become a partner",
     "hero": {
-      "title": "Your clients. Our properties. One handshake.",
-      "sub": "You know people with capital and questions about property abroad. We know the developers, the markets and how to show them — live. Let’s split what happens next.",
+      "title": "Your clients, our properties and one handshake.",
+      "sub": "You know people with capital who ask about buying abroad. We know the developers and the markets, and we show the properties live. Let’s split what comes of it.",
       "cta": "Become a partner"
     },
     "invitation": {
-      "heading": "You’ve been turning this money away",
+      "heading": "This money has been walking past you for years",
       "body": [
-        "Every time a client mentions Spain, Cyprus or Dubai and you change the subject — that’s a commission leaving the room. Not because you did anything wrong. Because you had nothing to offer."
+        "Every time a client mentions Spain, Cyprus or Dubai, you change the subject and watch a commission leave the room. Hard to blame you, since until now there was nothing you could offer them."
       ],
-      "accent": "Now you do."
+      "accent": "Now there is."
     },
     "inventory": {
-      "heading": "Our inventory. Your clients.",
+      "heading": "You bring the client, we handle the rest",
       "body": [
-        "Verified developments across international markets, with developers we work with directly. You bring the person; we bring the property, the answers and an independent law firm so nobody’s searching a foreign bar directory at midnight.",
-        "You don’t need listings. You don’t need licences abroad. You need exactly what you already have: someone who trusts you."
+        "We work with verified developments on markets where we deal with the developer directly. Your client gets the property, answers to every question and an introduction to an independent law firm, so nobody ends up searching for a lawyer abroad at midnight.",
+        "You don’t need your own listings or a licence abroad. What you already have is enough: a client who trusts you."
       ]
     },
     "technology": {
-      "heading": "Our technology. Your show.",
+      "heading": "Live tours under your banner",
       "body": [
-        "Your clients tour properties live from their sofa — real-time video from the site, questions answered on the spot, in their own language.",
-        "Host the webinar yourself and be the person who brought them the world. Or hand us the microphone and we’ll run it under your banner. Your audience either way."
+        "Your clients tour properties live from their sofa. The video streams straight from the site, questions get asked as they come up, and the answers arrive in their own language.",
+        "Host the webinar yourself and be the one who brought them the world. If you’d rather not, hand us the microphone and we’ll run it under your banner. The audience stays yours either way."
       ]
     },
     "split": {
-      "heading": "We split the commission. Up to 50/50.",
+      "heading": "We share the commission, up to half of it",
       "body": [
-        "The developer pays us. We share it with you — and the more of the journey you own, the bigger your half. Make one introduction or walk the whole road with your client. Both pay. One pays better.",
-        "Your client pays the developer’s list price either way. Not a euro more."
+        "The developer pays us and we share it with you. The more of the journey you cover with your client, the bigger your cut: a single introduction already earns you something, and walking the whole road earns you the most.",
+        "Your client pays the developer’s list price either way, and not a euro more."
       ]
     },
     "who": {
-      "heading": "Sound like you?",
+      "heading": "Sound familiar?",
       "items": [
         {
           "t": "Real estate agents & agencies",
@@ -308,22 +308,22 @@
         },
         {
           "t": "Financial advisors",
-          "d": "whose clients hold capital and ask where next."
+          "d": "whose clients are sitting on capital and asking what to do with it next."
         },
         {
           "t": "The adjacent world",
-          "d": "yacht sales and charter, luxury travel, concierge services, private clubs. If your clients can buy a boat, they can buy the marina view behind it."
+          "d": "yacht sales and charter, luxury travel, concierge services, private clubs. If your clients can afford the boat, they can afford the flat overlooking the marina."
         }
       ],
-      "closing": "If wealthy people trust you with anything, they’ll trust you with this question. We make sure you have the answer."
+      "closing": "Wealthy clients who already trust you will bring you this question too. We make sure you have the answer ready."
     },
     "cta": {
-      "title": "The next enquiry is coming. Be ready for it.",
-      "sub": "Thirty minutes to see if we fit. No exclusivity, no fees, no volume targets.",
+      "title": "The next enquiry will land sooner than you think. This time, be ready for it.",
+      "sub": "Half an hour to see whether we fit. No exclusivity, no fees, no volume targets.",
       "btn": "Write to us: partners@vesteri.com"
     },
     "mailto": {
-      "subject": "Partner enquiry — Vesteri",
+      "subject": "Partner enquiry - Vesteri",
       "body": "Hi Piotr,\r\n\r\nI’d like to talk about partnering with Vesteri.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
     }
   },

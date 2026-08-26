@@ -263,44 +263,44 @@
   "partners": {
     "meta": {
       "title": "Partner werden | Vesteri",
-      "description": "Ihre Kunden fragen nach Immobilien im Ausland. Werden Sie Partner von Vesteri: geprüfte internationale Projekte, Live-Besichtigungen und eine geteilte Provision von bis zu 50/50."
+      "description": "Ihre Kunden fragen nach Immobilien im Ausland. Werden Sie Partner von Vesteri: geprüfte Projekte, Live-Besichtigungen und bis zur Hälfte jeder Provision."
     },
     "navCta": "Partner werden",
     "hero": {
-      "title": "Ihre Kunden. Unsere Immobilien. Ein Handschlag.",
-      "sub": "Sie kennen Menschen mit Kapital, die nach Immobilien im Ausland fragen. Wir kennen die Bauträger, die Märkte und den Weg, sie zu zeigen: live. Teilen wir, was daraus wird.",
+      "title": "Ihre Kunden, unsere Immobilien und ein Handschlag.",
+      "sub": "Sie kennen Menschen mit Kapital, die nach Immobilien im Ausland fragen. Wir kennen die Bauträger und die Märkte, und wir zeigen die Objekte live. Was daraus wird, teilen wir uns.",
       "cta": "Partner werden"
     },
     "invitation": {
-      "heading": "Dieses Geld ist Ihnen bisher entgangen",
+      "heading": "Dieses Geld läuft seit Jahren an Ihnen vorbei",
       "body": [
-        "Jedes Mal, wenn ein Kunde Spanien, Zypern oder Dubai erwähnt und Sie das Thema wechseln, verlässt eine Provision den Raum. Nicht weil Sie etwas falsch gemacht hätten. Weil Sie nichts anzubieten hatten."
+        "Jedes Mal, wenn ein Kunde Spanien, Zypern oder Dubai erwähnt, wechseln Sie das Thema und sehen zu, wie eine Provision den Raum verlässt. Ein Vorwurf ist das nicht: Bis jetzt hatten Sie ihm schlicht nichts anzubieten."
       ],
-      "accent": "Jetzt haben Sie es."
+      "accent": "Jetzt schon."
     },
     "inventory": {
-      "heading": "Unser Angebot. Ihre Kunden.",
+      "heading": "Sie bringen den Kunden, den Rest übernehmen wir",
       "body": [
-        "Geprüfte Projekte auf internationalen Märkten, von Bauträgern, mit denen wir direkt zusammenarbeiten. Sie bringen den Menschen; wir bringen die Immobilie, die Antworten und eine unabhängige Kanzlei, damit niemand um Mitternacht in einem fremden Land einen Anwalt suchen muss.",
-        "Sie brauchen kein Immobilienportfolio. Sie brauchen keine Lizenzen im Ausland. Sie brauchen genau das, was Sie schon haben: jemanden, der Ihnen vertraut."
+        "Wir arbeiten mit geprüften Projekten auf Märkten, auf denen wir direkt mit dem Bauträger verhandeln. Ihr Kunde bekommt die Immobilie, Antworten auf jede Frage und den Kontakt zu einer unabhängigen Kanzlei, damit niemand um Mitternacht in einem fremden Land einen Anwalt suchen muss.",
+        "Sie brauchen weder ein eigenes Portfolio noch eine Lizenz im Ausland. Was Sie schon haben, genügt: einen Kunden, der Ihnen vertraut."
       ]
     },
     "technology": {
-      "heading": "Unsere Technologie. Ihre Show.",
+      "heading": "Live-Besichtigungen unter Ihrem Namen",
       "body": [
-        "Ihre Kunden besichtigen Immobilien live vom Sofa aus: Video in Echtzeit von der Baustelle, Fragen werden sofort beantwortet, in ihrer Sprache.",
-        "Führen Sie das Webinar selbst durch und seien Sie derjenige, der ihnen die Welt gebracht hat. Oder reichen Sie uns das Mikrofon, und wir führen es unter Ihrem Namen. Das Publikum gehört so oder so Ihnen."
+        "Ihre Kunden besichtigen die Objekte live vom Sofa aus. Das Video kommt in Echtzeit von der Baustelle, Fragen werden sofort beantwortet, und zwar in ihrer Sprache.",
+        "Sie können das Webinar selbst moderieren und derjenige sein, der seinen Kunden die Welt ins Wohnzimmer holt. Wenn Ihnen das lieber ist, übernehmen wir das Mikrofon und führen es unter Ihrem Namen. Das Publikum bleibt in jedem Fall Ihres."
       ]
     },
     "split": {
-      "heading": "Wir teilen die Provision. Bis zu 50/50.",
+      "heading": "Die Provision teilen wir, bis zur Hälfte",
       "body": [
-        "Der Bauträger bezahlt uns. Wir teilen mit Ihnen, und je mehr des Weges Sie mit Ihrem Kunden gehen, desto größer ist Ihre Hälfte. Stellen Sie nur den Kontakt her oder begleiten Sie Ihren Kunden bis zum Schluss. Beides zahlt sich aus. Eines zahlt sich besser aus.",
-        "Ihr Kunde zahlt den Listenpreis des Bauträgers. Keinen Euro mehr."
+        "Der Bauträger bezahlt uns, wir teilen mit Ihnen. Je mehr vom Weg Sie mit Ihrem Kunden gehen, desto größer wird Ihr Anteil: Schon die Vorstellung zahlt sich aus, die Begleitung bis zum Abschluss zahlt sich am meisten aus.",
+        "Ihr Kunde zahlt dabei den Listenpreis des Bauträgers, keinen Euro mehr."
       ]
     },
     "who": {
-      "heading": "Klingt nach Ihnen?",
+      "heading": "Kommt Ihnen das bekannt vor?",
       "items": [
         {
           "t": "Immobilienmakler und Agenturen",
@@ -308,22 +308,22 @@
         },
         {
           "t": "Finanzberater",
-          "d": "deren Kunden Kapital halten und fragen: Wohin als Nächstes?"
+          "d": "deren Kunden Kapital auf der Seite haben und fragen, was sie damit anfangen sollen."
         },
         {
-          "t": "Die angrenzende Welt",
-          "d": "Yachtverkauf und -charter, Luxusreisen, Concierge-Dienste, Privatclubs. Wenn Ihre Kunden ein Boot kaufen können, können sie auch die Wohnung mit Blick auf die Marina kaufen."
+          "t": "Benachbarte Branchen",
+          "d": "Yachtverkauf und -charter, Luxusreisen, Concierge-Dienste, Privatclubs. Wer sich das Boot leisten kann, kann sich auch die Wohnung mit Blick auf die Marina leisten."
         }
       ],
-      "closing": "Wenn vermögende Menschen Ihnen irgendetwas anvertrauen, vertrauen sie Ihnen auch diese Frage an. Wir sorgen dafür, dass Sie die Antwort haben."
+      "closing": "Vermögende Kunden, die Ihnen einmal vertrauen, kommen auch mit dieser Frage zu Ihnen. Wir sorgen dafür, dass Sie die Antwort haben."
     },
     "cta": {
-      "title": "Die nächste Anfrage kommt. Seien Sie darauf vorbereitet.",
-      "sub": "Dreißig Minuten, um zu sehen, ob wir zusammenpassen. Keine Exklusivität, keine Gebühren, keine Mengenziele.",
+      "title": "Die nächste Anfrage kommt schneller, als Sie denken. Diesmal haben Sie die Antwort.",
+      "sub": "Eine halbe Stunde, um zu sehen, ob wir zusammenpassen. Keine Exklusivität, keine Gebühren, keine Mengenziele.",
       "btn": "Schreiben Sie uns: partners@vesteri.com"
     },
     "mailto": {
-      "subject": "Partneranfrage — Vesteri",
+      "subject": "Partneranfrage - Vesteri",
       "body": "Guten Tag,\r\n\r\nich möchte über eine Partnerschaft mit Vesteri sprechen.\r\n\r\nName:\r\nUnternehmen:\r\nMeine Tätigkeit:\r\n"
     }
   },
