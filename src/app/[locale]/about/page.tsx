@@ -5,6 +5,7 @@ import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
+import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
 
@@ -39,14 +40,14 @@ export default async function AboutPage({ params }: Props) {
 
   // The closing CTA lives on the For Developers page, so the nav button
   // points at that section rather than opening mail from here.
-  const developersHref = getPathname({ locale: locale as 'pl' | 'en', href: '/developers' });
+  const developersHref = getPathname({ locale: locale as AppLocale, href: '/developers' });
   const ctaHref = `${developersHref}#cta`;
-  const platformHref = getPathname({ locale: locale as 'pl' | 'en', href: '/platform' });
+  const platformHref = getPathname({ locale: locale as AppLocale, href: '/platform' });
 
   return (
     <div className="bg-paper-alt text-ink">
       <JsonLd
-        nodes={[breadcrumbJsonLd({ href: '/about', locale: locale as 'pl' | 'en', name: t('title') })]}
+        nodes={[breadcrumbJsonLd({ href: '/about', locale: locale as AppLocale, name: t('title') })]}
       />
       {/* Nav — same treatment as the For Developers page */}
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">

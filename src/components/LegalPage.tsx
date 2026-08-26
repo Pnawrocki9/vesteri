@@ -6,6 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import JsonLd from '@/components/JsonLd';
 import { legalDocuments, type LegalSlug } from '@/generated/legal';
 import { getPathname, Link } from '@/i18n/navigation';
+import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 
 // Every legal document renders through here; MarkdownBody supplies the
@@ -18,7 +19,7 @@ export default async function LegalPage({
   locale,
 }: {
   page: LegalSlug;
-  locale: 'pl' | 'en';
+  locale: AppLocale;
 }) {
   const t = await getTranslations('legal');
   const tAbout = await getTranslations('about');

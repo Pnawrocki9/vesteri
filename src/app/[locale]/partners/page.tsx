@@ -6,6 +6,7 @@ import LanguageSwitch from '@/components/LanguageSwitch';
 import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { getPathname, Link } from '@/i18n/navigation';
+import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
 import { PARTNERS_EMAIL } from '@/lib/site';
@@ -35,7 +36,7 @@ export default async function PartnersPage({ params }: Props) {
   const tDev = await getTranslations('developers');
   const tAbout = await getTranslations('about');
   const tNav = await getTranslations('nav');
-  const activeLocale = locale as 'pl' | 'en';
+  const activeLocale = locale as AppLocale;
 
   const invitation = t.raw('invitation.body') as string[];
   const inventory = t.raw('inventory.body') as string[];

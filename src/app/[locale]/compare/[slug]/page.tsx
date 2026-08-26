@@ -66,7 +66,12 @@ export default async function ComparisonPage({ params }: Props) {
   if (!comparison) notFound();
 
   const copy = comparison.locales[activeLocale];
-  const otherLocale = routing.locales.find((l) => l !== activeLocale)!;
+  const switchTargets = Object.fromEntries(
+    routing.locales.map((l) => [
+      l,
+      { pathname: '/compare/[slug]', params: { slug: comparison.locales[l].slug } },
+    ]),
+  );
   const t = await getTranslations('compare');
   const tDev = await getTranslations('developers');
   const tAbout = await getTranslations('about');
@@ -139,12 +144,7 @@ export default async function ComparisonPage({ params }: Props) {
           >
             {tAbout('nav.developers')}
           </Link>
-          <LanguageSwitch
-            targetHref={{
-              pathname: '/compare/[slug]',
-              params: { slug: comparison.locales[otherLocale].slug },
-            }}
-          />
+          <LanguageSwitch targets={switchTargets} />
           <a
             href="#cta"
             className="rounded-btn bg-ink px-2.5 py-3 text-[10px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"

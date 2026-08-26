@@ -2,7 +2,9 @@ import { getPathname } from '@/i18n/navigation';
 import { articleIndex, articlesByLocale } from '@/generated/articles';
 import { COMPARISONS } from '@/content/compare';
 import { routing, type StaticPathname } from '@/i18n/routing';
+import de from '@/messages/de.json';
 import en from '@/messages/en.json';
+import es from '@/messages/es.json';
 import pl from '@/messages/pl.json';
 import { CONTACT_EMAIL, SITE_URL } from '@/lib/site';
 
@@ -19,7 +21,12 @@ import { CONTACT_EMAIL, SITE_URL } from '@/lib/site';
 type Locale = (typeof routing.locales)[number];
 type Messages = typeof en;
 
-const MESSAGES: Record<Locale, Messages> = { en, pl: pl as Messages };
+const MESSAGES: Record<Locale, Messages> = {
+  en,
+  pl: pl as Messages,
+  es: es as Messages,
+  de: de as Messages,
+};
 
 const LEGAL = ['privacy', 'terms', 'cookies', 'gdpr', 'ai', 'disclaimers'] as const;
 
@@ -103,9 +110,10 @@ function body() {
     `> ${en.landing.meta.description}`,
     '',
     'Vesteri is a brand of Time2Show, Inc., a Polish-American startup building',
-    'technology for the property industry. The site is bilingual: Polish is the',
-    'default language and English the second, and every page exists under both a',
-    `/pl/ and an /en/ path. The canonical host is ${SITE_URL}.`,
+    'technology for the property industry. The site is available in four',
+    'languages: Polish is the default, followed by English, Spanish and German,',
+    'and every page exists under /pl/, /en/, /es/ and /de/ paths. The canonical',
+    `host is ${SITE_URL}.`,
     '',
     section('English pages', english.pages, 'en'),
     ['## English comparisons', '', ...compareEntries('en'), ''].join('\n'),
@@ -119,6 +127,18 @@ function body() {
       ? [['## Polish guides (Poradnik)', '', ...articleEntries('pl'), ''].join('\n')]
       : []),
     section('Polish legal documents', polish.legal, 'pl'),
+    section('Spanish pages', entries('es').pages, 'es'),
+    ['## Spanish comparisons (Comparativas)', '', ...compareEntries('es'), ''].join('\n'),
+    ...(articleEntries('es').length
+      ? [['## Spanish guides (Guías)', '', ...articleEntries('es'), ''].join('\n')]
+      : []),
+    section('Spanish legal documents', entries('es').legal, 'es'),
+    section('German pages', entries('de').pages, 'de'),
+    ['## German comparisons (Vergleiche)', '', ...compareEntries('de'), ''].join('\n'),
+    ...(articleEntries('de').length
+      ? [['## German guides (Ratgeber)', '', ...articleEntries('de'), ''].join('\n')]
+      : []),
+    section('German legal documents', entries('de').legal, 'de'),
     '## Notes',
     '',
     '- The platform page is a placeholder announcing a product that has not shipped',

@@ -1,0 +1,371 @@
+{
+  "landing": {
+    "meta": {
+      "title": "VESTERI — Propiedad en el extranjero sin caos | Chipre, Tailandia y más",
+      "description": "Vesteri pone orden en la inversión inmobiliaria en el extranjero: promotores verificados, tecnología de IA, despachos jurídicos independientes y contacto directo sin salir de casa.",
+      "ogTitle": "VESTERI — Propiedad en el extranjero sin caos",
+      "ogDescription": "Promotores verificados, IA objetiva y due diligence independiente. Un camino claro para invertir en mercados seleccionados en el extranjero."
+    },
+    "kicker": "Mercados cuidadosamente seleccionados · Promotores verificados",
+    "h1": "Propiedad en el extranjero.<br></br>Sin <em>caos</em>.",
+    "lede": "Vesteri pone orden en lo que hasta ahora dependía de la confianza ciega: el mercado, el promotor, el abogado y todo el proceso de compra. La decisión la tomas tú. Nosotros nos ocupamos de que sea una decisión informada.",
+    "pillars": [
+      {
+        "n": "01",
+        "t": "Socios fiables",
+        "d": "Promotores verificados antes de que veas una sola oferta."
+      },
+      {
+        "n": "02",
+        "t": "Tecnología de IA",
+        "d": "Conoce cada proyecto a fondo y siempre es objetiva."
+      },
+      {
+        "n": "03",
+        "t": "Asesoría jurídica independiente",
+        "d": "Despachos y due diligence sin conflicto de intereses."
+      },
+      {
+        "n": "04",
+        "t": "Encuentros en directo",
+        "d": "Webinars con el promotor: ves la propiedad y haces tus preguntas en directo, sin salir de casa."
+      }
+    ],
+    "ctaInvestor": "Para inversores",
+    "ctaDeveloper": "Para promotores",
+    "marketsLabel": "Mercados",
+    "activeTag": "Mercados activos",
+    "activeShort": "Activo",
+    "coords": {
+      "cyp": "35.1264° N · 33.4299° E",
+      "tha": "13.7563° N · 100.5018° E"
+    },
+    "reliefAlt": {
+      "cyp": "Mapa en relieve de Chipre",
+      "tha": "Mapa en relieve de Tailandia"
+    },
+    "countries": {
+      "cyp": "Chipre",
+      "esp": "España",
+      "ita": "Italia",
+      "prt": "Portugal",
+      "tha": "Tailandia"
+    },
+    "soon": "Próximamente",
+    "closing": "Vesteri es una nueva dimensión del mercado inmobiliario internacional. Unimos tecnología inteligente y trato humano de verdad para que descubrir y comprar propiedad en el extranjero sea más sencillo, estés donde estés.",
+    "footerCopyright": "© 2026 Vesteri",
+    "footerMarkets": "Chipre · Tailandia · España · Italia · Portugal"
+  },
+  "developers": {
+    "title": "VESTERI — Para promotores",
+    "meta": {
+      "description": "Vesteri genera demanda de propiedad en el extranjero, la cualifica en su propia plataforma de webinars y entrega a tu equipo un inversor que llega preparado."
+    },
+    "nav": {
+      "how": "Cómo trabajamos",
+      "tech": "Tecnología",
+      "listings": "Listings Portal"
+    },
+    "hero": {
+      "kicker": "Capital extranjero · Mercados seleccionados",
+      "title": "Compradores de toda Europa. Cualificados con precisión por la tecnología. Listos para hablar con tu equipo.",
+      "sub": "Vesteri genera demanda de propiedad en el extranjero, la cualifica en su propia plataforma de webinars y te entrega un inversor preparado, con un perfil completo de lo que busca.",
+      "cta": "Hazte partner",
+      "cta2": "Ver el proceso"
+    },
+    "stats": [
+      {
+        "v": "Muchos mercados en un solo lugar",
+        "l": "Nosotros conducimos el programa como moderadores. El experto y el vendedor eres tú."
+      },
+      {
+        "v": "Un perfil de intención",
+        "l": "No una lista de correos. Un registro completo de lo que cada participante preguntó y le interesó."
+      },
+      {
+        "v": "Semanas, no trimestres",
+        "l": "Entrar en un mercado nuevo lleva semanas porque no montamos estructuras comerciales locales."
+      }
+    ],
+    "sources": {
+      "kicker": "De dónde vienen nuestros inversores",
+      "title": "Capital de toda Europa",
+      "active": "Activo",
+      "soon": "Próximamente",
+      "countries": {
+        "pl": "Polonia",
+        "de": "Alemania",
+        "cz": "Chequia",
+        "hu": "Hungría",
+        "lt": "Lituania",
+        "ro": "Rumanía"
+      }
+    },
+    "process": {
+      "kicker": "Proceso",
+      "title": "De la campaña local a un inversor preparado en tu mesa",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Marketing local",
+          "d": "Promocionamos tus proyectos."
+        },
+        {
+          "n": "02",
+          "t": "Información completa para inversores",
+          "d": "Recogemos y ordenamos toda la documentación de tu promoción y la convertimos en la base de conocimiento de un chat de IA. Los inversores reciben respuestas fiables en su idioma, basadas únicamente en el material del promotor."
+        },
+        {
+          "n": "03",
+          "t": "Scoring y enrutamiento",
+          "d": "Segmentamos por lo que la gente hace de verdad, no por lo que declara."
+        },
+        {
+          "n": "04",
+          "t": "Webinar del promotor",
+          "d": "Nuestro moderador conduce la conversación. Tú presentas y respondes preguntas en directo."
+        },
+        {
+          "n": "05",
+          "t": "Entrega del lead",
+          "d": "Recibes un inversor con su perfil de intención completo y llevas el proceso desde ahí, solo o con nuestra ayuda."
+        },
+        {
+          "n": "06",
+          "t": "Apoyo al inversor",
+          "d": "Facilitamos contactos de despachos jurídicos verificados en el mercado de destino. Ese respaldo se gana la confianza del inversor."
+        },
+        {
+          "n": "07",
+          "t": "Retención",
+          "d": "Los inversores vuelven a futuros webinars para su siguiente compra, y traen a sus conocidos."
+        },
+        {
+          "n": "→",
+          "t": "El resultado",
+          "d": "Obtienes demanda, datos y contacto directo con tus clientes. Lo que te ahorras es otro comercial entre tú y el comprador, con una cartera llena de ofertas y sin conocer a fondo ninguna."
+        }
+      ]
+    },
+    "tech": {
+      "kicker": "Tecnología",
+      "title": "El webinar como fuente de datos, no como lista de direcciones",
+      "sub": "En el corazón de Vesteri está nuestra propia plataforma de webinars e IA, construida sobre tres cosas que nadie más ofrece. Cada campaña enseña al sistema un poco más sobre lo que lleva a una compra.",
+      "cards": [
+        {
+          "t": "Asistente de IA",
+          "d": "Responde a las preguntas de los inversores al momento, en su idioma. Conoce a fondo cada proyecto de la cartera, trabaja durante el webinar y sigue trabajando mucho después. No vuelves a explicar lo mismo por vigésima vez ni temes que a un agente se le olvide un detalle o simplemente no lo sepa."
+        },
+        {
+          "t": "El webinar como datos",
+          "d": "La plataforma registra qué proyecto retiene la atención de cada participante, qué pregunta, qué se salta y cuándo se desconecta. De una sola reunión sale un perfil de interés real."
+        },
+        {
+          "t": "Scoring y entrega",
+          "d": "El sistema evalúa la disposición de compra de cada participante y solo te pasa a quienes superan el umbral de cualificación, junto con el registro completo de sus preguntas e intereses."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Entregamos demanda, datos y contacto directo con tus clientes, sin intermediarios. La venta sigue siendo tuya, y nosotros estamos listos para ayudar cuando lo necesites. No estás solo.",
+      "sub": "¿Eres promotor en Chipre, España, Grecia o Portugal, o en otro país? ¡Hablemos del acceso al capital internacional!",
+      "btn": "Hablemos",
+      "copy": "Copiar",
+      "copied": "Copiado"
+    },
+    "footer": {
+      "title": "Tus compradores están en el extranjero. Nosotros te los traemos.",
+      "addrLabel": "Sede",
+      "addr": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contactLabel": "Contacto",
+      "legalLabel": "Información legal",
+      "copyright": "© 2026 Vesteri.",
+      "madeBy": "Hecho para VESTERI por Estalara (<link>www.estalara.com</link>)"
+    }
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "meta": {
+      "title": "VESTERI — Quiénes somos",
+      "description": "Vesteri es una marca de Time2Show, Inc., una startup polaco-estadounidense. Llevamos años construyendo tecnología para el sector inmobiliario."
+    },
+    "nav": {
+      "developers": "Para promotores",
+      "listings": "Listings Portal",
+      "cta": "Hablemos"
+    },
+    "who": {
+      "heading": "Quiénes somos",
+      "paragraphs": [
+        "Vesteri es una marca de Time2Show, Inc., una startup polaco-estadounidense. Llevamos años construyendo tecnología para el sector inmobiliario. Empezó con herramientas de presentaciones online y webinars, que usan agencias y agentes independientes. Después llegó la IA, que ayuda a inversores y agencias a ahorrar tiempo y a obtener información fiable. Esa parte de nuestro trabajo opera bajo el nombre de Estalara.",
+        "Formamos el equipo con gente que ya ha hecho esto antes. Ingenieros con años de software a sus espaldas, comerciales que han vendido a través de fronteras y agentes inmobiliarios con licencia. Los agentes nos mantienen a los demás con los pies en la tierra sobre cómo funciona de verdad este mercado y qué necesita la gente que trabaja en él."
+      ]
+    },
+    "team": {
+      "heading": "El equipo",
+      "members": [
+        {
+          "name": "Piotr Nawrocki",
+          "role": "CEO",
+          "bio": "Veinte años en ventas internacionales para corporaciones globales. Entusiasta de la IA y de la nueva tecnología. Cree que un negocio hecho para durar se apoya en relaciones honestas y no en la oferta en sí. Compran las personas, no las empresas."
+        },
+        {
+          "name": "Rafał Palak",
+          "role": "CTO",
+          "bio": "Doctor y profesor de informática aplicada en la Universidad Politécnica de Breslavia. Años de investigación y experiencia práctica construyendo sistemas analíticos, bases de datos y modelos de IA. Él es la razón de que nuestros productos hagan exactamente lo que decimos que hacen."
+        },
+        {
+          "name": "Krzysztof Świętek",
+          "role": "COO",
+          "bio": "Veinte años organizando conciertos y grandes eventos, una escuela de planificación donde no cabe la improvisación la noche del estreno. Un organizador excelente. Desde hace años sigue de cerca el mercado inmobiliario y trabaja en él, aprendiendo el oficio desde dentro. Hoy, como agente inmobiliario con licencia, es nuestra brújula. Cuando una conversación de producto se aleja demasiado de la práctica, nos devuelve al suelo."
+        }
+      ]
+    },
+    "why": {
+      "heading": "Por qué construimos Vesteri",
+      "paragraphs": [
+        "Al sector inmobiliario no le falta tecnología. Le faltan preguntas nuevas. La industria lleva años puliendo las mismas respuestas de siempre, mejores portales, mejores filtros, mejores fotos, mientras el comprador ha cambiado sin hacer ruido. A una generación que vive su vida entera a través de una pantalla, que lo compara todo, lo verifica todo y quiere ver antes de creer, se le sigue pidiendo que compre una vivienda como lo hicieron sus padres: con un puñado de fotos y la promesa de que todo está en orden.",
+        "En ningún sitio es mayor esa distancia que en las compras transfronterizas. La comunicación se rompe, los procesos se alargan semanas y la información llega incompleta o discretamente omitida. Quien compra desde otro país toma una de las mayores decisiones financieras de su vida con menos transparencia de la que tiene al pedir unos zapatos por internet.",
+        "No es que la visita en persona haya dejado de importar. Tarde o temprano hay que ver la propiedad con los propios ojos, y ese momento no va a desaparecer. Lo que cambió es todo lo anterior: el comprador de hoy quiere llegar a ese momento por internet. Conocer el mercado, comprobar quién es el agente, ver la propiedad en directo, preguntar y acotar la elección, todo en remoto, para que el vuelo sea para decidir y no para explorar.",
+        "En ese hueco vive Vesteri. Existimos para que comprar propiedad en el extranjero se vuelva algo normal: puedes comprobar con quién hablas, ver una propiedad en directo sin cruzar media Europa en avión y recibir información fiable antes de comprometerte."
+      ],
+      "closing": "Creemos en lo que construimos por una razón sencilla: así es como querríamos comprar nosotros."
+    }
+  },
+  "legal": {
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "cookies": "Cookies",
+    "cookiesTitle": "Política de cookies",
+    "gdpr": "RGPD",
+    "ai": "Aviso de IA",
+    "disclaimers": "Avisos legales",
+    "sectionLabel": "Información legal",
+    "meta": {
+      "privacy": "Cómo trata Vesteri los datos personales: quién es el responsable, con qué fines y sobre qué base, con quién se comparten y cuánto tiempo se conservan.",
+      "terms": "Términos del servicio electrónico del sitio y la plataforma Vesteri: el prestador, el alcance de los servicios, las reglas de participación en los webinars y las reclamaciones.",
+      "cookies": "Qué cookies funcionan en el sitio y en la plataforma de webinars de Vesteri, quién las utiliza, quiénes reciben los datos y cómo gestionar el consentimiento.",
+      "gdpr": "Tus derechos bajo el RGPD en Vesteri: acceso, rectificación, supresión, limitación, portabilidad y oposición, y cómo presentar una solicitud.",
+      "ai": "Dónde funciona la inteligencia artificial en Vesteri: el asistente de IA, el scoring de disposición de compra, las traducciones y la supervisión humana. Divulgaciones según el art. 50 del AI Act.",
+      "disclaimers": "Avisos sobre el sitio y los servicios de Vesteri: la naturaleza de los servicios, la verificación de promotores, el riesgo de la inversión en el extranjero y los límites de responsabilidad."
+    }
+  },
+  "platform": {
+    "meta": {
+      "title": "VESTERI — Plataforma de webinars e IA",
+      "description": "Una manera mejor de descubrir, conocer e invertir en propiedad en el extranjero. Mantente atento."
+    },
+    "kicker": "Muy pronto",
+    "headline": "La plataforma de webinars e IA de Vesteri",
+    "sub": "Una manera mejor de descubrir, conocer e invertir en propiedad en el extranjero. Mantente atento.",
+    "back": "Volver a vesteri.com"
+  },
+  "partners": {
+    "meta": {
+      "title": "Hazte partner | Vesteri",
+      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones internacionales verificadas, visitas en directo y una comisión compartida de hasta el 50/50."
+    },
+    "navCta": "Hazte partner",
+    "hero": {
+      "title": "Tus clientes. Nuestras propiedades. Un apretón de manos.",
+      "sub": "Conoces a gente con capital que pregunta por propiedad en el extranjero. Nosotros conocemos a los promotores, los mercados y la manera de enseñarlos: en directo. Repartamos lo que salga de ahí.",
+      "cta": "Hazte partner"
+    },
+    "invitation": {
+      "heading": "Ese dinero se te ha estado escapando",
+      "body": [
+        "Cada vez que un cliente menciona España, Chipre o Dubái y tú cambias de tema, una comisión sale de la habitación. No porque hicieras nada mal. Porque no tenías nada que ofrecer."
+      ],
+      "accent": "Ahora lo tienes."
+    },
+    "inventory": {
+      "heading": "Nuestra oferta. Tus clientes.",
+      "body": [
+        "Promociones verificadas en mercados internacionales, de promotores con los que trabajamos directamente. Tú traes a la persona; nosotros ponemos la propiedad, las respuestas y un despacho jurídico independiente, para que nadie tenga que buscar abogado a medianoche en un país extranjero.",
+        "No necesitas cartera de inmuebles. No necesitas licencias en el extranjero. Necesitas exactamente lo que ya tienes: alguien que confía en ti."
+      ]
+    },
+    "technology": {
+      "heading": "Nuestra tecnología. Tu show.",
+      "body": [
+        "Tus clientes visitan propiedades en directo desde el sofá: vídeo en tiempo real desde la promoción, preguntas respondidas al momento y en su idioma.",
+        "Presenta tú el webinar y sé quien les trajo el mundo. O pásanos el micrófono y lo conducimos bajo tu marca. El público es tuyo en cualquier caso."
+      ]
+    },
+    "split": {
+      "heading": "Compartimos la comisión. Hasta el 50/50.",
+      "body": [
+        "El promotor nos paga a nosotros. Nosotros lo compartimos contigo, y cuanto más tramo del camino recorres con tu cliente, mayor es tu mitad. Haz una sola presentación o acompaña a tu cliente hasta el final. Ambas cosas pagan. Una paga mejor.",
+        "Tu cliente paga el precio de tarifa del promotor. Ni un euro más."
+      ]
+    },
+    "who": {
+      "heading": "¿Te suena?",
+      "items": [
+        {
+          "t": "Agentes y agencias inmobiliarias",
+          "d": "con compradores que preguntan por mercados fuera de tu oferta."
+        },
+        {
+          "t": "Asesores financieros",
+          "d": "cuyos clientes tienen capital y preguntan: ¿y ahora qué?"
+        },
+        {
+          "t": "El mundo adyacente",
+          "d": "venta y chárter de yates, viajes de lujo, servicios de conserjería, clubes privados. Si tus clientes pueden comprarse un barco, pueden comprarse el apartamento con vistas al puerto."
+        }
+      ],
+      "closing": "Si la gente con patrimonio confía en ti para cualquier cosa, confiará en ti para esta pregunta. Nosotros nos ocupamos de que tengas la respuesta."
+    },
+    "cta": {
+      "title": "La próxima consulta está en camino. Tenla preparada.",
+      "sub": "Treinta minutos para ver si encajamos. Sin exclusividad, sin cuotas, sin objetivos de volumen.",
+      "btn": "Escríbenos: partners@vesteri.com"
+    },
+    "mailto": {
+      "subject": "Consulta de partner — Vesteri",
+      "body": "Hola Piotr:\r\n\r\nMe gustaría hablar sobre una colaboración con Vesteri.\r\n\r\nNombre y apellidos:\r\nEmpresa:\r\nA qué me dedico:\r\n"
+    }
+  },
+  "compare": {
+    "meta": {
+      "title": "VESTERI — Comparativas: cómo vender a inversores extranjeros",
+      "description": "Comparativas honestas de cómo los promotores llegan a los inversores extranjeros: leads de portales, oficina propia en el extranjero, redes de intermediarios, frente al webinar de Vesteri."
+    },
+    "heading": "Comparativas",
+    "title": "Cómo queda cada opción al lado de Vesteri",
+    "lede": "Comparativas honestas de los caminos por los que los promotores llegan hoy a los inversores extranjeros, incluidas las situaciones en las que la alternativa de verdad es suficiente.",
+    "pickKicker": "Elige tu comparativa",
+    "pickTitle": "Tres maneras de vender hoy en el extranjero",
+    "readMore": "Ver la comparativa",
+    "backToList": "Todas las comparativas",
+    "ctaBtn": "Hablemos"
+  },
+  "nav": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "langSwitch": {
+    "label": "Cambiar de idioma"
+  },
+  "notFound": {
+    "kicker": "Error 404",
+    "title": "No encontramos esta página",
+    "sub": "Puede que la dirección haya cambiado o tenga una errata. Aquí tienes el camino de vuelta.",
+    "home": "Página principal",
+    "developers": "Para promotores"
+  },
+  "articles": {
+    "meta": {
+      "title": "VESTERI — Guías",
+      "description": "Guías prácticas sobre la inversión inmobiliaria en el extranjero: el proceso de compra, la verificación del promotor, los trámites y los riesgos."
+    },
+    "heading": "Guías",
+    "lede": "Lo que conviene saber antes de comprar una propiedad en el extranjero.",
+    "published": "Publicado",
+    "updated": "Actualizado",
+    "author": "Autor",
+    "backToList": "Volver a las guías",
+    "otherLanguage": "Este texto no tiene versión en español. Mira el resto de artículos."
+  }
+}

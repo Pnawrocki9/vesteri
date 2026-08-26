@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const contentDir = join(root, 'src/content/legal');
-const locales = ['pl', 'en'];
+const locales = ['pl', 'en', 'es', 'de'];
 
 const documents = {};
 for (const locale of locales) {
@@ -43,7 +43,7 @@ writeFileSync(
     '// Edit the Markdown in src/content/legal/ and regenerate with:\n' +
     '//   npm run generate:legal\n\n' +
     `export type LegalSlug = ${slugs.map((slug) => `'${slug}'`).join(' | ')};\n\n` +
-    `export const legalDocuments: Record<'pl' | 'en', Record<LegalSlug, string>> = ${JSON.stringify(
+    `export const legalDocuments: Record<'pl' | 'en' | 'es' | 'de', Record<LegalSlug, string>> = ${JSON.stringify(
       documents,
       null,
       2,

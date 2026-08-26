@@ -94,7 +94,9 @@ export default async function LandingPage({ params }: Props) {
       <div className="lp-sky" aria-hidden="true" />
       <div className="lp-sun" aria-hidden="true" />
 
-      <header className="relative z-1 flex items-center justify-between border-b border-line px-14 py-[26px] max-[1080px]:px-7 max-[640px]:px-5">
+      {/* z-10, not z-1: the language menu opens inside this header, and with
+          both header and main at z-1 the menu would paint underneath main. */}
+      <header className="relative z-10 flex items-center justify-between border-b border-line px-14 py-[26px] max-[1080px]:px-7 max-[640px]:px-5">
         <span className="flex items-center gap-[14px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

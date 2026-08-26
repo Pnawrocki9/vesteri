@@ -12,6 +12,8 @@ import { getAuthor } from '@/lib/authors';
 import { articleAlternates, OG_LOCALE } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
 
+const DATE_LOCALE = { pl: 'pl-PL', en: 'en-GB', es: 'es-ES', de: 'de-DE' } as const;
+
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
 const articleUrl = (locale: ArticleLocale, slug: string) =>
@@ -87,12 +89,23 @@ export default async function ArticlePage({ params }: Props) {
 
   const { article } = found;
   const author = getAuthor(article.author);
-  const otherLocale = routing.locales.find((l) => l !== activeLocale)!;
-  const otherArticle = articlesByLocale[otherLocale][article.id];
+  // Per-locale switch targets: the article where it exists, the listing where
+  // it does not.
+  const switchTargets = Object.fromEntries(
+    routing.locales.map((l) => {
+      const version = articlesByLocale[l][article.id];
+      return [
+        l,
+        version
+          ? { pathname: '/articles/[slug]', params: { slug: version.slug } }
+          : { pathname: '/articles' },
+      ];
+    }),
+  );
   const t = await getTranslations('articles');
   const tAbout = await getTranslations('about');
 
-  const dateFormat = new Intl.DateTimeFormat(activeLocale === 'pl' ? 'pl-PL' : 'en-GB', {
+  const dateFormat = new Intl.DateTimeFormat(DATE_LOCALE[activeLocale], {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -172,13 +185,7 @@ export default async function ArticlePage({ params }: Props) {
               so reusing this one would 404 — and a piece written for one market
               may have no version in the other language, in which case the
               reader lands on that language's listing rather than nowhere. */}
-          <LanguageSwitch
-            targetHref={
-              otherArticle
-                ? { pathname: '/articles/[slug]', params: { slug: otherArticle.slug } }
-                : { pathname: '/articles' }
-            }
-          />
+          <LanguageSwitch targets={switchTargets} />
         </div>
       </nav>
 

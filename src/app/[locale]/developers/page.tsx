@@ -7,6 +7,7 @@ import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { countryFlags } from '@/generated/flags';
 import { getPathname, Link } from '@/i18n/navigation';
+import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
 import { BOOK_CALL_HREF, CONTACT_EMAIL } from '@/lib/site';
@@ -38,7 +39,7 @@ export default async function DevelopersPage({ params }: Props) {
   const t = await getTranslations('developers');
   const tAbout = await getTranslations('about');
   const tNav = await getTranslations('nav');
-  const activeLocale = locale as 'pl' | 'en';
+  const activeLocale = locale as AppLocale;
   const stats = t.raw('stats') as { v: string; l: string }[];
   const steps = t.raw('process.steps') as { n: string; t: string; d: string }[];
   const techCards = t.raw('tech.cards') as { t: string; d: string }[];

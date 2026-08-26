@@ -1,0 +1,371 @@
+{
+  "landing": {
+    "meta": {
+      "title": "VESTERI — Immobilien im Ausland ohne Chaos | Zypern, Thailand und mehr",
+      "description": "Vesteri bringt Ordnung in den Immobilienkauf im Ausland: geprüfte Bauträger, KI-Technologie, unabhängige Kanzleien und direkter Kontakt, ohne das Haus zu verlassen.",
+      "ogTitle": "VESTERI — Immobilien im Ausland ohne Chaos",
+      "ogDescription": "Geprüfte Bauträger, objektive KI und unabhängige Due Diligence. Ein klarer Weg zur Investition in ausgewählte Auslandsmärkte."
+    },
+    "kicker": "Sorgfältig ausgewählte Märkte · Geprüfte Bauträger",
+    "h1": "Immobilien im Ausland.<br></br>Ohne <em>Chaos</em>.",
+    "lede": "Vesteri bringt Ordnung in das, was bisher auf blindem Vertrauen beruhte: den Markt, den Bauträger, den Anwalt und den gesamten Kaufprozess. Die Entscheidung treffen Sie. Wir sorgen dafür, dass es eine informierte ist.",
+    "pillars": [
+      {
+        "n": "01",
+        "t": "Verlässliche Partner",
+        "d": "Bauträger werden geprüft, bevor Sie ein einziges Angebot sehen."
+      },
+      {
+        "n": "02",
+        "t": "KI-Technologie",
+        "d": "Kennt jedes Projekt im Detail und bleibt immer objektiv."
+      },
+      {
+        "n": "03",
+        "t": "Unabhängige Rechtsberatung",
+        "d": "Kanzleien und Due Diligence ohne Interessenkonflikt."
+      },
+      {
+        "n": "04",
+        "t": "Live-Termine",
+        "d": "Webinare mit dem Bauträger: Sie sehen die Immobilie und stellen Ihre Fragen live, ohne das Haus zu verlassen."
+      }
+    ],
+    "ctaInvestor": "Für Investoren",
+    "ctaDeveloper": "Für Bauträger",
+    "marketsLabel": "Märkte",
+    "activeTag": "Aktive Märkte",
+    "activeShort": "Aktiv",
+    "coords": {
+      "cyp": "35.1264° N · 33.4299° E",
+      "tha": "13.7563° N · 100.5018° E"
+    },
+    "reliefAlt": {
+      "cyp": "Reliefkarte von Zypern",
+      "tha": "Reliefkarte von Thailand"
+    },
+    "countries": {
+      "cyp": "Zypern",
+      "esp": "Spanien",
+      "ita": "Italien",
+      "prt": "Portugal",
+      "tha": "Thailand"
+    },
+    "soon": "Demnächst",
+    "closing": "Vesteri ist eine neue Dimension des internationalen Immobilienmarkts. Wir verbinden intelligente Technologie mit echtem menschlichem Kontakt, damit Sie Immobilien im Ausland leichter entdecken und kaufen können, wo immer Sie sind.",
+    "footerCopyright": "© 2026 Vesteri",
+    "footerMarkets": "Zypern · Thailand · Spanien · Italien · Portugal"
+  },
+  "developers": {
+    "title": "VESTERI — Für Bauträger",
+    "meta": {
+      "description": "Vesteri baut Nachfrage nach Auslandsimmobilien auf, qualifiziert sie auf der eigenen Webinar-Plattform und übergibt Ihrem Team einen Investor, der vorbereitet ankommt."
+    },
+    "nav": {
+      "how": "So arbeiten wir",
+      "tech": "Technologie",
+      "listings": "Listings Portal"
+    },
+    "hero": {
+      "kicker": "Ausländisches Kapital · Ausgewählte Märkte",
+      "title": "Käufer aus ganz Europa. Präzise qualifiziert durch Technologie. Bereit für das Gespräch mit Ihrem Team.",
+      "sub": "Vesteri baut Nachfrage nach Auslandsimmobilien auf, qualifiziert sie auf der eigenen Webinar-Plattform und übergibt Ihnen einen vorbereiteten Investor mit einem vollständigen Profil seiner Interessen.",
+      "cta": "Partner werden",
+      "cta2": "Den Prozess ansehen"
+    },
+    "stats": [
+      {
+        "v": "Viele Märkte an einem Ort",
+        "l": "Wir führen als Moderator durch das Programm. Der Experte und der Verkäufer sind Sie."
+      },
+      {
+        "v": "Ein Interessenprofil",
+        "l": "Keine Liste von E-Mail-Adressen, sondern eine vollständige Aufzeichnung dessen, was jeden Teilnehmer beschäftigt hat."
+      },
+      {
+        "v": "Wochen statt Quartale",
+        "l": "Der Eintritt in einen neuen Markt dauert Wochen, weil wir keine lokalen Vertriebsstrukturen aufbauen."
+      }
+    ],
+    "sources": {
+      "kicker": "Woher unsere Investoren kommen",
+      "title": "Kapital aus ganz Europa",
+      "active": "Aktiv",
+      "soon": "Demnächst",
+      "countries": {
+        "pl": "Polen",
+        "de": "Deutschland",
+        "cz": "Tschechien",
+        "hu": "Ungarn",
+        "lt": "Litauen",
+        "ro": "Rumänien"
+      }
+    },
+    "process": {
+      "kicker": "Prozess",
+      "title": "Von der lokalen Kampagne zum vorbereiteten Investor auf Ihrem Tisch",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Lokales Marketing",
+          "d": "Wir bewerben Ihre Projekte."
+        },
+        {
+          "n": "02",
+          "t": "Vollständige Informationen für Investoren",
+          "d": "Wir sammeln und ordnen Ihre komplette Projektdokumentation und machen daraus die Wissensbasis eines KI-Chats. Investoren erhalten verlässliche Antworten in ihrer Sprache, die ausschließlich auf dem Material des Bauträgers beruhen."
+        },
+        {
+          "n": "03",
+          "t": "Scoring und Routing",
+          "d": "Wir segmentieren nach dem, was Menschen wirklich tun, nicht nach dem, was sie angeben."
+        },
+        {
+          "n": "04",
+          "t": "Bauträger-Webinar",
+          "d": "Unser Moderator führt durch das Gespräch. Sie präsentieren und beantworten Fragen live."
+        },
+        {
+          "n": "05",
+          "t": "Übergabe des Leads",
+          "d": "Sie erhalten einen Investor mit vollständigem Interessenprofil und führen den Prozess von dort weiter, allein oder mit unserer Hilfe."
+        },
+        {
+          "n": "06",
+          "t": "Begleitung des Investors",
+          "d": "Wir vermitteln Kontakte zu geprüften Kanzleien im Zielmarkt. Dieser Rückhalt schafft Vertrauen beim Investor."
+        },
+        {
+          "n": "07",
+          "t": "Bindung",
+          "d": "Investoren kommen für den nächsten Kauf zu weiteren Webinaren zurück und bringen ihre Bekannten mit."
+        },
+        {
+          "n": "→",
+          "t": "Das Ergebnis",
+          "d": "Sie bekommen Nachfrage, Daten und direkten Kontakt zu Ihren Kunden. Was Sie sich ersparen, ist ein weiterer Verkäufer zwischen Ihnen und dem Käufer, mit einem Portfolio voller Angebote und ohne tiefes Wissen über eines davon."
+        }
+      ]
+    },
+    "tech": {
+      "kicker": "Technologie",
+      "title": "Das Webinar als Datenquelle, nicht als Adressliste",
+      "sub": "Das Herzstück von Vesteri ist unsere eigene Webinar- und KI-Plattform, gebaut auf drei Dingen, die sonst niemand bietet. Jede Kampagne lehrt das System ein wenig mehr darüber, was zu einem Kauf führt.",
+      "cards": [
+        {
+          "t": "KI-Assistent",
+          "d": "Er beantwortet die Fragen der Investoren sofort und in ihrer Sprache. Er kennt jedes Projekt im Portfolio im Detail, arbeitet während des Webinars und noch lange danach. Sie erklären nichts zum zwanzigsten Mal und müssen nicht fürchten, dass ein Makler ein Detail vergisst oder schlicht nicht kennt."
+        },
+        {
+          "t": "Das Webinar als Daten",
+          "d": "Die Plattform erfasst, bei welchem Projekt ein Teilnehmer verweilt, was er fragt, was er überspringt und wann er sich ausklinkt. Aus einem einzigen Termin entsteht ein Profil echten Interesses."
+        },
+        {
+          "t": "Scoring und Übergabe",
+          "d": "Das System bewertet die Kaufbereitschaft jedes Teilnehmers und übergibt Ihnen nur diejenigen, die die Qualifikationsschwelle überschreiten, zusammen mit der vollständigen Aufzeichnung ihrer Fragen und Interessen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Wir liefern Nachfrage, Daten und direkten Kontakt zu Ihren Kunden, ohne Zwischenhändler. Der Verkauf bleibt bei Ihnen, und wir stehen bereit, wann immer Sie uns brauchen. Sie sind nicht allein.",
+      "sub": "Sie sind Bauträger auf Zypern, in Spanien, Griechenland oder Portugal, oder in einem anderen Land? Sprechen wir über den Zugang zu internationalem Kapital!",
+      "btn": "Termin buchen",
+      "copy": "Kopieren",
+      "copied": "Kopiert"
+    },
+    "footer": {
+      "title": "Ihre Käufer sind im Ausland. Wir bringen sie zu Ihnen.",
+      "addrLabel": "Hauptsitz",
+      "addr": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contactLabel": "Kontakt",
+      "legalLabel": "Rechtliches",
+      "copyright": "© 2026 Vesteri.",
+      "madeBy": "Für VESTERI erstellt von Estalara (<link>www.estalara.com</link>)"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "meta": {
+      "title": "VESTERI — Über uns",
+      "description": "Vesteri ist eine Marke der Time2Show, Inc., eines polnisch-amerikanischen Startups. Seit Jahren bauen wir Technologie für die Immobilienbranche."
+    },
+    "nav": {
+      "developers": "Für Bauträger",
+      "listings": "Listings Portal",
+      "cta": "Termin buchen"
+    },
+    "who": {
+      "heading": "Wer wir sind",
+      "paragraphs": [
+        "Vesteri ist eine Marke der Time2Show, Inc., eines polnisch-amerikanischen Startups. Seit Jahren bauen wir Technologie für die Immobilienbranche. Es begann mit Werkzeugen für Online-Präsentationen und Webinare, die Agenturen und einzelne Makler nutzen. Dann kam die KI, die Investoren und Maklerhäusern hilft, Zeit zu sparen und an verlässliche Informationen zu kommen. Dieser Teil unserer Arbeit läuft unter dem Namen Estalara.",
+        "Das Team haben wir aus Leuten aufgebaut, die das alles schon einmal gemacht haben. Ingenieure mit Jahren an Software hinter sich, Vertriebler, die über Grenzen hinweg verkauft haben, und Immobilienmakler mit Lizenz. Die Makler halten den Rest von uns ehrlich, was die tatsächliche Funktionsweise dieses Marktes angeht und was die Menschen darin brauchen."
+      ]
+    },
+    "team": {
+      "heading": "Das Team",
+      "members": [
+        {
+          "name": "Piotr Nawrocki",
+          "role": "CEO",
+          "bio": "Zwanzig Jahre im internationalen Vertrieb für globale Konzerne. Begeistert von KI und neuer Technologie. Er ist überzeugt, dass ein auf Dauer angelegtes Geschäft auf ehrlichen Beziehungen ruht und nicht auf dem Angebot selbst. Menschen kaufen von Menschen, nicht von Firmen."
+        },
+        {
+          "name": "Rafał Palak",
+          "role": "CTO",
+          "bio": "Promovierter Informatiker und Dozent für angewandte Informatik an der Technischen Universität Breslau. Jahre der Forschung und praktische Erfahrung im Bau von Analysesystemen, Datenbanken und KI-Modellen. Er ist der Grund, warum unsere Produkte genau das tun, was wir versprechen."
+        },
+        {
+          "name": "Krzysztof Świętek",
+          "role": "COO",
+          "bio": "Zwanzig Jahre Organisation von Konzerten und Großveranstaltungen, eine Schule der Planung, in der am Premierenabend kein Platz für Improvisation ist. Ein hervorragender Organisator. Seit Jahren verfolgt er den Immobilienmarkt aus nächster Nähe und arbeitet darin, das Handwerk von innen lernend. Heute, als lizenzierter Immobilienmakler, ist er unser Kompass. Wenn eine Produktdiskussion zu weit von der Praxis abdriftet, holt er uns auf den Boden zurück."
+        }
+      ]
+    },
+    "why": {
+      "heading": "Warum wir Vesteri bauen",
+      "paragraphs": [
+        "Der Immobilienbranche fehlt es nicht an Technologie. Ihr fehlen neue Fragen. Die Branche poliert seit Jahren dieselben alten Antworten, bessere Portale, bessere Filter, bessere Fotos, während sich der Käufer leise verändert hat. Einer Generation, die ihr ganzes Leben über einen Bildschirm führt, alles vergleicht, alles überprüft und erst sehen will, bevor sie glaubt, wird immer noch zugemutet, eine Immobilie so zu kaufen wie ihre Eltern: nach einer Handvoll Fotos und der Versicherung, dass alles in Ordnung sei.",
+        "Nirgends ist diese Lücke größer als beim Kauf über Grenzen hinweg. Die Kommunikation reißt ab, Prozesse ziehen sich über Wochen, und Informationen kommen unvollständig an oder werden stillschweigend weggelassen. Wer aus einem anderen Land kauft, trifft eine der größten finanziellen Entscheidungen seines Lebens mit weniger Transparenz, als er beim Online-Kauf eines Paars Schuhe bekommt.",
+        "Das heißt nicht, dass der Besichtigungstermin vor Ort unwichtig geworden wäre. Früher oder später muss man eine Immobilie mit eigenen Augen sehen, und dieser Moment wird nicht verschwinden. Verändert hat sich alles davor: Der Käufer von heute will diesen Moment online erreichen. Den Markt kennenlernen, den Makler prüfen, die Immobilie live besichtigen, Fragen stellen und die Auswahl eingrenzen, alles aus der Ferne, damit der Flug der Entscheidung dient und nicht der Erkundung.",
+        "In dieser Lücke lebt Vesteri. Es gibt uns, damit der Immobilienkauf im Ausland etwas Gewöhnliches wird: Sie können prüfen, mit wem Sie sprechen, eine Immobilie live besichtigen, ohne durch halb Europa zu fliegen, und verlässliche Informationen bekommen, bevor Sie sich festlegen."
+      ],
+      "closing": "Wir glauben an das, was wir bauen, aus einem einfachen Grund: So würden wir selbst kaufen wollen."
+    }
+  },
+  "legal": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookies",
+    "cookiesTitle": "Cookie-Richtlinie",
+    "gdpr": "DSGVO",
+    "ai": "KI-Hinweis",
+    "disclaimers": "Haftungsausschluss",
+    "sectionLabel": "Rechtliches",
+    "meta": {
+      "privacy": "Wie Vesteri personenbezogene Daten verarbeitet: wer verantwortlich ist, zu welchen Zwecken und auf welcher Grundlage, an wen sie weitergegeben und wie lange sie gespeichert werden.",
+      "terms": "Nutzungsbedingungen der Website und der Plattform Vesteri: der Anbieter, der Leistungsumfang, die Regeln zur Teilnahme an Webinaren und Beschwerden.",
+      "cookies": "Welche Cookies auf der Website und der Webinar-Plattform von Vesteri laufen, wer sie einsetzt, wer die Daten erhält und wie sich die Einwilligung verwalten lässt.",
+      "gdpr": "Ihre Rechte nach der DSGVO bei Vesteri: Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch, und wie Sie einen Antrag stellen.",
+      "ai": "Wo bei Vesteri künstliche Intelligenz arbeitet: der KI-Assistent, das Scoring der Kaufbereitschaft, Übersetzungen und menschliche Aufsicht. Offenlegung nach Art. 50 AI Act.",
+      "disclaimers": "Hinweise zur Website und zu den Diensten von Vesteri: die Art der Leistungen, die Prüfung von Bauträgern, das Risiko von Auslandsinvestitionen und die Grenzen der Haftung."
+    }
+  },
+  "platform": {
+    "meta": {
+      "title": "VESTERI — Webinar- und KI-Plattform",
+      "description": "Ein besserer Weg, Immobilien im Ausland zu entdecken, kennenzulernen und in sie zu investieren. Bleiben Sie dran."
+    },
+    "kicker": "Bald verfügbar",
+    "headline": "Die Webinar- und KI-Plattform von Vesteri",
+    "sub": "Ein besserer Weg, Immobilien im Ausland zu entdecken, kennenzulernen und in sie zu investieren. Bleiben Sie dran.",
+    "back": "Zurück zu vesteri.com"
+  },
+  "partners": {
+    "meta": {
+      "title": "Partner werden | Vesteri",
+      "description": "Ihre Kunden fragen nach Immobilien im Ausland. Werden Sie Partner von Vesteri: geprüfte internationale Projekte, Live-Besichtigungen und eine geteilte Provision von bis zu 50/50."
+    },
+    "navCta": "Partner werden",
+    "hero": {
+      "title": "Ihre Kunden. Unsere Immobilien. Ein Handschlag.",
+      "sub": "Sie kennen Menschen mit Kapital, die nach Immobilien im Ausland fragen. Wir kennen die Bauträger, die Märkte und den Weg, sie zu zeigen: live. Teilen wir, was daraus wird.",
+      "cta": "Partner werden"
+    },
+    "invitation": {
+      "heading": "Dieses Geld ist Ihnen bisher entgangen",
+      "body": [
+        "Jedes Mal, wenn ein Kunde Spanien, Zypern oder Dubai erwähnt und Sie das Thema wechseln, verlässt eine Provision den Raum. Nicht weil Sie etwas falsch gemacht hätten. Weil Sie nichts anzubieten hatten."
+      ],
+      "accent": "Jetzt haben Sie es."
+    },
+    "inventory": {
+      "heading": "Unser Angebot. Ihre Kunden.",
+      "body": [
+        "Geprüfte Projekte auf internationalen Märkten, von Bauträgern, mit denen wir direkt zusammenarbeiten. Sie bringen den Menschen; wir bringen die Immobilie, die Antworten und eine unabhängige Kanzlei, damit niemand um Mitternacht in einem fremden Land einen Anwalt suchen muss.",
+        "Sie brauchen kein Immobilienportfolio. Sie brauchen keine Lizenzen im Ausland. Sie brauchen genau das, was Sie schon haben: jemanden, der Ihnen vertraut."
+      ]
+    },
+    "technology": {
+      "heading": "Unsere Technologie. Ihre Show.",
+      "body": [
+        "Ihre Kunden besichtigen Immobilien live vom Sofa aus: Video in Echtzeit von der Baustelle, Fragen werden sofort beantwortet, in ihrer Sprache.",
+        "Führen Sie das Webinar selbst durch und seien Sie derjenige, der ihnen die Welt gebracht hat. Oder reichen Sie uns das Mikrofon, und wir führen es unter Ihrem Namen. Das Publikum gehört so oder so Ihnen."
+      ]
+    },
+    "split": {
+      "heading": "Wir teilen die Provision. Bis zu 50/50.",
+      "body": [
+        "Der Bauträger bezahlt uns. Wir teilen mit Ihnen, und je mehr des Weges Sie mit Ihrem Kunden gehen, desto größer ist Ihre Hälfte. Stellen Sie nur den Kontakt her oder begleiten Sie Ihren Kunden bis zum Schluss. Beides zahlt sich aus. Eines zahlt sich besser aus.",
+        "Ihr Kunde zahlt den Listenpreis des Bauträgers. Keinen Euro mehr."
+      ]
+    },
+    "who": {
+      "heading": "Klingt nach Ihnen?",
+      "items": [
+        {
+          "t": "Immobilienmakler und Agenturen",
+          "d": "mit Käufern, die nach Märkten fragen, die Sie nicht abdecken."
+        },
+        {
+          "t": "Finanzberater",
+          "d": "deren Kunden Kapital halten und fragen: Wohin als Nächstes?"
+        },
+        {
+          "t": "Die angrenzende Welt",
+          "d": "Yachtverkauf und -charter, Luxusreisen, Concierge-Dienste, Privatclubs. Wenn Ihre Kunden ein Boot kaufen können, können sie auch die Wohnung mit Blick auf die Marina kaufen."
+        }
+      ],
+      "closing": "Wenn vermögende Menschen Ihnen irgendetwas anvertrauen, vertrauen sie Ihnen auch diese Frage an. Wir sorgen dafür, dass Sie die Antwort haben."
+    },
+    "cta": {
+      "title": "Die nächste Anfrage kommt. Seien Sie darauf vorbereitet.",
+      "sub": "Dreißig Minuten, um zu sehen, ob wir zusammenpassen. Keine Exklusivität, keine Gebühren, keine Mengenziele.",
+      "btn": "Schreiben Sie uns: partners@vesteri.com"
+    },
+    "mailto": {
+      "subject": "Partneranfrage — Vesteri",
+      "body": "Guten Tag,\r\n\r\nich möchte über eine Partnerschaft mit Vesteri sprechen.\r\n\r\nName:\r\nUnternehmen:\r\nMeine Tätigkeit:\r\n"
+    }
+  },
+  "compare": {
+    "meta": {
+      "title": "VESTERI — Vergleiche: Wege zum ausländischen Investor",
+      "description": "Ehrliche Vergleiche, wie Bauträger ausländische Investoren erreichen: Portal-Leads, ein eigenes Büro im Ausland, Maklernetzwerke, gegenüber dem Vesteri-Webinar."
+    },
+    "heading": "Vergleiche",
+    "title": "Wie sich die Alternativen neben Vesteri schlagen",
+    "lede": "Ehrliche Vergleiche der Wege, auf denen Bauträger heute ausländische Investoren erreichen, einschließlich der Situationen, in denen die Alternative wirklich genügt.",
+    "pickKicker": "Wählen Sie Ihren Vergleich",
+    "pickTitle": "Drei Wege, heute ins Ausland zu verkaufen",
+    "readMore": "Zum Vergleich",
+    "backToList": "Alle Vergleiche",
+    "ctaBtn": "Termin buchen"
+  },
+  "nav": {
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "langSwitch": {
+    "label": "Sprache wechseln"
+  },
+  "notFound": {
+    "kicker": "Fehler 404",
+    "title": "Diese Seite haben wir nicht gefunden",
+    "sub": "Die Adresse ist vielleicht veraltet oder enthält einen Tippfehler. Hier finden Sie zurück.",
+    "home": "Startseite",
+    "developers": "Für Bauträger"
+  },
+  "articles": {
+    "meta": {
+      "title": "VESTERI — Ratgeber",
+      "description": "Praktische Leitfäden zum Immobilienkauf im Ausland: der Kaufprozess, die Prüfung des Bauträgers, die Formalitäten und die Risiken."
+    },
+    "heading": "Ratgeber",
+    "lede": "Was Sie wissen sollten, bevor Sie eine Immobilie im Ausland kaufen.",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "author": "Autor",
+    "backToList": "Zurück zum Ratgeber",
+    "otherLanguage": "Diesen Text gibt es nicht auf Deutsch. Sehen Sie sich die übrigen Artikel an."
+  }
+}

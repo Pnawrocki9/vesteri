@@ -7,10 +7,12 @@ import MobileNav from '@/components/MobileNav';
 import SiteFooter from '@/components/SiteFooter';
 import { articleIndex, articlesByLocale, type ArticleLocale } from '@/generated/articles';
 import { getPathname, Link } from '@/i18n/navigation';
-import { routing } from '@/i18n/routing';
+import { routing, type AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { articleAlternates, socialMetadata } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
+
+const DATE_LOCALE = { pl: 'pl-PL', en: 'en-GB', es: 'es-ES', de: 'de-DE' } as const;
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -43,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ArticlesIndex({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const activeLocale = locale as 'pl' | 'en';
+  const activeLocale = locale as AppLocale;
   const t = await getTranslations('articles');
   const tAbout = await getTranslations('about');
   const tDev = await getTranslations('developers');
@@ -57,7 +59,7 @@ export default async function ArticlesIndex({ params }: Props) {
   // page worth serving or indexing, so it does not exist until it has content.
   if (published.length === 0) notFound();
 
-  const dateFormat = new Intl.DateTimeFormat(activeLocale === 'pl' ? 'pl-PL' : 'en-GB', {
+  const dateFormat = new Intl.DateTimeFormat(DATE_LOCALE[activeLocale], {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

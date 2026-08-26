@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getPathname } from '@/i18n/navigation';
-import { routing, type StaticPathname } from '@/i18n/routing';
+import { routing, type StaticPathname, type AppLocale } from '@/i18n/routing';
 import type { ArticleLocale } from '@/generated/articles';
 import { SITE_URL } from '@/lib/site';
 
@@ -38,7 +38,7 @@ export function localeAlternates(
     routing.locales.map((l) => [l, getPathname({ locale: l, href })]),
   );
   return {
-    canonical: getPathname({ locale: locale as 'pl' | 'en', href }),
+    canonical: getPathname({ locale: locale as AppLocale, href }),
     languages: {
       ...languages,
       'x-default': neutralUrl(href),
@@ -73,7 +73,7 @@ export function articleAlternates({
   };
 }
 
-export const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB' } as const;
+export const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB', es: 'es_ES', de: 'de_DE' } as const;
 
 // One share image for the whole site, composed from the brand assets in
 // public/logo and public/pattern. Relative on purpose: metadataBase in the
@@ -109,7 +109,7 @@ export function socialMetadata({
       description,
       type: 'website',
       siteName: 'VESTERI',
-      url: getPathname({ locale: locale as 'pl' | 'en', href }),
+      url: getPathname({ locale: locale as AppLocale, href }),
       locale: current,
       alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== current),
       images: [OG_IMAGE],
