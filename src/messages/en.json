@@ -263,9 +263,9 @@
   "partners": {
     "meta": {
       "title": "Become a Partner | Vesteri",
-      "description": "Your clients ask about property abroad. Partner with Vesteri for verified developments, live property tours and up to half of every commission."
+      "description": "Your clients ask about property abroad. Partner with Vesteri for verified developments, live property tours and up to 60% of every commission."
     },
-    "navCta": "Become a partner",
+    "navCta": "Real Estate Agent? Join Us!",
     "hero": {
       "title": "Your clients, our properties and one handshake.",
       "sub": "You know people with capital who ask about buying abroad. We know the developers and the markets, and we show the properties live. Let’s split what comes of it.",
@@ -293,7 +293,7 @@
       ]
     },
     "split": {
-      "heading": "We share the commission, up to half of it",
+      "heading": "We share the commission, 60% goes to YOU!",
       "body": [
         "The developer pays us and we share it with you. The more of the journey you cover with your client, the bigger your cut: a single introduction already earns you something, and walking the whole road earns you the most.",
         "Your client pays the developer’s list price either way, and not a euro more."
@@ -370,6 +370,7 @@
   },
   "affiliate": {
     "navTitle": "Affiliate Program",
+    "promoLabel": "Earn €1000!",
     "meta": {
       "title": "Affiliate Program — VESTERI",
       "description": "Introduce an investor to Vesteri and earn a commission when they buy. The investor gets a discount for quoting your code.",

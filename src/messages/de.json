@@ -263,9 +263,9 @@
   "partners": {
     "meta": {
       "title": "Partner werden | Vesteri",
-      "description": "Ihre Kunden fragen nach Immobilien im Ausland. Werden Sie Partner von Vesteri: geprüfte Projekte, Live-Besichtigungen und bis zur Hälfte jeder Provision."
+      "description": "Ihre Kunden fragen nach Immobilien im Ausland. Werden Sie Partner von Vesteri: geprüfte Projekte, Live-Besichtigungen und bis zu 60 % jeder Provision."
     },
-    "navCta": "Partner werden",
+    "navCta": "Immobilienmakler? Machen Sie mit!",
     "hero": {
       "title": "Ihre Kunden, unsere Immobilien und ein Handschlag.",
       "sub": "Sie kennen Menschen mit Kapital, die nach Immobilien im Ausland fragen. Wir kennen die Bauträger und die Märkte, und wir zeigen die Objekte live. Was daraus wird, teilen wir uns.",
@@ -293,7 +293,7 @@
       ]
     },
     "split": {
-      "heading": "Die Provision teilen wir, bis zur Hälfte",
+      "heading": "Wir teilen die Provision, 60 % gehen an SIE!",
       "body": [
         "Der Bauträger bezahlt uns, wir teilen mit Ihnen. Je mehr vom Weg Sie mit Ihrem Kunden gehen, desto größer wird Ihr Anteil: Schon die Vorstellung zahlt sich aus, die Begleitung bis zum Abschluss zahlt sich am meisten aus.",
         "Ihr Kunde zahlt dabei den Listenpreis des Bauträgers, keinen Euro mehr."
@@ -370,6 +370,7 @@
   },
   "affiliate": {
     "navTitle": "Partnerprogramm",
+    "promoLabel": "Verdienen Sie 1000 €!",
     "meta": {
       "title": "Partnerprogramm — VESTERI",
       "description": "Empfehlen Sie Vesteri einem Investor und erhalten Sie eine Provision, wenn er kauft. Der Investor bekommt für Ihren Code einen Rabatt.",

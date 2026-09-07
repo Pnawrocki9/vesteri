@@ -263,9 +263,9 @@
   "partners": {
     "meta": {
       "title": "Zostań partnerem | Vesteri",
-      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: sprawdzone inwestycje, pokazy na żywo i prowizja dzielona nawet po połowie."
+      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: sprawdzone inwestycje, pokazy na żywo i nawet 60% prowizji dla Ciebie."
     },
-    "navCta": "Zostań partnerem",
+    "navCta": "Agent nieruchomości? Dołącz do nas!",
     "hero": {
       "title": "Twoi klienci, nasze nieruchomości i jeden uścisk dłoni.",
       "sub": "Znasz ludzi z kapitałem, którzy pytają o zakup za granicą. My znamy deweloperów i rynki, a nieruchomości pokazujemy na żywo. Podzielmy się tym, co z tego wyniknie.",
@@ -293,7 +293,7 @@
       ]
     },
     "split": {
-      "heading": "Prowizją dzielimy się nawet po połowie",
+      "heading": "Dzielimy się prowizją, 60% trafia do CIEBIE!",
       "body": [
         "Deweloper płaci nam, my dzielimy się z Tobą. Im większą część drogi przechodzisz z klientem, tym więcej z tej prowizji trafia do Ciebie: samo wprowadzenie już się opłaca, a poprowadzenie klienta do końca opłaca się najbardziej.",
         "Twój klient płaci przy tym cenę katalogową dewelopera, ani euro więcej."
@@ -370,6 +370,7 @@
   },
   "affiliate": {
     "navTitle": "Program partnerski",
+    "promoLabel": "Zarób €1000!",
     "meta": {
       "title": "Program partnerski — VESTERI",
       "description": "Poleć Vesteri inwestorowi i otrzymaj prowizję, gdy kupi nieruchomość. Inwestor dostaje rabat za podanie Twojego kodu.",

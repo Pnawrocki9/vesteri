@@ -112,11 +112,18 @@ export default async function LandingPage({ params }: Props) {
           </span>
         </span>
         <span className="flex items-center gap-2 sm:gap-4">
-          {/* Partner offer sits beside the language switch on every top bar,
-              in the landing's own primary-button colours. */}
+          {/* Affiliate teaser rides along as a plain link; the partner offer
+              keeps the landing's own primary-button colours. The long button
+              label may wrap to two lines on phones. */}
+          <Link
+            href="/affiliate"
+            className="text-[12px] font-bold tracking-[0.1em] whitespace-nowrap text-accent-deep uppercase transition-colors hover:text-ink max-[640px]:hidden"
+          >
+            {tAffiliate('promoLabel')}
+          </Link>
           <Link
             href="/partners"
-            className="bg-accent-gradient rounded-btn px-3 py-2 text-[11px] font-bold tracking-[0.1em] whitespace-nowrap text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-4 sm:text-[12px]"
+            className="bg-accent-gradient rounded-btn px-3 py-2 text-center text-[11px] font-bold tracking-[0.1em] text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-4 sm:text-[12px] sm:whitespace-nowrap max-[640px]:max-w-[200px] max-[640px]:leading-[1.35]"
           >
             {tPartners('navCta')}
           </Link>
@@ -218,7 +225,7 @@ export default async function LandingPage({ params }: Props) {
             href="/affiliate"
             className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
           >
-            {tAffiliate('navTitle')}
+            {tAffiliate('promoLabel')}
           </Link>
           {hasArticles && (
             <Link

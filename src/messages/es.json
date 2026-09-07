@@ -263,9 +263,9 @@
   "partners": {
     "meta": {
       "title": "Hazte partner | Vesteri",
-      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones verificadas, visitas en directo y hasta la mitad de cada comisión."
+      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones verificadas, visitas en directo y hasta el 60% de cada comisión."
     },
-    "navCta": "Hazte partner",
+    "navCta": "¿Agente inmobiliario? ¡Únete!",
     "hero": {
       "title": "Tus clientes, nuestras propiedades y un apretón de manos.",
       "sub": "Conoces a gente con capital que pregunta por comprar fuera. Nosotros conocemos a los promotores y los mercados, y enseñamos las propiedades en directo. Repartamos lo que salga de ahí.",
@@ -293,7 +293,7 @@
       ]
     },
     "split": {
-      "heading": "Compartimos la comisión, hasta la mitad",
+      "heading": "Compartimos la comisión, ¡el 60% es para TI!",
       "body": [
         "El promotor nos paga a nosotros y nosotros compartimos contigo. Cuanto más camino recorres con tu cliente, mayor es tu parte: una simple presentación ya paga, y acompañarlo hasta el final es lo que mejor paga.",
         "Tu cliente paga el precio de tarifa del promotor, y ni un euro más."
@@ -370,6 +370,7 @@
   },
   "affiliate": {
     "navTitle": "Programa de afiliados",
+    "promoLabel": "¡Gana 1000 €!",
     "meta": {
       "title": "Programa de afiliados — VESTERI",
       "description": "Presenta un inversor a Vesteri y gana una comisión cuando compre. El inversor recibe un descuento por indicar tu código.",
