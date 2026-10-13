@@ -266,6 +266,7 @@
       "description": "Your clients ask about property abroad. Partner with Vesteri for verified developments, live property tours and up to 60% of every commission."
     },
     "navCta": "Real Estate Agent? Join Us!",
+    "navLink": "For real estate agents",
     "hero": {
       "title": "Your clients, our properties and one handshake.",
       "sub": "You know people with capital who ask about buying abroad. We know the developers and the markets, and we show the properties live. Let’s split what comes of it.",
@@ -371,6 +372,7 @@
   "affiliate": {
     "navTitle": "Affiliate Program",
     "promoLabel": "Earn €1000!",
+    "navLink": "Referral programme",
     "meta": {
       "title": "Affiliate Program — VESTERI",
       "description": "Introduce an investor to Vesteri and earn a commission when they buy. The investor gets a discount for quoting your code.",

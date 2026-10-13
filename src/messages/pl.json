@@ -266,6 +266,7 @@
       "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: sprawdzone inwestycje, pokazy na żywo i nawet 60% prowizji dla Ciebie."
     },
     "navCta": "Agent nieruchomości? Dołącz do nas!",
+    "navLink": "Dla agentów nieruchomości",
     "hero": {
       "title": "Twoi klienci, nasze nieruchomości i jeden uścisk dłoni.",
       "sub": "Znasz ludzi z kapitałem, którzy pytają o zakup za granicą. My znamy deweloperów i rynki, a nieruchomości pokazujemy na żywo. Podzielmy się tym, co z tego wyniknie.",
@@ -371,6 +372,7 @@
   "affiliate": {
     "navTitle": "Program partnerski",
     "promoLabel": "Zarób €1000!",
+    "navLink": "Program poleceń",
     "meta": {
       "title": "Program partnerski — VESTERI",
       "description": "Poleć Vesteri inwestorowi i otrzymaj prowizję, gdy kupi nieruchomość. Inwestor dostaje rabat za podanie Twojego kodu.",

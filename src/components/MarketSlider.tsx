@@ -43,16 +43,18 @@ export default function MarketSlider({
   return (
     <>
       <div className="relative border border-line bg-paper-alt/80 p-9 pb-7 backdrop-blur-[2px] max-[640px]:p-6 max-[640px]:pb-5">
-        <span className="bg-accent-gradient absolute -top-[11px] left-8 rounded-full px-[14px] py-[5px] text-[10px] font-bold tracking-[0.16em] text-paper uppercase max-[640px]:left-5">
+        <span className="absolute -top-[11px] left-8 rounded-full border border-line bg-paper px-[14px] py-[5px] text-[10px] font-semibold tracking-[0.16em] text-ink uppercase max-[640px]:left-5">
           {activeTag}
         </span>
         <div className="mb-2 flex items-baseline justify-between gap-3">
           <b className="text-[12px] font-bold tracking-[0.24em] text-ink uppercase">{shown.name}</b>
           <span className="text-[10.5px] tracking-[0.12em] text-muted-soft">{shown.coords}</span>
         </div>
-        {/* Every slide stays in the DOM and crossfades, so switching countries
-            never waits on a download. The first one is the landing's LCP
-            element and keeps its priority; the rest ask for less. */}
+        {/* Every slide stays in the DOM, so switching countries never waits
+            on a download; timing lives in .lp-slide (landing.css). The first
+            one is the landing's LCP element and keeps its priority; the rest
+            ask for less. The reliefs carry their own alpha, so they sit on the
+            panel without a backdrop. */}
         <div className="relative h-[300px] max-[640px]:h-[200px]">
           {active.map((market, i) => (
             /* eslint-disable-next-line @next/next/no-img-element */
@@ -64,9 +66,8 @@ export default function MarketSlider({
               height={market.height}
               fetchPriority={i === 0 ? 'high' : 'low'}
               aria-hidden={i === current ? undefined : true}
-              className={`lp-relief absolute inset-0 block h-full w-full object-contain mix-blend-multiply transition-opacity duration-500 motion-reduce:transition-none ${
-                i === current ? 'opacity-100' : 'opacity-0'
-              }`}
+              data-active={i === current}
+              className="lp-slide absolute inset-0 block h-full w-full object-contain"
             />
           ))}
         </div>
@@ -81,8 +82,8 @@ export default function MarketSlider({
             onMouseEnter={() => setCurrent(i)}
             onFocus={() => setCurrent(i)}
             onClick={() => setCurrent(i)}
-            className={`${tileBasis} flex cursor-pointer flex-col items-center gap-2 border px-[14px] pt-4 pb-3 transition-colors motion-reduce:transition-none ${
-              i === current ? 'border-accent bg-paper-alt/90' : 'border-line bg-paper/80'
+            className={`${tileBasis} flex cursor-pointer flex-col items-center gap-2 border px-[14px] pt-4 pb-3 transition-[border-color,background-color] duration-300 ease-enter motion-reduce:transition-none ${
+              i === current ? 'border-ink bg-paper-alt/90' : 'border-line bg-paper/80'
             }`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -92,12 +93,12 @@ export default function MarketSlider({
               width={market.width}
               height={market.height}
               loading="lazy"
-              className="block h-[74px] w-full object-contain mix-blend-multiply"
+              className="block h-[74px] w-full object-contain"
             />
             <b className="text-[10.5px] font-bold tracking-[0.18em] text-muted-soft uppercase">
               {market.name}
             </b>
-            <span className="bg-accent-gradient rounded-full px-[9px] py-[3px] text-[9px] font-semibold tracking-[0.12em] text-paper uppercase">
+            <span className="rounded-full border border-line px-[9px] py-[3px] text-[9px] font-semibold tracking-[0.12em] text-ink uppercase">
               {activeShort}
             </span>
           </button>
