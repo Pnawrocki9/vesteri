@@ -59,15 +59,16 @@ export default async function LandingPage({ params }: Props) {
   // Live markets carry a relief render; planned ones the generated silhouette.
   // The first entry is the one the panel opens on and the landing's LCP image.
   // Relief renders are licensed stock (Thailand: Alamy 2R5W9WH, Studio Maras,
-  // standard licence), re-encoded down to what the panel actually displays.
+  // standard licence), re-encoded down to what the panel actually displays
+  // and cut out of their white backdrop by scripts/cutout-reliefs.mjs.
   const activeMarkets: ActiveMarket[] = [
     {
       key: 'cyp',
       name: t('countries.cyp'),
       coords: t('coords.cyp'),
       alt: t('reliefAlt.cyp'),
-      slide: '/img/cyprus-relief-1200.jpg',
-      thumb: '/img/cyprus-relief-thumb.jpg',
+      slide: '/img/cyprus-relief-1200.webp',
+      thumb: '/img/cyprus-relief-thumb.webp',
       width: 1200,
       height: 675,
     },
@@ -76,8 +77,8 @@ export default async function LandingPage({ params }: Props) {
       name: t('countries.tha'),
       coords: t('coords.tha'),
       alt: t('reliefAlt.tha'),
-      slide: '/img/thailand-relief-900.jpg',
-      thumb: '/img/thailand-relief-thumb.jpg',
+      slide: '/img/thailand-relief-900.webp',
+      thumb: '/img/thailand-relief-thumb.webp',
       width: 532,
       height: 900,
     },
@@ -112,20 +113,19 @@ export default async function LandingPage({ params }: Props) {
           </span>
         </span>
         <span className="flex items-center gap-2 sm:gap-4">
-          {/* Affiliate teaser rides along as a plain link; the partner offer
-              keeps the landing's own primary-button colours. The long button
-              label may wrap to two lines on phones. */}
+          {/* Both side routes are plain text links: the accent belongs to the
+              investor button in the hero, not to the header. */}
           <Link
             href="/affiliate"
-            className="text-[12px] font-bold tracking-[0.1em] whitespace-nowrap text-accent-deep uppercase transition-colors hover:text-ink max-[640px]:hidden"
+            className="text-[12px] font-semibold tracking-[0.06em] whitespace-nowrap text-muted transition-colors hover:text-ink max-[640px]:hidden"
           >
-            {tAffiliate('promoLabel')}
+            {tAffiliate('navLink')}
           </Link>
           <Link
             href="/partners"
-            className="bg-accent-gradient rounded-btn px-3 py-2 text-center text-[11px] font-bold tracking-[0.1em] text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift sm:px-4 sm:text-[12px] sm:whitespace-nowrap max-[640px]:max-w-[200px] max-[640px]:leading-[1.35]"
+            className="text-right text-[12px] font-semibold tracking-[0.06em] text-muted transition-colors hover:text-ink sm:whitespace-nowrap max-[640px]:max-w-[160px] max-[640px]:text-[11px] max-[640px]:leading-[1.35]"
           >
-            {tPartners('navCta')}
+            {tPartners('navLink')}
           </Link>
           <LanguageSwitch />
         </span>
@@ -134,35 +134,20 @@ export default async function LandingPage({ params }: Props) {
       <main className="relative z-1 mx-auto grid w-full max-w-[1360px] flex-1 grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] items-stretch gap-[72px] px-14 max-[1080px]:grid-cols-1 max-[1080px]:gap-0 max-[1080px]:px-7 max-[640px]:px-5">
         {/* Left column — the promise */}
         <section className="flex flex-col justify-center pt-[72px] pb-16 max-[640px]:pt-12 max-[640px]:pb-10">
-          <p className="mb-[26px] text-[12px] font-bold tracking-[0.26em] text-accent-deep uppercase">
+          <p className="mb-[26px] text-[12px] font-semibold tracking-[0.26em] text-muted uppercase">
             {t('kicker')}
           </p>
-          <h1 className="lp-serif mb-[26px] max-w-[560px] text-[64px] leading-[1.06] font-semibold text-balance text-ink max-[1080px]:text-[46px] max-[640px]:text-[34px]">
+          <h1 className="lp-serif mb-[26px] max-w-[560px] text-[64px] leading-[1.06] font-medium text-balance text-ink max-[1080px]:text-[46px] max-[640px]:text-[34px]">
             {t.rich('h1', {
               br: () => <br />,
               em: (chunks) => <em className="text-accent italic">{chunks}</em>,
             })}
           </h1>
-          <p className="mb-11 max-w-[520px] text-[16.5px] leading-[1.75] text-muted">
+          <p className="mb-9 max-w-[520px] text-[16.5px] leading-[1.75] text-muted">
             {t('lede')}
           </p>
 
-          <div className="mb-12 grid max-w-[640px] grid-cols-2 border-t border-l border-line max-[640px]:grid-cols-1">
-            {pillars.map((pillar) => (
-              <div
-                key={pillar.n}
-                className="flex flex-col gap-2 border-r border-b border-line px-[22px] py-5"
-              >
-                <i className="lp-serif text-[22px] leading-none font-semibold text-accent-light not-italic">
-                  {pillar.n}
-                </i>
-                <h2 className="text-[13.5px] font-bold tracking-[0.02em] text-ink">{pillar.t}</h2>
-                <span className="text-[12.5px] leading-[1.6] text-muted">{pillar.d}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="mb-12 flex flex-wrap items-center gap-4">
             <Link
               href="/platform"
               className="bg-accent-gradient rounded-btn px-[42px] py-[19px] text-[13.5px] font-bold tracking-[0.1em] text-paper uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift max-[640px]:w-full max-[640px]:px-6 max-[640px]:text-center"
@@ -184,6 +169,21 @@ export default async function LandingPage({ params }: Props) {
               {tAbout('title')}
             </Link>
           </div>
+
+          <div className="grid max-w-[640px] grid-cols-2 border-t border-l border-line max-[640px]:grid-cols-1">
+            {pillars.map((pillar) => (
+              <div
+                key={pillar.n}
+                className="flex flex-col gap-2 border-r border-b border-line px-[22px] py-5"
+              >
+                <i className="lp-serif text-[22px] leading-none font-semibold text-muted-soft not-italic">
+                  {pillar.n}
+                </i>
+                <h2 className="text-[13.5px] font-semibold tracking-[0.02em] text-ink">{pillar.t}</h2>
+                <span className="text-[12.5px] leading-[1.6] text-muted">{pillar.d}</span>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Right column — the cartographic proof */}
@@ -199,7 +199,7 @@ export default async function LandingPage({ params }: Props) {
             soonLabel={t('soon')}
           />
 
-          <p className="lp-serif border-l-2 border-accent pl-[18px] text-[19px] leading-[1.55] text-ink italic">
+          <p className="lp-serif border-l-2 border-line pl-[18px] text-[19px] leading-[1.55] text-ink italic">
             {t('closing')}
           </p>
         </aside>
@@ -213,7 +213,7 @@ export default async function LandingPage({ params }: Props) {
             href="/partners"
             className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
           >
-            {tPartners('navCta')}
+            {tPartners('navLink')}
           </Link>
           <Link
             href="/compare"
@@ -225,7 +225,7 @@ export default async function LandingPage({ params }: Props) {
             href="/affiliate"
             className="text-[11px] font-semibold tracking-[0.08em] text-muted transition-colors hover:text-accent-deep"
           >
-            {tAffiliate('promoLabel')}
+            {tAffiliate('navLink')}
           </Link>
           {hasArticles && (
             <Link
