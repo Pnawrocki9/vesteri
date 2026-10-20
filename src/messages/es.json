@@ -269,7 +269,9 @@
     "navLink": "Para agentes inmobiliarios",
     "hero": {
       "title": "¡Añade tus ofertas y usa todas nuestras herramientas gratis!",
-      "sub": "Vesteri es un marketplace de propiedad en el extranjero. Publica tus propias ofertas y vende a un público internacional en cuatro idiomas, y cuando traes a un comprador a nuestras promociones, te llevas hasta el 60% de la comisión.",
+      "tagline": "Vesteri. Propiedades excepcionales. Oportunidades globales.",
+      "subIntro": "Vesteri es un marketplace internacional de propiedades excepcionales, abierto a agentes de cualquier mercado.",
+      "subDeal": "Añade tus ofertas gratis y llega a compradores de todo el mundo. Accede además a nuestro porfolio de promociones internacionales, ofréceselas a tus clientes y gana hasta el <b>60% de la comisión de venta.</b>",
       "ctaList": "Publica tus ofertas",
       "ctaBring": "Trae a un cliente",
       "payPerUse": "Sin cuota mensual, pagas solo por lo que usas. Ver precios"

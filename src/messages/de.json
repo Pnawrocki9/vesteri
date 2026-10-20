@@ -269,7 +269,9 @@
     "navLink": "Für Immobilienmakler",
     "hero": {
       "title": "Stellen Sie Ihre Angebote ein und nutzen Sie alle unsere Tools kostenlos!",
-      "sub": "Vesteri ist ein Marktplatz für Auslandsimmobilien. Stellen Sie Ihre eigenen Angebote ein und verkaufen Sie an ein internationales Publikum in vier Sprachen. Und wenn Sie einen Käufer zu unseren Projekten bringen, erhalten Sie bis zu 60 % der Provision.",
+      "tagline": "Vesteri. Außergewöhnliche Immobilien. Globale Chancen.",
+      "subIntro": "Vesteri ist ein internationaler Marktplatz für außergewöhnliche Immobilien, offen für Makler aus jedem Markt.",
+      "subDeal": "Stellen Sie Ihre Angebote kostenlos ein und erreichen Sie Käufer aus aller Welt. Sie erhalten außerdem Zugang zu unserem Portfolio internationaler Projekte: Bieten Sie es Ihren Kunden an und verdienen Sie bis zu <b>60 % der Verkaufsprovision.</b>",
       "ctaList": "Angebote einstellen",
       "ctaBring": "Kunden vermitteln",
       "payPerUse": "Kein Abo, Sie zahlen nur für die Nutzung. Zu den Preisen"

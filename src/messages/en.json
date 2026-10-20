@@ -269,7 +269,9 @@
     "navLink": "For real estate agents",
     "hero": {
       "title": "Add your listings and use all our tools FREE",
-      "sub": "Vesteri is a marketplace for property abroad. List your own properties and sell to an international audience in four languages, and when you bring a buyer to our developments, you take up to 60% of the commission.",
+      "tagline": "Vesteri. Exceptional properties. Global opportunities.",
+      "subIntro": "Vesteri is an international marketplace of exceptional properties, open to agents from every market.",
+      "subDeal": "Add your listings free and reach buyers from all over the world. You also get access to our portfolio of international developments: offer them to your clients and earn up to <b>60% of the sales commission.</b>",
       "ctaList": "Add your listings",
       "ctaBring": "Bring a client",
       "payPerUse": "No subscription, you pay only for what you use. See pricing"

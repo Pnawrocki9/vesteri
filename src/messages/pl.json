@@ -269,7 +269,9 @@
     "navLink": "Dla agentów nieruchomości",
     "hero": {
       "title": "Dodaj swoje oferty i korzystaj z platformy Vesteri za darmo!",
-      "sub": "Vesteri to marketplace nieruchomości zagranicznych. Wystaw własne oferty i sprzedawaj międzynarodowej publiczności w czterech językach, a gdy przyprowadzisz kupującego do naszych inwestycji, bierzesz nawet 60% prowizji.",
+      "tagline": "Vesteri. Wyjątkowe nieruchomości. Globalne możliwości.",
+      "subIntro": "Vesteri to międzynarodowy marketplace wyjątkowych nieruchomości, otwarty dla agentów z każdego rynku.",
+      "subDeal": "Dodawaj swoje oferty za darmo i docieraj do kupujących z całego świata. Zyskaj również dostęp do naszego portfolio zagranicznych inwestycji, oferuj je swoim klientom i zarabiaj nawet <b>60% prowizji od sprzedaży.</b>",
       "ctaList": "Dodaj swoje oferty",
       "ctaBring": "Przyprowadź klienta",
       "payPerUse": "Zero abonamentu, płacisz tylko za użycie. Zobacz cennik"

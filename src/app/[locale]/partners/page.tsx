@@ -116,7 +116,15 @@ export default async function PartnersPage({ params }: Props) {
             <h1 className="text-[32px] leading-[1.15] font-bold text-balance text-paper-alt sm:text-[40px] xl:text-hero">
               {t('hero.title')}
             </h1>
-            <p className="text-[18px] leading-[1.7] text-muted-dark">{t('hero.sub')}</p>
+            <p className="text-[20px] leading-[1.5] font-semibold text-accent-light">
+              {t('hero.tagline')}
+            </p>
+            <p className="text-[18px] leading-[1.7] text-muted-dark">{t('hero.subIntro')}</p>
+            <p className="text-[18px] leading-[1.7] text-muted-dark">
+              {t.rich('hero.subDeal', {
+                b: (chunks) => <strong className="font-bold text-paper-alt">{chunks}</strong>,
+              })}
+            </p>
             <div className="mt-2 flex flex-wrap gap-4">
               <a
                 href={AGENT_PANEL_URL}
