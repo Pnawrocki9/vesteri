@@ -7,6 +7,9 @@ export const INVESTOR_PLATFORM_URL =
 export const CONTACT_EMAIL = 'contact@vesteri.com';
 // Partner enquiries land in their own inbox, separate from general contact.
 export const PARTNERS_EMAIL = 'partners@vesteri.com';
+// Self-serve panel where agents add their own listings. Temporary host on the
+// Estalara domain (confirmed 2026-10); swap once a vesteri.com alias exists.
+export const AGENT_PANEL_URL = 'https://vesteri.estalara.com';
 export const CONTACT_PHONE_DISPLAY = '+48 667 953 016';
 export const CONTACT_PHONE_TEL = '+48667953016';
 

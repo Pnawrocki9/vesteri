@@ -263,21 +263,24 @@
   "partners": {
     "meta": {
       "title": "Become a Partner | Vesteri",
-      "description": "Your clients ask about property abroad. Partner with Vesteri for verified developments, live property tours and up to 60% of every commission."
+      "description": "The Vesteri marketplace for agents: list your own properties free and sell in four languages, or bring a buyer to our developments and take up to 60% of the commission."
     },
     "navCta": "Real Estate Agent? Join Us!",
     "navLink": "For real estate agents",
     "hero": {
-      "title": "Your clients, our properties and one handshake.",
-      "sub": "You know people with capital who ask about buying abroad. We know the developers and the markets, and we show the properties live. Let’s split what comes of it.",
-      "cta": "Become a partner"
+      "title": "Add your listings and use all our tools FREE",
+      "sub": "Vesteri is a marketplace for property abroad. List your own properties and sell to an international audience in four languages, and when you bring a buyer to our developments, you take up to 60% of the commission.",
+      "ctaList": "Add your listings",
+      "ctaBring": "Bring a client",
+      "payPerUse": "No subscription, you pay only for what you use. See pricing"
     },
     "invitation": {
       "heading": "This money has been walking past you for years",
       "body": [
-        "Every time a client mentions Spain, Cyprus or Dubai, you change the subject and watch a commission leave the room. Hard to blame you, since until now there was nothing you could offer them."
+        "Every time a client mentions Spain, Cyprus or Dubai, you change the subject and watch a commission leave the room. Hard to blame you, since until now there was nothing you could offer them.",
+        "The same problem has a second side: your listings sit on a local portal, in one language, where a foreign buyer will never find them. You sell where everyone advertises instead of where the capital is looking."
       ],
-      "accent": "Now there is."
+      "accent": "Now you have two ways in."
     },
     "inventory": {
       "heading": "You bring the client, we handle the rest",
@@ -290,7 +293,7 @@
       "heading": "Live tours under your banner",
       "body": [
         "Your clients tour properties live from their sofa. The video streams straight from the site, questions get asked as they come up, and the answers arrive in their own language.",
-        "Host the webinar yourself and be the one who brought them the world. If you’d rather not, hand us the microphone and we’ll run it under your banner. The audience stays yours either way."
+        "Host the webinar yourself and be the one who brought them the world. If you’d rather not, hand us the microphone and we’ll run it under your banner. The audience stays yours either way, and the same stage works for the listings you add yourself."
       ]
     },
     "split": {
@@ -300,12 +303,67 @@
         "Your client pays the developer’s list price either way, and not a euro more."
       ]
     },
+    "list": {
+      "heading": "Your listings, our audience",
+      "body": [
+        "Publishing on Vesteri costs nothing and leaves your commission alone: you sell on your own terms, and everything you earn from your listing stays with you. We only make money when you reach for the paid tools.",
+        "You add a listing yourself in the panel, with nobody to wait for. It gets a page in four languages, and our live showcases and ad campaigns bring it an audience.",
+        "One thing said plainly: you answer for your listing’s content and legal state. We check the basics before it goes live, but this is not the vetting our portfolio developers go through."
+      ],
+      "cta": "Open the panel"
+    },
+    "pricing": {
+      "heading": "One plan. Everything that matters, free.",
+      "lead": "Add properties, present your listings and use the AI chat without paying a thing.",
+      "free": "€0 subscription. No commitments.",
+      "more": "Need more? Use the extra tools and pay only for what you actually use.",
+      "closing": "Start free. Grow your sales on your own terms.",
+      "planName": "Solo",
+      "price": "€0",
+      "priceNote": "+ pay as you go",
+      "bestFor": "Single agent · free to start",
+      "rows": [
+        {
+          "l": "LIVE showcases included",
+          "v": "2 per month"
+        },
+        {
+          "l": "AI assistant + Knowledge HUB",
+          "v": "Included"
+        },
+        {
+          "l": "Each extra LIVE showcase",
+          "v": "€49"
+        },
+        {
+          "l": "1-on-1 video meeting with a buyer",
+          "v": "€4.99 (2 free)"
+        },
+        {
+          "l": "Unlock a buyer’s contact details",
+          "v": "€2.99 (3 free)"
+        },
+        {
+          "l": "Contact details of a showcase viewer",
+          "v": "€4.99"
+        },
+        {
+          "l": "Our fee on your ad budget",
+          "v": "10%"
+        }
+      ],
+      "cta": "Start free"
+    },
     "who": {
       "heading": "Sound familiar?",
       "items": [
         {
           "t": "Real estate agents & agencies",
           "d": "with buyers asking about markets you don’t cover."
+        },
+        {
+          "t": "Agents & agencies with their own portfolio",
+          "d": "who want their listings in front of an international audience, with no listing fees and no cut of their commission."
         },
         {
           "t": "Financial advisors",
@@ -319,13 +377,14 @@
       "closing": "Wealthy clients who already trust you will bring you this question too. We make sure you have the answer ready."
     },
     "cta": {
-      "title": "The next enquiry will land sooner than you think. This time, be ready for it.",
-      "sub": "Half an hour to see whether we fit. No exclusivity, no fees, no volume targets.",
+      "title": "Start today: list a property or book a conversation.",
+      "sub": "The panel is free and ready now. If you’d rather talk first, half an hour is enough. No exclusivity, no fees, no volume targets.",
+      "btnPanel": "Add your listings",
       "btn": "Write to us: partners@vesteri.com"
     },
     "mailto": {
       "subject": "Partner enquiry - Vesteri",
-      "body": "Hi Piotr,\r\n\r\nI’d like to talk about partnering with Vesteri.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
+      "body": "Hi Piotr,\r\n\r\nI’d like to talk about working with Vesteri.\r\nI’m interested in: bringing clients / listing my properties / both.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
     }
   },
   "compare": {

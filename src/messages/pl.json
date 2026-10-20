@@ -263,21 +263,24 @@
   "partners": {
     "meta": {
       "title": "Zostań partnerem | Vesteri",
-      "description": "Twoi klienci pytają o nieruchomości za granicą. Zostań partnerem Vesteri: sprawdzone inwestycje, pokazy na żywo i nawet 60% prowizji dla Ciebie."
+      "description": "Marketplace Vesteri dla agentów: wystaw własne oferty za darmo i sprzedawaj w czterech językach, albo przyprowadź kupującego do naszych inwestycji i weź nawet 60% prowizji."
     },
     "navCta": "Agent nieruchomości? Dołącz do nas!",
     "navLink": "Dla agentów nieruchomości",
     "hero": {
-      "title": "Twoi klienci, nasze nieruchomości i jeden uścisk dłoni.",
-      "sub": "Znasz ludzi z kapitałem, którzy pytają o zakup za granicą. My znamy deweloperów i rynki, a nieruchomości pokazujemy na żywo. Podzielmy się tym, co z tego wyniknie.",
-      "cta": "Zostań partnerem"
+      "title": "Dodaj swoje oferty i korzystaj z platformy Vesteri za darmo!",
+      "sub": "Vesteri to marketplace nieruchomości zagranicznych. Wystaw własne oferty i sprzedawaj międzynarodowej publiczności w czterech językach, a gdy przyprowadzisz kupującego do naszych inwestycji, bierzesz nawet 60% prowizji.",
+      "ctaList": "Dodaj swoje oferty",
+      "ctaBring": "Przyprowadź klienta",
+      "payPerUse": "Zero abonamentu, płacisz tylko za użycie. Zobacz cennik"
     },
     "invitation": {
       "heading": "Te pieniądze od lat przechodzą Ci koło nosa",
       "body": [
-        "Za każdym razem, gdy klient wspomina o Hiszpanii, Cyprze albo Dubaju, zmieniasz temat i patrzysz, jak prowizja wychodzi z pokoju. Trudno się dziwić, skoro do tej pory nie miałeś mu nic do zaoferowania."
+        "Za każdym razem, gdy klient wspomina o Hiszpanii, Cyprze albo Dubaju, zmieniasz temat i patrzysz, jak prowizja wychodzi z pokoju. Trudno się dziwić, skoro do tej pory nie miałeś mu nic do zaoferowania.",
+        "Ten sam problem ma drugą stronę: Twoje oferty wiszą na lokalnym portalu, w jednym języku, i zagraniczny kupujący nigdy ich nie znajdzie. Sprzedajesz tam, gdzie ogłaszają się wszyscy, zamiast tam, gdzie szuka kapitał."
       ],
-      "accent": "Teraz masz."
+      "accent": "Teraz masz dwie drogi."
     },
     "inventory": {
       "heading": "Ty przyprowadzasz klienta, resztę bierzemy na siebie",
@@ -290,7 +293,7 @@
       "heading": "Pokazy na żywo pod Twoim szyldem",
       "body": [
         "Twoi klienci oglądają nieruchomości na żywo, nie wstając z kanapy. Transmisja idzie prosto z inwestycji, pytania można zadawać na bieżąco, a odpowiedzi padają w ich języku.",
-        "Webinar możesz poprowadzić sam, jako ten, który otworzył klientom drzwi na świat. Jeśli wolisz, przejmiemy mikrofon i poprowadzimy go pod Twoim szyldem. Publiczność w obu przypadkach zostaje Twoja."
+        "Webinar możesz poprowadzić sam, jako ten, który otworzył klientom drzwi na świat. Jeśli wolisz, przejmiemy mikrofon i poprowadzimy go pod Twoim szyldem. Publiczność w obu przypadkach zostaje Twoja, a ta sama scena pracuje też dla ofert, które wystawisz sam."
       ]
     },
     "split": {
@@ -300,12 +303,67 @@
         "Twój klient płaci przy tym cenę katalogową dewelopera, ani euro więcej."
       ]
     },
+    "list": {
+      "heading": "Twoje oferty, nasza publiczność",
+      "body": [
+        "Publikacja oferty na Vesteri nic nie kosztuje i nie rusza Twojej prowizji: sprzedajesz na swoich warunkach, a zarobek z Twojej oferty w całości zostaje u Ciebie. My zarabiamy dopiero wtedy, gdy sięgasz po płatne narzędzia.",
+        "Ofertę dodajesz sam w panelu, bez czekania na nikogo. Dostaje stronę w czterech językach, a publiczność przyprowadzają jej nasze transmisje na żywo i kampanie reklamowe.",
+        "Dla jasności: za treść i stan prawny swojej oferty odpowiadasz Ty. Przed publikacją sprawdzamy podstawy, ale to nie jest ta sama weryfikacja, którą przechodzą deweloperzy z naszego portfolio."
+      ],
+      "cta": "Przejdź do panelu"
+    },
+    "pricing": {
+      "heading": "Jeden plan. Wszystko, co najważniejsze, za darmo.",
+      "lead": "Dodawaj nieruchomości, prezentuj swoje oferty i korzystaj z AI Chat bez żadnych opłat.",
+      "free": "€0 abonamentu. Bez zobowiązań.",
+      "more": "Potrzebujesz więcej możliwości? Korzystaj z dodatkowych funkcji i płać tylko za to, czego faktycznie używasz.",
+      "closing": "Zacznij za darmo. Rozwijaj sprzedaż na własnych zasadach.",
+      "planName": "Solo",
+      "price": "€0",
+      "priceNote": "+ płatność za użycie",
+      "bestFor": "Pojedynczy agent · start bez opłat",
+      "rows": [
+        {
+          "l": "Transmisje LIVE w abonamencie",
+          "v": "2 w miesiącu"
+        },
+        {
+          "l": "Asystent AI + Knowledge HUB",
+          "v": "W cenie"
+        },
+        {
+          "l": "Każda dodatkowa transmisja LIVE",
+          "v": "€49"
+        },
+        {
+          "l": "Spotkanie wideo 1:1 z klientem",
+          "v": "€4,99 (2 gratis)"
+        },
+        {
+          "l": "Odblokowanie kontaktu do klienta",
+          "v": "€2,99 (3 gratis)"
+        },
+        {
+          "l": "Kontakt do uczestnika transmisji",
+          "v": "€4,99"
+        },
+        {
+          "l": "Prowizja od budżetu reklamowego",
+          "v": "10%"
+        }
+      ],
+      "cta": "Zacznij za darmo"
+    },
     "who": {
       "heading": "Brzmi znajomo?",
       "items": [
         {
           "t": "Agenci i agencje nieruchomości",
           "d": "z klientami, którzy pytają o rynki spoza Twojej oferty."
+        },
+        {
+          "t": "Agenci i agencje z własnym portfolio",
+          "d": "które chcą pokazać swoje oferty międzynarodowej publiczności, bez opłat za publikację i bez oddawania prowizji."
         },
         {
           "t": "Doradcy finansowi",
@@ -319,13 +377,14 @@
       "closing": "Zamożni klienci, którzy raz Ci zaufali, przyjdą też z tym pytaniem. Zadbamy o to, żebyś znał odpowiedź."
     },
     "cta": {
-      "title": "Następne pytanie o zagranicę padnie szybciej, niż myślisz. Tym razem bądź gotowy.",
-      "sub": "Pół godziny, żeby sprawdzić, czy do siebie pasujemy. Bez wyłączności, bez opłat, bez targetów.",
+      "title": "Zacznij dziś: wystaw ofertę albo umów rozmowę.",
+      "sub": "Panel jest darmowy i gotowy od ręki. Jeśli wolisz najpierw porozmawiać, pół godziny wystarczy. Bez wyłączności, bez opłat, bez targetów.",
+      "btnPanel": "Dodaj swoje oferty",
       "btn": "Napisz do nas: partners@vesteri.com"
     },
     "mailto": {
       "subject": "Zapytanie partnerskie - Vesteri",
-      "body": "Dzień dobry,\r\n\r\nChcę porozmawiać o partnerstwie z Vesteri.\r\n\r\nImię i nazwisko:\r\nFirma:\r\nCzym się zajmuję:\r\n"
+      "body": "Dzień dobry,\r\n\r\nChcę porozmawiać o współpracy z Vesteri.\r\nInteresuje mnie: przyprowadzanie klientów / własne oferty / jedno i drugie.\r\n\r\nImię i nazwisko:\r\nFirma:\r\nCzym się zajmuję:\r\n"
     }
   },
   "compare": {

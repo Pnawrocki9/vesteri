@@ -9,7 +9,7 @@ import { getPathname, Link } from '@/i18n/navigation';
 import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
-import { PARTNERS_EMAIL } from '@/lib/site';
+import { PARTNERS_EMAIL, AGENT_PANEL_URL } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -42,6 +42,8 @@ export default async function PartnersPage({ params }: Props) {
   const inventory = t.raw('inventory.body') as string[];
   const technology = t.raw('technology.body') as string[];
   const split = t.raw('split.body') as string[];
+  const listBody = t.raw('list.body') as string[];
+  const pricingRows = t.raw('pricing.rows') as { l: string; v: string }[];
   const who = t.raw('who.items') as { t: string; d: string }[];
 
   // The subject and body live in the message catalogue as plain text;
@@ -88,7 +90,7 @@ export default async function PartnersPage({ params }: Props) {
           <LanguageSwitch />
           <a
             href="#cta"
-            className="rounded-btn bg-ink px-2.5 py-3 text-[10px] font-bold tracking-[0.1em] whitespace-nowrap text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink sm:px-6 sm:text-[13px]"
+            className="rounded-btn bg-ink px-2.5 py-2 text-center text-[10px] leading-[1.3] font-bold tracking-[0.1em] text-paper-alt uppercase transition-[background-color,color] hover:bg-accent hover:text-ink max-[640px]:max-w-[170px] sm:px-6 sm:py-3 sm:text-[13px] sm:whitespace-nowrap"
           >
             {t('navCta')}
           </a>
@@ -117,12 +119,26 @@ export default async function PartnersPage({ params }: Props) {
             <p className="text-[18px] leading-[1.7] text-muted-dark">{t('hero.sub')}</p>
             <div className="mt-2 flex flex-wrap gap-4">
               <a
-                href={mailtoHref}
+                href={AGENT_PANEL_URL}
+                target="_blank"
+                rel="noopener"
                 className="bg-accent-gradient rounded-btn px-8 py-4 text-[14px] font-bold tracking-[0.08em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
               >
-                {t('hero.cta')}
+                {t('hero.ctaList')}
+              </a>
+              <a
+                href="#cta"
+                className="rounded-btn border border-muted-dark px-8 py-4 text-[14px] font-bold tracking-[0.08em] text-paper-alt uppercase transition-colors hover:border-accent-light hover:text-accent-light"
+              >
+                {t('hero.ctaBring')}
               </a>
             </div>
+            <a
+              href="#pricing"
+              className="text-[13.5px] text-muted-dark underline decoration-muted-dark/50 underline-offset-4 transition-colors hover:text-accent-light"
+            >
+              {t('hero.payPerUse')}
+            </a>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -206,7 +222,87 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 6. Who we're looking for — the team-card pattern from About. */}
+        {/* 6. The second road — the agent's own listings on the marketplace. */}
+        <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
+              {t('list.heading')}
+            </h2>
+            <div className="mt-7 flex flex-col gap-6">
+              {listBody.map((paragraph) => (
+                <p key={paragraph.slice(0, 32)} className="text-[16.5px] leading-[1.8] text-muted">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <a
+              href={AGENT_PANEL_URL}
+              target="_blank"
+              rel="noopener"
+              className="bg-accent-gradient rounded-btn mt-9 inline-block px-8 py-4 text-[14px] font-bold tracking-[0.08em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
+            >
+              {t('list.cta')}
+            </a>
+          </div>
+        </section>
+
+        {/* 7. Pricing — the Solo plan only, with its pay-per-use rates. The
+            rates mirror the platform's published price list. */}
+        <section
+          id="pricing"
+          className="scroll-mt-[90px] border-b border-line px-6 py-16 md:px-14 md:py-[100px]"
+        >
+          <div className="mx-auto max-w-[760px]">
+            <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
+              {t('pricing.heading')}
+            </h2>
+            <div className="mt-7 flex flex-col gap-6">
+              <p className="text-[16.5px] leading-[1.8] text-muted">{t('pricing.lead')}</p>
+              <p className="text-[19px] leading-[1.7] font-bold text-ink">{t('pricing.free')}</p>
+              <p className="text-[16.5px] leading-[1.8] text-muted">{t('pricing.more')}</p>
+            </div>
+
+            <article className="mt-10 rounded-card border border-line bg-white p-8">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h3 className="text-[20px] font-bold text-ink">{t('pricing.planName')}</h3>
+                <p className="text-[32px] leading-none font-bold text-ink">
+                  {t('pricing.price')}
+                  <span className="ml-2 align-baseline text-[14px] leading-none font-medium text-muted">
+                    {t('pricing.priceNote')}
+                  </span>
+                </p>
+              </div>
+              <p className="mt-1 text-[13px] text-muted">{t('pricing.bestFor')}</p>
+              <ul className="mt-6 flex flex-col border-t border-line">
+                {pricingRows.map((row) => (
+                  <li
+                    key={row.l}
+                    className="flex items-baseline justify-between gap-6 border-b border-line py-3"
+                  >
+                    <span className="text-[14px] leading-[1.6] text-muted">{row.l}</span>
+                    <span className="text-right text-[14px] leading-[1.6] font-semibold whitespace-nowrap text-ink">
+                      {row.v}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={AGENT_PANEL_URL}
+                target="_blank"
+                rel="noopener"
+                className="bg-accent-gradient rounded-btn mt-8 inline-block px-8 py-4 text-[14px] font-bold tracking-[0.08em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
+              >
+                {t('pricing.cta')}
+              </a>
+            </article>
+
+            <p className="mt-10 border-l-2 border-accent pl-6 text-[19px] leading-[1.7] font-medium text-ink">
+              {t('pricing.closing')}
+            </p>
+          </div>
+        </section>
+
+        {/* 8. Who we're looking for — the team-card pattern from About. */}
         <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
           <div className="mx-auto max-w-[1180px]">
             <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
@@ -230,7 +326,7 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 7. Final CTA — the closing band from For Developers, with the
+        {/* 9. Final CTA — the closing band from For Developers, with the
             address rendered visibly for anyone who would rather copy it than
             trust a mailto link. */}
         <section
@@ -251,12 +347,22 @@ export default async function PartnersPage({ params }: Props) {
               {t('cta.title')}
             </h2>
             <p className="text-[15.5px] leading-[1.7] text-muted-dark">{t('cta.sub')}</p>
-            <a
-              href={mailtoHref}
-              className="bg-accent-gradient rounded-btn px-9 py-4 text-[14px] font-bold tracking-[0.08em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
-            >
-              {t('cta.btn')}
-            </a>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href={AGENT_PANEL_URL}
+                target="_blank"
+                rel="noopener"
+                className="bg-accent-gradient rounded-btn px-9 py-4 text-[14px] font-bold tracking-[0.08em] text-ink uppercase shadow-cta transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-lift"
+              >
+                {t('cta.btnPanel')}
+              </a>
+              <a
+                href={mailtoHref}
+                className="rounded-btn border border-muted-dark px-9 py-4 text-[14px] font-bold tracking-[0.08em] text-paper-alt uppercase transition-colors hover:border-accent-light hover:text-accent-light"
+              >
+                {t('cta.btn')}
+              </a>
+            </div>
             <span className="flex flex-wrap items-center justify-center gap-2">
               <a
                 href={mailtoHref}

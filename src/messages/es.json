@@ -263,21 +263,24 @@
   "partners": {
     "meta": {
       "title": "Hazte partner | Vesteri",
-      "description": "Tus clientes preguntan por propiedad en el extranjero. Hazte partner de Vesteri: promociones verificadas, visitas en directo y hasta el 60% de cada comisión."
+      "description": "El marketplace de Vesteri para agentes: publica tus propias ofertas gratis y vende en cuatro idiomas, o trae a un comprador a nuestras promociones y llévate hasta el 60% de la comisión."
     },
     "navCta": "¿Agente inmobiliario? ¡Únete!",
     "navLink": "Para agentes inmobiliarios",
     "hero": {
-      "title": "Tus clientes, nuestras propiedades y un apretón de manos.",
-      "sub": "Conoces a gente con capital que pregunta por comprar fuera. Nosotros conocemos a los promotores y los mercados, y enseñamos las propiedades en directo. Repartamos lo que salga de ahí.",
-      "cta": "Hazte partner"
+      "title": "¡Añade tus ofertas y usa todas nuestras herramientas gratis!",
+      "sub": "Vesteri es un marketplace de propiedad en el extranjero. Publica tus propias ofertas y vende a un público internacional en cuatro idiomas, y cuando traes a un comprador a nuestras promociones, te llevas hasta el 60% de la comisión.",
+      "ctaList": "Publica tus ofertas",
+      "ctaBring": "Trae a un cliente",
+      "payPerUse": "Sin cuota mensual, pagas solo por lo que usas. Ver precios"
     },
     "invitation": {
       "heading": "Ese dinero lleva años pasando de largo",
       "body": [
-        "Cada vez que un cliente menciona España, Chipre o Dubái, cambias de tema y ves salir una comisión por la puerta. Tampoco es culpa tuya: hasta ahora no tenías nada que ofrecerle."
+        "Cada vez que un cliente menciona España, Chipre o Dubái, cambias de tema y ves salir una comisión por la puerta. Tampoco es culpa tuya: hasta ahora no tenías nada que ofrecerle.",
+        "El mismo problema tiene otra cara: tus ofertas cuelgan de un portal local, en un solo idioma, donde un comprador extranjero nunca las encontrará. Vendes donde se anuncia todo el mundo y no donde busca el capital."
       ],
-      "accent": "Ahora sí."
+      "accent": "Ahora tienes dos caminos."
     },
     "inventory": {
       "heading": "Tú traes al cliente, del resto nos ocupamos nosotros",
@@ -290,7 +293,7 @@
       "heading": "Visitas en directo bajo tu marca",
       "body": [
         "Tus clientes visitan las propiedades en directo desde el sofá. El vídeo llega en tiempo real desde la promoción, y las preguntas se responden al momento y en su idioma.",
-        "Puedes presentar el webinar tú mismo y ser quien les abre la puerta al mundo. Si lo prefieres, nos pasas el micrófono y lo conducimos bajo tu marca. El público sigue siendo tuyo en cualquier caso."
+        "Puedes presentar el webinar tú mismo y ser quien les abre la puerta al mundo. Si lo prefieres, nos pasas el micrófono y lo conducimos bajo tu marca. El público sigue siendo tuyo en cualquier caso, y ese mismo escenario trabaja para las ofertas que publiques tú."
       ]
     },
     "split": {
@@ -300,12 +303,67 @@
         "Tu cliente paga el precio de tarifa del promotor, y ni un euro más."
       ]
     },
+    "list": {
+      "heading": "Tus ofertas, nuestro público",
+      "body": [
+        "Publicar en Vesteri no cuesta nada y no toca tu comisión: vendes en tus propios términos y todo lo que ganes con tu oferta se queda contigo. Nosotros ganamos solo cuando usas las herramientas de pago.",
+        "La oferta la subes tú mismo en el panel, sin esperar a nadie. Recibe una página en cuatro idiomas, y nuestras transmisiones en directo y campañas le traen público.",
+        "Una cosa dicha con claridad: del contenido y la situación legal de tu oferta respondes tú. Antes de publicarla comprobamos lo básico, pero no es la misma verificación que pasan los promotores de nuestro porfolio."
+      ],
+      "cta": "Abrir el panel"
+    },
+    "pricing": {
+      "heading": "Un solo plan. Todo lo esencial, gratis.",
+      "lead": "Añade inmuebles, presenta tus ofertas y usa el chat de IA sin pagar nada.",
+      "free": "0 € de cuota. Sin compromiso.",
+      "more": "¿Necesitas más? Usa las funciones adicionales y paga solo por lo que realmente utilizas.",
+      "closing": "Empieza gratis. Haz crecer tus ventas a tu manera.",
+      "planName": "Solo",
+      "price": "0 €",
+      "priceNote": "+ pago por uso",
+      "bestFor": "Agente individual · empieza gratis",
+      "rows": [
+        {
+          "l": "Transmisiones LIVE incluidas",
+          "v": "2 al mes"
+        },
+        {
+          "l": "Asistente de IA + Knowledge HUB",
+          "v": "Incluido"
+        },
+        {
+          "l": "Cada transmisión LIVE adicional",
+          "v": "49 €"
+        },
+        {
+          "l": "Videollamada 1:1 con un comprador",
+          "v": "4,99 € (2 gratis)"
+        },
+        {
+          "l": "Desbloquear el contacto de un comprador",
+          "v": "2,99 € (3 gratis)"
+        },
+        {
+          "l": "Contacto de un espectador de la transmisión",
+          "v": "4,99 €"
+        },
+        {
+          "l": "Nuestra comisión sobre tu presupuesto de anuncios",
+          "v": "10%"
+        }
+      ],
+      "cta": "Empieza gratis"
+    },
     "who": {
       "heading": "¿Te suena?",
       "items": [
         {
           "t": "Agentes y agencias inmobiliarias",
           "d": "con compradores que preguntan por mercados fuera de tu cartera."
+        },
+        {
+          "t": "Agentes y agencias con cartera propia",
+          "d": "que quieren poner sus ofertas delante de un público internacional, sin cuotas de publicación y sin ceder su comisión."
         },
         {
           "t": "Asesores financieros",
@@ -319,13 +377,14 @@
       "closing": "Los clientes con patrimonio que ya confían en ti acabarán trayéndote esta pregunta. Nosotros nos ocupamos de que tengas la respuesta."
     },
     "cta": {
-      "title": "La próxima consulta llegará antes de lo que piensas. Esta vez, ten la respuesta.",
-      "sub": "Media hora para ver si encajamos. Sin exclusividad, sin cuotas, sin objetivos de volumen.",
+      "title": "Empieza hoy: publica una oferta o reserva una conversación.",
+      "sub": "El panel es gratuito y está listo ya. Si prefieres hablar primero, media hora basta. Sin exclusividad, sin cuotas, sin objetivos de volumen.",
+      "btnPanel": "Publica tus ofertas",
       "btn": "Escríbenos: partners@vesteri.com"
     },
     "mailto": {
       "subject": "Consulta de partner - Vesteri",
-      "body": "Hola Piotr:\r\n\r\nMe gustaría hablar sobre una colaboración con Vesteri.\r\n\r\nNombre y apellidos:\r\nEmpresa:\r\nA qué me dedico:\r\n"
+      "body": "Hola Piotr:\r\n\r\nMe gustaría hablar sobre una colaboración con Vesteri.\r\nMe interesa: traer clientes / publicar mis ofertas / ambas cosas.\r\n\r\nNombre y apellidos:\r\nEmpresa:\r\nA qué me dedico:\r\n"
     }
   },
   "compare": {
