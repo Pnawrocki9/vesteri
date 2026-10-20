@@ -309,11 +309,11 @@
     "pricing": {
       "heading": "Un solo plan. Todo lo esencial, gratis.",
       "lead": "Añade inmuebles, presenta tus ofertas y usa el chat de IA sin pagar nada.",
-      "free": "0 € de cuota. Sin compromiso.",
+      "free": "0 $ de cuota. Sin compromiso.",
       "more": "¿Necesitas más? Usa las funciones adicionales y paga solo por lo que realmente utilizas.",
       "closing": "Empieza gratis. Haz crecer tus ventas a tu manera.",
       "planName": "Solo",
-      "price": "0 €",
+      "price": "0 $",
       "priceNote": "por las ofertas + pago por uso",
       "bestFor": "Agente individual · empieza gratis",
       "rows": [
@@ -327,19 +327,19 @@
         },
         {
           "l": "Cada transmisión LIVE adicional",
-          "v": "49 €"
+          "v": "49 $"
         },
         {
           "l": "Videollamada 1:1 con un comprador",
-          "v": "4,99 € (2 gratis)"
+          "v": "4,99 $ (2 gratis)"
         },
         {
           "l": "Desbloquear el contacto de un comprador",
-          "v": "2,99 € (3 gratis)"
+          "v": "2,99 $ (3 gratis)"
         },
         {
           "l": "Contacto de un espectador de la transmisión",
-          "v": "4,99 € (1 gratis)"
+          "v": "4,99 $ (1 gratis)"
         },
         {
           "l": "Comisión por gestionar campañas de anuncios en META",
@@ -424,7 +424,7 @@
   },
   "affiliate": {
     "navTitle": "Programa de afiliados",
-    "promoLabel": "¡Gana 1000 €!",
+    "promoLabel": "¡Gana 1000 $!",
     "navLink": "Programa de referidos",
     "meta": {
       "title": "Programa de afiliados — VESTERI",

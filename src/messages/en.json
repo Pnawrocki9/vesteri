@@ -309,11 +309,11 @@
     "pricing": {
       "heading": "One plan. Everything that matters, free.",
       "lead": "Add properties, present your listings and use the AI chat without paying a thing.",
-      "free": "€0 subscription. No commitments.",
+      "free": "$0 subscription. No commitments.",
       "more": "Need more? Use the extra tools and pay only for what you actually use.",
       "closing": "Start free. Grow your sales on your own terms.",
       "planName": "Solo",
-      "price": "€0",
+      "price": "$0",
       "priceNote": "for listings + pay as you go",
       "bestFor": "Single agent · free to start",
       "rows": [
@@ -327,19 +327,19 @@
         },
         {
           "l": "Each extra LIVE showcase",
-          "v": "€49"
+          "v": "$49"
         },
         {
           "l": "1-on-1 video meeting with a buyer",
-          "v": "€4.99 (2 free)"
+          "v": "$4.99 (2 free)"
         },
         {
           "l": "Unlock a buyer’s contact details",
-          "v": "€2.99 (3 free)"
+          "v": "$2.99 (3 free)"
         },
         {
           "l": "Contact details of a showcase viewer",
-          "v": "€4.99 (1 free)"
+          "v": "$4.99 (1 free)"
         },
         {
           "l": "Fee for managing META ad campaigns",
@@ -424,7 +424,7 @@
   },
   "affiliate": {
     "navTitle": "Affiliate Program",
-    "promoLabel": "Earn €1000!",
+    "promoLabel": "Earn $1000!",
     "navLink": "Referral programme",
     "meta": {
       "title": "Affiliate Program — VESTERI",

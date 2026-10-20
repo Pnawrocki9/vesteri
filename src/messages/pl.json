@@ -309,11 +309,11 @@
     "pricing": {
       "heading": "Jeden plan. Wszystko, co najważniejsze, za darmo.",
       "lead": "Dodawaj nieruchomości, prezentuj swoje oferty i korzystaj z AI Chat bez żadnych opłat.",
-      "free": "€0 abonamentu. Bez zobowiązań.",
+      "free": "$0 abonamentu. Bez zobowiązań.",
       "more": "Potrzebujesz więcej możliwości? Korzystaj z dodatkowych funkcji i płać tylko za to, czego faktycznie używasz.",
       "closing": "Zacznij za darmo. Rozwijaj sprzedaż na własnych zasadach.",
       "planName": "Solo",
-      "price": "€0",
+      "price": "$0",
       "priceNote": "za listingi + płatność za użycie",
       "bestFor": "Pojedynczy agent · start bez opłat",
       "rows": [
@@ -327,19 +327,19 @@
         },
         {
           "l": "Każda dodatkowa transmisja LIVE",
-          "v": "€49"
+          "v": "$49"
         },
         {
           "l": "Spotkanie wideo 1:1 z klientem",
-          "v": "€4,99 (2 gratis)"
+          "v": "$4,99 (2 gratis)"
         },
         {
           "l": "Odblokowanie kontaktu do klienta",
-          "v": "€2,99 (3 gratis)"
+          "v": "$2,99 (3 gratis)"
         },
         {
           "l": "Kontakt do uczestnika transmisji",
-          "v": "€4,99 (1 gratis)"
+          "v": "$4,99 (1 gratis)"
         },
         {
           "l": "Prowizja za zarządzanie kampaniami reklamowymi META",
@@ -424,7 +424,7 @@
   },
   "affiliate": {
     "navTitle": "Program partnerski",
-    "promoLabel": "Zarób €1000!",
+    "promoLabel": "Zarób $1000!",
     "navLink": "Program poleceń",
     "meta": {
       "title": "Program partnerski — VESTERI",

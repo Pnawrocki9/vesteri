@@ -309,11 +309,11 @@
     "pricing": {
       "heading": "Ein Plan. Alles Wichtige kostenlos.",
       "lead": "Stellen Sie Immobilien ein, präsentieren Sie Ihre Angebote und nutzen Sie den KI-Chat ohne jede Gebühr.",
-      "free": "0 € Abo. Keine Verpflichtungen.",
+      "free": "0 $ Abo. Keine Verpflichtungen.",
       "more": "Brauchen Sie mehr? Nutzen Sie die Zusatzfunktionen und zahlen Sie nur für das, was Sie tatsächlich verwenden.",
       "closing": "Starten Sie kostenlos. Bauen Sie Ihren Verkauf zu Ihren eigenen Bedingungen aus.",
       "planName": "Solo",
-      "price": "0 €",
+      "price": "0 $",
       "priceNote": "für Angebote + Pay-per-Use",
       "bestFor": "Einzelner Makler · kostenloser Start",
       "rows": [
@@ -327,19 +327,19 @@
         },
         {
           "l": "Jede weitere LIVE-Präsentation",
-          "v": "49 €"
+          "v": "49 $"
         },
         {
           "l": "1:1-Videogespräch mit einem Käufer",
-          "v": "4,99 € (2 gratis)"
+          "v": "4,99 $ (2 gratis)"
         },
         {
           "l": "Kontaktdaten eines Käufers freischalten",
-          "v": "2,99 € (3 gratis)"
+          "v": "2,99 $ (3 gratis)"
         },
         {
           "l": "Kontaktdaten eines Zuschauers der Präsentation",
-          "v": "4,99 € (1 gratis)"
+          "v": "4,99 $ (1 gratis)"
         },
         {
           "l": "Gebühr für das Management von META-Werbekampagnen",
@@ -424,7 +424,7 @@
   },
   "affiliate": {
     "navTitle": "Partnerprogramm",
-    "promoLabel": "Verdienen Sie 1000 €!",
+    "promoLabel": "Verdienen Sie 1000 $!",
     "navLink": "Empfehlungsprogramm",
     "meta": {
       "title": "Partnerprogramm — VESTERI",
