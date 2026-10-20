@@ -284,13 +284,6 @@
       ],
       "accent": "Ahora tienes dos caminos."
     },
-    "inventory": {
-      "heading": "Tú traes al cliente, del resto nos ocupamos nosotros",
-      "body": [
-        "Trabajamos con promociones verificadas en mercados donde tratamos directamente con el promotor. Tu cliente recibe la propiedad, respuesta a cada pregunta y el contacto de un despacho jurídico independiente, para que nadie acabe buscando abogado a medianoche en un país extranjero.",
-        "No te hace falta cartera propia ni licencia en el extranjero. Con lo que ya tienes basta: un cliente que confía en ti."
-      ]
-    },
     "technology": {
       "heading": "Visitas en directo bajo tu marca",
       "body": [
@@ -301,8 +294,8 @@
     "split": {
       "heading": "Nuestras ofertas, tus clientes, ¡y el 60% de la comisión para TI!",
       "body": [
-        "Nosotros nos ocupamos de que las ofertas que tenemos cumplan los estándares más altos y de que los promotores con los que trabajamos estén totalmente verificados y sean dignos de confianza. Además, te ayudamos con el contacto con despachos jurídicos independientes.",
-        "Tú ocúpate solo de que tus clientes se unan a los webinars y a las presentaciones online."
+        "Nosotros nos ocupamos de que las ofertas que tenemos cumplan los estándares más altos y de que los promotores con los que trabajamos estén totalmente verificados y sean dignos de confianza. Además, te ayudamos con el contacto con despachos jurídicos independientes, para que nadie acabe buscando abogado a medianoche en un país extranjero.",
+        "Tú ocúpate solo de que tus clientes se unan a los webinars y a las presentaciones online. No te hace falta cartera propia ni licencia en el extranjero; basta un cliente que confía en ti."
       ]
     },
     "list": {

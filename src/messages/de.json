@@ -284,13 +284,6 @@
       ],
       "accent": "Jetzt haben Sie zwei Wege."
     },
-    "inventory": {
-      "heading": "Sie bringen den Kunden, den Rest übernehmen wir",
-      "body": [
-        "Wir arbeiten mit geprüften Projekten auf Märkten, auf denen wir direkt mit dem Bauträger verhandeln. Ihr Kunde bekommt die Immobilie, Antworten auf jede Frage und den Kontakt zu einer unabhängigen Kanzlei, damit niemand um Mitternacht in einem fremden Land einen Anwalt suchen muss.",
-        "Sie brauchen weder ein eigenes Portfolio noch eine Lizenz im Ausland. Was Sie schon haben, genügt: einen Kunden, der Ihnen vertraut."
-      ]
-    },
     "technology": {
       "heading": "Live-Besichtigungen unter Ihrem Namen",
       "body": [
@@ -301,8 +294,8 @@
     "split": {
       "heading": "Unsere Angebote, Ihre Kunden und 60 % der Provision gehen an SIE!",
       "body": [
-        "Wir sorgen dafür, dass die Angebote in unserem Portfolio höchsten Standards entsprechen und die Bauträger, mit denen wir arbeiten, vollständig geprüft und vertrauenswürdig sind. Dazu helfen wir beim Kontakt zu unabhängigen Kanzleien.",
-        "Sie kümmern sich nur darum, dass Ihre Kunden an den Webinaren und Online-Präsentationen teilnehmen."
+        "Wir sorgen dafür, dass die Angebote in unserem Portfolio höchsten Standards entsprechen und die Bauträger, mit denen wir arbeiten, vollständig geprüft und vertrauenswürdig sind. Dazu helfen wir beim Kontakt zu unabhängigen Kanzleien, damit niemand um Mitternacht in einem fremden Land einen Anwalt suchen muss.",
+        "Sie kümmern sich nur darum, dass Ihre Kunden an den Webinaren und Online-Präsentationen teilnehmen. Sie brauchen weder ein eigenes Portfolio noch eine Lizenz im Ausland; ein Kunde, der Ihnen vertraut, genügt."
       ]
     },
     "list": {

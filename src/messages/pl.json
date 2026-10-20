@@ -284,13 +284,6 @@
       ],
       "accent": "Teraz masz dwie drogi."
     },
-    "inventory": {
-      "heading": "Ty przyprowadzasz klienta, resztę bierzemy na siebie",
-      "body": [
-        "Pracujemy ze sprawdzonymi inwestycjami na rynkach, gdzie rozmawiamy z deweloperem bezpośrednio. Twój klient dostaje nieruchomość, odpowiedzi na każde pytanie i kontakt do niezależnej kancelarii, więc nikt nie musi o północy szukać prawnika w obcym kraju.",
-        "Nie musisz mieć własnych ofert ani licencji za granicą. Wystarczy to, co już masz: klient, który Ci ufa."
-      ]
-    },
     "technology": {
       "heading": "Pokazy na żywo pod Twoim szyldem",
       "body": [
@@ -301,8 +294,8 @@
     "split": {
       "heading": "Nasze oferty, Twoi klienci i 60% prowizji trafia do CIEBIE!",
       "body": [
-        "My dbamy o to, aby oferty, które mamy, spełniały najwyższe standardy, a deweloperzy, z którymi pracujemy, byli w pełni zweryfikowani i godni zaufania. Do tego pomożemy w kontakcie z niezależnymi biurami prawnymi.",
-        "Ty zadbaj tylko o to, aby Twoi klienci dołączali do webinarów i prezentacji online."
+        "My dbamy o to, aby oferty, które mamy, spełniały najwyższe standardy, a deweloperzy, z którymi pracujemy, byli w pełni zweryfikowani i godni zaufania. Do tego pomożemy w kontakcie z niezależnymi biurami prawnymi, więc nikt nie musi o północy szukać prawnika w obcym kraju.",
+        "Ty zadbaj tylko o to, aby Twoi klienci dołączali do webinarów i prezentacji online. Nie potrzebujesz własnych ofert ani licencji za granicą; wystarczy klient, który Ci ufa."
       ]
     },
     "list": {

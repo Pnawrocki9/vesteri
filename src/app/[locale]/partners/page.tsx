@@ -39,7 +39,6 @@ export default async function PartnersPage({ params }: Props) {
   const activeLocale = locale as AppLocale;
 
   const invitation = t.raw('invitation.body') as string[];
-  const inventory = t.raw('inventory.body') as string[];
   const technology = t.raw('technology.body') as string[];
   const split = t.raw('split.body') as string[];
   const listBody = t.raw('list.body') as string[];
@@ -178,14 +177,14 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 3. Our inventory, your clients */}
+        {/* 3. The first road — bring a client, we do the rest, 60% is yours. */}
         <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
           <div className="mx-auto max-w-[760px]">
             <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
-              {t('inventory.heading')}
+              {t('split.heading')}
             </h2>
             <div className="mt-7 flex flex-col gap-6">
-              {inventory.map((paragraph) => (
+              {split.map((paragraph) => (
                 <p key={paragraph.slice(0, 32)} className="text-[16.5px] leading-[1.8] text-muted">
                   {paragraph}
                 </p>
@@ -214,23 +213,7 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 5. The split */}
-        <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
-          <div className="mx-auto max-w-[760px]">
-            <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
-              {t('split.heading')}
-            </h2>
-            <div className="mt-7 flex flex-col gap-6">
-              {split.map((paragraph) => (
-                <p key={paragraph.slice(0, 32)} className="text-[16.5px] leading-[1.8] text-muted">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 6. The second road — the agent's own listings on the marketplace. */}
+        {/* 5. The second road — the agent's own listings on the marketplace. */}
         <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
           <div className="mx-auto max-w-[760px]">
             <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
@@ -254,7 +237,7 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 7. Pricing — the Solo plan only, with its pay-per-use rates. The
+        {/* 6. Pricing — the Solo plan only, with its pay-per-use rates. The
             rates mirror the platform's published price list. */}
         <section
           id="pricing"
@@ -310,7 +293,7 @@ export default async function PartnersPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 8. Who we're looking for — the team-card pattern from About. */}
+        {/* 7. Who we're looking for — the team-card pattern from About. */}
         <section className="border-b border-line px-6 py-16 md:px-14 md:py-[100px]">
           <div className="mx-auto max-w-[1180px]">
             <h2 className="text-[28px] font-bold text-balance text-ink md:text-h2-lg">
