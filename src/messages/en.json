@@ -314,7 +314,7 @@
       "closing": "Start free. Grow your sales on your own terms.",
       "planName": "Solo",
       "price": "€0",
-      "priceNote": "+ pay as you go",
+      "priceNote": "for listings + pay as you go",
       "bestFor": "Single agent · free to start",
       "rows": [
         {
@@ -339,11 +339,11 @@
         },
         {
           "l": "Contact details of a showcase viewer",
-          "v": "€4.99"
+          "v": "€4.99 (1 free)"
         },
         {
-          "l": "Our fee on your ad budget",
-          "v": "10%"
+          "l": "Fee for managing META ad campaigns",
+          "v": "10% of the ad budget"
         }
       ],
       "cta": "Start free"

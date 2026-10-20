@@ -314,7 +314,7 @@
       "closing": "Empieza gratis. Haz crecer tus ventas a tu manera.",
       "planName": "Solo",
       "price": "0 €",
-      "priceNote": "+ pago por uso",
+      "priceNote": "por las ofertas + pago por uso",
       "bestFor": "Agente individual · empieza gratis",
       "rows": [
         {
@@ -339,11 +339,11 @@
         },
         {
           "l": "Contacto de un espectador de la transmisión",
-          "v": "4,99 €"
+          "v": "4,99 € (1 gratis)"
         },
         {
-          "l": "Nuestra comisión sobre tu presupuesto de anuncios",
-          "v": "10%"
+          "l": "Comisión por gestionar campañas de anuncios en META",
+          "v": "10% del presupuesto de anuncios"
         }
       ],
       "cta": "Empieza gratis"

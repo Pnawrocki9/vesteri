@@ -314,7 +314,7 @@
       "closing": "Zacznij za darmo. Rozwijaj sprzedaż na własnych zasadach.",
       "planName": "Solo",
       "price": "€0",
-      "priceNote": "+ płatność za użycie",
+      "priceNote": "za listingi + płatność za użycie",
       "bestFor": "Pojedynczy agent · start bez opłat",
       "rows": [
         {
@@ -339,11 +339,11 @@
         },
         {
           "l": "Kontakt do uczestnika transmisji",
-          "v": "€4,99"
+          "v": "€4,99 (1 gratis)"
         },
         {
-          "l": "Prowizja od budżetu reklamowego",
-          "v": "10%"
+          "l": "Prowizja za zarządzanie kampaniami reklamowymi META",
+          "v": "10% budżetu reklamowego"
         }
       ],
       "cta": "Zacznij za darmo"

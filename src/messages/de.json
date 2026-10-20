@@ -314,7 +314,7 @@
       "closing": "Starten Sie kostenlos. Bauen Sie Ihren Verkauf zu Ihren eigenen Bedingungen aus.",
       "planName": "Solo",
       "price": "0 €",
-      "priceNote": "+ Pay-per-Use",
+      "priceNote": "für Angebote + Pay-per-Use",
       "bestFor": "Einzelner Makler · kostenloser Start",
       "rows": [
         {
@@ -339,11 +339,11 @@
         },
         {
           "l": "Kontaktdaten eines Zuschauers der Präsentation",
-          "v": "4,99 €"
+          "v": "4,99 € (1 gratis)"
         },
         {
-          "l": "Unsere Gebühr auf Ihr Werbebudget",
-          "v": "10 %"
+          "l": "Gebühr für das Management von META-Werbekampagnen",
+          "v": "10 % des Werbebudgets"
         }
       ],
       "cta": "Kostenlos starten"

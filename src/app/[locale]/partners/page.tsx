@@ -271,7 +271,7 @@ export default async function PartnersPage({ params }: Props) {
                     className="flex items-baseline justify-between gap-6 border-b border-line py-3"
                   >
                     <span className="text-[14px] leading-[1.6] text-muted">{row.l}</span>
-                    <span className="text-right text-[14px] leading-[1.6] font-semibold whitespace-nowrap text-ink">
+                    <span className="shrink-0 text-right text-[14px] leading-[1.6] font-semibold text-ink max-[480px]:shrink max-[480px]:whitespace-normal">
                       {row.v}
                     </span>
                   </li>
