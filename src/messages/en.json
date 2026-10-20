@@ -301,9 +301,10 @@
     "list": {
       "heading": "Your listings, our audience",
       "body": [
-        "Publishing on Vesteri costs nothing and leaves your commission alone: you sell on your own terms, and everything you earn from your listing stays with you. We only make money when you reach for the paid tools.",
-        "You add a listing yourself in the panel, with nobody to wait for. Listings go live automatically, and from the first minute our AI systems know everything about them and enrich the information they carry. You get a complete sales system in one place, not just a passive listing."
+        "Publishing on Vesteri is completely free. You sell on your own terms and keep 100% of the commission from your own listings. We never take a cut. You only pay for additional tools when you choose to use them.",
+        "Adding a property is just as simple. Upload your listing directly through your dashboard, without waiting for anyone’s approval. Your listing goes live automatically, and our AI immediately starts working with the property information, enriching its content and helping potential buyers find the answers they need."
       ],
+      "accent": "Vesteri is more than a property listing platform. It’s a complete sales ecosystem designed to help you sell.",
       "cta": "Open the panel"
     },
     "pricing": {

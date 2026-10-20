@@ -226,6 +226,13 @@ export default async function PartnersPage({ params }: Props) {
                 </p>
               ))}
             </div>
+            {/* The closing claim exists only in catalogues whose owner has
+                signed it off, hence the conditional. */}
+            {t.has('list.accent') && (
+              <p className="mt-10 border-l-2 border-accent pl-6 text-[19px] leading-[1.7] font-medium text-ink">
+                {t('list.accent')}
+              </p>
+            )}
             <a
               href={AGENT_PANEL_URL}
               target="_blank"
