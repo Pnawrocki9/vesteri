@@ -1,0 +1,24 @@
+# Acceptance tests for Codex: EN + PL homepage
+
+- [ ] Owner approved analysis-only plan before code edits.
+- [ ] Implemented in existing repository; no framework rewrite; no changes to Estalara application.
+- [ ] Homepage sections, order, brand colors/typography, official logo match approved mockups; no Community section.
+- [ ] All navigation links work; no duplicated/misleading CTAs.
+- [ ] All 19 FAQ questions and answers match the approved EN source; all 19 match approved natural PL source.
+- [ ] English and Polish locale switch works in both directions and preserves sensible destinations.
+- [ ] Mobile widths ~375 and ~430 px: no horizontal scrolling/overflow, buttons not clipped, mobile menu usable.
+- [ ] Tablet widths ~768 and ~1024 px: grid layout and content spacing appropriate, no empty side panels.
+- [ ] Desktop ~1440 px: premium visual hierarchy and section imagery match approved mockup.
+- [ ] Longer Polish headings, labels and CTAs wrap naturally and remain legible.
+- [ ] Buyer and agent side panels display meaningful editorial content.
+- [ ] Featured property cards use owner-approved real images with appropriate sizes, descriptive alt text and confirmed target URLs to Estalara.
+- [ ] Each marketplace card goes to corresponding listing/category, not generic marketplace unless approved; overall CTA goes to marketplace.
+- [ ] Signup agent route verified, existing approval workflow unchanged.
+- [ ] Demo search and enquiry behavior clearly resolved; no fake production interactivity.
+- [ ] Correct `lang`, localized title/descriptions, canonical/hreflang and visible-vs-schema FAQ language consistency.
+- [ ] Keyboard menu, tabs/details/dialogs (where applicable), focus states and image loading accessible.
+- [ ] Existing third-language pages and other unrelated pages still function.
+- [ ] Lint/test/build complete (or documented why unavailable).
+- [ ] Screenshot review in desktop, tablet and mobile for BOTH locales.
+- [ ] Changed file inventory, known assumptions, rollback plan delivered.
+- [ ] No production merge/deploy without owner approval.
