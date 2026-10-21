@@ -43,6 +43,7 @@ export default async function PartnersPage({ params }: Props) {
   const split = t.raw('split.body') as string[];
   const listBody = t.raw('list.body') as string[];
   const pricingRows = t.raw('pricing.rows') as { l: string; v: string }[];
+  const memberRows = t.raw('pricing.member.rows') as { l: string; v: string }[];
   const who = t.raw('who.items') as { t: string; d: string }[];
 
   // The subject and body live in the message catalogue as plain text;
@@ -259,8 +260,13 @@ export default async function PartnersPage({ params }: Props) {
               <p className="text-[19px] leading-[1.7] font-bold text-ink">{t('pricing.free')}</p>
               <p className="text-[16.5px] leading-[1.8] text-muted">{t('pricing.more')}</p>
             </div>
+          </div>
 
-            <article className="mt-10 rounded-card border border-line bg-white p-8">
+          {/* Solo carries the offer and the call to action; the membership
+              card is the optional upgrade, rendered narrower and without
+              its own button. */}
+          <div className="mx-auto mt-10 grid max-w-[980px] grid-cols-1 items-start gap-[18px] lg:grid-cols-[1.15fr_0.85fr]">
+            <article className="rounded-card border border-line bg-white p-8">
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                 <h3 className="text-[20px] font-bold text-ink">{t('pricing.planName')}</h3>
                 <p className="text-[32px] leading-none font-bold text-ink">
@@ -294,6 +300,33 @@ export default async function PartnersPage({ params }: Props) {
               </a>
             </article>
 
+            <article className="rounded-card border border-line bg-white p-8">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h3 className="text-[20px] font-bold text-ink">{t('pricing.member.name')}</h3>
+                <p className="text-[32px] leading-none font-bold text-ink">
+                  {t('pricing.member.price')}
+                  <span className="ml-2 align-baseline text-[14px] leading-none font-medium text-muted">
+                    {t('pricing.member.priceNote')}
+                  </span>
+                </p>
+              </div>
+              <ul className="mt-6 flex flex-col border-t border-line">
+                {memberRows.map((row) => (
+                  <li
+                    key={row.l}
+                    className="flex items-baseline justify-between gap-6 border-b border-line py-3"
+                  >
+                    <span className="text-[14px] leading-[1.6] text-muted">{row.l}</span>
+                    <span className="shrink-0 text-right text-[14px] leading-[1.6] font-semibold text-ink max-[480px]:shrink max-[480px]:whitespace-normal">
+                      {row.v}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+
+          <div className="mx-auto max-w-[760px]">
             <p className="mt-10 border-l-2 border-accent pl-6 text-[19px] leading-[1.7] font-medium text-ink">
               {t('pricing.closing')}
             </p>

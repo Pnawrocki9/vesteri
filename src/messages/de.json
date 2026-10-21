@@ -346,6 +346,41 @@
           "v": "10 % des Werbebudgets"
         }
       ],
+      "member": {
+        "name": "Monatsbeitrag (optional)",
+        "price": "199 $",
+        "priceNote": "pro Monat",
+        "rows": [
+          {
+            "l": "Enthaltene LIVE-Präsentationen",
+            "v": "10 pro Monat"
+          },
+          {
+            "l": "KI-Assistent + Knowledge HUB",
+            "v": "Inklusive"
+          },
+          {
+            "l": "Jede weitere LIVE-Präsentation",
+            "v": "40 $"
+          },
+          {
+            "l": "1:1-Videogespräch mit einem Käufer",
+            "v": "Inklusive"
+          },
+          {
+            "l": "Kontaktdaten eines Käufers freischalten",
+            "v": "Inklusive"
+          },
+          {
+            "l": "Kontaktdaten eines Zuschauers der Präsentation",
+            "v": "Inklusive"
+          },
+          {
+            "l": "Gebühr für das Management von META-Werbekampagnen",
+            "v": "7 % des Werbebudgets"
+          }
+        ]
+      },
       "cta": "Kostenlos starten"
     },
     "who": {

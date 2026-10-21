@@ -347,6 +347,41 @@
           "v": "10% of the ad budget"
         }
       ],
+      "member": {
+        "name": "Monthly Membership Fee (Optional)",
+        "price": "$199",
+        "priceNote": "per month",
+        "rows": [
+          {
+            "l": "LIVE showcases included",
+            "v": "10 per month"
+          },
+          {
+            "l": "AI assistant + Knowledge HUB",
+            "v": "Included"
+          },
+          {
+            "l": "Each extra LIVE showcase",
+            "v": "$40"
+          },
+          {
+            "l": "1-on-1 video meeting with a buyer",
+            "v": "Included"
+          },
+          {
+            "l": "Unlock a buyer’s contact details",
+            "v": "Included"
+          },
+          {
+            "l": "Contact details of a showcase viewer",
+            "v": "Included"
+          },
+          {
+            "l": "Fee for managing META ad campaigns",
+            "v": "7% of the ad budget"
+          }
+        ]
+      },
       "cta": "Start free"
     },
     "who": {

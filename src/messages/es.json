@@ -346,6 +346,41 @@
           "v": "10% del presupuesto de anuncios"
         }
       ],
+      "member": {
+        "name": "Cuota mensual (opcional)",
+        "price": "199 $",
+        "priceNote": "al mes",
+        "rows": [
+          {
+            "l": "Transmisiones LIVE incluidas",
+            "v": "10 al mes"
+          },
+          {
+            "l": "Asistente de IA + Knowledge HUB",
+            "v": "Incluido"
+          },
+          {
+            "l": "Cada transmisión LIVE adicional",
+            "v": "40 $"
+          },
+          {
+            "l": "Videollamada 1:1 con un comprador",
+            "v": "Incluido"
+          },
+          {
+            "l": "Desbloquear el contacto de un comprador",
+            "v": "Incluido"
+          },
+          {
+            "l": "Contacto de un espectador de la transmisión",
+            "v": "Incluido"
+          },
+          {
+            "l": "Comisión por gestionar campañas de anuncios en META",
+            "v": "7% del presupuesto de anuncios"
+          }
+        ]
+      },
       "cta": "Empieza gratis"
     },
     "who": {

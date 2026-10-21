@@ -346,6 +346,41 @@
           "v": "10% budżetu reklamowego"
         }
       ],
+      "member": {
+        "name": "Abonament miesięczny (opcjonalnie)",
+        "price": "$199",
+        "priceNote": "miesięcznie",
+        "rows": [
+          {
+            "l": "Transmisje LIVE w abonamencie",
+            "v": "10 w miesiącu"
+          },
+          {
+            "l": "Asystent AI + Knowledge HUB",
+            "v": "W cenie"
+          },
+          {
+            "l": "Każda dodatkowa transmisja LIVE",
+            "v": "$40"
+          },
+          {
+            "l": "Spotkanie wideo 1:1 z klientem",
+            "v": "W cenie"
+          },
+          {
+            "l": "Odblokowanie kontaktu do klienta",
+            "v": "W cenie"
+          },
+          {
+            "l": "Kontakt do uczestnika transmisji",
+            "v": "W cenie"
+          },
+          {
+            "l": "Prowizja za zarządzanie kampaniami reklamowymi META",
+            "v": "7% budżetu reklamowego"
+          }
+        ]
+      },
       "cta": "Zacznij za darmo"
     },
     "who": {
