@@ -330,6 +330,7 @@ export default async function PartnersPage({ params }: Props) {
             <p className="mt-10 border-l-2 border-accent pl-6 text-[19px] leading-[1.7] font-medium text-ink">
               {t('pricing.closing')}
             </p>
+            <p className="mt-5 text-[15px] leading-[1.8] text-muted">{t('pricing.reinvest')}</p>
           </div>
         </section>
 
