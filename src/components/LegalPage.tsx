@@ -22,8 +22,6 @@ export default async function LegalPage({
   locale: AppLocale;
 }) {
   const t = await getTranslations('legal');
-  const tAbout = await getTranslations('about');
-  const tDev = await getTranslations('developers');
   const tNav = await getTranslations('nav');
   const document = legalDocuments[locale][page];
 
@@ -46,34 +44,9 @@ export default async function LegalPage({
           />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-          <Link
-            href="/about"
-            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
-          >
-            {tAbout('title')}
-          </Link>
-          <Link
-            href="/developers"
-            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
-          >
-            {tAbout('nav.developers')}
-          </Link>
-          <Link
-            href="/platform"
-            className="hidden text-[13px] font-semibold tracking-[0.1em] uppercase hover:text-accent-deep lg:inline"
-          >
-            {tDev('nav.listings')}
-          </Link>
           <LanguageSwitch />
           <MobileNav
-            links={[
-              { label: tAbout('title'), href: getPathname({ locale, href: '/about' }) },
-              {
-                label: tAbout('nav.developers'),
-                href: getPathname({ locale, href: '/developers' }),
-              },
-              { label: tDev('nav.listings'), href: getPathname({ locale, href: '/platform' }) },
-            ]}
+            links={LEGAL_PAGES.map(slug => ({label: t(slug), href: href(slug)}))}
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}
           />

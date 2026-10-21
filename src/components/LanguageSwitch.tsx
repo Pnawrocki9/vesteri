@@ -15,7 +15,7 @@ export default function LanguageSwitch({
   tone = 'light',
   targets,
 }: {
-  variant?: 'fixed' | 'inline';
+  variant?: 'fixed' | 'inline' | 'collective';
   // `dark` inverts the outline for placement on the ink ground.
   tone?: 'light' | 'dark';
   // Where to land per locale, when it is not simply this page in that
@@ -80,9 +80,9 @@ export default function LanguageSwitch({
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((value) => !value)}
-        className={`${toneClasses} cursor-pointer rounded-btn border px-3.5 py-2 text-[12px] font-bold tracking-[0.1em] uppercase transition-[background-color,color]`}
+        className={`${variant === 'collective' ? 'collective-language-button' : ''} ${toneClasses} cursor-pointer rounded-btn border px-3.5 py-2 text-[12px] font-bold tracking-[0.1em] uppercase transition-[background-color,color]`}
       >
-        {locale}
+        {locale}{variant === 'collective' && <span aria-hidden="true"> ▾</span>}
       </button>
       {open && (
         <div

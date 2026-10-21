@@ -1,120 +1,36 @@
 import type { MetadataRoute } from 'next';
 import { getPathname } from '@/i18n/navigation';
-import { articleIndex, articlesByLocale } from '@/generated/articles';
-import { COMPARISONS } from '@/content/compare';
 import { routing, type StaticPathname } from '@/i18n/routing';
 import { neutralUrl } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
 
-type Locale = (typeof routing.locales)[number];
-
-// /platform is `noindex, follow` until the platform ships. Listing a noindexed
-// page here would be a contradictory signal — the sitemap says "index this",
-// the page says the opposite — and Search Console reports it as such. Drop the
-// entry from this array the day the noindex comes off.
-//
-// The negotiating root `/` is absent for a different reason: it answers 307
-// towards a locale, and a sitemap should only contain URLs that answer 200.
-// Both locale versions of the home page are listed below in its place.
-const EXCLUDED: readonly StaticPathname[] = [
-  '/platform',
-  // Auth-gated or noindexed affiliate pages; the landing, terms and privacy
-  // notice stay listed.
-  '/affiliate/register',
-  '/affiliate/login',
-  '/affiliate/dashboard',
+// Only the new homepage, retained legal disclosures and public affiliate
+// pages. Auth/account/admin routes must never appear in the sitemap.
+const PAGES: StaticPathname[] = [
+  '/',
+  '/privacy',
+  '/terms',
+  '/cookies',
+  '/gdpr',
+  '/ai',
+  '/disclaimers',
+  '/affiliate',
+  '/affiliate/terms',
+  '/affiliate/privacy',
 ];
-
-// Dynamic routes are dropped here and added below from the article index: a
-// pathname template like /articles/[slug] is not a URL.
-const INDEXABLE = (Object.keys(routing.pathnames) as StaticPathname[]).filter(
-  (href) => !href.includes('[') && !EXCLUDED.includes(href),
-);
-
-const absolute = (href: StaticPathname, locale: Locale) =>
-  `${SITE_URL}${getPathname({ locale, href })}`;
-
-// No lastModified: the only date available at build time is the build itself,
-// which would claim all 18 pages changed on every deploy. No priority or
-// changeFrequency either — Google ignores both.
-// An article's URL in a locale, or undefined when it was not written for it.
-const articleUrl = (id: string, locale: Locale) => {
-  const article = articlesByLocale[locale][id];
-  return article
-    ? `${SITE_URL}${getPathname({ locale, href: { pathname: '/articles/[slug]', params: { slug: article.slug } } })}`
-    : undefined;
-};
-
-// Articles carry lastModified — unlike the static pages, they have a real date
-// to report, and it changes only when the text does.
-function articleEntries(): MetadataRoute.Sitemap {
-  return articleIndex.flatMap(({ id, locales }) => {
-    const urls = Object.fromEntries(
-      locales.map((locale) => [locale, articleUrl(id, locale)!]),
-    ) as Record<Locale, string>;
-    // Only the locales an article exists in — advertising a version that
-    // answers 404 is an hreflang reciprocity error.
-    const languages = { ...urls, 'x-default': urls[routing.defaultLocale] ?? Object.values(urls)[0] };
-    return locales.map((locale) => ({
-      url: urls[locale],
-      lastModified: articlesByLocale[locale][id].updated,
-      alternates: { languages },
-    }));
-  });
-}
-
-// Comparison pages exist in both locales by construction, so their alternates
-// need none of the per-locale filtering articles do.
-function compareEntries(): MetadataRoute.Sitemap {
-  return COMPARISONS.flatMap((comparison) => {
-    const urls = Object.fromEntries(
+export default function sitemap(): MetadataRoute.Sitemap {
+  return PAGES.flatMap((href) => {
+    const languages = Object.fromEntries(
       routing.locales.map((locale) => [
         locale,
-        `${SITE_URL}${getPathname({
-          locale,
-          href: { pathname: '/compare/[slug]', params: { slug: comparison.locales[locale].slug } },
-        })}`,
+        `${SITE_URL}${getPathname({ locale, href })}`,
       ]),
-    ) as Record<Locale, string>;
-    const languages = { ...urls, 'x-default': urls[routing.defaultLocale] };
+    );
     return routing.locales.map((locale) => ({
-      url: urls[locale],
-      alternates: { languages },
+      url: languages[locale],
+      alternates: {
+        languages: { ...languages, 'x-default': neutralUrl(href) },
+      },
     }));
   });
-}
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = routing.locales.flatMap((locale) =>
-    INDEXABLE
-      // The listing 404s in a locale with nothing written for it, so it is
-      // advertised per locale — not whenever any article exists anywhere.
-      // Polish-market pieces ship in both languages, others in English only,
-      // so one locale can have a listing while the other does not.
-      .filter(
-        (href) =>
-          href !== '/articles' || Object.keys(articlesByLocale[locale]).length > 0,
-      )
-      .map((href) => {
-        // Same rule applied to the alternates: a listing that 404s in the
-        // other language must not be advertised as its counterpart.
-        const locales =
-          href === '/articles'
-            ? routing.locales.filter((l) => Object.keys(articlesByLocale[l]).length > 0)
-            : routing.locales;
-        return {
-          url: absolute(href, locale),
-          alternates: {
-            languages: {
-              ...Object.fromEntries(locales.map((l) => [l, absolute(href, l)])),
-              // Same language-neutral target the pages and the Link header use.
-              'x-default': locales.includes(routing.defaultLocale)
-                ? neutralUrl(href)
-                : absolute(href, locales[0]),
-            },
-          },
-        };
-      }),
-  );
-  return [...pages, ...compareEntries(), ...articleEntries()];
 }

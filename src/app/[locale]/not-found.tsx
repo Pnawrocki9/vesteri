@@ -42,12 +42,7 @@ export default async function NotFound() {
           >
             {t('home')}
           </Link>
-          <Link
-            href="/developers"
-            className="rounded-btn border border-surface-dark px-8 py-4 text-[13px] font-bold tracking-[0.1em] uppercase transition-[border-color,color] hover:border-accent-light hover:text-accent-light"
-          >
-            {t('developers')}
-          </Link>
+
         </div>
       </main>
 

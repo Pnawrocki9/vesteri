@@ -11,7 +11,7 @@ import { CONTACT_EMAIL, CONTACT_PHONE_TEL, SITE_URL } from '@/lib/site';
 // what earns a manual action.
 //
 // Deliberately absent: Product, Service, Offer, FAQPage, LocalBusiness and
-// Review. The site sells nothing on-page, quotes no prices, has no FAQ block
+// Review. The site sells nothing on-page, quotes no prices, does not emit FAQ schema
 // and runs no premises open to customers. WebSite carries no SearchAction
 // either — there is no site search to point it at.
 

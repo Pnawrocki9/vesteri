@@ -1,61 +1,4 @@
 {
-  "landing": {
-    "meta": {
-      "title": "VESTERI — Property abroad without the chaos | Cyprus, Thailand and more",
-      "description": "Vesteri brings order to investing in property abroad: vetted developers, AI technology, independent law firms and direct contact — without leaving home.",
-      "ogTitle": "VESTERI — Property abroad without the chaos",
-      "ogDescription": "Vetted developers, objective AI technology and independent due diligence. A clear path to investing in selected markets abroad."
-    },
-    "kicker": "Carefully selected markets · Verified developers",
-    "h1": "Property abroad.<br></br>Without the <em>chaos</em>.",
-    "lede": "Vesteri brings order to what used to run on blind trust: the market, the developer, the lawyer, and the whole buying process. You make the decision. We make sure it is an informed one.",
-    "pillars": [
-      {
-        "n": "01",
-        "t": "Partners you can count on",
-        "d": "Developers vetted before you see a single listing."
-      },
-      {
-        "n": "02",
-        "t": "AI technology",
-        "d": "Knows every project in depth and stays objective."
-      },
-      {
-        "n": "03",
-        "t": "Independent legal advisory",
-        "d": "Law firms and due diligence with no conflict of interest."
-      },
-      {
-        "n": "04",
-        "t": "Live meetings",
-        "d": "Webinars with the developer: see the property and ask your questions live, without leaving home."
-      }
-    ],
-    "ctaInvestor": "For Investors",
-    "ctaDeveloper": "For Developers",
-    "marketsLabel": "Markets",
-    "activeTag": "Active markets",
-    "activeShort": "Active",
-    "coords": {
-      "cyp": "35.1264° N · 33.4299° E",
-      "tha": "13.7563° N · 100.5018° E"
-    },
-    "reliefAlt": {
-      "cyp": "Relief map of Cyprus",
-      "tha": "Relief map of Thailand"
-    },
-    "countries": {
-      "cyp": "Cyprus",
-      "esp": "Spain",
-      "ita": "Italy",
-      "prt": "Portugal",
-      "tha": "Thailand"
-    },
-    "soon": "Coming soon",
-    "closing": "Vesteri brings a new dimension to international real estate. We combine smart technology with genuine human connection, making it easier to discover and buy property abroad, wherever you are.",
-    "footerCopyright": "© 2026 Vesteri",
-    "footerMarkets": "Cyprus · Thailand · Spain · Italy · Portugal"
-  },
   "developers": {
     "title": "VESTERI — For developers",
     "meta": {
@@ -183,55 +126,6 @@
       "madeBy": "Made for VESTERI by Estalara (<link>www.estalara.com</link>)"
     }
   },
-  "about": {
-    "title": "About us",
-    "meta": {
-      "title": "VESTERI — About us",
-      "description": "Vesteri is a brand of Time2Show, Inc., a Polish-American startup. For the past few years we have been building technology for the property industry."
-    },
-    "nav": {
-      "developers": "For developers",
-      "listings": "Listings Portal",
-      "cta": "Book a call"
-    },
-    "who": {
-      "heading": "Who we are",
-      "paragraphs": [
-        "Vesteri is a brand of Time2Show, Inc., a Polish-American startup. For the past few years we have been building technology for the property industry. It started with tools for online presentations and webinars, used by agencies and individual agents. Then came AI, which helps investors and brokerages save time and get information they can rely on. That side of our work runs under the Estalara name.",
-        "We built the team from people who have done this before. Engineers with years behind them in software, salespeople who have sold across borders, and licensed real estate agents. The agents keep the rest of us honest about how this market actually works and what the people in it need."
-      ]
-    },
-    "team": {
-      "heading": "The team",
-      "members": [
-        {
-          "name": "Piotr Nawrocki",
-          "role": "CEO",
-          "bio": "Twenty years in international sales for global corporations. An enthusiast of AI and new technology. He believes that business built to last rests on honest relationships rather than on the offer itself. People buy from people, not from companies."
-        },
-        {
-          "name": "Rafał Palak",
-          "role": "CTO",
-          "bio": "PhD and lecturer in applied computer science at Wrocław University of Science and Technology. Years of research work and hands-on experience building analytical systems, databases and AI models. He is the reason our products do exactly what we say they do."
-        },
-        {
-          "name": "Krzysztof Świętek",
-          "role": "COO",
-          "bio": "Twenty years of organising concerts and large events, a school of planning with no room for improvisation on opening night. A superb organiser. For several years now he has followed the property market closely and worked in it, learning the trade from the inside. Today, as a licensed real-estate broker, he is our compass. When a product discussion drifts too far from practice, he brings us back down to earth."
-        }
-      ]
-    },
-    "why": {
-      "heading": "Why we are building Vesteri",
-      "paragraphs": [
-        "Real estate is not short of technology. It is short of new questions. The industry keeps refining the same old answers — better listings, better filters, better photos — while the buyer has quietly changed. A generation that runs its whole life through a screen, compares everything, verifies everything, and expects to see before it believes, is still being asked to buy property the way their parents did: from a handful of photos and an assurance that everything is fine.",
-        "Nowhere is the gap wider than in cross-border deals. Communication breaks down, processes drag on for weeks, and information arrives incomplete or quietly left out. Someone buying from another country makes one of the biggest financial decisions of their life with less transparency than they get when ordering a pair of shoes online.",
-        "This is not to say the in-person visit stopped mattering. Sooner or later you have to see a property with your own eyes — and that moment is not going anywhere. What changed is everything before it: today's buyer wants to reach that moment online. Get to know the market, check out the agent, tour the property live, ask questions, and narrow the choice — all remotely, so the flight is for the decision, not the reconnaissance.",
-        "That gap is where Vesteri lives. We exist to make buying property abroad feel ordinary: you can check who you are talking to, view a property live without flying across Europe, and get information you can rely on before you commit."
-      ],
-      "closing": "We believe in what we are building for a simple reason: this is how we would want to buy."
-    }
-  },
   "legal": {
     "privacy": "Privacy policy",
     "terms": "Terms of service",
@@ -250,188 +144,6 @@
       "disclaimers": "Disclaimers for the Vesteri website and services: the nature of the services, developer vetting, the risks of investing abroad and liability limits."
     }
   },
-  "platform": {
-    "meta": {
-      "title": "VESTERI — Webinar & AI Platform",
-      "description": "A smarter way to discover, explore and invest in overseas property. Stay tuned."
-    },
-    "kicker": "Coming soon",
-    "headline": "The Vesteri Webinar & AI Platform",
-    "sub": "A smarter way to discover, explore and invest in overseas property. Stay tuned.",
-    "back": "Back to vesteri.com"
-  },
-  "partners": {
-    "meta": {
-      "title": "Become a Partner | Vesteri",
-      "description": "The Vesteri marketplace for agents: list your own properties free and sell in four languages, or bring a buyer to our developments and take up to 60% of the commission."
-    },
-    "navCta": "Real Estate Agent? Join Us!",
-    "navLink": "For real estate agents",
-    "hero": {
-      "title": "Add your listings and use all our tools FREE",
-      "tagline": "Vesteri. Exceptional properties. Global opportunities.",
-      "subIntro": "Vesteri is an international marketplace of exceptional properties, open to agents from every market.",
-      "subDeal": "Add your listings free and reach buyers from all over the world. You also get access to our portfolio of international developments: offer them to your clients and earn up to <b>60% of the sales commission.</b>",
-      "ctaList": "Add your listings",
-      "ctaBring": "Bring a client",
-      "payPerUse": "No subscription, you pay only for what you use. See pricing"
-    },
-    "invitation": {
-      "heading": "This money has been walking past you for years",
-      "body": [
-        "Every time a client mentions Spain, Cyprus or Dubai, you change the subject and watch a commission leave the room. Hard to blame you, since until now there was nothing you could offer them.",
-        "The same problem has a second side: your listings sit on a local portal, in one language, where a foreign buyer will never find them. You sell where everyone advertises instead of where the capital is looking."
-      ],
-      "accent": "Now you have two ways in."
-    },
-    "technology": {
-      "heading": "Live tours under your banner",
-      "body": [
-        "Your clients tour properties live from their sofa. The video streams straight from the site, questions get asked as they come up, and the answers arrive in their own language.",
-        "Host the webinar yourself and be the one who brought them the world. If you’d rather not, hand us the microphone and we’ll run it under your banner. The audience stays yours either way, and the same stage works for the listings you add yourself."
-      ]
-    },
-    "split": {
-      "heading": "Our listings, your clients and 60% of the commission goes to YOU!",
-      "body": [
-        "We make sure the listings we carry meet the highest standards and that the developers we work with are fully verified and worthy of trust. On top of that, we help with introductions to independent law firms, so nobody ends up searching for a lawyer abroad at midnight.",
-        "Your only job is to get your clients into the webinars and online presentations. You don’t need your own listings or a licence abroad; a client who trusts you is enough."
-      ]
-    },
-    "list": {
-      "heading": "Your listings, our audience",
-      "body": [
-        "Publishing on Vesteri is completely free. You sell on your own terms and keep 100% of the commission from your own listings. We never take a cut. You only pay for additional tools when you choose to use them.",
-        "Adding a property is just as simple. Upload your listing directly through your dashboard, without waiting for anyone’s approval. Your listing goes live automatically, and our AI immediately starts working with the property information, enriching its content and helping potential buyers find the answers they need."
-      ],
-      "accent": "Vesteri is more than a property listing platform. It’s a complete sales ecosystem designed to help you sell.",
-      "cta": "Open the panel"
-    },
-    "pricing": {
-      "heading": "One plan. Everything that matters, free.",
-      "lead": "Add properties, present your listings and use the AI chat without paying a thing.",
-      "free": "$0 subscription. No commitments.",
-      "more": "Need more? Use the extra tools and pay only for what you actually use.",
-      "closing": "Start free. Grow your sales on your terms.",
-      "reinvest": "We reinvest at least 10% of all Vesteri revenue into promoting the platform and expanding its global reach, bringing more potential buyers to your listings.",
-      "planName": "Solo",
-      "price": "$0",
-      "priceNote": "for listings + pay as you go",
-      "bestFor": "Single agent · free to start",
-      "rows": [
-        {
-          "l": "LIVE showcases included",
-          "v": "2 per month"
-        },
-        {
-          "l": "AI assistant + Knowledge HUB",
-          "v": "Included"
-        },
-        {
-          "l": "Each extra LIVE showcase",
-          "v": "$49"
-        },
-        {
-          "l": "1-on-1 video meeting with a buyer",
-          "v": "$4.99 (2 free)"
-        },
-        {
-          "l": "Unlock a buyer’s contact details",
-          "v": "$2.99 (3 free)"
-        },
-        {
-          "l": "Contact details of a showcase viewer",
-          "v": "$4.99 (1 free)"
-        },
-        {
-          "l": "Fee for managing META ad campaigns",
-          "v": "10% of the ad budget"
-        }
-      ],
-      "member": {
-        "name": "Monthly Membership Fee (Optional)",
-        "price": "$199",
-        "priceNote": "per month",
-        "rows": [
-          {
-            "l": "LIVE showcases included",
-            "v": "10 per month"
-          },
-          {
-            "l": "AI assistant + Knowledge HUB",
-            "v": "Included"
-          },
-          {
-            "l": "Each extra LIVE showcase",
-            "v": "$40"
-          },
-          {
-            "l": "1-on-1 video meeting with a buyer",
-            "v": "Included"
-          },
-          {
-            "l": "Unlock a buyer’s contact details",
-            "v": "Included"
-          },
-          {
-            "l": "Contact details of a showcase viewer",
-            "v": "Included"
-          },
-          {
-            "l": "Fee for managing META ad campaigns",
-            "v": "7% of the ad budget"
-          }
-        ]
-      },
-      "cta": "Start free"
-    },
-    "who": {
-      "heading": "Sound familiar?",
-      "items": [
-        {
-          "t": "Real estate agents & agencies",
-          "d": "with buyers asking about markets you don’t cover."
-        },
-        {
-          "t": "Agents & agencies with their own portfolio",
-          "d": "who want their listings in front of an international audience, with no listing fees and no cut of their commission."
-        },
-        {
-          "t": "Financial advisors",
-          "d": "whose clients are sitting on capital and asking what to do with it next."
-        },
-        {
-          "t": "The adjacent world",
-          "d": "yacht sales and charter, luxury travel, concierge services, private clubs. If your clients can afford the boat, they can afford the flat overlooking the marina."
-        }
-      ],
-      "closing": "Wealthy clients who already trust you will bring you this question too. We make sure you have the answer ready."
-    },
-    "cta": {
-      "title": "Start today: list a property or book a conversation.",
-      "sub": "The panel is free and ready now. If you’d rather talk first, half an hour is enough. No exclusivity, no fees, no volume targets.",
-      "btnPanel": "Add your listings",
-      "btn": "Write to us: partners@vesteri.com"
-    },
-    "mailto": {
-      "subject": "Partner enquiry - Vesteri",
-      "body": "Hi Piotr,\r\n\r\nI’d like to talk about working with Vesteri.\r\nI’m interested in: bringing clients / listing my properties / both.\r\n\r\nName:\r\nCompany:\r\nWhat I do:\r\n"
-    }
-  },
-  "compare": {
-    "meta": {
-      "title": "VESTERI — Compare: ways to sell to foreign investors",
-      "description": "Honest, side-by-side comparisons of how developers reach foreign investors: portal leads, an own office abroad, broker networks — vs the Vesteri webinar."
-    },
-    "heading": "Comparisons",
-    "title": "How it stacks up next to Vesteri",
-    "lede": "Honest, side-by-side comparisons of the ways developers reach foreign investors today — including where each alternative is genuinely enough.",
-    "pickKicker": "Pick your comparison",
-    "pickTitle": "Three ways developers sell abroad today",
-    "readMore": "See the comparison",
-    "backToList": "All comparisons",
-    "ctaBtn": "Book a call"
-  },
   "nav": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -445,19 +157,6 @@
     "sub": "The address may be out of date or contain a typo. Here is the way back.",
     "home": "Home",
     "developers": "For developers"
-  },
-  "articles": {
-    "meta": {
-      "title": "VESTERI — Guides",
-      "description": "Practical guides to investing in property abroad: the buying process, vetting a developer, paperwork and risks."
-    },
-    "heading": "Guides",
-    "lede": "What to know before you buy property abroad.",
-    "published": "Published",
-    "updated": "Updated",
-    "author": "Author",
-    "backToList": "Back to the guides",
-    "otherLanguage": "This piece has no English version. See the other guides."
   },
   "affiliate": {
     "navTitle": "Affiliate Program",
@@ -587,5 +286,378 @@
       },
       "logout": "Log out"
     }
+  },
+  "collective": {
+    "meta": {
+      "title": "Vesteri Collective | Independent Agents. Stronger Together.",
+      "description": "Discover local and international properties through Vesteri Collective, a verified network of independent real estate agents. Find a property, connect with an agent or apply to join.",
+      "ogDescription": "Explore local and international property listings through verified independent real estate professionals. Join a network built on fair play, trust and collaboration."
+    },
+    "header": {
+      "links": [
+        {
+          "label": "Properties",
+          "href": "#properties"
+        },
+        {
+          "label": "For Buyers",
+          "href": "#buyers"
+        },
+        {
+          "label": "Membership",
+          "href": "#membership"
+        },
+        {
+          "label": "Collective",
+          "href": "#agents"
+        },
+        {
+          "label": "Our Technology",
+          "href": "#technology"
+        },
+        {
+          "label": "International",
+          "href": "#about"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "apply": "Apply to Join ↗",
+      "open": "Open navigation",
+      "close": "Close navigation",
+      "label": "Main navigation"
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "Your questions, answered clearly.",
+      "intro": "Explore how the international property marketplace works, what it means to join Vesteri Collective and how our independent professionals collaborate.",
+      "tabs": [
+        "For buyers",
+        "For real estate agents"
+      ],
+      "groups": [
+        [
+          {
+            "q": "What is Vesteri Collective?",
+            "a": "Vesteri Collective is a selective network of verified independent real estate professionals. Its public marketplace brings together local and international property listings represented by participating members. Buyers can browse properties without applying for professional membership."
+          },
+          {
+            "q": "How is Vesteri Marketplace different from other property portals?",
+            "a": "Traditional property portals primarily aggregate listings. Vesteri Marketplace is designed as the shared sales space of a verified professional network whose members commit to fair play, transparent cooperation and being open to agreed referral or co-brokerage arrangements. Our ambition is to help buyers find suitable properties beyond one agent’s inventory, rather than competing solely for leads. Availability and cooperation terms vary by listing; verification does not guarantee any particular transaction outcome."
+          },
+          {
+            "q": "Can I search for local property as well as property abroad?",
+            "a": "Yes. Vesteri is intended for local and international property searches, subject to listings actually available in each market. Explore the marketplace or contact a participating agent for guidance."
+          },
+          {
+            "q": "Will one agent help me find properties across the network?",
+            "a": "Where an agent agrees to act as your main point of contact, they can help assess your needs and explore eligible listings offered by other members. The precise scope of representation, introductions and local expertise depends on the participating professionals and applicable agreements."
+          },
+          {
+            "q": "Can I buy directly through Vesteri or a Collective member?",
+            "a": "Property transactions are handled through the relevant listing professional and other transaction parties. Vesteri Marketplace facilitates discovery and contact, and Vesteri may also directly represent selected international developments. Transaction arrangements vary by property and country."
+          },
+          {
+            "q": "Are all properties legally verified by Vesteri?",
+            "a": "No. Collective member verification screens professional credentials and conduct, not every property’s legal title or condition. Listing information must be checked with the responsible agent, and buyers should undertake independent legal and technical due diligence."
+          },
+          {
+            "q": "How do I buy property abroad safely?",
+            "a": "Check ownership, legal documentation, applicable taxes, financing rules, the developer’s background and the total cost of purchase. Use qualified, independent legal advisers in the relevant jurisdiction. Vesteri Marketplace does not replace legal due diligence, but we can support your process, including helping you find independent legal advisers and connecting you with people in our network who can assist. The assistance available depends on the property and destination."
+          },
+          {
+            "q": "Can I join a LIVE property viewing?",
+            "a": "Where an agent schedules an Estalara LIVE property presentation, buyers may view the property and ask questions remotely. LIVE availability depends on each listing and agent."
+          }
+        ],
+        [
+          {
+            "q": "Who can apply to Vesteri Collective?",
+            "a": "Independent real estate professionals and agencies may apply. Vesteri reviews identity, professional activity, applicable registrations or licences and acceptance of its Fair Play & Trust principles. Membership is selective and applications are not automatically approved."
+          },
+          {
+            "q": "Can I publish property listings before approval?",
+            "a": "No. Under the selective-membership model, the public can browse the marketplace, but publication and Collective collaboration are reserved for approved professional members. Application and verification precede access to these functions."
+          },
+          {
+            "q": "Does it cost anything to apply or publish listings?",
+            "a": "The proposed model offers free applications and free standard listing publication for approved members, with optional paid Estalara tools. Any limits, fees or paid features must be clearly set out in current published membership terms."
+          },
+          {
+            "q": "Do I keep my brand, clients and commission?",
+            "a": "Yes. Vesteri Collective is built for independent professionals. You keep your brand and your direct client relationships. Your commission on a sale of your own listing remains yours unless you separately agree to share it under clear referral or co-brokerage terms."
+          },
+          {
+            "q": "Can I offer international properties outside my own portfolio?",
+            "a": "Yes. One of the advantages of Collective is the opportunity to help your clients beyond your own listings. Vesteri intends to make selected overseas developments available to participating members, while members are expected to welcome transparent cooperation and agreed commission sharing on eligible listings. Rights to market each property, and the terms of collaboration, depend on owner authorisation, contracts and local law."
+          },
+          {
+            "q": "How do referrals and shared commissions work?",
+            "a": "Openness to cooperation is a core Collective principle. Members should agree referral, buyer-introduction or co-brokerage arrangements in advance, including responsibilities and commission splits. Exact terms depend on the listing, the parties and local law. A platform-wide automated attribution and commission-settlement system is still under development, so it must not be assumed to be available today."
+          },
+          {
+            "q": "How does Estalara help with marketing and lead generation?",
+            "a": "Estalara provides LIVE property presentations, AI-powered assistance and automated advertising workflows to help agents market listings and engage potential buyers. Results depend on budgets, targeting, property demand and execution. Vesteri also commits to dedicate at least 10% of its revenues to promoting Vesteri Collective as a whole. This shared-promotion commitment does not guarantee individual traffic, leads or sales; the revenue base and reporting approach must be defined in the formal terms."
+          },
+          {
+            "q": "Are private member channels available?",
+            "a": "Not yet. Private discussions, local peer groups and structured buyer requests are part of the longer-term product roadmap, not current membership features. Today the focus is on property listings, clear cooperation terms and Estalara sales tools."
+          },
+          {
+            "q": "What are the Fair Play & Trust principles?",
+            "a": "Approved members are expected to provide accurate listings, respect buyer privacy and existing client relationships, follow agreed cooperation terms and act honestly toward fellow members. Serious or repeated breaches may lead to suspension or removal through a documented review and appeals process."
+          },
+          {
+            "q": "Do I need an exclusive agreement with Vesteri?",
+            "a": "No. Collective is designed for independent professionals, not as a conventional franchise. Joining does not itself require exclusivity. Any specific listing rights or other contractual obligations must be separately agreed and comply with local law."
+          },
+          {
+            "q": "How does verification work and how long does it take?",
+            "a": "Vesteri intends to review identity, business activity, market-specific professional credentials and agreement to the Collective standards. The time required depends on the jurisdiction and completeness of the application. No approval timeline is guaranteed."
+          }
+        ]
+      ],
+      "note": "These answers describe the proposed Collective model. Membership approval, permitted activity, fees, collaboration rights and procedures depend on the applicable published terms and local regulations.",
+      "label": "FAQ audience"
+    },
+    "search": {
+      "title": "Find your next property",
+      "subtitle": "Browse a connected marketplace, not just one portfolio",
+      "fields": [
+        {
+          "label": "DESTINATION",
+          "value": "Anywhere"
+        },
+        {
+          "label": "PROPERTY TYPE",
+          "value": "All properties"
+        },
+        {
+          "label": "MAXIMUM BUDGET",
+          "value": "Any budget"
+        }
+      ],
+      "cta": "Search on marketplace ↗",
+      "note": "Preview only — filters are not connected. Search properties directly in the marketplace."
+    },
+    "buyer": {
+      "cta": "Tell us what you're looking for ↗",
+      "eyebrow": "Buyer assistance",
+      "title": "Tell us your ideal property.",
+      "note": "Buyer assistance is a preview and does not send or store an enquiry.",
+      "close": "Close",
+      "email": "Contact Vesteri by email ↗",
+      "fields": [
+        {
+          "label": "Preferred destination",
+          "value": "Choose destination"
+        },
+        {
+          "label": "Approximate budget",
+          "value": "e.g. €300,000"
+        },
+        {
+          "label": "Email",
+          "value": "you@example.com"
+        }
+      ]
+    },
+    "assetsNote": "Illustrative photographs from the approved mockup. Actual listing photographs and individual destination URLs will be supplied before publication.",
+    "affiliate": "Affiliate Program",
+    "copy01": "Skip to content",
+    "top01": "Contemporary premium residence",
+    "top02": "VESTERI COLLECTIVE · VERIFIED REAL ESTATE NETWORK",
+    "top03": "Independent agents.",
+    "top04": "Stronger together.",
+    "top05": "Discover local and international properties through a verified network of independent real estate professionals. One trusted connection, more choice, and collaboration built around your needs.",
+    "top06": "Explore properties ↗",
+    "top07": "Apply to Join ↗",
+    "top08": "Local & international properties",
+    "top09": "Verified professionals",
+    "top10": "Fair play & trust",
+    "properties01": "One marketplace. Many possibilities.",
+    "properties02": "Discover property, near and far.",
+    "properties03": "From local homes to overseas opportunities, explore listings represented by members of a collaborative real estate network.",
+    "properties04": "View marketplace ",
+    "properties05": "↗",
+    "properties06": "Contemporary coastal villa",
+    "properties07": "Local property",
+    "properties08": "Properties close to home",
+    "properties09": "↗",
+    "properties10": "Bright modern luxury interior",
+    "properties11": "European destinations",
+    "properties12": "Homes and investments across Europe",
+    "properties13": "↗",
+    "properties14": "Modern apartment interior",
+    "properties15": "International opportunities",
+    "properties16": "Explore properties beyond borders",
+    "properties17": "↗",
+    "buyers01": "For property buyers",
+    "buyers02": "Your agent. The whole network.",
+    "buyers03": "Why settle for one agency’s portfolio? Explore local and international homes with guidance from an independent professional who can work with fellow Collective members to broaden your options.",
+    "buyers04": "✓",
+    "buyers05": " Wider choice beyond one portfolio",
+    "buyers06": "✓",
+    "buyers07": " One trusted point of contact",
+    "buyers08": "✓",
+    "buyers09": " Local expertise across markets",
+    "buyers10": "Illustration of a buyer brief matched to offerings across a property network",
+    "buyers11": "VESTERI / BUYER'S BRIEF",
+    "buyers12": "01 — 03",
+    "buyers13": "One search.",
+    "buyers14": "More possibilities.",
+    "buyers15": "WHAT YOU'RE LOOKING FOR",
+    "buyers16": "01 / BRIEF",
+    "buyers17": "PROPERTY TYPE",
+    "buyers18": "Apartment",
+    "buyers19": "LOCATION",
+    "buyers20": "Warsaw or abroad",
+    "buyers21": "YOUR PRIORITY",
+    "buyers22": "The right fit",
+    "buyers23": "MORE THAN ONE AGENT'S PORTFOLIO ",
+    "buyers24": "↘",
+    "buyers25": "01",
+    "buyers26": "Local opportunities",
+    "buyers27": "↗",
+    "buyers28": "02",
+    "buyers29": "Collective members' listings",
+    "buyers30": "↗",
+    "buyers31": "03",
+    "buyers32": "International developments",
+    "buyers33": "↗",
+    "buyers34": "Your priorities first. The network behind your agent.",
+    "agents01": "Editorial illustration of independent agency and shared business tools",
+    "agents02": "VESTERI / COLLECTIVE",
+    "agents03": "02 — 03",
+    "agents04": "Your name.",
+    "agents05": "Your clients.",
+    "agents06": "A bigger network.",
+    "agents07": "INDEPENDENT BY DESIGN",
+    "agents08": "Built to work ",
+    "agents09": "together.",
+    "agents10": "01",
+    "agents11": "Keep your brand",
+    "agents12": "02",
+    "agents13": "Share opportunities",
+    "agents14": "03",
+    "agents15": "Market with Estalara",
+    "agents16": "FAIR PLAY & TRUST — A CONDITION OF MEMBERSHIP",
+    "agents17": "Local expertise. Collective strength.",
+    "agents18": "For independent agents",
+    "agents19": "Stay independent. Belong to something greater.",
+    "agents20": "Apply to a selective real estate agent network built on verified professional identity, fair cooperation and shared opportunities. Keep your brand and client relationships while working alongside trusted peers.",
+    "agents21": "✓",
+    "agents22": " Publish listings for free after membership approval",
+    "agents23": "✓",
+    "agents24": " Access international property opportunities",
+    "agents25": "✓",
+    "agents26": " Connect and collaborate with fellow agents",
+    "agents27": "✓",
+    "agents28": " Put Estalara's sales technology to work",
+    "agents29": "Apply to Join ↗",
+    "membership01": "Membership that means something",
+    "membership02": "Open to buyers.",
+    "membership03": "Selective for professionals.",
+    "membership04": "Everyone can explore Vesteri Marketplace. Publishing property and joining Collective collaboration are reserved for approved, verified professional members.",
+    "membership05": "For buyers",
+    "membership06": "Explore freely.",
+    "membership07": "Explore local and international property listings, discover experienced real estate professionals, and get personalized assistance in finding the property that best matches your needs.",
+    "membership08": "Browse Properties ↗",
+    "membership09": "For real estate professionals",
+    "membership10": "Apply. Agree. Collaborate.",
+    "membership11": "Submit an application and accept Collective standards. Once approved, publish listings, use available Estalara tools and cooperate with other members on clear, mutually agreed terms.",
+    "membership12": "Apply to Join ↗",
+    "membership13": "01",
+    "membership14": "Apply",
+    "membership15": "Tell us about your professional activity.",
+    "membership16": "02",
+    "membership17": "Accept the principles",
+    "membership18": "Commit to fair play, trust and transparent cooperation.",
+    "membership19": "03",
+    "membership20": "Become a member",
+    "membership21": "After approval, publish, market and cooperate across Collective.",
+    "membership22": "Application is free in the proposed model. Verification requirements depend on jurisdiction. Applying does not guarantee approval; membership services depend on rollout and published terms.",
+    "how01": "The collective advantage",
+    "how02": "The right property matters more than whose listing it is.",
+    "how03": "A buyer works with a trusted agent. That agent can explore opportunities offered by participating members and agree transparent cooperation terms when another member has the right property.",
+    "how04": "⌕",
+    "how05": "A buyer's needs",
+    "how06": "Location, budget and lifestyle, understood by one agent.",
+    "how07": "→",
+    "how08": "◎",
+    "how09": "One connected network",
+    "how10": "Independent agents share opportunities and collaborate on agreed terms.",
+    "how11": "→",
+    "how12": "⌂",
+    "how13": "A better match",
+    "how14": "Explore relevant properties beyond any single portfolio.",
+    "how15": "The relationship stays personal. The possibilities grow.",
+    "technology01": "Powered by Estalara",
+    "technology02": "Smarter real estate marketing. Stronger relationships.",
+    "technology03": "Tools that help independent agents reach, engage and assist buyers. Technology supports the relationship instead of replacing it.",
+    "technology04": "◉",
+    "technology05": "LIVE property",
+    "technology06": "presentations",
+    "technology07": "Invite buyers to real-time viewings and answer their questions live.",
+    "technology08": "✧",
+    "technology09": "AI-powered",
+    "technology10": "property assistance",
+    "technology11": "Help buyers navigate property details and make informed decisions.",
+    "technology12": "↗",
+    "technology13": "Automated",
+    "technology14": "advertising",
+    "technology15": "Promote listings and upcoming LIVE events using connected campaigns.",
+    "technology16": "◎",
+    "technology17": "Smarter buyer",
+    "technology18": "engagement",
+    "technology19": "Organize interest, capture enquiries and keep conversations moving.",
+    "technology20": "Explore tools for agents ↗",
+    "about01": "International brokerage by Vesteri",
+    "about02": "An added source of international opportunity.",
+    "about03": "Vesteri also sources selected overseas development opportunities. Members can explore suitable cross-border collaborations alongside their everyday local property business, subject to listing permissions and agreed terms.",
+    "about04": "Explore international opportunities ↗",
+    "about05": "Premium international residential development",
+    "main01": "Membership is earned through trust, and maintained through conduct.",
+    "main02": "Verified member status indicates professional screening and commitment to Collective standards, not a guarantee of property condition, legal title or transaction outcome.",
+    "main03": "A network built on clarity",
+    "main04": "Fair play and trust. No exceptions.",
+    "main05": "Vesteri Collective is a professional real estate agent network built on fairness, honesty and cooperation. Trust is not a marketing promise. It is a condition of membership.",
+    "main06": "Independent professionals",
+    "main07": "Listings identify the professional representing each property, so buyers know who they are contacting.",
+    "main08": "One network. Shared standards.",
+    "main09": "Every listing in Vesteri Marketplace follows the same principles: accurate information, clear representation and respect for buyers, regardless of which Collective member offers it.",
+    "main10": "Transparent collaboration",
+    "main11": "Real estate referrals and joint sales should operate on clear, mutually agreed terms, with transparent responsibilities and respect for buyer relationships.",
+    "main12": "Fair play, every time",
+    "main13": "Members commit to honest listings, transparent introductions, respecting buyer relationships and honouring documented cooperation terms. Material or repeated breaches can result in suspension or removal after a documented and fair review.",
+    "main14": "Fair play and trust are non-negotiable.",
+    "main15": "Honesty, respect for buyers and fellow agents, accurate listings and keeping agreed commitments are fundamental principles of Vesteri Collective. Material or repeated breaches can lead to suspension or termination of membership following a fair review process. These standards are binding on every Collective member.",
+    "main16": "CORE MEMBERSHIP PRINCIPLES",
+    "main17": "Welcome to Vesteri Collective",
+    "main18": "Local expertise.",
+    "main19": "Collective strength.",
+    "main20": "Looking for your next property? Explore a connected network. Ready to grow as an independent agent? Apply to join a community built on trust and fair cooperation.",
+    "main21": "Explore properties ↗",
+    "main22": "Apply to Join ↗",
+    "footer01": "Vesteri - home",
+    "footer02": "Vesteri logo mark",
+    "footer03": "VESTERI",
+    "footer04": "Vesteri Collective connects verified independent real estate professionals, local and international listings and buyers through one shared marketplace.",
+    "footer05": "Explore",
+    "footer06": "Properties",
+    "footer07": "For buyers",
+    "footer08": "International brokerage",
+    "footer09": "Collective",
+    "footer10": "For agents",
+    "footer11": "How it works",
+    "footer12": "Powered by Estalara",
+    "footer13": "FAQ",
+    "footer14": "Company",
+    "footer15": "About Vesteri",
+    "footer16": "Privacy",
+    "footer17": "Terms",
+    "footer18": "© 2026 Vesteri. All rights reserved."
   }
 }

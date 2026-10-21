@@ -1,191 +1,99 @@
-# VESTERI — strona publiczna
+# Vesteri Collective
 
-Publiczna strona VESTERI: landing wejściowy (`/`) oraz strona B2B dla deweloperów.
-Zbudowana w Next.js (App Router) + TypeScript + Tailwind CSS, w pełni statyczna (SSG),
-dwujęzyczna (polski domyślny, angielski drugi) z prawdziwymi ścieżkami `/pl` i `/en`.
+Next.js 15 App Router, React 19, TypeScript, Tailwind CSS 4 and next-intl.
+The public website is English and Polish, based on the approved Vesteri
+Collective v9 handoff in:
 
-Źródłem prawdy dla designu i treści jest pakiet handoff
-(`design_handoff_vesteri_website/README.md` — poza repozytorium).
+`design-reference/Vesteri_Collective_EN_PL_Codex_Handoff_v9/vesteri-collective-handoff-v9/`
 
-## Uruchomienie lokalne
+## Development and checks
 
-```bash
-npm install
-npm run dev        # http://localhost:3000 → przekierowanie na /pl lub /en
+```sh
+npm ci
+npm run dev
+npm run lint
+npm test
+npm run build
 ```
 
-Build produkcyjny:
+The homepage is served at `/en` and `/pl`. `/` negotiates the locale using the
+existing next-intl cookie/browser-language convention, with Polish as fallback.
+Homepage copy is in `src/messages/{en,pl}.json` under `collective`; all 19 FAQ
+questions and answers in each locale are checked against the reference HTML.
 
-```bash
-npm run build      # najpierw automatycznie regeneruje mapy i flagi (prebuild)
-npm run start
-```
+Homepage components and isolated styles live in `src/components/home/`.
+DM Sans and Manrope match the reference; Montserrat remains available for the
+unchanged Affiliate Program and retained legal templates. Fonts are self-hosted
+in `src/fonts/` with their SIL Open Font License files. A small Google Fonts
+subset of Noto Sans Symbols / Symbols 2 supplies missing interface glyphs. There is no
+build-time dependency on the Google Fonts service.
 
-Konfiguracja (opcjonalna) — skopiuj `.env.example` do `.env.local`:
+## Curated property cards and preview functionality
 
-- `NEXT_PUBLIC_INVESTOR_PLATFORM_URL` — adres platformy inwestorskiej
-  (domyślnie `https://app.vesteri.com`),
-- `NEXT_PUBLIC_SITE_URL` — kanoniczna domena do tagów `canonical` i `hreflang`
-  (domyślnie `https://www.vesteri.com`).
+`src/content/collective-properties.ts` is the static property-card configuration.
+The current local WebP photographs reproduce the approved mockup and are
+illustrative. Replace each image and set its `listingUrl` to its owner-confirmed
+`https://vesteri.estalara.com/...` destination. Until then, those cards are
+non-interactive and explicitly labeled as awaiting real listing destinations.
+No property details, feeds, API integrations or synchronization are implemented.
 
-## Wdrożenie — Cloudflare Workers
+Search filters and the buyer-assistance dialog are explicitly labeled previews.
+The disabled controls submit/store no personal information and have no backend.
+The separate marketplace link goes to `https://vesteri.estalara.com`, the verified
+platform entry point. Deeper application/login/search paths are not assumed.
 
-Strona działa na Cloudflare Workers przez [OpenNext](https://opennext.js.org/cloudflare).
-Konfiguracja: `wrangler.jsonc` (nazwa workera, domeny `vesteri.com` i `www.vesteri.com`)
-oraz `open-next.config.ts`.
+Hero/brokerage source: Unsplash `photo-1600607687920-4e2a09cf159d`.
+Property sources: `photo-1600596542815-ffad4c1539a9`,
+`photo-1600607688969-a5bfcd646154`, `photo-1600566753190-17f0baa2a6c3`.
+These are the supplied mockup photographs, temporarily authorized by the owner;
+final listing assets/rights and URLs must be reviewed before publication.
 
-Obie domeny są podpięte do workera, ale **kanoniczna jest `www.vesteri.com`** —
-apex `vesteri.com` musi być przekierowany na nią kodem 301 regułą w panelu
-Cloudflare (Rules → Redirect Rules). Bez tej reguły oba hosty zwracają 200
-i cała strona istnieje w indeksie podwójnie.
+## Retained features and URL migration
 
-```bash
-npm run preview    # build OpenNext + lokalny podgląd workera
-npm run deploy     # build OpenNext + wdrożenie na Cloudflare
-```
+The existing Affiliate Program is retained, including registration, signed
+sessions, account/admin dashboards, referral codes, manual sales and payout
+records, rate limits, audit logs, settings and versioned legal consent. Its
+public footer entry is `/en/affiliate` or `/pl/affiliate`. Core affiliate code,
+migrations and deployment bindings are unchanged.
 
-Wdrożenie jest zautomatyzowane: workflow `.github/workflows/deploy.yml` uruchamia
-`npm run deploy` po każdym pushu do gałęzi `claude/vesteri-website-kxnbng`
-(oraz ręcznie z zakładki Actions). Wymaga dwóch sekretów w ustawieniach
-repozytorium — **Settings → Secrets and variables → Actions**:
+Existing legal documents remain verbatim in `src/content/legal/`; only EN/PL
+are bundled by `scripts/generate-legal.mjs`. Other archived content on disk is
+not routed or advertised in the sitemap. Old marketing page implementations
+were removed.
 
-- `CLOUDFLARE_API_TOKEN` — token z szablonu „Edit Cloudflare Workers",
-- `CLOUDFLARE_ACCOUNT_ID` — identyfikator konta Cloudflare.
+`src/i18n/legacy-routes.ts` defines the explicit migration policy:
 
-Bez tych sekretów workflow zakończy się błędem na kroku wdrożenia — sam push
-do GitHuba nie aktualizuje produkcji.
+- ES/DE homepages, recognized affiliate URLs and translated legal documents
+  redirect permanently to their English equivalents. Local queries survive.
+- Former About URLs redirect to the new international-brokerage section.
+- Former platform/partnership URLs redirect to the confirmed Estalara entry.
+- Known retired developer/guide/comparison content without an equivalent returns
+  HTTP 410, with a homepage link and `noindex`.
+- Unknown URLs return 404; they are not redirected indiscriminately.
 
-## Struktura katalogów
+## Production infrastructure
 
-```
-brand/                     oryginalny brand pack (złoto na granacie) — materiały
-                           brandowe/print, NIE używać na stronie
-public/
-  logo/                    turkusowe warianty logo (assets/web z handoffu)
-  pattern/                 wzory tła (navy/cream), kafelkowane 180px
-scripts/
-  generate-geo.mjs         generator SVG map i flag (build-time, d3-geo + topojson)
-vendor/
-  world-atlas/             zvendorowany countries-50m.json (world-atlas@2.0.2,
-                           Natural Earth, domena publiczna)
-src/
-  app/[locale]/            strony: / (landing), /developers, 4 strony prawne
-  components/              LanguageSwitch, LegalPage
-  generated/               maps.ts + flags.ts — SVG wygenerowane skryptem (commitowane)
-  i18n/                    routing (ścieżki zlokalizowane), nawigacja, request config
-  messages/                pl.json, en.json — wszystkie teksty obu wersji językowych
-  middleware.ts            negocjacja języka (cookie → Accept-Language → polski)
-```
+Cloudflare Workers with OpenNext: `open-next.config.ts` and `wrangler.jsonc`.
+The canonical host is `https://www.vesteri.com`; the apex redirect is managed at
+the Cloudflare edge. Existing security headers, analytics, HubSpot integration,
+D1 bindings and affiliate secrets remain in place. Do not commit local secrets.
 
-## Internacjonalizacja
+**Do not run deployment commands during implementation review.**
+`.github/workflows/deploy.yml` deploys on pushes to
+`claude/vesteri-website-kxnbng` and can apply remote D1 migrations.
+Use an isolated feature branch and obtain explicit owner approval before any
+production push, merge, remote migration or deployment.
 
-Routing robi [`next-intl`](https://next-intl.dev): prawdziwe ścieżki `/pl/...` i `/en/...`
-ze zlokalizowanymi slugami (np. `/pl/dla-deweloperow` ↔ `/en/for-developers`),
-tagami `hreflang` i osobnymi metadanymi per język. Język domyślny ustalany jest
-z nagłówka `Accept-Language` (polski jako fallback), a wybór użytkownika jest
-zapamiętywany w cookie. Przełącznik języka prowadzi zawsze do tego samego widoku
-w drugim języku.
+`npm run build` regenerates committed geographic/legal/article artifacts;
+CI checks that generated files match their sources. Archived article/map
+sources and their generators remain available but have no public marketing
+routes in the new site.
 
-### Jak dodać nowy język
+## Publication decisions still required
 
-1. Dodaj kod języka do `locales` w `src/i18n/routing.ts` i uzupełnij zlokalizowane
-   slugi w `pathnames`.
-2. Utwórz plik wiadomości `src/messages/<kod>.json` (skopiuj strukturę z `pl.json`
-   i przetłumacz wartości).
-3. Gotowe — strony, metadane i tagi `hreflang` generują się automatycznie dla
-   wszystkich wpisów z `routing.locales`.
-
-## Mapy i flagi (generowane w czasie builda)
-
-Kontury państw pochodzą z prawdziwych danych geograficznych — **nigdy nie są
-rysowane ręcznie**. Źródłem jest zvendorowany plik
-`vendor/world-atlas/countries-50m.json` (rozdzielczość 50m jest konieczna —
-przy 110m Cypr traci kształt).
-
-Skrypt `scripts/generate-geo.mjs`:
-
-- generuje kontury trzech rynków „coming soon" na landingu (Hiszpania,
-  Włochy, Portugalia — 200×74), z wymaganym filtrem terytoriów zamorskich
-  (Azory, Madera i Wyspy Kanaryjskie zniekształcałyby skalę map). Aktywny
-  rynek, Cypr, pokazywany jest jako dostarczony render reliefowy
-  (`public/img/cyprus-relief.jpg`), nie jako generowana sylwetka,
-- generuje flagi w kształcie konturów sześciu krajów pochodzenia inwestorów
-  (pasy flagi narodowej przycięte sylwetką kraju + połysk + cień),
-- zapisuje wynik do `src/generated/maps.ts` i `src/generated/flags.ts`
-  (pliki są commitowane).
-
-Uruchamiany automatycznie przed każdym buildem (`prebuild`) albo ręcznie:
-
-```bash
-npm run generate:geo
-```
-
-Dzięki temu przeglądarka nie pobiera geodanych ani d3 w czasie działania strony.
-
-## Typografia
-
-Montserrat ładowany jest w `src/app/[locale]/layout.tsx` dla całej strony.
-Landing wejściowy dokłada **Cormorant Garamond** (nagłówek H1, numery filarów,
-zdanie zamykające) — font ładowany jest lokalnie w `src/app/[locale]/page.tsx`
-i przypięty do korzenia landingu, więc strona dla deweloperów pozostaje przy
-samym Montserracie.
-
-Style specyficzne dla landingu (animowane tło cyklu słonecznego, kołysanie
-reliefu, krój serif) żyją w `src/app/[locale]/landing.css` — wszystkie klasy
-mają prefiks `lp-`, a arkusz ładuje się wyłącznie na ścieżce `/`.
-
-## Analityka
-
-Strona korzysta z **Cloudflare Web Analytics** — analityki bez cookies, która
-nie zapisuje niczego na urządzeniu odwiedzającego, więc nie wymaga banera zgody.
-
-Beacon ładuje się tylko wtedy, gdy ustawiona jest zmienna
-`NEXT_PUBLIC_CF_BEACON_TOKEN` (panel Cloudflare → Analytics & Logs →
-Web Analytics → Add a site → token z fragmentu `data-cf-beacon`). Bez niej
-skrypt nie jest renderowany, więc buildy lokalne i podglądowe nie zaśmiecają
-statystyk produkcyjnych.
-
-W CI token dodaje się jako zmienna repozytorium (Settings → Secrets and
-variables → Actions → **Variables**, nie Secrets — token i tak jest widoczny
-w źródle strony) o nazwie `NEXT_PUBLIC_CF_BEACON_TOKEN`. `deploy.yml` przekazuje
-ją do kroku `npm run deploy`; sama zmienna w panelu GitHuba nie wystarczy, bo
-Actions nie udostępnia zmiennych krokom automatycznie.
-
-Wartość `NEXT_PUBLIC_*` jest wklejana do bundle'a **w czasie builda**, nie
-czytana w runtime. Dlatego po dodaniu zmiennej trzeba uruchomić deploy od nowa
-(Actions → Deploy to Cloudflare Workers → Run workflow); ustawienie jej na
-gotowym workerze nic nie zmieni.
-
-Alternatywnie Cloudflare potrafi wstrzykiwać beacon automatycznie dla domen za
-swoim proxy — wtedy zmienna jest zbędna, ale wstrzyknięcie obejmuje całą domenę,
-także przyszłą platformę.
-
-## Dokumenty prawne
-
-Źródłem prawdy są pliki Markdown w `src/content/legal/<język>/<dokument>.md` —
-sześć dokumentów w dwóch językach (`privacy`, `terms`, `cookies`, `gdpr`, `ai`,
-`disclaimers`). W tym formacie są redagowane i opiniowane prawnie.
-
-Skrypt `scripts/generate-legal.mjs` wkleja je do `src/generated/legal.ts`, dzięki
-czemu strony importują gotowe łańcuchy znaków zamiast czytać dysk — środowisko
-Cloudflare Workers nie ma systemu plików. Skrypt przerywa build, jeśli któremuś
-dokumentowi brakuje tłumaczenia.
-
-Aby zmienić treść: popraw plik `.md` i uruchom build (albo `npm run generate:legal`).
-Renderowaniem zajmuje się `src/components/LegalPage.tsx` — mapa elementów wiąże
-Markdown ze skalą typograficzną strony, bez wtyczki `prose`.
-
-## Tokeny designu
-
-Kolory, skala typografii, promienie i cienie z handoffu są zdefiniowane jako
-motyw Tailwinda w `src/app/globals.css` (blok `@theme`). Komponenty odwołują się
-wyłącznie do tokenów — bez surowych hexów.
-
-## Dostępność
-
-- widoczny stan `:focus-visible` (obrys 2px w kolorze akcentu) na każdym
-  elemencie interaktywnym,
-- obracający się znak w hero zatrzymuje się przy
-  `prefers-reduced-motion: reduce`,
-- `<html lang>` zgodny z aktywnym językiem, płynne kotwice z `scroll-margin-top`
-  pod sticky nawigacją.
+- Real listing photographs, publication rights and corresponding listing URLs.
+- Final search and buyer-assistance behavior (currently approved as previews).
+- Formal definition of the approved FAQ's 10% Collective promotion commitment:
+  revenue base, period and reporting approach.
+- Legal review of retained legal disclosures and existing affiliate placeholders.
+- Explicit approval to merge and deploy after visual review.

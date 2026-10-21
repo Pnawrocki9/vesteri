@@ -1,21 +1,14 @@
-import { getLocale, getTranslations } from 'next-intl/server';
-import { articlesByLocale, type ArticleLocale } from '@/generated/articles';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from '@/lib/site';
 
 // Full site footer — company details, contact, legal links and attribution.
-// Shared by the For Developers and About pages; the copy still lives in the
-// `developers` namespace it was written for.
+// Retained by the Affiliate Program and legal templates; its copy remains
+// in the original `developers` namespace to preserve those templates.
 export default async function SiteFooter() {
   const t = await getTranslations('developers');
   const tLegal = await getTranslations('legal');
-  const tArticles = await getTranslations('articles');
-  const tCompare = await getTranslations('compare');
   const tAffiliate = await getTranslations('affiliate');
-  // Shown only where the section exists in this language: the listing 404s in
-  // a locale with nothing written for it.
-  const locale = (await getLocale()) as ArticleLocale;
-  const hasArticles = Object.keys(articlesByLocale[locale] ?? {}).length > 0;
 
   return (
     <footer className="bg-ink-deep px-6 pt-[72px] pb-9 md:px-14">
@@ -62,20 +55,6 @@ export default async function SiteFooter() {
           </div>
         </div>
         <div className="flex flex-col gap-3.5 md:text-right">
-          <Link
-            href="/compare"
-            className="self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
-          >
-            {tCompare('heading')}
-          </Link>
-          {hasArticles && (
-            <Link
-              href="/articles"
-              className="self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"
-            >
-              {tArticles('heading')}
-            </Link>
-          )}
           <Link
             href="/affiliate"
             className="mb-2 self-start text-[13.5px] text-muted-dark hover:text-accent-light md:self-end"

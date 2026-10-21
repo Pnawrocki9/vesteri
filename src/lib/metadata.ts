@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { routing, type StaticPathname, type AppLocale } from '@/i18n/routing';
-import type { ArticleLocale } from '@/generated/articles';
 import { SITE_URL } from '@/lib/site';
 
 // The language-neutral URL for a page: its default-locale path without the
@@ -46,34 +45,7 @@ export function localeAlternates(
   };
 }
 
-// hreflang for an article, which — unlike every other page — may not exist in
-// both languages. Pieces written for the Polish market ship in both; pieces for
-// other markets ship in English only.
-//
-// Two things follow. Only the locales an article actually has are advertised,
-// because claiming a version that answers 404 is an hreflang reciprocity error.
-// And x-default cannot use the site's usual neutral URL: that trick relies on
-// middleware negotiating an unprefixed path, which cannot work when the slug
-// itself is translated — /poradnik/podatki-na-cyprze has no meaning to an
-// English visitor. So x-default points at the default locale's version when
-// there is one, and at the article itself when there is not.
-export function articleAlternates({
-  locale,
-  available,
-}: {
-  locale: ArticleLocale;
-  /** Locale → the article's absolute URL in that locale. */
-  available: Partial<Record<ArticleLocale, string>>;
-}): Metadata['alternates'] {
-  const languages = Object.fromEntries(Object.entries(available)) as Record<string, string>;
-  const fallback = available[routing.defaultLocale] ?? available[locale]!;
-  return {
-    canonical: available[locale]!,
-    languages: { ...languages, 'x-default': fallback },
-  };
-}
-
-export const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB', es: 'es_ES', de: 'de_DE' } as const;
+export const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB' } as const;
 
 // One share image for the whole site, composed from the brand assets in
 // public/logo and public/pattern. Relative on purpose: metadataBase in the

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
@@ -10,9 +10,11 @@ import { organizationJsonLd, webSiteJsonLd } from '@/lib/jsonld';
 import { CF_BEACON_TOKEN, HUBSPOT_PORTAL_ID, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
-const montserrat = Montserrat({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700'],
+const montserrat = localFont({
+  src: [
+    { path: '../../fonts/montserrat-latin-ext.woff2', weight: '400 700' },
+    { path: '../../fonts/montserrat-latin.woff2', weight: '400 700' },
+  ],
   variable: '--font-montserrat',
   display: 'swap',
 });
@@ -39,7 +41,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'VESTERI',
-    images: [{ url: '/og/vesteri-og.png', width: 1200, height: 630, alt: 'VESTERI' }],
+    images: [
+      { url: '/og/vesteri-og.png', width: 1200, height: 630, alt: 'VESTERI' },
+    ],
   },
   twitter: {
     card: 'summary_large_image',

@@ -44,3 +44,6 @@ next-env.d.ts
 
 # affiliate module local secrets
 .dev.vars
+
+# Local implementation analysis, QA fixtures and screenshots
+/work/

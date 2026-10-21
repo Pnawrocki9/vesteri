@@ -1,9 +1,4 @@
-// Site-wide constants. Confirmed with the client (2026-08):
-// - investor platform lives at app.vesteri.com (override via env if it moves)
-// - "Book a call" opens an e-mail to the contact address for now
-export const INVESTOR_PLATFORM_URL =
-  process.env.NEXT_PUBLIC_INVESTOR_PLATFORM_URL ?? 'https://app.vesteri.com';
-
+// Site-wide constants shared by the homepage, legal pages and Affiliate Program.
 export const CONTACT_EMAIL = 'contact@vesteri.com';
 // Partner enquiries land in their own inbox, separate from general contact.
 export const PARTNERS_EMAIL = 'partners@vesteri.com';
@@ -12,14 +7,6 @@ export const PARTNERS_EMAIL = 'partners@vesteri.com';
 export const AGENT_PANEL_URL = 'https://vesteri.estalara.com';
 export const CONTACT_PHONE_DISPLAY = '+48 667 953 016';
 export const CONTACT_PHONE_TEL = '+48667953016';
-
-// The subject stays English in both locales: it lands in the Vesteri inbox,
-// not in front of the visitor, so a single value keeps triage simple.
-export const BOOK_CALL_SUBJECT = 'Developer partnership';
-
-export const BOOK_CALL_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-  BOOK_CALL_SUBJECT,
-)}`;
 
 // Canonical host. Both vesteri.com and www.vesteri.com are bound as Cloudflare
 // custom domains (see wrangler.jsonc), so exactly one of them has to win in
@@ -42,3 +29,7 @@ export const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN ?? '';
 // an empty value skips the script entirely.
 export const HUBSPOT_PORTAL_ID =
   process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID ?? '147800534';
+
+// Public marketplace and agent entry point. Deeper paths must be verified
+// before use; no filter or registration URL contract is assumed.
+export const MARKETPLACE_URL = 'https://vesteri.estalara.com';
