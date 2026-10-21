@@ -326,11 +326,14 @@ export default async function PartnersPage({ params }: Props) {
             </article>
           </div>
 
-          <div className="mx-auto max-w-[760px]">
-            <p className="mt-10 border-l-2 border-accent pl-6 text-[19px] leading-[1.7] font-medium text-ink">
+          <div className="mx-auto mt-12 max-w-[760px] text-center">
+            <span className="bg-accent-gradient mx-auto block h-[3px] w-10 rounded-full" aria-hidden="true" />
+            <p className="mt-6 text-[24px] leading-[1.4] font-bold text-balance text-ink md:text-[28px]">
               {t('pricing.closing')}
             </p>
-            <p className="mt-5 text-[15px] leading-[1.8] text-muted">{t('pricing.reinvest')}</p>
+            <p className="mx-auto mt-5 max-w-[620px] text-[16.5px] leading-[1.8] text-muted">
+              {t('pricing.reinvest')}
+            </p>
           </div>
         </section>
 
