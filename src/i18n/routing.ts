@@ -8,6 +8,10 @@ export const routing = defineRouting({
     '/': '/',
     '/sellers': { en: '/sellers', pl: '/sprzedajacy' },
     '/agents': { en: '/agents', pl: '/dla-agentow' },
+    '/collective-rules': {
+      pl: '/regulamin-vesteri-collective',
+      en: '/vesteri-collective-rules',
+    },
     '/privacy': { pl: '/polityka-prywatnosci', en: '/privacy-policy' },
     '/terms': { pl: '/regulamin', en: '/terms-of-service' },
     '/cookies': '/cookies',

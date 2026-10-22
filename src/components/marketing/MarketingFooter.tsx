@@ -16,9 +16,6 @@ const LEGAL_PAGES = [
   'ai',
   'disclaimers',
 ] as const;
-// Activate only after the approved Collective rules document is supplied.
-const collectiveTermsUrl: string | null = null;
-
 export default async function MarketingFooter({
   locale,
   audience,
@@ -73,13 +70,7 @@ export default async function MarketingFooter({
           <span>{t('copyright')}</span>
           <div className="footer-rules">
             <h4>{t('collectiveRules')}</h4>
-            {collectiveTermsUrl ? (
-              <a href={collectiveTermsUrl}>{t('terms')}</a>
-            ) : (
-              <span className="footer-terms-pending">
-                {t('terms')} <small>({t('soon')})</small>
-              </span>
-            )}
+            <Link href="/collective-rules">{t('terms')}</Link>
           </div>
         </div>
       </div>

@@ -141,8 +141,11 @@
       "cookies": "Jakie pliki cookies działają w serwisie i na platformie webinarowej Vesteri, kto je stosuje, kim są odbiorcy danych i jak zarządzać zgodą.",
       "gdpr": "Twoje prawa wynikające z RODO w Vesteri — dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie i sprzeciw — oraz jak złożyć wniosek.",
       "ai": "Gdzie w Vesteri działa sztuczna inteligencja: asystent AI, scoring gotowości zakupowej, tłumaczenia i nadzór człowieka. Ujawnienia wg art. 50 AI Act.",
-      "disclaimers": "Zastrzeżenia dotyczące serwisu i usług Vesteri: charakter usług, weryfikacja deweloperów, ryzyko inwestycji zagranicznych i granice odpowiedzialności."
-    }
+      "disclaimers": "Zastrzeżenia dotyczące serwisu i usług Vesteri: charakter usług, weryfikacja deweloperów, ryzyko inwestycji zagranicznych i granice odpowiedzialności.",
+      "collective-rules": "Zasady członkostwa i współpracy agentów w sieci Vesteri Collective"
+    },
+    "collective-rules": "Regulamin Vesteri Collective",
+    "downloadOriginal": "Pobierz oryginalny dokument (DOCX)"
   },
   "nav": {
     "openMenu": "Otwórz menu",
@@ -688,7 +691,6 @@
       "contact": "Kontakt",
       "collectiveRules": "Zasady Vesteri Collective",
       "terms": "Regulamin Vesteri Collective",
-      "soon": "wkrótce",
       "legalNav": "Dokumenty prawne",
       "copyright": "© 2026 Vesteri Collective"
     }

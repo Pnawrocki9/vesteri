@@ -12,7 +12,15 @@ import { breadcrumbJsonLd } from '@/lib/jsonld';
 // Every legal document renders through here; MarkdownBody supplies the
 // typography, shared with the Poradnik articles.
 
-const LEGAL_PAGES: LegalSlug[] = ['privacy', 'terms', 'cookies', 'gdpr', 'ai', 'disclaimers'];
+const LEGAL_PAGES: LegalSlug[] = [
+  'privacy',
+  'terms',
+  'cookies',
+  'gdpr',
+  'ai',
+  'disclaimers',
+  'collective-rules',
+];
 
 export default async function LegalPage({
   page,
@@ -25,12 +33,19 @@ export default async function LegalPage({
   const tNav = await getTranslations('nav');
   const document = legalDocuments[locale][page];
 
-  const href = (slug: LegalSlug) => getPathname({ locale, href: `/${slug}` as '/privacy' });
+  const href = (slug: LegalSlug) =>
+    getPathname({ locale, href: `/${slug}` as '/privacy' });
 
   return (
     <div className="bg-paper-alt text-ink">
       <JsonLd
-        nodes={[breadcrumbJsonLd({ href: `/${page}` as '/privacy', locale, name: t(page) })]}
+        nodes={[
+          breadcrumbJsonLd({
+            href: `/${page}` as '/privacy',
+            locale,
+            name: t(page),
+          }),
+        ]}
       />
       <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
         <Link href="/" className="shrink-0">
@@ -46,7 +61,10 @@ export default async function LegalPage({
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
           <LanguageSwitch />
           <MobileNav
-            links={LEGAL_PAGES.map(slug => ({label: t(slug), href: href(slug)}))}
+            links={LEGAL_PAGES.map((slug) => ({
+              label: t(slug),
+              href: href(slug),
+            }))}
             openLabel={tNav('openMenu')}
             closeLabel={tNav('closeMenu')}
           />
@@ -78,6 +96,19 @@ export default async function LegalPage({
 
         <article className="min-w-0">
           <MarkdownBody>{document}</MarkdownBody>
+          {page === 'collective-rules' && (
+            <a
+              href={
+                locale === 'pl'
+                  ? '/docs/collective/v1.0/Regulamin_Vesteri_Collective_v1.0_PL.docx'
+                  : '/docs/collective/v1.0/Vesteri_Collective_Rules_v1.0_EN.docx'
+              }
+              download
+              className="mt-8 inline-block text-[14px] font-semibold text-accent underline underline-offset-4"
+            >
+              {t('downloadOriginal')}
+            </a>
+          )}
         </article>
       </main>
 

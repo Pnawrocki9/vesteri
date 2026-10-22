@@ -141,8 +141,11 @@
       "cookies": "Which cookies the Vesteri website and webinar platform use, who sets them, who receives the data, and how to manage your consent.",
       "gdpr": "Your GDPR rights at Vesteri — access, rectification, erasure, restriction, portability and objection — and how to submit a request.",
       "ai": "Where artificial intelligence operates within Vesteri: the AI assistant, readiness scoring, translations and human oversight. Art. 50 AI Act disclosures.",
-      "disclaimers": "Disclaimers for the Vesteri website and services: the nature of the services, developer vetting, the risks of investing abroad and liability limits."
-    }
+      "disclaimers": "Disclaimers for the Vesteri website and services: the nature of the services, developer vetting, the risks of investing abroad and liability limits.",
+      "collective-rules": "Terms of membership and cooperation for agents in the Vesteri Collective network"
+    },
+    "collective-rules": "Vesteri Collective Rules",
+    "downloadOriginal": "Download the original document (DOCX)"
   },
   "nav": {
     "openMenu": "Open menu",
@@ -688,7 +691,6 @@
       "contact": "Contact",
       "collectiveRules": "Vesteri Collective Rules",
       "terms": "Vesteri Collective Terms",
-      "soon": "coming soon",
       "legalNav": "Legal documents",
       "copyright": "© 2026 Vesteri Collective"
     }

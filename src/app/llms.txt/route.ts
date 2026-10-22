@@ -8,6 +8,7 @@ export const dynamic = 'force-static';
 export function GET() {
   const messages = { en, pl };
   const legal: StaticPathname[] = [
+    '/collective-rules',
     '/privacy',
     '/terms',
     '/cookies',

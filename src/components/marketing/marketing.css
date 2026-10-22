@@ -2192,13 +2192,6 @@
 .marketing .footer-rules a {
   color: #b4cac6;
 }
-.marketing .footer-terms-pending {
-  color: #839e9a;
-  font-size: 12px;
-}
-.marketing .footer-terms-pending small {
-  font-size: inherit;
-}
 
 @media (max-width: 680px) {
   .marketing .footer-company {
