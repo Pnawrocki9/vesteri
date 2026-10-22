@@ -1456,10 +1456,13 @@
     grid-template-columns: 1fr;
   }
 }
+/* Keep section spacing outside the shared content container. */
 .marketing .v10-intro {
-  padding: 58px 0 50px;
+  padding-block: 58px 50px;
+}
+.marketing .v10-intro-inner {
   display: grid;
-  grid-template-columns: 290px 1fr;
+  grid-template-columns: 290px minmax(0, 1fr);
   gap: 40px;
   align-items: start;
 }
@@ -1468,6 +1471,9 @@
   font-weight: 800;
   font-size: 12px;
   letter-spacing: 0.13em;
+}
+.marketing .v10-intro-inner > * {
+  min-width: 0;
 }
 .marketing .v10-intro p {
   font:
@@ -1561,7 +1567,7 @@
   padding-bottom: 108px;
 }
 @media (max-width: 980px) {
-  .marketing .v10-intro {
+  .marketing .v10-intro-inner {
     grid-template-columns: 1fr;
     gap: 14px;
   }
@@ -1572,7 +1578,7 @@
 }
 @media (max-width: 680px) {
   .marketing .v10-intro {
-    padding: 34px 0;
+    padding-block: 34px;
   }
   .marketing .v10-value-grid {
     grid-template-columns: 1fr;

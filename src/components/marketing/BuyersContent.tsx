@@ -53,9 +53,11 @@ export default async function BuyersContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
-        <div className="v10-intro wrap">
-          <div className="v10-intro-overline">{t('main01')}</div>
-          <p>{t('main02')}</p>
+        <div className="v10-intro">
+          <div className="wrap v10-intro-inner">
+            <div className="v10-intro-overline">{t('main01')}</div>
+            <p>{t('main02')}</p>
+          </div>
         </div>
         <section className="section featured" id="properties">
           <div className="wrap">
