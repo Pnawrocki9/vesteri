@@ -1,0 +1,37 @@
+{
+  "version": "V10.7 full EN/PL handoff",
+  "source_sellers_agents": "V10.7",
+  "source_buyers": "V10.2 buyer copy (unchanged in V10.3–V10.7), with V10.7 Sellers nav/footer",
+  "pages": [
+    {
+      "path": "preview/en/agents/index.html",
+      "title": "For Real Estate Agents | Vesteri Collective",
+      "bytes": 44399
+    },
+    {
+      "path": "preview/en/index.html",
+      "title": "Vesteri Collective | Property Near and Far",
+      "bytes": 38721
+    },
+    {
+      "path": "preview/en/sellers/index.html",
+      "title": "For Sellers | Sell Your Property with Vesteri Collective",
+      "bytes": 40746
+    },
+    {
+      "path": "preview/pl/dla-agentow/index.html",
+      "title": "Dla agentów | Vesteri Collective",
+      "bytes": 45674
+    },
+    {
+      "path": "preview/pl/index.html",
+      "title": "Vesteri Collective | Nieruchomości w Polsce i za granicą",
+      "bytes": 39706
+    },
+    {
+      "path": "preview/pl/sprzedajacy/index.html",
+      "title": "Sprzedający | Sprzedaj nieruchomość z Vesteri Collective",
+      "bytes": 41495
+    }
+  ]
+}
