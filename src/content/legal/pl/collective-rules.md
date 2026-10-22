@@ -2,7 +2,7 @@
 
 Zasady członkostwa i współpracy agentów w sieci Vesteri Collective
 
-Wersja 1.0 · Obowiązuje od: \[data wejścia w życie\] · Operator: Time2Show, Inc.
+Wersja 1.0 · Obowiązuje od: 22 października 2026 r. · Operator: Time2Show, Inc.
 
 ## **§ 1. Postanowienia ogólne**
 

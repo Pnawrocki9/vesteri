@@ -2,7 +2,7 @@
 
 Terms of membership and cooperation for agents in the Vesteri Collective network
 
-Version 1.0 · Effective from: \[effective date\] · Operator: Time2Show, Inc.
+Version 1.0 · Effective from: 22 October 2026 · Operator: Time2Show, Inc.
 
 ## **§ 1. General provisions**
 

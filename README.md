@@ -69,8 +69,8 @@ photographs are temporary; final assets and publication rights need owner review
 The owner-approved footer displays company/contact details and Collective rules.
 Reference-only review annotations have been removed. The Collective rules footer item opens `/pl/regulamin-vesteri-collective` or
 `/en/vesteri-collective-rules`. Both pages reproduce the owner-supplied v1.0
-documents, including their bracketed fields, and offer the unchanged original
-DOCX files under `public/docs/collective/v1.0/`. Markdown content lives in
+documents with the owner-approved effective date of 22 October 2026, and offer the
+corresponding DOCX files. Other bracketed fields are retained. Downloads are stored under `public/docs/collective/v1.0/`. Markdown content lives in
 `src/content/legal/{pl,en}/collective-rules.md` and uses the existing legal generator.
 
 ## Retained Affiliate Program and infrastructure
@@ -125,6 +125,7 @@ sources remain available to these generators without restoring their old routes.
 - Commercial/legal review of commission sharing, the 5–8% foreign-developer
   commission range, the introducing-agent share and the 10% revenue promotion
   commitment, all retained verbatim from the approved reference.
-- The supplied v1.0 Collective rules retain bracketed fields, including the
-  effective date; only owner-provided revisions should replace these values.
+- The v1.0 Collective rules take effect on 22 October 2026, as requested by the
+  owner. Other bracketed fields remain as supplied; only owner-provided revisions
+  should replace these values.
 - Separate explicit approval for production publication.
