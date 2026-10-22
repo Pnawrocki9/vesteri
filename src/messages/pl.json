@@ -312,7 +312,6 @@
       "top08": "Nieruchomości lokalne i zagraniczne",
       "top09": "Sprawdzeni specjaliści",
       "top10": "Uczciwość i zaufanie",
-      "main01": "JEDNA SIEĆ. WIĘKSZE MOŻLIWOŚCI.",
       "main02": "Vesteri łączy kupujących z niezależnymi agentami i ofertami nieruchomości na różnych rynkach. Możesz szukać samodzielnie lub skorzystać ze wsparcia profesjonalisty.",
       "properties01": "Jeden marketplace. Wiele możliwości.",
       "properties02": "Znajdź nieruchomość dla siebie.",
@@ -415,21 +414,11 @@
       "main15": "Działaj niezależnie. Rozwijaj się dzięki współpracy.",
       "main16": "Zachowaj własną markę i klientów. Dowiedz się, jak działa współpraca agentów i jakie narzędzia oferuje system Vesteri.",
       "main17": "Poznaj Collective ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace.",
-      "footer04": "Odkrywaj",
-      "footer05": "Dla kupujących",
-      "footer06": "Sprzedający",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "Dla agentów",
-      "footer10": "Platforma dla agentów ↗",
-      "footer11": "Informacje",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Kontakt",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "Projekt V10.7 · do wdrożenia po akceptacji · zweryfikuj link Affiliate Program"
+      "introTitle": {
+        "first": "Jedna sieć.",
+        "second": "Większe możliwości."
+      },
+      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace."
     },
     "sellers": {
       "meta": {
@@ -524,21 +513,7 @@
       "main03": "Opowiedz nam, co chcesz sprzedać. Porozmawiamy o wyborze agenta i o tym, jak Collective może wesprzeć sprzedaż.",
       "main04": "Skontaktuj się z Vesteri ↗",
       "main05": "Przeglądaj nieruchomości ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective łączy sprzedających, kupujących i niezależnych agentów w jednej sieci współpracy.",
-      "footer04": "Odkrywaj",
-      "footer05": "Dla kupujących",
-      "footer06": "Sprzedający",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "Dla agentów",
-      "footer10": "Platforma dla agentów ↗",
-      "footer11": "Informacje",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Kontakt",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "Projekt V10.6 · do akceptacji · formularz zgłoszeniowy nie jest podłączony"
+      "footerDescription": "Vesteri Collective łączy sprzedających, kupujących i niezależnych agentów w jednej sieci współpracy."
     },
     "agents": {
       "meta": {
@@ -698,21 +673,24 @@
       "main18": "Twoja marka. Twoje zasady. Nasza wspólna siła.",
       "main19": "Członkostwo jest selektywne. Publikowanie ofert wymaga zatwierdzenia agenta i akceptacji zasad sieci.",
       "main20": "Przejdź do platformy ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace.",
-      "footer04": "Odkrywaj",
-      "footer05": "Dla kupujących",
-      "footer06": "Sprzedający",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "Dla agentów",
-      "footer10": "Platforma dla agentów ↗",
-      "footer11": "Informacje",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Kontakt",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "Projekt V10 · do akceptacji · link Affiliate Program wymaga potwierdzenia ścieżki"
+      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace."
+    },
+    "footer": {
+      "discover": "Odkrywaj",
+      "buyers": "Dla kupujących",
+      "sellers": "Sprzedający",
+      "marketplace": "Marketplace ↗",
+      "collective": "Collective",
+      "agents": "Dla agentów",
+      "platform": "Platforma dla agentów ↗",
+      "headOffice": "Siedziba",
+      "address": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contact": "Kontakt",
+      "collectiveRules": "Zasady Vesteri Collective",
+      "terms": "Regulamin Vesteri Collective",
+      "soon": "wkrótce",
+      "legalNav": "Dokumenty prawne",
+      "copyright": "© 2026 Vesteri Collective"
     }
   }
 }

@@ -53,7 +53,21 @@ describe('V10.7 authoritative bilingual content and routes', () => {
         const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/)![1];
         for (const match of main.matchAll(/>([^<>]+)</g)) {
           const text = normalize(match[1]);
-          if (text && !text.startsWith('<!--')) expect(values).toContain(text);
+          // The owner replaced the original uppercase eyebrow with a two-line title.
+          if (
+            role.id === 'buyers' &&
+            text ===
+              (locale === 'pl'
+                ? 'JEDNA SIEĆ. WIĘKSZE MOŻLIWOŚCI.'
+                : 'ONE NETWORK. MORE POSSIBILITIES.')
+          ) {
+            expect(messages.marketing.buyers.introTitle).toEqual(
+              locale === 'pl'
+                ? { first: 'Jedna sieć.', second: 'Większe możliwości.' }
+                : { first: 'One network.', second: 'More possibilities.' },
+            );
+          } else if (text && !text.startsWith('<!--'))
+            expect(values).toContain(text);
         }
         expect(content.meta.title).toBe(
           html.match(/<title>([\s\S]*?)<\/title>/)![1],

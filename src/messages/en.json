@@ -312,7 +312,6 @@
       "top08": "Local & international properties",
       "top09": "Verified professionals",
       "top10": "Fair play & trust",
-      "main01": "ONE NETWORK. MORE POSSIBILITIES.",
       "main02": "Vesteri connects property buyers with independent professionals and listings across markets. Explore freely or work with an agent who understands your needs.",
       "properties01": "One marketplace. Many possibilities.",
       "properties02": "Find a property that fits your plans.",
@@ -415,21 +414,11 @@
       "main15": "Stay independent. Grow together.",
       "main16": "Keep your brand and client relationships. See how agent collaboration works and what the Vesteri system offers.",
       "main17": "Explore Collective ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective brings buyers, independent professionals and properties across markets together in one marketplace.",
-      "footer04": "Discover",
-      "footer05": "For buyers",
-      "footer06": "For sellers",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "For agents",
-      "footer10": "Agent platform ↗",
-      "footer11": "Information",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Kontakt",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "V10.7 reference · verify Affiliate Program route"
+      "introTitle": {
+        "first": "One network.",
+        "second": "More possibilities."
+      },
+      "footerDescription": "Vesteri Collective brings buyers, independent professionals and properties across markets together in one marketplace."
     },
     "sellers": {
       "meta": {
@@ -524,21 +513,7 @@
       "main03": "Tell us what you want to sell. We can discuss agent selection and how Collective could support the sale.",
       "main04": "Contact Vesteri ↗",
       "main05": "Explore properties ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective brings sellers, buyers and independent agents together through one collaborative network.",
-      "footer04": "Discover",
-      "footer05": "For buyers",
-      "footer06": "For sellers",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "For agents",
-      "footer10": "Agent platform ↗",
-      "footer11": "Information",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Contact",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "V10.6 review concept · seller enquiry form is not connected"
+      "footerDescription": "Vesteri Collective brings sellers, buyers and independent agents together through one collaborative network."
     },
     "agents": {
       "meta": {
@@ -698,21 +673,24 @@
       "main18": "Your brand. Your terms. Our collective strength.",
       "main19": "Membership is selective. Publishing requires agent approval and acceptance of Collective standards.",
       "main20": "Go to the platform ↗",
-      "footer01": "Vesteri",
-      "footer02": "VESTERI",
-      "footer03": "Vesteri Collective brings buyers, independent professionals and properties across markets together in one marketplace.",
-      "footer04": "Discover",
-      "footer05": "For buyers",
-      "footer06": "For sellers",
-      "footer07": "Marketplace ↗",
-      "footer08": "Collective",
-      "footer09": "For agents",
-      "footer10": "Agent platform ↗",
-      "footer11": "Information",
-      "footer12": "Affiliate Program ↗",
-      "footer13": "Kontakt",
-      "footer14": "© 2026 Vesteri Collective",
-      "footer15": "V10 preview · awaiting approval · verify Affiliate Program route"
+      "footerDescription": "Vesteri Collective brings buyers, independent professionals and properties across markets together in one marketplace."
+    },
+    "footer": {
+      "discover": "Discover",
+      "buyers": "For buyers",
+      "sellers": "For sellers",
+      "marketplace": "Marketplace ↗",
+      "collective": "Collective",
+      "agents": "For agents",
+      "platform": "Agent platform ↗",
+      "headOffice": "Head office",
+      "address": "Time2Show, Inc.\n1111B S Governors Ave STE 20579\nDover, Delaware 19904, US",
+      "contact": "Contact",
+      "collectiveRules": "Vesteri Collective Rules",
+      "terms": "Vesteri Collective Terms",
+      "soon": "coming soon",
+      "legalNav": "Legal documents",
+      "copyright": "© 2026 Vesteri Collective"
     }
   }
 }

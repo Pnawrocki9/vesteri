@@ -1466,11 +1466,16 @@
   gap: 40px;
   align-items: start;
 }
-.marketing .v10-intro-overline {
+.marketing .v10-intro-title {
+  margin: 0;
   color: var(--teal);
-  font-weight: 800;
-  font-size: 12px;
-  letter-spacing: 0.13em;
+  font-size: clamp(24px, 2.1vw, 30px);
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+.marketing .v10-intro-title span {
+  display: block;
 }
 .marketing .v10-intro-inner > * {
   min-width: 0;
@@ -2159,4 +2164,47 @@
 }
 .marketing [hidden] {
   display: none !important;
+}
+
+/* Company details and Collective rules are shared across all public pages. */
+.marketing .footer-company address {
+  color: #b4cac6;
+  font-size: 12px;
+  line-height: 1.8;
+  font-style: normal;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+.marketing .footer-main .footer-contact-heading {
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+.marketing .footer-bottom {
+  align-items: flex-start;
+  gap: 24px;
+}
+.marketing .footer-rules h4 {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+.marketing .footer-rules a {
+  color: #b4cac6;
+}
+.marketing .footer-terms-pending {
+  color: #839e9a;
+  font-size: 12px;
+}
+.marketing .footer-terms-pending small {
+  font-size: inherit;
+}
+
+@media (max-width: 680px) {
+  .marketing .footer-company {
+    grid-column: 1 / -1;
+  }
+  .marketing .footer-rules {
+    margin-top: 20px;
+  }
 }

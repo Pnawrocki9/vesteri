@@ -1,21 +1,11 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
-/* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
 import MarketingHeader from './MarketingHeader';
+import MarketingFooter from './MarketingFooter';
 
-const LEGAL_PAGES = [
-  'privacy',
-  'terms',
-  'cookies',
-  'gdpr',
-  'ai',
-  'disclaimers',
-] as const;
 export default async function SellersContent({ locale }: { locale: string }) {
   const t = await getTranslations('marketing.sellers');
-  const legal = await getTranslations('legal');
   return (
     <>
       <a className="skip" href="#main">
@@ -216,54 +206,7 @@ export default async function SellersContent({ locale }: { locale: string }) {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="wrap">
-          <div className="footer-main">
-            <div>
-              <Link className="brand" href="/">
-                <img
-                  alt={t('footer01')}
-                  src="/logo/vesteri-mark-teal-gradient.svg"
-                  width="42"
-                  height="42"
-                />
-                <span className="wordmark">{t('footer02')}</span>
-              </Link>
-              <p>{t('footer03')}</p>
-            </div>
-            <div>
-              <h4>{t('footer04')}</h4>
-              <Link href="/">{t('footer05')}</Link>
-              <Link href="/sellers">{t('footer06')}</Link>
-              <a href={MARKETPLACE_URL}>{t('footer07')}</a>
-            </div>
-            <div>
-              <h4>{t('footer08')}</h4>
-              <Link href="/agents">{t('footer09')}</Link>
-              <a href={MARKETPLACE_URL}>{t('footer10')}</a>
-            </div>
-            <div>
-              <h4>{t('footer11')}</h4>
-              <Link href="/affiliate">{t('footer12')}</Link>
-              <a href="mailto:contact@vesteri.com">{t('footer13')}</a>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <span>{t('footer14')}</span>
-            <span>{t('footer15')}</span>
-          </div>
-        </div>
-        <nav
-          className="wrap footer-legal"
-          aria-label={locale === 'pl' ? 'Dokumenty prawne' : 'Legal documents'}
-        >
-          {LEGAL_PAGES.map((slug) => (
-            <Link key={slug} href={`/${slug}`}>
-              {legal(slug)}
-            </Link>
-          ))}
-        </nav>
-      </footer>
+      <MarketingFooter locale={locale} audience="sellers" />
     </>
   );
 }

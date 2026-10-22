@@ -31,9 +31,6 @@ export function GET() {
         ([audience, href]) =>
           `- [${m.marketing[audience].meta.title}](${url(href)}): ${m.marketing[audience].meta.description}`,
       ),
-      `- [${m.marketing.buyers.footer12}](${url('/affiliate')})`,
-      `- [${m.affiliate.landing.termsLink}](${url('/affiliate/terms')})`,
-      `- [${m.affiliate.landing.privacyLink}](${url('/affiliate/privacy')})`,
       ...legal.map(
         (href) =>
           `- [${m.legal[href.slice(1) as keyof typeof m.legal]}](${url(href)})`,

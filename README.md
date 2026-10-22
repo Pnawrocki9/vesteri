@@ -35,7 +35,8 @@ Reference-derived components and scoped styles live in `src/components/marketing
 Copy is in `src/messages/{en,pl}.json` under `marketing`, grouped by audience and
 reference section. Native `details` elements provide keyboard-accessible FAQ:
 8 buyer, 7 seller and 12 agent entries per language. Automated content checks
-compare the translated editorial text and FAQ to all six authoritative HTML files.
+compare the translated editorial text and FAQ to all six authoritative HTML files,
+with an explicit exception for the owner-approved two-line buyer intro title.
 
 DM Sans, Manrope and the official mark reproduce the reference. Fonts are
 self-hosted in `src/fonts/` with their SIL Open Font License files. Small Noto
@@ -65,14 +66,19 @@ Local assets in `public/img/collective/` reproduce the reference Unsplash photos
 
 The official mark is `public/logo/vesteri-mark-teal-gradient.svg`. Reference
 photographs are temporary; final assets and publication rights need owner review.
-Reference footer review annotations remain visible in this local review version.
+The owner-approved footer displays company/contact details and Collective rules.
+Reference-only review annotations have been removed. The Collective terms item
+is inactive until the approved document is supplied; its future URL is configured
+in `src/components/marketing/MarketingFooter.tsx`.
 
 ## Retained Affiliate Program and infrastructure
 
 Affiliate routes, registration, authentication, account/admin dashboards, referral
 codes, manual sale attribution, fixed commission snapshots, payouts, rate limits,
 audit history, settings and legal consents are preserved. Entry points remain
-`/en/affiliate` and `/pl/affiliate`, linked from every marketing footer. Affiliate
+`/en/affiliate` and `/pl/affiliate`. Public footer and llms.txt promotion links are
+currently hidden at the owner’s request; the program remains available at its
+existing direct URLs. Affiliate
 source, schema, migrations, security code and database binding are unchanged.
 
 Retained legal documents are linked from every footer. Only EN/PL legal content
@@ -117,5 +123,5 @@ sources remain available to these generators without restoring their old routes.
 - Commercial/legal review of commission sharing, the 5–8% foreign-developer
   commission range, the introducing-agent share and the 10% revenue promotion
   commitment, all retained verbatim from the approved reference.
-- Final treatment of the handoff's footer review annotations.
+- Supply the Collective terms document to activate the prepared footer item.
 - Separate explicit approval for production publication.
