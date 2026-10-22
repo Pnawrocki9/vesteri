@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Vesteri website and platform** · Version 1.1 · Effective date: 13 August 2026
+**Vesteri website and platform** · Version 1.2 · Effective from: 22 October 2026
 
 ## 1. Who is the controller of your data
 
@@ -8,10 +8,14 @@ The controller of your personal data is **Time2Show, Inc.**, a company registere
 
 Contact for personal data matters: **privacy@vesteri.com** or by post to the address above, marked "Personal Data / Vesteri".
 
+Contact person for data protection matters: Piotr Nawrocki, privacy@vesteri.com.
+
 
 ## 2. How Vesteri works — a transparent description of processing
 
-Vesteri helps investors from Poland (and, over time, other EU countries) invest knowingly in property on selected markets abroad (currently: Cyprus, Thailand). We process your data at the following stages:
+Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. The marketplace, user accounts, agents' LIVE presentations, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
+
+We process your data at the following stages:
 
 1. **Local marketing** — you see our advertisements for developer projects (targeted by geography and language).
 2. **Information and AI chat** — we provide complete project information in your language; you can ask questions to an AI assistant.

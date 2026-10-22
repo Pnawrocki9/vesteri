@@ -1,10 +1,10 @@
 # POLITYKA COOKIES
 
-**Serwis i platforma Vesteri** · Wersja 1.1 · Data: 5 sierpnia 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.2 · Obowiązuje od: 22 października 2026 r.
 
 ## 1. Czym są cookies i kto je stosuje
 
-Cookies i podobne technologie (localStorage, piksele, tagi) stosuje Time2Show, Inc. (marka Vesteri) oraz — za Twoją zgodą — nasi partnerzy. Podstawa: art. 173 Prawa telekomunikacyjnego / przepisy PKE oraz RODO.
+Cookies i podobne technologie (localStorage, piksele, tagi) stosuje Time2Show, Inc. (marka Vesteri) oraz — za Twoją zgodą — nasi partnerzy. Podstawa: art. 399 ustawy z 12 lipca 2024 r. — Prawo komunikacji elektronicznej oraz RODO.
 
 ## 2. Serwis vesteri.com
 
@@ -16,19 +16,7 @@ Ponieważ serwis nie stosuje cookies wymagających zgody, nie wyświetla banera 
 
 ## 3. Platforma webinarowa Vesteri
 
-Poniższe kategorie dotyczą **platformy webinarowej Vesteri**. Od chwili jej uruchomienia będą obsługiwane mechanizmem zgody.
-
-| Kategoria | Cel | Podstawa | Okres |
-|---|---|---|---|
-| **Niezbędne** | logowanie, sesja, bezpieczeństwo, zapamiętanie zgód | niezbędność (bez zgody) | sesja–24 mies. (zapis zgody) |
-| **Funkcjonalne** | język, preferencje wyświetlania, ustawienia personalizacji | zgoda | do 12 mies. |
-| **Analityczne** | statystyki użycia (IP skrócone) | zgoda | do 13 mies. |
-| **Profilowanie behawioralne** | sygnały zaangażowania na potrzeby profilu zainteresowania i scoringu | zgoda | do 24 mies. |
-| **Reklamowe** | kampanie i pomiar konwersji: Meta Pixel/Conversions API, Google tag, TikTok Pixel, LinkedIn Insight Tag | zgoda | do 13 mies. |
-
-Przy pierwszej wizycie na platformie wyświetlimy baner z równorzędnymi opcjami: **Akceptuj wszystkie / Odrzuć wszystkie / Zarządzaj preferencjami** — bez domyślnie zaznaczonych pól. Wybory zmienisz w każdej chwili linkiem **„Preferencje cookies"**. Gdybyśmy kiedykolwiek wprowadzili w samym serwisie cookies wymagające zgody, uruchomimy tam ten sam mechanizm i wcześniej zaktualizujemy tę Politykę.
-
-Niezależnie od powyższego cookies możesz usuwać i blokować w przeglądarce; zablokowanie niezbędnych może uniemożliwić korzystanie z usług.
+Platforma vesteri.estalara.com (marketplace, konta, prezentacje LIVE) ma własną **[Politykę cookies](https://vesteri.estalara.com/pl/legal/cookie)** oraz własny baner zgody. Jeżeli na stronie vesteri.com zostaną wprowadzone technologie wymagające zgody, wdrożymy ten sam mechanizm i zaktualizujemy niniejszą Politykę z wyprzedzeniem.
 
 ## 4. Odbiorcy
 

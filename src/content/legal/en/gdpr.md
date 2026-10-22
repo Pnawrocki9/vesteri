@@ -1,6 +1,8 @@
 # GDPR — YOUR RIGHTS
 
-**How to exercise your personal data rights at Vesteri** · Version 1.0
+**How to exercise your personal data rights at Vesteri**
+
+Controller: Time2Show, Inc. (Vesteri brand), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Version 1.1 · Effective from: 22 October 2026
 
 ## You have the following rights:
 
@@ -17,6 +19,8 @@
 ## How to submit a request
 
 Write to: **privacy@vesteri.com** (subject: "GDPR") or by post (address in the Privacy Policy). Describe which right you are exercising. We may ask for additional identity verification — proportionate, and only where necessary.
+
+Contact person for data protection matters: Piotr Nawrocki, privacy@vesteri.com.
 
 **Deadlines:** we respond without undue delay, at the latest within **one month**; for complex requests we may extend by a further 2 months, informing you of the extension. Exercising your rights is free of charge (for manifestly excessive requests we may charge a reasonable fee or refuse — with justification).
 

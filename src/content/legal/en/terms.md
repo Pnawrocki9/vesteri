@@ -1,6 +1,6 @@
 # TERMS OF SERVICE
 
-**Terms of electronic services for the Vesteri website and platform** · Version 1.0 · Effective from: 5 August 2026
+**Terms of electronic services for the Vesteri website and platform** · Version 1.1 · Effective from: 22 October 2026
 *(issued pursuant to Art. 8 of the Polish Act of 18 July 2002 on Providing Services by Electronic Means)*
 
 ## 1. Service provider
@@ -18,9 +18,13 @@ We provide the following electronic services to investors free of charge:
 
 Cooperation with developers takes place under separate B2B agreements and is not governed by these Terms.
 
+The Vesteri Marketplace, user accounts, LIVE presentations hosted by agents, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com and are governed by the **[Vesteri Platform Terms](https://vesteri.estalara.com/en/legal/terms)** and, for agents, also by the **[Vesteri Collective Rules](/en/vesteri-collective-rules)**. Those documents prevail in respect of those services.
+
 ## 3. Nature of Vesteri's services
 
 Vesteri provides **information, marketing, and technology services**. We do not provide investment, legal, or tax advice; we are not a party to any property purchase agreement; you make your investment decision yourself, after your own verification (see "Disclaimers"). The law firms whose contacts we share are independent from us and are liable to you under their own engagements.
+
+For selected international developments in the Vesteri portfolio we act on behalf of the developer (the selling side) to the extent stated in the listing card; we do not provide brokerage services to the buyer.
 
 ## 4. Technical requirements
 
@@ -47,7 +51,7 @@ We exercise due care but do not guarantee uninterrupted availability of the serv
 
 ## 9. Complaints
 
-Complaints: contact@vesteri.com or in writing to the address in section 1. Please include: a description of the issue, the date, and your contact details. We respond within **14 days**. Consumers may use out-of-court dispute resolution, including consumer ombudsmen, the Trade Inspection, and the ODR platform: https://ec.europa.eu/consumers/odr/.
+Complaints: contact@vesteri.com or in writing to the address in section 1. Please include: a description of the issue, the date, and your contact details. We respond within **14 days**. Consumers may use out-of-court dispute resolution, including consumer ombudsmen and the Trade Inspection.
 
 ## 10. Personal data and cookies
 
@@ -55,6 +59,6 @@ The processing of personal data is governed by the **Privacy Policy**; cookies �
 
 ## 11. Amendments and governing law
 
-We will announce amendments to these Terms 14 days in advance on the website and by email (registered users). Agreements with consumers habitually resident in Poland are governed by **Polish law**, and disputes are resolved by the courts competent under general rules; the choice of law does not deprive a consumer of the protection afforded by the law of their habitual residence.
+We will announce amendments to these Terms 14 days in advance on the website and by email (registered users). These Terms are governed by Polish law. Disputes with consumers are heard by the courts competent under general rules; the choice of law does not deprive a consumer of the protection of the mandatory provisions of the law of their country of habitual residence. Disputes with businesses are submitted to the common court competent for the Capital City of Warsaw.
 
 *In case of discrepancies, for consumers habitually resident in Poland the Polish version prevails.*

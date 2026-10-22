@@ -1,6 +1,6 @@
 # REGULAMIN
 
-**Regulamin świadczenia usług drogą elektroniczną serwisu i platformy Vesteri** · Wersja 1.0 · Obowiązuje od: 5 sierpnia 2026 r.
+**Regulamin świadczenia usług drogą elektroniczną serwisu i platformy Vesteri** · Wersja 1.1 · Obowiązuje od: 22 października 2026 r.
 *(wydany na podstawie art. 8 ustawy z 18.07.2002 o świadczeniu usług drogą elektroniczną)*
 
 ## 1. Usługodawca
@@ -18,9 +18,13 @@ Usługodawcą jest **Time2Show, Inc.** (Delaware, USA), 1111B S Governors Ave ST
 
 Współpraca z deweloperami odbywa się na podstawie odrębnych umów B2B i nie podlega niniejszemu Regulaminowi.
 
+Marketplace Vesteri, konta użytkowników, prezentacje LIVE prowadzone przez agentów, zapytania do agentów oraz Vesteri Collective działają na platformie vesteri.estalara.com i podlegają **[Regulaminowi Platformy Vesteri](https://vesteri.estalara.com/pl/legal/terms)**, a w przypadku agentów — także **[Regulaminowi Vesteri Collective](/pl/regulamin-vesteri-collective)**. W zakresie tych usług pierwszeństwo mają te dokumenty.
+
 ## 3. Charakter usług Vesteri
 
 Vesteri świadczy usługi **informacyjne, marketingowe i technologiczne**. Nie świadczymy doradztwa inwestycyjnego, prawnego ani podatkowego; nie jesteśmy stroną umowy nabycia nieruchomości; decyzję inwestycyjną podejmujesz samodzielnie, po własnej weryfikacji (zob. „Zastrzeżenia"). Biura prawne, których kontakty udostępniamy, są od nas niezależne i odpowiadają wobec Ciebie na podstawie własnych umów.
+
+W odniesieniu do wybranych inwestycji zagranicznych z portfolio Vesteri działamy na zlecenie dewelopera (strony sprzedającej) w zakresie wskazanym w karcie oferty; nie świadczymy usługi pośrednictwa na rzecz kupującego.
 
 ## 4. Wymagania techniczne
 
@@ -47,7 +51,7 @@ Dokładamy należytej staranności, ale nie gwarantujemy nieprzerwanej dostępno
 
 ## 9. Reklamacje
 
-Reklamacje: contact@vesteri.com lub pisemnie na adres z pkt 1. Wskaż: opis problemu, datę, dane kontaktowe. Odpowiadamy w terminie **14 dni**. Konsument może skorzystać z pozasądowych sposobów rozpatrywania sporów, m.in. z pomocy miejskiego/powiatowego rzecznika konsumentów, Inspekcji Handlowej oraz platformy ODR: https://ec.europa.eu/consumers/odr/.
+Reklamacje: contact@vesteri.com lub pisemnie na adres z pkt 1. Wskaż: opis problemu, datę, dane kontaktowe. Odpowiadamy w terminie **14 dni**. Konsument może skorzystać z pozasądowych sposobów rozpatrywania sporów, m.in. z pomocy miejskiego/powiatowego rzecznika konsumentów i Inspekcji Handlowej.
 
 ## 10. Dane osobowe i cookies
 
@@ -55,4 +59,4 @@ Zasady przetwarzania danych określa **Polityka prywatności**; zasady cookies �
 
 ## 11. Zmiany Regulaminu i prawo właściwe
 
-O zmianach Regulaminu poinformujemy z 14-dniowym wyprzedzeniem w serwisie oraz e-mailem (zarejestrowani użytkownicy). Do umów z konsumentami mającymi miejsce zwykłego pobytu w Polsce stosuje się **prawo polskie**, a spory rozstrzygają sądy właściwe według przepisów ogólnych; wybór prawa nie pozbawia konsumenta ochrony przyznanej przepisami państwa jego zwykłego pobytu.
+O zmianach Regulaminu poinformujemy z 14-dniowym wyprzedzeniem w serwisie oraz e-mailem (zarejestrowani użytkownicy). Regulamin podlega prawu polskiemu. Spory z konsumentami rozstrzygają sądy właściwe według przepisów ogólnych; wybór prawa nie pozbawia konsumenta ochrony przyznanej przepisami państwa jego zwykłego pobytu. Spory z przedsiębiorcami rozstrzyga sąd powszechny właściwy dla m.st. Warszawy.

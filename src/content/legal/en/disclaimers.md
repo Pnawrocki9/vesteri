@@ -1,14 +1,20 @@
 # DISCLAIMERS
 
-**Disclaimers concerning the Vesteri website and services** · Version 1.0
+**Disclaimers concerning the Vesteri website and services** · Version 1.1 · Effective from: 22 October 2026
 
 ## 1. Nature of the services
 
 Vesteri (Time2Show, Inc.) provides **information, marketing, and technology services** supporting independent investment decisions. We do not provide investment, legal, tax, or valuation advice; we are not a party to any property purchase transaction and make no representations on behalf of developers.
 
-## 2. Developer verification
+For selected international developments in the Vesteri portfolio we act on behalf of the developer (the selling side) to the extent stated in the listing card; we do not provide brokerage services to the buyer.
+
+## 2. Developer verification (Vesteri portfolio)
 
 We work with developers after carrying out verification covering in particular: corporate registration status, most recent financial statements, legal title to land and mortgage encumbrances, the building permit, conformity of completed developments with the building permit, delivery track record and references, as well as other available information. Verification raises the standard of cooperation, but is **not a guarantee** of a developer's financial condition, timely delivery, or investment outcome. Project information originates from the developers; verify it independently before any decision.
+
+## Listings of Vesteri Collective members
+
+Listings published on the Vesteri platform by Vesteri Collective members are the statements of the agents publishing them. Vesteri verifies Collective members — their identity, business, required licences and acceptance of the network's rules — but does not verify the legal or technical condition of individual properties. Obtain independent legal and technical due diligence before purchasing.
 
 ## 3. Independent law firms
 
@@ -17,6 +23,8 @@ We share law firm contacts only at your request. The firms are independent from 
 ## 4. Vesteri's remuneration
 
 The Vesteri model is financed by developers — depending on the agreement for a given project, remuneration may comprise campaign fees, fees for handed-over contacts, or a sales commission. We disclose this so you can take it into account when assessing the content presented. The scoring and the AI assistant operate on uniform, objective criteria independent of the remuneration received from any given developer.
+
+Vesteri also charges agents — Collective members — for premium platform features (subscriptions, credits). These fees do not affect the order or manner in which listings are presented to buyers.
 
 ## 5. Risk of foreign property investment
 

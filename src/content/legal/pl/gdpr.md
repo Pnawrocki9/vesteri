@@ -1,6 +1,8 @@
 # RODO — TWOJE PRAWA
 
-**Jak zrealizować prawa dotyczące danych osobowych w Vesteri** · Wersja 1.0
+**Jak zrealizować prawa dotyczące danych osobowych w Vesteri**
+
+Administrator: Time2Show, Inc. (marka Vesteri), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Wersja 1.1 · Obowiązuje od: 22 października 2026 r.
 
 ## Przysługują Ci prawa:
 
@@ -17,6 +19,8 @@
 ## Jak złożyć wniosek
 
 Napisz: **privacy@vesteri.com** (temat: „RODO") lub listownie (adres w Polityce prywatności). Opisz, z którego prawa korzystasz. Możemy poprosić o dodatkową weryfikację tożsamości — proporcjonalną, tylko gdy to konieczne.
+
+Osoba kontaktowa w sprawach ochrony danych: Piotr Nawrocki, privacy@vesteri.com.
 
 **Terminy:** odpowiadamy niezwłocznie, najpóźniej w ciągu **miesiąca**; w sprawach złożonych możemy przedłużyć o kolejne 2 miesiące, informując Cię o tym. Realizacja jest bezpłatna (przy żądaniach ewidentnie nadmiernych możemy pobrać rozsądną opłatę lub odmówić — z uzasadnieniem).
 

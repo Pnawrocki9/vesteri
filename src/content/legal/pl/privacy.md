@@ -1,6 +1,6 @@
 # POLITYKA PRYWATNOŚCI
 
-**Serwis i platforma Vesteri** · Wersja 1.1 · Data wejścia w życie: 13 sierpnia 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.2 · Obowiązuje od: 22 października 2026 r.
 
 ## 1. Kto jest administratorem Twoich danych
 
@@ -8,10 +8,14 @@ Administratorem Twoich danych osobowych jest **Time2Show, Inc.**, spółka zarej
 
 Kontakt w sprawach danych osobowych: **privacy@vesteri.com** lub listownie na adres powyżej z dopiskiem „Dane osobowe / Vesteri".
 
+Osoba kontaktowa w sprawach ochrony danych: Piotr Nawrocki, privacy@vesteri.com.
+
 
 ## 2. Jak działa Vesteri — przejrzysty opis przetwarzania
 
-Vesteri pomaga inwestorom z Polski (docelowo także z innych krajów UE) świadomie inwestować w nieruchomości na wybranych rynkach zagranicznych (obecnie: Cypr, Tajlandia). Twoje dane przetwarzamy na kolejnych etapach:
+Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Marketplace, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów i Vesteri Collective działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
+
+Twoje dane przetwarzamy na kolejnych etapach:
 
 1. **Marketing lokalny** — docierają do Ciebie nasze reklamy projektów deweloperskich (targetowane geograficznie i językowo).
 2. **Informacje i czat AI** — udostępniamy komplet informacji o projektach w Twoim języku; pytania możesz zadawać asystentowi AI.

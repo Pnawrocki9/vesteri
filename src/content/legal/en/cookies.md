@@ -1,10 +1,10 @@
 # COOKIES POLICY
 
-**Vesteri website and platform** · Version 1.1 · Date: 5 August 2026
+**Vesteri website and platform** · Version 1.2 · Effective from: 22 October 2026
 
 ## 1. What cookies are and who uses them
 
-Cookies and similar technologies (localStorage, pixels, tags) are used by Time2Show, Inc. (Vesteri brand) and — with your consent — our partners. Legal basis: the Polish telecommunications/electronic communications provisions implementing the ePrivacy Directive, and the GDPR.
+Cookies and similar technologies (localStorage, pixels, tags) are used by Time2Show, Inc. (Vesteri brand) and — with your consent — our partners. Legal basis: Article 399 of the Polish Electronic Communications Law of 12 July 2024 and the GDPR.
 
 ## 2. The vesteri.com website
 
@@ -16,19 +16,7 @@ Because the website sets no cookies that require consent, it displays no consent
 
 ## 3. The Vesteri webinar platform
 
-The categories below apply to the **Vesteri webinar platform**. From the moment it launches, they will be handled through a consent mechanism.
-
-| Category | Purpose | Basis | Period |
-|---|---|---|---|
-| **Strictly necessary** | login, session, security, storing consent choices | necessity (no consent required) | session–24 months (consent record) |
-| **Functional** | language, display preferences, personalisation settings | consent | up to 12 months |
-| **Analytics** | usage statistics (truncated IP) | consent | up to 13 months |
-| **Behavioural profiling** | engagement signals for your interest profile and purchase-readiness scoring | consent | up to 24 months |
-| **Advertising** | campaigns and conversion measurement: Meta Pixel/Conversions API, Google tag, TikTok Pixel, LinkedIn Insight Tag | consent | up to 13 months |
-
-On your first visit to the platform we will display a banner with equal options: **Accept all / Reject all / Manage preferences** — with no pre-ticked boxes. You will be able to change your choices at any time via the **"Cookie preferences"** link. Should we ever introduce cookies requiring consent on the website itself, we will roll out the same mechanism there and update this policy beforehand.
-
-Regardless of the above, you can delete or block cookies in your browser; blocking strictly necessary ones may prevent use of the services.
+The platform at vesteri.estalara.com (marketplace, accounts, LIVE presentations) has its own **[Cookies Policy](https://vesteri.estalara.com/en/legal/cookie)** and its own consent banner. If technologies requiring consent are ever introduced on vesteri.com, we will implement the same mechanism and update this Policy in advance.
 
 ## 4. Recipients
 

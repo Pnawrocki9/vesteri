@@ -1,6 +1,6 @@
 # AI NOTICE
 
-**Artificial intelligence systems in the Vesteri service — disclosures under the AI Act (Regulation (EU) 2024/1689, Art. 50)** · Version 1.0
+**Artificial intelligence systems in the Vesteri service — disclosures under the AI Act (Regulation (EU) 2024/1689, Art. 50)** · Version 1.1 · Effective from: 22 October 2026
 
 The AI Act transparency obligations apply from **2 August 2026**. Below we explain where AI operates within Vesteri and what it means for you.
 
@@ -29,5 +29,15 @@ Advertising materials created with generative AI are marked as artificially gene
 ## 6. Human oversight
 
 You may request human review of any AI output concerning you: privacy@vesteri.com.
+
+## AI on the Vesteri platform
+
+The platform at vesteri.estalara.com additionally uses:
+- **Live translation and transcription** during LIVE presentations and one-to-one sessions hosted by agents — AI-generated; the presenter's original statements prevail.
+- **Property knowledge base** — questions and answers from sessions and chat, after removal of identifying data, are made available to other users through the AI assistant.
+- **Intent Score for agents** — an interest indication delivered to the agent only with the buyer's consent; it is advisory and may not be the sole basis for refusing service or differentiating offer terms.
+- **AI tools for agents** (listing descriptions, ad automation) — AI-generated content is labelled. Agents receive our guidance on responsible use of AI tools (AI Act, Art. 4).
+
+Details of data processing by these features: [Platform Privacy Policy, sections 2–3](https://vesteri.estalara.com/en/legal/policy).
 
 *In case of discrepancies, for consumers habitually resident in Poland the Polish version prevails.*
