@@ -1,16 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import MarkdownBody from '@/components/MarkdownBody';
-import LanguageSwitch from '@/components/LanguageSwitch';
-import MobileNav from '@/components/MobileNav';
-import SiteFooter from '@/components/SiteFooter';
+import MarketingShell from '@/components/marketing/MarketingShell';
+import MarketingHeader from '@/components/marketing/MarketingHeader';
+import MarketingFooter from '@/components/marketing/MarketingFooter';
 import JsonLd from '@/components/JsonLd';
 import { legalDocuments, type LegalSlug } from '@/generated/legal';
-import { getPathname, Link } from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import type { AppLocale } from '@/i18n/routing';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
-
-// Every legal document renders through here; MarkdownBody supplies the
-// typography, shared with the Poradnik articles.
+import './marketing/legal.css';
 
 const LEGAL_PAGES: LegalSlug[] = [
   'privacy',
@@ -29,90 +27,69 @@ export default async function LegalPage({
   page: LegalSlug;
   locale: AppLocale;
 }) {
-  const t = await getTranslations('legal');
-  const tNav = await getTranslations('nav');
+  const t = await getTranslations({ locale, namespace: 'legal' });
+  const marketing = await getTranslations({
+    locale,
+    namespace: 'marketing.buyers',
+  });
   const document = legalDocuments[locale][page];
-
-  const href = (slug: LegalSlug) =>
-    getPathname({ locale, href: `/${slug}` as '/privacy' });
+  const downloadHref =
+    locale === 'pl'
+      ? '/docs/collective/v1.0/Regulamin_Vesteri_Collective_v1.0_PL.docx'
+      : '/docs/collective/v1.0/Vesteri_Collective_Rules_v1.0_EN.docx';
 
   return (
-    <div className="bg-paper-alt text-ink">
+    <MarketingShell className="marketing-legal">
       <JsonLd
-        nodes={[
-          breadcrumbJsonLd({
-            href: `/${page}` as '/privacy',
-            locale,
-            name: t(page),
-          }),
-        ]}
+        nodes={[breadcrumbJsonLd({ href: `/${page}`, locale, name: t(page) })]}
       />
-      <nav className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper-alt px-4 py-[22px] sm:px-6 md:px-14">
-        <Link href="/" className="shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo/vesteri-logo-horizontal.svg"
-            width={900}
-            height={260}
-            alt="VESTERI"
-            className="block h-8 w-auto sm:h-11"
-          />
-        </Link>
-        <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-          <LanguageSwitch />
-          <MobileNav
-            links={LEGAL_PAGES.map((slug) => ({
-              label: t(slug),
-              href: href(slug),
-            }))}
-            openLabel={tNav('openMenu')}
-            closeLabel={tNav('closeMenu')}
-          />
+      <MarketingHeader page={`/${page}`} labels={marketing.raw('header')} />
+
+      <main>
+        <section className="legal-hero" aria-labelledby="legal-page-title">
+          <div className="wrap">
+            <p className="eyebrow light">Vesteri Collective</p>
+            <h1 id="legal-page-title">{t(page)}</h1>
+            <p className="legal-subtitle">{t(`meta.${page}`)}</p>
+            {page === 'collective-rules' && (
+              <a
+                className="btn btn-cream legal-download"
+                href={downloadHref}
+                download
+              >
+                {t('downloadOriginal')}
+                <span aria-hidden="true">↓</span>
+              </a>
+            )}
+          </div>
+        </section>
+
+        <div className="wrap legal-layout">
+          <aside className="legal-sidebar">
+            <nav aria-label={t('sectionLabel')}>
+              <p className="eyebrow">{t('sectionLabel')}</p>
+              <ul>
+                {LEGAL_PAGES.map((slug) => (
+                  <li key={slug}>
+                    <Link
+                      href={`/${slug}`}
+                      aria-current={slug === page ? 'page' : undefined}
+                    >
+                      {t(slug)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </aside>
+
+          <article className="legal-document" aria-label={t(page)}>
+            <MarkdownBody variant="marketing">{document}</MarkdownBody>
+          </article>
         </div>
-      </nav>
-
-      <main className="mx-auto grid w-full max-w-[1180px] grid-cols-1 gap-12 px-6 py-14 md:px-14 md:py-20 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
-        {/* Index of the other documents — these are read side by side. */}
-        <aside className="lg:sticky lg:top-[110px] lg:self-start">
-          <span className="text-[11px] font-bold tracking-[0.16em] text-accent-deep uppercase">
-            {t('sectionLabel')}
-          </span>
-          <ul className="mt-4 flex flex-col border-t border-line">
-            {LEGAL_PAGES.map((slug) => (
-              <li key={slug}>
-                <a
-                  href={href(slug)}
-                  aria-current={slug === page ? 'page' : undefined}
-                  className={`block border-b border-line py-3 text-[13px] leading-[1.5] transition-colors hover:text-accent-deep ${
-                    slug === page ? 'font-bold text-ink' : 'text-muted'
-                  }`}
-                >
-                  {t(slug)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </aside>
-
-        <article className="min-w-0">
-          <MarkdownBody>{document}</MarkdownBody>
-          {page === 'collective-rules' && (
-            <a
-              href={
-                locale === 'pl'
-                  ? '/docs/collective/v1.0/Regulamin_Vesteri_Collective_v1.0_PL.docx'
-                  : '/docs/collective/v1.0/Vesteri_Collective_Rules_v1.0_EN.docx'
-              }
-              download
-              className="mt-8 inline-block text-[14px] font-semibold text-accent underline underline-offset-4"
-            >
-              {t('downloadOriginal')}
-            </a>
-          )}
-        </article>
       </main>
 
-      <SiteFooter />
-    </div>
+      <MarketingFooter locale={locale} audience="buyers" />
+    </MarketingShell>
   );
 }

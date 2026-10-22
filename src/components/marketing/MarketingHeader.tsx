@@ -3,17 +3,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import type { StaticPathname } from '@/i18n/routing';
 import { MARKETPLACE_URL } from '@/lib/site';
 
-type Labels = Record<
-  'buyers' | 'sellers' | 'agents' | 'properties' | 'cta' | 'marketplace',
-  string
->;
+type Labels = Record<'buyers' | 'sellers' | 'agents' | 'cta', string>;
 export default function MarketingHeader({
   audience,
   labels,
+  page,
 }: {
-  audience: 'buyers' | 'sellers' | 'agents';
+  audience?: 'buyers' | 'sellers' | 'agents';
+  page?: StaticPathname;
   labels: Labels;
 }) {
   const locale = useLocale();
@@ -22,11 +22,12 @@ export default function MarketingHeader({
   const header = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
   const currentPage =
-    audience === 'buyers'
+    page ??
+    (audience === 'buyers'
       ? '/'
       : audience === 'sellers'
         ? '/sellers'
-        : '/agents';
+        : '/agents');
   useEffect(() => {
     const update = () => setHash(window.location.hash);
     update();
@@ -106,7 +107,6 @@ export default function MarketingHeader({
           aria-label={locale === 'pl' ? 'Nawigacja główna' : 'Main navigation'}
         >
           {audienceLinks}
-          <a href={MARKETPLACE_URL}>{labels.properties}</a>
         </nav>
         <div className="v10-language">
           {languageLink('en')}
@@ -142,7 +142,9 @@ export default function MarketingHeader({
         aria-label={locale === 'pl' ? 'Menu mobilne' : 'Mobile menu'}
       >
         {audienceLinks}
-        <a href={MARKETPLACE_URL}>{labels.marketplace}</a>
+        <a className="btn btn-cream" href={MARKETPLACE_URL}>
+          {labels.cta}
+        </a>
         {languageLink(locale === 'pl' ? 'en' : 'pl', true)}
       </nav>
     </header>
