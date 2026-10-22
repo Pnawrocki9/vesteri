@@ -6,6 +6,8 @@ export const routing = defineRouting({
   localePrefix: 'always',
   pathnames: {
     '/': '/',
+    '/sellers': { en: '/sellers', pl: '/sprzedajacy' },
+    '/agents': { en: '/agents', pl: '/dla-agentow' },
     '/privacy': { pl: '/polityka-prywatnosci', en: '/privacy-policy' },
     '/terms': { pl: '/regulamin', en: '/terms-of-service' },
     '/cookies': '/cookies',

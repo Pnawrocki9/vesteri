@@ -1,14 +1,10 @@
-/* Approved v9 reference markup adapted to React; copy lives in next-intl. */
+/* V10.7 reference markup; editorial copy is maintained in next-intl. */
 /* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { propertyCards } from '@/content/collective-properties';
-import CollectiveHeader from './CollectiveHeader';
-import CollectiveFaq from './CollectiveFaq';
-import BuyerAssistance from './BuyerAssistance';
-import MarketplacePanel from './MarketplacePanel';
-import PropertyCard from './PropertyCard';
-import './collective.css';
+import { MARKETPLACE_URL } from '@/lib/site';
+import MarketingHeader from './MarketingHeader';
+
 const LEGAL_PAGES = [
   'privacy',
   'terms',
@@ -17,23 +13,17 @@ const LEGAL_PAGES = [
   'ai',
   'disclaimers',
 ] as const;
-export default async function CollectiveHomepage({
-  locale,
-  fontClass,
-}: {
-  locale: string;
-  fontClass: string;
-}) {
-  const t = await getTranslations('collective');
+export default async function AgentsContent({ locale }: { locale: string }) {
+  const t = await getTranslations('marketing.agents');
   const legal = await getTranslations('legal');
   return (
-    <div className={`collective ${fontClass}`}>
+    <>
       <a className="skip" href="#main">
         {t('copy01')}
       </a>
-      <CollectiveHeader labels={t.raw('header')} />
+      <MarketingHeader audience="agents" labels={t.raw('header')} />
       <main id="main">
-        <section className="hero" id="top">
+        <section className="hero v10-agent-hero" id="top">
           <div
             aria-label={t('top01')}
             className="hero-picture"
@@ -48,10 +38,10 @@ export default async function CollectiveHomepage({
             </h1>
             <p className="hero-desc">{t('top05')}</p>
             <div className="hero-actions">
-              <a className="btn btn-cream" href="https://vesteri.estalara.com">
+              <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('top06')}
               </a>
-              <a className="btn btn-outline" href="#agents">
+              <a className="btn btn-outline" href="#membership">
                 {t('top07')}
               </a>
             </div>
@@ -59,147 +49,6 @@ export default async function CollectiveHomepage({
               <span>{t('top08')}</span>
               <span>{t('top09')}</span>
               <span>{t('top10')}</span>
-            </div>
-          </div>
-        </section>
-        <MarketplacePanel content={t.raw('search')} />
-        <section className="section featured" id="properties">
-          <div className="wrap">
-            <div className="section-heading">
-              <div>
-                <span className="eyebrow">{t('properties01')}</span>
-                <h2>{t('properties02')}</h2>
-              </div>
-              <div>
-                <p className="lead">{t('properties03')}</p>
-                <a className="btn-text" href="https://vesteri.estalara.com">
-                  {t('properties04')}
-                  <span className="arrow">{t('properties05')}</span>
-                </a>
-              </div>
-            </div>
-            <div className="places">
-              <PropertyCard index={0}>
-                <img
-                  alt={t('properties06')}
-                  loading="lazy"
-                  src={propertyCards[0].image}
-                  width="900"
-                  height="900"
-                />
-                <div className="place-body">
-                  <h3>{t('properties07')}</h3>
-                  <p>{t('properties08')}</p>
-                  <span className="arr">{t('properties09')}</span>
-                </div>
-              </PropertyCard>
-              <PropertyCard index={1}>
-                <img
-                  alt={t('properties10')}
-                  loading="lazy"
-                  src={propertyCards[1].image}
-                  width="900"
-                  height="900"
-                />
-                <div className="place-body">
-                  <h3>{t('properties11')}</h3>
-                  <p>{t('properties12')}</p>
-                  <span className="arr">{t('properties13')}</span>
-                </div>
-              </PropertyCard>
-              <PropertyCard index={2}>
-                <img
-                  alt={t('properties14')}
-                  loading="lazy"
-                  src={propertyCards[2].image}
-                  width="900"
-                  height="900"
-                />
-                <div className="place-body">
-                  <h3>{t('properties15')}</h3>
-                  <p>{t('properties16')}</p>
-                  <span className="arr">{t('properties17')}</span>
-                </div>
-              </PropertyCard>
-            </div>
-            <p className="note">{t('assetsNote')}</p>
-          </div>
-        </section>
-        <section className="split buyer" id="buyers">
-          <div className="copy">
-            <span className="eyebrow">{t('buyers01')}</span>
-            <h2>{t('buyers02')}</h2>
-            <p className="lead">{t('buyers03')}</p>
-            <div className="point">
-              <span className="icon">{t('buyers04')}</span>
-              {t('buyers05')}
-            </div>
-            <div className="point">
-              <span className="icon">{t('buyers06')}</span>
-              {t('buyers07')}
-            </div>
-            <div className="point">
-              <span className="icon">{t('buyers08')}</span>
-              {t('buyers09')}
-            </div>
-            <BuyerAssistance content={t.raw('buyer')} />
-          </div>
-          <div className="visual buyer-editorial">
-            <div
-              aria-label={t('buyers10')}
-              className="editorial-frame buyer-frame"
-            >
-              <div className="ed-top">
-                <span>{t('buyers11')}</span>
-                <span>{t('buyers12')}</span>
-              </div>
-              <div className="buyer-title">
-                {t('buyers13')}
-                <br />
-                <em>{t('buyers14')}</em>
-              </div>
-              <div className="ed-rule"></div>
-              <div className="brief-meta">
-                <span>{t('buyers15')}</span>
-                <span className="brief-counter">{t('buyers16')}</span>
-              </div>
-              <div className="brief-details">
-                <div>
-                  <small>{t('buyers17')}</small>
-                  <strong>{t('buyers18')}</strong>
-                </div>
-                <div>
-                  <small>{t('buyers19')}</small>
-                  <strong>{t('buyers20')}</strong>
-                </div>
-                <div>
-                  <small>{t('buyers21')}</small>
-                  <strong>{t('buyers22')}</strong>
-                </div>
-              </div>
-              <div className="ed-rule"></div>
-              <div className="matching-label">
-                {t('buyers23')}
-                <span>{t('buyers24')}</span>
-              </div>
-              <div className="editorial-stack">
-                <div className="offer-chip">
-                  <span className="chip-number">{t('buyers25')}</span>
-                  <span>{t('buyers26')}</span>
-                  <span>{t('buyers27')}</span>
-                </div>
-                <div className="offer-chip">
-                  <span className="chip-number">{t('buyers28')}</span>
-                  <span>{t('buyers29')}</span>
-                  <span>{t('buyers30')}</span>
-                </div>
-                <div className="offer-chip">
-                  <span className="chip-number">{t('buyers31')}</span>
-                  <span>{t('buyers32')}</span>
-                  <span>{t('buyers33')}</span>
-                </div>
-              </div>
-              <div className="ed-foot">{t('buyers34')}</div>
             </div>
           </div>
         </section>
@@ -272,8 +121,8 @@ export default async function CollectiveHomepage({
             </div>
             <a
               className="btn btn-cream"
-              href="https://vesteri.estalara.com"
-              style={{ alignSelf: 'flex-start', marginTop: 16 }}
+              href={MARKETPLACE_URL}
+              style={{ alignSelf: 'flex-start', marginTop: '16px' }}
             >
               {t('agents29')}
             </a>
@@ -284,56 +133,38 @@ export default async function CollectiveHomepage({
             <div className="section-heading">
               <div>
                 <span className="eyebrow">{t('membership01')}</span>
-                <h2>
-                  {t('membership02')}
-                  <br />
-                  {t('membership03')}
-                </h2>
+                <h2>{t('membership02')}</h2>
               </div>
-              <p className="lead">{t('membership04')}</p>
+              <p className="lead">{t('membership03')}</p>
             </div>
             <div className="membership-grid">
-              <article className="membership-card buyer-access">
-                <span className="pill">{t('membership05')}</span>
-                <h3>{t('membership06')}</h3>
-                <p>{t('membership07')}</p>
-                <a
-                  className="btn btn-primary"
-                  href="https://vesteri.estalara.com"
-                >
-                  {t('membership08')}
-                </a>
-              </article>
               <article className="membership-card member-access">
-                <span className="pill dark">{t('membership09')}</span>
-                <h3>{t('membership10')}</h3>
-                <p>{t('membership11')}</p>
-                <a
-                  className="btn btn-cream"
-                  href="https://vesteri.estalara.com"
-                >
-                  {t('membership12')}
+                <span className="pill dark">{t('membership04')}</span>
+                <h3>{t('membership05')}</h3>
+                <p>{t('membership06')}</p>
+                <a className="btn btn-cream" href={MARKETPLACE_URL}>
+                  {t('membership07')}
                 </a>
               </article>
             </div>
             <div className="steps">
               <div>
-                <b>{t('membership13')}</b>
-                <strong>{t('membership14')}</strong>
-                <small>{t('membership15')}</small>
+                <b>{t('membership08')}</b>
+                <strong>{t('membership09')}</strong>
+                <small>{t('membership10')}</small>
               </div>
               <div>
-                <b>{t('membership16')}</b>
-                <strong>{t('membership17')}</strong>
-                <small>{t('membership18')}</small>
+                <b>{t('membership11')}</b>
+                <strong>{t('membership12')}</strong>
+                <small>{t('membership13')}</small>
               </div>
               <div>
-                <b>{t('membership19')}</b>
-                <strong>{t('membership20')}</strong>
-                <small>{t('membership21')}</small>
+                <b>{t('membership14')}</b>
+                <strong>{t('membership15')}</strong>
+                <small>{t('membership16')}</small>
               </div>
             </div>
-            <p className="note">{t('membership22')}</p>
+            <p className="note">{t('membership17')}</p>
           </div>
         </section>
         <section className="section network" id="how">
@@ -412,8 +243,8 @@ export default async function CollectiveHomepage({
                 <p>{t('technology19')}</p>
               </div>
             </div>
-            <div style={{ marginTop: 29 }}>
-              <a className="btn-text" href="https://vesteri.estalara.com">
+            <div style={{ marginTop: '29px' }}>
+              <a className="btn-text" href={MARKETPLACE_URL}>
                 {t('technology20')}
               </a>
             </div>
@@ -425,7 +256,7 @@ export default async function CollectiveHomepage({
               <span className="eyebrow">{t('about01')}</span>
               <h2>{t('about02')}</h2>
               <p className="lead">{t('about03')}</p>
-              <a className="btn-text" href="https://vesteri.estalara.com">
+              <a className="btn-text" href={MARKETPLACE_URL}>
                 {t('about04')}
               </a>
             </div>
@@ -433,8 +264,8 @@ export default async function CollectiveHomepage({
               alt={t('about05')}
               loading="lazy"
               src="/img/collective/international.webp"
-              width="1200"
-              height="800"
+              width="900"
+              height="600"
             />
           </div>
         </section>
@@ -446,7 +277,7 @@ export default async function CollectiveHomepage({
           <div className="wrap">
             <span className="eyebrow">{t('main03')}</span>
             <h2>{t('main04')}</h2>
-            <p className="lead" style={{ maxWidth: 820 }}>
+            <p className="lead" style={{ maxWidth: '820px' }}>
               {t('main05')}
             </p>
             <div className="trust-grid">
@@ -477,29 +308,76 @@ export default async function CollectiveHomepage({
           </div>
           <div className="wrap"></div>
         </section>
-        <CollectiveFaq content={t.raw('faq')} />
-        <section className="closing">
-          <div className="wrap closing-inner">
+        <section aria-labelledby="faqTitle" className="section faq" id="faq">
+          <div className="wrap">
+            <div className="faq-intro">
+              <span className="eyebrow">{t('faq01')}</span>
+              <h2 id="faqTitle">{t('faqTitle01')}</h2>
+              <p className="lead">{t('faq02')}</p>
+            </div>
+            <div className="faq-group active">
+              <details>
+                <summary>{t('faq03')}</summary>
+                <p>{t('faq04')}</p>
+              </details>
+              <details>
+                <summary>{t('faq05')}</summary>
+                <p>{t('faq06')}</p>
+              </details>
+              <details>
+                <summary>{t('faq07')}</summary>
+                <p>{t('faq08')}</p>
+              </details>
+              <details>
+                <summary>{t('faq09')}</summary>
+                <p>{t('faq10')}</p>
+              </details>
+              <details>
+                <summary>{t('faq11')}</summary>
+                <p>{t('faq12')}</p>
+              </details>
+              <details>
+                <summary>{t('faq13')}</summary>
+                <p>{t('faq14')}</p>
+              </details>
+              <details>
+                <summary>{t('faq15')}</summary>
+                <p>{t('faq16')}</p>
+              </details>
+              <details>
+                <summary>{t('faq17')}</summary>
+                <p>{t('faq18')}</p>
+              </details>
+              <details>
+                <summary>{t('faq19')}</summary>
+                <p>{t('faq20')}</p>
+              </details>
+              <details>
+                <summary>{t('faq21')}</summary>
+                <p>{t('faq22')}</p>
+              </details>
+              <details>
+                <summary>{t('faq23')}</summary>
+                <p>{t('faq24')}</p>
+              </details>
+              <details>
+                <summary>{t('faq25')}</summary>
+                <p>{t('faq26')}</p>
+              </details>
+            </div>
+            <p className="faq-sub">{t('faq27')}</p>
+          </div>
+        </section>
+        <section className="v10-agents-teaser">
+          <div className="wrap v10-agents-row">
             <div>
               <span className="eyebrow light">{t('main17')}</span>
-              <h2>
-                {t('main18')}
-                <br />
-                {t('main19')}
-              </h2>
-              <p className="lead">{t('main20')}</p>
+              <h2>{t('main18')}</h2>
+              <p>{t('main19')}</p>
             </div>
-            <div className="closing-actions">
-              <a className="btn btn-cream" href="https://vesteri.estalara.com">
-                {t('main21')}
-              </a>
-              <a
-                className="btn btn-outline"
-                href="https://vesteri.estalara.com"
-              >
-                {t('main22')}
-              </a>
-            </div>
+            <a className="btn btn-cream" href={MARKETPLACE_URL}>
+              {t('main20')}
+            </a>
           </div>
         </section>
       </main>
@@ -507,39 +385,37 @@ export default async function CollectiveHomepage({
         <div className="wrap">
           <div className="footer-main">
             <div>
-              <a aria-label={t('footer01')} className="brand" href="#top">
+              <Link className="brand" href="/">
                 <img
-                  alt={t('footer02')}
+                  alt={t('footer01')}
                   src="/logo/vesteri-mark-teal-gradient.svg"
                   width="42"
                   height="42"
                 />
-                <span className="wordmark">{t('footer03')}</span>
-              </a>
-              <p>{t('footer04')}</p>
+                <span className="wordmark">{t('footer02')}</span>
+              </Link>
+              <p>{t('footer03')}</p>
             </div>
             <div>
-              <h4>{t('footer05')}</h4>
-              <a href="https://vesteri.estalara.com">{t('footer06')}</a>
-              <a href="#buyers">{t('footer07')}</a>
-              <a href="#about">{t('footer08')}</a>
+              <h4>{t('footer04')}</h4>
+              <Link href="/">{t('footer05')}</Link>
+              <Link href="/sellers">{t('footer06')}</Link>
+              <a href={MARKETPLACE_URL}>{t('footer07')}</a>
             </div>
             <div>
-              <h4>{t('footer09')}</h4>
-              <a href="https://vesteri.estalara.com">{t('footer10')}</a>
-              <a href="#how">{t('footer11')}</a>
-              <a href="#technology">{t('footer12')}</a>
-              <a href="#faq">{t('footer13')}</a>
+              <h4>{t('footer08')}</h4>
+              <Link href="/agents">{t('footer09')}</Link>
+              <a href={MARKETPLACE_URL}>{t('footer10')}</a>
             </div>
             <div>
-              <h4>{t('footer14')}</h4>
-              <a href="#about">{t('footer15')}</a>
-              <Link href="/privacy">{t('footer16')}</Link>
-              <Link href="/terms">{t('footer17')}</Link>
+              <h4>{t('footer11')}</h4>
+              <Link href="/affiliate">{t('footer12')}</Link>
+              <a href="mailto:contact@vesteri.com">{t('footer13')}</a>
             </div>
           </div>
           <div className="footer-bottom">
-            <span>{t('footer18')}</span>
+            <span>{t('footer14')}</span>
+            <span>{t('footer15')}</span>
           </div>
         </div>
         <nav
@@ -551,9 +427,8 @@ export default async function CollectiveHomepage({
               {legal(slug)}
             </Link>
           ))}
-          <Link href="/affiliate">{t('affiliate')}</Link>
         </nav>
       </footer>
-    </div>
+    </>
   );
 }

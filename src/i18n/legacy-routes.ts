@@ -244,6 +244,9 @@ export function resolveLegacyPath(pathname: string): LegacyResult | null {
   if (legacy === 'platform')
     return { kind: 'redirect', target: 'https://vesteri.estalara.com' };
   if (legacy === '/#about')
-    return { kind: 'redirect', target: `/${locale}#about` };
+    return {
+      kind: 'redirect',
+      target: locale === 'pl' ? '/pl/dla-agentow#about' : '/en/agents#about',
+    };
   return retiredLocale ? { kind: 'unknown', locale: 'en' } : null;
 }

@@ -1,10 +1,9 @@
-# Vesteri Collective
+# Vesteri Collective V10.7
 
 Next.js 15 App Router, React 19, TypeScript, Tailwind CSS 4 and next-intl.
-The public website is English and Polish, based on the approved Vesteri
-Collective v9 handoff in:
+The authoritative six-page bilingual handoff is in:
 
-`design-reference/Vesteri_Collective_EN_PL_Codex_Handoff_v9/vesteri-collective-handoff-v9/`
+`design-reference/Vesteri_Collective_V10_7_Codex_Handoff/`
 
 ## Development and checks
 
@@ -12,88 +11,111 @@ Collective v9 handoff in:
 npm ci
 npm run dev
 npm run lint
+npx tsc --noEmit --incremental false
 npm test
 npm run build
+npx opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion
 ```
 
-The homepage is served at `/en` and `/pl`. `/` negotiates the locale using the
-existing next-intl cookie/browser-language convention, with Polish as fallback.
-Homepage copy is in `src/messages/{en,pl}.json` under `collective`; all 19 FAQ
-questions and answers in each locale are checked against the reference HTML.
+The final command builds a Cloudflare artifact locally; it does not publish it.
+The adapter currently requires the existing unsupported-Next-version flag.
 
-Homepage components and isolated styles live in `src/components/home/`.
-DM Sans and Manrope match the reference; Montserrat remains available for the
-unchanged Affiliate Program and retained legal templates. Fonts are self-hosted
-in `src/fonts/` with their SIL Open Font License files. A small Google Fonts
-subset of Noto Sans Symbols / Symbols 2 supplies missing interface glyphs. There is no
-build-time dependency on the Google Fonts service.
+| Audience | English | Polish |
+| --- | --- | --- |
+| Buyers | `/en` | `/pl` |
+| Sellers | `/en/sellers` | `/pl/sprzedajacy` |
+| Agents | `/en/agents` | `/pl/dla-agentow` |
 
-## Curated property cards and preview functionality
+`/` negotiates language using next-intl, with Polish as fallback. Audience routes
+and their translations are defined in `src/i18n/routing.ts`. Language switching
+preserves the audience and current section, including on Sellers pages.
+Only EN/PL are advertised in navigation, metadata, sitemap and llms.txt.
 
-`src/content/collective-properties.ts` is the static property-card configuration.
-The current local WebP photographs reproduce the approved mockup and are
-illustrative. Replace each image and set its `listingUrl` to its owner-confirmed
-`https://vesteri.estalara.com/...` destination. Until then, those cards are
-non-interactive and explicitly labeled as awaiting real listing destinations.
-No property details, feeds, API integrations or synchronization are implemented.
+Reference-derived components and scoped styles live in `src/components/marketing/`.
+Copy is in `src/messages/{en,pl}.json` under `marketing`, grouped by audience and
+reference section. Native `details` elements provide keyboard-accessible FAQ:
+8 buyer, 7 seller and 12 agent entries per language. Automated content checks
+compare the translated editorial text and FAQ to all six authoritative HTML files.
 
-Search filters and the buyer-assistance dialog are explicitly labeled previews.
-The disabled controls submit/store no personal information and have no backend.
-The separate marketplace link goes to `https://vesteri.estalara.com`, the verified
-platform entry point. Deeper application/login/search paths are not assumed.
+DM Sans, Manrope and the official mark reproduce the reference. Fonts are
+self-hosted in `src/fonts/` with their SIL Open Font License files. Small Noto
+Sans Symbols subsets supply interface glyphs. Montserrat and the existing shared
+templates remain unchanged for the Affiliate Program and legal pages.
 
-Hero/brokerage source: Unsplash `photo-1600607687920-4e2a09cf159d`.
-Property sources: `photo-1600596542815-ffad4c1539a9`,
-`photo-1600607688969-a5bfcd646154`, `photo-1600566753190-17f0baa2a6c3`.
-These are the supplied mockup photographs, temporarily authorized by the owner;
-final listing assets/rights and URLs must be reviewed before publication.
+## Photographs and destinations
 
-## Retained features and URL migration
+`src/content/collective-properties.ts` contains three manually curated image/link
+slots. Current photographs are illustrative mockup images, explicitly identified
+as previews. Without an owner-confirmed `listingUrl`, a card is an article rather
+than a link. Replace images and set the corresponding exact verified listing URL
+when supplied. No property details, marketplace API or synchronization is added.
 
-The existing Affiliate Program is retained, including registration, signed
-sessions, account/admin dashboards, referral codes, manual sales and payout
-records, rate limits, audit logs, settings and versioned legal consent. Its
-public footer entry is `/en/affiliate` or `/pl/affiliate`. Core affiliate code,
-migrations and deployment bindings are unchanged.
+All marketplace/agent-platform entry links use `https://vesteri.estalara.com`.
+No deeper application destinations are assumed. Presentation/consultation CTAs
+open that same entry point; they do not simulate booking. Seller contact CTAs use
+the reference mailto inbox, `contact@vesteri.com`, with a localized subject. There
+are no hosted enquiry forms or booking systems.
 
-Existing legal documents remain verbatim in `src/content/legal/`; only EN/PL
-are bundled by `scripts/generate-legal.mjs`. Other archived content on disk is
-not routed or advertised in the sitemap. Old marketing page implementations
-were removed.
+Local assets in `public/img/collective/` reproduce the reference Unsplash photos:
 
-`src/i18n/legacy-routes.ts` defines the explicit migration policy:
+- Hero and international: `photo-1600607687920-4e2a09cf159d`.
+- Properties: `photo-1600596542815-ffad4c1539a9`,
+  `photo-1600607688969-a5bfcd646154`, `photo-1600566753190-17f0baa2a6c3`.
+- Seller hero: `photo-1600607687939-ce8a6c25118c`.
 
-- ES/DE homepages, recognized affiliate URLs and translated legal documents
-  redirect permanently to their English equivalents. Local queries survive.
-- Former About URLs redirect to the new international-brokerage section.
-- Former platform/partnership URLs redirect to the confirmed Estalara entry.
-- Known retired developer/guide/comparison content without an equivalent returns
-  HTTP 410, with a homepage link and `noindex`.
-- Unknown URLs return 404; they are not redirected indiscriminately.
+The official mark is `public/logo/vesteri-mark-teal-gradient.svg`. Reference
+photographs are temporary; final assets and publication rights need owner review.
+Reference footer review annotations remain visible in this local review version.
 
-## Production infrastructure
+## Retained Affiliate Program and infrastructure
 
-Cloudflare Workers with OpenNext: `open-next.config.ts` and `wrangler.jsonc`.
-The canonical host is `https://www.vesteri.com`; the apex redirect is managed at
-the Cloudflare edge. Existing security headers, analytics, HubSpot integration,
-D1 bindings and affiliate secrets remain in place. Do not commit local secrets.
+Affiliate routes, registration, authentication, account/admin dashboards, referral
+codes, manual sale attribution, fixed commission snapshots, payouts, rate limits,
+audit history, settings and legal consents are preserved. Entry points remain
+`/en/affiliate` and `/pl/affiliate`, linked from every marketing footer. Affiliate
+source, schema, migrations, security code and database binding are unchanged.
 
-**Do not run deployment commands during implementation review.**
-`.github/workflows/deploy.yml` deploys on pushes to
-`claude/vesteri-website-kxnbng` and can apply remote D1 migrations.
-Use an isolated feature branch and obtain explicit owner approval before any
-production push, merge, remote migration or deployment.
+Retained legal documents are linked from every footer. Only EN/PL legal content
+is bundled. Archived ES/DE and old article/map sources are not public marketing
+pages. Existing analytics, consent integration, SEO helpers, security headers,
+Cloudflare/OpenNext configuration and deployment bindings are retained.
 
-`npm run build` regenerates committed geographic/legal/article artifacts;
-CI checks that generated files match their sources. Archived article/map
-sources and their generators remain available but have no public marketing
-routes in the new site.
+`src/i18n/legacy-routes.ts` defines the migration policy:
 
-## Publication decisions still required
+- ES/DE homepages, recognized affiliate URLs and legal documents redirect to
+  their English equivalents, preserving queries.
+- Former About URLs redirect to the corresponding section on the Agents page.
+- Former platform/partnership URLs redirect to the verified marketplace host.
+- Retired developer/guide/comparison URLs without equivalents return 410/noindex.
+- Unknown URLs remain 404.
 
-- Real listing photographs, publication rights and corresponding listing URLs.
-- Final search and buyer-assistance behavior (currently approved as previews).
-- Formal definition of the approved FAQ's 10% Collective promotion commitment:
-  revenue base, period and reporting approach.
-- Legal review of retained legal disclosures and existing affiliate placeholders.
-- Explicit approval to merge and deploy after visual review.
+## Publication boundary and baseline
+
+Implementation baseline: `6930f9281d852be3a2146482183e9709b67d8c86` on existing
+primary branch `claude/vesteri-website-kxnbng`. No separate feature branch is used.
+Keep this SHA as the pre-change recovery point. Before discarding local work,
+export its diff and new files; restoring this baseline must be an explicit action.
+A later production rollback requires an owner-approved deployment of a verified
+previous revision; do not reset or force-push the remote branch.
+
+**Do not push or deploy without separate owner approval.** The existing
+`.github/workflows/deploy.yml` automatically deploys primary-branch pushes and
+can apply remote D1 migrations. It also supports manual dispatch. Workflows,
+Git configuration and database migrations are outside this implementation scope.
+`npm run deploy` publishes; `npm run preview` also builds and starts a preview.
+Neither is needed for the local implementation review.
+
+`npm run build` runs the existing geographic/legal/article generators. Archived
+sources remain available to these generators without restoring their old routes.
+
+## Decisions required before publication
+
+- Actual listing photographs, publication rights and exact listing URLs.
+- Confirmation of the seller inbox and operational enquiry handling.
+- Working presentation/LIVE/webinar/consultation destinations and actual features.
+- Current membership/AI/pricing terms and contractual cooperation/exclusivity rules.
+- Commercial/legal review of commission sharing, the 5–8% foreign-developer
+  commission range, the introducing-agent share and the 10% revenue promotion
+  commitment, all retained verbatim from the approved reference.
+- Final treatment of the handoff's footer review annotations.
+- Separate explicit approval for production publication.

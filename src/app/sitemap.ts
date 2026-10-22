@@ -8,6 +8,8 @@ import { SITE_URL } from '@/lib/site';
 // pages. Auth/account/admin routes must never appear in the sitemap.
 const PAGES: StaticPathname[] = [
   '/',
+  '/sellers',
+  '/agents',
   '/privacy',
   '/terms',
   '/cookies',

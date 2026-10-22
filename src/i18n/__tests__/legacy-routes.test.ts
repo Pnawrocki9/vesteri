@@ -43,7 +43,7 @@ describe('two-language migration policy', () => {
   it('maps the old About page to the corresponding new section', () =>
     expect(resolveLegacyPath('/pl/o-nas')).toEqual({
       kind: 'redirect',
-      target: '/pl#about',
+      target: '/pl/dla-agentow#about',
     }));
   it('retires marketing content with no equivalent without redirecting it to the homepage', () =>
     expect(resolveLegacyPath('/en/for-developers')).toEqual({
