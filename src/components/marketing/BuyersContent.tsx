@@ -1,5 +1,4 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
-/* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
@@ -70,42 +69,33 @@ export default async function BuyersContent({ locale }: { locale: string }) {
               </div>
             </div>
             <div className="places">
-              <PropertyCard property={propertyCards[0]} className="place">
-                <img
-                  alt={t('properties06')}
-                  loading="lazy"
-                  src={propertyCards[0].image}
-                  width="900"
-                  height="900"
-                />
+              <PropertyCard
+                property={propertyCards[0]}
+                className="place"
+                alt={t('properties06')}
+              >
                 <div className="place-body">
                   <h3>{t('properties07')}</h3>
                   <p>{t('properties08')}</p>
                   <span className="arr">{t('properties09')}</span>
                 </div>
               </PropertyCard>
-              <PropertyCard property={propertyCards[1]} className="place">
-                <img
-                  alt={t('properties10')}
-                  loading="lazy"
-                  src={propertyCards[1].image}
-                  width="900"
-                  height="900"
-                />
+              <PropertyCard
+                property={propertyCards[1]}
+                className="place"
+                alt={t('properties10')}
+              >
                 <div className="place-body">
                   <h3>{t('properties11')}</h3>
                   <p>{t('properties12')}</p>
                   <span className="arr">{t('properties13')}</span>
                 </div>
               </PropertyCard>
-              <PropertyCard property={propertyCards[2]} className="place">
-                <img
-                  alt={t('properties14')}
-                  loading="lazy"
-                  src={propertyCards[2].image}
-                  width="900"
-                  height="900"
-                />
+              <PropertyCard
+                property={propertyCards[2]}
+                className="place"
+                alt={t('properties14')}
+              >
                 <div className="place-body">
                   <h3>{t('properties15')}</h3>
                   <p>{t('properties16')}</p>
@@ -113,7 +103,6 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 </div>
               </PropertyCard>
             </div>
-            <div className="note">{t('properties18')}</div>
           </div>
         </section>
         <section className="section v10-events" id="events">

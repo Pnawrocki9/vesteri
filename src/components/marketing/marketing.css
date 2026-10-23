@@ -356,6 +356,10 @@
   align-items: end;
   color: white;
 }
+.marketing .place picture {
+  position: absolute;
+  inset: 0;
+}
 .marketing .place img {
   position: absolute;
   inset: 0;
