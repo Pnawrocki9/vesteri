@@ -35,6 +35,9 @@ export default function PropertyCard({
         />
       </picture>
       {children}
+      {property.photoCredit && (
+        <span className="place-credit">{property.photoCredit}</span>
+      )}
     </>
   );
   return property.listingUrl ? (

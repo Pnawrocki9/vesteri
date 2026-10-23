@@ -9,6 +9,7 @@ export type PropertyCard = {
   webpSrcSet: string;
   sizes: string;
   objectPosition: string;
+  photoCredit?: string;
   listingUrl: `https://vesteri.estalara.com/${string}` | null;
 };
 
@@ -47,6 +48,7 @@ export const propertyCards: PropertyCard[] = [
       '80% center',
     ),
     listingUrl: null,
+    photoCredit: 'Źródło: https://annakoszela.pl/',
   },
   {
     id: 'europe',
