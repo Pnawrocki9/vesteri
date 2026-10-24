@@ -1,6 +1,7 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
 /* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
@@ -294,7 +295,9 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <h3>{t('main14')}</h3>
                 <p>{t('main15')}</p>
               </div>
-              <span className="pill">{t('main16')}</span>
+              <Link className="pill" href="/collective-rules">
+                {t('main16')}
+              </Link>
             </div>
           </div>
           <div className="wrap"></div>
