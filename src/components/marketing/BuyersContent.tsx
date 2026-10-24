@@ -77,7 +77,6 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 <div className="place-body">
                   <h3>{t('properties07')}</h3>
                   <p>{t('properties08')}</p>
-                  <span className="arr">{t('properties09')}</span>
                 </div>
               </PropertyCard>
               <PropertyCard
@@ -88,7 +87,6 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 <div className="place-body">
                   <h3>{t('properties11')}</h3>
                   <p>{t('properties12')}</p>
-                  <span className="arr">{t('properties13')}</span>
                 </div>
               </PropertyCard>
               <PropertyCard
@@ -99,7 +97,6 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 <div className="place-body">
                   <h3>{t('properties15')}</h3>
                   <p>{t('properties16')}</p>
-                  <span className="arr">{t('properties17')}</span>
                 </div>
               </PropertyCard>
             </div>
@@ -200,23 +197,19 @@ export default async function BuyersContent({ locale }: { locale: string }) {
               <div className="ed-rule"></div>
               <div className="matching-label">
                 {t('buyers24')}
-                <span>{t('buyers25')}</span>
               </div>
               <div className="editorial-stack">
                 <div className="offer-chip">
                   <span className="chip-number">{t('buyers26')}</span>
                   <span>{t('buyers27')}</span>
-                  <span>{t('buyers28')}</span>
                 </div>
                 <div className="offer-chip">
                   <span className="chip-number">{t('buyers29')}</span>
                   <span>{t('buyers30')}</span>
-                  <span>{t('buyers31')}</span>
                 </div>
                 <div className="offer-chip">
                   <span className="chip-number">{t('buyers32')}</span>
                   <span>{t('buyers33')}</span>
-                  <span>{t('buyers34')}</span>
                 </div>
               </div>
               <div className="ed-foot">{t('buyers35')}</div>

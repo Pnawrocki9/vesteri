@@ -391,12 +391,6 @@
   color: #e4eeee;
   margin: 0;
 }
-.marketing .place .arr {
-  position: absolute;
-  bottom: 28px;
-  right: 25px;
-  font-size: 20px;
-}
 .marketing .place-credit {
   position: absolute;
   right: 10px;
@@ -1294,10 +1288,6 @@
 }
 .marketing .matching-label {
   margin: 21px 0 13px;
-}
-.marketing .matching-label span {
-  font-size: 20px;
-  color: #248880;
 }
 .marketing .editorial-stack {
   display: grid;
