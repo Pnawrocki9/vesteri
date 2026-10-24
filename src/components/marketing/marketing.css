@@ -1069,6 +1069,12 @@
     align-items: flex-start;
     padding: 25px;
   }
+  .marketing .trust-manifesto .pill {
+    align-self: stretch;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
   .marketing .trust-grid {
     grid-template-columns: 1fr;
   }
