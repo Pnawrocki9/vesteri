@@ -4,10 +4,18 @@ export const routing = defineRouting({
   locales: ['pl', 'en'],
   defaultLocale: 'pl',
   localePrefix: 'always',
+  // hreflang is emitted by page metadata (lib/metadata.ts). next-intl's own
+  // `Link:` header would advertise the unprefixed URLs as x-default, which
+  // contradicts the metadata now that x-default is the Polish URL.
+  alternateLinks: false,
   pathnames: {
     '/': '/',
     '/sellers': { en: '/sellers', pl: '/sprzedajacy' },
     '/agents': { en: '/agents', pl: '/dla-agentow' },
+    '/how-it-works': {
+      pl: '/jak-dziala-vesteri-collective',
+      en: '/how-vesteri-collective-works',
+    },
     '/collective-rules': {
       pl: '/regulamin-vesteri-collective',
       en: '/vesteri-collective-rules',

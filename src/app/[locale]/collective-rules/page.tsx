@@ -9,14 +9,15 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal' });
+  const title = t('meta.collective-rulesTitle');
   return {
-    title: `VESTERI — ${t('collective-rules')}`,
+    title,
     description: t('meta.collective-rules'),
     alternates: localeAlternates('/collective-rules', locale),
     ...socialMetadata({
       href: '/collective-rules',
       locale,
-      title: `VESTERI — ${t('collective-rules')}`,
+      title,
       description: t('meta.collective-rules'),
     }),
   };

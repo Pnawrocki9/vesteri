@@ -3,28 +3,16 @@ import { getPathname } from '@/i18n/navigation';
 import { routing, type StaticPathname, type AppLocale } from '@/i18n/routing';
 import { SITE_URL } from '@/lib/site';
 
-// The language-neutral URL for a page: its default-locale path without the
-// locale prefix (`/o-nas`, `/regulamin`, and `/` for the home page). Those
-// paths are not dead ends — middleware answers them by negotiating from
-// Accept-Language, so /o-nas leads an English visitor to /en/about-us.
+// x-default for a page: the absolute URL of its default-locale (Polish)
+// version, e.g. https://www.vesteri.com/pl/dla-agentow.
 //
-// This is what x-default is for, and it is already what next-intl advertises
-// in the `Link:` response header. Pointing x-default at the Polish version
-// instead, as this did, told the two transports different things.
-export function neutralPathname(href: StaticPathname) {
-  const prefixed = getPathname({ locale: routing.defaultLocale, href });
-  return prefixed.replace(new RegExp(`^/${routing.defaultLocale}`), '') || '/';
-}
-
-// Absolute, and matching how Next writes it. Next resolves every alternate
-// through `new URL()`, which renders the site root as "https://www.vesteri.com"
-// with no trailing slash — there is no way to make it emit one. So the root
-// case drops the slash here too, and the sitemap spells the URL exactly as the
-// pages do. (next-intl's own `Link:` header still writes the root as "/", the
-// same URL in the other spelling; that header is not ours to format.)
+// It used to be the unprefixed path (/dla-agentow, and the bare root), which
+// middleware answered with a 307 to a negotiated locale. A redirecting,
+// non-canonical URL is a poor hreflang target, so x-default names the Polish
+// page directly. This does not depend on how `/` redirects: the root keeps
+// its 307 Accept-Language negotiation, and x-default for home is /pl.
 export function neutralUrl(href: StaticPathname) {
-  const path = neutralPathname(href);
-  return path === '/' ? SITE_URL : `${SITE_URL}${path}`;
+  return `${SITE_URL}${getPathname({ locale: routing.defaultLocale, href })}`;
 }
 
 // hreflang alternates for a page: one entry per locale plus x-default
@@ -45,6 +33,11 @@ export function localeAlternates(
   };
 }
 
+const OG_IMAGE_ALT = {
+  pl: 'Vesteri Collective – sieć agentów nieruchomości',
+  en: 'Vesteri Collective – real estate agent network',
+} as const;
+
 export const OG_LOCALE = { pl: 'pl_PL', en: 'en_GB' } as const;
 
 // One share image for the whole site, composed from the brand assets in
@@ -54,7 +47,6 @@ const OG_IMAGE = {
   url: '/og/vesteri-og.png',
   width: 1200,
   height: 630,
-  alt: 'VESTERI',
 } as const;
 
 // Open Graph and Twitter tags for a page.
@@ -80,11 +72,16 @@ export function socialMetadata({
       title,
       description,
       type: 'website',
-      siteName: 'VESTERI',
+      siteName: 'Vesteri Collective',
       url: getPathname({ locale: locale as AppLocale, href }),
       locale: current,
       alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== current),
-      images: [OG_IMAGE],
+      images: [
+        {
+          ...OG_IMAGE,
+          alt: OG_IMAGE_ALT[locale as keyof typeof OG_IMAGE_ALT] ?? OG_IMAGE_ALT.en,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',

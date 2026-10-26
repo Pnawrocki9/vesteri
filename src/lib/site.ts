@@ -2,6 +2,10 @@
 export const CONTACT_EMAIL = 'contact@vesteri.com';
 // Partner enquiries land in their own inbox, separate from general contact.
 export const PARTNERS_EMAIL = 'partners@vesteri.com';
+// Collective membership and rules matters (Collective Rules § 1.1 and § 8.1).
+export const COLLECTIVE_EMAIL = 'collective@vesteri.com';
+// Official company profile, used as schema.org sameAs.
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/vesteri-collective';
 // Self-serve panel where agents add their own listings. Temporary host on the
 // Estalara domain (confirmed 2026-10); swap once a vesteri.com alias exists.
 export const AGENT_PANEL_URL = 'https://vesteri.estalara.com';

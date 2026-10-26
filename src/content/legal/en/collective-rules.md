@@ -6,7 +6,7 @@ Version 1.0 · Effective from: 22 October 2026 · Operator: Time2Show, Inc.
 
 ## **§ 1. General provisions**
 
-1\. Vesteri Collective (the "Collective") is a selective network of independent real estate agents and agencies operated by Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, trading as Vesteri ("Vesteri"). Contact for Collective matters: \[collective@vesteri.com\].
+1\. Vesteri Collective (the "Collective") is a selective network of independent real estate agents and agencies operated by Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, trading as Vesteri ("Vesteri"). Contact for Collective matters: collective@vesteri.com.
 
 2\. These Rules set out the terms of membership in the Collective and the rules of cooperation between Members. Use of the Vesteri system available at vesteri.estalara.com (the "System"), including the Marketplace, is governed by the separate Platform Terms. In matters of membership and cooperation between Members, these Rules prevail.
 
@@ -88,7 +88,7 @@ Every Member undertakes to observe the following principles:
 
 1\. Vesteri makes selected international developments available to Members, in which Vesteri or its partner acts as Listing Agent under agreements with developers.
 
-2\. A Member who sources a buyer for such a development receives the larger share of the commission payable by the developer – not less than \[60%\] – on the terms stated in the listing card in the System or agreed individually before the first presentation.
+2\. A Member who sources a buyer for such a development receives the larger share of the commission payable by the developer – not less than 60% – on the terms stated in the listing card in the System or agreed individually before the first presentation.
 
 3\. Vesteri organises LIVE presentations, webinars and contact with the developer and supports the purchase process to the extent stated in the listing card. Vesteri is not responsible for the legal or technical condition of the development or for its completion by the developer. The Member informs the buyer of the need for independent legal review before purchase.
 
@@ -112,7 +112,7 @@ Every Member undertakes to observe the following principles:
 
 ## **§ 8. Breaches, suspension and exclusion**
 
-1\. A breach of these Rules may be reported to Vesteri at \[collective@vesteri.com\] with a description and evidence. Vesteri may also open proceedings on its own initiative.
+1\. A breach of these Rules may be reported to Vesteri at collective@vesteri.com with a description and evidence. Vesteri may also open proceedings on its own initiative.
 
 2\. Procedure: Vesteri presents the allegations to the Member; the Member has 7 days to respond; Vesteri issues a reasoned decision within 14 days of receiving the response or of the deadline passing.
 
@@ -122,7 +122,7 @@ Every Member undertakes to observe the following principles:
 
 5\. Where a Member’s continued activity threatens harm to buyers or the network, Vesteri may suspend the Member with immediate effect for the duration of the proceedings.
 
-6\. A decision may be appealed within 14 days to the \[Board of Time2Show, Inc.\], which decides within 30 days. The appeal decision is final within the Collective and does not exclude recourse to the courts.
+6\. A decision may be appealed within 14 days and is decided within 30 days. While the Collective has no more than 100 Members, appeals are decided by the Board of Directors of Time2Show, Inc. Once the Collective exceeds 100 Members, a Collective Committee is appointed and takes over deciding appeals. The appeal decision is final within the Collective and does not exclude recourse to the courts.
 
 7\. Suspension or exclusion does not release a Member from settling Referrals and Joint Transactions already commenced.
 
@@ -154,6 +154,6 @@ Every Member undertakes to observe the following principles:
 
 3\. These Rules are governed by Polish law. The competent court is the common court with jurisdiction over the Capital City of Warsaw.
 
-4\. These Rules are drawn up in Polish and English. In the event of discrepancies, the \[Polish\] version prevails.
+4\. These Rules are drawn up in Polish and English. In the event of discrepancies, the Polish version prevails.
 
 5\. A Member accepts these Rules by ticking the relevant box in the application. The membership agreement is concluded upon Vesteri’s approval of the application.
