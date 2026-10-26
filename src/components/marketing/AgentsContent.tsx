@@ -3,7 +3,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
-import { ExtraFaq, ExtraSections } from './MarketingExtras';
+import { CareerGuideLink, CommissionSummary } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -92,9 +92,9 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <div className="ed-foot">{t('agents17')}</div>
             </div>
           </div>
-          <div className="copy">
+          <div className="copy" id="praca-agenta">
             <span className="eyebrow light">{t('agents18')}</span>
-            <h2>{t('agents19')}</h2>
+            <h2 id="siec-zamiast-franczyzy">{t('agents19')}</h2>
             <p className="lead">{t('agents20')}</p>
             <div className="point">
               <span className="icon">{t('agents21')}</span>
@@ -162,6 +162,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <small>{t('membership16')}</small>
               </div>
             </div>
+            <CareerGuideLink locale={locale} />
             <p className="note">{t('membership17')}</p>
           </div>
         </section>
@@ -170,7 +171,12 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             <div className="network-head">
               <span className="eyebrow">{t('how01')}</span>
               <h2>{t('how02')}</h2>
-              <p className="lead">{t('how03')}</p>
+              <p
+                className="lead"
+                id={locale === 'en' ? 'podzial-prowizji' : undefined}
+              >
+                {t('how03')}
+              </p>
             </div>
             <div className="network-flow">
               <div className="node">
@@ -192,6 +198,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               </div>
             </div>
             <p className="network-tag">{t('how15')}</p>
+            <CommissionSummary locale={locale} />
           </div>
         </section>
         <section className="section tech" id="technology">
@@ -250,7 +257,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
         </section>
         <section className="section broker" id="about">
           <div className="wrap broker-layout">
-            <div>
+            <div id="portfel-zagraniczny">
               <span className="eyebrow">{t('about01')}</span>
               <h2>{t('about02')}</h2>
               <p className="lead">{t('about03')}</p>
@@ -308,7 +315,6 @@ export default async function AgentsContent({ locale }: { locale: string }) {
           </div>
           <div className="wrap"></div>
         </section>
-        <ExtraSections locale={locale} audience="agents" />
         <section aria-labelledby="faqTitle" className="section faq" id="faq">
           <div className="wrap">
             <div className="faq-intro">
@@ -365,7 +371,6 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <summary>{t('faq25')}</summary>
                 <p>{t('faq26')}</p>
               </details>
-              <ExtraFaq locale={locale} audience="agents" />
             </div>
           </div>
         </section>

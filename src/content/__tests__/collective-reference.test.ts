@@ -51,6 +51,58 @@ const T1_H1: Record<string, Record<string, [string, string]>> = {
     "Zyskaj siłę współpracy.": ["top04", "na własnych zasadach"],
   },
 };
+// Owner-approved integration of Polish SEO copy into existing sections.
+const INTEGRATED_PL_COPY = [
+  {
+    role: "buyers",
+    key: "buyers03",
+    previousStart:
+      "Nie musisz ograniczać się do ofert jednej agencji. Twój agent moż",
+  },
+  {
+    role: "buyers",
+    key: "faq10",
+    previousStart:
+      "Tak, jeśli agent podejmie się prowadzenia Twoich poszukiwań. Może",
+  },
+  {
+    role: "sellers",
+    key: "how-it-works03",
+    previousStart:
+      "W tradycyjnym modelu podpisujesz umowę z jednym biurem i liczysz,",
+  },
+  {
+    role: "sellers",
+    key: "terms03",
+    previousStart:
+      "Umowa na wyłączność może uporządkować odpowiedzialność jednego ag",
+  },
+  {
+    role: "agents",
+    key: "agents20",
+    previousStart:
+      "Dołącz do sieci niezależnych agentów. Pokazuj swoje oferty, docie",
+  },
+  {
+    role: "agents",
+    key: "how03",
+    previousStart:
+      "Jeśli nie masz odpowiedniej nieruchomości, możesz sprawdzić ofert",
+  },
+  {
+    role: "agents",
+    key: "about03",
+    previousStart:
+      "Vesteri współpracuje z deweloperami zagranicznymi. Na wybranych r",
+  },
+  {
+    role: "agents",
+    key: "faq06",
+    previousStart:
+      "Zgłaszać się mogą niezależni agenci i biura nieruchomości. Vester",
+  },
+];
+
 const flatten = (value: unknown): string[] =>
   typeof value === "string"
     ? [value]
@@ -128,6 +180,24 @@ describe("V10.7 authoritative bilingual content and routes", () => {
                 >
               )[role.id][key],
             ).toBe(expected);
+          } else if (
+            locale === "pl" &&
+            INTEGRATED_PL_COPY.some(
+              (change) =>
+                change.role === role.id &&
+                text.startsWith(change.previousStart),
+            )
+          ) {
+            const change = INTEGRATED_PL_COPY.find(
+              (change) =>
+                change.role === role.id &&
+                text.startsWith(change.previousStart),
+            )!;
+            const updated = (content as unknown as Record<string, string>)[
+              change.key
+            ];
+            expect(updated.length).toBeGreaterThan(60);
+            expect(normalize(updated)).not.toBe(text);
           } else if (text && !text.startsWith("<!--"))
             expect(values).toContain(text);
         }

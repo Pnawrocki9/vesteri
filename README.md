@@ -74,6 +74,14 @@ corresponding DOCX files, synchronized with the current online text in both
 languages. Downloads are stored under `public/docs/collective/v1.0/`. Markdown content lives in
 `src/content/legal/{pl,en}/collective-rules.md` and uses the existing legal generator.
 
+## Integrated marketing and SEO copy
+
+Polish marketing SEO copy is integrated into the existing buyer, seller and
+agent sections. `MarketingExtras` provides compact related-guide cards and an
+agent commission summary; detailed explanations remain on the existing guides
+and Collective how-it-works page. Keep audience-specific copy concise, retain
+the established anchors, and update visible FAQ and its JSON-LD together.
+
 ## Cookie preferences and analytics
 
 The shared locale layout initializes Google consent as denied. Google Analytics

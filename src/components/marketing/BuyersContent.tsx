@@ -2,7 +2,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
-import { ExtraFaq, ExtraSections } from './MarketingExtras';
+import { RelatedGuides } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 import PropertyCard from './PropertyCard';
@@ -141,7 +141,9 @@ export default async function BuyersContent({ locale }: { locale: string }) {
           <div className="copy">
             <span className="eyebrow">{t('buyers01')}</span>
             <h2>{t('buyers02')}</h2>
-            <p className="lead">{t('buyers03')}</p>
+            <p className="lead" id="czym-zajmuje-sie-agent">
+              {t('buyers03')}
+            </p>
             <div className="point">
               <span className="icon">{t('buyers04')}</span>
               {t('buyers05')}
@@ -196,9 +198,7 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 </div>
               </div>
               <div className="ed-rule"></div>
-              <div className="matching-label">
-                {t('buyers24')}
-              </div>
+              <div className="matching-label">{t('buyers24')}</div>
               <div className="editorial-stack">
                 <div className="offer-chip">
                   <span className="chip-number">{t('buyers26')}</span>
@@ -240,7 +240,6 @@ export default async function BuyersContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
-        <ExtraSections locale={locale} audience="buyers" />
         <section aria-labelledby="faqTitle" className="section faq" id="faq">
           <div className="wrap">
             <div className="faq-intro">
@@ -281,10 +280,10 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 <summary>{t('faq17')}</summary>
                 <p>{t('faq18')}</p>
               </details>
-              <ExtraFaq locale={locale} audience="buyers" />
             </div>
           </div>
         </section>
+        <RelatedGuides locale={locale} audience="buyers" />
         <section className="v10-agents-teaser">
           <div className="wrap v10-agents-row">
             <div>

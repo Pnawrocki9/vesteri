@@ -1,0 +1,123 @@
+/* Contextual Polish content reuses the V10.7 palette and typography. */
+.marketing .related-guides {
+  padding: 64px 0;
+  background: var(--ivory);
+}
+.marketing .related-guides h2 {
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.25;
+  margin: 14px 0 28px;
+}
+.marketing .related-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.marketing .related-guides-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.marketing .related-guides article {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.marketing .related-guides h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+  margin: 0 0 12px;
+}
+.marketing .related-guides article p {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--gray);
+  margin: 0 0 20px;
+}
+.marketing .related-guides a,
+.marketing .support-link,
+.marketing .career-guide a {
+  color: #1c7d76;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.marketing .related-guides a {
+  align-self: flex-start;
+}
+.marketing .commission-summary {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.marketing .commission-summary > h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.marketing .commission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.marketing .commission-grid article {
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--white);
+}
+.marketing .commission-grid h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.marketing .commission-grid p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.marketing .commission-grid strong {
+  font-size: 20px;
+  color: #1c7d76;
+}
+.marketing .commission-summary .commission-basis {
+  max-width: 76ch;
+  margin: 20px 0 14px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--gray);
+}
+.marketing .career-guide {
+  margin: 24px 0 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.marketing
+  :is(
+    #czym-zajmuje-sie-agent,
+    #sprzedaz-przez-posrednika,
+    #praca-agenta,
+    #siec-zamiast-franczyzy,
+    #podzial-prowizji,
+    #portfel-zagraniczny
+  ) {
+  scroll-margin-top: 28px;
+}
+@media (max-width: 900px) {
+  .marketing .related-guides-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 680px) {
+  .marketing .related-guides {
+    padding: 44px 0;
+  }
+  .marketing .commission-grid {
+    grid-template-columns: 1fr;
+  }
+}

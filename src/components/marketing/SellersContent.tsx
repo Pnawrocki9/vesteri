@@ -1,7 +1,11 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
 import { getTranslations } from 'next-intl/server';
 import { MARKETPLACE_URL } from '@/lib/site';
-import { ExtraFaq, ExtraSections } from './MarketingExtras';
+import {
+  ExtraFaq,
+  RelatedGuides,
+  SellerInsurancePoint,
+} from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -51,7 +55,9 @@ export default async function SellersContent({ locale }: { locale: string }) {
             <div>
               <span className="seller-kicker">{t('how-it-works01')}</span>
               <h2 className="seller-title">{t('how-it-works02')}</h2>
-              <p className="seller-lead">{t('how-it-works03')}</p>
+              <p className="seller-lead" id="sprzedaz-przez-posrednika">
+                {t('how-it-works03')}
+              </p>
             </div>
             <div className="seller-signature">
               <span className="over">{t('how-it-works04')}</span>
@@ -142,10 +148,10 @@ export default async function SellersContent({ locale }: { locale: string }) {
               <li>{t('terms04')}</li>
               <li>{t('terms05')}</li>
               <li>{t('terms06')}</li>
+              <SellerInsurancePoint locale={locale} />
             </ul>
           </div>
         </section>
-        <ExtraSections locale={locale} audience="sellers" />
         <section
           aria-labelledby="sellerFaqTitle"
           className="section faq seller-faq"
@@ -190,6 +196,7 @@ export default async function SellersContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
+        <RelatedGuides locale={locale} audience="sellers" />
         <section className="seller-cta">
           <div className="wrap">
             <span className="seller-kicker">{t('main01')}</span>
