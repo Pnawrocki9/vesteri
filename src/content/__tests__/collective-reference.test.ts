@@ -91,6 +91,19 @@ describe('V10.7 authoritative bilingual content and routes', () => {
                 ? 'Sieć agentów nieruchomości w Polsce i za granicą'
                 : 'Real estate agent network, locally and abroad',
             );
+          } else if (
+            role.id === 'agents' &&
+            text ===
+              (locale === 'pl'
+                ? 'Twoja marka. Twoje zasady. Nasza wspólna siła.'
+                : 'Your brand. Your terms. Our collective strength.')
+          ) {
+            // The owner replaced individual terms with shared rules.
+            expect(messages.marketing.agents.main18).toBe(
+              locale === 'pl'
+                ? 'Twoja marka. Wspólne zasady. Nasza wspólna siła.'
+                : 'Your brand. Shared rules. Our collective strength.',
+            );
           } else if (text && !text.startsWith('<!--'))
             expect(values).toContain(text);
         }

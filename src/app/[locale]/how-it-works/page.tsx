@@ -12,6 +12,7 @@ import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '@/lib/jsonld';
 import { localeAlternates, socialMetadata } from '@/lib/metadata';
 import { MARKETPLACE_URL } from '@/lib/site';
 import '@/components/marketing/legal.css';
+import '@/components/marketing/how-it-works.css';
 
 type Props = { params: Promise<{ locale: string }> };
 const HREF = '/how-it-works' as const;
@@ -41,8 +42,20 @@ export default async function Page({ params }: Props) {
     locale,
     namespace: 'marketing.agents',
   });
+  const contents = (
+    <ol>
+      {c.sections.map(({ id, title }) => (
+        <li key={id}>
+          <a href={`#${id}`}>{title}</a>
+        </li>
+      ))}
+      <li>
+        <a href="#faq">{c.faqTitle}</a>
+      </li>
+    </ol>
+  );
   return (
-    <MarketingShell className="marketing-legal">
+    <MarketingShell className="marketing-legal marketing-how-it-works">
       <JsonLd
         nodes={[
           webPageJsonLd({
@@ -57,27 +70,58 @@ export default async function Page({ params }: Props) {
           faqPageJsonLd({ href: HREF, locale, items: c.faq }),
         ]}
       />
+      <a className="skip" href="#main">
+        {c.skipLabel}
+      </a>
       <MarketingHeader page={HREF} labels={marketing.raw('header')} />
       <main id="main">
-        <section className="legal-hero" aria-labelledby="how-title">
+        <section className="legal-hero how-hero" aria-labelledby="how-title">
           <div className="wrap">
             <p className="eyebrow light">{c.eyebrow}</p>
             <h1 id="how-title">{c.h1}</h1>
             <p className="legal-subtitle">{c.lead}</p>
-            <div className="hero-actions">
-              <Link className="btn btn-cream" href="/agents">
+            <div className="how-actions">
+              <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {c.ctaApply}
-              </Link>
+              </a>
               <a className="btn btn-outline" href={MARKETPLACE_URL}>
                 {c.ctaBrowse}
               </a>
             </div>
           </div>
         </section>
-        <div className="wrap legal-layout">
-          <article className="legal-document" aria-labelledby="how-title">
-            <MarkdownBody variant="marketing">{c.body}</MarkdownBody>
-            <section aria-labelledby="how-faq" className="faq" id="faq">
+        <div className="wrap how-layout">
+          <aside className="how-navigation">
+            <nav
+              className="how-desktop-contents"
+              aria-labelledby="how-contents"
+            >
+              <h2 id="how-contents" className="eyebrow">
+                {c.contentsTitle}
+              </h2>
+              {contents}
+            </nav>
+            <details className="how-mobile-contents">
+              <summary>{c.contentsTitle}</summary>
+              <nav aria-label={c.contentsTitle}>{contents}</nav>
+            </details>
+          </aside>
+          <article
+            className="legal-document how-document"
+            aria-labelledby="how-title"
+          >
+            {c.sections.map(({ id, title, body }) => (
+              <section
+                className="how-section"
+                key={id}
+                id={id}
+                aria-labelledby={`how-${id}`}
+              >
+                <h2 id={`how-${id}`}>{title}</h2>
+                <MarkdownBody variant="marketing">{body}</MarkdownBody>
+              </section>
+            ))}
+            <section aria-labelledby="how-faq" className="how-faq" id="faq">
               <h2 id="how-faq">{c.faqTitle}</h2>
               {c.faq.map(({ q, a }) => (
                 <details key={q}>
@@ -86,10 +130,13 @@ export default async function Page({ params }: Props) {
                 </details>
               ))}
             </section>
-            <p className="legal-subtitle">
-              {c.rulesNote}{' '}
-              <Link href="/collective-rules">{c.rulesLink}</Link>.
-            </p>
+            <aside className="how-rules">
+              <p>{c.rulesNote}</p>
+              <Link className="btn btn-primary" href="/collective-rules">
+                {c.rulesLink}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </aside>
           </article>
         </div>
       </main>
