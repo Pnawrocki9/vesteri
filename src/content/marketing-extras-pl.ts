@@ -25,7 +25,9 @@ W Vesteri Collective agent nie jest ograniczony do ofert własnego biura. Jeśli
 
 Każdy członek Collective przechodzi weryfikację i przyjmuje zasady Fair Play & Trust. Szczegóły: [Jak działa Vesteri Collective](/pl/jak-dziala-vesteri-collective).
 
-[Przeglądaj oferty](${MARKETPLACE_URL}) · [Sprzedaj z agentem sieci](/pl/sprzedajacy) · [Jak zostać agentem nieruchomości](/pl/poradnik/jak-zostac-agentem-nieruchomosci) · [Kupno mieszkania z agentem](/pl/poradnik/kupno-mieszkania-z-agentem)`,
+[Przeglądaj oferty](${MARKETPLACE_URL}) · [Sprzedaj z agentem sieci](/pl/sprzedajacy) · [Jak zostać agentem nieruchomości](/pl/poradnik/jak-zostac-agentem-nieruchomosci) · [Kupno mieszkania z agentem](/pl/poradnik/kupno-mieszkania-z-agentem)
+
+Poradniki dla kupujących: [Kupno mieszkania z agentem](/pl/poradnik/kupno-mieszkania-z-agentem) · [Prowizja agenta nieruchomości](/pl/poradnik/prowizja-agenta-nieruchomosci) · [Nieruchomości za granicą](/pl/nieruchomosci-za-granica) · [Agent nieruchomości Kraków](/pl/agent-nieruchomosci/krakow)`,
       },
     ],
     faq: [
