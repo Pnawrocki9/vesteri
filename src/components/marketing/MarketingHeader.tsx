@@ -11,9 +11,12 @@ export default function MarketingHeader({
   audience,
   labels,
   page,
+  plOnly = false,
 }: {
   audience?: 'buyers' | 'sellers' | 'agents';
   page?: StaticPathname;
+  // Page exists in Polish only: the EN switch goes to the EN homepage.
+  plOnly?: boolean;
   labels: Labels;
 }) {
   const locale = useLocale();
@@ -70,7 +73,11 @@ export default function MarketingHeader({
     <Link
       key={language}
       className={mobile ? undefined : 'lang'}
-      href={{ pathname: currentPage, hash }}
+      href={
+        plOnly && language !== 'pl'
+          ? '/'
+          : { pathname: currentPage, hash }
+      }
       locale={language}
       hrefLang={language}
       lang={language}

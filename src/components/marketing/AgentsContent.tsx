@@ -3,6 +3,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
+import { ExtraFaq, ExtraSections } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -307,6 +308,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
           </div>
           <div className="wrap"></div>
         </section>
+        <ExtraSections locale={locale} audience="agents" />
         <section aria-labelledby="faqTitle" className="section faq" id="faq">
           <div className="wrap">
             <div className="faq-intro">
@@ -363,6 +365,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <summary>{t('faq25')}</summary>
                 <p>{t('faq26')}</p>
               </details>
+              <ExtraFaq locale={locale} audience="agents" />
             </div>
             <p className="faq-sub">{t('faq27')}</p>
           </div>
