@@ -216,14 +216,25 @@ const englishLegal: Record<string, string> = {
   ai: 'ai-notice',
   disclaimers: 'disclaimers',
 };
-// Exact (locale-prefixed) URLs that leave the 410 policy with a 301.
+// Exact (locale-prefixed) URLs served as 301 by next.config.ts.
 // next.config.ts redirects() serves these first; middleware mirrors them.
 export const LEGACY_PERMANENT: Record<string, string> = {
   '/pl/poradnik/cypr-polnocny-a-republika-cypru': '/pl',
 };
+const AGENT_TOPICS = [
+  'developers',
+  'for-developers',
+  'dla-deweloperow',
+  'para-promotores',
+  'fuer-bautraeger',
+  'siec-posrednikow',
+  'broker-networks',
+  'redes-de-intermediarios',
+  'maklernetzwerke',
+];
 export type LegacyResult =
   | { kind: 'redirect'; target: string; status?: 301 }
-  | { kind: 'gone' | 'unknown'; locale: 'en' | 'pl' };
+  | { kind: 'unknown'; locale: 'en' | 'pl' };
 export function resolveLegacyPath(pathname: string): LegacyResult | null {
   const permanent = LEGACY_PERMANENT[pathname.replace(/\/+$/, '')];
   if (permanent) return { kind: 'redirect', target: permanent, status: 301 };
@@ -247,7 +258,17 @@ export function resolveLegacyPath(pathname: string): LegacyResult | null {
         return { kind: 'redirect', target: '/en/' + englishLegal[slug] };
   }
   const legacy = legacyMarketing[path];
-  if (legacy === 'gone') return { kind: 'gone', locale };
+  // Retired content: 301 to the closest live equivalent (was 410).
+  // Developer and broker-network pages -> agents page; the rest -> home.
+  if (legacy === 'gone') {
+    const agents = AGENT_TOPICS.includes(path.split('/').pop() ?? '');
+    const target = agents
+      ? locale === 'pl'
+        ? '/pl/dla-agentow'
+        : '/en/agents'
+      : '/' + locale;
+    return { kind: 'redirect', target, status: 301 };
+  }
   if (legacy === 'platform')
     return { kind: 'redirect', target: 'https://vesteri.estalara.com' };
   if (legacy === '/#about')

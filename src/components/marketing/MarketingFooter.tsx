@@ -68,7 +68,10 @@ export default async function MarketingFooter({
           </div>
         </div>
         <div className="footer-bottom">
-          <span>{t('copyright')}</span>
+          <span>
+            {t('copyright')}{' '}
+            <a href="https://www.estalara.com">{t('technologyBy')}</a>
+          </span>
           <div className="footer-rules">
             <h4>{t('collectiveRules')}</h4>
             <Link href="/collective-rules">{t('terms')}</Link>
