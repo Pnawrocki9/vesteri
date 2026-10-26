@@ -110,7 +110,7 @@ export default async function GuidePage({
                 <a
                   key={c.href}
                   className={i === 0 ? 'btn btn-cream' : 'btn btn-outline'}
-                  href={c.href.startsWith('http') ? c.href : `/pl${c.href === '/' ? '' : localPath(c.href)}`}
+                  href={c.href.startsWith('http') || c.href.startsWith('#') ? c.href : `/pl${c.href === '/' ? '' : localPath(c.href)}`}
                 >
                   {c.label}
                 </a>

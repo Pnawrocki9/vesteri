@@ -69,10 +69,14 @@ describe('two-language migration policy', () => {
       status: 301,
     });
   });
-  it('sends the retired Polish Cyprus guide to /pl with a 301', () => {
+  it('sends the retired Polish Cyprus guide to the Cyprus page with a 301', () => {
     expect(
       resolveLegacyPath('/pl/poradnik/cypr-polnocny-a-republika-cypru'),
-    ).toEqual({ kind: 'redirect', target: '/pl', status: 301 });
+    ).toEqual({
+      kind: 'redirect',
+      target: '/pl/nieruchomosci-za-granica/cypr',
+      status: 301,
+    });
     // Other variants of that guide 301 to their locale home.
     expect(
       resolveLegacyPath('/poradnik/cypr-polnocny-a-republika-cypru'),

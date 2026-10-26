@@ -36,6 +36,12 @@ export const routing = defineRouting({
       '/poradnik/prowizja-agenta-nieruchomosci',
     '/poradnik/jak-zostac-agentem-nieruchomosci':
       '/poradnik/jak-zostac-agentem-nieruchomosci',
+    // Polish-only SEO pages (plan v5.1 P4). The EN path exists only because
+    // next-intl needs one per locale; those pages answer 404.
+    '/nieruchomosci-za-granica': '/nieruchomosci-za-granica',
+    '/nieruchomosci-za-granica/hiszpania': '/nieruchomosci-za-granica/hiszpania',
+    '/nieruchomosci-za-granica/cypr': '/nieruchomosci-za-granica/cypr',
+    '/nieruchomosci-za-granica/zea': '/nieruchomosci-za-granica/zea',
     '/affiliate': '/affiliate',
     '/affiliate/register': '/affiliate/register',
     '/affiliate/login': '/affiliate/login',

@@ -62,7 +62,7 @@ export default async function MarketingFooter({
           <div className="footer-company">
             <h4>{t('headOffice')}</h4>
             <address>{t('address')}</address>
-            <h4 className="footer-contact-heading">{t('contact')}</h4>
+            <h4 id="kontakt" className="footer-contact-heading">{t('contact')}</h4>
             <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             <a href={`tel:${CONTACT_PHONE_TEL}`}>{CONTACT_PHONE_DISPLAY}</a>
           </div>
