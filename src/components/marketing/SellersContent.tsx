@@ -1,6 +1,7 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
 import { getTranslations } from 'next-intl/server';
 import { MARKETPLACE_URL } from '@/lib/site';
+import { ExtraFaq, ExtraSections } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -144,6 +145,7 @@ export default async function SellersContent({ locale }: { locale: string }) {
             </ul>
           </div>
         </section>
+        <ExtraSections locale={locale} audience="sellers" />
         <section
           aria-labelledby="sellerFaqTitle"
           className="section faq seller-faq"
@@ -184,6 +186,7 @@ export default async function SellersContent({ locale }: { locale: string }) {
                 <summary>{t('faq15')}</summary>
                 <p>{t('faq16')}</p>
               </details>
+              <ExtraFaq locale={locale} audience="sellers" />
             </div>
           </div>
         </section>

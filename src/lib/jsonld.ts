@@ -188,3 +188,42 @@ export function jsonLdScript(...nodes: object[]) {
     '\\u003c',
   );
 }
+
+// Article node for a Poradnik guide. The author is the editorial team as an
+// Organization (no invented person); publisher is the site Organization.
+export function articleJsonLd({
+  href,
+  locale,
+  headline,
+  description,
+  datePublished,
+  dateModified,
+}: {
+  href: StaticPathname;
+  locale: Locale;
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+}) {
+  const url = `${SITE_URL}${getPathname({ locale, href })}`;
+  return {
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    url,
+    headline,
+    description,
+    inLanguage: locale,
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    author: {
+      '@type': 'Organization',
+      name: 'Zespół Vesteri Collective',
+      url: SITE_URL,
+    },
+    publisher: { '@id': ORGANIZATION_ID },
+    image: `${SITE_URL}/og/vesteri-og.png`,
+    mainEntityOfPage: { '@id': `${url}#webpage` },
+    isPartOf: { '@id': WEBSITE_ID },
+  };
+}

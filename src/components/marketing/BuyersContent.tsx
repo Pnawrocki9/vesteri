@@ -2,6 +2,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
+import { ExtraFaq, ExtraSections } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 import PropertyCard from './PropertyCard';
@@ -239,6 +240,7 @@ export default async function BuyersContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
+        <ExtraSections locale={locale} audience="buyers" />
         <section aria-labelledby="faqTitle" className="section faq" id="faq">
           <div className="wrap">
             <div className="faq-intro">
@@ -279,6 +281,7 @@ export default async function BuyersContent({ locale }: { locale: string }) {
                 <summary>{t('faq17')}</summary>
                 <p>{t('faq18')}</p>
               </details>
+              <ExtraFaq locale={locale} audience="buyers" />
             </div>
           </div>
         </section>

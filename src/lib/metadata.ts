@@ -33,6 +33,19 @@ export function localeAlternates(
   };
 }
 
+// Alternates for a page that exists in Polish only: canonical plus a single
+// pl hreflang and x-default, both pointing at the Polish URL. No EN alternate,
+// because there is no English version to point at.
+export function polishOnlyAlternates(
+  href: StaticPathname,
+): Metadata['alternates'] {
+  const pl = getPathname({ locale: 'pl', href });
+  return {
+    canonical: pl,
+    languages: { pl, 'x-default': neutralUrl(href) },
+  };
+}
+
 const OG_IMAGE_ALT = {
   pl: 'Vesteri Collective – sieć agentów nieruchomości',
   en: 'Vesteri Collective – real estate agent network',

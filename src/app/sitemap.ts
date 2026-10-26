@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { routing, type StaticPathname } from '@/i18n/routing';
+import { guidePaths } from '@/content/guides-pl';
 import { neutralUrl } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
 
@@ -22,6 +23,18 @@ const PAGES: StaticPathname[] = [
   '/affiliate/privacy',
 ];
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Polish-only guides and city pages: one entry, no EN alternate.
+  const polishOnly = guidePaths.map((href) => {
+    const url = `${SITE_URL}${getPathname({ locale: 'pl', href })}`;
+    return {
+      url,
+      alternates: { languages: { pl: url, 'x-default': neutralUrl(href) } },
+    };
+  });
+  return [...localized(), ...polishOnly];
+}
+
+function localized(): MetadataRoute.Sitemap {
   return PAGES.flatMap((href) => {
     const languages = Object.fromEntries(
       routing.locales.map((locale) => [
