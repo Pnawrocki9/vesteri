@@ -677,7 +677,8 @@
       "main18": "Twoja marka. Wspólne zasady. Nasza wspólna siła.",
       "main19": "Członkostwo jest selektywne. Publikowanie ofert wymaga zatwierdzenia agenta i akceptacji zasad sieci.",
       "main20": "Przejdź do platformy ↗",
-      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace."
+      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w jednym marketplace.",
+      "membershipHowItWorks": "Zobacz, jak działa Vesteri Collective →"
     },
     "footer": {
       "discover": "Odkrywaj",
@@ -694,7 +695,8 @@
       "collectiveRules": "Zasady Vesteri Collective",
       "terms": "Regulamin Vesteri Collective",
       "legalNav": "Dokumenty prawne",
-      "copyright": "© 2026 Vesteri Collective"
+      "copyright": "© 2026 Vesteri Collective",
+      "howItWorks": "Jak działa Vesteri Collective"
     }
   }
 }

@@ -54,6 +54,7 @@ export default async function MarketingFooter({
           <div>
             <h4>{t('collective')}</h4>
             <Link href="/agents">{t('agents')}</Link>
+            <Link href="/how-it-works">{t('howItWorks')}</Link>
             <a href={MARKETPLACE_URL}>
               {t('platform').replace(' ↗', '\u00a0↗')}
             </a>

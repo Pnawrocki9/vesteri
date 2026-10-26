@@ -127,7 +127,12 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <span className="eyebrow">{t('membership01')}</span>
                 <h2>{t('membership02')}</h2>
               </div>
-              <p className="lead">{t('membership03')}</p>
+              <div>
+                <p className="lead">{t('membership03')}</p>
+                <p className="lead membership-how">
+                  <Link href="/how-it-works">{t('membershipHowItWorks')}</Link>
+                </p>
+              </div>
             </div>
             <div className="membership-grid">
               <article className="membership-card member-access">
