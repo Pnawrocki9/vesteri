@@ -8,6 +8,7 @@ import BuyersContent from './BuyersContent';
 import SellersContent from './SellersContent';
 import AgentsContent from './AgentsContent';
 import MarketingShell from './MarketingShell';
+import { extrasFor } from '@/content/marketing-extras-pl';
 
 export type Audience = 'buyers' | 'sellers' | 'agents';
 export async function marketingMetadata(
@@ -63,6 +64,7 @@ async function MarketingJsonLd({
   const items: { q: string; a: string }[] = [];
   for (let n = first; n <= last; n += 2)
     items.push({ q: t(key(n)), a: t(key(n + 1)) });
+  items.push(...extrasFor(locale, audience).faq);
   const isHome = audience === 'buyers';
   return (
     <JsonLd

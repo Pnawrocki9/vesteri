@@ -1,4 +1,5 @@
 'use client';
+import type { ComponentProps } from 'react';
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from 'react';
 import { useLocale } from 'next-intl';
@@ -76,7 +77,7 @@ export default function MarketingHeader({
       href={
         plOnly && language !== 'pl'
           ? '/'
-          : { pathname: currentPage, hash }
+          : ({ pathname: currentPage, hash } as ComponentProps<typeof Link>['href'])
       }
       locale={language}
       hrefLang={language}

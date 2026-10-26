@@ -26,6 +26,16 @@ export const routing = defineRouting({
     '/gdpr': { pl: '/rodo', en: '/gdpr' },
     '/ai': { pl: '/informacja-o-ai', en: '/ai-notice' },
     '/disclaimers': { pl: '/zastrzezenia', en: '/disclaimers' },
+    // Polish-only SEO pages (plan v5.1). The EN path exists only because
+    // next-intl needs one per locale; those pages answer 404.
+    '/agent-nieruchomosci/krakow': '/agent-nieruchomosci/krakow',
+    '/poradnik/jak-sprzedac-mieszkanie': '/poradnik/jak-sprzedac-mieszkanie',
+    '/poradnik/kupno-mieszkania-z-agentem':
+      '/poradnik/kupno-mieszkania-z-agentem',
+    '/poradnik/prowizja-agenta-nieruchomosci':
+      '/poradnik/prowizja-agenta-nieruchomosci',
+    '/poradnik/jak-zostac-agentem-nieruchomosci':
+      '/poradnik/jak-zostac-agentem-nieruchomosci',
     // Polish-only SEO pages (plan v5.1 P4). The EN path exists only because
     // next-intl needs one per locale; those pages answer 404.
     '/nieruchomosci-za-granica': '/nieruchomosci-za-granica',
