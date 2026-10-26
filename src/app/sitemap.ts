@@ -18,7 +18,6 @@ const PAGES: StaticPathname[] = [
   '/gdpr',
   '/ai',
   '/disclaimers',
-  '/affiliate',
   '/affiliate/terms',
   '/affiliate/privacy',
 ];

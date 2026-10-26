@@ -45,22 +45,41 @@ describe('two-language migration policy', () => {
       kind: 'redirect',
       target: '/pl/dla-agentow#about',
     }));
-  it('retires marketing content with no equivalent without redirecting it to the homepage', () =>
+  it('301s retired developer and broker-network pages to the agents page', () => {
     expect(resolveLegacyPath('/en/for-developers')).toEqual({
-      kind: 'gone',
-      locale: 'en',
-    }));
+      kind: 'redirect',
+      target: '/en/agents',
+      status: 301,
+    });
+    expect(resolveLegacyPath('/pl/porownania/siec-posrednikow')).toEqual({
+      kind: 'redirect',
+      target: '/pl/dla-agentow',
+      status: 301,
+    });
+  });
+  it('301s other retired content to the locale home page', () => {
+    expect(resolveLegacyPath('/pl/poradnik/vat-na-cyprze-5-czy-19')).toEqual({
+      kind: 'redirect',
+      target: '/pl',
+      status: 301,
+    });
+    expect(resolveLegacyPath('/de/ratgeber/how-we-vet-developers')).toEqual({
+      kind: 'redirect',
+      target: '/en',
+      status: 301,
+    });
+  });
   it('sends the retired Polish Cyprus guide to /pl with a 301', () => {
     expect(
       resolveLegacyPath('/pl/poradnik/cypr-polnocny-a-republika-cypru'),
     ).toEqual({ kind: 'redirect', target: '/pl', status: 301 });
-    // Every other variant of that guide stays retired (410).
+    // Other variants of that guide 301 to their locale home.
     expect(
       resolveLegacyPath('/poradnik/cypr-polnocny-a-republika-cypru'),
-    ).toEqual({ kind: 'gone', locale: 'pl' });
+    ).toEqual({ kind: 'redirect', target: '/pl', status: 301 });
     expect(
       resolveLegacyPath('/en/poradnik/cypr-polnocny-a-republika-cypru'),
-    ).toEqual({ kind: 'gone', locale: 'en' });
+    ).toEqual({ kind: 'redirect', target: '/en', status: 301 });
   });
   it('does not redirect unrelated or unknown URLs', () => {
     expect(resolveLegacyPath('/es/unrelated')).toEqual({

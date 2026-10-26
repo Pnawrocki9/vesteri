@@ -16,16 +16,11 @@ export default function middleware(request: NextRequest) {
     return NextResponse.redirect(target, legacy.status ?? 308);
   }
   const pl = legacy.locale === 'pl';
-  const gone = legacy.kind === 'gone';
-  const title = gone
-    ? pl
-      ? 'Ta strona została wycofana'
-      : 'This page has been retired'
-    : 'Page not found';
+  const title = 'Page not found';
   return new NextResponse(
     `<!doctype html><html lang="${legacy.locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>${title} — Vesteri</title></head><body><main><h1>${title}</h1><p><a href="/${legacy.locale}">${pl ? 'Przejdź do Vesteri Collective' : 'Visit Vesteri Collective'}</a></p></main></body></html>`,
     {
-      status: gone ? 410 : 404,
+      status: 404,
       headers: {
         'content-type': 'text/html; charset=utf-8',
         'x-robots-tag': 'noindex, follow',

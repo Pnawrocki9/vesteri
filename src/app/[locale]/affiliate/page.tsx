@@ -24,6 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('meta.title'),
     description: t('meta.description'),
     alternates: localeAlternates('/affiliate', locale),
+    // Kept live for partners, but out of the index and the sitemap.
+    robots: { index: false, follow: true },
     ...socialMetadata({
       href: '/affiliate',
       locale,
