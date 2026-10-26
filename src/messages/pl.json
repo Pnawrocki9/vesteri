@@ -294,7 +294,7 @@
   "marketing": {
     "buyers": {
       "meta": {
-        "title": "Vesteri Collective | Sieć agentów nieruchomości – Polska i świat",
+        "title": "Agent nieruchomości – kupno i sprzedaż z siecią | Vesteri",
         "description": "Vesteri Collective to sieć sprawdzonych, niezależnych agentów nieruchomości. Jeden agent, oferty całej sieci w Polsce i za granicą oraz prezentacje LIVE."
       },
       "header": {
@@ -308,8 +308,8 @@
       "copy01": "Przejdź do treści",
       "top01": "Contemporary premium residence",
       "top02": "Sieć agentów nieruchomości w Polsce i za granicą",
-      "top03": "Twój agent. ",
-      "top04": "Możliwości całej sieci.",
+      "top03": "Agent nieruchomości ",
+      "top04": "z możliwościami całej sieci",
       "top05": "Szukaj nieruchomości w Polsce i za granicą. Przeglądaj oferty sprawdzonych agentów i znajdź pomoc w zakupie.",
       "top06": "Przeglądaj nieruchomości ↗",
       "top07": "Dla agentów ↗",
@@ -521,7 +521,7 @@
     },
     "agents": {
       "meta": {
-        "title": "Sieć agentów nieruchomości – dołącz do Vesteri Collective",
+        "title": "Praca agenta nieruchomości: dołącz do Vesteri Collective",
         "description": "Dołącz do sieci niezależnych agentów nieruchomości. Bezpłatne zgłoszenie i publikacja ofert, współpraca z jasnym podziałem prowizji, narzędzia LIVE i AI."
       },
       "header": {
@@ -535,8 +535,8 @@
       "copy01": "Przejdź do treści",
       "top01": "Vesteri Collective",
       "top02": "VESTERI COLLECTIVE · DLA AGENTÓW",
-      "top03": "Zachowaj niezależność.",
-      "top04": "Zyskaj siłę współpracy.",
+      "top03": "Praca agenta nieruchomości",
+      "top04": "na własnych zasadach",
       "top05": "Prowadź biznes po swojemu. Publikuj oferty w Vesteri i współpracuj z innymi agentami na ustalonych zasadach.",
       "top06": "Dołącz do platformy ↗",
       "top07": "Jak działa członkostwo ↘",
