@@ -74,6 +74,19 @@ corresponding DOCX files, synchronized with the current online text in both
 languages. Downloads are stored under `public/docs/collective/v1.0/`. Markdown content lives in
 `src/content/legal/{pl,en}/collective-rules.md` and uses the existing legal generator.
 
+## Cookie preferences and analytics
+
+The shared locale layout initializes Google consent as denied. Google Analytics
+(`G-BQC3M4ED9E`) is downloaded only after analytics consent; HubSpot is downloaded
+only after marketing consent. Cloudflare Web Analytics remains cookieless.
+`CookieConsent` provides bilingual choices, independent categories and settings
+buttons in both public footer components. Preferences are stored locally for
+180 days. Withdrawal clears accessible provider cookies and reloads the page
+to unload provider code, without changing necessary account/referral cookies.
+Do not add unconditional Google or HubSpot scripts alongside this mechanism.
+When changing purposes or providers, review the preference version and the
+PL/EN cookies and privacy policies together.
+
 ## Retained Affiliate Program and infrastructure
 
 Affiliate routes, registration, authentication, account/admin dashboards, referral

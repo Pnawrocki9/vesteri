@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
+import CookieSettingsButton from '@/components/CookieSettingsButton';
 import {
   CONTACT_EMAIL,
   CONTACT_PHONE_DISPLAY,
@@ -84,6 +85,7 @@ export default async function MarketingFooter({
             {legal(slug)}
           </Link>
         ))}
+        <CookieSettingsButton />
       </nav>
     </footer>
   );

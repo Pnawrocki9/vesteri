@@ -1,6 +1,6 @@
 # POLITYKA PRYWATNOŚCI
 
-**Serwis i platforma Vesteri** · Wersja 1.2 · Obowiązuje od: 22 października 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.3 · Obowiązuje od: 26 października 2026 r.
 
 ## 1. Kto jest administratorem Twoich danych
 
@@ -46,6 +46,7 @@ Twoje dane przetwarzamy na kolejnych etapach:
 | Przekazanie kontaktu do biura prawnego | kontaktowe | art. 6 ust. 1 lit. b (na Twoje żądanie) |
 | Zaproszenia na kolejne webinary, newsletter | kontaktowe, profil | art. 6 ust. 1 lit. a (zgoda) + art. 398 PKE |
 | Personalizacja prezentowanych treści | profil preferencji | art. 6 ust. 1 lit. a (zgoda) |
+| Analityka odwiedzin Vesteri.com (Google Analytics) i pomiar interakcji marketingowych (HubSpot), wyłącznie po zgodzie na odpowiednią kategorię | identyfikatory przeglądarki, dane o urządzeniu, odwiedzanych stronach i interakcjach | art. 6 ust. 1 lit. a (zgoda) |
 | Reklama na platformach zewnętrznych | identyfikatory online | art. 6 ust. 1 lit. a (zgoda — cookies) |
 | Doskonalenie systemu dopasowań (dane zagregowane/pseudonimizowane) | statystyki kampanii | art. 6 ust. 1 lit. f (uzasadniony interes) |
 | Bezpieczeństwo, zapobieganie nadużyciom | techniczne | art. 6 ust. 1 lit. f (uzasadniony interes) |
@@ -78,9 +79,11 @@ Niezależnie od tego masz prawo: **wycofać zgodę** (przestajemy zbierać sygna
 
 Nie sprzedajemy Twoich danych.
 
+Opcjonalne narzędzia serwisu Vesteri.com obejmują Google Analytics (Google Ireland Limited / Google LLC) i HubSpot (HubSpot Ireland Limited / HubSpot, Inc.). Uruchamiamy je dopiero po zgodzie na odpowiednią kategorię w banerze. Zgodę możesz zmienić lub wycofać przez „Ustawienia cookies” w stopce. Kategorie, cookies i okresy ich działania opisuje [Polityka cookies](https://www.vesteri.com/pl/cookies).
+
 ## 8. Przekazywanie danych poza EOG
 
-Twoje dane są przechowywane i przetwarzane na serwerach zlokalizowanych w **Europejskim Obszarze Gospodarczym (EOG)**. Co do zasady nie przekazujemy danych poza EOG. Ponieważ Time2Show, Inc. jest spółką amerykańską, gdyby doszło do dostępu do danych spoza EOG lub do zmiany dostawcy wiążącej się z transferem, zastosujemy ważny mechanizm transferowy (EU-US Data Privacy Framework dla certyfikowanych odbiorców albo standardowe klauzule umowne wraz z oceną skutków transferu) i zaktualizujemy tę Politykę. Kopię zabezpieczeń otrzymasz, pisząc na adres z pkt 1. Platformy reklamowe wymienione w Polityce cookies mogą przekazywać dane w ramach własnych mechanizmów jako niezależni administratorzy.
+Co do zasady dane usług Vesteri są przechowywane i przetwarzane w **Europejskim Obszarze Gospodarczym (EOG)**. Wyjątkiem mogą być opcjonalne narzędzia Google Analytics i HubSpot, uruchamiane po Twojej zgodzie: ich dostawcy mogą przetwarzać dane również poza EOG, w tym w USA, z zastosowaniem odpowiednich zabezpieczeń opisanych w Polityce cookies. Ponieważ Time2Show, Inc. jest spółką amerykańską, gdyby doszło do dostępu do danych spoza EOG lub do zmiany dostawcy wiążącej się z transferem, zastosujemy ważny mechanizm transferowy (EU-US Data Privacy Framework dla certyfikowanych odbiorców albo standardowe klauzule umowne wraz z oceną skutków transferu) i zaktualizujemy tę Politykę. Kopię zabezpieczeń otrzymasz, pisząc na adres z pkt 1. Platformy reklamowe wymienione w Polityce cookies mogą przekazywać dane w ramach własnych mechanizmów jako niezależni administratorzy.
 
 ## 9. Jak długo przechowujemy dane
 
@@ -91,6 +94,7 @@ Twoje dane są przechowywane i przetwarzane na serwerach zlokalizowanych w **Eur
 | Nagrania webinarów | do 24 miesięcy lub do wycofania zgody |
 | Dane techniczne (logi) | 90 dni |
 | Dane przekazane deweloperowi | odpowiada deweloper jako niezależny administrator |
+| Wybór kategorii cookies w przeglądarce | 180 dni; szczegóły w Polityce cookies |
 | Rejestr zgód | 3 lata od ostatniej interakcji |
 | Dane rozliczeniowe | okresy wymagane prawem podatkowym |
 

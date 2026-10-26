@@ -699,5 +699,25 @@
       "technologyBy": "Technology by Estalara",
       "howItWorks": "How Vesteri Collective works"
     }
+  },
+  "cookieConsent": {
+    "title": "Your cookie choices",
+    "description": "Necessary cookies keep the website working. With your consent, Google Analytics helps us measure visits and HubSpot supports marketing. You can reject optional cookies or choose individual categories.",
+    "reject": "Reject optional",
+    "customize": "Customize settings",
+    "accept": "Accept all",
+    "save": "Save choices",
+    "settings": "Cookie settings",
+    "close": "Close cookie settings",
+    "cookiesPolicy": "Cookies Policy",
+    "privacyPolicy": "Privacy Policy",
+    "necessaryTitle": "Necessary",
+    "necessaryDescription": "Website language, security and account functionality. These cannot be disabled in this panel.",
+    "alwaysActive": "Always active",
+    "analyticsTitle": "Analytics — Google Analytics",
+    "analyticsDescription": "Statistics about visits and website usage. Loaded only with your consent.",
+    "marketingTitle": "Marketing — HubSpot",
+    "marketingDescription": "HubSpot interaction measurement and marketing tools. Loaded only with your consent.",
+    "retention": "We remember your choices for 180 days in this browser. Change or withdraw consent at any time using “Cookie settings” in the footer. Withdrawing consent reloads the page to stop tools that were already running."
   }
 }

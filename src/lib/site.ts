@@ -5,7 +5,8 @@ export const PARTNERS_EMAIL = 'partners@vesteri.com';
 // Collective membership and rules matters (Collective Rules § 1.1 and § 8.1).
 export const COLLECTIVE_EMAIL = 'collective@vesteri.com';
 // Official company profile, used as schema.org sameAs.
-export const LINKEDIN_URL = 'https://www.linkedin.com/company/vesteri-collective';
+export const LINKEDIN_URL =
+  'https://www.linkedin.com/company/vesteri-collective';
 // Self-serve panel where agents add their own listings. Temporary host on the
 // Estalara domain (confirmed 2026-10); swap once a vesteri.com alias exists.
 export const AGENT_PANEL_URL = 'https://vesteri.estalara.com';
@@ -17,7 +18,8 @@ export const CONTACT_PHONE_TEL = '+48667953016';
 // canonical tags, hreflang and the sitemap — otherwise every page exists twice.
 // The www host is the live property, so it is the canonical one; the apex is
 // redirected to it with a 301 at the Cloudflare edge.
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vesteri.com';
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vesteri.com';
 
 // Cloudflare Web Analytics beacon. Cookieless and storing nothing on the
 // visitor's device, so it needs no consent banner — see the cookies policy.
@@ -25,10 +27,12 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vesteri
 // preview builds out of the production stats.
 export const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN ?? '';
 
+// Google Analytics property shared by every localized page.
+export const GOOGLE_ANALYTICS_ID = 'G-BQC3M4ED9E';
+
 // HubSpot tracking code (EU data centre). Unlike the Cloudflare beacon this
-// DOES set tracking cookies (__hstc, hubspotutk, __hssc, __hssrc), so it
-// belongs behind a consent mechanism — either HubSpot's own cookie banner,
-// enabled in Settings → Privacy & Consent, or a CMP.
+// DOES set tracking cookies (__hstc, hubspotutk, __hssc, __hssrc). The shared
+// cookie preferences load it only after marketing consent.
 // Override the portal id per environment to keep dev traffic out of HubSpot;
 // an empty value skips the script entirely.
 export const HUBSPOT_PORTAL_ID =

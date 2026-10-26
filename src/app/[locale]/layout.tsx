@@ -5,9 +5,11 @@ import Script from 'next/script';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import JsonLd from '@/components/JsonLd';
+import CookieConsent from '@/components/CookieConsent';
+import MarketingShell from '@/components/marketing/MarketingShell';
 import { routing } from '@/i18n/routing';
 import { organizationJsonLd, webSiteJsonLd } from '@/lib/jsonld';
-import { CF_BEACON_TOKEN, HUBSPOT_PORTAL_ID, SITE_URL } from '@/lib/site';
+import { CF_BEACON_TOKEN, GOOGLE_ANALYTICS_ID, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
 const montserrat = localFont({
@@ -70,23 +72,37 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <script
+          id="google-tag"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window['ga-disable-${GOOGLE_ANALYTICS_ID}'] = true;
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied'
+});`,
+          }}
+        />
+      </head>
       <body className={`${montserrat.variable} font-sans antialiased`}>
         {/* Site-level structured data — identical on every page, so it lives
             here rather than being repeated by each one. */}
         <JsonLd nodes={[organizationJsonLd(), webSiteJsonLd()]} />
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {children}
+          <MarketingShell className="marketing-cookie-consent">
+            <CookieConsent />
+          </MarketingShell>
+        </NextIntlClientProvider>
         {CF_BEACON_TOKEN && (
           <Script
             src="https://static.cloudflareinsights.com/beacon.min.js"
             strategy="afterInteractive"
             data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
-          />
-        )}
-        {HUBSPOT_PORTAL_ID && (
-          <Script
-            id="hs-script-loader"
-            src={`https://js-eu1.hs-scripts.com/${HUBSPOT_PORTAL_ID}.js`}
-            strategy="afterInteractive"
           />
         )}
       </body>

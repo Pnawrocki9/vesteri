@@ -1,0 +1,164 @@
+.marketing .cookie-banner,
+.marketing .cookie-dialog {
+  background: var(--ivory);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: 0 8px 40px #102d3326;
+  font-family: var(--font-dm-sans), Arial, sans-serif;
+}
+.marketing .cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 100;
+  max-width: 1100px;
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  margin-inline: auto;
+}
+.marketing .cookie-dialog {
+  position: fixed;
+  inset: 0;
+  width: min(680px, calc(100% - 40px));
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  overflow-y: auto;
+}
+.marketing .cookie-dialog::backdrop {
+  background: #0a2026a6;
+}
+.marketing .cookie-banner h2,
+.marketing .cookie-dialog h2 {
+  font-size: 23px;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+.marketing .cookie-banner p,
+.marketing .cookie-dialog p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+.marketing .cookie-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.marketing .cookie-actions button {
+  min-height: 46px;
+  border: 1px solid var(--deep);
+  border-radius: 5px;
+  padding: 10px 12px;
+  background: var(--ivory);
+  color: var(--deep);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.marketing .cookie-actions button:hover {
+  background: var(--deep);
+  color: var(--white);
+}
+.marketing .cookie-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.marketing .cookie-links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.marketing .cookie-dialog-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+.marketing .cookie-close {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+}
+.marketing .cookie-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+.marketing .cookie-category h3,
+.marketing .cookie-category strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin: 0 0 6px;
+}
+.marketing .cookie-category p,
+.marketing .cookie-category span span {
+  display: block;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+.marketing .cookie-category > span:last-child:not(:first-child) {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+.marketing .cookie-category input {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  accent-color: var(--deep);
+}
+.marketing .cookie-dialog .cookie-retention {
+  font-size: 12px;
+}
+.marketing-cookie-consent :focus-visible,
+.cookie-settings-trigger:focus-visible {
+  outline: 2px solid #1d998f;
+  outline-offset: 4px;
+}
+.cookie-settings-trigger {
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  text-align: inherit;
+  cursor: pointer;
+}
+.cookie-settings-trigger:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 680px) {
+  .marketing .cookie-banner,
+  .marketing .cookie-dialog {
+    padding: 20px;
+  }
+  .marketing .cookie-banner {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    max-height: calc(100dvh - 24px);
+  }
+  .marketing .cookie-actions {
+    grid-template-columns: 1fr;
+  }
+}

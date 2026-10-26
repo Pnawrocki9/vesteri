@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Vesteri website and platform** · Version 1.2 · Effective from: 22 October 2026
+**Vesteri website and platform** · Version 1.3 · Effective from: 26 October 2026
 
 ## 1. Who is the controller of your data
 
@@ -46,6 +46,7 @@ We process your data at the following stages:
 | Passing your contact to a law firm | contact | Art. 6(1)(b) (at your request) |
 | Invitations to future webinars, newsletter | contact, profile | Art. 6(1)(a) (consent) + Polish Electronic Communications Law |
 | Personalisation of presented content | preference profile | Art. 6(1)(a) (consent) |
+| Vesteri.com visit analytics (Google Analytics) and marketing interaction measurement (HubSpot), only with consent to the relevant category | browser identifiers, device data, visited pages and interactions | Art. 6(1)(a) (consent) |
 | Advertising on external platforms | online identifiers | Art. 6(1)(a) (consent — cookies) |
 | Improving the matching system (aggregated/pseudonymised data) | campaign statistics | Art. 6(1)(f) (legitimate interest) |
 | Security and abuse prevention | technical | Art. 6(1)(f) (legitimate interest) |
@@ -78,9 +79,11 @@ Regardless, you have the right to: **withdraw consent** (we stop collecting sign
 
 We do not sell your data.
 
+Optional tools on Vesteri.com include Google Analytics (Google Ireland Limited / Google LLC) and HubSpot (HubSpot Ireland Limited / HubSpot, Inc.). We load them only with consent to the relevant banner category. Change or withdraw consent using “Cookie settings” in the footer. Our [Cookies Policy](https://www.vesteri.com/en/cookies) describes categories, cookies and their lifetimes.
+
 ## 8. Transfers outside the EEA
 
-Your data is stored and processed on servers located in the **European Economic Area (EEA)**. As a rule, we do not transfer data outside the EEA. As Time2Show, Inc. is a US company, should any access from outside the EEA occur or a provider change involve a transfer, we will apply a valid transfer mechanism (the EU-US Data Privacy Framework for certified recipients, or Standard Contractual Clauses together with a transfer impact assessment) and update this Policy. You can obtain a copy of the safeguards by writing to the address in section 1. The advertising platforms listed in the Cookies Policy may transfer data under their own mechanisms as independent controllers.
+As a rule, Vesteri service data is stored and processed in the **European Economic Area (EEA)**. Optional Google Analytics and HubSpot tools, loaded with your consent, may be an exception: their providers may process data outside the EEA, including in the USA, with appropriate safeguards described in the Cookies Policy. As Time2Show, Inc. is a US company, should any access from outside the EEA occur or a provider change involve a transfer, we will apply a valid transfer mechanism (the EU-US Data Privacy Framework for certified recipients, or Standard Contractual Clauses together with a transfer impact assessment) and update this Policy. You can obtain a copy of the safeguards by writing to the address in section 1. The advertising platforms listed in the Cookies Policy may transfer data under their own mechanisms as independent controllers.
 
 ## 9. How long we keep data
 
@@ -91,6 +94,7 @@ Your data is stored and processed on servers located in the **European Economic 
 | Webinar recordings | up to 24 months or until consent is withdrawn |
 | Technical data (logs) | 90 days |
 | Data handed to a developer | the developer is responsible as an independent controller |
+| Browser cookie category preferences | 180 days; details in the Cookies Policy |
 | Consent register | 3 years from the last interaction |
 | Billing data | periods required by tax law |
 
