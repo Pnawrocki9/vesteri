@@ -39,12 +39,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Retired guide with remaining backlinks/traffic: send it to the
-      // Polish home page. Mirrored in i18n/legacy-routes.ts
+      // Polish Cyprus page (plan v5.1 P4). Mirrored in i18n/legacy-routes.ts
       // (LEGACY_PERMANENT) so middleware agrees. Other retired URLs get a 301
       // from middleware (legacy-routes.ts) to their closest equivalent.
       {
         source: '/pl/poradnik/cypr-polnocny-a-republika-cypru',
-        destination: '/pl',
+        destination: '/pl/nieruchomosci-za-granica/cypr',
         statusCode: 301,
       },
     ];

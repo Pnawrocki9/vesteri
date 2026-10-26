@@ -219,7 +219,8 @@ const englishLegal: Record<string, string> = {
 // Exact (locale-prefixed) URLs served as 301 by next.config.ts.
 // next.config.ts redirects() serves these first; middleware mirrors them.
 export const LEGACY_PERMANENT: Record<string, string> = {
-  '/pl/poradnik/cypr-polnocny-a-republika-cypru': '/pl',
+  '/pl/poradnik/cypr-polnocny-a-republika-cypru':
+    '/pl/nieruchomosci-za-granica/cypr',
 };
 const AGENT_TOPICS = [
   'developers',

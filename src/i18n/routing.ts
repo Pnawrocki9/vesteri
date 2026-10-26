@@ -26,6 +26,12 @@ export const routing = defineRouting({
     '/gdpr': { pl: '/rodo', en: '/gdpr' },
     '/ai': { pl: '/informacja-o-ai', en: '/ai-notice' },
     '/disclaimers': { pl: '/zastrzezenia', en: '/disclaimers' },
+    // Polish-only SEO pages (plan v5.1 P4). The EN path exists only because
+    // next-intl needs one per locale; those pages answer 404.
+    '/nieruchomosci-za-granica': '/nieruchomosci-za-granica',
+    '/nieruchomosci-za-granica/hiszpania': '/nieruchomosci-za-granica/hiszpania',
+    '/nieruchomosci-za-granica/cypr': '/nieruchomosci-za-granica/cypr',
+    '/nieruchomosci-za-granica/zea': '/nieruchomosci-za-granica/zea',
     '/affiliate': '/affiliate',
     '/affiliate/register': '/affiliate/register',
     '/affiliate/login': '/affiliate/login',
