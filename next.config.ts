@@ -33,6 +33,22 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   // The stack is not a secret worth announcing on every response.
   poweredByHeader: false,
+  // Permanent redirects. `statusCode: 301` on purpose: `permanent: true` would
+  // emit 308. These run before middleware. The root `/` is deliberately NOT
+  // here: it keeps next-intl's Accept-Language negotiation (307).
+  async redirects() {
+    return [
+      // Retired guide with remaining backlinks/traffic: send it to the
+      // Polish home page instead of a 410. Mirrored in i18n/legacy-routes.ts
+      // (LEGACY_PERMANENT) so middleware agrees. All other retired guide
+      // URLs — including unprefixed and English variants — stay 410.
+      {
+        source: '/pl/poradnik/cypr-polnocny-a-republika-cypru',
+        destination: '/pl',
+        statusCode: 301,
+      },
+    ];
+  },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   },

@@ -29,6 +29,18 @@ const roles = [
     count: 12,
   },
 ] as const;
+const SEO_TITLES = {
+  pl: {
+    buyers: 'Vesteri Collective | Sieć agentów nieruchomości – Polska i świat',
+    sellers: 'Sprzedaż nieruchomości z agentem sieci | Vesteri Collective',
+    agents: 'Sieć agentów nieruchomości – dołącz do Vesteri Collective',
+  },
+  en: {
+    buyers: 'Vesteri Collective | Real Estate Agent Network, Local & Abroad',
+    sellers: 'Sell Your Property with a Network Agent | Vesteri Collective',
+    agents: 'Real Estate Agent Network – Join Vesteri Collective',
+  },
+} as const;
 const flatten = (value: unknown): string[] =>
   typeof value === 'string'
     ? [value]
@@ -66,12 +78,24 @@ describe('V10.7 authoritative bilingual content and routes', () => {
                 ? { first: 'Jedna sieć.', second: 'Większe możliwości.' }
                 : { first: 'One network.', second: 'More possibilities.' },
             );
+          } else if (
+            role.id === 'buyers' &&
+            text ===
+              (locale === 'pl'
+                ? 'VESTERI COLLECTIVE · NIERUCHOMOŚCI W POLSCE I ZA GRANICĄ'
+                : 'VESTERI COLLECTIVE · LOCAL & INTERNATIONAL PROPERTY')
+          ) {
+            // SEO v3: the owner approved a descriptive hero eyebrow.
+            expect(messages.marketing.buyers.top02).toBe(
+              locale === 'pl'
+                ? 'Sieć agentów nieruchomości w Polsce i za granicą'
+                : 'Real estate agent network, locally and abroad',
+            );
           } else if (text && !text.startsWith('<!--'))
             expect(values).toContain(text);
         }
-        expect(content.meta.title).toBe(
-          html.match(/<title>([\s\S]*?)<\/title>/)![1],
-        );
+        // SEO v3: titles deliberately diverge from the V10.7 reference.
+        expect(content.meta.title).toBe(SEO_TITLES[locale][role.id]);
       });
     }
   }

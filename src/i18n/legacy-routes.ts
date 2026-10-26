@@ -216,10 +216,17 @@ const englishLegal: Record<string, string> = {
   ai: 'ai-notice',
   disclaimers: 'disclaimers',
 };
+// Exact (locale-prefixed) URLs that leave the 410 policy with a 301.
+// next.config.ts redirects() serves these first; middleware mirrors them.
+export const LEGACY_PERMANENT: Record<string, string> = {
+  '/pl/poradnik/cypr-polnocny-a-republika-cypru': '/pl',
+};
 export type LegacyResult =
-  | { kind: 'redirect'; target: string }
+  | { kind: 'redirect'; target: string; status?: 301 }
   | { kind: 'gone' | 'unknown'; locale: 'en' | 'pl' };
 export function resolveLegacyPath(pathname: string): LegacyResult | null {
+  const permanent = LEGACY_PERMANENT[pathname.replace(/\/+$/, '')];
+  if (permanent) return { kind: 'redirect', target: permanent, status: 301 };
   const parts = pathname.split('/').filter(Boolean);
   const first = parts[0];
   const retiredLocale = first === 'es' || first === 'de';

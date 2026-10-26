@@ -142,7 +142,8 @@
       "gdpr": "Twoje prawa wynikające z RODO w Vesteri — dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie i sprzeciw — oraz jak złożyć wniosek.",
       "ai": "Gdzie w Vesteri działa sztuczna inteligencja: asystent AI, scoring gotowości zakupowej, tłumaczenia i nadzór człowieka. Ujawnienia wg art. 50 AI Act.",
       "disclaimers": "Zastrzeżenia dotyczące serwisu i usług Vesteri: charakter usług, weryfikacja deweloperów, ryzyko inwestycji zagranicznych i granice odpowiedzialności.",
-      "collective-rules": "Zasady członkostwa i współpracy agentów w sieci Vesteri Collective"
+      "collective-rules": "Zasady członkostwa, Fair Play & Trust, współpracy i domyślnego podziału prowizji między agentami sieci Vesteri Collective.",
+      "collective-rulesTitle": "Regulamin Vesteri Collective – zasady współpracy agentów"
     },
     "collective-rules": "Regulamin Vesteri Collective",
     "downloadOriginal": "Pobierz oryginalny dokument (DOCX)"
@@ -293,8 +294,8 @@
   "marketing": {
     "buyers": {
       "meta": {
-        "title": "Vesteri Collective | Nieruchomości w Polsce i za granicą",
-        "description": "Znajdź nieruchomość lokalnie lub za granicą. Poznaj sprawdzonych agentów i odkryj możliwości całej sieci Vesteri Collective."
+        "title": "Vesteri Collective | Sieć agentów nieruchomości – Polska i świat",
+        "description": "Vesteri Collective to sieć sprawdzonych, niezależnych agentów nieruchomości. Jeden agent, oferty całej sieci w Polsce i za granicą oraz prezentacje LIVE."
       },
       "header": {
         "buyers": "Kupujący",
@@ -306,7 +307,7 @@
       },
       "copy01": "Przejdź do treści",
       "top01": "Contemporary premium residence",
-      "top02": "VESTERI COLLECTIVE · NIERUCHOMOŚCI W POLSCE I ZA GRANICĄ",
+      "top02": "Sieć agentów nieruchomości w Polsce i za granicą",
       "top03": "Twój agent. ",
       "top04": "Możliwości całej sieci.",
       "top05": "Szukaj nieruchomości w Polsce i za granicą. Przeglądaj oferty sprawdzonych agentów i znajdź pomoc w zakupie.",
@@ -425,8 +426,8 @@
     },
     "sellers": {
       "meta": {
-        "title": "Sprzedający | Sprzedaj nieruchomość z Vesteri Collective",
-        "description": "Jeden agent prowadzi sprzedaż, a inni członkowie Vesteri Collective mogą pomóc znaleźć kupującego. Wybierz opiekuna lub poproś Vesteri o rekomendację."
+        "title": "Sprzedaż nieruchomości z agentem sieci | Vesteri Collective",
+        "description": "Jeden agent prowadzi sprzedaż, a inni agenci sieci Vesteri Collective mogą przyprowadzić kupującego. Wyłączność bez działania w pojedynkę."
       },
       "header": {
         "buyers": "Kupujący",
@@ -520,8 +521,8 @@
     },
     "agents": {
       "meta": {
-        "title": "Dla agentów | Vesteri Collective",
-        "description": "Zachowaj niezależność i dołącz do sieci profesjonalistów. Sprawdź, jak działa członkostwo i współpraca w Vesteri Collective."
+        "title": "Sieć agentów nieruchomości – dołącz do Vesteri Collective",
+        "description": "Dołącz do sieci niezależnych agentów nieruchomości. Bezpłatne zgłoszenie i publikacja ofert, współpraca z jasnym podziałem prowizji, narzędzia LIVE i AI."
       },
       "header": {
         "buyers": "Kupujący",

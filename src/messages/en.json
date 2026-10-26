@@ -142,7 +142,8 @@
       "gdpr": "Your GDPR rights at Vesteri — access, rectification, erasure, restriction, portability and objection — and how to submit a request.",
       "ai": "Where artificial intelligence operates within Vesteri: the AI assistant, readiness scoring, translations and human oversight. Art. 50 AI Act disclosures.",
       "disclaimers": "Disclaimers for the Vesteri website and services: the nature of the services, developer vetting, the risks of investing abroad and liability limits.",
-      "collective-rules": "Terms of membership and cooperation for agents in the Vesteri Collective network"
+      "collective-rules": "Membership terms, Fair Play & Trust principles, cooperation and the default commission split between agents in the Vesteri Collective network.",
+      "collective-rulesTitle": "Vesteri Collective Rules – Agent Cooperation Terms"
     },
     "collective-rules": "Vesteri Collective Rules",
     "downloadOriginal": "Download the original document (DOCX)"
@@ -293,8 +294,8 @@
   "marketing": {
     "buyers": {
       "meta": {
-        "title": "Vesteri Collective | Property Near and Far",
-        "description": "Find local and international property. Explore more possibilities with independent agents and the Vesteri Collective marketplace."
+        "title": "Vesteri Collective | Real Estate Agent Network, Local & Abroad",
+        "description": "Vesteri Collective is a network of vetted, independent real estate agents. One agent, listings from the whole network, locally and abroad, plus LIVE viewings."
       },
       "header": {
         "buyers": "For buyers",
@@ -306,7 +307,7 @@
       },
       "copy01": "Skip to content",
       "top01": "Contemporary premium residence",
-      "top02": "VESTERI COLLECTIVE · LOCAL & INTERNATIONAL PROPERTY",
+      "top02": "Real estate agent network, locally and abroad",
       "top03": "Your agent. ",
       "top04": "The whole network.",
       "top05": "Explore homes in your area and abroad. Browse listings from approved agents and get help finding the right property.",
@@ -425,8 +426,8 @@
     },
     "sellers": {
       "meta": {
-        "title": "For Sellers | Sell Your Property with Vesteri Collective",
-        "description": "One agent manages your sale while other Vesteri Collective members can introduce buyers. Choose your agent or ask Vesteri to help."
+        "title": "Sell Your Property with a Network Agent | Vesteri Collective",
+        "description": "One agent manages your sale while other Vesteri Collective agents can bring buyers. Exclusivity without working alone."
       },
       "header": {
         "buyers": "For buyers",
@@ -520,8 +521,8 @@
     },
     "agents": {
       "meta": {
-        "title": "For Real Estate Agents | Vesteri Collective",
-        "description": "Stay independent and collaborate with other real estate professionals. Discover Vesteri Collective membership and Vesteri system tools."
+        "title": "Real Estate Agent Network – Join Vesteri Collective",
+        "description": "Join a network of independent real estate agents. Free application and listings, co-brokerage with a clear commission split, LIVE and AI tools."
       },
       "header": {
         "buyers": "For buyers",

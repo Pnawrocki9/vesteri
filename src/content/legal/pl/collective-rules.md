@@ -6,7 +6,7 @@ Wersja 1.0 · Obowiązuje od: 22 października 2026 r. · Operator: Time2Show, I
 
 ## **§ 1. Postanowienia ogólne**
 
-1\. Vesteri Collective („Collective”) to selektywna sieć niezależnych agentów i biur nieruchomości prowadzona przez Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, działającą pod marką Vesteri („Vesteri”). Kontakt w sprawach Collective: \[collective@vesteri.com\].
+1\. Vesteri Collective („Collective”) to selektywna sieć niezależnych agentów i biur nieruchomości prowadzona przez Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, działającą pod marką Vesteri („Vesteri”). Kontakt w sprawach Collective: collective@vesteri.com.
 
 2\. Regulamin określa warunki członkostwa w Collective oraz zasady współpracy między Członkami. Korzystanie z systemu Vesteri dostępnego pod adresem vesteri.estalara.com („System”), w tym z Marketplace, podlega odrębnemu Regulaminowi Platformy. W sprawach członkostwa i współpracy między Członkami pierwszeństwo ma niniejszy Regulamin.
 
@@ -88,7 +88,7 @@ Każdy Członek zobowiązuje się do przestrzegania następujących zasad:
 
 1\. Vesteri udostępnia Członkom wybrane inwestycje zagraniczne, w których Vesteri lub jego partner pełni rolę Agenta Oferty na podstawie umów z deweloperami.
 
-2\. Członek, który pozyska kupującego dla takiej inwestycji, otrzymuje większą część prowizji należnej od dewelopera – nie mniej niż \[60%\] – na warunkach podanych w karcie oferty w Systemie lub uzgodnionych indywidualnie przed pierwszą prezentacją.
+2\. Członek, który pozyska kupującego dla takiej inwestycji, otrzymuje większą część prowizji należnej od dewelopera – nie mniej niż 60% – na warunkach podanych w karcie oferty w Systemie lub uzgodnionych indywidualnie przed pierwszą prezentacją.
 
 3\. Vesteri organizuje prezentacje LIVE, webinary i kontakt z deweloperem oraz wspiera proces zakupu w zakresie wskazanym w karcie oferty. Vesteri nie odpowiada za stan prawny i techniczny inwestycji ani za jej realizację przez dewelopera. Członek informuje kupującego o potrzebie niezależnej analizy prawnej przed zakupem.
 
@@ -112,7 +112,7 @@ Każdy Członek zobowiązuje się do przestrzegania następujących zasad:
 
 ## **§ 8. Naruszenia, zawieszenie i wykluczenie**
 
-1\. Naruszenie Regulaminu można zgłosić do Vesteri na adres \[collective@vesteri.com\], podając opis i dowody. Vesteri może także wszcząć postępowanie z własnej inicjatywy.
+1\. Naruszenie Regulaminu można zgłosić do Vesteri na adres collective@vesteri.com, podając opis i dowody. Vesteri może także wszcząć postępowanie z własnej inicjatywy.
 
 2\. Postępowanie: Vesteri przedstawia Członkowi zarzuty; Członek ma 7 dni na wyjaśnienia; Vesteri wydaje decyzję z uzasadnieniem w ciągu 14 dni od otrzymania wyjaśnień lub upływu terminu.
 
@@ -122,7 +122,7 @@ Każdy Członek zobowiązuje się do przestrzegania następujących zasad:
 
 5\. Jeżeli dalsza aktywność Członka grozi szkodą dla kupujących lub sieci, Vesteri może zawiesić Członka ze skutkiem natychmiastowym na czas postępowania.
 
-6\. Od decyzji przysługuje odwołanie w ciągu 14 dni do \[Zarządu Time2Show, Inc.\], rozpatrywane w ciągu 30 dni. Decyzja odwoławcza jest ostateczna w ramach Collective i nie wyłącza drogi sądowej.
+6\. Od decyzji przysługuje odwołanie w ciągu 14 dni, rozpatrywane w ciągu 30 dni. Dopóki Collective liczy nie więcej niż 100 Członków, odwołania rozpatruje Zarząd (Board of Directors) Time2Show, Inc. Po przekroczeniu 100 Członków powoływana jest Komisja Collective, która przejmuje rozpatrywanie odwołań. Decyzja odwoławcza jest ostateczna w ramach Collective i nie wyłącza drogi sądowej.
 
 7\. Zawieszenie ani wykluczenie nie zwalniają z rozliczenia rozpoczętych Poleceń i Wspólnych Transakcji.
 
@@ -154,6 +154,6 @@ Każdy Członek zobowiązuje się do przestrzegania następujących zasad:
 
 3\. Regulamin podlega prawu polskiemu. Sądem właściwym jest sąd powszechny właściwy dla m.st. Warszawy.
 
-4\. Regulamin sporządzono w wersji polskiej i angielskiej. W razie rozbieżności wiążąca jest wersja \[polska\].
+4\. Regulamin sporządzono w wersji polskiej i angielskiej. W razie rozbieżności wiążąca jest wersja polska.
 
 5\. Członek akceptuje Regulamin, zaznaczając odpowiednie pole przy zgłoszeniu. Umowa członkostwa zostaje zawarta z chwilą zatwierdzenia zgłoszenia przez Vesteri.

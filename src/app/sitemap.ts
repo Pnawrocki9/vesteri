@@ -10,6 +10,7 @@ const PAGES: StaticPathname[] = [
   '/',
   '/sellers',
   '/agents',
+  '/how-it-works',
   '/collective-rules',
   '/privacy',
   '/terms',

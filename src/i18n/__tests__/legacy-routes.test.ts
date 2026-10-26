@@ -50,6 +50,18 @@ describe('two-language migration policy', () => {
       kind: 'gone',
       locale: 'en',
     }));
+  it('sends the retired Polish Cyprus guide to /pl with a 301', () => {
+    expect(
+      resolveLegacyPath('/pl/poradnik/cypr-polnocny-a-republika-cypru'),
+    ).toEqual({ kind: 'redirect', target: '/pl', status: 301 });
+    // Every other variant of that guide stays retired (410).
+    expect(
+      resolveLegacyPath('/poradnik/cypr-polnocny-a-republika-cypru'),
+    ).toEqual({ kind: 'gone', locale: 'pl' });
+    expect(
+      resolveLegacyPath('/en/poradnik/cypr-polnocny-a-republika-cypru'),
+    ).toEqual({ kind: 'gone', locale: 'en' });
+  });
   it('does not redirect unrelated or unknown URLs', () => {
     expect(resolveLegacyPath('/es/unrelated')).toEqual({
       kind: 'unknown',

@@ -13,7 +13,7 @@ export default function middleware(request: NextRequest) {
     // Legacy marketing parameters are not an Estalara filter contract.
     if (target.origin === request.nextUrl.origin)
       target.search = request.nextUrl.search;
-    return NextResponse.redirect(target, 308);
+    return NextResponse.redirect(target, legacy.status ?? 308);
   }
   const pl = legacy.locale === 'pl';
   const gone = legacy.kind === 'gone';

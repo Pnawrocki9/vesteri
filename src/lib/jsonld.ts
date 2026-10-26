@@ -1,6 +1,12 @@
 import { getPathname } from '@/i18n/navigation';
 import { routing, type StaticPathname } from '@/i18n/routing';
-import { CONTACT_EMAIL, CONTACT_PHONE_TEL, SITE_URL } from '@/lib/site';
+import {
+  COLLECTIVE_EMAIL,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_TEL,
+  LINKEDIN_URL,
+  SITE_URL,
+} from '@/lib/site';
 
 // Structured data for the site.
 //
@@ -10,9 +16,11 @@ import { CONTACT_EMAIL, CONTACT_PHONE_TEL, SITE_URL } from '@/lib/site';
 // schema field, because structured data that does not match visible content is
 // what earns a manual action.
 //
-// Deliberately absent: Product, Service, Offer, FAQPage, LocalBusiness and
-// Review. The site sells nothing on-page, quotes no prices, does not emit FAQ schema
-// and runs no premises open to customers. WebSite carries no SearchAction
+// Deliberately absent: Product, Service, Offer, LocalBusiness and Review. The
+// site sells nothing on-page, quotes no prices and runs no premises open to
+// customers. FAQPage IS emitted, but only from the same message strings that
+// render the visible FAQ on that page (faqPageJsonLd below), never from
+// separately authored text. WebSite carries no SearchAction
 // either — there is no site search to point it at.
 
 type Locale = (typeof routing.locales)[number];
@@ -21,6 +29,10 @@ const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
 // Head office as printed in the site footer (developers.footer.addr).
+// Same wording as the Collective description in llms.txt and the meta copy.
+const ORGANIZATION_DESCRIPTION =
+  'Vesteri Collective is a selective network of vetted, independent real estate agents and agencies who cooperate under shared Fair Play & Trust principles. The public Vesteri Marketplace brings together local and international property listings published by network members.';
+
 const ADDRESS = {
   '@type': 'PostalAddress',
   streetAddress: '1111B S Governors Ave STE 20579',
@@ -34,7 +46,9 @@ export function organizationJsonLd() {
   return {
     '@type': 'Organization',
     '@id': ORGANIZATION_ID,
-    name: 'Vesteri',
+    name: 'Vesteri Collective',
+    alternateName: ['Vesteri', 'Vesteri Marketplace'],
+    description: ORGANIZATION_DESCRIPTION,
     // Vesteri is a brand of Time2Show, Inc. — stated on the About page and in
     // the footer of every page that has one.
     legalName: 'Time2Show, Inc.',
@@ -44,6 +58,29 @@ export function organizationJsonLd() {
     email: CONTACT_EMAIL,
     telephone: CONTACT_PHONE_TEL,
     address: ADDRESS,
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        email: CONTACT_EMAIL,
+        telephone: CONTACT_PHONE_TEL,
+        availableLanguage: ['pl', 'en'],
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'Collective membership',
+        email: COLLECTIVE_EMAIL,
+        availableLanguage: ['pl', 'en'],
+      },
+    ],
+    knowsAbout: [
+      'real estate agent network',
+      'agent collaboration',
+      'co-brokerage',
+      'commission sharing between agents',
+      'international property',
+    ],
+    sameAs: [LINKEDIN_URL],
   };
 }
 
@@ -51,7 +88,8 @@ export function webSiteJsonLd() {
   return {
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
-    name: 'Vesteri',
+    name: 'Vesteri Collective',
+    alternateName: 'Vesteri',
     url: SITE_URL,
     publisher: { '@id': ORGANIZATION_ID },
     inLanguage: routing.locales,
@@ -72,10 +110,68 @@ export function breadcrumbJsonLd({
   const absolute = (target: StaticPathname) => `${SITE_URL}${getPathname({ locale, href: target })}`;
   return {
     '@type': 'BreadcrumbList',
+    '@id': `${absolute(href)}#breadcrumb`,
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Vesteri', item: absolute('/') },
+      { '@type': 'ListItem', position: 1, name: 'Vesteri Collective', item: absolute('/') },
       { '@type': 'ListItem', position: 2, name, item: absolute(href) },
     ],
+  };
+}
+
+// WebPage node for a page, tied to the site graph by @id. `hasFaq` links the
+// page to its FAQPage node when the page renders a visible FAQ.
+export function webPageJsonLd({
+  href,
+  locale,
+  name,
+  description,
+  hasFaq = false,
+  hasBreadcrumb = false,
+}: {
+  href: StaticPathname;
+  locale: Locale;
+  name: string;
+  description: string;
+  hasFaq?: boolean;
+  hasBreadcrumb?: boolean;
+}) {
+  const url = `${SITE_URL}${getPathname({ locale, href })}`;
+  return {
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: locale,
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': ORGANIZATION_ID },
+    ...(hasBreadcrumb ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
+    ...(hasFaq ? { mainEntity: { '@id': `${url}#faq` } } : {}),
+  };
+}
+
+// FAQPage built from the exact question/answer strings the page renders.
+export function faqPageJsonLd({
+  href,
+  locale,
+  items,
+}: {
+  href: StaticPathname;
+  locale: Locale;
+  items: { q: string; a: string }[];
+}) {
+  const url = `${SITE_URL}${getPathname({ locale, href })}`;
+  return {
+    '@type': 'FAQPage',
+    '@id': `${url}#faq`,
+    url,
+    inLanguage: locale,
+    isPartOf: { '@id': `${url}#webpage` },
+    mainEntity: items.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
   };
 }
 
