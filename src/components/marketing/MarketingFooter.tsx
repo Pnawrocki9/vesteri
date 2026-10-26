@@ -68,6 +68,23 @@ export default async function MarketingFooter({
             <a href={`tel:${CONTACT_PHONE_TEL}`}>{CONTACT_PHONE_DISPLAY}</a>
           </div>
         </div>
+        {locale === 'pl' && (
+          <nav className="footer-main footer-guides" aria-label={t('guidesNav')}>
+            <div>
+              <h4>{t('guidesClients')}</h4>
+              <Link href="/poradnik/jak-sprzedac-mieszkanie">{t('guideSell')}</Link>
+              <Link href="/poradnik/kupno-mieszkania-z-agentem">{t('guideBuy')}</Link>
+              <Link href="/poradnik/prowizja-agenta-nieruchomosci">{t('guideCommission')}</Link>
+              <Link href="/agent-nieruchomosci/krakow">{t('guideKrakow')}</Link>
+              <Link href="/nieruchomosci-za-granica">{t('guideAbroad')}</Link>
+            </div>
+            <div>
+              <h4>{t('guidesAgents')}</h4>
+              <Link href="/poradnik/jak-zostac-agentem-nieruchomosci">{t('guideBecomeAgent')}</Link>
+              <Link href="/how-it-works">{t('howItWorks')}</Link>
+            </div>
+          </nav>
+        )}
         <div className="footer-bottom">
           <span>
             {t('copyright')}{' '}
