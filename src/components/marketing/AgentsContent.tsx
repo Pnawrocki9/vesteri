@@ -367,7 +367,6 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               </details>
               <ExtraFaq locale={locale} audience="agents" />
             </div>
-            <p className="faq-sub">{t('faq27')}</p>
           </div>
         </section>
         <section className="v10-agents-teaser">
