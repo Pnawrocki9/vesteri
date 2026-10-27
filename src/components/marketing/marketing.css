@@ -659,12 +659,6 @@
   margin: 12px 0;
   color: #b4cac6;
 }
-.marketing .footer-guides {
-  margin-top: 48px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  grid-template-columns: 1fr 1fr;
-}
 .marketing .footer-bottom {
   margin-top: 60px;
   padding-top: 24px;
