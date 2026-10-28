@@ -241,6 +241,29 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 <p>{t('technology19')}</p>
               </div>
             </div>
+            <aside
+              className="live-visibility"
+              id="go-live"
+              aria-labelledby="live-visibility-title"
+            >
+              <span className="eyebrow">{t('visibilityEyebrow')}</span>
+              <h3 id="live-visibility-title">{t('visibilityTitle')}</h3>
+              <p>{t('visibilityIntro')}</p>
+              <ol>
+                <li>
+                  <strong>{t('visibilityNowTitle')}</strong>
+                  <p>{t('visibilityNow')}</p>
+                </li>
+                <li>
+                  <strong>{t('visibilityScheduledTitle')}</strong>
+                  <p>{t('visibilityScheduled')}</p>
+                </li>
+                <li>
+                  <strong>{t('visibilityOtherTitle')}</strong>
+                  <p>{t('visibilityOther')}</p>
+                </li>
+              </ol>
+            </aside>
             <div style={{ marginTop: '29px' }}>
               <a className="btn-text" href={MARKETPLACE_URL}>
                 {t('technology20')}

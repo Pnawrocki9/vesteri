@@ -138,3 +138,52 @@
     grid-template-columns: 1fr;
   }
 }
+
+.marketing .live-visibility {
+  margin-top: 40px;
+  padding: 32px;
+  background: #edf5f1;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.marketing .live-visibility h3 {
+  margin: 14px 0 16px;
+  font-size: clamp(24px, 2.7vw, 32px);
+  line-height: 1.25;
+}
+.marketing .live-visibility p {
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.75;
+}
+.marketing .live-visibility ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  list-style: decimal;
+  padding-left: 22px;
+  margin: 24px 0 0;
+}
+.marketing .live-visibility li {
+  padding-left: 4px;
+}
+.marketing .live-visibility li::marker {
+  color: #1c7d76;
+  font-weight: 700;
+}
+.marketing .live-visibility li strong {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.marketing .live-visibility li p {
+  margin: 10px 0 0;
+}
+@media (max-width: 900px) {
+  .marketing .live-visibility {
+    padding: 24px;
+  }
+  .marketing .live-visibility ol {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}

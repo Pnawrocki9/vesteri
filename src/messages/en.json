@@ -678,7 +678,16 @@
       "main19": "Create an account and join Vesteri Channels. Publishing Vesteri Market listings requires separate account approval.",
       "main20": "Join Collective ↗",
       "footerDescription": "Vesteri Collective brings buyers, independent professionals and properties across markets together in Vesteri Market.",
-      "membershipHowItWorks": "See how Vesteri Collective works →"
+      "membershipHowItWorks": "See how Vesteri Collective works →",
+      "visibilityEyebrow": "Vesteri Market · listing order",
+      "visibilityTitle": "Want to be seen? Stay active and GO LIVE!",
+      "visibilityIntro": "Activity matters. Vesteri Market displays listings in this order:",
+      "visibilityNowTitle": "LIVE viewings and webinars happening now",
+      "visibilityNow": "Listings with a LIVE viewing or webinar currently in progress appear at the top of the list.",
+      "visibilityScheduledTitle": "Scheduled LIVE viewings and webinars",
+      "visibilityScheduled": "Next come listings with scheduled events, starting with the nearest LIVE viewing or webinar date.",
+      "visibilityOtherTitle": "Listings without scheduled events",
+      "visibilityOther": "Listings with no scheduled LIVE viewing or webinar appear after those."
     },
     "footer": {
       "discover": "Discover",

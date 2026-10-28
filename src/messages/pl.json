@@ -678,7 +678,16 @@
       "main19": "Załóż konto i dołącz do Vesteri Channels. Publikowanie ofert w Vesteri Market wymaga osobnego zatwierdzenia konta.",
       "main20": "Dołącz do Collective ↗",
       "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w Vesteri Market.",
-      "membershipHowItWorks": "Zobacz, jak działa Vesteri Collective →"
+      "membershipHowItWorks": "Zobacz, jak działa Vesteri Collective →",
+      "visibilityEyebrow": "Vesteri Market · kolejność ofert",
+      "visibilityTitle": "Chcesz być widoczny? Bądź aktywny i GO LIVE!",
+      "visibilityIntro": "Aktywność ma znaczenie. Vesteri Market wyświetla oferty w następującej kolejności:",
+      "visibilityNowTitle": "Trwające LIVE i webinary",
+      "visibilityNow": "Na górze listy pojawiają się oferty, przy których właśnie trwa prezentacja LIVE lub webinar.",
+      "visibilityScheduledTitle": "Zaplanowane LIVE i webinary",
+      "visibilityScheduled": "Następnie wyświetlane są oferty z zaplanowanymi wydarzeniami — od tych z najbliższą datą LIVE lub webinaru.",
+      "visibilityOtherTitle": "Oferty bez zaplanowanych wydarzeń",
+      "visibilityOther": "Dopiero potem pojawiają się oferty, które nie mają zaplanowanego LIVE ani webinaru."
     },
     "footer": {
       "discover": "Odkrywaj",
