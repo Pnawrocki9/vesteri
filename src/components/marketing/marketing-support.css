@@ -142,17 +142,26 @@
 .marketing .live-visibility {
   margin-top: 40px;
   padding: 32px;
-  background: #edf5f1;
-  border: 1px solid var(--line);
+  color: #ffffff;
+  background: linear-gradient(135deg, #103137 0%, #174f4d 100%);
+  border: 1px solid #377471;
   border-radius: 10px;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 12%),
+    0 8px 0 #b9cec5,
+    0 22px 36px -12px rgb(16 49 55 / 32%);
+}
+.marketing .live-visibility .eyebrow {
+  color: #a7e4d2;
 }
 .marketing .live-visibility h3 {
+  color: #ffffff;
   margin: 14px 0 16px;
   font-size: clamp(24px, 2.7vw, 32px);
   line-height: 1.25;
 }
 .marketing .live-visibility p {
-  color: var(--gray);
+  color: #d3e4df;
   font-size: 15px;
   line-height: 1.75;
 }
@@ -168,10 +177,11 @@
   padding-left: 4px;
 }
 .marketing .live-visibility li::marker {
-  color: #1c7d76;
+  color: #a7e4d2;
   font-weight: 700;
 }
 .marketing .live-visibility li strong {
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.5;
 }
