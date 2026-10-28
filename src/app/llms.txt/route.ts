@@ -35,7 +35,7 @@ Operator: Time2Show, Inc., 1111B S Governors Ave STE 20579, Dover, Delaware 1990
 - [Jak działa Vesteri Collective](${SITE_URL}/pl/jak-dziala-vesteri-collective): Rejestracja, Vesteri Channels, Vesteri Market i standardy publikowania ofert.
 - [Dla agentów](${SITE_URL}/pl/dla-agentow): Społeczność niezależnych agentów, wiedza, Vesteri Channels i narzędzia Vesteri.
 - [Dla sprzedających](${SITE_URL}/pl/sprzedajacy): Profesjonalna obsługa sprzedaży i publikacja oferty w Vesteri Market.
-- [Regulamin Vesteri Collective](${SITE_URL}/pl/regulamin-vesteri-collective): Zasady członkostwa, publikowania ofert i Vesteri Channels (wersja 2.1, od 28.10.2026).
+- [Regulamin Vesteri Collective](${SITE_URL}/pl/regulamin-vesteri-collective): Zasady członkostwa, publikowania ofert i Vesteri Channels (wersja 2.2, od 28.10.2026).
 - [Program partnerski](${SITE_URL}/pl/affiliate): Program poleceń inwestorów.
 - [Polityka prywatności](${SITE_URL}/pl/polityka-prywatnosci)
 - [Regulamin](${SITE_URL}/pl/regulamin)
@@ -48,7 +48,7 @@ Operator: Time2Show, Inc., 1111B S Governors Ave STE 20579, Dover, Delaware 1990
 - [How Vesteri Collective works](${SITE_URL}/en/how-vesteri-collective-works): Registration, Vesteri Channels, Vesteri Market and listing standards.
 - [For agents](${SITE_URL}/en/agents): A community of independent agents, knowledge sharing, Vesteri Channels and Vesteri tools.
 - [For sellers](${SITE_URL}/en/sellers): Professional selling services and listing publication in Vesteri Market.
-- [Vesteri Collective Rules](${SITE_URL}/en/vesteri-collective-rules): Membership, listing publication and Vesteri Channels rules (version 2.1, effective 28 October 2026).
+- [Vesteri Collective Rules](${SITE_URL}/en/vesteri-collective-rules): Membership, listing publication and Vesteri Channels rules (version 2.2, effective 28 October 2026).
 - [Affiliate programme](${SITE_URL}/en/affiliate): Investor referral programme.
 - [Privacy policy](${SITE_URL}/en/privacy-policy)
 - [Terms of service](${SITE_URL}/en/terms-of-service)

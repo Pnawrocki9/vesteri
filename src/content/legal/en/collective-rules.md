@@ -2,7 +2,7 @@
 
 Membership, listing publication and Vesteri Channels rules
 
-Version 2.1 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
+Version 2.2 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
 
 ## **§ 1. General provisions**
 

@@ -20,6 +20,10 @@ export const routing = defineRouting({
       pl: '/regulamin-vesteri-collective',
       en: '/vesteri-collective-rules',
     },
+    '/collective-rules-archive': {
+      pl: '/archiwum-regulaminow-collective',
+      en: '/collective-rules-archive',
+    },
     '/privacy': { pl: '/polityka-prywatnosci', en: '/privacy-policy' },
     '/terms': { pl: '/regulamin', en: '/terms-of-service' },
     '/cookies': '/cookies',

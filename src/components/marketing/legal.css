@@ -178,3 +178,18 @@
     padding-left: 16px;
   }
 }
+
+.marketing .legal-archive-link {
+  color: #d5eee5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 15px;
+}
+.marketing .rules-archive {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+.marketing .rules-archive li {
+  margin: 18px 0;
+}

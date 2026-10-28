@@ -146,7 +146,8 @@
       "collective-rulesTitle": "Vesteri Collective Rules – Agent Cooperation Terms"
     },
     "collective-rules": "Vesteri Collective Rules",
-    "downloadOriginal": "Download the current rules (DOCX)"
+    "downloadOriginal": "Download the current rules (DOCX)",
+    "rulesArchive": "Previous versions of the rules (archive)"
   },
   "nav": {
     "openMenu": "Open menu",
@@ -409,7 +410,7 @@
       "faq11": "Can I buy directly through Vesteri or a Collective member?",
       "faq12": "Property transactions are handled through the relevant listing professional and other transaction parties. Vesteri Market facilitates discovery and contact, and Vesteri may also directly represent selected international developments. Transaction arrangements vary by property and country.",
       "faq13": "Are all properties legally verified by Vesteri?",
-      "faq14": "No. We review Collective members, their professional activities and their commitment to shared standards. This does not mean that every property has automatically undergone legal or technical due diligence. Selected overseas properties offered directly by Vesteri may undergo a different review process, but buyers should still confirm exactly what has been checked. We plan to expand buyer support, such as helping find an independent lawyer for property due diligence or providing guidance through a purchase. These services are not yet guaranteed for every transaction. Before buying, always consider independent legal and technical checks of the property.",
+      "faq14": "No. Before approving agents to publish listings in Vesteri Market, we review their professional activity and acceptance of our shared standards. This does not mean that every property has automatically undergone legal or technical due diligence. Selected overseas properties offered directly by Vesteri may undergo a different review process, but buyers should still confirm exactly what has been checked. We plan to expand buyer support, such as helping find an independent lawyer for property due diligence or providing guidance through a purchase. These services are not yet guaranteed for every transaction. Before buying, always consider independent legal and technical checks of the property.",
       "faq15": "How do I buy property abroad safely?",
       "faq16": "Check ownership, legal documentation, applicable taxes, financing rules, the developer’s background and the total cost of purchase. Use qualified, independent legal advisers in the relevant jurisdiction. Vesteri Market does not replace legal due diligence, but we can support your process, including helping you find independent legal advisers and connecting you with people in our network who can assist. The assistance available depends on the property and destination.",
       "faq17": "Can I join a LIVE property viewing?",
@@ -655,7 +656,7 @@
       "faq07": "Can I publish property listings before approval?",
       "faq08": "No. Publishing property listings requires account approval. Access to Vesteri Channels is separate: we email an invitation to every agent who creates an account.",
       "faq09": "Does it cost anything to apply or publish listings?",
-      "faq10": "Applying to Collective and publishing standard listings are free for approved members. Core Vesteri system features are free as well. You can pay for additional tools as you use them or choose a subscription. Current limits, fees and premium features are shown in your Vesteri agent account.",
+      "faq10": "Account creation, membership, Vesteri Channels access and standard listing publication are free. Every agent receives a Channels invitation after registration. Publishing listings requires separate account approval. Core Vesteri features are free. Check your agent account for current premium features and pricing.",
       "faq11": "Do I keep my own brand and clients?",
       "faq12": "Yes. Work under your own brand and agree service terms independently with your clients. Collective provides Vesteri Market, a community and available tools.",
       "faq13": "Does Vesteri Market include international properties?",
@@ -728,5 +729,13 @@
     "marketingTitle": "Marketing — HubSpot",
     "marketingDescription": "HubSpot interaction measurement and marketing tools. Loaded only with your consent.",
     "retention": "We remember your choices for 180 days in this browser. Change or withdraw consent at any time using “Cookie settings” in the footer. Withdrawing consent reloads the page to stop tools that were already running."
+  },
+  "legalArchive": {
+    "title": "Vesteri Collective rules archive",
+    "intro": "Historical document versions. The current Vesteri Collective Rules describe the present terms.",
+    "current": "Read the current rules",
+    "versions": "Previous versions",
+    "notice": "The documents below preserve their historical wording. They may describe an earlier Collective model and do not represent the current membership terms.",
+    "download": "Archive — version {version} (DOCX)"
   }
 }

@@ -1,6 +1,6 @@
 # TERMS OF SERVICE
 
-**Terms of electronic services for the Vesteri website and platform** · Version 1.1 · Effective from: 22 October 2026
+**Terms of electronic services for the Vesteri website and platform** · Version 1.2 · Effective from: 28 October 2026
 *(issued pursuant to Art. 8 of the Polish Act of 18 July 2002 on Providing Services by Electronic Means)*
 
 ## 1. Service provider
@@ -9,16 +9,14 @@ The service provider is **Time2Show, Inc.** (Delaware, USA), 1111B S Governors A
 
 ## 2. Types and scope of services
 
-We provide the following electronic services to investors free of charge:
-1. access to an information service about developer projects on foreign markets;
-2. an AI assistant answering questions about the projects;
-3. participation in webinars with developers, hosted by a Vesteri moderator, with translation available;
-4. — subject to separate consents — preference analysis, handover of data to the developer, and invitations to future events;
-5. on request: passing your contact to independent law firms on the target market.
+Vesteri encompasses the following areas:
 
-Cooperation with developers takes place under separate B2B agreements and is not governed by these Terms.
+1. **The vesteri.com website** — information about Vesteri, property guides and materials, and contact options for buyers, sellers and agents.
+2. **Vesteri Market and the Vesteri system** — property listings, user accounts, agents’ LIVE presentations and webinars, and enquiries to agents at vesteri.estalara.com. These services are governed by the separate [Vesteri Platform Terms](https://vesteri.estalara.com/en/legal/terms).
+3. **Vesteri Collective and Vesteri Channels** — membership of a community of independent agents, manually sent invitations after agent account registration on Vesteri Market, communication and knowledge sharing. The [Vesteri Collective Rules](/en/vesteri-collective-rules) set out the full terms. Verification for publishing listings is separate from community access. Transaction cooperation and its terms depend on agents’ voluntary agreements.
+4. **Selected projects in the Vesteri portfolio** — materials about international developments, an AI assistant answering project questions, webinars with developers and, on request, contacts to independent law firms. Preference analysis, scoring, sharing data with a developer and marketing invitations require the relevant separate consents described in the Privacy Policy. This scope does not automatically apply to every Vesteri Market listing or Channels participation.
 
-Vesteri Market, user accounts, LIVE presentations hosted by agents, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com and are governed by the **[Vesteri Platform Terms](https://vesteri.estalara.com/en/legal/terms)** and, for agents, also by the **[Vesteri Collective Rules](/en/vesteri-collective-rules)**. Those documents prevail in respect of those services.
+Website use, account creation, membership and standard listing publication are free; publishing listings requires account approval. Additional tools are subject to the price list in the agent account and the applicable Platform terms. Vesteri’s cooperation with developers is governed by separate B2B agreements. The relevant documents linked above take precedence for the Platform, membership and Channels.
 
 ## 3. Nature of Vesteri's services
 
@@ -32,9 +30,9 @@ A device with internet access, an up-to-date browser with JavaScript and cookies
 
 ## 5. Conclusion and termination of the service agreement
 
-The agreement for electronic services is concluded when you start using the website (information services) or when you register for a webinar (webinar services), and lasts for the time of use. You may stop using the services at any time and request deletion of your data (privacy@vesteri.com). As the services are free of charge and provided at your request, no payment obligation arises; your statutory consumer rights are not limited.
+The agreement for electronic services is concluded when you start using the website (information services) or when you register for a webinar (webinar services), and lasts for the time of use. You may stop using the services at any time and request deletion of your data (privacy@vesteri.com). Free website use and participation in a free event do not create an obligation to pay. The documents in section 2 govern commencement and termination of membership, Channels access and Platform services. Statutory consumer rights are not limited.
 
-## 6. Rules of participation in webinars
+## 6. Rules for Vesteri portfolio webinars
 
 1. Before joining you will receive information about the webinar mode (including any recording) and — separately — requests for optional consents. Participation is possible without the optional consents.
 2. During the webinar, behave lawfully and with respect for others. It is prohibited to provide unlawful, offensive, or third-party-infringing content, or advertising of third parties.
@@ -43,7 +41,7 @@ The agreement for electronic services is concluded when you start using the webs
 
 ## 7. Intellectual property and user content
 
-The website, the platform, and Vesteri materials are protected by law. Project materials belong to the developers. By asking questions or posting content in the chat, you grant us a non-exclusive, royalty-free licence to use it solely to provide the services (including — with your consent — handover to the developer). You remain the owner of your content.
+The website, the platform, and Vesteri materials are protected by law. Rights to property materials belong to their lawful owners, which may include agents, developers or other creators. The Collective Rules govern content posted in Channels. By asking questions or posting content in the chat, you grant us a non-exclusive, royalty-free licence to use it solely to provide the services (including — with your consent — handover to the developer). You remain the owner of your content.
 
 ## 8. Liability
 

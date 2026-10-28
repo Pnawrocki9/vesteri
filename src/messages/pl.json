@@ -146,7 +146,8 @@
       "collective-rulesTitle": "Regulamin Vesteri Collective – zasady współpracy agentów"
     },
     "collective-rules": "Regulamin Vesteri Collective",
-    "downloadOriginal": "Pobierz aktualny regulamin (DOCX)"
+    "downloadOriginal": "Pobierz aktualny regulamin (DOCX)",
+    "rulesArchive": "Poprzednie wersje regulaminu (archiwum)"
   },
   "nav": {
     "openMenu": "Otwórz menu",
@@ -409,7 +410,7 @@
       "faq11": "Czy mogę kupić nieruchomość za pośrednictwem Vesteri lub członka Collective?",
       "faq12": "Transakcję obsługuje agent reprezentujący daną nieruchomość oraz inne właściwe strony. Vesteri Market ułatwia wyszukiwanie ofert i nawiązywanie kontaktu. Vesteri może również bezpośrednio reprezentować wybrane inwestycje zagraniczne. Szczegóły transakcji zależą od nieruchomości i kraju.",
       "faq13": "Czy Vesteri weryfikuje stan prawny wszystkich nieruchomości?",
-      "faq14": "Nie. Weryfikujemy członków Collective, ich działalność zawodową i przestrzeganie wspólnych standardów. Nie oznacza to automatycznej kontroli stanu prawnego ani technicznego każdej nieruchomości. Inaczej podchodzimy do wybranych zagranicznych nieruchomości oferowanych bezpośrednio przez Vesteri, ale również w ich przypadku należy sprawdzić zakres wykonanej weryfikacji. Chcemy stopniowo rozwijać pomoc dla kupujących, np. w znalezieniu niezależnego prawnika do przeprowadzenia badania stanu prawnego (due diligence) czy uzyskaniu wsparcia podczas zakupu. Na razie nie gwarantujemy dostępności tych usług przy każdej transakcji. Przed zakupem warto zawsze zlecić niezależną analizę prawną i techniczną nieruchomości.",
+      "faq14": "Nie. Przed zatwierdzeniem publikowania ofert w Vesteri Market weryfikujemy agentów, ich działalność zawodową i akceptację wspólnych standardów. Nie oznacza to automatycznej kontroli stanu prawnego ani technicznego każdej nieruchomości. Inaczej podchodzimy do wybranych zagranicznych nieruchomości oferowanych bezpośrednio przez Vesteri, ale również w ich przypadku należy sprawdzić zakres wykonanej weryfikacji. Chcemy stopniowo rozwijać pomoc dla kupujących, np. w znalezieniu niezależnego prawnika do przeprowadzenia badania stanu prawnego (due diligence) czy uzyskaniu wsparcia podczas zakupu. Na razie nie gwarantujemy dostępności tych usług przy każdej transakcji. Przed zakupem warto zawsze zlecić niezależną analizę prawną i techniczną nieruchomości.",
       "faq15": "Jak bezpiecznie kupić nieruchomość za granicą?",
       "faq16": "Sprawdź prawo własności, dokumentację, podatki, możliwości finansowania, wiarygodność dewelopera i pełne koszty zakupu. Skorzystaj z pomocy niezależnego prawnika znającego przepisy danego kraju. Vesteri Market nie zastępuje analizy prawnej, ale możemy wesprzeć Cię w procesie zakupu, między innymi pomagając znaleźć niezależnych doradców prawnych oraz osoby w naszej sieci, które mogą udzielić praktycznej pomocy. Zakres wsparcia zależy od nieruchomości i lokalizacji.",
       "faq17": "Czy mogę uczestniczyć w prezentacji nieruchomości LIVE?",
@@ -655,9 +656,9 @@
       "faq07": "Czy mogę publikować oferty przed zatwierdzeniem konta?",
       "faq08": "Nie. Publikowanie nieruchomości wymaga zatwierdzenia konta. Dostęp do Vesteri Channels jest osobny: każdemu agentowi, który założy konto, wysyłamy zaproszenie e-mailem.",
       "faq09": "Czy zgłoszenie i publikowanie ofert są płatne?",
-      "faq10": "Zgłoszenie do Collective i standardowe publikowanie ofert przez zatwierdzonych członków są bezpłatne. Podstawowe funkcje systemu Vesteri również są darmowe. Za dodatkowe narzędzia możesz płacić w miarę korzystania z nich albo wybrać abonament. Aktualne limity, opłaty i zakres funkcji premium znajdziesz na swoim koncie w systemie Vesteri.",
+      "faq10": "Założenie konta, członkostwo, dostęp do Vesteri Channels i standardowe publikowanie ofert są bezpłatne. Zaproszenie do Channels otrzymuje każdy agent po rejestracji. Publikowanie ofert wymaga osobnego zatwierdzenia konta. Podstawowe funkcje systemu Vesteri są darmowe. Aktualny zakres i ceny narzędzi premium znajdziesz na koncie agenta.",
       "faq11": "Czy zachowam własną markę i klientów?",
-      "faq12": "Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewniVesteri Market, społeczność i dostępne narzędzia.",
+      "faq12": "Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewnia Vesteri Market, społeczność i dostępne narzędzia.",
       "faq13": "Czy Vesteri Market obejmuje nieruchomości zagraniczne?",
       "faq14": "Tak. Vesteri Market prezentuje oferty z różnych rynków, w tym wybrane inwestycje zagraniczne Vesteri i jego partnerów. Dostępność nieruchomości, materiałów i prezentacji zależy od konkretnej oferty. Szczegóły uzyskasz u agenta wskazanego przy nieruchomości.",
       "faq15": "Czym jest Vesteri Channels?",
@@ -737,5 +738,13 @@
     "marketingTitle": "Marketing — HubSpot",
     "marketingDescription": "Pomiar interakcji i wsparcie działań marketingowych HubSpot. Uruchamiane tylko po Twojej zgodzie.",
     "retention": "Wybór zapamiętamy na 180 dni w tej przeglądarce. Możesz go zmienić lub wycofać w dowolnym momencie przez „Ustawienia cookies” w stopce. Wycofanie zgody odświeży stronę, aby zatrzymać uruchomione narzędzia."
+  },
+  "legalArchive": {
+    "title": "Archiwum regulaminów Vesteri Collective",
+    "intro": "Historyczne wersje dokumentów. Aktualne zasady znajdziesz w bieżącym Regulaminie Vesteri Collective.",
+    "current": "Przejdź do aktualnego regulaminu",
+    "versions": "Poprzednie wersje",
+    "notice": "Poniższe dokumenty zachowują treść historyczną. Mogą opisywać wcześniejszy model Collective i nie przedstawiają aktualnych zasad członkostwa.",
+    "download": "Archiwum — wersja {version} (DOCX)"
   }
 }

@@ -2,7 +2,7 @@
 
 **Jak zrealizować prawa dotyczące danych osobowych w Vesteri**
 
-Administrator: Time2Show, Inc. (marka Vesteri), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Wersja 1.1 · Obowiązuje od: 22 października 2026 r.
+Administrator: Time2Show, Inc. (marka Vesteri), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Wersja 1.2 · Obowiązuje od: 28 października 2026 r.
 
 ## Przysługują Ci prawa:
 
@@ -12,7 +12,7 @@ Administrator: Time2Show, Inc. (marka Vesteri), 1111B S Governors Ave STE 20579,
 - **Ograniczenia** (art. 18) — na czas weryfikacji prawidłowości, sprzeciwu lub zamiast usunięcia;
 - **Przenoszenia** (art. 20) — otrzymanie danych dostarczonych nam na podstawie zgody lub umowy w formacie ustrukturyzowanym (np. JSON/CSV) i przesłanie innemu administratorowi;
 - **Sprzeciwu** (art. 21) — wobec przetwarzania na podstawie uzasadnionego interesu; wobec marketingu bezpośredniego — zawsze skuteczny;
-- **Cofnięcia zgody** (art. 7 ust. 3) — w każdej chwili, bez wpływu na wcześniejsze przetwarzanie; najprościej: „Zarządzaj prywatnością" w stopce/koncie;
+- **Cofnięcia zgody** (art. 7 ust. 3) — w każdej chwili, bez wpływu na wcześniejsze przetwarzanie; zgody cookies zmienisz przez „Ustawienia cookies” w stopce. W pozostałych sprawach napisz na privacy@vesteri.com;
 - **Dotyczące profilowania** (art. 22) — weryfikacja wyniku scoringu przez człowieka, przedstawienie stanowiska, zakwestionowanie wyniku;
 - **Skargi** — do Prezesa UODO: ul. Stawki 2, 00-193 Warszawa · uodo.gov.pl. Możesz też złożyć skargę do organu w swoim państwie pobytu.
 

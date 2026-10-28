@@ -2,7 +2,7 @@
 
 Zasady członkostwa, publikowania ofert i korzystania z Vesteri Channels
 
-Wersja 2.1 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, Inc.
+Wersja 2.2 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, Inc.
 
 ## **§ 1. Postanowienia ogólne**
 
@@ -84,7 +84,7 @@ Wersja 2.1 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, I
 
 2\. Postępowanie: Vesteri przedstawia Członkowi zarzuty; Członek ma 7 dni na wyjaśnienia; Vesteri wydaje decyzję z uzasadnieniem w ciągu 14 dni od otrzymania wyjaśnień lub upływu terminu.
 
-3\. Środki stosowane odpowiednio do wagi naruszenia: upomnienie; zobowiązanie do naprawienia naruszenia (np. uzupełnienie rozliczenia); zawieszenie publikacji ofert lub członkostwa do 90 dni; wykluczenie.
+3\. Środki stosowane odpowiednio do wagi naruszenia: upomnienie; zobowiązanie do naprawienia naruszenia; usunięcie treści lub ograniczenie dostępu do Channels; zawieszenie publikacji ofert lub członkostwa do 90 dni; wykluczenie.
 
 4\. Wykluczenie stosuje się przy poważnym naruszeniu (w szczególności: oszustwo, naruszenie poufności, świadome wprowadzenie kupującego w błąd, utrata uprawnień zawodowych) albo przy naruszeniach powtarzających się mimo upomnienia.
 

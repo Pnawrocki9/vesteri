@@ -1,6 +1,6 @@
 # POLITYKA PRYWATNOŚCI
 
-**Serwis i platforma Vesteri** · Wersja 1.4 · Obowiązuje od: 28 października 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.5 · Obowiązuje od: 28 października 2026 r.
 
 ## 1. Kto jest administratorem Twoich danych
 
@@ -11,11 +11,16 @@ Kontakt w sprawach danych osobowych: **privacy@vesteri.com** lub listownie na ad
 Osoba kontaktowa w sprawach ochrony danych: Piotr Nawrocki, privacy@vesteri.com.
 
 
-## 2. Jak działa Vesteri — przejrzysty opis przetwarzania
+## 2. Zakres Polityki i obszary przetwarzania
 
-Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Vesteri Market, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
+Ta Polityka opisuje przetwarzanie danych związane z serwisem vesteri.com, obsługą członkostwa w Collective i Vesteri Channels oraz wybranymi webinarami i projektami z portfolio Vesteri.
 
-Twoje dane przetwarzamy na kolejnych etapach:
+- **Serwis i poradniki:** informacje o Vesteri, kontakt z naszym zespołem oraz analityka i narzędzia marketingowe zgodnie z wyborem cookies.
+- **Vesteri Market:** konta, oferty, prezentacje LIVE agentów i zapytania działają na vesteri.estalara.com. Ich przetwarzanie opisuje odrębna [Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy).
+- **Collective i Channels:** dane konta służą obsłudze członkostwa, ręcznemu zaproszeniu do społeczności i komunikacji organizacyjnej. Szczegóły, widoczność profilu i wiadomości oraz zasady retencji opisuje pkt 12.
+- **Wybrane projekty z portfolio Vesteri:** poniżej opisujemy informacje o projektach, webinary, AI, profilowanie i przekazywanie danych deweloperom. Ten proces nie jest warunkiem uczestnictwa w Channels i nie dotyczy automatycznie każdej nieruchomości w Vesteri Market. Opisy danych behawioralnych, scoringu i udostępniania deweloperom w pkt 3–9 odnoszą się do tego zakresu, gdy korzystasz z odpowiednich funkcji i udzielisz wymaganych zgód. Zachowujemy te informacje, aby wyjaśniać przetwarzanie, a nie rozszerzać zgody na inne usługi.
+
+### Proces dotyczący wybranych projektów Vesteri
 
 1. **Marketing lokalny** — docierają do Ciebie nasze reklamy projektów deweloperskich (targetowane geograficznie i językowo).
 2. **Informacje i czat AI** — udostępniamy komplet informacji o projektach w Twoim języku; pytania możesz zadawać asystentowi AI.
@@ -39,6 +44,8 @@ Twoje dane przetwarzamy na kolejnych etapach:
 
 | Cel | Dane | Podstawa (RODO) |
 |---|---|---|
+| Obsługa członkostwa, zaproszeń do Channels i komunikacji organizacyjnej | dane konta i kontaktowe | art. 6 ust. 1 lit. b (umowa); szczegóły w pkt 12 |
+| Bezpieczeństwo i moderacja społeczności | dane profilu, wiadomości i zgłoszeń | art. 6 ust. 1 lit. f (uzasadniony interes); szczegóły w pkt 12 |
 | Rejestracja i udział w webinarze, dostęp do materiałów | rejestracyjne, techniczne | art. 6 ust. 1 lit. b (umowa) |
 | Obsługa czatu AI (odpowiedzi na pytania) | rozmowy z AI | art. 6 ust. 1 lit. b (umowa) |
 | Analiza pytań i zachowania → profil zainteresowania, scoring | behawioralne, rozmowy z AI, ankiety | art. 6 ust. 1 lit. a (zgoda) |

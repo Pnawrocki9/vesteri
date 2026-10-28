@@ -1,6 +1,6 @@
 # REGULAMIN
 
-**Regulamin świadczenia usług drogą elektroniczną serwisu i platformy Vesteri** · Wersja 1.1 · Obowiązuje od: 22 października 2026 r.
+**Regulamin świadczenia usług drogą elektroniczną serwisu i platformy Vesteri** · Wersja 1.2 · Obowiązuje od: 28 października 2026 r.
 *(wydany na podstawie art. 8 ustawy z 18.07.2002 o świadczeniu usług drogą elektroniczną)*
 
 ## 1. Usługodawca
@@ -9,16 +9,14 @@ Usługodawcą jest **Time2Show, Inc.** (Delaware, USA), 1111B S Governors Ave ST
 
 ## 2. Rodzaje i zakres usług
 
-Świadczymy nieodpłatnie na rzecz inwestorów następujące usługi drogą elektroniczną:
-1. dostęp do serwisu informacyjnego o projektach deweloperskich na rynkach zagranicznych;
-2. asystenta AI odpowiadającego na pytania o projekty;
-3. udział w webinarach z udziałem deweloperów, prowadzonych przez moderatora Vesteri, z możliwością tłumaczenia;
-4. — za odrębnymi zgodami — analizę preferencji, przekazanie danych deweloperowi oraz zaproszenia na kolejne wydarzenia;
-5. na żądanie: przekazanie kontaktu do niezależnych biur prawnych na rynku docelowym.
+Vesteri obejmuje następujące obszary:
 
-Współpraca z deweloperami odbywa się na podstawie odrębnych umów B2B i nie podlega niniejszemu Regulaminowi.
+1. **Serwis vesteri.com** — informacje o Vesteri, poradniki i materiały dotyczące nieruchomości oraz sposoby kontaktu dla kupujących, sprzedających i agentów.
+2. **Vesteri Market i system Vesteri** — oferty nieruchomości, konta użytkowników, prezentacje LIVE i webinary agentów oraz zapytania do agentów, dostępne na vesteri.estalara.com. Usługi te podlegają odrębnemu [Regulaminowi Platformy Vesteri](https://vesteri.estalara.com/pl/legal/terms).
+3. **Vesteri Collective i Vesteri Channels** — członkostwo w społeczności niezależnych agentów, ręczne wysyłanie zaproszeń po rejestracji konta agenta w Vesteri Market, komunikacja i wymiana wiedzy. Pełne warunki określa [Regulamin Vesteri Collective](/pl/regulamin-vesteri-collective). Weryfikacja do publikowania ofert jest osobna od dostępu do społeczności. Współpraca transakcyjna i jej warunki zależą od dobrowolnych ustaleń agentów.
+4. **Wybrane projekty z portfolio Vesteri** — materiały o inwestycjach zagranicznych, asystent AI odpowiadający na pytania o projekty, webinary z deweloperami oraz, na żądanie, kontakt do niezależnych biur prawnych. Analiza preferencji, scoring, przekazanie danych deweloperowi i zaproszenia marketingowe wymagają odpowiednich odrębnych zgód opisanych w Polityce prywatności. Ten zakres nie dotyczy automatycznie każdej oferty Vesteri Market ani uczestnictwa w Channels.
 
-Vesteri Market, konta użytkowników, prezentacje LIVE prowadzone przez agentów, zapytania do agentów oraz Vesteri Collective działają na platformie vesteri.estalara.com i podlegają **[Regulaminowi Platformy Vesteri](https://vesteri.estalara.com/pl/legal/terms)**, a w przypadku agentów — także **[Regulaminowi Vesteri Collective](/pl/regulamin-vesteri-collective)**. W zakresie tych usług pierwszeństwo mają te dokumenty.
+Korzystanie z serwisu, założenie konta, członkostwo i standardowe publikowanie ofert są bezpłatne; publikowanie ofert wymaga zatwierdzenia konta. Ceny i zakres dodatkowych narzędzi określa cennik na koncie agenta i właściwe warunki Platformy. Współpraca Vesteri z deweloperami podlega odrębnym umowom B2B. W sprawach Platformy oraz członkostwa i Channels pierwszeństwo mają odpowiednie dokumenty wskazane powyżej.
 
 ## 3. Charakter usług Vesteri
 
@@ -32,9 +30,9 @@ Urządzenie z dostępem do internetu, aktualna przeglądarka z obsługą JavaScr
 
 ## 5. Zawarcie i rozwiązanie umowy o świadczenie usług
 
-Umowa o świadczenie usług elektronicznych zostaje zawarta z chwilą rozpoczęcia korzystania z serwisu (usługi informacyjne) albo z chwilą rejestracji na webinar (usługi webinarowe) i jest zawierana na czas korzystania z usługi. Możesz w każdej chwili zaprzestać korzystania i zażądać usunięcia danych (privacy@vesteri.com). Ponieważ usługi są nieodpłatne i świadczone na Twoje żądanie, nie wiążą się z obowiązkiem zapłaty; nie ograniczamy Twoich ustawowych praw konsumenta.
+Umowa o świadczenie usług elektronicznych zostaje zawarta z chwilą rozpoczęcia korzystania z serwisu (usługi informacyjne) albo z chwilą rejestracji na webinar (usługi webinarowe) i jest zawierana na czas korzystania z usługi. Możesz w każdej chwili zaprzestać korzystania i zażądać usunięcia danych (privacy@vesteri.com). Bezpłatne korzystanie z serwisu i udział w nieodpłatnym wydarzeniu nie powodują obowiązku zapłaty. Dla członkostwa, Channels i usług Platformy zasady zawarcia i zakończenia umowy określają dokumenty wskazane w pkt 2. Nie ograniczamy ustawowych praw konsumenta.
 
-## 6. Zasady udziału w webinarach
+## 6. Zasady udziału w webinarach Vesteri dotyczących portfolio Vesteri dotyczących portfolio
 
 1. Przed dołączeniem otrzymasz informację o trybie webinaru (w tym o ewentualnym nagrywaniu) i — odrębnie — prośby o zgody opcjonalne. Udział jest możliwy bez zgód opcjonalnych.
 2. Podczas webinaru zachowuj się zgodnie z prawem i dobrymi obyczajami. Zakazane jest dostarczanie treści o charakterze bezprawnym, obraźliwym, naruszającym prawa osób trzecich lub reklamującym podmioty trzecie.
@@ -43,7 +41,7 @@ Umowa o świadczenie usług elektronicznych zostaje zawarta z chwilą rozpoczęc
 
 ## 7. Własność intelektualna i treści użytkownika
 
-Serwis, platforma i materiały Vesteri są chronione prawem. Materiały projektowe należą do deweloperów. Zadając pytania lub publikując treści w czacie, udzielasz nam niewyłącznej, nieodpłatnej licencji na ich wykorzystanie wyłącznie w celu świadczenia usług (w tym — za Twoją zgodą — przekazania deweloperowi). Pozostajesz właścicielem swoich treści.
+Serwis, platforma i materiały Vesteri są chronione prawem. Prawa do materiałów dotyczących nieruchomości przysługują ich uprawnionym właścicielom; mogą to być agenci, deweloperzy lub inni twórcy. Zasady treści publikowanych w Channels określa Regulamin Collective. Zadając pytania lub publikując treści w czacie, udzielasz nam niewyłącznej, nieodpłatnej licencji na ich wykorzystanie wyłącznie w celu świadczenia usług (w tym — za Twoją zgodą — przekazania deweloperowi). Pozostajesz właścicielem swoich treści.
 
 ## 8. Odpowiedzialność
 

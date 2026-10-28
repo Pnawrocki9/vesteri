@@ -2,7 +2,7 @@
 
 **How to exercise your personal data rights at Vesteri**
 
-Controller: Time2Show, Inc. (Vesteri brand), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Version 1.1 · Effective from: 22 October 2026
+Controller: Time2Show, Inc. (Vesteri brand), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA · Version 1.2 · Effective from: 28 October 2026
 
 ## You have the following rights:
 
@@ -12,7 +12,7 @@ Controller: Time2Show, Inc. (Vesteri brand), 1111B S Governors Ave STE 20579, Do
 - **Restriction** (Art. 18) — for the time of verifying accuracy or an objection, or instead of erasure;
 - **Portability** (Art. 20) — receiving the data you provided to us on the basis of consent or contract in a structured format (e.g. JSON/CSV) and transmitting it to another controller;
 - **Objection** (Art. 21) — to processing based on legitimate interest; an objection to direct marketing is always effective;
-- **Withdrawal of consent** (Art. 7(3)) — at any time, without affecting prior processing; easiest via "Manage privacy" in the footer/your account;
+- **Withdrawal of consent** (Art. 7(3)) — at any time, without affecting prior processing; change cookie consents through “Cookie settings” in the footer; for other matters, email privacy@vesteri.com;
 - **Rights concerning profiling** (Art. 22) — human review of your score, expressing your point of view, contesting the score;
 - **Complaint** — to the President of UODO: ul. Stawki 2, 00-193 Warszawa, Poland · uodo.gov.pl. You may also complain to the supervisory authority in your country of residence.
 

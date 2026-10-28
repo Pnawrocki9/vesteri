@@ -50,7 +50,13 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
-    return [{ source: '/:path*', headers: securityHeaders }];
+    return [
+      { source: '/:path*', headers: securityHeaders },
+      ...['v1.0', 'v2.0', 'v2.1'].map((version) => ({
+        source: `/docs/collective/${version}/:path*`,
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, noarchive' }],
+      })),
+    ];
   },
 };
 

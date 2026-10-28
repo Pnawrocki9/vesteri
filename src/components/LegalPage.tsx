@@ -35,8 +35,8 @@ export default async function LegalPage({
   const document = legalDocuments[locale][page];
   const downloadHref =
     locale === 'pl'
-      ? '/docs/collective/v2.1/Regulamin_Vesteri_Collective_v2.1_PL.docx'
-      : '/docs/collective/v2.1/Vesteri_Collective_Rules_v2.1_EN.docx';
+      ? '/docs/collective/v2.2/Regulamin_Vesteri_Collective_v2.2_PL.docx'
+      : '/docs/collective/v2.2/Vesteri_Collective_Rules_v2.2_EN.docx';
 
   return (
     <MarketingShell className="marketing-legal">
@@ -52,14 +52,24 @@ export default async function LegalPage({
             <h1 id="legal-page-title">{t(page)}</h1>
             <p className="legal-subtitle">{t(`meta.${page}`)}</p>
             {page === 'collective-rules' && (
-              <a
-                className="btn btn-cream legal-download"
-                href={downloadHref}
-                download
-              >
-                {t('downloadOriginal')}
-                <span aria-hidden="true">↓</span>
-              </a>
+              <>
+                <a
+                  className="btn btn-cream legal-download"
+                  href={downloadHref}
+                  download
+                >
+                  {t('downloadOriginal')}
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <p>
+                  <Link
+                    className="legal-archive-link"
+                    href="/collective-rules-archive"
+                  >
+                    {t('rulesArchive')}
+                  </Link>
+                </p>
+              </>
             )}
           </div>
         </section>

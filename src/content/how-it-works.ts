@@ -60,11 +60,11 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Czy zgłoszenie i publikowanie ofert są płatne?',
-        a: 'Zgłoszenie do Collective i standardowe publikowanie ofert przez zatwierdzonych członków są bezpłatne. Podstawowe funkcje systemu Vesteri również są darmowe. Za dodatkowe narzędzia możesz płacić w miarę korzystania z nich albo wybrać abonament. Aktualne limity, opłaty i zakres funkcji premium znajdziesz na swoim koncie w systemie Vesteri.',
+        a: 'Założenie konta, członkostwo, dostęp do Vesteri Channels i standardowe publikowanie ofert są bezpłatne. Zaproszenie do Channels otrzymuje każdy agent po rejestracji. Publikowanie ofert wymaga osobnego zatwierdzenia konta. Podstawowe funkcje systemu Vesteri są darmowe. Aktualny zakres i ceny narzędzi premium znajdziesz na koncie agenta.',
       },
       {
         q: 'Czy zachowam własną markę i klientów?',
-        a: 'Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewniVesteri Market, społeczność i dostępne narzędzia.',
+        a: 'Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewnia Vesteri Market, społeczność i dostępne narzędzia.',
       },
       {
         q: 'Czym jest Vesteri Channels?',
@@ -136,7 +136,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'limitations',
         title: 'Zakres odpowiedzialności',
-        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewniVesteri Market, narzędzia i przestrzeń społeczności. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
+        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewnia Vesteri Market, narzędzia i przestrzeń społeczności. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
       },
     ],
   },
@@ -170,7 +170,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Does it cost anything to apply or publish listings?',
-        a: 'Applying to Collective and publishing standard listings are free for approved members. Core Vesteri system features are free as well. You can pay for additional tools as you use them or choose a subscription. Current limits, fees and premium features are shown in your Vesteri agent account.',
+        a: 'Account creation, membership, Vesteri Channels access and standard listing publication are free. Every agent receives a Channels invitation after registration. Publishing listings requires separate account approval. Core Vesteri features are free. Check your agent account for current premium features and pricing.',
       },
       {
         q: 'Do I keep my own brand and clients?',

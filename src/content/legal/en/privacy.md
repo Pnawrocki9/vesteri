@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Vesteri website and platform** · Version 1.4 · Effective from: 28 October 2026
+**Vesteri website and platform** · Version 1.5 · Effective from: 28 October 2026
 
 ## 1. Who is the controller of your data
 
@@ -11,11 +11,16 @@ Contact for personal data matters: **privacy@vesteri.com** or by post to the add
 Contact person for data protection matters: Piotr Nawrocki, privacy@vesteri.com.
 
 
-## 2. How Vesteri works — a transparent description of processing
+## 2. Policy scope and processing areas
 
-Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. Vesteri Market, user accounts, agents' LIVE presentations, enquiries to agents operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
+This Policy covers processing associated with vesteri.com, Collective membership and Vesteri Channels administration, and selected webinars and projects in the Vesteri portfolio.
 
-We process your data at the following stages:
+- **Website and guides:** information about Vesteri, contact with our team, and analytics and marketing tools according to your cookie choices.
+- **Vesteri Market:** accounts, listings, agents’ LIVE presentations and enquiries operate at vesteri.estalara.com. The separate [Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy) describes that processing.
+- **Collective and Channels:** account data supports membership administration, manual community invitations and organisational communication. Section 12 explains profile and message visibility and retention.
+- **Selected Vesteri portfolio projects:** below we describe project information, webinars, AI, profiling and sharing data with developers. This process is not a condition for Channels participation and does not automatically apply to every Vesteri Market property. The descriptions of behavioural data, scoring and developer sharing in sections 3–9 apply within this scope when you use the relevant features and give the required consents. We retain these disclosures to explain processing, not to extend consent to other services.
+
+### Process for selected Vesteri projects
 
 1. **Local marketing** — you see our advertisements for developer projects (targeted by geography and language).
 2. **Information and AI chat** — we provide complete project information in your language; you can ask questions to an AI assistant.
@@ -39,6 +44,8 @@ We process your data at the following stages:
 
 | Purpose | Data | Basis (GDPR) |
 |---|---|---|
+| Membership administration, Channels invitations and organisational communication | account and contact data | Art. 6(1)(b) (contract); details in section 12 |
+| Community security and moderation | profile data, messages and reports | Art. 6(1)(f) (legitimate interest); details in section 12 |
 | Registration and participation in webinars, access to materials | registration, technical | Art. 6(1)(b) (contract) |
 | Operating the AI chat (answering questions) | AI conversations | Art. 6(1)(b) (contract) |
 | Analysis of questions and behaviour → interest profile, scoring | behavioural, AI conversations, surveys | Art. 6(1)(a) (consent) |

@@ -68,9 +68,9 @@ The official mark is `public/logo/vesteri-mark-teal-gradient.svg`. Reference
 photographs are temporary; final assets and publication rights need owner review.
 The owner-approved footer displays company/contact details and Collective rules.
 Reference-only review annotations have been removed. The Collective rules footer item opens `/pl/regulamin-vesteri-collective` or
-`/en/vesteri-collective-rules`. Both pages use the owner-approved v2.1 Market/community model, effective
-28 October 2026, with matching DOCX downloads under `public/docs/collective/v2.1/`.
-Previous downloads remain archived; current links point only to v2.1.
+`/en/vesteri-collective-rules`. Both pages use the owner-approved v2.2 Market/community model, effective
+28 October 2026, with matching DOCX downloads under `public/docs/collective/v2.2/`.
+Previous downloads remain archived; current links point only to v2.2.
 Markdown sources live in `src/content/legal/{pl,en}/collective-rules.md`.
 
 ## Collective marketplace and community
@@ -153,3 +153,16 @@ sources remain available to these generators without restoring their old routes.
 - Current tool availability, pricing and the existing 10% promotion commitment.
 - Operate the manual Channels invitation process for newly registered agents.
 - Keep published legal Markdown and the corresponding DOCX downloads synchronized.
+
+## Rules history and legal scopes
+
+The current Collective rules are v2.2 (28 October 2026); PL/EN DOCX files match
+the current Markdown. `/pl/archiwum-regulaminow-collective` and its EN equivalent
+label historical downloads. Versions 1.0, 2.0 and 2.1 remain byte-for-byte intact;
+`public/_headers` and Next response headers mark those assets noindex. The archive
+page is noindex/follow and is intentionally absent from the sitemap.
+
+General legal documents distinguish the information website, Vesteri Market,
+Collective/Channels and selected developer projects. Developer scoring and data
+sharing disclosures remain scoped to the latter, with separate consent. Agent
+verification concerns listing publication, not the manual Channels invitation.
