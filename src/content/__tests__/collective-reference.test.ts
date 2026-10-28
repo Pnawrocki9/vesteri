@@ -109,6 +109,19 @@ const flatten = (value: unknown): string[] =>
     : value && typeof value === "object"
       ? Object.values(value).flatMap(flatten)
       : [];
+// Owner-approved buyer choice: several agents without exclusivity, or one contact.
+const BUYER_CHOICE_REPLACES = {
+  pl: [
+    "Jeden agent. Więcej możliwości.",
+    "Czy jeden agent pomoże mi znaleźć nieruchomość w całej sieci?",
+  ],
+  en: [
+    "One agent. More options.",
+    "You are not limited to one agency’s listings.",
+    "Will one agent help me find properties across the network?",
+    "Yes, if an agent agrees to guide your search.",
+  ],
+};
 describe("V10.7 authoritative bilingual content and routes", () => {
   for (const [locale, messages] of Object.entries({ en, pl }) as [
     "en" | "pl",
@@ -123,7 +136,15 @@ describe("V10.7 authoritative bilingual content and routes", () => {
           ...html.matchAll(/<summary[^>]*>([\s\S]*?)<\/summary>/g),
         ].map((m) => normalize(m[1]));
         expect(questions).toHaveLength(role.count);
-        for (const question of questions) expect(values).toContain(question);
+        for (const question of questions) {
+          expect(values).toContain(
+            role.id === "buyers" &&
+              question ===
+                BUYER_CHOICE_REPLACES[locale][locale === "pl" ? 1 : 2]
+              ? content.faq09
+              : question,
+          );
+        }
         const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/)![1];
         for (const match of main.matchAll(/>([^<>]+)</g)) {
           const text = normalize(match[1]);
@@ -198,6 +219,15 @@ describe("V10.7 authoritative bilingual content and routes", () => {
             ];
             expect(updated.length).toBeGreaterThan(60);
             expect(normalize(updated)).not.toBe(text);
+          } else if (
+            role.id === "buyers" &&
+            BUYER_CHOICE_REPLACES[locale].some((previous) =>
+              text.startsWith(previous),
+            )
+          ) {
+            // These four fields now explain the approved non-exclusive model.
+            expect(messages.marketing.buyers.buyers03.length).toBeGreaterThan(100);
+            expect(content.faq10.length).toBeGreaterThan(100);
           } else if (text && !text.startsWith("<!--"))
             expect(values).toContain(text);
         }
