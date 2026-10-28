@@ -1,6 +1,6 @@
 # DISCLAIMERS
 
-**Disclaimers concerning the Vesteri website and services** · Version 1.2 · Effective from: 28 October 2026
+**Disclaimers concerning the Vesteri website and services** · Version 1.3 · Effective from: 28 October 2026
 
 ## 1. Nature of the services
 
@@ -26,7 +26,7 @@ We share law firm contacts only at your request. The firms are independent from 
 
 For selected projects in the Vesteri portfolio, remuneration comes from developers — depending on the agreement for that project, remuneration may comprise campaign fees, fees for handed-over contacts, or a sales commission. We disclose this so you can take it into account when assessing the content presented. The scoring and the AI assistant operate on uniform, objective criteria independent of the remuneration received from any given developer.
 
-Vesteri also charges agents — Collective members — for premium platform features (subscriptions, credits). A premium tool fee is not itself a purchase of a position in the listing order. Vesteri Market takes activity into account: listings with a LIVE viewing or webinar in progress come first, followed by scheduled events in nearest-date order, then listings without scheduled events. Available tools and their prices are governed by the current price list; using a tool that enables an event may therefore be indirectly associated with visibility resulting from activity.
+Listing promotion and advertising on Vesteri Market are free. We do not charge for visibility or paid position boosts. Listing order reflects activity: events in progress first, then scheduled events in nearest-date order, then listings without scheduled events. Other premium features may be charged according to the price list in the agent account; these are not fees for listing promotion or advertising on Vesteri Market.
 
 ## 5. Risk of foreign property investment
 

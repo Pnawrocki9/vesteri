@@ -248,7 +248,11 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             >
               <span className="eyebrow">{t('visibilityEyebrow')}</span>
               <h3 id="live-visibility-title">{t('visibilityTitle')}</h3>
-              <p>{t('visibilityIntro')}</p>
+              <p className="live-visibility-promise">{t('visibilityIntro')}</p>
+              <p className="live-contribution">{t('visibilityContribution')}</p>
+              <p className="live-order-label">
+                <strong>{t('visibilityOrder')}</strong>
+              </p>
               <ol>
                 <li>
                   <strong>{t('visibilityNowTitle')}</strong>

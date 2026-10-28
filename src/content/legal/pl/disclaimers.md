@@ -1,6 +1,6 @@
 # ZASTRZEŻENIA
 
-**Zastrzeżenia dotyczące serwisu i usług Vesteri** · Wersja 1.2 · Obowiązuje od: 28 października 2026 r.
+**Zastrzeżenia dotyczące serwisu i usług Vesteri** · Wersja 1.3 · Obowiązuje od: 28 października 2026 r.
 
 ## 1. Charakter usług
 
@@ -26,7 +26,7 @@ Kontakty do biur prawnych udostępniamy wyłącznie na Twoje żądanie. Biura s�
 
 Przy wybranych projektach z portfolio Vesteri wynagrodzenie pochodzi od deweloperów — zależnie od umowy dotyczącej danego projektu wynagrodzenie może obejmować opłaty za kampanie, opłaty za przekazane kontakty lub prowizję od sprzedaży. Ujawniamy to, abyś mógł/mogła uwzględnić tę okoliczność w ocenie prezentowanych treści. Scoring i asystent AI działają według jednolitych, obiektywnych kryteriów niezależnych od wysokości wynagrodzenia od danego dewelopera.
 
-Vesteri pobiera także od agentów — członków Collective opłaty za funkcje premium platformy (abonamenty, kredyty). Sama opłata za narzędzie premium nie jest zakupem pozycji na liście ofert. Kolejność w Vesteri Market uwzględnia aktywność: najpierw oferty z trwającym LIVE lub webinarem, następnie z wydarzeniami zaplanowanymi od najbliższej daty, a potem bez zaplanowanych wydarzeń. Dostęp do poszczególnych narzędzi i ich ceny określa aktualny cennik; korzystanie z narzędzia umożliwiającego wydarzenie może więc pośrednio wiązać się z widocznością wynikającą z aktywności.
+Promowanie ofert i reklama w Vesteri Market są bezpłatne. Nie pobieramy opłat za widoczność ani płatne podbijanie pozycji. Kolejność wynika z aktywności: najpierw oferty z trwającym LIVE lub webinarem, następnie z zaplanowanymi wydarzeniami od najbliższej daty, a potem bez zaplanowanych wydarzeń. Pozostałe funkcje premium mogą być płatne zgodnie z cennikiem na koncie agenta; te opłaty nie są opłatami za promowanie ofert lub reklamę w Vesteri Market.
 
 ## 5. Ryzyko inwestycji zagranicznych
 
