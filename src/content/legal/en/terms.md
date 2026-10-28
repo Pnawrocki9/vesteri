@@ -18,7 +18,7 @@ We provide the following electronic services to investors free of charge:
 
 Cooperation with developers takes place under separate B2B agreements and is not governed by these Terms.
 
-The Vesteri Marketplace, user accounts, LIVE presentations hosted by agents, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com and are governed by the **[Vesteri Platform Terms](https://vesteri.estalara.com/en/legal/terms)** and, for agents, also by the **[Vesteri Collective Rules](/en/vesteri-collective-rules)**. Those documents prevail in respect of those services.
+Vesteri Market, user accounts, LIVE presentations hosted by agents, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com and are governed by the **[Vesteri Platform Terms](https://vesteri.estalara.com/en/legal/terms)** and, for agents, also by the **[Vesteri Collective Rules](/en/vesteri-collective-rules)**. Those documents prevail in respect of those services.
 
 ## 3. Nature of Vesteri's services
 

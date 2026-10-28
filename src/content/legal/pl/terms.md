@@ -18,7 +18,7 @@ Usługodawcą jest **Time2Show, Inc.** (Delaware, USA), 1111B S Governors Ave ST
 
 Współpraca z deweloperami odbywa się na podstawie odrębnych umów B2B i nie podlega niniejszemu Regulaminowi.
 
-Marketplace Vesteri, konta użytkowników, prezentacje LIVE prowadzone przez agentów, zapytania do agentów oraz Vesteri Collective działają na platformie vesteri.estalara.com i podlegają **[Regulaminowi Platformy Vesteri](https://vesteri.estalara.com/pl/legal/terms)**, a w przypadku agentów — także **[Regulaminowi Vesteri Collective](/pl/regulamin-vesteri-collective)**. W zakresie tych usług pierwszeństwo mają te dokumenty.
+Vesteri Market, konta użytkowników, prezentacje LIVE prowadzone przez agentów, zapytania do agentów oraz Vesteri Collective działają na platformie vesteri.estalara.com i podlegają **[Regulaminowi Platformy Vesteri](https://vesteri.estalara.com/pl/legal/terms)**, a w przypadku agentów — także **[Regulaminowi Vesteri Collective](/pl/regulamin-vesteri-collective)**. W zakresie tych usług pierwszeństwo mają te dokumenty.
 
 ## 3. Charakter usług Vesteri
 

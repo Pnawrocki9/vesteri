@@ -13,7 +13,7 @@ Osoba kontaktowa w sprawach ochrony danych: Piotr Nawrocki, privacy@vesteri.com.
 
 ## 2. Jak działa Vesteri — przejrzysty opis przetwarzania
 
-Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Marketplace, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
+Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Vesteri Market, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
 
 Twoje dane przetwarzamy na kolejnych etapach:
 

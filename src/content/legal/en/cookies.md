@@ -52,6 +52,6 @@ This banner covers the identified tools on Vesteri.com. It does not grant consen
 
 ## 7. The Vesteri platform
 
-The platform at vesteri.estalara.com (marketplace, accounts, LIVE presentations) has a separate [Cookies Policy](https://vesteri.estalara.com/en/legal/cookie) and consent mechanism. Choices on Vesteri.com are not automatically shared with that platform.
+The platform at vesteri.estalara.com (Vesteri Market, accounts, LIVE presentations) has a separate [Cookies Policy](https://vesteri.estalara.com/en/legal/cookie) and consent mechanism. Choices on Vesteri.com are not automatically shared with that platform.
 
 *In case of discrepancies, for consumers habitually resident in Poland the Polish version prevails.*

@@ -31,7 +31,7 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 // Head office as printed in the site footer (developers.footer.addr).
 // Same wording as the Collective description in llms.txt and the meta copy.
 const ORGANIZATION_DESCRIPTION =
-  'Vesteri Collective is a community of independent real estate agents and agencies with a shared property marketplace, professional standards and Vesteri Channels for learning and exchanging experience. Approved agents publish local and international listings.';
+  'Vesteri Collective is a community of independent real estate agents and agencies with Vesteri Market, professional standards and Vesteri Channels for learning and exchanging experience. Approved agents publish local and international listings.';
 
 const ADDRESS = {
   '@type': 'PostalAddress',
@@ -47,7 +47,7 @@ export function organizationJsonLd() {
     '@type': 'Organization',
     '@id': ORGANIZATION_ID,
     name: 'Vesteri Collective',
-    alternateName: ['Vesteri', 'Vesteri Marketplace'],
+    alternateName: ['Vesteri', 'Vesteri Market'],
     description: ORGANIZATION_DESCRIPTION,
     // Vesteri is a brand of Time2Show, Inc. — stated on the About page and in
     // the footer of every page that has one.
@@ -76,7 +76,7 @@ export function organizationJsonLd() {
     knowsAbout: [
       'real estate agent network',
       'real estate professional community',
-      'property marketplace',
+      'property listings',
       'professional knowledge sharing',
       'international property',
     ],

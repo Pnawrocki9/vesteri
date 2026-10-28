@@ -52,4 +52,4 @@ Baner dotyczy wskazanych narzędzi serwisu Vesteri.com. Nie oznacza zgody na dod
 
 ## 7. Platforma Vesteri
 
-Platforma vesteri.estalara.com (marketplace, konta, prezentacje LIVE) ma odrębną [Politykę cookies](https://vesteri.estalara.com/pl/legal/cookie) oraz własny mechanizm zgody. Wybór dokonany na Vesteri.com nie jest automatycznie przekazywany na tę platformę.
+Platforma vesteri.estalara.com (Vesteri Market, konta, prezentacje LIVE) ma odrębną [Politykę cookies](https://vesteri.estalara.com/pl/legal/cookie) oraz własny mechanizm zgody. Wybór dokonany na Vesteri.com nie jest automatycznie przekazywany na tę platformę.

@@ -2,17 +2,17 @@
 
 Membership, listing publication and Vesteri Channels rules
 
-Version 2.0 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
+Version 2.1 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
 
 ## **§ 1. General provisions**
 
 1\. Vesteri Collective (the “Collective”) is a community of independent real estate agents and agencies operated by Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, under the Vesteri brand (“Vesteri”). Contact for Collective matters: collective@vesteri.com.
 
-2\. These Rules govern membership, listing standards and use of Vesteri Channels. The Vesteri system at vesteri.estalara.com (the “System”), including the Marketplace, is also subject to separate Platform Terms. These Rules apply to membership and Vesteri Channels.
+2\. These Rules govern membership, listing standards and use of Vesteri Channels. The Vesteri system at vesteri.estalara.com (the “System”), including Vesteri Market, is also subject to separate Platform Terms. These Rules apply to membership and Vesteri Channels.
 
 3\. These Rules are addressed to businesses operating as real estate agents or agencies. Relations with buyers and sellers are governed by the applicable service terms and agreements made directly with the agent.
 
-4\. A Member is an agent or agency that has created a System account and accepted these Rules. An Approved Agent is a Member whose account has also been verified for listing publication. The Marketplace is the public part of the System presenting Approved Agents’ listings. Vesteri Channels is the Members’ space for communication, learning and exchanging experience.
+4\. A Member is an agent or agency that has created a System account and accepted these Rules. An Approved Agent is a Member whose account has also been verified for listing publication. Vesteri Market is the public part of the System presenting Approved Agents’ listings. Vesteri Channels is the Members’ space for communication, learning and exchanging experience.
 
 ## **§ 2. Accounts, membership and listing publication**
 
@@ -50,13 +50,15 @@ Version 2.0 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
 
 5\. Vesteri moderates the community and may remove content that breaches the rules and restrict access under § 8. It does not guarantee a particular number of resources, events, replies or outcomes from participation.
 
+6\. Membership does not require cooperation on transactions or any particular commission split. Members who choose to cooperate agree the terms independently. Examples of splits presented by Vesteri are non-binding suggestions; no default split applies without agreement between the parties.
+
 ## **§ 5. International properties**
 
-1\. The Marketplace may include selected international developments presented by Vesteri or its partners under separate agreements.
+1\. Vesteri Market may include selected international developments presented by Vesteri or its partners under separate agreements.
 
 2\. The agent named on the listing provides details of the project, available materials and viewings. Services and purchase terms are agreed for the individual property.
 
-3\. Before buying, independently check the property’s legal and technical condition and the reliability of transaction parties. Marketplace presence does not guarantee project completion or financial performance.
+3\. Before buying, independently check the property’s legal and technical condition and the reliability of transaction parties. Vesteri Market presence does not guarantee project completion or financial performance.
 
 ## **§ 6. Fees**
 
@@ -98,7 +100,7 @@ Version 2.0 · Effective from: 28 October 2026 · Operator: Time2Show, Inc.
 
 3\. Vesteri may terminate membership on 30 days’ notice without giving reasons, and with immediate effect in the cases set out in § 8.
 
-4\. Upon termination the Member’s listings are removed from the Marketplace and the right to use the designation "Member of Vesteri Collective" expires. Access to Vesteri Channels ends.
+4\. Upon termination the Member’s listings are removed from Vesteri Market and the right to use the designation "Member of Vesteri Collective" expires. Access to Vesteri Channels ends.
 
 ## **§ 10. Liability**
 

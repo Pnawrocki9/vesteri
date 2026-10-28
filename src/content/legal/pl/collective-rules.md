@@ -2,17 +2,17 @@
 
 Zasady członkostwa, publikowania ofert i korzystania z Vesteri Channels
 
-Wersja 2.0 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, Inc.
+Wersja 2.1 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, Inc.
 
 ## **§ 1. Postanowienia ogólne**
 
 1\. Vesteri Collective („Collective”) to społeczność niezależnych agentów i biur nieruchomości prowadzona przez Time2Show, Inc. (Delaware, USA), 1111B S Governors Ave STE 20579, Dover, DE 19904, USA, działającą pod marką Vesteri („Vesteri”). Kontakt w sprawach Collective: collective@vesteri.com.
 
-2\. Regulamin określa warunki członkostwa, standardy publikowania ofert i korzystania z Vesteri Channels. System Vesteri dostępny pod adresem vesteri.estalara.com („System”), w tym Marketplace, podlega również odrębnemu Regulaminowi Platformy. W sprawach członkostwa i Vesteri Channels stosuje się niniejszy Regulamin.
+2\. Regulamin określa warunki członkostwa, standardy publikowania ofert i korzystania z Vesteri Channels. System Vesteri dostępny pod adresem vesteri.estalara.com („System”), w tym Vesteri Market, podlega również odrębnemu Regulaminowi Platformy. W sprawach członkostwa i Vesteri Channels stosuje się niniejszy Regulamin.
 
 3\. Regulamin jest skierowany do przedsiębiorców działających jako agenci lub biura nieruchomości. Relacje z kupującymi i sprzedającymi regulują właściwe regulaminy usług oraz umowy zawierane bezpośrednio z agentem.
 
-4\. Członek to agent lub biuro, które założyło konto w Systemie i zaakceptowało Regulamin. Zatwierdzony Agent to Członek, którego konto zostało dodatkowo zweryfikowane do publikowania ofert. Marketplace to publiczna część Systemu prezentująca oferty Zatwierdzonych Agentów. Vesteri Channels to przestrzeń komunikacji, zdobywania wiedzy i wymiany doświadczeń Członków.
+4\. Członek to agent lub biuro, które założyło konto w Systemie i zaakceptowało Regulamin. Zatwierdzony Agent to Członek, którego konto zostało dodatkowo zweryfikowane do publikowania ofert. Vesteri Market to publiczna część Systemu prezentująca oferty Zatwierdzonych Agentów. Vesteri Channels to przestrzeń komunikacji, zdobywania wiedzy i wymiany doświadczeń Członków.
 
 ## **§ 2. Konto, członkostwo i publikowanie ofert**
 
@@ -50,13 +50,15 @@ Wersja 2.0 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, I
 
 5\. Vesteri moderuje przestrzeń społeczności i może usuwać treści naruszające zasady oraz ograniczać dostęp na zasadach § 8. Nie gwarantuje określonej liczby materiałów, wydarzeń, odpowiedzi ani rezultatów uczestnictwa.
 
+6\. Członkostwo nie nakłada obowiązku współpracy przy transakcjach ani stosowania określonego podziału prowizji. Jeśli Członkowie zdecydują się na współpracę, samodzielnie uzgadniają jej warunki. Przykłady podziału prezentowane przez Vesteri są niewiążącymi sugestiami; bez uzgodnienia między stronami nie obowiązuje podział domyślny.
+
 ## **§ 5. Nieruchomości zagraniczne**
 
-1\. Marketplace może obejmować wybrane inwestycje zagraniczne prezentowane przez Vesteri lub jego partnerów na podstawie odrębnych umów.
+1\. Vesteri Market może obejmować wybrane inwestycje zagraniczne prezentowane przez Vesteri lub jego partnerów na podstawie odrębnych umów.
 
 2\. Informacje o projekcie, dostępnych materiałach i prezentacjach podaje agent wskazany przy ofercie. Zakres usług i warunki zakupu ustala się dla konkretnej nieruchomości.
 
-3\. Przed zakupem należy niezależnie sprawdzić stan prawny i techniczny nieruchomości oraz wiarygodność stron transakcji. Obecność w Marketplace nie stanowi gwarancji realizacji inwestycji ani wyniku finansowego.
+3\. Przed zakupem należy niezależnie sprawdzić stan prawny i techniczny nieruchomości oraz wiarygodność stron transakcji. Obecność w Vesteri Market nie stanowi gwarancji realizacji inwestycji ani wyniku finansowego.
 
 ## **§ 6. Opłaty**
 
@@ -98,7 +100,7 @@ Wersja 2.0 · Obowiązuje od: 28 października 2026 r. · Operator: Time2Show, I
 
 3\. Vesteri może wypowiedzieć członkostwo z zachowaniem 30-dniowego terminu bez podania przyczyny, a ze skutkiem natychmiastowym w przypadkach określonych w § 8.
 
-4\. Z chwilą zakończenia członkostwa oferty Członka są usuwane z Marketplace, a prawo do oznaczenia „Członek Vesteri Collective” wygasa. Dostęp do Vesteri Channels zostaje zakończony.
+4\. Z chwilą zakończenia członkostwa oferty Członka są usuwane z Vesteri Market, a prawo do oznaczenia „Członek Vesteri Collective” wygasa. Dostęp do Vesteri Channels zostaje zakończony.
 
 ## **§ 10. Odpowiedzialność**
 

@@ -1,3 +1,8 @@
+import {
+  commissionGuidance,
+  commissionGuidanceBody,
+} from './commission-guidance';
+
 // Bilingual explanatory copy, checked against the current Collective Rules and
 // approved marketing pages. FAQ answers feed both the visible FAQ and JSON-LD.
 // Section IDs stay the same across locales so language switching retains anchors.
@@ -26,12 +31,12 @@ export type HowItWorksContent = {
 
 export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
   pl: {
-    title: 'Jak działa Vesteri Collective — marketplace i społeczność',
+    title: 'Jak działa Vesteri Collective — Vesteri Market i społeczność',
     description:
-      'Społeczność niezależnych agentów, wspólny marketplace i Vesteri Channels. Publikuj oferty, zdobywaj wiedzę i wymieniaj doświadczenia pod własną marką.',
+      'Społeczność niezależnych agentów, Vesteri Market i Vesteri Channels. Publikuj oferty, zdobywaj wiedzę i wymieniaj doświadczenia pod własną marką.',
     eyebrow: 'VESTERI COLLECTIVE · JAK TO DZIAŁA',
     h1: 'Jak działa Vesteri Collective',
-    lead: 'Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości. Łączą nas wspólny marketplace, standardy profesjonalnej obsługi oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów i wymiany doświadczeń. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami.',
+    lead: 'Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości. Łączą nas Vesteri Market, standardy profesjonalnej obsługi oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów i wymiany doświadczeń. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami.',
     ctaApply: 'Dołącz do Collective ↗',
     ctaBrowse: 'Przeglądaj nieruchomości ↗',
     faqTitle: 'Najczęstsze pytania',
@@ -43,7 +48,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
     faq: [
       {
         q: 'Dlaczego warto dołączyć do Vesteri Collective?',
-        a: 'Zyskujesz wspólny marketplace do prezentowania ofert oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów z agentami i wymiany doświadczeń. Zachowujesz własną markę i klientów. Możesz też korzystać z dostępnych narzędzi sprzedażowych systemu Vesteri.',
+        a: 'Zyskujesz Vesteri Market do prezentowania ofert oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów z agentami i wymiany doświadczeń. Zachowujesz własną markę i klientów. Możesz też korzystać z dostępnych narzędzi sprzedażowych systemu Vesteri.',
       },
       {
         q: 'Kto może zgłosić się do Vesteri Collective?',
@@ -59,7 +64,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Czy zachowam własną markę i klientów?',
-        a: 'Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewnia wspólny marketplace, społeczność i dostępne narzędzia.',
+        a: 'Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewniVesteri Market, społeczność i dostępne narzędzia.',
       },
       {
         q: 'Czym jest Vesteri Channels?',
@@ -86,22 +91,27 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'overview',
         title: 'Collective w trzech zdaniach',
-        body: '- **Dla kupujących:** oferty lokalne i zagraniczne w jednym marketplace oraz bezpośredni kontakt z agentami, którzy je prezentują.\n\n- **Dla sprzedających:** profesjonalna obsługa na warunkach ustalonych z agentem i możliwość publikacji nieruchomości we wspólnym marketplace.\n\n- **Dla agentów:** własna marka i klienci, wspólny marketplace oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.',
+        body: '- **Dla kupujących:** oferty lokalne i zagraniczne w Vesteri Market oraz bezpośredni kontakt z agentami, którzy je prezentują.\n\n- **Dla sprzedających:** profesjonalna obsługa na warunkach ustalonych z agentem i możliwość publikacji nieruchomości w Vesteri Market.\n\n- **Dla agentów:** własna marka i klienci, Vesteri Market oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.',
       },
       {
         id: 'membership',
         title: 'Rejestracja i dostęp do społeczności',
-        body: '1. **Załóż konto agenta** na platformie Vesteri i zaakceptuj zasady.\n\n2. **Odbierz zaproszenie e-mailem.** Każdemu agentowi po rejestracji ręcznie wysyłamy zaproszenie do Vesteri Channels.\n\n3. **Dołącz do rozmów.** Zadawaj pytania, poznawaj innych agentów i wymieniaj doświadczenia.\n\nZaproszenie jest wysyłane przez nasz zespół, dlatego nie pojawia się automatycznie po utworzeniu konta. W sprawie dostępu napisz na [collective@vesteri.com](mailto:collective@vesteri.com). Publikowanie ofert wymaga osobnej weryfikacji; dostęp do Channels nie czeka na jej zakończenie.',
+        body: '1. **Załóż konto agenta** poprzez rejestrację nVesteri Market.\n\n2. **Odbierz zaproszenie e-mailem.** Każdemu agentowi po rejestracji ręcznie wysyłamy zaproszenie do Vesteri Channels.\n\n3. **Dołącz do rozmów.** Zadawaj pytania, poznawaj innych agentów i wymieniaj doświadczenia.\n\nZaproszenie jest wysyłane przez nasz zespół, dlatego nie pojawia się automatycznie po utworzeniu konta. W sprawie dostępu napisz na [collective@vesteri.com](mailto:collective@vesteri.com).',
       },
       {
         id: 'marketplace',
-        title: 'Wspólny marketplace i publikowanie ofert',
-        body: 'Vesteri Marketplace prezentuje nieruchomości lokalne i zagraniczne publikowane przez zatwierdzonych agentów. Kupujący kontaktuje się z agentem wskazanym przy wybranej ofercie.\n\nPrzed zatwierdzeniem publikacji Vesteri sprawdza tożsamość, działalność oraz wymagane na danym rynku uprawnienia lub ubezpieczenie; w Polsce jest to OC pośrednika. Agent musi mieć uprawnienie do prezentowania nieruchomości i odpowiada za prawdziwość oraz aktualność oferty.\n\nZakres obsługi klienta, wynagrodzenie i warunki umowy ustalane są bezpośrednio między klientem a agentem.',
+        title: 'Vesteri Market i publikowanie ofert',
+        body: 'Vesteri Market prezentuje nieruchomości lokalne i zagraniczne publikowane przez zatwierdzonych agentów. Kupujący kontaktuje się z agentem wskazanym przy wybranej ofercie.\n\nPrzed zatwierdzeniem publikacji Vesteri sprawdza tożsamość, działalność oraz wymagane na danym rynku uprawnienia lub ubezpieczenie; w Polsce jest to OC pośrednika. Agent musi mieć uprawnienie do prezentowania nieruchomości i odpowiada za prawdziwość oraz aktualność oferty.\n\nZakres obsługi klienta, wynagrodzenie i warunki umowy ustalane są bezpośrednio między klientem a agentem.',
       },
       {
         id: 'channels',
         title: 'Vesteri Channels — wiedza i rozmowy',
         body: 'Dołącz do Vesteri Channels — miejsca, w którym agenci Collective dzielą się wiedzą, wymieniają informacje o rynkach i rozmawiają o codziennej pracy. Zadawaj pytania, poznawaj doświadczenia innych i dziel się własnymi.\n\n### Zdobywaj wiedzę\n\nKorzystaj z materiałów i doświadczeń udostępnianych przez społeczność.\n\n### Rozmawiaj z agentami\n\nZadawaj pytania i poznawaj profesjonalistów z różnych rynków.\n\n### Wymieniaj doświadczenia\n\nDziel się informacjami i praktycznymi wnioskami z codziennej pracy.',
+      },
+      {
+        id: 'commission',
+        title: commissionGuidance.pl.title,
+        body: commissionGuidanceBody('pl'),
       },
       {
         id: 'fair-play',
@@ -111,7 +121,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'international',
         title: 'Nieruchomości na różnych rynkach',
-        body: 'W Vesteri Marketplace znajdziesz także wybrane inwestycje zagraniczne prezentowane przez Vesteri lub jego partnerów. Poznaj dostępne projekty, ich lokalizacje i materiały, a o szczegóły zapytaj agenta wskazanego przy ofercie.',
+        body: 'W Vesteri Market znajdziesz także wybrane inwestycje zagraniczne prezentowane przez Vesteri lub jego partnerów. Poznaj dostępne projekty, ich lokalizacje i materiały, a o szczegóły zapytaj agenta wskazanego przy ofercie.',
       },
       {
         id: 'tools',
@@ -126,17 +136,17 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'limitations',
         title: 'Zakres odpowiedzialności',
-        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewnia marketplace, narzędzia i przestrzeń społeczności. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
+        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewniVesteri Market, narzędzia i przestrzeń społeczności. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
       },
     ],
   },
   en: {
-    title: 'How Vesteri Collective works — marketplace and community',
+    title: 'How Vesteri Collective works — Vesteri Market and community',
     description:
-      'A community of independent agents, a shared marketplace and Vesteri Channels. Publish listings, learn and exchange experience while keeping your own brand.',
+      'A community of independent agents, Vesteri Market and Vesteri Channels. Publish listings, learn and exchange experience while keeping your own brand.',
     eyebrow: 'VESTERI COLLECTIVE · HOW IT WORKS',
     h1: 'How Vesteri Collective works',
-    lead: 'Vesteri Collective is a community of independent real estate agents and agencies. Members share a marketplace, professional service standards and Vesteri Channels — a space for learning, conversation and exchanging experience. Work under your own brand and agree service terms independently with your clients.',
+    lead: 'Vesteri Collective is a community of independent real estate agents and agencies. Members share Vesteri Market, professional service standards and Vesteri Channels — a space for learning, conversation and exchanging experience. Work under your own brand and agree service terms independently with your clients.',
     ctaApply: 'Join Collective ↗',
     ctaBrowse: 'Browse properties ↗',
     faqTitle: 'Frequently asked questions',
@@ -148,7 +158,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
     faq: [
       {
         q: 'Why join Vesteri Collective?',
-        a: 'You gain a shared marketplace for your listings and Vesteri Channels — a space to learn, talk to agents and exchange experience. Keep your own brand and clients, and use the sales tools available in the Vesteri system.',
+        a: 'You gain Vesteri Market for your listings and Vesteri Channels — a space to learn, talk to agents and exchange experience. Keep your own brand and clients, and use the sales tools available in the Vesteri system.',
       },
       {
         q: 'Who can apply to Vesteri Collective?',
@@ -164,7 +174,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Do I keep my own brand and clients?',
-        a: 'Yes. Work under your own brand and agree service terms independently with your clients. Collective provides a shared marketplace, a community and available tools.',
+        a: 'Yes. Work under your own brand and agree service terms independently with your clients. Collective provides Vesteri Market, a community and available tools.',
       },
       {
         q: 'What is Vesteri Channels?',
@@ -191,22 +201,27 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'overview',
         title: 'Collective in three sentences',
-        body: '- **For buyers:** local and international listings in one marketplace, with direct contact with the agents presenting them.\n\n- **For sellers:** professional services agreed with an agent and the opportunity to list a property in the shared marketplace.\n\n- **For agents:** your own brand and clients, a shared marketplace and Vesteri Channels for learning and exchanging experience.',
+        body: '- **For buyers:** local and international listings in Vesteri Market, with direct contact with the agents presenting them.\n\n- **For sellers:** professional services agreed with an agent and the opportunity to list a property in Vesteri Market.\n\n- **For agents:** your own brand and clients, Vesteri Market and Vesteri Channels for learning and exchanging experience.',
       },
       {
         id: 'membership',
         title: 'Registration and community access',
-        body: '1. **Create an agent account** on the Vesteri platform and accept the rules.\n\n2. **Receive your email invitation.** We manually send a Vesteri Channels invitation to every agent after registration.\n\n3. **Join the conversation.** Ask questions, meet other agents and exchange experience.\n\nOur team sends invitations, so they do not appear automatically when an account is created. For access support, email [collective@vesteri.com](mailto:collective@vesteri.com). Listing publication requires separate verification; Channels access does not wait for its completion.',
+        body: '1. **Create an agent account** by registering on Vesteri Market.\n\n2. **Receive your email invitation.** We manually send a Vesteri Channels invitation to every agent after registration.\n\n3. **Join the conversation.** Ask questions, meet other agents and exchange experience.\n\nOur team sends invitations, so they do not appear automatically when an account is created. For access support, email [collective@vesteri.com](mailto:collective@vesteri.com).',
       },
       {
         id: 'marketplace',
-        title: 'The shared marketplace and listing publication',
-        body: 'Vesteri Marketplace presents local and international properties published by approved agents. Buyers contact the agent identified on their chosen listing.\n\nBefore approving listing publication, Vesteri verifies identity, business activity and locally required qualifications or insurance; in Poland this includes professional liability insurance. An agent must be authorised to market the property and is responsible for accurate, current listing information.\n\nThe client and agent agree services, fees and contract terms directly.',
+        title: 'Vesteri Market and listing publication',
+        body: 'Vesteri Market presents local and international properties published by approved agents. Buyers contact the agent identified on their chosen listing.\n\nBefore approving listing publication, Vesteri verifies identity, business activity and locally required qualifications or insurance; in Poland this includes professional liability insurance. An agent must be authorised to market the property and is responsible for accurate, current listing information.\n\nThe client and agent agree services, fees and contract terms directly.',
       },
       {
         id: 'channels',
         title: 'Vesteri Channels — knowledge and conversation',
         body: 'Join Vesteri Channels — a space where Collective agents share knowledge, exchange market information and discuss their day-to-day work. Ask questions, learn from others and share your own experience.\n\n### Build your knowledge\n\nExplore resources and experience shared by the community.\n\n### Talk to agents\n\nAsk questions and meet professionals from different markets.\n\n### Share experience\n\nExchange information and practical lessons from your day-to-day work.',
+      },
+      {
+        id: 'commission',
+        title: commissionGuidance.en.title,
+        body: commissionGuidanceBody('en'),
       },
       {
         id: 'fair-play',
@@ -216,7 +231,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'international',
         title: 'Properties across markets',
-        body: 'Vesteri Marketplace also features selected international developments presented by Vesteri or its partners. Explore available projects, locations and materials, and ask the agent named on the listing for details.',
+        body: 'Vesteri Market also features selected international developments presented by Vesteri or its partners. Explore available projects, locations and materials, and ask the agent named on the listing for details.',
       },
       {
         id: 'tools',
@@ -231,7 +246,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'limitations',
         title: 'Scope of responsibility',
-        body: 'Agents work independently and are responsible for their listings and services. Vesteri provides the marketplace, tools and community space. Agent verification does not mean that every property has undergone legal or technical checks.\n\nChannels resources and discussions support knowledge sharing; they do not replace individual legal, tax or investment advice. Membership does not guarantee enquiries, transactions or revenue.',
+        body: 'Agents work independently and are responsible for their listings and services. Vesteri provides Vesteri Market, tools and community space. Agent verification does not mean that every property has undergone legal or technical checks.\n\nChannels resources and discussions support knowledge sharing; they do not replace individual legal, tax or investment advice. Membership does not guarantee enquiries, transactions or revenue.',
       },
     ],
   },

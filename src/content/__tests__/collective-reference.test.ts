@@ -13,7 +13,13 @@ const components = {
   agents: 'AgentsContent',
 };
 const faqLast = { buyers: 17, sellers: 15, agents: 25 };
-// The owner replaced V10.7 editorial copy with the marketplace/community model.
+const textValues = (value: unknown): string[] =>
+  typeof value === 'string'
+    ? [value]
+    : value && typeof value === 'object'
+      ? Object.values(value).flatMap(textValues)
+      : [];
+// The owner replaced V10.7 editorial copy with the Market/community model.
 // Keep bilingual coverage and rendered FAQ complete rather than locking old claims.
 describe('Collective bilingual marketing content', () => {
   for (const locale of ['pl', 'en'] as const) {
@@ -48,8 +54,8 @@ describe('Collective bilingual marketing content', () => {
           questions.push(q);
         }
         expect(new Set(questions).size).toBe(questions.length);
-        expect(JSON.stringify(content)).not.toMatch(
-          /Slack|25%|50%|60%|75%|podział prowizji|commission split|joint transaction|wspóln[aey] transakcj/i,
+        expect(textValues(content).join('\n')).not.toMatch(
+          /Slack|marketplace|obowiązek współpracy|domyślny podział prowizji|default commission split/i,
         );
       });
     }

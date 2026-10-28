@@ -68,9 +68,9 @@ The official mark is `public/logo/vesteri-mark-teal-gradient.svg`. Reference
 photographs are temporary; final assets and publication rights need owner review.
 The owner-approved footer displays company/contact details and Collective rules.
 Reference-only review annotations have been removed. The Collective rules footer item opens `/pl/regulamin-vesteri-collective` or
-`/en/vesteri-collective-rules`. Both pages use the owner-approved v2.0 marketplace/community model, effective
-28 October 2026, with matching DOCX downloads under `public/docs/collective/v2.0/`.
-Version 1.0 downloads remain archived; current links point only to v2.0.
+`/en/vesteri-collective-rules`. Both pages use the owner-approved v2.1 Market/community model, effective
+28 October 2026, with matching DOCX downloads under `public/docs/collective/v2.1/`.
+Previous downloads remain archived; current links point only to v2.1.
 Markdown sources live in `src/content/legal/{pl,en}/collective-rules.md`.
 
 ## Collective marketplace and community
@@ -84,9 +84,9 @@ sent by the Vesteri team. The owner confirmed there are no existing members or
 transactions under the retired rules before the v2.0 update.
 
 Related-guide cards stay integrated in the existing marketing layout. Keep
-PL/EN copy, guides, how-it-works, metadata, JSON-LD and llms.txt aligned. Retired
-commission/cooperation anchors resolve to the community explanation; referral,
-commission-sharing and lead-agent promises are removed from current marketing.
+PL/EN copy, guides, how-it-works, metadata, JSON-LD and llms.txt aligned. Existing
+commission/cooperation anchors resolve to the optional guidance; lead-agent promises are removed from current marketing. Commission examples
+are non-binding guidance; agents freely agree any cooperation and compensation.
 The separate Affiliate Program remains unchanged.
 
 ## Cookie preferences and analytics

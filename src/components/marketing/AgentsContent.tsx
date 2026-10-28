@@ -3,7 +3,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
-import { CareerGuideLink } from './MarketingExtras';
+import { CareerGuideLink, CommissionGuidance } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -171,9 +171,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             <div className="network-head">
               <span className="eyebrow">{t('how01')}</span>
               <h2>{t('how02')}</h2>
-              <p className="lead" id="podzial-prowizji">
-                {t('how03')}
-              </p>
+              <p className="lead">{t('how03')}</p>
             </div>
             <div className="network-flow channels-topics" id="channels">
               <div className="node">
@@ -193,6 +191,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               </div>
             </div>
             <p className="network-tag">{t('how15')}</p>
+            <CommissionGuidance locale={locale === 'pl' ? 'pl' : 'en'} />
           </div>
         </section>
         <section className="section tech" id="technology">

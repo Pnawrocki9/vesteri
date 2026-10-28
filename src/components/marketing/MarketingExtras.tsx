@@ -1,8 +1,51 @@
 import { Link } from '@/i18n/navigation';
 import { extrasFor } from '@/content/marketing-extras-pl';
+import { commissionGuidance } from '@/content/commission-guidance';
 import './marketing-support.css';
 
 type Audience = 'buyers' | 'sellers' | 'agents';
+
+export function CommissionGuidance({ locale }: { locale: 'pl' | 'en' }) {
+  const c = commissionGuidance[locale];
+  return (
+    <section
+      className="commission-summary"
+      id="podzial-prowizji"
+      aria-labelledby="commission-title"
+    >
+      <h3 id="commission-title">{c.title}</h3>
+      <p>{c.intro}</p>
+      <p className="commission-freedom">
+        <strong>{c.freedom}</strong>
+      </p>
+      <div className="commission-grid">
+        <article>
+          <h4>{c.referral}</h4>
+          <p>
+            <strong>25%</strong> {c.referring}
+            <br />
+            <strong>75%</strong> {c.handling}
+          </p>
+        </article>
+        <article>
+          <h4>{c.joint}</h4>
+          <p>
+            <strong>50%</strong> {c.listing}
+            <br />
+            <strong>50%</strong> {c.buying}
+          </p>
+        </article>
+      </div>
+      <p className="commission-basis">{c.terms}</p>
+      <Link
+        className="support-link"
+        href={{ pathname: '/how-it-works', hash: 'commission' }}
+      >
+        {c.link}
+      </Link>
+    </section>
+  );
+}
 
 /** Contextual guide links use existing URLs and explicit reading links. */
 export function RelatedGuides({

@@ -13,7 +13,7 @@ Contact person for data protection matters: Piotr Nawrocki, privacy@vesteri.com.
 
 ## 2. How Vesteri works — a transparent description of processing
 
-Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. The marketplace, user accounts, agents' LIVE presentations, enquiries to agents operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
+Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. Vesteri Market, user accounts, agents' LIVE presentations, enquiries to agents operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
 
 We process your data at the following stages:
 

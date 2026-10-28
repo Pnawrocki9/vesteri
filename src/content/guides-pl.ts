@@ -44,7 +44,7 @@ const raw: GuideContent[] = [
     "title": "Agent nieruchomości Kraków – kupno i sprzedaż | Vesteri",
     "description": "Agent nieruchomości w Krakowie z Vesteri Collective. Poznaj obsługę sprzedaży i zakupu, przeglądaj oferty i kontaktuj się z agentami.",
     "h1": "Agent nieruchomości w Krakowie",
-    "lead": "Sprzedajesz albo kupujesz mieszkanie w Krakowie? Poznaj zakres pomocy niezależnego agenta i ustal warunki obsługi. W Vesteri Marketplace możesz porównywać oferty i kontaktować się z agentami, którzy je prezentują.",
+    "lead": "Sprzedajesz albo kupujesz mieszkanie w Krakowie? Poznaj zakres pomocy niezależnego agenta i ustal warunki obsługi. W Vesteri Market możesz porównywać oferty i kontaktować się z agentami, którzy je prezentują.",
     "ctas": [
       {
         "label": "Zobacz oferty w Krakowie ↗",
@@ -59,7 +59,7 @@ const raw: GuideContent[] = [
       {
         "id": "jak-pracuje-agent-vesteri-collective-w-krakowie",
         "title": "Jak pracuje agent Vesteri Collective w Krakowie",
-        "body": "Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości, wspólny marketplace oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.\n\nW marketplace porównujesz oferty i kontaktujesz się bezpośrednio z agentem prezentującym wybraną nieruchomość. Jeśli sprzedajesz, ustalasz z agentem zakres usług, wynagrodzenie i plan promocji, w tym publikację oferty. Możliwość prezentacji online zależy od danej nieruchomości i agenta.\n\nPublikowanie ofert wymaga weryfikacji tożsamości, działalności i ubezpieczenia OC pośrednika. Szczegóły: [Jak działa Vesteri Collective](/pl/jak-dziala-vesteri-collective)."
+        "body": "Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości, Vesteri Market oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.\n\nW Vesteri Market porównujesz oferty i kontaktujesz się bezpośrednio z agentem prezentującym wybraną nieruchomość. Jeśli sprzedajesz, ustalasz z agentem zakres usług, wynagrodzenie i plan promocji, w tym publikację oferty. Możliwość prezentacji online zależy od danej nieruchomości i agenta.\n\nPublikowanie ofert wymaga weryfikacji tożsamości, działalności i ubezpieczenia OC pośrednika. Szczegóły: [Jak działa Vesteri Collective](/pl/jak-dziala-vesteri-collective)."
       },
       {
         "id": "sprzedaz-mieszkania-w-krakowie-jak-przygotowac-oferte",
@@ -69,7 +69,7 @@ const raw: GuideContent[] = [
       {
         "id": "kupno-mieszkania-w-krakowie-z-agentem",
         "title": "Kupno mieszkania w Krakowie z agentem",
-        "body": "Agent kupującego pomaga zawęzić poszukiwania do dzielnic i budżetu, sprawdza stan prawny (księga wieczysta, obciążenia, sposób rozliczenia ze spółdzielnią) i negocjuje cenę. W Vesteri Marketplace możesz samodzielnie przeglądać oferty i kontaktować się z agentami wskazanymi przy nieruchomościach. Przy zakupie na rynku wtórnym pamiętaj o podatku od czynności cywilnoprawnych (2% wartości rynkowej). Od 31 sierpnia 2023 r. nie płacisz go, jeśli kupujesz pierwsze mieszkanie lub dom: zwolnienie przysługuje osobie fizycznej, która ani w dniu zakupu, ani wcześniej nie miała prawa własności mieszkania, domu jednorodzinnego ani spółdzielczego własnościowego prawa do lokalu (wyjątek: odziedziczony udział do 50%). Przy zakupie razem z kimś warunek musi spełnić każdy kupujący (art. 9 pkt 17 ustawy o PCC)."
+        "body": "Agent kupującego pomaga zawęzić poszukiwania do dzielnic i budżetu, sprawdza stan prawny (księga wieczysta, obciążenia, sposób rozliczenia ze spółdzielnią) i negocjuje cenę. W Vesteri Market możesz samodzielnie przeglądać oferty i kontaktować się z agentami wskazanymi przy nieruchomościach. Przy zakupie na rynku wtórnym pamiętaj o podatku od czynności cywilnoprawnych (2% wartości rynkowej). Od 31 sierpnia 2023 r. nie płacisz go, jeśli kupujesz pierwsze mieszkanie lub dom: zwolnienie przysługuje osobie fizycznej, która ani w dniu zakupu, ani wcześniej nie miała prawa własności mieszkania, domu jednorodzinnego ani spółdzielczego własnościowego prawa do lokalu (wyjątek: odziedziczony udział do 50%). Przy zakupie razem z kimś warunek musi spełnić każdy kupujący (art. 9 pkt 17 ustawy o PCC)."
       },
       {
         "id": "ile-kosztuje-agent-nieruchomosci-w-krakowie",
@@ -79,7 +79,7 @@ const raw: GuideContent[] = [
       {
         "id": "jestes-agentem-z-krakowa-dolacz-do-collective",
         "title": "Jesteś agentem z Krakowa? Dołącz do Collective",
-        "body": "Pracujesz w Krakowie jako agent albo dopiero zaczynasz? Zachowaj własną markę i klientów. Dołącz do społeczności, która dzieli się wiedzą i doświadczeniem w Vesteri Channels, oraz publikuj oferty w marketplace po zatwierdzeniu konta. Każdemu agentowi po rejestracji wysyłamy zaproszenie do Channels e-mailem. → [Poznaj Collective](/pl/dla-agentow)"
+        "body": "Pracujesz w Krakowie jako agent albo dopiero zaczynasz? Zachowaj własną markę i klientów. Dołącz do społeczności, która dzieli się wiedzą i doświadczeniem w Vesteri Channels, oraz publikuj oferty w Vesteri Market po zatwierdzeniu konta. Każdemu agentowi po rejestracji wysyłamy zaproszenie do Channels e-mailem. → [Poznaj Collective](/pl/dla-agentow)"
       }
     ],
     "faq": [
@@ -166,7 +166,7 @@ const raw: GuideContent[] = [
       {
         "id": "krok-4-umowa-na-wylacznosc-kiedy-sie-oplaca",
         "title": "Krok 4. Umowa na wyłączność: kiedy się opłaca",
-        "body": "Umowa otwarta pozwala współpracować z wieloma biurami naraz. Umowa na wyłączność oznacza jednego pośrednika na określony czas. Wyłączność ma sens, gdy agent w zamian zobowiązuje się do konkretnych działań, np. sesji zdjęciowej, promocji płatnej i regularnych raportów. Przed podpisaniem sprawdź czas trwania umowy, warunki wypowiedzenia i to, czy prowizja należy się także wtedy, gdy sam znajdziesz kupującego.\n\nPublikację w Vesteri Marketplace możesz uzgodnić z zatwierdzonym agentem Collective w ramach planu promocji nieruchomości."
+        "body": "Umowa otwarta pozwala współpracować z wieloma biurami naraz. Umowa na wyłączność oznacza jednego pośrednika na określony czas. Wyłączność ma sens, gdy agent w zamian zobowiązuje się do konkretnych działań, np. sesji zdjęciowej, promocji płatnej i regularnych raportów. Przed podpisaniem sprawdź czas trwania umowy, warunki wypowiedzenia i to, czy prowizja należy się także wtedy, gdy sam znajdziesz kupującego.\n\nPublikację w Vesteri Market możesz uzgodnić z zatwierdzonym agentem Collective w ramach planu promocji nieruchomości."
       },
       {
         "id": "krok-5-prezentacja-i-negocjacje",
@@ -181,7 +181,7 @@ const raw: GuideContent[] = [
       {
         "id": "sprzedaz-z-agentem-vesteri-collective",
         "title": "Sprzedaż z agentem Vesteri Collective",
-        "body": "Ustal z niezależnym agentem Collective zakres obsługi, wynagrodzenie i plan promocji. Zatwierdzony agent może opublikować Twoją nieruchomość w Vesteri Marketplace, zgodnie z Waszą umową. Omów przygotowanie oferty, organizację prezentacji i raportowanie postępów.\n\n[Sprzedaż z agentem Collective](/pl/sprzedajacy)"
+        "body": "Ustal z niezależnym agentem Collective zakres obsługi, wynagrodzenie i plan promocji. Zatwierdzony agent może opublikować Twoją nieruchomość w Vesteri Market, zgodnie z Waszą umową. Omów przygotowanie oferty, organizację prezentacji i raportowanie postępów.\n\n[Sprzedaż z agentem Collective](/pl/sprzedajacy)"
       }
     ],
     "faq": [
@@ -273,7 +273,7 @@ const raw: GuideContent[] = [
       {
         "id": "jak-to-dziala-w-vesteri-collective",
         "title": "Jak to działa w Vesteri Collective",
-        "body": "Vesteri Marketplace łączy oferty lokalne i zagraniczne. Przeglądaj nieruchomości i kontaktuj się bezpośrednio z agentem wskazanym przy interesującej Cię ofercie. Zakres usług, wynagrodzenie i warunki obsługi ustalasz z nim indywidualnie.\n\n[Przeglądaj oferty]({APP_URL})"
+        "body": "Vesteri Market łączy oferty lokalne i zagraniczne. Przeglądaj nieruchomości i kontaktuj się bezpośrednio z agentem wskazanym przy interesującej Cię ofercie. Zakres usług, wynagrodzenie i warunki obsługi ustalasz z nim indywidualnie.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
     "faq": [
@@ -456,7 +456,7 @@ const raw: GuideContent[] = [
       {
         "id": "gdzie-zaczac-biuro-franczyza-czy-niezaleznie-w-sieci",
         "title": "Gdzie zacząć: biuro, franczyza czy niezależnie w sieci",
-        "body": "| Model | Plusy | Minusy |\n|---|---|---|\n| Biuro nieruchomości (pracownik/współpracownik) | Szkolenia, marka, oferty biura | Mniejsza część prowizji, mniej swobody |\n| Franczyza | Rozpoznawalna marka, system i szkolenia | Opłaty franczyzowe, narzucone standardy |\n| Własna działalność, samodzielnie | Pełna prowizja i swoboda | Wszystko na Twojej głowie, mała baza ofert |\n| Niezależnie w społeczności agentów (np. Vesteri Collective) | Własna marka, wspólny marketplace, wymiana wiedzy i doświadczeń | Samodzielne pozyskiwanie klientów i odpowiedzialność za usługi |"
+        "body": "| Model | Plusy | Minusy |\n|---|---|---|\n| Biuro nieruchomości (pracownik/współpracownik) | Szkolenia, marka, oferty biura | Mniejsza część prowizji, mniej swobody |\n| Franczyza | Rozpoznawalna marka, system i szkolenia | Opłaty franczyzowe, narzucone standardy |\n| Własna działalność, samodzielnie | Pełna prowizja i swoboda | Wszystko na Twojej głowie, mała baza ofert |\n| Niezależnie w społeczności agentów (np. Vesteri Collective) | Własna marka, Vesteri Market, wymiana wiedzy i doświadczeń | Samodzielne pozyskiwanie klientów i odpowiedzialność za usługi |"
       },
       {
         "id": "start-w-vesteri-collective-jako-poczatkujacy-agent",
@@ -519,7 +519,7 @@ const raw: GuideContent[] = [
     "title": "Nieruchomości za granicą – kupno z agentem | Vesteri Collective",
     "description": "Kupno nieruchomości za granicą z agentem Vesteri Collective: Hiszpania, Cypr, ZEA. Podatki, formalności i ryzyka w każdym kraju – w jednym miejscu.",
     "h1": "Nieruchomości za granicą: przygotuj się do zakupu",
-    "lead": "Kupno mieszkania za granicą to inne podatki, procedury i ryzyka niż w Polsce. W Vesteri Marketplace możesz przeglądać oferty i kontaktować się z agentami, którzy je prezentują. Poniżej zebraliśmy najważniejsze różnice między wybranymi krajami.",
+    "lead": "Kupno mieszkania za granicą to inne podatki, procedury i ryzyka niż w Polsce. W Vesteri Market możesz przeglądać oferty i kontaktować się z agentami, którzy je prezentują. Poniżej zebraliśmy najważniejsze różnice między wybranymi krajami.",
     "ctas": [
       {
         "label": "Przeglądaj oferty ↗",
@@ -535,7 +535,7 @@ const raw: GuideContent[] = [
       {
         "id": "jak-wyglada-zakup-z-agentem-vesteri-collective",
         "title": "Jak wygląda zakup z agentem Vesteri Collective",
-        "body": "1. Przeglądaj nieruchomości w Vesteri Marketplace i porównuj dostępne oferty.\n2. Skontaktuj się z agentem wskazanym przy wybranej nieruchomości.\n3. Zapytaj o dokumenty, koszty, dostępne prezentacje i warunki obsługi.\n4. Zleć niezależnemu lokalnemu prawnikowi analizę dokumentów i ustal procedurę zawarcia umowy oraz rejestracji.\n\n[Przeglądaj oferty]({APP_URL})"
+        "body": "1. Przeglądaj nieruchomości w Vesteri Market i porównuj dostępne oferty.\n2. Skontaktuj się z agentem wskazanym przy wybranej nieruchomości.\n3. Zapytaj o dokumenty, koszty, dostępne prezentacje i warunki obsługi.\n4. Zleć niezależnemu lokalnemu prawnikowi analizę dokumentów i ustal procedurę zawarcia umowy oraz rejestracji.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
     "faq": [
@@ -676,7 +676,7 @@ const raw: GuideContent[] = [
       {
         "id": "jak-kupowac-z-vesteri-collective",
         "title": "Jak kupować z Vesteri Collective",
-        "body": "Przeglądaj dostępne nieruchomości w Vesteri Marketplace i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
+        "body": "Przeglądaj dostępne nieruchomości w Vesteri Market i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
     "faq": [
@@ -751,7 +751,7 @@ const raw: GuideContent[] = [
       {
         "id": "jak-kupowac-z-vesteri-collective",
         "title": "Jak kupować z Vesteri Collective",
-        "body": "Przeglądaj dostępne nieruchomości w Vesteri Marketplace i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
+        "body": "Przeglądaj dostępne nieruchomości w Vesteri Market i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
     "faq": [

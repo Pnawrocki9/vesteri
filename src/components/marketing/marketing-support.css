@@ -85,3 +85,56 @@
     grid-template-columns: 1fr;
   }
 }
+
+.marketing .commission-summary {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.marketing .commission-summary h3 {
+  font-size: clamp(22px, 2.4vw, 28px);
+  line-height: 1.35;
+  margin: 0 0 18px;
+}
+.marketing .commission-summary > p {
+  max-width: 85ch;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--gray);
+}
+.marketing .commission-summary .commission-freedom {
+  color: var(--ink);
+  margin: 16px 0 24px;
+}
+.marketing .commission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.marketing .commission-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--white);
+}
+.marketing .commission-grid h4 {
+  font-size: 16px;
+  margin: 0 0 14px;
+}
+.marketing .commission-grid p {
+  font-size: 15px;
+  line-height: 2;
+  margin: 0;
+}
+.marketing .commission-grid strong {
+  color: #1c7d76;
+  font-size: 20px;
+}
+.marketing .commission-summary .commission-basis {
+  margin: 22px 0 16px;
+}
+@media (max-width: 680px) {
+  .marketing .commission-grid {
+    grid-template-columns: 1fr;
+  }
+}
