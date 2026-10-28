@@ -8,6 +8,7 @@ import MarketingHeader from '@/components/marketing/MarketingHeader';
 import MarketingShell from '@/components/marketing/MarketingShell';
 import {
   GUIDES_PUBLISHED,
+  GUIDES_MODIFIED,
   getGuide,
   type GuidePathname,
 } from '@/content/guides-pl';
@@ -88,6 +89,7 @@ export default async function GuidePage({
                   headline: g.h1,
                   description: g.description,
                   datePublished: GUIDES_PUBLISHED,
+                  dateModified: GUIDES_MODIFIED,
                 }),
               ]
             : []),

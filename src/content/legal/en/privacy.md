@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-**Vesteri website and platform** · Version 1.3 · Effective from: 26 October 2026
+**Vesteri website and platform** · Version 1.4 · Effective from: 28 October 2026
 
 ## 1. Who is the controller of your data
 
@@ -13,7 +13,7 @@ Contact person for data protection matters: Piotr Nawrocki, privacy@vesteri.com.
 
 ## 2. How Vesteri works — a transparent description of processing
 
-Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. The marketplace, user accounts, agents' LIVE presentations, enquiries to agents and Vesteri Collective operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
+Vesteri helps you choose and buy property in Poland and abroad. This Policy covers the vesteri.com website and webinars and presentations of developments in the Vesteri portfolio. The marketplace, user accounts, agents' LIVE presentations, enquiries to agents operate on the platform at vesteri.estalara.com, whose processing is described in the separate **[Platform Privacy Policy](https://vesteri.estalara.com/en/legal/policy)**.
 
 We process your data at the following stages:
 
@@ -109,3 +109,13 @@ You have the rights of access, rectification, erasure, restriction, portability,
 The service is intended for adults (18+). We apply appropriate technical and organisational measures (encryption in transit and at rest, access control, monitoring). We will notify material changes to this Policy by email 30 days in advance. Current version: vesteri.com/en/privacy-policy.
 
 *In case of discrepancies, for consumers habitually resident in Poland the Polish version prevails.*
+
+## 12. Vesteri Channels and Collective membership
+
+As part of Collective, we administer Vesteri Channels invitations, organisational communications and community moderation. We use agent account details, including name, professional information and email address. Our team manually sends an invitation to every agent after registration. Membership and access administration rely on Art. 6(1)(b) GDPR; security and moderation rely on Art. 6(1)(f) GDPR.
+
+Profiles, messages and materials you publish are visible to recipients of the relevant conversation or channel according to workspace settings. Administrators have access as needed for administration and moderation. Do not publish client data or confidential documents; anonymise professional examples.
+
+The space uses an external communication service provider. Data is shared with that provider as necessary to operate the service. Review the provider terms and privacy settings presented when joining. Processing may involve countries outside the EEA; appropriate transfer safeguards described in section 8 are required in that case. Section 8's statement about EEA storage is not an assurance about the location of Vesteri Channels data.
+
+We process access data during participation. After participation ends, we limit processing to data needed for legal obligations, handling reports or establishing, exercising or defending claims. Discussion content may require individual consideration when handling an erasure request, taking account of other participants' rights. For data matters, available provider information, retention and profile deletion, contact privacy@vesteri.com. The rights in section 10 also apply to Channels data.

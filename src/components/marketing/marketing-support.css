@@ -50,48 +50,6 @@
 .marketing .related-guides a {
   align-self: flex-start;
 }
-.marketing .commission-summary {
-  margin-top: 32px;
-  padding-top: 28px;
-  border-top: 1px solid var(--line);
-}
-.marketing .commission-summary > h3 {
-  font-size: 24px;
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-.marketing .commission-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-.marketing .commission-grid article {
-  padding: 22px 24px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  background: var(--white);
-}
-.marketing .commission-grid h4 {
-  margin: 0 0 12px;
-  font-size: 15px;
-  font-weight: 700;
-}
-.marketing .commission-grid p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.9;
-}
-.marketing .commission-grid strong {
-  font-size: 20px;
-  color: #1c7d76;
-}
-.marketing .commission-summary .commission-basis {
-  max-width: 76ch;
-  margin: 20px 0 14px;
-  font-size: 14px;
-  line-height: 1.75;
-  color: var(--gray);
-}
 .marketing .career-guide {
   margin: 24px 0 0;
   font-size: 15px;
@@ -117,7 +75,13 @@
   .marketing .related-guides {
     padding: 44px 0;
   }
-  .marketing .commission-grid {
+}
+
+.marketing .network-flow.channels-topics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 760px) {
+  .marketing .network-flow.channels-topics {
     grid-template-columns: 1fr;
   }
 }

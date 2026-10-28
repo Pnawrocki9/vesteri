@@ -3,7 +3,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { MARKETPLACE_URL } from '@/lib/site';
-import { CareerGuideLink, CommissionSummary } from './MarketingExtras';
+import { CareerGuideLink } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 
@@ -171,26 +171,21 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             <div className="network-head">
               <span className="eyebrow">{t('how01')}</span>
               <h2>{t('how02')}</h2>
-              <p
-                className="lead"
-                id={locale === 'en' ? 'podzial-prowizji' : undefined}
-              >
+              <p className="lead" id="podzial-prowizji">
                 {t('how03')}
               </p>
             </div>
-            <div className="network-flow">
+            <div className="network-flow channels-topics" id="channels">
               <div className="node">
                 <div className="node-symbol">{t('how04')}</div>
                 <strong>{t('how05')}</strong>
                 <p>{t('how06')}</p>
               </div>
-              <div className="flow-arrow">{t('how07')}</div>
               <div className="node middle">
                 <div className="node-symbol">{t('how08')}</div>
                 <strong>{t('how09')}</strong>
                 <p>{t('how10')}</p>
               </div>
-              <div className="flow-arrow">{t('how11')}</div>
               <div className="node">
                 <div className="node-symbol">{t('how12')}</div>
                 <strong>{t('how13')}</strong>
@@ -198,7 +193,6 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               </div>
             </div>
             <p className="network-tag">{t('how15')}</p>
-            <CommissionSummary locale={locale} />
           </div>
         </section>
         <section className="section tech" id="technology">

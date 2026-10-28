@@ -1,6 +1,6 @@
 # POLITYKA PRYWATNOŚCI
 
-**Serwis i platforma Vesteri** · Wersja 1.3 · Obowiązuje od: 26 października 2026 r.
+**Serwis i platforma Vesteri** · Wersja 1.4 · Obowiązuje od: 28 października 2026 r.
 
 ## 1. Kto jest administratorem Twoich danych
 
@@ -13,7 +13,7 @@ Osoba kontaktowa w sprawach ochrony danych: Piotr Nawrocki, privacy@vesteri.com.
 
 ## 2. Jak działa Vesteri — przejrzysty opis przetwarzania
 
-Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Marketplace, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów i Vesteri Collective działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
+Vesteri pomaga w wyborze i zakupie nieruchomości w Polsce i za granicą. Niniejsza Polityka dotyczy strony vesteri.com oraz webinarów i prezentacji inwestycji z portfolio Vesteri. Marketplace, konta użytkowników, prezentacje LIVE agentów, zapytania do agentów działają na platformie vesteri.estalara.com, której przetwarzanie danych opisuje odrębna **[Polityka prywatności Platformy](https://vesteri.estalara.com/pl/legal/policy)**.
 
 Twoje dane przetwarzamy na kolejnych etapach:
 
@@ -107,3 +107,13 @@ Masz prawa: dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia, sprz
 ## 11. Pozostałe
 
 Serwis jest przeznaczony dla osób pełnoletnich (18+). Stosujemy odpowiednie środki techniczne i organizacyjne (szyfrowanie w tranzycie i spoczynku, kontrola dostępu, monitoring). O istotnych zmianach Polityki poinformujemy e-mailem z 30-dniowym wyprzedzeniem. Aktualna wersja: vesteri.com/pl/polityka-prywatnosci.
+
+## 12. Vesteri Channels i członkostwo w Collective
+
+W ramach Collective obsługujemy zaproszenia do Vesteri Channels, komunikację organizacyjną i moderację społeczności. Korzystamy z danych konta agenta, w szczególności imienia i nazwiska, danych zawodowych oraz adresu e-mail. Każdemu agentowi po rejestracji zaproszenie wysyła ręcznie nasz zespół. Podstawą obsługi członkostwa i dostępu jest art. 6 ust. 1 lit. b RODO; bezpieczeństwa i moderacji — art. 6 ust. 1 lit. f RODO.
+
+Profil oraz wiadomości i materiały, które publikujesz, są widoczne dla odbiorców danej rozmowy lub kanału zgodnie z ustawieniami przestrzeni. Administratorzy mają dostęp w zakresie potrzebnym do obsługi i moderacji. Nie publikuj danych klientów ani poufnych dokumentów; przykłady zawodowe anonimizuj.
+
+Przestrzeń działa z wykorzystaniem zewnętrznego dostawcy usług komunikacyjnych. Dane są mu udostępniane w zakresie niezbędnym do działania usługi. Przy dołączaniu zapoznaj się z przedstawionymi warunkami dostawcy i ustawieniami prywatności. Przetwarzanie może obejmować państwa poza EOG; w takim przypadku wymagane są odpowiednie zabezpieczenia transferu, wskazane w pkt 8. Informacja w pkt 8 o przechowywaniu w EOG nie stanowi zapewnienia o lokalizacji danych Vesteri Channels.
+
+Dane dostępu przetwarzamy w czasie uczestnictwa. Po jego zakończeniu ograniczamy przetwarzanie do danych potrzebnych do wykonania obowiązków prawnych, obsługi zgłoszeń lub dochodzenia i obrony roszczeń. Treści dyskusji mogą wymagać odrębnego rozpatrzenia przy żądaniu usunięcia danych, z uwzględnieniem praw innych uczestników. W sprawie danych, dostępnej informacji o dostawcy, retencji i usunięcia profilu skontaktuj się z privacy@vesteri.com. Prawa z pkt 10 obejmują również dane związane z Channels.

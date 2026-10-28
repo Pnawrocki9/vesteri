@@ -35,8 +35,8 @@ export default async function LegalPage({
   const document = legalDocuments[locale][page];
   const downloadHref =
     locale === 'pl'
-      ? '/docs/collective/v1.0/Regulamin_Vesteri_Collective_v1.0_PL.docx'
-      : '/docs/collective/v1.0/Vesteri_Collective_Rules_v1.0_EN.docx';
+      ? '/docs/collective/v2.0/Regulamin_Vesteri_Collective_v2.0_PL.docx'
+      : '/docs/collective/v2.0/Vesteri_Collective_Rules_v2.0_EN.docx';
 
   return (
     <MarketingShell className="marketing-legal">

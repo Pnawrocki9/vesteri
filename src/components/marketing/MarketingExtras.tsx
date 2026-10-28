@@ -37,48 +37,6 @@ export function RelatedGuides({
   );
 }
 
-export function CommissionSummary({ locale }: { locale: string }) {
-  if (locale !== 'pl') return null;
-  return (
-    <div
-      className="commission-summary"
-      id="podzial-prowizji"
-      aria-labelledby="commission-summary-title"
-    >
-      <h3 id="commission-summary-title">Podział prowizji przy współpracy</h3>
-      <div className="commission-grid">
-        <article>
-          <h4>Polecenie klienta</h4>
-          <p>
-            <strong>25%</strong> dla członka polecającego
-            <br />
-            <strong>75%</strong> dla członka obsługującego
-          </p>
-        </article>
-        <article>
-          <h4>Wspólna transakcja</h4>
-          <p>
-            <strong>50%</strong> dla Agenta Oferty
-            <br />
-            <strong>50%</strong> dla Agenta Kupującego
-          </p>
-        </article>
-      </div>
-      <p className="commission-basis">
-        Domyślny podział dotyczy prowizji netto faktycznie otrzymanej od
-        klienta. Inne proporcje wymagają zgody obu członków, potwierdzonej w
-        systemie lub e-mailem przed pierwszą prezentacją.
-      </p>
-      <Link
-        href={{ pathname: '/how-it-works', hash: 'commission' }}
-        className="support-link"
-      >
-        Zobacz zasady współpracy i rozliczeń
-      </Link>
-    </div>
-  );
-}
-
 export function CareerGuideLink({ locale }: { locale: string }) {
   if (locale !== 'pl') return null;
   return (

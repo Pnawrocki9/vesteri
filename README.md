@@ -68,19 +68,26 @@ The official mark is `public/logo/vesteri-mark-teal-gradient.svg`. Reference
 photographs are temporary; final assets and publication rights need owner review.
 The owner-approved footer displays company/contact details and Collective rules.
 Reference-only review annotations have been removed. The Collective rules footer item opens `/pl/regulamin-vesteri-collective` or
-`/en/vesteri-collective-rules`. Both pages reproduce the owner-supplied v1.0
-documents with the owner-approved effective date of 22 October 2026, and offer the
-corresponding DOCX files, synchronized with the current online text in both
-languages. Downloads are stored under `public/docs/collective/v1.0/`. Markdown content lives in
-`src/content/legal/{pl,en}/collective-rules.md` and uses the existing legal generator.
+`/en/vesteri-collective-rules`. Both pages use the owner-approved v2.0 marketplace/community model, effective
+28 October 2026, with matching DOCX downloads under `public/docs/collective/v2.0/`.
+Version 1.0 downloads remain archived; current links point only to v2.0.
+Markdown sources live in `src/content/legal/{pl,en}/collective-rules.md`.
 
-## Integrated marketing and SEO copy
+## Collective marketplace and community
 
-Polish marketing SEO copy is integrated into the existing buyer, seller and
-agent sections. `MarketingExtras` provides compact related-guide cards and an
-agent commission summary; detailed explanations remain on the existing guides
-and Collective how-it-works page. Keep audience-specific copy concise, retain
-the established anchors, and update visible FAQ and its JSON-LD together.
+The public website describes Vesteri Collective as independent agents sharing a
+marketplace, professional standards and Vesteri Channels. Every agent who opens
+a platform account receives a manually sent Channels email invitation; listing
+publication requires separate approval. There is no Channels signup integration
+or invented invitation URL on this marketing site. Invitations are operationally
+sent by the Vesteri team. The owner confirmed there are no existing members or
+transactions under the retired rules before the v2.0 update.
+
+Related-guide cards stay integrated in the existing marketing layout. Keep
+PL/EN copy, guides, how-it-works, metadata, JSON-LD and llms.txt aligned. Retired
+commission/cooperation anchors resolve to the community explanation; referral,
+commission-sharing and lead-agent promises are removed from current marketing.
+The separate Affiliate Program remains unchanged.
 
 ## Cookie preferences and analytics
 
@@ -143,12 +150,6 @@ sources remain available to these generators without restoring their old routes.
 - Actual listing photographs, publication rights and exact listing URLs.
 - Confirmation of the seller inbox and operational enquiry handling.
 - Working presentation/LIVE/webinar/consultation destinations and actual features.
-- Current membership/AI/pricing terms and contractual cooperation/exclusivity rules.
-- Commercial/legal review of commission sharing, the 5–8% foreign-developer
-  commission range, the introducing-agent share and the 10% revenue promotion
-  commitment, all retained verbatim from the approved reference.
-- The v1.0 Collective rules take effect on 22 October 2026, as requested by the
-  owner. Downloadable DOCX files match the current online text, including the
-  resolved fields and the appeal procedure. Keep both formats synchronized when
-  applying owner-approved revisions.
-- Separate explicit approval for production publication.
+- Current tool availability, pricing and the existing 10% promotion commitment.
+- Operate the manual Channels invitation process for newly registered agents.
+- Keep published legal Markdown and the corresponding DOCX downloads synchronized.

@@ -117,6 +117,12 @@ export default async function Page({ params }: Props) {
                 id={id}
                 aria-labelledby={`how-${id}`}
               >
+                {id === 'channels' && (
+                  <>
+                    <span id="cooperation" />
+                    <span id="commission" />
+                  </>
+                )}
                 <h2 id={`how-${id}`}>{title}</h2>
                 <MarkdownBody variant="marketing">{body}</MarkdownBody>
               </section>

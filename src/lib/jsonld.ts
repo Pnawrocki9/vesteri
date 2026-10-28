@@ -31,7 +31,7 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 // Head office as printed in the site footer (developers.footer.addr).
 // Same wording as the Collective description in llms.txt and the meta copy.
 const ORGANIZATION_DESCRIPTION =
-  'Vesteri Collective is a selective network of vetted, independent real estate agents and agencies who cooperate under shared Fair Play & Trust principles. The public Vesteri Marketplace brings together local and international property listings published by network members.';
+  'Vesteri Collective is a community of independent real estate agents and agencies with a shared property marketplace, professional standards and Vesteri Channels for learning and exchanging experience. Approved agents publish local and international listings.';
 
 const ADDRESS = {
   '@type': 'PostalAddress',
@@ -75,9 +75,9 @@ export function organizationJsonLd() {
     ],
     knowsAbout: [
       'real estate agent network',
-      'agent collaboration',
-      'co-brokerage',
-      'commission sharing between agents',
+      'real estate professional community',
+      'property marketplace',
+      'professional knowledge sharing',
       'international property',
     ],
     sameAs: [LINKEDIN_URL],
