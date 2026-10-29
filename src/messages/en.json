@@ -295,8 +295,8 @@
   "marketing": {
     "buyers": {
       "meta": {
-        "title": "Vesteri Collective | Real Estate Agent Network, Local & Abroad",
-        "description": "Vesteri Collective brings independent agents together with Vesteri Market. Explore local and international listings and contact the listing agents."
+        "title": "Property — Locally & Abroad | Vesteri Market",
+        "description": "Find property locally and abroad on Vesteri Market. Contact listing agents and explore properties through LIVE viewings and webinars."
       },
       "header": {
         "buyers": "For buyers",
@@ -308,10 +308,10 @@
       },
       "copy01": "Skip to content",
       "top01": "Contemporary premium residence",
-      "top02": "Real estate agent network, locally and abroad",
-      "top03": "Independent agents.",
-      "top04": "More possibilities.",
-      "top05": "Explore homes in your area and abroad. Browse listings from approved agents and get help finding the right property.",
+      "top02": "Independent agents, locally and abroad",
+      "top03": "Find your next property. ",
+      "top04": "Locally and abroad.",
+      "top05": "Explore listings on Vesteri Market and contact the agents presenting them. Join LIVE viewings and webinars, including events with developers and other sellers.",
       "top06": "Explore properties ↗",
       "top07": "For agents ↗",
       "top08": "Local & international properties",
@@ -352,7 +352,7 @@
       "events14": "Explore sessions and consultations ↗",
       "buyers01": "For property buyers",
       "buyers02": "Properties across markets. Conversations with agents and sellers.",
-      "buyers03": "Explore properties in Poland and abroad in Vesteri Market. Contact the agents presenting listings and join the LIVE viewings and webinars they organise. When a developer or another seller takes part, you can ask them questions directly too.",
+      "buyers03": "Explore local and overseas properties in Vesteri Market. Contact the agents presenting listings and join the LIVE viewings and webinars they organise. When a developer or another seller takes part, you can ask them questions directly too.",
       "buyers04": "✓",
       "buyers05": " Independent agents’ listings in one place",
       "buyers06": "✓",
@@ -427,8 +427,8 @@
     },
     "sellers": {
       "meta": {
-        "title": "Sell Your Property with a Network Agent | Vesteri Collective",
-        "description": "Sell with an independent Vesteri Collective agent. Agree your marketing plan, service scope and the publication of your listing in Vesteri Market."
+        "title": "Sell Your Property with an Estate Agent | Vesteri",
+        "description": "Sell your property with an independent Collective estate agent. Agree your viewing and marketing plan, service scope and listing publication on Vesteri Market."
       },
       "header": {
         "buyers": "For buyers",
@@ -443,7 +443,7 @@
       "top02": "VESTERI COLLECTIVE · FOR SELLERS",
       "top03": "Your property.",
       "top04": "More possibilities.",
-      "top05": "Sell with an independent Vesteri Collective agent. Agree the scope of services and a marketing plan, and your property can be listed in Vesteri Market.",
+      "top05": "Sell with an independent Collective estate agent. Agree a plan for viewings and marketing, the scope of services and the terms for listing your property on Vesteri Market.",
       "top06": "Talk about your sale ↗",
       "top07": "See how it works ↓",
       "top08": "Professional service",
@@ -522,8 +522,8 @@
     },
     "agents": {
       "meta": {
-        "title": "Real Estate Agent Network – Join Vesteri Collective",
-        "description": "A community of independent agents, Vesteri Market and Vesteri Channels. Publish listings, learn and exchange experience while keeping your own brand."
+        "title": "Estate Agent Community & Marketing Tools | Vesteri",
+        "description": "Join a community of independent estate agents. Publish listings on Vesteri Market, host LIVE viewings and share experience in Vesteri Channels."
       },
       "header": {
         "buyers": "For buyers",
@@ -536,9 +536,9 @@
       "copy01": "Skip to content",
       "top01": "Vesteri Collective",
       "top02": "VESTERI COLLECTIVE · FOR PROFESSIONALS",
-      "top03": "Stay independent.",
-      "top04": "Belong to something greater.",
-      "top05": "Run your business under your own brand. Publish listings in Vesteri Market and join a community of agents who share knowledge and experience.",
+      "top03": "A community for",
+      "top04": "independent estate agents.",
+      "top05": "Grow your business under your own brand. Publish listings on Vesteri Market, host LIVE viewings and webinars, and exchange knowledge and experience in Vesteri Channels.",
       "top06": "Join Collective ↗",
       "top07": "How membership works ↘",
       "top08": "Independence",
@@ -606,8 +606,8 @@
       "how14": "Exchange information and practical lessons from your day-to-day work.",
       "how15": "Create an account on the Vesteri platform. We will email you an invitation to Vesteri Channels.",
       "technology01": "The Vesteri system",
-      "technology02": "Tools for everyday property sales.",
-      "technology03": "The Vesteri system helps you present listings, reach buyers and respond to their questions.",
+      "technology02": "Property marketing: present, answer questions, build visibility.",
+      "technology03": "Host LIVE viewings and webinars, show property details and answer buyers’ questions. Use Vesteri tools to support the presentation and promotion of your listings.",
       "technology04": "◉",
       "technology05": "LIVE property",
       "technology06": "presentations",
@@ -617,9 +617,9 @@
       "technology10": "property assistance",
       "technology11": "Help buyers navigate property details and make informed decisions.",
       "technology12": "↗",
-      "technology13": "Automated",
-      "technology14": "advertising",
-      "technology15": "Host LIVE viewings and webinars. Listing promotion within the Vesteri Market portal itself is free, and your activity helps build visibility.",
+      "technology13": "Meta Ads",
+      "technology14": "automation",
+      "technology15": "Automate the creation and management of Meta Ads campaigns. Run campaigns for your listings using the tools in the Vesteri system.",
       "technology16": "◎",
       "technology17": "Smarter buyer",
       "technology18": "engagement",

@@ -295,8 +295,8 @@
   "marketing": {
     "buyers": {
       "meta": {
-        "title": "Agent nieruchomości – kupno i sprzedaż z siecią | Vesteri",
-        "description": "Vesteri Collective: społeczność niezależnych agentów i Vesteri Market nieruchomości w Polsce i za granicą. Przeglądaj oferty i kontaktuj się z agentami."
+        "title": "Nieruchomości — lokalnie i za granicą | Vesteri Market",
+        "description": "Szukaj nieruchomości lokalnie i za granicą w Vesteri Market. Kontaktuj się z agentami i poznawaj oferty podczas prezentacji LIVE oraz webinarów."
       },
       "header": {
         "buyers": "Kupujący",
@@ -308,10 +308,10 @@
       },
       "copy01": "Przejdź do treści",
       "top01": "Contemporary premium residence",
-      "top02": "Sieć agentów nieruchomości w Polsce i za granicą",
-      "top03": "Agent nieruchomości ",
-      "top04": "z możliwościami całej sieci",
-      "top05": "Szukaj nieruchomości w Polsce i za granicą. Przeglądaj oferty sprawdzonych agentów i znajdź pomoc w zakupie.",
+      "top02": "Sieć agentów nieruchomości — lokalnie i za granicą",
+      "top03": "Znajdź nieruchomość. ",
+      "top04": "Lokalnie i za granicą.",
+      "top05": "Przeglądaj oferty w Vesteri Market i kontaktuj się z agentami, którzy je prezentują. Dołączaj do prezentacji LIVE i webinarów — także z udziałem deweloperów i innych sprzedających.",
       "top06": "Przeglądaj nieruchomości ↗",
       "top07": "Dla agentów ↗",
       "top08": "Nieruchomości lokalne i zagraniczne",
@@ -320,7 +320,7 @@
       "main02": "Vesteri łączy kupujących z niezależnymi agentami i ofertami nieruchomości na różnych rynkach. Możesz szukać samodzielnie lub skorzystać ze wsparcia profesjonalisty.",
       "properties01": "Vesteri Market. Wiele możliwości.",
       "properties02": "Znajdź nieruchomość dla siebie.",
-      "properties03": "Mieszkania, domy i inwestycje w Polsce oraz za granicą. Wszystko w jednym miejscu.",
+      "properties03": "Mieszkania, domy i inwestycje — lokalnie i za granicą. Wszystko w jednym miejscu.",
       "properties04": "Przejdź do Vesteri Market ",
       "properties05": "↗",
       "properties06": "Salon apartamentu w Warszawie z widokiem na Pałac Kultury i Nauki",
@@ -352,7 +352,7 @@
       "events14": "Sprawdź wydarzenia i konsultacje ↗",
       "buyers01": "Dla kupujących nieruchomości",
       "buyers02": "Oferty z różnych rynków. Rozmowy z agentami i sprzedającymi.",
-      "buyers03": "Przeglądaj nieruchomości w Polsce i za granicą w Vesteri Market. Kontaktuj się z agentami prezentującymi oferty i dołączaj do organizowanych przez nich prezentacji LIVE oraz webinarów. Gdy w wydarzeniu uczestniczy deweloper lub inny sprzedający, możesz zadawać pytania również bezpośrednio jemu.",
+      "buyers03": "Przeglądaj lokalne i zagraniczne oferty nieruchomości w Vesteri Market. Kontaktuj się z agentami prezentującymi oferty i dołączaj do organizowanych przez nich prezentacji LIVE oraz webinarów. Gdy w wydarzeniu uczestniczy deweloper lub inny sprzedający, możesz zadawać pytania również bezpośrednio jemu.",
       "buyers04": "✓",
       "buyers05": " Oferty niezależnych agentów w jednym miejscu",
       "buyers06": "✓",
@@ -392,7 +392,7 @@
       "main07": "Oferty publikują agenci zatwierdzeni do publikacji w Vesteri Market. Każdy z nich zobowiązuje się przestrzegać naszych standardów.",
       "main08": "02",
       "main09": "Oferty z różnych rynków",
-      "main10": "Porównuj nieruchomości w Polsce i innych krajach, bez przeskakiwania między wieloma stronami.",
+      "main10": "Porównuj lokalne i zagraniczne oferty nieruchomości w jednym miejscu.",
       "main11": "03",
       "main12": "Bezpośredni kontakt",
       "main13": "Przy ofercie znajdziesz agenta odpowiedzialnego za jej prezentację. Skontaktuj się z nim, aby poznać szczegóły nieruchomości i ustalić kolejne kroki.",
@@ -403,7 +403,7 @@
       "faq04": "Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości. Łączą nas Vesteri Market, standardy profesjonalnej obsługi oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów i wymiany doświadczeń. Oferty w Vesteri Market publikują zatwierdzeni agenci.",
       "faq05": "Czym Vesteri Market różni się od innych portali nieruchomości?",
       "faq06": "Vesteri Market łączy oferty lokalne i zagraniczne publikowane przez zatwierdzonych agentów Collective. Za ofertami stoi społeczność niezależnych profesjonalistów, którzy przyjmują wspólne standardy rzetelności i obsługi klientów. Kupujący kontaktuje się bezpośrednio z agentem prezentującym wybraną nieruchomość.",
-      "faq07": "Czy znajdę tu nieruchomości zarówno w Polsce, jak i za granicą?",
+      "faq07": "Czy znajdę tu zarówno nieruchomości lokalne, jak i zagraniczne?",
       "faq08": "Tak. Vesteri umożliwia poszukiwanie nieruchomości lokalnych i zagranicznych, zależnie od aktualnej dostępności ofert na danym rynku. Możesz przeglądać Vesteri Market lub zwrócić się o pomoc do agenta należącego do sieci.",
       "faq09": "Jak skontaktować się z agentem w sprawie nieruchomości?",
       "faq10": "Otwórz interesującą Cię ofertę w Vesteri Market i skorzystaj z dostępnego przy niej sposobu kontaktu. Agent prezentujący nieruchomość odpowie na pytania o ofertę, dostępne prezentacje i kolejne kroki. Zakres usług i warunki obsługi ustalasz bezpośrednio z agentem.",
@@ -427,8 +427,8 @@
     },
     "sellers": {
       "meta": {
-        "title": "Sprzedaż nieruchomości z agentem sieci | Vesteri Collective",
-        "description": "Sprzedawaj z niezależnym agentem Vesteri Collective. Ustal plan promocji, zakres obsługi i warunki publikacji oferty w Vesteri Market."
+        "title": "Sprzedaż nieruchomości z agentem | Vesteri Collective",
+        "description": "Sprzedawaj nieruchomość z niezależnym agentem Collective. Ustal plan prezentacji i promocji, zakres usług oraz publikację oferty w Vesteri Market."
       },
       "header": {
         "buyers": "Kupujący",
@@ -443,7 +443,7 @@
       "top02": "VESTERI COLLECTIVE · DLA SPRZEDAJĄCYCH",
       "top03": "Twoja nieruchomość.",
       "top04": "Większe możliwości.",
-      "top05": "Sprzedawaj z niezależnym agentem należącym do Vesteri Collective. Ustal zakres obsługi i plan promocji, a Twoja oferta może trafić do Vesteri Market.",
+      "top05": "Sprzedawaj z niezależnym agentem Collective. Ustal plan prezentacji i promocji, zakres obsługi oraz warunki publikacji nieruchomości w Vesteri Market.",
       "top06": "Porozmawiaj o sprzedaży ↗",
       "top07": "Zobacz, jak to działa ↓",
       "top08": "Profesjonalna obsługa",
@@ -522,8 +522,8 @@
     },
     "agents": {
       "meta": {
-        "title": "Praca agenta nieruchomości: dołącz do Vesteri Collective",
-        "description": "Społeczność niezależnych agentów, Vesteri Market i Vesteri Channels. Publikuj oferty, zdobywaj wiedzę i wymieniaj doświadczenia pod własną marką."
+        "title": "Społeczność i narzędzia dla agentów nieruchomości | Vesteri",
+        "description": "Dołącz do społeczności niezależnych agentów. Publikuj oferty w Vesteri Market, organizuj LIVE i wymieniaj doświadczenia w Vesteri Channels."
       },
       "header": {
         "buyers": "Kupujący",
@@ -536,9 +536,9 @@
       "copy01": "Przejdź do treści",
       "top01": "Vesteri Collective",
       "top02": "VESTERI COLLECTIVE · DLA AGENTÓW",
-      "top03": "Praca agenta nieruchomości",
-      "top04": "na własnych zasadach",
-      "top05": "Prowadź biznes pod własną marką. Publikuj oferty w Vesteri Market i dołącz do społeczności agentów, którzy dzielą się wiedzą i doświadczeniem.",
+      "top03": "Społeczność niezależnych",
+      "top04": "agentów nieruchomości.",
+      "top05": "Rozwijaj biznes pod własną marką. Publikuj oferty w Vesteri Market, organizuj prezentacje LIVE i webinary oraz wymieniaj wiedzę i doświadczenia w Vesteri Channels.",
       "top06": "Dołącz do Collective ↗",
       "top07": "Jak działa członkostwo ↘",
       "top08": "Niezależność",
@@ -606,8 +606,8 @@
       "how14": "Dziel się informacjami i praktycznymi wnioskami z codziennej pracy.",
       "how15": "Załóż konto na platformie Vesteri. Zaproszenie do Vesteri Channels wyślemy Ci e-mailem.",
       "technology01": "System Vesteri",
-      "technology02": "Narzędzia do codziennej sprzedaży.",
-      "technology03": "System Vesteri pomaga prezentować oferty, docierać do kupujących i odpowiadać na ich pytania.",
+      "technology02": "Marketing nieruchomości: prezentuj, odpowiadaj, buduj widoczność.",
+      "technology03": "Organizuj prezentacje LIVE i webinary, pokazuj szczegóły nieruchomości i odpowiadaj na pytania kupujących. Korzystaj z narzędzi Vesteri, aby wspierać prezentację i promocję swoich ofert.",
       "technology04": "◉",
       "technology05": "Prezentacje nieruchomości",
       "technology06": "na żywo",
@@ -618,8 +618,8 @@
       "technology11": "Pomagaj kupującym lepiej poznać nieruchomość i podejmować świadome decyzje.",
       "technology12": "↗",
       "technology13": "Automatyzacja",
-      "technology14": "reklam",
-      "technology15": "Organizuj prezentacje LIVE i webinary. Promocja ofert w samym portalu Vesteri Market jest bezpłatna, a Twoja aktywność pomaga budować widoczność.",
+      "technology14": "Meta Ads",
+      "technology15": "Automatyzuj tworzenie i zarządzanie reklamami Meta Ads. Prowadź kampanie dla swoich ofert, korzystając z narzędzi systemu Vesteri.",
       "technology16": "◎",
       "technology17": "Lepsza obsługa",
       "technology18": "zainteresowanych",
