@@ -60,7 +60,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Czy zgłoszenie i publikowanie ofert są płatne?',
-        a: 'Założenie konta, członkostwo, dostęp do Vesteri Channels i standardowe publikowanie ofert są bezpłatne. Promowanie ofert i reklama w Vesteri Market są bezpłatne — o widoczności decyduje aktywność LIVE i webinarów. Zaproszenie do Channels otrzymuje każdy agent po rejestracji. Publikowanie ofert wymaga osobnego zatwierdzenia konta. Ceny pozostałych narzędzi premium znajdziesz na koncie agenta.',
+        a: 'Założenie konta, członkostwo, dostęp do Vesteri Channels i standardowe publikowanie ofert są bezpłatne. Promocja ofert w samym portalu Vesteri Market jest bezpłatna — o widoczności decyduje aktywność LIVE i webinarów. Zaproszenie do Channels otrzymuje każdy agent po rejestracji. Publikowanie ofert wymaga osobnego zatwierdzenia konta. Ceny pozostałych narzędzi premium znajdziesz na koncie agenta.',
       },
       {
         q: 'Czy zachowam własną markę i klientów?',
@@ -126,7 +126,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'tools',
         title: 'Narzędzia i koszty',
-        body: 'Założenie konta, członkostwo, dostęp do Vesteri Channels, standardowa publikacja ofert i podstawowe funkcje systemu Vesteri są bezpłatne. Publikowanie ofert wymaga zatwierdzenia konta.\n\nPromowanie ofert i reklama w Vesteri Market są bezpłatne. Widoczność budujesz aktywnością: najpierw wyświetlane są oferty z trwającym LIVE lub webinarem, potem z zaplanowanymi wydarzeniami od najbliższej daty, a następnie bez zaplanowanych wydarzeń. Organizując wydarzenia, wspierasz własne oferty, społeczność i klientów. System udostępnia także narzędzia konsultacji i wsparcia AI. Aktualny zakres funkcji, limity i ceny narzędzi premium sprawdzisz na koncie agenta.\n\nVesteri przeznacza co najmniej 10% swoich przychodów z działalności Vesteri na promocję Collective jako całości. Nie jest to gwarancja ruchu, zapytań ani sprzedaży dla poszczególnych członków.',
+        body: 'Założenie konta, członkostwo, dostęp do Vesteri Channels, standardowa publikacja ofert i podstawowe funkcje systemu Vesteri są bezpłatne. Publikowanie ofert wymaga zatwierdzenia konta.\n\nPromocja ofert w samym portalu Vesteri Market jest bezpłatna. Widoczność budujesz aktywnością: najpierw wyświetlane są oferty z trwającym LIVE lub webinarem, potem z zaplanowanymi wydarzeniami od najbliższej daty, a następnie bez zaplanowanych wydarzeń. Organizując wydarzenia, wspierasz własne oferty, społeczność i klientów. System udostępnia także narzędzia konsultacji i wsparcia AI. Aktualny zakres funkcji, limity i ceny narzędzi premium sprawdzisz na koncie agenta.\n\nVesteri przeznacza co najmniej 10% swoich przychodów z działalności Vesteri na promocję Collective jako całości. Nie jest to gwarancja ruchu, zapytań ani sprzedaży dla poszczególnych członków.',
       },
       {
         id: 'breaches',
@@ -170,7 +170,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       },
       {
         q: 'Does it cost anything to apply or publish listings?',
-        a: 'Account creation, membership, Vesteri Channels access and standard listing publication are free. Listing promotion and advertising on Vesteri Market are free — visibility is driven by LIVE viewing and webinar activity. Every agent receives a Channels invitation after registration. Publishing listings requires separate account approval. Check your agent account for other premium tool prices.',
+        a: 'Account creation, membership, Vesteri Channels access and standard listing publication are free. Listing promotion within the Vesteri Market portal itself is free — visibility is driven by LIVE viewing and webinar activity. Every agent receives a Channels invitation after registration. Publishing listings requires separate account approval. Check your agent account for other premium tool prices.',
       },
       {
         q: 'Do I keep my own brand and clients?',
@@ -236,7 +236,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'tools',
         title: 'Tools and costs',
-        body: 'Account creation, membership, access to Vesteri Channels, standard listing publication and core Vesteri features are free. Publishing listings requires account approval.\n\nListing promotion and advertising on Vesteri Market are free. Build visibility through activity: listings with a LIVE viewing or webinar in progress appear first, followed by scheduled events in nearest-date order, then listings without scheduled events. Hosting events supports your listings, the community and your clients. The system also provides consultation and AI assistance tools. Check your agent account for current features, limits and premium pricing.\n\nVesteri commits at least 10% of its Vesteri revenue to promoting Collective as a whole. This is not a guarantee of traffic, enquiries or sales for individual members.',
+        body: 'Account creation, membership, access to Vesteri Channels, standard listing publication and core Vesteri features are free. Publishing listings requires account approval.\n\nListing promotion within the Vesteri Market portal itself is free. Build visibility through activity: listings with a LIVE viewing or webinar in progress appear first, followed by scheduled events in nearest-date order, then listings without scheduled events. Hosting events supports your listings, the community and your clients. The system also provides consultation and AI assistance tools. Check your agent account for current features, limits and premium pricing.\n\nVesteri commits at least 10% of its Vesteri revenue to promoting Collective as a whole. This is not a guarantee of traffic, enquiries or sales for individual members.',
       },
       {
         id: 'breaches',
