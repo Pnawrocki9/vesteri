@@ -70,7 +70,7 @@ export default async function GuidePage({
     </ol>
   );
   return (
-    <MarketingShell className="marketing-legal marketing-how-it-works">
+    <MarketingShell className="marketing-legal marketing-how-it-works marketing-guides">
       <JsonLd
         nodes={[
           webPageJsonLd({
@@ -89,7 +89,7 @@ export default async function GuidePage({
                   headline: g.h1,
                   description: g.description,
                   datePublished: GUIDES_PUBLISHED,
-                  dateModified: GUIDES_MODIFIED,
+                  dateModified: g.modified ?? GUIDES_MODIFIED,
                 }),
               ]
             : []),

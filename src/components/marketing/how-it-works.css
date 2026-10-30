@@ -82,6 +82,14 @@
 .marketing-how-it-works .how-document th:first-child {
   width: 36%;
 }
+/* Guide comparisons retain readable columns inside MarkdownBody's scroll box. */
+.marketing-guides .how-document table {
+  min-width: 600px;
+  table-layout: auto;
+}
+.marketing-guides .how-document th:first-child {
+  width: auto;
+}
 .marketing-how-it-works .how-faq details {
   padding: 20px 0;
   border-bottom: 1px solid var(--line);
