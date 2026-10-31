@@ -34,7 +34,12 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('top06')}
               </a>
-              <a className="btn btn-outline" href={CHANNELS_URL}>
+              <a
+                className="btn btn-outline"
+                href={CHANNELS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Vesteri Channels ↗
               </a>
               <a className="btn btn-outline" href="#membership">
@@ -119,7 +124,12 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('agents29')}
               </a>
-              <a className="btn btn-outline" href={CHANNELS_URL}>
+              <a
+                className="btn btn-outline"
+                href={CHANNELS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Vesteri Channels ↗
               </a>
             </div>
@@ -409,7 +419,12 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('main20')}
               </a>
-              <a className="btn btn-outline" href={CHANNELS_URL}>
+              <a
+                className="btn btn-outline"
+                href={CHANNELS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Vesteri Channels ↗
               </a>
             </div>
