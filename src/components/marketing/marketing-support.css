@@ -205,3 +205,20 @@
     gap: 22px;
   }
 }
+.marketing-agents .collective-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 100%;
+}
+.marketing-agents .collective-actions-copy {
+  margin-top: 16px;
+}
+.marketing-agents .v10-agents-row .collective-actions {
+  flex-shrink: 0;
+}
+.marketing-agents .collective-actions .btn {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}

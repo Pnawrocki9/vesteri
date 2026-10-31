@@ -41,3 +41,4 @@ export const HUBSPOT_PORTAL_ID =
 // Public marketplace and agent entry point. Deeper paths must be verified
 // before use; no filter or registration URL contract is assumed.
 export const MARKETPLACE_URL = 'https://vesteri.estalara.com';
+export const CHANNELS_URL = 'https://channels.vesteri.com';

@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { MARKETPLACE_URL } from '@/lib/site';
+import { CHANNELS_URL, MARKETPLACE_URL } from '@/lib/site';
 import { CareerGuideLink, CommissionGuidance } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
@@ -33,6 +33,9 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             <div className="hero-actions">
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('top06')}
+              </a>
+              <a className="btn btn-outline" href={CHANNELS_URL}>
+                Vesteri Channels ↗
               </a>
               <a className="btn btn-outline" href="#membership">
                 {t('top07')}
@@ -112,13 +115,14 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <span className="icon">{t('agents27')}</span>
               {t('agents28')}
             </div>
-            <a
-              className="btn btn-cream"
-              href={MARKETPLACE_URL}
-              style={{ alignSelf: 'flex-start', marginTop: '16px' }}
-            >
-              {t('agents29')}
-            </a>
+            <div className="collective-actions collective-actions-copy">
+              <a className="btn btn-cream" href={MARKETPLACE_URL}>
+                {t('agents29')}
+              </a>
+              <a className="btn btn-outline" href={CHANNELS_URL}>
+                Vesteri Channels ↗
+              </a>
+            </div>
           </div>
         </section>
         <section className="section membership" id="membership">
@@ -401,9 +405,14 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <h2>{t('main18')}</h2>
               <p>{t('main19')}</p>
             </div>
-            <a className="btn btn-cream" href={MARKETPLACE_URL}>
-              {t('main20')}
-            </a>
+            <div className="collective-actions">
+              <a className="btn btn-cream" href={MARKETPLACE_URL}>
+                {t('main20')}
+              </a>
+              <a className="btn btn-outline" href={CHANNELS_URL}>
+                Vesteri Channels ↗
+              </a>
+            </div>
           </div>
         </section>
       </main>
