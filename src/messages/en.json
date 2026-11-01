@@ -423,7 +423,10 @@
         "first": "One network.",
         "second": "More possibilities."
       },
-      "footerDescription": "Vesteri Collective brings buyers, independent professionals and properties across markets together in Vesteri Market."
+      "footerDescription": "Vesteri Collective brings buyers, independent professionals and properties across markets together in Vesteri Market.",
+      "channelsCta": "Ask agents for help ↗",
+      "channelsDescriptionTitle": "Buyer area in Vesteri Channels.",
+      "channelsDescription": "Talk to agents and describe the property you’re looking for."
     },
     "sellers": {
       "meta": {

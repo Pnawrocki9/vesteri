@@ -42,3 +42,5 @@ export const HUBSPOT_PORTAL_ID =
 // before use; no filter or registration URL contract is assumed.
 export const MARKETPLACE_URL = 'https://vesteri.estalara.com';
 export const CHANNELS_URL = 'https://channels.vesteri.com';
+export const BUYERS_CHANNELS_INVITATION_URL =
+  `${CHANNELS_URL}/invitation?code=JFFJDG`;

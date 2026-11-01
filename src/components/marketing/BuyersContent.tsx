@@ -1,7 +1,7 @@
 /* V10.7 reference markup; editorial copy is maintained in next-intl. */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { MARKETPLACE_URL } from '@/lib/site';
+import { BUYERS_CHANNELS_INVITATION_URL, MARKETPLACE_URL } from '@/lib/site';
 import { RelatedGuides } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
@@ -34,6 +34,21 @@ export default async function BuyersContent({ locale }: { locale: string }) {
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('top06')}
               </a>
+              <div className="buyers-channels-action">
+                <a
+                  className="btn btn-outline"
+                  href={BUYERS_CHANNELS_INVITATION_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-describedby="buyers-channels-description"
+                >
+                  {t('channelsCta')}
+                </a>
+                <p className="buyers-channels-description" id="buyers-channels-description">
+                  <strong>{t('channelsDescriptionTitle')}</strong>{' '}
+                  {t('channelsDescription')}
+                </p>
+              </div>
               <Link className="btn btn-outline" href="/agents">
                 {t('top07')}
               </Link>

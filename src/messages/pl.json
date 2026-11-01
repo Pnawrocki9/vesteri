@@ -423,7 +423,10 @@
         "first": "Jedna sieć.",
         "second": "Większe możliwości."
       },
-      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w Vesteri Market."
+      "footerDescription": "Vesteri Collective łączy kupujących, niezależnych agentów i oferty z różnych rynków w Vesteri Market.",
+      "channelsCta": "Poproś agentów o pomoc ↗",
+      "channelsDescriptionTitle": "Strefa kupujących w Vesteri Channels.",
+      "channelsDescription": "Porozmawiaj z agentami i opisz, jakiej nieruchomości szukasz."
     },
     "sellers": {
       "meta": {
