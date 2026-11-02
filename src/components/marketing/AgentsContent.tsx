@@ -294,7 +294,20 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             <div id="portfel-zagraniczny">
               <span className="eyebrow">{t('about01')}</span>
               <h2>{t('about02')}</h2>
-              <p className="lead">{t('about03')}</p>
+              <p className="lead">
+                {t.rich('about03', {
+                  channels: (chunks) => (
+                    <a
+                      className="channels-inline-link"
+                      href={CHANNELS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                })}
+              </p>
               <a className="btn-text" href={MARKETPLACE_URL}>
                 {t('about04')}
               </a>
