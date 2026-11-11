@@ -2213,3 +2213,48 @@
     margin-top: 20px;
   }
 }
+
+/* Showreel — the full-bleed film opening the agents' technology section.
+   No frame by design: the video runs edge to edge above the section's wrap. */
+.marketing .showreel {
+  position: relative;
+}
+.marketing .showreel video {
+  display: block;
+  width: 100%;
+  max-height: 85vh;
+  object-fit: cover;
+  background: #101311;
+}
+.marketing .showreel-sound {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 9px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f4f3ee;
+  background: rgba(16, 19, 17, 0.6);
+  border: 1px solid rgba(244, 243, 238, 0.45);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+.marketing .showreel-sound:hover {
+  border-color: #f4f3ee;
+  background: rgba(16, 19, 17, 0.8);
+}
+@media (max-width: 760px) {
+  .marketing .showreel-sound {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+.marketing .tech .showreel {
+  margin-bottom: 72px;
+}

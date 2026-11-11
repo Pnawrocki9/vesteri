@@ -6,6 +6,7 @@ import { CHANNELS_URL, MARKETPLACE_URL } from '@/lib/site';
 import { CareerGuideLink, CommissionGuidance } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
+import ShowreelVideo from './ShowreelVideo';
 
 export default async function AgentsContent({ locale }: { locale: string }) {
   const t = await getTranslations('marketing.agents');
@@ -209,6 +210,19 @@ export default async function AgentsContent({ locale }: { locale: string }) {
           </div>
         </section>
         <section className="section tech" id="technology">
+          {/* The film about what Vesteri is and how it works opens the
+              section full-bleed; the Polish page plays the lektor cut and
+              the English one the voiceover cut. */}
+          <ShowreelVideo
+            src={
+              locale === 'pl'
+                ? '/video/vesteri-showreel-pl.mp4'
+                : '/video/vesteri-showreel-en.mp4'
+            }
+            poster="/video/vesteri-showreel-poster.jpg"
+            soundOnLabel={t('videoSoundOn')}
+            soundOffLabel={t('videoSoundOff')}
+          />
           <div className="wrap">
             <div className="section-heading">
               <div>

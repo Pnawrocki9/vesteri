@@ -693,7 +693,9 @@
       "visibilityOtherTitle": "Oferty bez zaplanowanych wydarzeń",
       "visibilityOther": "Dopiero potem pojawiają się oferty, które nie mają zaplanowanego LIVE ani webinaru.",
       "visibilityOrder": "Tak działa kolejność ofert w Vesteri Market:",
-      "visibilityContribution": "Twoim wkładem w społeczność jest aktywność. Im częściej organizujesz prezentacje LIVE i webinary, tym częściej Twoje oferty mogą być widoczne wśród trwających i nadchodzących wydarzeń. Dzieląc się wiedzą i pokazując nieruchomości, pomagasz sobie, innym agentom i swoim klientom."
+      "visibilityContribution": "Twoim wkładem w społeczność jest aktywność. Im częściej organizujesz prezentacje LIVE i webinary, tym częściej Twoje oferty mogą być widoczne wśród trwających i nadchodzących wydarzeń. Dzieląc się wiedzą i pokazując nieruchomości, pomagasz sobie, innym agentom i swoim klientom.",
+      "videoSoundOn": "Włącz dźwięk",
+      "videoSoundOff": "Wycisz dźwięk"
     },
     "footer": {
       "discover": "Odkrywaj",

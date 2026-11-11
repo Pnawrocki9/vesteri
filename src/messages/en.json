@@ -693,7 +693,9 @@
       "visibilityOtherTitle": "Listings without scheduled events",
       "visibilityOther": "Listings with no scheduled LIVE viewing or webinar appear after those.",
       "visibilityOrder": "Here is how Vesteri Market orders listings:",
-      "visibilityContribution": "Your contribution to the community is your activity. The more often you host LIVE viewings and webinars, the more often your listings can feature among ongoing and upcoming events. By sharing knowledge and presenting properties, you help yourself, fellow agents and your clients."
+      "visibilityContribution": "Your contribution to the community is your activity. The more often you host LIVE viewings and webinars, the more often your listings can feature among ongoing and upcoming events. By sharing knowledge and presenting properties, you help yourself, fellow agents and your clients.",
+      "videoSoundOn": "Turn sound on",
+      "videoSoundOff": "Mute sound"
     },
     "footer": {
       "discover": "Discover",
