@@ -10,6 +10,7 @@ import ShowreelVideo from './ShowreelVideo';
 
 export default async function AgentsContent({ locale }: { locale: string }) {
   const t = await getTranslations('marketing.agents');
+  const filmLocale = locale === 'pl' ? 'pl' : 'en';
   return (
     <>
       <a className="skip" href="#main">
@@ -35,6 +36,17 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <a className="btn btn-cream" href={MARKETPLACE_URL}>
                 {t('top06')}
               </a>
+              <a className="btn btn-outline" href="#film-player">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="14"
+                  height="14"
+                >
+                  <path d="M7 4.5v15l12-7.5z" fill="currentColor" />
+                </svg>
+                {t('heroWatch')}
+              </a>
               <a
                 className="btn btn-outline"
                 href={CHANNELS_URL}
@@ -43,14 +55,123 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               >
                 Vesteri Channels ↗
               </a>
-              <a className="btn btn-outline" href="#membership">
-                {t('top07')}
-              </a>
             </div>
             <div className="hero-foot">
               <span>{t('top08')}</span>
               <span>{t('top09')}</span>
               <span>{t('top10')}</span>
+            </div>
+          </div>
+        </section>
+        <section className="film" id="film" aria-labelledby="film-title">
+          <div className="wrap film-head">
+            <span className="eyebrow light">{t('filmEyebrow')}</span>
+            <h2 id="film-title">{t('filmTitle')}</h2>
+            <p className="lead">{t('filmIntro')}</p>
+          </div>
+          {/* The Polish page plays the lektor cut and the English one the
+              voiceover cut; each has its own end-card poster. */}
+          <ShowreelVideo
+            id="film-player"
+            src={`/video/vesteri-showreel-${filmLocale}.mp4`}
+            poster={`/video/vesteri-showreel-poster-${filmLocale}.jpg`}
+            labels={{
+              play: t('videoPlay'),
+              pause: t('videoPause'),
+              replay: t('videoReplay'),
+              soundOn: t('videoSoundOn'),
+              soundOff: t('videoSoundOff'),
+              seek: t('videoSeek'),
+              fullscreen: t('videoFullscreen'),
+            }}
+          />
+          <div className="wrap film-actions">
+            <a className="btn btn-cream" href={MARKETPLACE_URL}>
+              {t('filmCta')}
+            </a>
+            <a className="film-link" href="#membership">
+              {t('top07')}
+            </a>
+          </div>
+        </section>
+        <section className="section tech" id="technology">
+          <div className="wrap">
+            <div className="section-heading">
+              <div>
+                <span className="eyebrow">{t('technology01')}</span>
+                <h2>{t('technology02')}</h2>
+              </div>
+              <p className="lead">{t('technology03')}</p>
+            </div>
+            <div className="tech-grid">
+              <div className="tech-item">
+                <div className="symbol">{t('technology04')}</div>
+                <h3>
+                  {t('technology05')}
+                  <br />
+                  {t('technology06')}
+                </h3>
+                <p>{t('technology07')}</p>
+              </div>
+              <div className="tech-item">
+                <div className="symbol">{t('technology08')}</div>
+                <h3>
+                  {t('technology09')}
+                  <br />
+                  {t('technology10')}
+                </h3>
+                <p>{t('technology11')}</p>
+              </div>
+              <div className="tech-item">
+                <div className="symbol">{t('technology12')}</div>
+                <h3>
+                  {t('technology13')}
+                  <br />
+                  {t('technology14')}
+                </h3>
+                <p>{t('technology15')}</p>
+              </div>
+              <div className="tech-item">
+                <div className="symbol">{t('technology16')}</div>
+                <h3>
+                  {t('technology17')}
+                  <br />
+                  {t('technology18')}
+                </h3>
+                <p>{t('technology19')}</p>
+              </div>
+            </div>
+            <aside
+              className="live-visibility"
+              id="go-live"
+              aria-labelledby="live-visibility-title"
+            >
+              <span className="eyebrow">{t('visibilityEyebrow')}</span>
+              <h3 id="live-visibility-title">{t('visibilityTitle')}</h3>
+              <p className="live-visibility-promise">{t('visibilityIntro')}</p>
+              <p className="live-contribution">{t('visibilityContribution')}</p>
+              <p className="live-order-label">
+                <strong>{t('visibilityOrder')}</strong>
+              </p>
+              <ol>
+                <li>
+                  <strong>{t('visibilityNowTitle')}</strong>
+                  <p>{t('visibilityNow')}</p>
+                </li>
+                <li>
+                  <strong>{t('visibilityScheduledTitle')}</strong>
+                  <p>{t('visibilityScheduled')}</p>
+                </li>
+                <li>
+                  <strong>{t('visibilityOtherTitle')}</strong>
+                  <p>{t('visibilityOther')}</p>
+                </li>
+              </ol>
+            </aside>
+            <div style={{ marginTop: '29px' }}>
+              <a className="btn-text" href={MARKETPLACE_URL}>
+                {t('technology20')}
+              </a>
             </div>
           </div>
         </section>
@@ -207,100 +328,6 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             </div>
             <p className="network-tag">{t('how15')}</p>
             <CommissionGuidance locale={locale === 'pl' ? 'pl' : 'en'} />
-          </div>
-        </section>
-        <section className="section tech" id="technology">
-          {/* The film about what Vesteri is and how it works opens the
-              section full-bleed; the Polish page plays the lektor cut and
-              the English one the voiceover cut. */}
-          <ShowreelVideo
-            src={
-              locale === 'pl'
-                ? '/video/vesteri-showreel-pl.mp4'
-                : '/video/vesteri-showreel-en.mp4'
-            }
-            poster="/video/vesteri-showreel-poster.jpg"
-            soundOnLabel={t('videoSoundOn')}
-            soundOffLabel={t('videoSoundOff')}
-          />
-          <div className="wrap">
-            <div className="section-heading">
-              <div>
-                <span className="eyebrow">{t('technology01')}</span>
-                <h2>{t('technology02')}</h2>
-              </div>
-              <p className="lead">{t('technology03')}</p>
-            </div>
-            <div className="tech-grid">
-              <div className="tech-item">
-                <div className="symbol">{t('technology04')}</div>
-                <h3>
-                  {t('technology05')}
-                  <br />
-                  {t('technology06')}
-                </h3>
-                <p>{t('technology07')}</p>
-              </div>
-              <div className="tech-item">
-                <div className="symbol">{t('technology08')}</div>
-                <h3>
-                  {t('technology09')}
-                  <br />
-                  {t('technology10')}
-                </h3>
-                <p>{t('technology11')}</p>
-              </div>
-              <div className="tech-item">
-                <div className="symbol">{t('technology12')}</div>
-                <h3>
-                  {t('technology13')}
-                  <br />
-                  {t('technology14')}
-                </h3>
-                <p>{t('technology15')}</p>
-              </div>
-              <div className="tech-item">
-                <div className="symbol">{t('technology16')}</div>
-                <h3>
-                  {t('technology17')}
-                  <br />
-                  {t('technology18')}
-                </h3>
-                <p>{t('technology19')}</p>
-              </div>
-            </div>
-            <aside
-              className="live-visibility"
-              id="go-live"
-              aria-labelledby="live-visibility-title"
-            >
-              <span className="eyebrow">{t('visibilityEyebrow')}</span>
-              <h3 id="live-visibility-title">{t('visibilityTitle')}</h3>
-              <p className="live-visibility-promise">{t('visibilityIntro')}</p>
-              <p className="live-contribution">{t('visibilityContribution')}</p>
-              <p className="live-order-label">
-                <strong>{t('visibilityOrder')}</strong>
-              </p>
-              <ol>
-                <li>
-                  <strong>{t('visibilityNowTitle')}</strong>
-                  <p>{t('visibilityNow')}</p>
-                </li>
-                <li>
-                  <strong>{t('visibilityScheduledTitle')}</strong>
-                  <p>{t('visibilityScheduled')}</p>
-                </li>
-                <li>
-                  <strong>{t('visibilityOtherTitle')}</strong>
-                  <p>{t('visibilityOther')}</p>
-                </li>
-              </ol>
-            </aside>
-            <div style={{ marginTop: '29px' }}>
-              <a className="btn-text" href={MARKETPLACE_URL}>
-                {t('technology20')}
-              </a>
-            </div>
           </div>
         </section>
         <section className="section broker" id="about">

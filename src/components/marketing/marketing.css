@@ -909,12 +909,16 @@
     font-size: 11px;
   }
   .marketing .tech-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 10px;
   }
   .marketing .tech-item {
     padding: 20px;
     min-height: 230px;
+  }
+  .marketing .tech-item h3 {
+    hyphens: auto;
+    overflow-wrap: anywhere;
   }
   .marketing .broker-layout {
     grid-template-columns: 1fr;
@@ -2214,47 +2218,230 @@
   }
 }
 
-/* Showreel — the full-bleed film opening the agents' technology section.
-   No frame by design: the video runs edge to edge above the section's wrap. */
+/* Film — the agents page showreel, directly under the hero and in the same
+   deep colour so the two read as one block. The strip runs edge to edge; the
+   picture is never cropped because the film's captions sit on its bottom
+   edge, and for the same reason the controls sit under it, not over it. */
+.marketing .film {
+  background: var(--deep);
+  color: #fff;
+  padding: 84px 0 88px;
+}
+.marketing .film-head {
+  text-align: center;
+  margin-bottom: 42px;
+}
+.marketing .film-head h2 {
+  max-width: 820px;
+  margin-inline: auto;
+}
+.marketing .film-head .lead {
+  max-width: 660px;
+  margin: 0 auto;
+  color: #c9d8d6;
+}
 .marketing .showreel {
+  background: #0c1614;
+}
+.marketing .showreel-stage {
   position: relative;
 }
 .marketing .showreel video {
   display: block;
   width: 100%;
-  max-height: 85vh;
-  object-fit: cover;
-  background: #101311;
+  aspect-ratio: 16 / 9;
+  /* Leaves room for the control row, so film and controls share a screen. */
+  max-height: calc(100svh - 72px);
+  object-fit: contain;
+  background: #0c1614;
+  cursor: pointer;
 }
-.marketing .showreel-sound {
+.marketing .showreel-start {
   position: absolute;
-  right: 24px;
-  bottom: 24px;
+  left: 50%;
+  top: 72%;
+  transform: translate(-50%, -50%);
   display: inline-flex;
   align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 13px 26px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #183136;
+  background: #f5f2e9;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+.marketing .showreel-start:hover {
+  background: #fff;
+}
+.marketing .showreel-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(100% - 48px, 1232px);
+  margin: 0 auto;
+  padding: 14px 0;
+  color: #f4f3ee;
+}
+.marketing .showreel-icon,
+.marketing .showreel-sound {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  flex-shrink: 0;
   min-height: 40px;
-  padding: 9px 17px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgba(244, 243, 238, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.marketing .showreel-icon {
+  width: 40px;
+  padding: 0;
+}
+.marketing .showreel-sound {
+  padding: 9px 16px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #f4f3ee;
-  background: rgba(16, 19, 17, 0.6);
-  border: 1px solid rgba(244, 243, 238, 0.45);
-  border-radius: 5px;
-  backdrop-filter: blur(4px);
-  cursor: pointer;
+  white-space: nowrap;
 }
+.marketing .showreel-icon:hover,
 .marketing .showreel-sound:hover {
   border-color: #f4f3ee;
-  background: rgba(16, 19, 17, 0.8);
+  background: rgba(244, 243, 238, 0.1);
+}
+.marketing .showreel-sound[aria-pressed="true"] {
+  color: #183136;
+  background: #a2e4d1;
+  border-color: #a2e4d1;
+}
+.marketing .showreel :focus-visible {
+  outline: 2px solid #a2e4d1;
+  outline-offset: 3px;
+}
+.marketing .showreel-time {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: #b4c7c6;
+}
+.marketing .showreel-seek {
+  flex: 1;
+  min-width: 0;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.marketing .showreel-seek::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #a2e4d1 var(--progress, 0%),
+    rgba(244, 243, 238, 0.25) var(--progress, 0%)
+  );
+}
+.marketing .showreel-seek::-moz-range-track {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #a2e4d1 var(--progress, 0%),
+    rgba(244, 243, 238, 0.25) var(--progress, 0%)
+  );
+}
+.marketing .showreel-seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: #a2e4d1;
+}
+.marketing .showreel-seek::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #a2e4d1;
+}
+.marketing .showreel:fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000;
+}
+.marketing .showreel:fullscreen .showreel-stage {
+  flex: 1;
+  min-height: 0;
+}
+.marketing .showreel:fullscreen video {
+  height: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  background: #000;
+}
+.marketing .film-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 28px;
+  margin-top: 34px;
+}
+.marketing .film-link {
+  padding: 12px 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #a2e4d1;
+}
+.marketing .film-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 @media (max-width: 760px) {
-  .marketing .showreel-sound {
-    right: 14px;
-    bottom: 14px;
+  .marketing .film {
+    padding: 60px 0 64px;
   }
-}
-.marketing .tech .showreel {
-  margin-bottom: 72px;
+  .marketing .film-head {
+    margin-bottom: 30px;
+  }
+  .marketing .showreel-start {
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+  .marketing .showreel-controls {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 14px;
+  }
+  .marketing .showreel-seek {
+    order: -1;
+    flex-basis: 100%;
+  }
+  .marketing .showreel-time {
+    margin-right: auto;
+  }
+  .marketing .film-actions .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
 }

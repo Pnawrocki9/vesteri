@@ -695,7 +695,17 @@
       "visibilityOrder": "Tak działa kolejność ofert w Vesteri Market:",
       "visibilityContribution": "Twoim wkładem w społeczność jest aktywność. Im częściej organizujesz prezentacje LIVE i webinary, tym częściej Twoje oferty mogą być widoczne wśród trwających i nadchodzących wydarzeń. Dzieląc się wiedzą i pokazując nieruchomości, pomagasz sobie, innym agentom i swoim klientom.",
       "videoSoundOn": "Włącz dźwięk",
-      "videoSoundOff": "Wycisz dźwięk"
+      "videoSoundOff": "Wycisz dźwięk",
+      "heroWatch": "Obejrzyj film (90 s)",
+      "filmEyebrow": "Film · 90 sekund",
+      "filmTitle": "Zobacz w 90 sekund, jak działa Vesteri.",
+      "filmIntro": "Od jednego linku do gotowej strony oferty, prezentacji LIVE i reklam. Zobacz, co Vesteri robi za Ciebie, kiedy Ty zajmujesz się sprzedażą.",
+      "filmCta": "Załóż bezpłatne konto agenta ↗",
+      "videoPlay": "Odtwórz film",
+      "videoPause": "Zatrzymaj film",
+      "videoReplay": "Obejrzyj ponownie",
+      "videoSeek": "Pozycja w filmie",
+      "videoFullscreen": "Pełny ekran"
     },
     "footer": {
       "discover": "Odkrywaj",

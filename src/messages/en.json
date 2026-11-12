@@ -695,7 +695,17 @@
       "visibilityOrder": "Here is how Vesteri Market orders listings:",
       "visibilityContribution": "Your contribution to the community is your activity. The more often you host LIVE viewings and webinars, the more often your listings can feature among ongoing and upcoming events. By sharing knowledge and presenting properties, you help yourself, fellow agents and your clients.",
       "videoSoundOn": "Turn sound on",
-      "videoSoundOff": "Mute sound"
+      "videoSoundOff": "Mute sound",
+      "heroWatch": "Watch the film (90 s)",
+      "filmEyebrow": "Film · 90 seconds",
+      "filmTitle": "See how Vesteri works in 90 seconds.",
+      "filmIntro": "From a single link to a finished listing page, a LIVE viewing and ads. See what Vesteri takes off your plate while you get on with selling.",
+      "filmCta": "Create a free agent account ↗",
+      "videoPlay": "Play the film",
+      "videoPause": "Pause the film",
+      "videoReplay": "Watch again",
+      "videoSeek": "Position in the film",
+      "videoFullscreen": "Full screen"
     },
     "footer": {
       "discover": "Discover",

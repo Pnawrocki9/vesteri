@@ -147,6 +147,40 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+/* On wide screens the banner is one low row — copy left, the three choices
+   right — so it hides as little of the page as possible until a visitor
+   chooses. The dialog keeps the roomier layout. */
+@media (min-width: 900px) {
+  .marketing .cookie-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 28px;
+    align-items: center;
+    padding: 18px 22px;
+  }
+  .marketing .cookie-banner h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  .marketing .cookie-banner p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .marketing .cookie-banner .cookie-actions {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    grid-template-columns: repeat(3, auto);
+  }
+  .marketing .cookie-banner .cookie-actions button {
+    min-height: 42px;
+    white-space: nowrap;
+  }
+  .marketing .cookie-banner .cookie-links {
+    grid-column: 1;
+    margin-top: 8px;
+  }
+}
 @media (max-width: 680px) {
   .marketing .cookie-banner,
   .marketing .cookie-dialog {
@@ -160,5 +194,31 @@
   }
   .marketing .cookie-actions {
     grid-template-columns: 1fr;
+  }
+  /* The first-visit banner keeps its three choices side by side so it
+     covers about a third of a phone screen, not more than half. */
+  .marketing .cookie-banner {
+    padding: 16px;
+  }
+  .marketing .cookie-banner h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .marketing .cookie-banner p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .marketing .cookie-banner .cookie-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .marketing .cookie-banner .cookie-actions button {
+    padding: 8px 6px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .marketing .cookie-banner .cookie-links {
+    margin-top: 14px;
   }
 }
