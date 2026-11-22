@@ -2,6 +2,7 @@
 import { useId, useMemo, useState } from 'react';
 import { Link } from '@/i18n/navigation';
 import {
+  ADS_FEE_PCT,
   DEFAULT_INPUT,
   SHARES,
   calculate,
@@ -29,7 +30,6 @@ const LIMITS: Record<NumberField, [number, number | undefined, number]> = {
   ownCosts: [0, undefined, 1000],
   portalsNow: [0, undefined, 100],
   adsBudget: [0, undefined, 100],
-  adsFee: [0, 100, 1],
   livePrice: [0, undefined, 10],
   livesMonth: [0, undefined, 1],
   discount: [0, 100, 1],
@@ -100,6 +100,7 @@ export default function AgentCalculator({
     );
   };
 
+  const fee = String(ADS_FEE_PCT);
   const better = result.delta >= 0;
   const maxBar = Math.max(1, result.netNow, result.netV);
   const bar = (n: number) => `${(Math.max(0, n) / maxBar) * 100}%`;
@@ -124,7 +125,7 @@ export default function AgentCalculator({
     [l.rowLiveCosts, money(result.liveCosts)],
     [l.rowLiveSavings, money(result.liveSavings)],
     [l.rowAdsSpend, money(result.adsSpend)],
-    [l.rowAdsManagement, money(result.adsManagement)],
+    [l.rowAdsManagement.replace('{fee}', fee), money(result.adsManagement)],
     [l.rowCosts, money(result.ownCosts)],
     [l.rowPortalsNow, money(result.portalsNow)],
     [l.rowPortalsV, money(0)],
@@ -149,11 +150,8 @@ export default function AgentCalculator({
         {field('portalsNow', l.portalsNowHint)}
 
         <h3>{l.adsHeading}</h3>
-        <div className="calc-grid">
-          {field('adsBudget', l.adsBudgetHint)}
-          {field('adsFee', l.adsFeeHint)}
-        </div>
-        <p className="calc-hint">{l.adsNote}</p>
+        {field('adsBudget', l.adsBudgetHint)}
+        <p className="calc-hint">{l.adsNote.replace('{fee}', fee)}</p>
 
         <h3>{l.levelHeading}</h3>
         <p className="calc-hint">{l.levelIntro}</p>

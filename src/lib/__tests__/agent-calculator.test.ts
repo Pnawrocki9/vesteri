@@ -51,7 +51,8 @@ describe('agent benefits calculator', () => {
   });
 
   it('treats the ad budget as the agent’s spend in both models and charges only the fee to Vesteri', () => {
-    const r = calculate({ ...DEFAULT_INPUT, adsBudget: 1000, adsFee: 10 });
+    // The management fee is fixed at 10% of the budget.
+    const r = calculate({ ...DEFAULT_INPUT, adsBudget: 1000 });
     expect(r.adsSpend).toBe(12000);
     expect(r.adsManagement).toBe(1200);
     expect(r.netNow).toBe(96000);
