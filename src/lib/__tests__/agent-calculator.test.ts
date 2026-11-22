@@ -50,6 +50,16 @@ describe('agent benefits calculator', () => {
     expect(r.delta).toBe(54000);
   });
 
+  it('treats the ad budget as the agent’s spend in both models and charges only the fee to Vesteri', () => {
+    const r = calculate({ ...DEFAULT_INPUT, adsBudget: 1000, adsFee: 10 });
+    expect(r.adsSpend).toBe(12000);
+    expect(r.adsManagement).toBe(1200);
+    expect(r.netNow).toBe(96000);
+    expect(r.netV).toBe(142800);
+    // The difference moves by the management fee alone.
+    expect(r.delta).toBe(48000 - 1200);
+  });
+
   it('ignores negative and non-numeric input', () => {
     const r = calculate({ ...DEFAULT_INPUT, deals: -4, ownCosts: Number.NaN });
     expect(r.grossNow).toBe(0);

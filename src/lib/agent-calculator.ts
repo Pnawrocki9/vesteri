@@ -96,7 +96,9 @@ export function calculate(input: CalculatorInput) {
 
   const ownCosts = nonNegative(input.ownCosts);
   const portalsNow = nonNegative(input.portalsNow);
-  const netNow = incomeNow - ownCosts - portalsNow;
+  // The ad budget is the agent's own spend in either model; only the
+  // management fee is a cost that exists with Vesteri alone.
+  const netNow = incomeNow - ownCosts - portalsNow - adsSpend;
   const netV = incomeV + network - adsTotal - liveCosts - ownCosts;
   const delta = netV - netNow;
 

@@ -109,7 +109,7 @@ export default function AgentCalculator({
       : l.descSame,
     networkOn ? l.descNetworkOn : l.descNetworkOff,
     result.liveCosts ? l.descLive : '',
-    result.adsTotal ? l.descAds : '',
+    result.adsManagement ? l.descAds : '',
   ]
     .filter(Boolean)
     .join(' ');
