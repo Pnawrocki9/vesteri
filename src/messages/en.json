@@ -936,7 +936,7 @@
       "portalsNowHint": "If you pay for property portals yourself today, enter the annual amount. With Vesteri, this cost is funded by Vesteri.",
       "adsHeading": "Ad campaigns managed by Vesteri",
       "adsBudget": "Monthly ad budget (PLN)",
-      "adsBudgetHint": "The amount spent on Meta/Google ads. You decide the budget; we count it the same today and with Vesteri.",
+      "adsBudgetHint": "The amount spent on Meta/Google ads. You decide the budget.",
       "adsFee": "Vesteri management fee (%)",
       "adsFeeHint": "Editable. The rate depends on the plan: 10%, 7%, 5% or 3%.",
       "adsNote": "The ad budget is yours in both models. Vesteri charges only the management fee: budget × 12 × fee rate per year.",

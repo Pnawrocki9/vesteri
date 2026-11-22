@@ -945,7 +945,7 @@
       "portalsNowHint": "Jeśli dziś sam płacisz za portale ogłoszeniowe, wpisz roczną kwotę. W Vesteri ten koszt finansuje Vesteri.",
       "adsHeading": "Kampanie Ads zarządzane przez Vesteri",
       "adsBudget": "Budżet Ads miesięcznie (PLN)",
-      "adsBudgetHint": "Kwota wydawana na reklamy Meta/Google. O budżecie decydujesz Ty; liczymy go tak samo dziś i w Vesteri.",
+      "adsBudgetHint": "Kwota wydawana na reklamy Meta/Google. O budżecie decydujesz Ty.",
       "adsFee": "Opłata Vesteri za zarządzanie (%)",
       "adsFeeHint": "Edytowalna. Stawka zależy od planu: 10%, 7%, 5% lub 3%.",
       "adsNote": "Budżet reklamowy jest Twój w obu modelach. Vesteri pobiera tylko opłatę za zarządzanie: budżet × 12 × stawka opłaty rocznie.",
