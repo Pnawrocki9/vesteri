@@ -6,6 +6,9 @@ export const SHARES = [70, 73, 77, 80] as const;
 /** 3+1: level 1 and level 2 rates, on the selling agent's post-split commission. */
 export const LEVEL_1_RATE = 0.03;
 export const LEVEL_2_RATE = 0.01;
+/** Vesteri's fee for managing a Vesteri agent's ad campaigns: a fixed share
+ *  of the ad budget, in percent. The budget itself is the agent's. */
+export const ADS_FEE_PCT = 10;
 
 export type CalculatorInput = {
   deals: number;
@@ -20,7 +23,6 @@ export type CalculatorInput = {
    *  for its agents, so this cost exists only in the current model. */
   portalsNow: number;
   adsBudget: number;
-  adsFee: number;
   livePrice: number;
   livesMonth: number;
   discount: number;
@@ -42,7 +44,6 @@ export const DEFAULT_INPUT: CalculatorInput = {
   ownCosts: 12000,
   portalsNow: 0,
   adsBudget: 0,
-  adsFee: 10,
   livePrice: 0,
   livesMonth: 0,
   discount: 0,
@@ -91,7 +92,7 @@ export function calculate(input: CalculatorInput) {
   const liveSavings = livePrice * discount * livesMonth * 12;
 
   const adsSpend = nonNegative(input.adsBudget) * 12;
-  const adsManagement = (adsSpend * clamp(input.adsFee, 0, 100)) / 100;
+  const adsManagement = (adsSpend * ADS_FEE_PCT) / 100;
   const adsTotal = adsSpend + adsManagement;
 
   const ownCosts = nonNegative(input.ownCosts);
