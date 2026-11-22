@@ -41,6 +41,14 @@ describe('agent benefits calculator', () => {
     expect(r.netV).toBe(180600);
   });
 
+  it('counts property portals only against the current model', () => {
+    const r = calculate({ ...DEFAULT_INPUT, portalsNow: 6000 });
+    expect(r.netNow).toBe(102000);
+    // Vesteri funds portals for its agents: the Vesteri result is unchanged.
+    expect(r.netV).toBe(156000);
+    expect(r.delta).toBe(54000);
+  });
+
   it('ignores negative and non-numeric input', () => {
     const r = calculate({ ...DEFAULT_INPUT, deals: -4, costNow: Number.NaN });
     expect(r.grossNow).toBe(0);

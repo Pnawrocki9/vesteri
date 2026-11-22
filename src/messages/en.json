@@ -933,7 +933,9 @@
       "costNow": "Your current annual costs (PLN)",
       "costNowHint": "Costs outside the commission split in your current model.",
       "costV": "Your own costs with Vesteri (PLN)",
-      "costVHint": "The same as your current costs by default. Change it if some costs fall away.",
+      "costVHint": "For example car and fuel, phone, accounting and social insurance, your own marketing. Leave out property portals: Vesteri funds those. The same as your current costs by default.",
+      "portalsNow": "Property portals today (PLN per year)",
+      "portalsNowHint": "If you pay for property portals yourself today, enter the annual amount here and leave it out of the costs above. With Vesteri, this cost is funded by Vesteri.",
       "adsHeading": "Ad campaigns managed by Vesteri",
       "adsBudget": "Monthly ad budget (PLN)",
       "adsBudgetHint": "The amount spent on Meta/Google ads.",
@@ -996,7 +998,9 @@
       "rowAdsSpend": "Ad budget per year",
       "rowAdsManagement": "Ad management fee per year",
       "rowCosts": "Current annual costs",
+      "rowPortalsNow": "Property portals today",
       "rowCostsV": "Your own costs with Vesteri",
+      "rowPortalsV": "Property portals with Vesteri (funded by Vesteri)",
       "rowDelta": "Net difference",
       "breakEvenHeading": "How many transactions does it take to break even?",
       "breakEvenText": "Transactions per year with Vesteri needed to match your current result after costs, at the same average commission and your current Vesteri share.",
@@ -1009,7 +1013,7 @@
       "moreStrong": "We test their effect in practice; we do not add it to the calculator without data.",
       "ctaCall": "Let’s talk:",
       "ctaAgents": "See the offer for agents",
-      "disclaimer": "The calculator is an illustrative tool, not a binding offer, tax advice or an earnings forecast. Results are before taxes and social contributions and include only the costs you enter. The LIVE discount lowers the cost and is not added to income a second time. Your own costs with Vesteri are deducted from the Vesteri result, just as your current costs are deducted from the current model. The ad budget and management fee are added as Vesteri costs; no equivalent spending is assumed in the current model unless you included it in your current annual costs. A Vesteri agent pays no subscription; only LIVE events are paid, at the agent discount. The 70–80% model and 3+1 are shown according to Vesteri’s assumptions. In the 3+1 simulation every network agent has the same average number of transactions, commission and share; actual results may differ. The 3% and 1% amounts are calculated on the commission of the agent who made the sale, after the split with Vesteri. VAT, differences in how commission is settled, onboarding costs and changing webinar qualification rules are not included. The annual simulation assumes the same number of LIVE events and transactions every month. Actual settlement should take the number of LIVE events and the transaction commission into account separately for each month. The LIVE counter resets every month."
+      "disclaimer": "The calculator is an illustrative tool, not a binding offer, tax advice or an earnings forecast. Results are before taxes and social contributions and include only the costs you enter. The LIVE discount lowers the cost and is not added to income a second time. Your own costs with Vesteri are deducted from the Vesteri result, just as your current costs are deducted from the current model. The cost of property portals is deducted from the current model only, because with Vesteri it is funded by Vesteri. The ad budget and management fee are added as Vesteri costs; no equivalent spending is assumed in the current model unless you included it in your current annual costs. A Vesteri agent pays no subscription; only LIVE events are paid, at the agent discount. The 70–80% model and 3+1 are shown according to Vesteri’s assumptions. In the 3+1 simulation every network agent has the same average number of transactions, commission and share; actual results may differ. The 3% and 1% amounts are calculated on the commission of the agent who made the sale, after the split with Vesteri. VAT, differences in how commission is settled, onboarding costs and changing webinar qualification rules are not included. The annual simulation assumes the same number of LIVE events and transactions every month. Actual settlement should take the number of LIVE events and the transaction commission into account separately for each month. The LIVE counter resets every month."
     }
   },
   "cookieConsent": {
