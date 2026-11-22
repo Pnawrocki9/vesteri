@@ -264,6 +264,10 @@ export default async function BuyersContent({ locale }: { locale: string }) {
             </div>
             <div className="faq-group active">
               <details>
+                <summary>{t('faq19')}</summary>
+                <p>{t('faq20')}</p>
+              </details>
+              <details>
                 <summary>{t('faq03')}</summary>
                 <p>{t('faq04')}</p>
               </details>
@@ -306,9 +310,14 @@ export default async function BuyersContent({ locale }: { locale: string }) {
               <h2>{t('main15')}</h2>
               <p>{t('main16')}</p>
             </div>
-            <Link className="btn btn-cream" href="/agents">
-              {t('main17')}
-            </Link>
+            <div className="teaser-actions">
+              <Link className="btn btn-cream" href="/agents">
+                {t('main17')}
+              </Link>
+              <Link className="btn btn-outline" href="/calculator">
+                {t('main18')}
+              </Link>
+            </div>
           </div>
         </section>
       </main>

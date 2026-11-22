@@ -40,9 +40,9 @@ export async function marketingMetadata(
 // Message keys of the visible FAQ on each page: question = faqNN, answer =
 // faqNN+1, exactly as the *Content components render them in <summary>/<p>.
 const FAQ_RANGE: Record<Audience, [number, number]> = {
-  buyers: [3, 17],
-  sellers: [3, 15],
-  agents: [3, 25],
+  buyers: [3, 19],
+  sellers: [3, 17],
+  agents: [3, 31],
 };
 const HREF: Record<Audience, StaticPathname> = {
   buyers: '/',

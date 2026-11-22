@@ -14,6 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('meta.termsTitle'),
     alternates: localeAlternates('/affiliate/terms', locale),
+    // The programme is withdrawn: kept for existing partners, out of the index.
+    robots: { index: false, follow: true },
   };
 }
 

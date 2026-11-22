@@ -12,6 +12,7 @@ export const routing = defineRouting({
     '/': '/',
     '/sellers': { en: '/sellers', pl: '/sprzedajacy' },
     '/agents': { en: '/agents', pl: '/dla-agentow' },
+    '/calculator': { en: '/calculator', pl: '/kalkulator' },
     '/how-it-works': {
       pl: '/jak-dziala-vesteri-collective',
       en: '/how-vesteri-collective-works',

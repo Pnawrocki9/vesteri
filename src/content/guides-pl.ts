@@ -44,7 +44,7 @@ const raw: GuideContent[] = [
     "eyebrow": "AGENT NIERUCHOMOŚCI · KRAKÓW",
     "breadcrumb": "Agent nieruchomości w Krakowie",
     "title": "Agent nieruchomości w Krakowie | Vesteri",
-    "description": "Agent nieruchomości w Krakowie z Vesteri Collective. Poznaj obsługę sprzedaży i zakupu, przeglądaj oferty i kontaktuj się z agentami.",
+    "description": "Agent nieruchomości w Krakowie z Vesteri. Poznaj obsługę sprzedaży i zakupu, przeglądaj oferty i kontaktuj się z agentami.",
     "h1": "Agent nieruchomości w Krakowie",
     "lead": "Sprzedajesz albo kupujesz mieszkanie w Krakowie? Zobacz, jak pracuje rzetelny agent nieruchomości, co powinien dla Ciebie zrobić na każdym etapie transakcji i jakie dokumenty sprawdzić, zanim pojawi się kupujący lub zanim wpłacisz zadatek. W Vesteri Market możesz porównywać oferty i kontaktować się bezpośrednio z agentami, którzy je prezentują.",
     "ctas": [
@@ -60,8 +60,8 @@ const raw: GuideContent[] = [
     "sections": [
       {
         "id": "jak-pracuje-agent-vesteri-collective-w-krakowie",
-        "title": "Jak pracuje agent Vesteri Collective w Krakowie",
-        "body": "Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości, Vesteri Market oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.\n\nW Vesteri Market porównujesz oferty i kontaktujesz się bezpośrednio z agentem prezentującym wybraną nieruchomość. Jeśli sprzedajesz, ustalasz z agentem zakres usług, wynagrodzenie i plan promocji, w tym publikację oferty. Możliwość prezentacji online zależy od danej nieruchomości i agenta.\n\nPublikowanie ofert wymaga weryfikacji tożsamości, działalności i ubezpieczenia OC pośrednika. Szczegóły: [Jak działa Vesteri Collective](/pl/jak-dziala-vesteri-collective)."
+        "title": "Jak pracują agenci Vesteri w Krakowie",
+        "body": "W Krakowie pracują agenci Vesteri oraz niezależni agenci z Vesteri Collective. Łączą ich Vesteri Market, wspólne standardy obsługi klientów i Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń. Przy każdej ofercie widzisz, kto za nią odpowiada.\n\nW Vesteri Market porównujesz oferty i kontaktujesz się bezpośrednio z agentem prezentującym wybraną nieruchomość. Jeśli sprzedajesz, ustalasz z agentem zakres usług, wynagrodzenie i plan promocji, w tym publikację oferty. Możliwość prezentacji online zależy od danej nieruchomości i agenta.\n\nPublikowanie ofert wymaga weryfikacji tożsamości, działalności i ubezpieczenia OC pośrednika. Szczegóły: [Jak działa Vesteri Collective](/pl/jak-dziala-vesteri-collective)."
       },
       {
         "id": "jak-wyglada-wspolpraca-z-agentem-proces-krok-po-kroku",
@@ -85,8 +85,8 @@ const raw: GuideContent[] = [
       },
       {
         "id": "jestes-agentem-z-krakowa-dolacz-do-collective",
-        "title": "Jesteś agentem z Krakowa? Dołącz do Collective",
-        "body": "Pracujesz w Krakowie jako agent albo dopiero zaczynasz? Zachowaj własną markę i klientów. Dołącz do społeczności, która dzieli się wiedzą i doświadczeniem w Vesteri Channels, oraz publikuj oferty w Vesteri Market po zatwierdzeniu konta. Każdemu agentowi po rejestracji wysyłamy zaproszenie do Channels e-mailem. → [Poznaj Collective](/pl/dla-agentow)"
+        "title": "Jesteś agentem z Krakowa? Dołącz do Vesteri",
+        "body": "Pracujesz w Krakowie jako agent albo dopiero zaczynasz? Jako agent Vesteri korzystasz z zaplecza nowoczesnej agencji: technologii, marketingu i sieci współpracujących agentów. Jeśli wolisz własną markę, dołącz do Vesteri Collective i współpracuj z agentami Vesteri. Każdemu agentowi po rejestracji wysyłamy zaproszenie do Vesteri Channels e-mailem. → [Poznaj ofertę dla agentów](/pl/dla-agentow)"
       }
     ],
     "faq": [
@@ -133,7 +133,7 @@ const raw: GuideContent[] = [
         "href": "/pl/poradnik/prowizja-agenta-nieruchomosci"
       },
       {
-        "label": "Dla agentów: dołącz do Vesteri Collective",
+        "label": "Dla agentów: dołącz do Vesteri",
         "href": "/pl/dla-agentow"
       },
       {
@@ -142,7 +142,7 @@ const raw: GuideContent[] = [
       }
     ],
     "sources": "- Ceny transakcyjne NBP, Kraków, II kw. 2026: wtórny 14 792 zł/m², pierwotny 15 923 zł/m² – źródło: zametr.pl, „Kraków – ceny mieszkań i zmiany cen”, sekcja „Ceny transakcyjne NBP” ( <https://zametr.pl/ceny-mieszkan/krakow> , dostęp 26.10.2026). Średnia cena ofertowa NBP na rynku wtórnym 16 838 zł/m² (NBP BaRN, II kw. 2026) wg zgodnych źródeł: <https://blog.ongeo.pl/ceny-mieszkan-ii-kwartal-2026-nbp> , <https://hesiahome.pl/blog/ceny-transakcyjne-mieszkan> , <https://vtgroup-realestate.pl/blog/ceny-mieszkan-krakow-2026/> , <https://www.activ-investment.eu/blog/rynek-mieszkaniowy-krakow-ii-kwartal-2026/> .\n- RCN bezpłatny od 13.02.2026: <https://www.geoportal.gov.pl/aktualnosci/zmiany-w-udostepnianiu-danych-z-rcn-nowelizacja-rozporzadzenia-w-sprawie-egib/> ; <https://www.geoportal.gov.pl/pl/dane/rejestr-cen-nieruchomosci-rcn/> (ustawa z 26.09.2025, Dz.U. poz. 1542)\n- Art. 180–181 ugn (umowa pośrednictwa, OC): <https://przepisy.gofin.pl/przepisy,3,42,42,980,379372,20240101,art-179-183a-posrednictwo-w-obrocie-nieruchomosciami.html>\n- PCC: art. 2 pkt 4, art. 7, art. 9 pkt 17 ustawy o PCC (t.j. Dz.U. 2024 poz. 295): <https://eli.gov.pl/api/acts/DU/2024/295/text.html> ; zwolnienie od 31.08.2023: <https://www.gov.pl/web/rozwoj-technologia/kupno-mieszkania-lub-domu-na-rynku-wtornym-bez-podatku-pcc>\n- Ustawa z 1.03.2018 o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu (pośrednik jako instytucja obowiązana, art. 2 ust. 1 pkt 18)\n- Ustawa z 30.05.2014 o prawach konsumenta (prawo odstąpienia, 14 dni)\n- Fakty o Vesteri: www.vesteri.com llms.txt (26.10.2026)",
-    "modified": "2026-10-30"
+    "modified": "2026-11-22"
   },
   {
     "href": "/poradnik/jak-sprzedac-mieszkanie",
@@ -192,8 +192,8 @@ const raw: GuideContent[] = [
       },
       {
         "id": "sprzedaz-z-agentem-vesteri-collective",
-        "title": "Sprzedaż z agentem Vesteri Collective",
-        "body": "Ustal z niezależnym agentem Collective zakres obsługi, wynagrodzenie i plan promocji. Zatwierdzony agent może opublikować Twoją nieruchomość w Vesteri Market, zgodnie z Waszą umową. Omów przygotowanie oferty, organizację prezentacji i raportowanie postępów.\n\n[Sprzedaż z agentem Collective](/pl/sprzedajacy)"
+        "title": "Sprzedaż z agentem Vesteri",
+        "body": "Ustal z agentem Vesteri lub niezależnym agentem Collective zakres obsługi, wynagrodzenie i plan promocji. Twój agent publikuje nieruchomość w Vesteri Market, zgodnie z Waszą umową. Omów przygotowanie oferty, organizację prezentacji i raportowanie postępów.\n\n[Sprzedaż z agentem Vesteri](/pl/sprzedajacy)"
       }
     ],
     "faq": [
@@ -241,7 +241,7 @@ const raw: GuideContent[] = [
       }
     ],
     "sources": "- PIT od sprzedaży nieruchomości, 5 lat, 19%, PIT-39, ulga 3 lata, spadek: <https://www.podatki.gov.pl/podatki-osobiste/pit/informacje-podstawowe/co-jest-opodatkowane/zbycie-nieruchomosci> (aktualizacja 19.08.2026)\n- RCN bezpłatny od 13.02.2026: <https://www.geoportal.gov.pl/aktualnosci/zmiany-w-udostepnianiu-danych-z-rcn-nowelizacja-rozporzadzenia-w-sprawie-egib/>\n- OC pośrednika, art. 181 ust. 3–3b ugn: <https://przepisy.gofin.pl/przepisy,3,42,42,980,379372,20240101,art-179-183a-posrednictwo-w-obrocie-nieruchomosciami.html>\n- Zadatek: art. 394 Kodeksu cywilnego\n- Księgi wieczyste online: <https://ekw.ms.gov.pl>",
-    "modified": "2026-10-30"
+    "modified": "2026-11-22"
   },
   {
     "href": "/poradnik/kupno-mieszkania-z-agentem",
@@ -285,7 +285,7 @@ const raw: GuideContent[] = [
       },
       {
         "id": "jak-to-dziala-w-vesteri-collective",
-        "title": "Jak to działa w Vesteri Collective",
+        "title": "Jak to działa w Vesteri",
         "body": "Vesteri Market łączy oferty lokalne i zagraniczne. Przeglądaj nieruchomości i kontaktuj się bezpośrednio z agentem wskazanym przy interesującej Cię ofercie. Zakres usług, wynagrodzenie i warunki obsługi ustalasz z nim indywidualnie.\n\n[Przeglądaj oferty](https://vesteri.estalara.com)"
       }
     ],
@@ -330,7 +330,7 @@ const raw: GuideContent[] = [
       }
     ],
     "sources": "- Art. 180–181 ugn: <https://przepisy.gofin.pl/przepisy,3,42,42,980,379372,20240101,art-179-183a-posrednictwo-w-obrocie-nieruchomosciami.html>\n- PCC – art. 2 pkt 4, art. 7a, art. 9 pkt 17 ustawy o PCC (t.j. Dz.U. 2024 poz. 295): <https://eli.gov.pl/api/acts/DU/2024/295/text.html> ; zwolnienie pierwszego mieszkania od 31.08.2023: <https://www.gov.pl/web/rozwoj-technologia/kupno-mieszkania-lub-domu-na-rynku-wtornym-bez-podatku-pcc>\n- Zadatek: art. 394 Kodeksu cywilnego\n- Ustawa z 1.03.2018 o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu\n- RCN bezpłatny od 13.02.2026: <https://www.geoportal.gov.pl/aktualnosci/zmiany-w-udostepnianiu-danych-z-rcn-nowelizacja-rozporzadzenia-w-sprawie-egib/>\n- Księgi wieczyste: <https://ekw.ms.gov.pl>",
-    "modified": "2026-10-30"
+    "modified": "2026-11-22"
   },
   {
     "href": "/poradnik/prowizja-agenta-nieruchomosci",
@@ -385,8 +385,8 @@ const raw: GuideContent[] = [
       },
       {
         "id": "prowizja-w-vesteri-collective",
-        "title": "Prowizja w Vesteri Collective",
-        "body": "Stawkę, zakres usług i moment zapłaty ustalasz bezpośrednio z agentem w umowie pośrednictwa. Vesteri nie narzuca klientom jednej stawki. Przed zawarciem umowy poproś o kwotę brutto, informację o dodatkowych kosztach i jasny opis działań.\n\n[Sprzedaż z agentem Collective](/pl/sprzedajacy)"
+        "title": "Prowizja w Vesteri",
+        "body": "Stawkę, zakres usług i moment zapłaty ustalasz bezpośrednio z agentem w umowie pośrednictwa. Vesteri nie narzuca klientom jednej stawki. Przed zawarciem umowy poproś o kwotę brutto, informację o dodatkowych kosztach i jasny opis działań.\n\nJeśli korzystasz z agenta Vesteri, umowę pośrednictwa podpisujesz z Vesteri. Jeśli wybierasz niezależnego agenta z Vesteri Collective, podpisujesz ją z nim lub z jego biurem. Podział prowizji między agentem a Vesteri nie zmienia kwoty, którą płacisz.\n\n[Sprzedaż z agentem Vesteri](/pl/sprzedajacy)"
       }
     ],
     "faq": [
@@ -438,7 +438,7 @@ const raw: GuideContent[] = [
       }
     ],
     "sources": "- Art. 180–181 ugn: <https://przepisy.gofin.pl/przepisy,3,42,42,980,379372,20240101,art-179-183a-posrednictwo-w-obrocie-nieruchomosciami.html>\n- Widełki 2–3% netto + VAT (2025): <https://towerservice.pl/prowizja-biura-nieruchomosci-ile-wynosi-i-jak-negocjowac> ; <https://marberdom.pl/ile-kosztuje-posrednik-nieruchomosci-stawki-vat-i-jak-obnizyc> ; <https://rynekpierwotny.pl/wiadomosci-mieszkaniowe/na-czym-zarabia-posrednik-nieruchomosci/7300/> (2–5%, 2025)\n- VAT 23% na pośrednictwo (stawka podstawowa): <https://pszczelna.pl/prowizja-biura-nieruchomosci-netto-czy-brutto-vat-w-cenie>\n- Limit zwolnienia VAT 240 000 zł od 1.01.2026: ustawa z 24.06.2025, Dz.U. 2025 poz. 896, <https://www.dziennikustaw.gov.pl/D2025000089601.pdf> ; <https://podatki.gov.pl/podatki-firmowe/vat/poradniki-i-informatory/zwolnienie-podmiotowe-od-podatku-vat>\n- Ustawa z 30.05.2014 o prawach konsumenta (odstąpienie od umowy zawartej poza lokalem lub na odległość)",
-    "modified": "2026-10-30"
+    "modified": "2026-11-22"
   },
   {
     "href": "/poradnik/jak-zostac-agentem-nieruchomosci",
@@ -451,7 +451,7 @@ const raw: GuideContent[] = [
     "lead": "Aby zostać agentem nieruchomości w Polsce, nie potrzebujesz państwowej licencji – zniesiono ją 1 stycznia 2014 r. Jeśli działasz na własny rachunek, musisz mieć firmę i obowiązkowe ubezpieczenie OC pośrednika. Kurs nie jest wymagany, ale bardzo pomaga. Brak licencji nie zwalnia jednak z profesjonalizmu: agent odpowiada za rzetelność informacji, bezpieczeństwo transakcji i przestrzeganie przepisów (m.in. o ochronie konsumentów, AML i RODO). Możesz zacząć w biurze, we franczyzie albo jako niezależny agent w sieci.",
     "ctas": [
       {
-        "label": "Zgłoś się do Collective",
+        "label": "Poznaj ofertę dla agentów",
         "href": "/agents"
       }
     ],
@@ -494,12 +494,12 @@ const raw: GuideContent[] = [
       {
         "id": "gdzie-zaczac-biuro-franczyza-czy-niezaleznie-w-sieci",
         "title": "Gdzie zacząć: biuro, franczyza czy niezależnie w sieci",
-        "body": "| Model | Plusy | Minusy |\n| --- | --- | --- |\n| Biuro nieruchomości (pracownik/współpracownik) | Szkolenia, marka, oferty biura | Mniejsza część prowizji, mniej swobody |\n| Franczyza | Rozpoznawalna marka, system i szkolenia | Opłaty franczyzowe, narzucone standardy |\n| Własna działalność, samodzielnie | Pełna prowizja i swoboda | Wszystko na Twojej głowie, mała baza ofert |\n| Niezależnie w społeczności agentów (np. Vesteri Collective) | Własna marka, Vesteri Market, wymiana wiedzy i doświadczeń | Samodzielne pozyskiwanie klientów i odpowiedzialność za usługi |"
+        "body": "| Model | Plusy | Minusy |\n| --- | --- | --- |\n| Biuro nieruchomości (pracownik/współpracownik) | Szkolenia, marka, oferty biura | Mniejsza część prowizji, mniej swobody |\n| Franczyza | Rozpoznawalna marka, system i szkolenia | Opłaty franczyzowe, narzucone standardy |\n| Własna działalność, samodzielnie | Pełna prowizja i swoboda | Wszystko na Twojej głowie, mała baza ofert |\n| Agencja z wysokim udziałem agenta (np. Agent Vesteri) | 70–80% prowizji, zaplecze agencji, wsparcie i szkolenia | Umowę z klientem podpisuje agencja, pracujesz pod jej marką |\n| Niezależnie w społeczności agentów (np. Vesteri Collective) | Własna marka, Vesteri Market, współpraca z innymi agentami | Samodzielne pozyskiwanie klientów, opłaty według cennika, bez wsparcia i szkoleń agencji |"
       },
       {
         "id": "start-w-vesteri-collective-jako-poczatkujacy-agent",
-        "title": "Start w Vesteri Collective jako początkujący agent",
-        "body": "W Vesteri Collective możesz rozwijać się także na początku kariery. Załóż konto agenta na platformie Vesteri; zaproszenie do Vesteri Channels wyślemy Ci ręcznie e-mailem. W społeczności możesz zadawać pytania, poznawać doświadczenia innych i dzielić się informacjami.\n\nPublikowanie ofert wymaga osobnego zatwierdzenia konta i spełnienia wymogów zawodowych, w tym prowadzenia legalnej działalności i wymaganego ubezpieczenia OC. Przed zatwierdzeniem możesz już korzystać z Channels. Konto, członkostwo i standardowa publikacja ofert są bezpłatne.\n\n[Poznaj Collective →](/pl/dla-agentow)"
+        "title": "Start w Vesteri jako początkujący agent",
+        "body": "W Vesteri możesz zacząć na dwa sposoby. Jako **agent Vesteri** pracujesz w ramach agencji: zatrzymujesz 70% prowizji na start i do 80% za prezentacje LIVE, masz wsparcie merytoryczne i operacyjne oraz dostęp do szkoleń. Jako **członek Vesteri Collective** działasz pod własną marką i korzystasz z Vesteri Market zgodnie z cennikiem.\n\nPo założeniu konta zaproszenie do Vesteri Channels wyślemy Ci ręcznie e-mailem. W społeczności możesz zadawać pytania, poznawać doświadczenia innych i dzielić się informacjami.\n\nPublikowanie ofert wymaga osobnego zatwierdzenia konta i spełnienia wymogów zawodowych, w tym prowadzenia legalnej działalności i wymaganego ubezpieczenia OC. Przed zatwierdzeniem możesz już korzystać z Channels.\n\n[Poznaj ofertę dla agentów →](/pl/dla-agentow)"
       },
       {
         "id": "pierwsze-90-dni-plan-krok-po-kroku",
@@ -533,13 +533,13 @@ const raw: GuideContent[] = [
         "a": "Prawo tego nie zabrania. W praktyce prezentacje odbywają się często po południu i w weekendy, więc da się zacząć dorywczo, ale klienci oczekują szybkiego kontaktu."
       },
       {
-        "q": "Czy Vesteri Collective przyjmuje początkujących agentów?",
-        "a": "Tak. Załóż konto agenta, a zaproszenie do Vesteri Channels wyślemy Ci e-mailem. Publikowanie ofert wymaga osobnego zatwierdzenia konta i spełnienia wymogów zawodowych. Szczegóły znajdziesz na stronie dla agentów."
+        "q": "Czy Vesteri przyjmuje początkujących agentów?",
+        "a": "Tak. Początkujący agent może dołączyć jako agent Vesteri, ze wsparciem i szkoleniami agencji, albo jako członek Vesteri Collective pod własną marką. Publikowanie ofert wymaga osobnego zatwierdzenia konta i spełnienia wymogów zawodowych. Szczegóły znajdziesz na stronie dla agentów."
       }
     ],
     "related": [
       {
-        "label": "Dla agentów: dołącz do Vesteri Collective",
+        "label": "Dla agentów: dołącz do Vesteri",
         "href": "/pl/dla-agentow"
       },
       {
@@ -552,7 +552,7 @@ const raw: GuideContent[] = [
       }
     ],
     "sources": "- Art. 180 ust. 3, art. 181 ust. 3–3b ugn: <https://przepisy.gofin.pl/przepisy,3,42,42,980,379372,20240101,art-179-183a-posrednictwo-w-obrocie-nieruchomosciami.html>\n- Rozporządzenie MF z 26.04.2019 (Dz.U. 2019 poz. 804): <https://eli.gov.pl/api/acts/DU/2019/804/text.html>\n- Deregulacja od 1.01.2014: <https://www.rp.pl/ekonomia/art12630581-uwolnione-zawody-z-nowymi-ubezpieczeniami>\n- OC, obowiązki i kara: <https://pprn.pl/posrednicy/ubezpieczenia-oc-posrednikow/>\n- Ustawa z 1.03.2018 o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu, art. 2 ust. 1 pkt 18\n- Ustawa z 30.05.2014 o prawach konsumenta\n- Fakty o Vesteri: www.vesteri.com llms.txt (26.10.2026)",
-    "modified": "2026-10-30"
+    "modified": "2026-11-22"
   },
   {
     "href": "/nieruchomosci-za-granica",
@@ -577,7 +577,7 @@ const raw: GuideContent[] = [
       },
       {
         "id": "jak-wyglada-zakup-z-agentem-vesteri-collective",
-        "title": "Jak wygląda zakup z agentem Vesteri Collective",
+        "title": "Jak wygląda zakup z agentem Vesteri",
         "body": "1. Przeglądaj nieruchomości w Vesteri Market i porównuj dostępne oferty.\n2. Skontaktuj się z agentem wskazanym przy wybranej nieruchomości.\n3. Zapytaj o dokumenty, koszty, dostępne prezentacje i warunki obsługi.\n4. Zleć niezależnemu lokalnemu prawnikowi analizę dokumentów i ustal procedurę zawarcia umowy oraz rejestracji.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
@@ -718,7 +718,7 @@ const raw: GuideContent[] = [
       },
       {
         "id": "jak-kupowac-z-vesteri-collective",
-        "title": "Jak kupować z Vesteri Collective",
+        "title": "Jak kupować z Vesteri",
         "body": "Przeglądaj dostępne nieruchomości w Vesteri Market i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],
@@ -793,7 +793,7 @@ const raw: GuideContent[] = [
       },
       {
         "id": "jak-kupowac-z-vesteri-collective",
-        "title": "Jak kupować z Vesteri Collective",
+        "title": "Jak kupować z Vesteri",
         "body": "Przeglądaj dostępne nieruchomości w Vesteri Market i skontaktuj się z agentem wskazanym przy ofercie. Zapytaj o dokumentację projektu, dostępne prezentacje, koszty i warunki zakupu. Analizę prawną i procedurę rejestracji uzgodnij z niezależnym doradcą znającym lokalne przepisy.\n\n[Przeglądaj oferty]({APP_URL})"
       }
     ],

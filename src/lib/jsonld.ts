@@ -29,9 +29,9 @@ const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
 // Head office as printed in the site footer (developers.footer.addr).
-// Same wording as the Collective description in llms.txt and the meta copy.
+// Same positioning as the summary in llms.txt and the meta copy.
 const ORGANIZATION_DESCRIPTION =
-  'Vesteri Collective is a community of independent real estate agents and agencies with Vesteri Market, professional standards and Vesteri Channels for learning and exchanging experience. Approved agents publish local and international listings.';
+  'Vesteri is a modern real estate agency and a network of cooperating agents. Vesteri agents and the independent agents of Vesteri Collective publish local and international listings in Vesteri Market, follow shared professional standards and exchange experience in Vesteri Channels.';
 
 const ADDRESS = {
   '@type': 'PostalAddress',

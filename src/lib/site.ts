@@ -12,6 +12,9 @@ export const LINKEDIN_URL =
 export const AGENT_PANEL_URL = 'https://vesteri.estalara.com';
 export const CONTACT_PHONE_DISPLAY = '+48 667 953 016';
 export const CONTACT_PHONE_TEL = '+48667953016';
+// "Book a demo" target on the agents page. An e-mail for now; swap this one
+// constant for a calendar booking link once it is confirmed.
+export const DEMO_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Demo Vesteri')}`;
 
 // Canonical host. Both vesteri.com and www.vesteri.com are bound as Cloudflare
 // custom domains (see wrangler.jsonc), so exactly one of them has to win in

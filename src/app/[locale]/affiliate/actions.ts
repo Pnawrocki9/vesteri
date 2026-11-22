@@ -16,7 +16,7 @@ import {
 } from '@/lib/affiliate/auth';
 import { hashPassword, verifyPassword } from '@/lib/affiliate/crypto';
 import { getDb } from '@/lib/affiliate/env';
-import { getSettings } from '@/lib/affiliate/settings';
+import { getSettings, isProgramOpen } from '@/lib/affiliate/settings';
 import { checkThrottle, clearThrottle, recordFailure } from '@/lib/affiliate/throttle';
 
 // Public-side actions. Validation failures return an error code the client
@@ -51,7 +51,7 @@ export async function registerAffiliate(
   const db = await getDb();
 
   const settings = await getSettings(db);
-  if (settings.program_active !== 1) return { error: 'closed' };
+  if (!isProgramOpen(settings)) return { error: 'closed' };
 
   const firstName = text(formData, 'first_name');
   const lastName = text(formData, 'last_name');

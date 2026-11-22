@@ -1,9 +1,10 @@
-/** Non-binding examples: the parties choose whether and how to cooperate. */
+/** Split between cooperating agents. Non-binding examples: the agents agree
+ * the proportions themselves. This is not the 70–80% agent/Vesteri split. */
 export const commissionGuidance = {
   pl: {
-    title: 'Przykładowy podział prowizji',
+    title: 'Współpraca między agentami: przykładowy podział',
     intro:
-      'Jeśli zdecydujecie się na współpracę, poniższe przykłady mogą być punktem wyjścia do rozmowy.',
+      'To podział między współpracującymi agentami. Udział 70–80% dotyczy rozliczenia agenta Vesteri z Vesteri.',
     referral: 'Polecenie klienta',
     joint: 'Wspólna transakcja',
     referring: 'dla agenta polecającego',
@@ -11,15 +12,15 @@ export const commissionGuidance = {
     listing: 'dla Agenta Oferty',
     buying: 'dla Agenta Kupującego',
     freedom:
-      'To niewiążące sugestie. Vesteri nie narzuca podziału prowizji ani obowiązku współpracy. Agenci mogą uzgodnić dowolne proporcje.',
+      'Poniższe przykłady to niewiążące sugestie. Vesteri nie narzuca podziału prowizji: przy każdej transakcji agenci uzgadniają proporcje między sobą.',
     terms:
       'Podstawę rozliczenia, zakres działań i termin płatności ustalcie bezpośrednio między sobą. Bez uzgodnienia nie obowiązuje żaden domyślny podział.',
     link: 'Zobacz wskazówki dotyczące współpracy',
   },
   en: {
-    title: 'Example commission splits',
+    title: 'Cooperation between agents: example splits',
     intro:
-      'If you choose to work together, these examples can be a starting point for your discussion.',
+      'This is the split between cooperating agents. The 70–80% share concerns how a Vesteri agent settles with Vesteri.',
     referral: 'Client referral',
     joint: 'Joint transaction',
     referring: 'for the referring agent',
@@ -27,7 +28,7 @@ export const commissionGuidance = {
     listing: 'for the Listing Agent',
     buying: 'for the Buyer’s Agent',
     freedom:
-      'These are non-binding suggestions. Vesteri does not impose commission splits or require agents to cooperate. Agents are free to agree any proportions.',
+      'The examples below are non-binding suggestions. Vesteri does not impose commission splits: agents agree the proportions between themselves for each transaction.',
     terms:
       'Agree the calculation basis, scope of work and payment timing directly with each other. No default split applies without an agreement.',
     link: 'Read the cooperation guidance',
