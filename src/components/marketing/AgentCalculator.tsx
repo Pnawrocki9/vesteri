@@ -27,6 +27,7 @@ const LIMITS: Record<NumberField, [number, number | undefined, number]> = {
   commissionPct: [0, 100, 0.1],
   current: [0, 100, 1],
   costNow: [0, undefined, 1000],
+  portalsNow: [0, undefined, 100],
   costV: [0, undefined, 1000],
   adsBudget: [0, undefined, 100],
   adsFee: [0, 100, 1],
@@ -126,7 +127,9 @@ export default function AgentCalculator({
     [l.rowAdsSpend, money(result.adsSpend)],
     [l.rowAdsManagement, money(result.adsManagement)],
     [l.rowCosts, money(result.costNow)],
+    [l.rowPortalsNow, money(result.portalsNow)],
     [l.rowCostsV, money(result.costV)],
+    [l.rowPortalsV, money(0)],
   ];
 
   return (
@@ -148,6 +151,7 @@ export default function AgentCalculator({
           {field('costNow', l.costNowHint)}
           {field('costV', l.costVHint)}
         </div>
+        {field('portalsNow', l.portalsNowHint)}
 
         <h3>{l.adsHeading}</h3>
         <div className="calc-grid">

@@ -14,6 +14,9 @@ export type CalculatorInput = {
   /** Share of the commission kept today, in percent. */
   current: number;
   costNow: number;
+  /** What the agent pays for property portals today. Vesteri funds portals
+   *  for its agents, so this cost exists only in the current model. */
+  portalsNow: number;
   /** The agent's own costs once with Vesteri. */
   costV: number;
   adsBudget: number;
@@ -37,6 +40,7 @@ export const DEFAULT_INPUT: CalculatorInput = {
   commissionPct: 2.5,
   current: 50,
   costNow: 12000,
+  portalsNow: 0,
   costV: 12000,
   adsBudget: 0,
   adsFee: 10,
@@ -92,8 +96,9 @@ export function calculate(input: CalculatorInput) {
   const adsTotal = adsSpend + adsManagement;
 
   const costNow = nonNegative(input.costNow);
+  const portalsNow = nonNegative(input.portalsNow);
   const costV = nonNegative(input.costV);
-  const netNow = incomeNow - costNow;
+  const netNow = incomeNow - costNow - portalsNow;
   const netV = incomeV + network - adsTotal - liveCosts - costV;
   const delta = netV - netNow;
 
@@ -126,6 +131,7 @@ export function calculate(input: CalculatorInput) {
     adsManagement,
     adsTotal,
     costNow,
+    portalsNow,
     costV,
     netNow,
     netV,

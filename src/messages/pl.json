@@ -942,7 +942,9 @@
       "costNow": "Twoje obecne koszty roczne (PLN)",
       "costNowHint": "Koszty poza podziałem prowizji w obecnym modelu.",
       "costV": "Twoje koszty własne w Vesteri (PLN)",
-      "costVHint": "Domyślnie takie same jak obecne. Zmień, jeśli część kosztów odpadnie.",
+      "costVHint": "Np. samochód i paliwo, telefon, księgowość i ZUS, własny marketing. Bez portali ogłoszeniowych: te finansuje Vesteri. Domyślnie takie same jak obecne koszty.",
+      "portalsNow": "Portale ogłoszeniowe dziś (PLN rocznie)",
+      "portalsNowHint": "Jeśli dziś sam płacisz za portale ogłoszeniowe, wpisz roczną kwotę tutaj i nie wliczaj jej do kosztów powyżej. W Vesteri ten koszt finansuje Vesteri.",
       "adsHeading": "Kampanie Ads zarządzane przez Vesteri",
       "adsBudget": "Budżet Ads miesięcznie (PLN)",
       "adsBudgetHint": "Kwota wydawana na reklamy Meta/Google.",
@@ -1005,7 +1007,9 @@
       "rowAdsSpend": "Budżet Ads rocznie",
       "rowAdsManagement": "Opłata za zarządzanie Ads rocznie",
       "rowCosts": "Obecne koszty roczne",
+      "rowPortalsNow": "Portale ogłoszeniowe dziś",
       "rowCostsV": "Koszty własne w Vesteri",
+      "rowPortalsV": "Portale ogłoszeniowe w Vesteri (finansuje Vesteri)",
       "rowDelta": "Różnica netto",
       "breakEvenHeading": "Ile transakcji potrzeba, żeby wyjść na swoje?",
       "breakEvenText": "Transakcje rocznie w Vesteri potrzebne do dorównania obecnemu wynikowi po kosztach, przy tej samej średniej prowizji i obecnej stawce Vesteri.",
@@ -1018,7 +1022,7 @@
       "moreStrong": "Ich efekt sprawdzamy w praktyce, nie dopisujemy go do kalkulatora bez danych.",
       "ctaCall": "Porozmawiajmy:",
       "ctaAgents": "Poznaj ofertę dla agentów",
-      "disclaimer": "Kalkulator jest narzędziem ilustracyjnym, a nie ofertą wiążącą, poradą podatkową ani prognozą zarobków. Wyniki przed podatkami i składkami, z uwzględnieniem tylko kosztów wpisanych przez użytkownika. Rabat na LIVE obniża koszt i nie jest drugi raz dodawany do przychodu. Koszty własne w Vesteri są odejmowane od wyniku Vesteri, tak jak obecne koszty od obecnego modelu. Budżet Ads i opłata za zarządzanie są doliczane jako koszty Vesteri; nie zakłada się analogicznych wydatków w obecnym modelu, o ile nie zostały ujęte w obecnych kosztach rocznych. Agent Vesteri nie płaci abonamentu; płatne są tylko LIVE, z rabatem agenta. Model 70–80% i 3+1 przedstawiono według założeń Vesteri. W symulacji 3+1 każdy agent sieci ma tę samą średnią liczbę transakcji, prowizję i udział; faktyczne wyniki mogą się różnić. Kwoty 3% i 1% liczone są od prowizji agenta, który sprzedał, po podziale z Vesteri. Nie uwzględniono VAT, różnic w rozliczaniu prowizji, kosztów wdrożenia ani zmiennych zasad kwalifikowania webinarów. Roczna symulacja zakłada taką samą liczbę LIVE i transakcji w każdym miesiącu. Faktyczne rozliczenie powinno uwzględniać liczbę LIVE i prowizję transakcyjną osobno w każdym miesiącu. Licznik LIVE resetuje się co miesiąc."
+      "disclaimer": "Kalkulator jest narzędziem ilustracyjnym, a nie ofertą wiążącą, poradą podatkową ani prognozą zarobków. Wyniki przed podatkami i składkami, z uwzględnieniem tylko kosztów wpisanych przez użytkownika. Rabat na LIVE obniża koszt i nie jest drugi raz dodawany do przychodu. Koszty własne w Vesteri są odejmowane od wyniku Vesteri, tak jak obecne koszty od obecnego modelu. Koszt portali ogłoszeniowych jest odejmowany tylko od obecnego modelu, ponieważ w Vesteri finansuje go Vesteri. Budżet Ads i opłata za zarządzanie są doliczane jako koszty Vesteri; nie zakłada się analogicznych wydatków w obecnym modelu, o ile nie zostały ujęte w obecnych kosztach rocznych. Agent Vesteri nie płaci abonamentu; płatne są tylko LIVE, z rabatem agenta. Model 70–80% i 3+1 przedstawiono według założeń Vesteri. W symulacji 3+1 każdy agent sieci ma tę samą średnią liczbę transakcji, prowizję i udział; faktyczne wyniki mogą się różnić. Kwoty 3% i 1% liczone są od prowizji agenta, który sprzedał, po podziale z Vesteri. Nie uwzględniono VAT, różnic w rozliczaniu prowizji, kosztów wdrożenia ani zmiennych zasad kwalifikowania webinarów. Roczna symulacja zakłada taką samą liczbę LIVE i transakcji w każdym miesiącu. Faktyczne rozliczenie powinno uwzględniać liczbę LIVE i prowizję transakcyjną osobno w każdym miesiącu. Licznik LIVE resetuje się co miesiąc."
     }
   },
   "cookieConsent": {
