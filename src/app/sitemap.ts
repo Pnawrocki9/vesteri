@@ -5,12 +5,13 @@ import { guidePaths } from '@/content/guides-pl';
 import { neutralUrl } from '@/lib/metadata';
 import { SITE_URL } from '@/lib/site';
 
-// Only the new homepage, retained legal disclosures and public affiliate
-// pages. Auth/account/admin routes must never appear in the sitemap.
+// Public marketing pages and retained legal disclosures. The withdrawn
+// affiliate programme and auth/account/admin routes stay out of the sitemap.
 const PAGES: StaticPathname[] = [
   '/',
   '/sellers',
   '/agents',
+  '/calculator',
   '/how-it-works',
   '/collective-rules',
   '/privacy',
@@ -19,8 +20,6 @@ const PAGES: StaticPathname[] = [
   '/gdpr',
   '/ai',
   '/disclaimers',
-  '/affiliate/terms',
-  '/affiliate/privacy',
 ];
 export default function sitemap(): MetadataRoute.Sitemap {
   // Polish-only guides and city pages: one entry, no EN alternate.

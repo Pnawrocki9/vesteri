@@ -1557,6 +1557,12 @@
 .marketing .v10-agents-row .btn {
   white-space: nowrap;
 }
+.marketing .teaser-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: none;
+}
 .marketing .v10-agent-hero .hero-picture {
   opacity: 0.26;
 }

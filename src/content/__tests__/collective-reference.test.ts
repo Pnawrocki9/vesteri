@@ -12,7 +12,7 @@ const components = {
   sellers: 'SellersContent',
   agents: 'AgentsContent',
 };
-const faqLast = { buyers: 17, sellers: 15, agents: 25 };
+const faqLast = { buyers: 19, sellers: 17, agents: 31 };
 const textValues = (value: unknown): string[] =>
   typeof value === 'string'
     ? [value]

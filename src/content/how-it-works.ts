@@ -33,10 +33,10 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
   pl: {
     title: 'Jak działa Vesteri Collective — Vesteri Market i społeczność',
     description:
-      'Społeczność niezależnych agentów, Vesteri Market i Vesteri Channels. Publikuj oferty, zdobywaj wiedzę i wymieniaj doświadczenia pod własną marką.',
+      'Społeczność niezależnych agentów, Vesteri Market i Vesteri Channels. Działaj pod własną marką, współpracuj z agentami Vesteri i wymieniaj doświadczenia.',
     eyebrow: 'VESTERI COLLECTIVE · JAK TO DZIAŁA',
     h1: 'Jak działa Vesteri Collective',
-    lead: 'Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości. Łączą nas Vesteri Market, standardy profesjonalnej obsługi oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów i wymiany doświadczeń. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami.',
+    lead: 'Vesteri Collective to społeczność niezależnych agentów i biur nieruchomości. Łączą nas Vesteri Market, standardy profesjonalnej obsługi, współpraca przy transakcjach oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów i wymiany doświadczeń. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami.',
     ctaApply: 'Dołącz do Collective ↗',
     ctaBrowse: 'Przeglądaj nieruchomości ↗',
     faqTitle: 'Najczęstsze pytania',
@@ -48,7 +48,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
     faq: [
       {
         q: 'Dlaczego warto dołączyć do Vesteri Collective?',
-        a: 'Zyskujesz Vesteri Market do prezentowania ofert oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów z agentami i wymiany doświadczeń. Zachowujesz własną markę i klientów. Możesz też korzystać z dostępnych narzędzi sprzedażowych systemu Vesteri.',
+        a: 'Zyskujesz Vesteri Market do prezentowania ofert, współpracę z agentami Vesteri i innymi członkami oraz Vesteri Channels — przestrzeń do zdobywania wiedzy, rozmów z agentami i wymiany doświadczeń. Zachowujesz własną markę i klientów. Możesz też korzystać z dostępnych narzędzi sprzedażowych systemu Vesteri.',
       },
       {
         q: 'Kto może zgłosić się do Vesteri Collective?',
@@ -59,12 +59,20 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
         a: 'Nie. Publikowanie nieruchomości wymaga zatwierdzenia konta. Dostęp do Vesteri Channels jest osobny: każdemu agentowi, który założy konto, wysyłamy zaproszenie e-mailem.',
       },
       {
-        q: 'Czy zgłoszenie i publikowanie ofert są płatne?',
-        a: 'Założenie konta, członkostwo, dostęp do Vesteri Channels i standardowe publikowanie ofert są bezpłatne. Promocja ofert w samym portalu Vesteri Market jest bezpłatna — o widoczności decyduje aktywność LIVE i webinarów. Zaproszenie do Channels otrzymuje każdy agent po rejestracji. Publikowanie ofert wymaga osobnego zatwierdzenia konta. Ceny pozostałych narzędzi premium znajdziesz na koncie agenta.',
+        q: 'Ile kosztuje członkostwo w Collective?',
+        a: 'Z Vesteri Market korzystasz zgodnie z cennikiem. Cennik otrzymasz przed podpisaniem umowy i jest on jej częścią. Aby poznać ceny, napisz na collective@vesteri.com.',
+      },
+      {
+        q: 'Czy członek Collective musi współpracować z innymi agentami?',
+        a: 'Zgoda na współpracę z agentami Vesteri i innymi członkami Collective jest warunkiem członkostwa. Podział prowizji przy konkretnej transakcji agenci uzgadniają między sobą.',
+      },
+      {
+        q: 'Czy członek Collective może zostać agentem Vesteri?',
+        a: 'Tak. Konto w Vesteri Market i dostęp do Channels zostają. Zmienia się umowa i sposób rozliczenia.',
       },
       {
         q: 'Czy zachowam własną markę i klientów?',
-        a: 'Tak. Działasz pod własną marką i samodzielnie ustalasz warunki usług z klientami. Collective zapewnia Vesteri Market, społeczność i dostępne narzędzia.',
+        a: 'Tak. Działasz pod własną marką, możesz posługiwać się oznaczeniem „Member of Vesteri Collective” i samodzielnie ustalasz warunki usług z klientami. Collective zapewnia Vesteri Market, społeczność i dostępne narzędzia.',
       },
       {
         q: 'Czym jest Vesteri Channels?',
@@ -91,12 +99,17 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'overview',
         title: 'Collective w trzech zdaniach',
-        body: '- **Dla kupujących:** oferty lokalne i zagraniczne w Vesteri Market oraz bezpośredni kontakt z agentami, którzy je prezentują.\n\n- **Dla sprzedających:** profesjonalna obsługa na warunkach ustalonych z agentem i możliwość publikacji nieruchomości w Vesteri Market.\n\n- **Dla agentów:** własna marka i klienci, Vesteri Market oraz Vesteri Channels do zdobywania wiedzy i wymiany doświadczeń.',
+        body: '- **Dla kupujących:** oferty lokalne i zagraniczne w Vesteri Market oraz bezpośredni kontakt z agentami, którzy je prezentują.\n\n- **Dla sprzedających:** profesjonalna obsługa na warunkach ustalonych z agentem i możliwość publikacji nieruchomości w Vesteri Market.\n\n- **Dla agentów:** własna marka z oznaczeniem „Member of Vesteri Collective”, Vesteri Market, współpraca z agentami Vesteri i członkami Collective oraz Vesteri Channels.',
+      },
+      {
+        id: 'agency',
+        title: 'Collective a Agent Vesteri',
+        body: 'Członek Collective działa pod własną marką, może posługiwać się oznaczeniem „Member of Vesteri Collective” i korzysta z Vesteri Market zgodnie z cennikiem. Agent Vesteri to osobny model: pracuje w ramach agencji Vesteri, korzysta z jej zaplecza i zatrzymuje 70–80% prowizji. Wsparcie merytoryczne i operacyjne oraz szkolenia Vesteri są dostępne dla agentów Vesteri.\n\nObie grupy współpracują ze sobą: zgoda na współpracę z agentami Vesteri i innymi członkami jest warunkiem członkostwa w Collective. Zasady na tej stronie dotyczą Collective. Ofertę agencyjną opisuje strona [Dla agentów](/pl/dla-agentow).',
       },
       {
         id: 'membership',
         title: 'Rejestracja i dostęp do społeczności',
-        body: '1. **Załóż konto agenta** poprzez rejestrację nVesteri Market.\n\n2. **Odbierz zaproszenie e-mailem.** Każdemu agentowi po rejestracji ręcznie wysyłamy zaproszenie do Vesteri Channels.\n\n3. **Dołącz do rozmów.** Zadawaj pytania, poznawaj innych agentów i wymieniaj doświadczenia.\n\nZaproszenie jest wysyłane przez nasz zespół, dlatego nie pojawia się automatycznie po utworzeniu konta. W sprawie dostępu napisz na [collective@vesteri.com](mailto:collective@vesteri.com).',
+        body: '1. **Załóż konto agenta** poprzez rejestrację w Vesteri Market i zaakceptuj zasady, w tym zgodę na współpracę z innymi agentami.\n\n2. **Odbierz zaproszenie e-mailem.** Każdemu agentowi po rejestracji ręcznie wysyłamy zaproszenie do Vesteri Channels.\n\n3. **Dołącz do rozmów.** Zadawaj pytania, poznawaj innych agentów i wymieniaj doświadczenia.\n\nZaproszenie jest wysyłane przez nasz zespół, dlatego nie pojawia się automatycznie po utworzeniu konta. W sprawie dostępu napisz na [collective@vesteri.com](mailto:collective@vesteri.com).',
       },
       {
         id: 'marketplace',
@@ -106,7 +119,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'channels',
         title: 'Vesteri Channels — wiedza i rozmowy',
-        body: 'Dołącz do Vesteri Channels — miejsca, w którym agenci Collective dzielą się wiedzą, wymieniają informacje o rynkach i rozmawiają o codziennej pracy. Zadawaj pytania, poznawaj doświadczenia innych i dziel się własnymi.\n\n### Zdobywaj wiedzę\n\nKorzystaj z materiałów i doświadczeń udostępnianych przez społeczność.\n\n### Rozmawiaj z agentami\n\nZadawaj pytania i poznawaj profesjonalistów z różnych rynków.\n\n### Wymieniaj doświadczenia\n\nDziel się informacjami i praktycznymi wnioskami z codziennej pracy.',
+        body: 'Dołącz do Vesteri Channels — miejsca, w którym agenci dzielą się wiedzą, wymieniają informacje o rynkach i rozmawiają o codziennej pracy. Zadawaj pytania, poznawaj doświadczenia innych i dziel się własnymi.\n\n### Zdobywaj wiedzę\n\nKorzystaj z materiałów i doświadczeń udostępnianych przez społeczność.\n\n### Rozmawiaj z agentami\n\nZadawaj pytania i poznawaj profesjonalistów z różnych rynków.\n\n### Wymieniaj doświadczenia\n\nDziel się informacjami i praktycznymi wnioskami z codziennej pracy.',
       },
       {
         id: 'commission',
@@ -126,7 +139,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'tools',
         title: 'Narzędzia i koszty',
-        body: 'Założenie konta, członkostwo, dostęp do Vesteri Channels, standardowa publikacja ofert i podstawowe funkcje systemu Vesteri są bezpłatne. Publikowanie ofert wymaga zatwierdzenia konta.\n\nPromocja ofert w samym portalu Vesteri Market jest bezpłatna. Widoczność budujesz aktywnością: najpierw wyświetlane są oferty z trwającym LIVE lub webinarem, potem z zaplanowanymi wydarzeniami od najbliższej daty, a następnie bez zaplanowanych wydarzeń. Organizując wydarzenia, wspierasz własne oferty, społeczność i klientów. System udostępnia także narzędzia konsultacji i wsparcia AI. Aktualny zakres funkcji, limity i ceny narzędzi premium sprawdzisz na koncie agenta.\n\nVesteri przeznacza co najmniej 10% swoich przychodów z działalności Vesteri na promocję Collective jako całości. Nie jest to gwarancja ruchu, zapytań ani sprzedaży dla poszczególnych członków.',
+        body: 'Z Vesteri Market korzystasz zgodnie z cennikiem. Cennik otrzymasz przed podpisaniem umowy i jest on jej częścią. Aby poznać ceny, napisz na [collective@vesteri.com](mailto:collective@vesteri.com). Publikowanie ofert wymaga zatwierdzenia konta.\n\nWidoczność w Vesteri Market budujesz aktywnością: najpierw wyświetlane są oferty z trwającym LIVE lub webinarem, potem z zaplanowanymi wydarzeniami od najbliższej daty, a następnie bez zaplanowanych wydarzeń. Organizując wydarzenia, wspierasz własne oferty, społeczność i klientów. System udostępnia także narzędzia konsultacji i wsparcia AI.\n\nVesteri przeznacza co najmniej 10% swoich przychodów z działalności Vesteri na promocję Collective jako całości. Nie jest to gwarancja ruchu, zapytań ani sprzedaży dla poszczególnych członków.',
       },
       {
         id: 'breaches',
@@ -136,17 +149,17 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'limitations',
         title: 'Zakres odpowiedzialności',
-        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewnia Vesteri Market, narzędzia i przestrzeń społeczności. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
+        body: 'Agenci działają niezależnie i odpowiadają za swoje oferty oraz usługi. Vesteri zapewnia Vesteri Market, narzędzia i przestrzeń społeczności. Agentów Vesteri obowiązuje dodatkowo umowa z Vesteri. Weryfikacja agenta nie oznacza sprawdzenia stanu prawnego ani technicznego każdej nieruchomości.\n\nMateriały i rozmowy w Channels służą wymianie wiedzy; nie zastępują indywidualnej analizy prawnej, podatkowej ani inwestycyjnej. Członkostwo nie gwarantuje liczby zapytań, transakcji ani przychodów.',
       },
     ],
   },
   en: {
     title: 'How Vesteri Collective works — Vesteri Market and community',
     description:
-      'A community of independent agents, Vesteri Market and Vesteri Channels. Publish listings, learn and exchange experience while keeping your own brand.',
+      'A community of independent agents, Vesteri Market and Vesteri Channels. Keep your own brand, cooperate with Vesteri agents and exchange experience.',
     eyebrow: 'VESTERI COLLECTIVE · HOW IT WORKS',
     h1: 'How Vesteri Collective works',
-    lead: 'Vesteri Collective is a community of independent real estate agents and agencies. Members share Vesteri Market, professional service standards and Vesteri Channels — a space for learning, conversation and exchanging experience. Work under your own brand and agree service terms independently with your clients.',
+    lead: 'Vesteri Collective is a community of independent real estate agents and agencies. Members share Vesteri Market, professional service standards, cooperation on transactions and Vesteri Channels — a space for learning, conversation and exchanging experience. Work under your own brand and agree service terms independently with your clients.',
     ctaApply: 'Join Collective ↗',
     ctaBrowse: 'Browse properties ↗',
     faqTitle: 'Frequently asked questions',
@@ -158,7 +171,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
     faq: [
       {
         q: 'Why join Vesteri Collective?',
-        a: 'You gain Vesteri Market for your listings and Vesteri Channels — a space to learn, talk to agents and exchange experience. Keep your own brand and clients, and use the sales tools available in the Vesteri system.',
+        a: 'You gain Vesteri Market for your listings, cooperation with Vesteri agents and other members, and Vesteri Channels — a space to learn, talk to agents and exchange experience. Keep your own brand and clients, and use the sales tools available in the Vesteri system.',
       },
       {
         q: 'Who can apply to Vesteri Collective?',
@@ -169,12 +182,20 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
         a: 'No. Publishing property listings requires account approval. Access to Vesteri Channels is separate: we email an invitation to every agent who creates an account.',
       },
       {
-        q: 'Does it cost anything to apply or publish listings?',
-        a: 'Account creation, membership, Vesteri Channels access and standard listing publication are free. Listing promotion within the Vesteri Market portal itself is free — visibility is driven by LIVE viewing and webinar activity. Every agent receives a Channels invitation after registration. Publishing listings requires separate account approval. Check your agent account for other premium tool prices.',
+        q: 'How much does Collective membership cost?',
+        a: 'You use Vesteri Market at the price list. You will receive the price list before signing the agreement, and it forms part of that agreement. To find out the prices, email collective@vesteri.com.',
+      },
+      {
+        q: 'Does a Collective member have to cooperate with other agents?',
+        a: 'Consent to cooperate with Vesteri agents and other Collective members is a condition of membership. Agents agree the commission split for each transaction between themselves.',
+      },
+      {
+        q: 'Can a Collective member become a Vesteri agent?',
+        a: 'Yes. Your Vesteri Market account and Channels access stay the same. The agreement and the way you are paid change.',
       },
       {
         q: 'Do I keep my own brand and clients?',
-        a: 'Yes. Work under your own brand and agree service terms independently with your clients. Collective provides Vesteri Market, a community and available tools.',
+        a: 'Yes. You work under your own brand, may use the designation “Member of Vesteri Collective” and agree service terms independently with your clients. Collective provides Vesteri Market, a community and available tools.',
       },
       {
         q: 'What is Vesteri Channels?',
@@ -201,12 +222,17 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'overview',
         title: 'Collective in three sentences',
-        body: '- **For buyers:** local and international listings in Vesteri Market, with direct contact with the agents presenting them.\n\n- **For sellers:** professional services agreed with an agent and the opportunity to list a property in Vesteri Market.\n\n- **For agents:** your own brand and clients, Vesteri Market and Vesteri Channels for learning and exchanging experience.',
+        body: '- **For buyers:** local and international listings in Vesteri Market, with direct contact with the agents presenting them.\n\n- **For sellers:** professional services agreed with an agent and the opportunity to list a property in Vesteri Market.\n\n- **For agents:** your own brand with the “Member of Vesteri Collective” designation, Vesteri Market, cooperation with Vesteri agents and Collective members, and Vesteri Channels.',
+      },
+      {
+        id: 'agency',
+        title: 'Collective and the Vesteri agent',
+        body: 'A Collective member works under their own brand, may use the designation “Member of Vesteri Collective” and uses Vesteri Market at the price list. The Vesteri agent is a separate model: they work within the Vesteri agency, use its back office and keep 70–80% of the commission. Vesteri professional and operational support and training are available to Vesteri agents.\n\nBoth groups cooperate with each other: consent to cooperate with Vesteri agents and other members is a condition of Collective membership. The rules on this page concern Collective. The agency offer is described on the [For agents](/en/agents) page.',
       },
       {
         id: 'membership',
         title: 'Registration and community access',
-        body: '1. **Create an agent account** by registering on Vesteri Market.\n\n2. **Receive your email invitation.** We manually send a Vesteri Channels invitation to every agent after registration.\n\n3. **Join the conversation.** Ask questions, meet other agents and exchange experience.\n\nOur team sends invitations, so they do not appear automatically when an account is created. For access support, email [collective@vesteri.com](mailto:collective@vesteri.com).',
+        body: '1. **Create an agent account** by registering on Vesteri Market and accept the rules, including consent to cooperate with other agents.\n\n2. **Receive your email invitation.** We manually send a Vesteri Channels invitation to every agent after registration.\n\n3. **Join the conversation.** Ask questions, meet other agents and exchange experience.\n\nOur team sends invitations, so they do not appear automatically when an account is created. For access support, email [collective@vesteri.com](mailto:collective@vesteri.com).',
       },
       {
         id: 'marketplace',
@@ -216,7 +242,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'channels',
         title: 'Vesteri Channels — knowledge and conversation',
-        body: 'Join Vesteri Channels — a space where Collective agents share knowledge, exchange market information and discuss their day-to-day work. Ask questions, learn from others and share your own experience.\n\n### Build your knowledge\n\nExplore resources and experience shared by the community.\n\n### Talk to agents\n\nAsk questions and meet professionals from different markets.\n\n### Share experience\n\nExchange information and practical lessons from your day-to-day work.',
+        body: 'Join Vesteri Channels — a space where agents share knowledge, exchange market information and discuss their day-to-day work. Ask questions, learn from others and share your own experience.\n\n### Build your knowledge\n\nExplore resources and experience shared by the community.\n\n### Talk to agents\n\nAsk questions and meet professionals from different markets.\n\n### Share experience\n\nExchange information and practical lessons from your day-to-day work.',
       },
       {
         id: 'commission',
@@ -236,7 +262,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'tools',
         title: 'Tools and costs',
-        body: 'Account creation, membership, access to Vesteri Channels, standard listing publication and core Vesteri features are free. Publishing listings requires account approval.\n\nListing promotion within the Vesteri Market portal itself is free. Build visibility through activity: listings with a LIVE viewing or webinar in progress appear first, followed by scheduled events in nearest-date order, then listings without scheduled events. Hosting events supports your listings, the community and your clients. The system also provides consultation and AI assistance tools. Check your agent account for current features, limits and premium pricing.\n\nVesteri commits at least 10% of its Vesteri revenue to promoting Collective as a whole. This is not a guarantee of traffic, enquiries or sales for individual members.',
+        body: 'You use Vesteri Market at the price list. You will receive the price list before signing the agreement, and it forms part of that agreement. To find out the prices, email [collective@vesteri.com](mailto:collective@vesteri.com). Publishing listings requires account approval.\n\nBuild visibility in Vesteri Market through activity: listings with a LIVE viewing or webinar in progress appear first, followed by scheduled events in nearest-date order, then listings without scheduled events. Hosting events supports your listings, the community and your clients. The system also provides consultation and AI assistance tools.\n\nVesteri commits at least 10% of its Vesteri revenue to promoting Collective as a whole. This is not a guarantee of traffic, enquiries or sales for individual members.',
       },
       {
         id: 'breaches',
@@ -246,7 +272,7 @@ export const howItWorks: Record<'pl' | 'en', HowItWorksContent> = {
       {
         id: 'limitations',
         title: 'Scope of responsibility',
-        body: 'Agents work independently and are responsible for their listings and services. Vesteri provides Vesteri Market, tools and community space. Agent verification does not mean that every property has undergone legal or technical checks.\n\nChannels resources and discussions support knowledge sharing; they do not replace individual legal, tax or investment advice. Membership does not guarantee enquiries, transactions or revenue.',
+        body: 'Agents work independently and are responsible for their listings and services. Vesteri provides Vesteri Market, tools and community space. Vesteri agents are additionally bound by their agreement with Vesteri. Agent verification does not mean that every property has undergone legal or technical checks.\n\nChannels resources and discussions support knowledge sharing; they do not replace individual legal, tax or investment advice. Membership does not guarantee enquiries, transactions or revenue.',
       },
     ],
   },

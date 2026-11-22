@@ -165,6 +165,14 @@ export default async function SellersContent({ locale }: { locale: string }) {
             </div>
             <div className="faq-group active">
               <details>
+                <summary>{t('faq17')}</summary>
+                <p>{t('faq18')}</p>
+              </details>
+              <details>
+                <summary>{t('faq11')}</summary>
+                <p>{t('faq12')}</p>
+              </details>
+              <details>
                 <summary>{t('faq03')}</summary>
                 <p>{t('faq04')}</p>
               </details>
@@ -179,10 +187,6 @@ export default async function SellersContent({ locale }: { locale: string }) {
               <details>
                 <summary>{t('faq09')}</summary>
                 <p>{t('faq10')}</p>
-              </details>
-              <details>
-                <summary>{t('faq11')}</summary>
-                <p>{t('faq12')}</p>
               </details>
               <details>
                 <summary>{t('faq13')}</summary>

@@ -2,15 +2,79 @@
 /* eslint-disable @next/next/no-img-element */
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { CHANNELS_URL, MARKETPLACE_URL } from '@/lib/site';
+import {
+  CHANNELS_URL,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  DEMO_URL,
+  MARKETPLACE_URL,
+} from '@/lib/site';
 import { CareerGuideLink, CommissionGuidance } from './MarketingExtras';
 import MarketingHeader from './MarketingHeader';
 import MarketingFooter from './MarketingFooter';
 import ShowreelVideo from './ShowreelVideo';
+import './agency.css';
+
+type Titled = { title: string; text: string };
+type ShareStep = { pct: string; label: string };
+type ShareTile = { label: string; value: string; sub: string };
+type WayRow = { label: string; agent: string; collective: string };
+
+const Check = () => (
+  <svg
+    aria-hidden="true"
+    className="ag-check"
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+  >
+    <path d="M5 12.5l4.5 4.5L19 7.5" />
+  </svg>
+);
+const Dash = () => (
+  <svg
+    aria-hidden="true"
+    className="ag-dash"
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+  >
+    <path d="M6 12h12" />
+  </svg>
+);
+const two = (n: number) => String(n).padStart(2, '0');
+// Visible FAQ: question = faqNN, answer = faqNN+1. Keep in step with
+// FAQ_RANGE in MarketingPage, which builds the FAQ JSON-LD from the same keys.
+const FAQ_KEYS = Array.from({ length: 15 }, (_, i) => 3 + i * 2);
 
 export default async function AgentsContent({ locale }: { locale: string }) {
   const t = await getTranslations('marketing.agents');
   const filmLocale = locale === 'pl' ? 'pl' : 'en';
+  const shareSteps = t.raw('share.steps') as ShareStep[];
+  const shareTiles = t.raw('share.tiles') as ShareTile[];
+  const gains = t.raw('gains.items') as Titled[];
+  const solo = t.raw('versus.solo') as string[];
+  const withVesteri = t.raw('versus.vesteri') as string[];
+  const wayRows = t.raw('ways.rows') as WayRow[];
+  const collectivePoints = t.raw('collective.points') as string[];
+  const collectiveSteps = t.raw('collective.steps') as Titled[];
+  const joinSteps = t.raw('join.steps') as Titled[];
+  // Table cells hold either copy or one of three marks.
+  const wayCell = (value: string) =>
+    value === 'yes' ? (
+      <span className="ag-mark ag-mark-yes">
+        <Check />
+        {t('ways.yes')}
+      </span>
+    ) : value === 'no' || value === 'none' ? (
+      <span className="ag-mark ag-mark-no">
+        <Dash />
+        {value === 'no' ? t('ways.no') : t('ways.none')}
+      </span>
+    ) : (
+      value
+    );
   return (
     <>
       <a className="skip" href="#main">
@@ -20,21 +84,21 @@ export default async function AgentsContent({ locale }: { locale: string }) {
       <main id="main">
         <section className="hero v10-agent-hero" id="top">
           <div
-            aria-label={t('top01')}
+            aria-label={t('hero.pictureAlt')}
             className="hero-picture"
             role="img"
           ></div>
           <div className="wrap hero-inner">
-            <span className="eyebrow light">{t('top02')}</span>
+            <span className="eyebrow light">{t('hero.eyebrow')}</span>
             <h1>
-              {t('top03')}
+              {t('hero.title1')}
               <br />
-              <em>{t('top04')}</em>
+              <em>{t('hero.title2')}</em>
             </h1>
-            <p className="hero-desc">{t('top05')}</p>
+            <p className="hero-desc">{t('hero.desc')}</p>
             <div className="hero-actions">
-              <a className="btn btn-cream" href={MARKETPLACE_URL}>
-                {t('top06')}
+              <a className="btn btn-cream" href={DEMO_URL}>
+                {t('hero.ctaDemo')}
               </a>
               <a className="btn btn-outline" href="#film-player">
                 <svg
@@ -47,19 +111,14 @@ export default async function AgentsContent({ locale }: { locale: string }) {
                 </svg>
                 {t('heroWatch')}
               </a>
-              <a
-                className="btn btn-outline"
-                href={CHANNELS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vesteri Channels ↗
-              </a>
+              <Link className="btn btn-outline" href="/calculator">
+                {t('hero.ctaCalc')}
+              </Link>
             </div>
             <div className="hero-foot">
-              <span>{t('top08')}</span>
-              <span>{t('top09')}</span>
-              <span>{t('top10')}</span>
+              <span>{t('hero.foot1')}</span>
+              <span>{t('hero.foot2')}</span>
+              <span>{t('hero.foot3')}</span>
             </div>
           </div>
         </section>
@@ -86,12 +145,64 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             }}
           />
           <div className="wrap film-actions">
-            <a className="btn btn-cream" href={MARKETPLACE_URL}>
+            <a className="btn btn-cream" href={DEMO_URL}>
               {t('filmCta')}
             </a>
-            <a className="film-link" href="#membership">
-              {t('top07')}
+            <a className="film-link" href="#dwie-drogi">
+              {t('filmLink')}
             </a>
+          </div>
+        </section>
+        <section className="section ag-share" id="udzial">
+          <div className="wrap">
+            <div className="ag-share-head">
+              <div>
+                <span className="eyebrow">{t('share.eyebrow')}</span>
+                <h2>{t('share.title')}</h2>
+                <p className="lead">{t('share.text')}</p>
+              </div>
+              <div
+                className="ag-ladder"
+                role="img"
+                aria-label={t('share.ladderLabel')}
+              >
+                {shareSteps.map(({ pct, label }, i) => (
+                  <div key={pct} className={`ag-ladder-step ag-ladder-${i}`}>
+                    <strong>{pct}</strong>
+                    <i></i>
+                    <span>{label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="ag-tiles">
+              {shareTiles.map(({ label, value, sub }, i) => (
+                <div
+                  key={label}
+                  className={i === shareTiles.length - 1 ? 'ag-tile strong' : 'ag-tile'}
+                >
+                  <span>{label}</span>
+                  <strong>{value}</strong>
+                  <small>{sub}</small>
+                </div>
+              ))}
+            </div>
+            <p className="ag-note">{t('share.note')}</p>
+          </div>
+        </section>
+        <section className="section ag-gains" id="zaplecze">
+          <div className="wrap">
+            <span className="eyebrow">{t('gains.eyebrow')}</span>
+            <h2>{t('gains.title')}</h2>
+            <div className="ag-cards">
+              {gains.map(({ title, text }, i) => (
+                <article key={title}>
+                  <b>{two(i + 1)}</b>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
         <section className="section tech" id="technology">
@@ -150,6 +261,7 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <h3 id="live-visibility-title">{t('visibilityTitle')}</h3>
               <p className="live-visibility-promise">{t('visibilityIntro')}</p>
               <p className="live-contribution">{t('visibilityContribution')}</p>
+              <p className="ag-live-share">{t('visibilityShare')}</p>
               <p className="live-order-label">
                 <strong>{t('visibilityOrder')}</strong>
               </p>
@@ -175,131 +287,149 @@ export default async function AgentsContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
-        <section className="split agent" id="agents">
-          <div className="visual agent-editorial">
-            <div
-              aria-label={t('agents01')}
-              className="editorial-frame agent-frame"
-            >
-              <div className="ed-top">
-                <span>{t('agents02')}</span>
-                <span>{t('agents03')}</span>
-              </div>
-              <div className="agent-title">
-                {t('agents04')}
-                <br />
-                {t('agents05')}
-                <br />
-                <em>{t('agents06')}</em>
-              </div>
-              <div aria-hidden="true" className="agent-line-art">
-                <span className="line-a"></span>
-                <span className="line-b"></span>
-                <span className="line-c"></span>
-                <i></i>
-                <b></b>
-              </div>
-              <div className="agent-paper">
-                <span className="paper-overline">{t('agents07')}</span>
-                <div className="paper-heading">
-                  {t('agents08')}
-                  <i>{t('agents09')}</i>
-                </div>
-                <div className="paper-row">
-                  <span>{t('agents10')}</span>
-                  <strong>{t('agents11')}</strong>
-                </div>
-                <div className="paper-row">
-                  <span>{t('agents12')}</span>
-                  <strong>{t('agents13')}</strong>
-                </div>
-                <div className="paper-row">
-                  <span>{t('agents14')}</span>
-                  <strong>{t('agents15')}</strong>
-                </div>
-                <div className="paper-foot">{t('agents16')}</div>
-              </div>
-              <div className="ed-foot">{t('agents17')}</div>
+        <section className="section ag-versus" id="porownanie">
+          <div className="wrap ag-versus-layout">
+            <div>
+              <span className="eyebrow">{t('versus.eyebrow')}</span>
+              <h2>{t('versus.title')}</h2>
+              <p className="lead">{t('versus.text')}</p>
+              <Link className="btn btn-primary" href="/calculator">
+                {t('versus.cta')}
+              </Link>
+            </div>
+            <div className="ag-versus-cards">
+              <article>
+                <h3>{t('versus.soloTitle')}</h3>
+                <ul className="ag-checks">
+                  {solo.map((item) => (
+                    <li key={item}>
+                      <Check />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+              <article className="strong">
+                <h3>{t('versus.vesteriTitle')}</h3>
+                <ul className="ag-checks">
+                  {withVesteri.map((item) => (
+                    <li key={item}>
+                      <Check />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
             </div>
           </div>
-          <div className="copy" id="praca-agenta">
-            <span className="eyebrow light">{t('agents18')}</span>
-            <h2 id="siec-zamiast-franczyzy">{t('agents19')}</h2>
-            <p className="lead">{t('agents20')}</p>
-            <div className="point">
-              <span className="icon">{t('agents21')}</span>
-              {t('agents22')}
+        </section>
+        <section className="section ag-team" id="model-3-1">
+          <div className="wrap">
+            <div className="ag-team-layout">
+              <div>
+                <span className="eyebrow light">{t('team.eyebrow')}</span>
+                <h2>{t('team.title')}</h2>
+                <p className="lead">{t('team.text1')}</p>
+                <p className="lead">{t('team.text2')}</p>
+              </div>
+              <div className="ag-levels">
+                <article>
+                  <div>
+                    <strong>{t('team.level1Pct')}</strong>
+                    <span>{t('team.level1Name')}</span>
+                  </div>
+                  <p>{t('team.level1Text')}</p>
+                </article>
+                <article>
+                  <div>
+                    <strong>{t('team.level2Pct')}</strong>
+                    <span>{t('team.level2Name')}</span>
+                  </div>
+                  <p>{t('team.level2Text')}</p>
+                </article>
+              </div>
             </div>
-            <div className="point">
-              <span className="icon">{t('agents23')}</span>
-              {t('agents24')}
+            <p className="ag-team-example">{t('team.example')}</p>
+            <p className="ag-team-basis">{t('team.basis')}</p>
+          </div>
+        </section>
+        <section className="section ag-ways" id="dwie-drogi">
+          <div className="wrap">
+            <span className="eyebrow">{t('ways.eyebrow')}</span>
+            <h2>{t('ways.title')}</h2>
+            <p className="lead">{t('ways.intro')}</p>
+            <div className="ag-table-scroll">
+              <table>
+                <caption className="ag-sr">{t('ways.caption')}</caption>
+                <thead>
+                  <tr>
+                    <td></td>
+                    <th scope="col" className="ag-col-agent">
+                      {t('ways.colAgent')}
+                    </th>
+                    <th scope="col">{t('ways.colCollective')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {wayRows.map(({ label, agent, collective }) => (
+                    <tr key={label}>
+                      <th scope="row">{label}</th>
+                      <td className="ag-col-agent">{wayCell(agent)}</td>
+                      <td>{wayCell(collective)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <div className="point">
-              <span className="icon">{t('agents25')}</span>
-              {t('agents26')}
-            </div>
-            <div className="point">
-              <span className="icon">{t('agents27')}</span>
-              {t('agents28')}
-            </div>
-            <div className="collective-actions collective-actions-copy">
-              <a className="btn btn-cream" href={MARKETPLACE_URL}>
-                {t('agents29')}
+            <div className="ag-actions">
+              <a className="btn btn-primary" href={DEMO_URL}>
+                {t('ways.ctaDemo')}
               </a>
-              <a
-                className="btn btn-outline"
-                href={CHANNELS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vesteri Channels ↗
+              <a className="btn ag-btn-line" href={MARKETPLACE_URL}>
+                {t('ways.ctaJoin')}
               </a>
             </div>
           </div>
         </section>
-        <section className="section membership" id="membership">
+        <section className="section membership ag-collective" id="collective">
           <div className="wrap">
-            <div className="section-heading">
+            <div className="ag-collective-layout" id="membership">
               <div>
-                <span className="eyebrow">{t('membership01')}</span>
-                <h2>{t('membership02')}</h2>
+                <span className="eyebrow">{t('collective.eyebrow')}</span>
+                <h2>{t('collective.title')}</h2>
+                <p className="lead">{t('collective.text')}</p>
+                <div className="ag-links">
+                  <a className="btn-text" href={MARKETPLACE_URL}>
+                    {t('collective.join')}
+                  </a>
+                  <Link className="btn-text" href="/how-it-works">
+                    {t('membershipHowItWorks')}
+                  </Link>
+                </div>
               </div>
-              <div>
-                <p className="lead">{t('membership03')}</p>
-                <p className="lead membership-how">
-                  <Link href="/how-it-works">{t('membershipHowItWorks')}</Link>
-                </p>
-              </div>
-            </div>
-            <div className="membership-grid">
-              <article className="membership-card member-access">
-                <span className="pill dark">{t('membership04')}</span>
-                <h3>{t('membership05')}</h3>
-                <p>{t('membership06')}</p>
-                <a className="btn btn-cream" href={MARKETPLACE_URL}>
-                  {t('membership07')}
-                </a>
-              </article>
+              <aside>
+                <span className="eyebrow">{t('collective.summaryTitle')}</span>
+                <ul className="ag-checks">
+                  {collectivePoints.map((item) => (
+                    <li key={item}>
+                      <Check />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </aside>
             </div>
             <div className="steps">
-              <div>
-                <b>{t('membership08')}</b>
-                <strong>{t('membership09')}</strong>
-                <small>{t('membership10')}</small>
-              </div>
-              <div>
-                <b>{t('membership11')}</b>
-                <strong>{t('membership12')}</strong>
-                <small>{t('membership13')}</small>
-              </div>
-              <div>
-                <b>{t('membership14')}</b>
-                <strong>{t('membership15')}</strong>
-                <small>{t('membership16')}</small>
-              </div>
+              {collectiveSteps.map(({ title, text }, i) => (
+                <div key={title}>
+                  <b>{two(i + 1)}</b>
+                  <strong>{title}</strong>
+                  <small>{text}</small>
+                </div>
+              ))}
             </div>
             <CareerGuideLink locale={locale} />
-            <p className="note">{t('membership17')}</p>
+            <p className="note">{t('collective.note')}</p>
           </div>
         </section>
         <section className="section network" id="how">
@@ -403,6 +533,21 @@ export default async function AgentsContent({ locale }: { locale: string }) {
           </div>
           <div className="wrap"></div>
         </section>
+        <section className="section ag-join" id="jak-dolaczyc">
+          <div className="wrap">
+            <span className="eyebrow">{t('join.eyebrow')}</span>
+            <h2>{t('join.title')}</h2>
+            <div className="steps">
+              {joinSteps.map(({ title, text }, i) => (
+                <div key={title}>
+                  <b>{two(i + 1)}</b>
+                  <strong>{title}</strong>
+                  <small>{text}</small>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         <section aria-labelledby="faqTitle" className="section faq" id="faq">
           <div className="wrap">
             <div className="faq-intro">
@@ -411,77 +556,32 @@ export default async function AgentsContent({ locale }: { locale: string }) {
               <p className="lead">{t('faq02')}</p>
             </div>
             <div className="faq-group active">
-              <details>
-                <summary>{t('faq03')}</summary>
-                <p>{t('faq04')}</p>
-              </details>
-              <details>
-                <summary>{t('faq05')}</summary>
-                <p>{t('faq06')}</p>
-              </details>
-              <details>
-                <summary>{t('faq07')}</summary>
-                <p>{t('faq08')}</p>
-              </details>
-              <details>
-                <summary>{t('faq09')}</summary>
-                <p>{t('faq10')}</p>
-              </details>
-              <details>
-                <summary>{t('faq11')}</summary>
-                <p>{t('faq12')}</p>
-              </details>
-              <details>
-                <summary>{t('faq13')}</summary>
-                <p>{t('faq14')}</p>
-              </details>
-              <details>
-                <summary>{t('faq15')}</summary>
-                <p>{t('faq16')}</p>
-              </details>
-              <details>
-                <summary>{t('faq17')}</summary>
-                <p>{t('faq18')}</p>
-              </details>
-              <details>
-                <summary>{t('faq19')}</summary>
-                <p>{t('faq20')}</p>
-              </details>
-              <details>
-                <summary>{t('faq21')}</summary>
-                <p>{t('faq22')}</p>
-              </details>
-              <details>
-                <summary>{t('faq23')}</summary>
-                <p>{t('faq24')}</p>
-              </details>
-              <details>
-                <summary>{t('faq25')}</summary>
-                <p>{t('faq26')}</p>
-              </details>
+              {FAQ_KEYS.map((n) => (
+                <details key={n}>
+                  <summary>{t(`faq${two(n)}`)}</summary>
+                  <p>{t(`faq${two(n + 1)}`)}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>
-        <section className="v10-agents-teaser">
-          <div className="wrap v10-agents-row">
-            <div>
-              <span className="eyebrow light">{t('main17')}</span>
-              <h2>{t('main18')}</h2>
-              <p>{t('main19')}</p>
-            </div>
+        <section className="v10-agents-teaser ag-cta">
+          <div className="wrap">
+            <h2>
+              {t('cta.title1')} <em>{t('cta.title2')}</em>
+            </h2>
             <div className="collective-actions">
-              <a className="btn btn-cream" href={MARKETPLACE_URL}>
-                {t('main20')}
+              <a className="btn btn-cream" href={`tel:${CONTACT_PHONE_TEL}`}>
+                {t('cta.call')} {CONTACT_PHONE_DISPLAY}
               </a>
-              <a
-                className="btn btn-outline"
-                href={CHANNELS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vesteri Channels ↗
+              <Link className="btn btn-outline" href="/calculator">
+                {t('cta.calc')}
+              </Link>
+              <a className="btn btn-outline" href={`mailto:${CONTACT_EMAIL}`}>
+                {CONTACT_EMAIL}
               </a>
             </div>
+            <p className="ag-cta-note">{t('cta.note')}</p>
           </div>
         </section>
       </main>

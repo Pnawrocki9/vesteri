@@ -10,6 +10,14 @@ export interface ProgramSettings {
   updated_by: string | null;
 }
 
+// The public "refer an investor" programme was withdrawn when Vesteri moved to
+// the agency model. The module stays so partners with recorded referrals can
+// still log in; this switch keeps sign-up closed whatever the admin setting is.
+export const PROGRAM_WITHDRAWN = true;
+
+export const isProgramOpen = (settings: Pick<ProgramSettings, 'program_active'>) =>
+  !PROGRAM_WITHDRAWN && settings.program_active === 1;
+
 export async function getSettings(db: D1Database): Promise<ProgramSettings> {
   const row = await db
     .prepare('SELECT * FROM program_settings WHERE id = 1')

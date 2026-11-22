@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { requireAdmin } from '@/lib/affiliate/auth';
 import { getDb } from '@/lib/affiliate/env';
-import { getSettings } from '@/lib/affiliate/settings';
+import { PROGRAM_WITHDRAWN, getSettings } from '@/lib/affiliate/settings';
 import AdminShell from '../AdminShell';
 import { saveSettings } from '../actions';
 
@@ -91,6 +91,12 @@ export default async function AdminSettingsPage({
           created with. Closing the program blocks new registrations; existing affiliates keep
           access to their dashboard.
         </p>
+        {PROGRAM_WITHDRAWN && (
+          <p className="text-[12.5px] font-semibold text-ink sm:col-span-2">
+            The public program is withdrawn in code (PROGRAM_WITHDRAWN in
+            src/lib/affiliate/settings.ts): registrations stay closed whatever this checkbox says.
+          </p>
+        )}
         <button
           type="submit"
           className="bg-accent-gradient justify-self-start rounded-cta px-5 py-2.5 text-[14px] font-bold text-paper shadow-cta sm:col-span-2"
