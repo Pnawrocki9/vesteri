@@ -27,17 +27,18 @@ describe('agent benefits calculator', () => {
     expect(top.networkDirect).toBeCloseTo(19200);
   });
 
-  it('charges LIVE at the discounted price and deducts own costs from Vesteri', () => {
+  it('charges LIVE at the discounted price and deducts own costs from both models', () => {
     const r = calculate({
       ...DEFAULT_INPUT,
       livePrice: 200,
       discount: 25,
       livesMonth: 3,
-      costV: 6000,
+      ownCosts: 6000,
     });
     expect(r.liveCosts).toBe(5400);
     expect(r.liveSavings).toBe(1800);
-    // 240 000 × 80% − 5 400 − 6 000.
+    // 240 000 × 50% − 6 000 today; 240 000 × 80% − 5 400 − 6 000 with Vesteri.
+    expect(r.netNow).toBe(114000);
     expect(r.netV).toBe(180600);
   });
 
@@ -50,8 +51,8 @@ describe('agent benefits calculator', () => {
   });
 
   it('ignores negative and non-numeric input', () => {
-    const r = calculate({ ...DEFAULT_INPUT, deals: -4, costNow: Number.NaN });
+    const r = calculate({ ...DEFAULT_INPUT, deals: -4, ownCosts: Number.NaN });
     expect(r.grossNow).toBe(0);
-    expect(r.costNow).toBe(0);
+    expect(r.ownCosts).toBe(0);
   });
 });
