@@ -942,7 +942,7 @@
       "costNow": "Twoje obecne koszty roczne (PLN)",
       "costNowHint": "Koszty poza podziałem prowizji w obecnym modelu.",
       "costV": "Twoje koszty własne w Vesteri (PLN)",
-      "costVHint": "Np. samochód i paliwo, telefon, księgowość i ZUS, własny marketing. Bez portali ogłoszeniowych: te finansuje Vesteri. Domyślnie takie same jak obecne koszty.",
+      "costVHint": "Np. samochód i paliwo, telefon, księgowość i ZUS, własny marketing. Bez portali ogłoszeniowych: te finansuje Vesteri.",
       "portalsNow": "Portale ogłoszeniowe dziś (PLN rocznie)",
       "portalsNowHint": "Jeśli dziś sam płacisz za portale ogłoszeniowe, wpisz roczną kwotę tutaj i nie wliczaj jej do kosztów powyżej. W Vesteri ten koszt finansuje Vesteri.",
       "adsHeading": "Kampanie Ads zarządzane przez Vesteri",

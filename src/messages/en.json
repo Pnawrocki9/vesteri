@@ -933,7 +933,7 @@
       "costNow": "Your current annual costs (PLN)",
       "costNowHint": "Costs outside the commission split in your current model.",
       "costV": "Your own costs with Vesteri (PLN)",
-      "costVHint": "For example car and fuel, phone, accounting and social insurance, your own marketing. Leave out property portals: Vesteri funds those. The same as your current costs by default.",
+      "costVHint": "For example car and fuel, phone, accounting and social insurance, your own marketing. Leave out property portals: Vesteri funds those.",
       "portalsNow": "Property portals today (PLN per year)",
       "portalsNowHint": "If you pay for property portals yourself today, enter the annual amount here and leave it out of the costs above. With Vesteri, this cost is funded by Vesteri.",
       "adsHeading": "Ad campaigns managed by Vesteri",
