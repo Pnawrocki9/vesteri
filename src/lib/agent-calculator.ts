@@ -13,12 +13,12 @@ export type CalculatorInput = {
   commissionPct: number;
   /** Share of the commission kept today, in percent. */
   current: number;
-  costNow: number;
+  /** The agent's own annual costs (car, phone, accounting, own marketing).
+   *  They are the same in both models, so they are deducted from both. */
+  ownCosts: number;
   /** What the agent pays for property portals today. Vesteri funds portals
    *  for its agents, so this cost exists only in the current model. */
   portalsNow: number;
-  /** The agent's own costs once with Vesteri. */
-  costV: number;
   adsBudget: number;
   adsFee: number;
   livePrice: number;
@@ -39,9 +39,8 @@ export const DEFAULT_INPUT: CalculatorInput = {
   propertyValue: 800000,
   commissionPct: 2.5,
   current: 50,
-  costNow: 12000,
+  ownCosts: 12000,
   portalsNow: 0,
-  costV: 12000,
   adsBudget: 0,
   adsFee: 10,
   livePrice: 0,
@@ -95,11 +94,10 @@ export function calculate(input: CalculatorInput) {
   const adsManagement = (adsSpend * clamp(input.adsFee, 0, 100)) / 100;
   const adsTotal = adsSpend + adsManagement;
 
-  const costNow = nonNegative(input.costNow);
+  const ownCosts = nonNegative(input.ownCosts);
   const portalsNow = nonNegative(input.portalsNow);
-  const costV = nonNegative(input.costV);
-  const netNow = incomeNow - costNow - portalsNow;
-  const netV = incomeV + network - adsTotal - liveCosts - costV;
+  const netNow = incomeNow - ownCosts - portalsNow;
+  const netV = incomeV + network - adsTotal - liveCosts - ownCosts;
   const delta = netV - netNow;
 
   // Transactions a year with Vesteri needed to match today's net result.
@@ -108,7 +106,7 @@ export function calculate(input: CalculatorInput) {
       ? Math.max(
           0,
           Math.ceil(
-            (netNow + adsTotal + liveCosts + costV - network) / (avg * share),
+            (netNow + adsTotal + liveCosts + ownCosts - network) / (avg * share),
           ),
         )
       : null;
@@ -130,9 +128,8 @@ export function calculate(input: CalculatorInput) {
     adsSpend,
     adsManagement,
     adsTotal,
-    costNow,
+    ownCosts,
     portalsNow,
-    costV,
     netNow,
     netV,
     delta,
