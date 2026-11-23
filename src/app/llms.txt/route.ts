@@ -39,7 +39,7 @@ Operator: Time2Show, Inc., 1111B S Governors Ave STE 20579, Dover, Delaware 1990
 ## Polski
 
 - [Vesteri – nieruchomości lokalnie i za granicą](${SITE_URL}/pl): Vesteri Market z ofertami w Polsce i za granicą oraz agenci, którzy je prezentują.
-- [Dla agentów](${SITE_URL}/pl/dla-agentow): Agent Vesteri: 70–80% prowizji, zaplecze agencji, program 3+1 oraz porównanie z Vesteri Collective.
+- [Dla agentów](${SITE_URL}/pl/dla-agentow): Agent Vesteri zatrzymuje 70–80% prowizji; zaplecze agencji, program 3+1 oraz porównanie z Vesteri Collective.
 - [Kalkulator korzyści agenta](${SITE_URL}/pl/kalkulator): Symulacja wyniku agenta w Vesteri na własnych liczbach.
 - [Jak działa Vesteri Collective](${SITE_URL}/pl/jak-dziala-vesteri-collective): Rejestracja, Vesteri Channels, Vesteri Market, współpraca agentów i standardy publikowania ofert.
 - [Dla sprzedających](${SITE_URL}/pl/sprzedajacy): Profesjonalna obsługa sprzedaży i publikacja oferty w Vesteri Market.
@@ -52,7 +52,7 @@ Operator: Time2Show, Inc., 1111B S Governors Ave STE 20579, Dover, Delaware 1990
 ## English
 
 - [Vesteri – local and international property](${SITE_URL}/en): Vesteri Market for local and international property and the agents who present it.
-- [For agents](${SITE_URL}/en/agents): The Vesteri agent: 70–80% commission, agency back office, the 3+1 programme and a comparison with Vesteri Collective.
+- [For agents](${SITE_URL}/en/agents): A Vesteri agent keeps 70–80% of the commission; agency back office, the 3+1 programme and a comparison with Vesteri Collective.
 - [Agent benefits calculator](${SITE_URL}/en/calculator): Simulate an agent's result with Vesteri using your own figures.
 - [How Vesteri Collective works](${SITE_URL}/en/how-vesteri-collective-works): Registration, Vesteri Channels, Vesteri Market, agent cooperation and listing standards.
 - [For sellers](${SITE_URL}/en/sellers): Professional selling services and listing publication in Vesteri Market.
