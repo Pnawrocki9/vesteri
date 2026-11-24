@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import type { StaticPathname } from '@/i18n/routing';
-import { MARKETPLACE_URL } from '@/lib/site';
+import { MARKET_APP_URL } from '@/lib/site';
 
 type Labels = Record<'buyers' | 'sellers' | 'agents' | 'cta', string>;
 export default function MarketingHeader({
@@ -120,7 +120,7 @@ export default function MarketingHeader({
           {languageLink('en')}
           {languageLink('pl')}
         </div>
-        <a className="btn btn-cream header-cta" href={MARKETPLACE_URL}>
+        <a className="btn btn-cream header-cta" href={MARKET_APP_URL}>
           {labels.cta}
         </a>
         <button
@@ -150,7 +150,7 @@ export default function MarketingHeader({
         aria-label={locale === 'pl' ? 'Menu mobilne' : 'Mobile menu'}
       >
         {audienceLinks}
-        <a className="btn btn-cream" href={MARKETPLACE_URL}>
+        <a className="btn btn-cream" href={MARKET_APP_URL}>
           {labels.cta}
         </a>
         {languageLink(locale === 'pl' ? 'en' : 'pl', true)}
