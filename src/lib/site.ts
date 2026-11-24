@@ -44,6 +44,9 @@ export const HUBSPOT_PORTAL_ID =
 // Public marketplace and agent entry point. Deeper paths must be verified
 // before use; no filter or registration URL contract is assumed.
 export const MARKETPLACE_URL = 'https://vesteri.estalara.com';
+// Target of the header's "Open Vesteri Market" button. The other Market
+// links on the site still use MARKETPLACE_URL.
+export const MARKET_APP_URL = 'https://app.vesteri.com/en';
 export const CHANNELS_URL = 'https://channels.vesteri.com';
 export const BUYERS_CHANNELS_INVITATION_URL =
   `${CHANNELS_URL}/invitation?code=JFFJDG`;
