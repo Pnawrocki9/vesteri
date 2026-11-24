@@ -620,8 +620,8 @@
       "faq31": "How does verification for publishing listings work?",
       "faq32": "Vesteri reviews identity, business activity, locally required qualifications or insurance, and acceptance of the standards. Verification time depends on the country and completeness of the application. Every agent receives a Vesteri Channels invitation after creating an account, independently of this verification.",
       "meta": {
-        "title": "Vesteri agent: 70–80% commission and agency back office | Vesteri",
-        "description": "Join Vesteri: keep 70% of your commission from day one and up to 80% for LIVE viewings, with technology, marketing and an agent network. Or keep your own brand in Vesteri Collective."
+        "title": "Vesteri agent: keep 70–80% of your commission | Vesteri",
+        "description": "As a Vesteri agent you keep 70% of your commission, and up to 80% for LIVE viewings. Plus technology, marketing and an agent network, or your own brand in Vesteri Collective."
       },
       "hero": {
         "pictureAlt": "Vesteri for agents",
@@ -914,8 +914,8 @@
     },
     "calculator": {
       "meta": {
-        "title": "Agent benefits calculator | Vesteri",
-        "description": "Enter your own results and compare your current model with Vesteri: a 70–80% share, LIVE and ad costs and the 3+1 programme. A simulation, not an earnings forecast."
+        "title": "Agent calculator: what you keep with Vesteri | Vesteri",
+        "description": "Work out what you keep with Vesteri: 70–80% of your commission stays with you. Includes LIVE costs, the ad fee and the 3+1 programme. A simulation, not an earnings forecast."
       },
       "skip": "Skip to content",
       "eyebrow": "VESTERI · CALCULATOR FOR AGENTS",
@@ -978,7 +978,7 @@
       "betterTail": "The result depends on the commissions, costs and sales you entered.",
       "worse": "In this scenario your current model comes out {amount} a year better.",
       "worseTail": "That is useful to know: it is worth checking which costs or benefits would really change the result.",
-      "ladderHeading": "Monthly commission threshold: 70–80%",
+      "ladderHeading": "Your monthly share of the commission: 70–80%",
       "ladderStart": "start",
       "ladderNote": "Commission is settled at the end of each month according to the number of LIVE viewings and webinars held in that month. Each new month starts at 70%.",
       "tableCaption": "Calculation details",

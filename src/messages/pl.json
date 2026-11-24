@@ -620,8 +620,8 @@
       "faq31": "Jak przebiega weryfikacja do publikowania ofert?",
       "faq32": "Vesteri sprawdza tożsamość, działalność i wymagane na danym rynku uprawnienia lub ubezpieczenie oraz akceptację standardów. Czas weryfikacji zależy od kraju i kompletności zgłoszenia. Zaproszenie do Vesteri Channels otrzymuje każdy agent po założeniu konta, niezależnie od tej weryfikacji.",
       "meta": {
-        "title": "Agent Vesteri: 70–80% prowizji i zaplecze agencji | Vesteri",
-        "description": "Dołącz do Vesteri: 70% prowizji na start i do 80% za prezentacje LIVE, technologia, marketing i sieć agentów. Albo działaj pod własną marką w Vesteri Collective."
+        "title": "Agent Vesteri: zatrzymujesz 70–80% prowizji | Vesteri",
+        "description": "Jako agent Vesteri zatrzymujesz 70% prowizji, a za prezentacje LIVE do 80%. Do tego technologia, marketing i sieć agentów albo własna marka w Vesteri Collective."
       },
       "hero": {
         "pictureAlt": "Vesteri dla agentów",
@@ -923,8 +923,8 @@
     },
     "calculator": {
       "meta": {
-        "title": "Kalkulator korzyści agenta | Vesteri",
-        "description": "Wpisz swoje wyniki i porównaj obecny model z Vesteri: udział 70–80%, koszty LIVE i reklam oraz program 3+1. Symulacja, nie prognoza zarobków."
+        "title": "Kalkulator agenta: ile zostaje Ci w Vesteri | Vesteri",
+        "description": "Policz, ile zostaje Ci w Vesteri: zatrzymujesz 70–80% prowizji. Kalkulator uwzględnia koszty LIVE, opłatę za Ads i program 3+1. Symulacja, nie prognoza zarobków."
       },
       "skip": "Przejdź do treści",
       "eyebrow": "VESTERI · KALKULATOR DLA AGENTÓW",
@@ -987,7 +987,7 @@
       "betterTail": "Wynik zależy od wpisanych prowizji, kosztów i założonej sprzedaży.",
       "worse": "W tym scenariuszu obecny model wypada korzystniej o {amount} rocznie.",
       "worseTail": "To cenna informacja: warto sprawdzić, które koszty lub korzyści rzeczywiście zmieniłyby wynik.",
-      "ladderHeading": "Miesięczny próg prowizji: 70–80%",
+      "ladderHeading": "Twój miesięczny udział w prowizji: 70–80%",
       "ladderStart": "start",
       "ladderNote": "Prowizja jest rozliczana na koniec każdego miesiąca według liczby LIVE/webinarów przeprowadzonych w tym miesiącu. Każdy kolejny miesiąc zaczyna się od 70%.",
       "tableCaption": "Szczegóły wyliczenia",
